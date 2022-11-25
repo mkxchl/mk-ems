@@ -835,7 +835,7 @@ li {
 }
 .popup.show{
   top: -200%;
-  left: 185px;
+  left: 180px;
   position: relative;
   opacity: 1;
   pointer-events: auto;
