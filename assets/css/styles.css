@@ -718,11 +718,12 @@ li {
   position: relative;
   z-index: 3;
   text-align: center;
-  width: 100%;
-  height: 100%;
+  width: 50px
+  height: 50px;
   line-height: 40px;
   align-items: center;
   justify-content: center;
+  /* padding-bottom: 10px; */
 }
 .social-icons a.fb i {
   color: #4267b2;
@@ -736,15 +737,19 @@ li {
 .social-icons a.tt i {
   color: #212121;
 }
+.social-icons a.cd i {
+  color: #0073ff;
+}
 .social-icons {
-  margin: 15px 0 25px 0;
+  /* margin: 15px 0 25px 0; */
   text-align: center;
   cursor: pointer;
+  padding-bottom: 10px;
 }
 .social-icons a {
   position: relative;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   margin: 0 5px;
   display: inline-flex;
   text-decoration: none;
@@ -791,9 +796,9 @@ li {
 }
 /* Toast Mk */
 .view-modal{
-  position: absolute;
-  right: 10px;
-  bottom: -590px;
+  position: relative;
+  right: -330px;
+  bottom: 40px;
   padding: 10px;
   border-radius: 30px;
   cursor: pointer;
@@ -815,16 +820,18 @@ li {
   background: #fff;
   z-index: 2;
   padding: 25px;
-  border-radius: 15px;
+  border-radius: 30px;
   /* top: 150%; */
-  max-width: 310px;
+  max-width: 350px;
   width: 100%;
+  height: 350px;
   opacity: 0;
   pointer-events: none;
-  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
+  box-shadow: -3px -3px 3px #3c87ff, 3px 3px 3px #3c87ff;
   /* transform: translate(-50%, -50%); */
   transition: top 0s 0.5s ease-in-out,
-              opacity 0.2s 0s ease-in-out;
+              opacity 0.5s 0s ease-in-out;
 }
 .popup.show{
   top: -200%;
@@ -834,7 +841,7 @@ li {
   pointer-events: auto;
   transform:translate(-50%, -50%);
   transition: top 0s 0.5s ease-in-out,
-              opacity 0.2s 0s ease-in-out;
+              opacity 0.5s 0s ease-in-out;
 }
 .popup :is(header, .icons, .field){
   display: flex;
@@ -842,12 +849,16 @@ li {
   justify-content: space-between;
 }
 .popup header{
-  padding-bottom: 15px;
+  /* padding-bottom: 10px; */
+  /* padding: 20px; */
+  position: relative;
+  right: -20px;
   border-bottom: 1px solid #ebedf9;
 }
 header span{
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 600;
+  padding: 0;
 }
 header .close, .icons a{
   display: flex;
@@ -861,21 +872,24 @@ header .close{
   color: #878787;
   font-size: 17px;
   background: #f2f3fb;
-  height: 33px;
-  width: 33px;
+  height: 35px;
+  width: 35px;
   cursor: pointer;
+  right: 25px;
+  position: relative;
 }
 header .close:hover{
   background: #ebedf9;
 }
 .popup .content{
   margin: 20px 0;
+  padding: 20px;
 }
 .popup .icons{
   margin: 15px 0 20px 0;
 }
 .content p{
-  font-size: 16px;
+  font-size: 12px;
 }
 .content .icons a{
   height: 50px;
