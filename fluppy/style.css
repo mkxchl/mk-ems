@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "flappy";
+  src: url(https://dl.dropbox.com/s/tnnw5qs20n8s5uy/FlappyBirdy.ttf?dl=0);
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: "Sarabun", sans-serif;
+  user-select: none;
+}
+
+/*loader starts here */
+#container {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: #161623;
+  z-index: 10;
+}
+
+#loader,
+#load {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: transparent;
+}
+
+#loader:before,
+#loader:after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border: 8px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+#loader:before {
+  animation: animate1 2s linear infinite;
+}
+
+#loader:after {
+  animation: animate2 2s linear infinite;
+}
+
+#load {
+  top: 55%;
+  position: absolute;
+  font-size: 20px;
+  font-family: "Aleo", serif;
+}
+
+@keyframes animate1 {
+  100% {
+    transform: rotate(180deg) skew(360deg);
+  }
+}
+
+@keyframes animate2 {
+  100% {
+    transform: rotate(-180deg) skew(-360deg);
+  }
+}
+
+/* Loader ends here */
+
+#bgImage {
+  height: 99%;
+  width: 99%;
+  z-index: -1;
+  position: absolute;
+  background: #161623;
+  filter: blur(5px);
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: transparent;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+#mid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+#images {
+  display: none;
+}
+
+#result,
+button {
+  position: relative;
+  z-index: 1;
+  top: 390px;
+  color: black;
+  font-size: 28px;
+  font-family: "Merriweather Sans";
+}
+
+#result {
+  top: 100px;
+  font-size: 72px;
+  color: tomato;
+  text-shadow: 0px 2px tomato;
+}
+
+#btn,
+#btnStart {
+  outline: none;
+  border: none;
+  top: 150px;
+  background-color: #fff;
+  color: teal;
+  text-shadow: 0px 2px teal;
+  padding: 10px 20px 5px 20px;
+  border: 3px solid #262626;
+  border-radius: 15px;
+  height: 60px;
+  cursor: pointer;
+}
+
+#playSound,
+#sound,
+#nosound {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 5px;
+  margin-left: 10px;
+}
+
+#sound,
+#nosound {
+  top: 0;
+  margin-left: 0;
+  font-size: 22px;
+}
+
+#sound {
+  visibility: hidden;
+}
+
+#nosound {
+  visibility: visible;
+  margin-left: 10px;
+}
+
+#info {
+  margin-left: 34px;
+  margin-top: 6px;
+  font-family: "Sarabun", sans-serif;
+  color: white;
+}
+.vol {
+  color: white;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <title>Flappy Bird - Games</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sarabun|Aleo" rel="stylesheet" />
+    <meta property="og:title" content="Games - Code Chellxz" />
+    <meta property="og:description" content="Games - Code Chellxz" />
+    <meta property="og:url" content="https://chellxz.ml/" />
+    <meta property="og:image" content="assets/images/mnk.jpg" />
+    <meta property="og:author" content="Chellxz" />
+    <meta property="og:image:secure_url" content="assets/images/mnk.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/mnk.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/mnk.jpg" />
+  </head>
+
+  <body>
+    <!-- Loader starts -->
+    <div id="container">
+      <div id="loader"></div>
+      <br /><br />
+      <div id="load">Loading...</div>
+    </div>
+    <!-- Loader ends -->
+
+    <div id="images">
+      <img src="https://dl.dropbox.com/s/t5t3g4u8os1ivfi/bg.png?dl=0" alt="bg" />
+      <img src="https://dl.dropbox.com/s/2n4gpj8sgw77sov/bird2.png?dl=0" alt="bird" />
+      <img src="https://dl-web.dropbox.com/s/oz10krasd5hyyy7/pipeNorth.png?dl=0" alt="pN" />
+      <img src="https://dl.dropbox.com/s/zsy9dbwkv97zkf1/pipeSouth.png?dl=0" alt="pS" />
+      <img src="https://dl.dropbox.com/s/ix86pwj7hpaqd89/fg.png?dl=0" alt="fg" />
+    </div>
+
+    <div id="bgImage"></div>
+    <canvas id="canvas"></canvas>
+    <center><button onclick="btnStart()" id="btnStart">START</button></center>
+    <div id="mid">
+      <center>
+        <div id="result">Game Over</div>
+      </center>
+      <center><button onclick="playAgain()" id="btn">Play Again</button></center>
+    </div>
+
+    <div id="playSound">
+      <i id="sound" onclick="noPlaySound()" class="fas fa-volume-up vol"></i>
+      <i id="nosound" onclick="playSound()" class="fas fa-volume-off vol"></i>
+      <div id="info">Click to play music .</div>
+    </div>
+
+    <!--  To get the clicking sound -->
+    <audio id="music" autoplay loop>
+      <source src="https://dl-web.dropbox.com/s/qs1fc18fbxujid0/Flappy%20Bird%20Theme%20Song%201.mp3?dl=0" type="audio/mp3" />
+    </audio>
+
+    <audio id="scoreM" autoplay>
+      <source src="https://dl-web.dropbox.com/s/hnt77i48coqa4hw/score%20Sound%20.mp3?dl=0" type="audio/mp3" />
+    </audio>
+    <audio id="lose" autoplay>
+      <source src="https://dl-web.dropbox.com/s/fzcdb1jac6i83j4/Lose%20sound%20.mp3?dl=0" type="audio/mp3" />
+    </audio>
+    <script src="main.js"></script>
+  </body>
+</html>
