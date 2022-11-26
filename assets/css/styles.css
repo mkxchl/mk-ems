@@ -859,10 +859,9 @@ li {
   /* padding-bottom: 10px; */
   /* padding: 20px; */
   position: relative;
-  right: -5px;
+  right: -20px;
   font-weight: bold;
-  padding: 20px;
-  border-bottom: 2px solid #ebedf9;
+  border-bottom: 1px solid #ebedf9;
 }
 header span{
   font-size: 18px;
