@@ -444,7 +444,7 @@ li {
   align-items: flex-start;
   /* border-bottom: 1px solid #ccc; */
   background: transparent;
-  border-radius: 15px;
+  border-radius: 30px;
   transform: scale(1);
   transition: 0.5s;
   /* box-shadow: inset -3px -3px 7px #ffffff, 3px 3px 5px #ceced1; */
@@ -656,7 +656,6 @@ li {
   }
   .divvideo {
     width: 90%;
-    border-radius: 30px;
   }
   .myanimated {
     transform: unset;
