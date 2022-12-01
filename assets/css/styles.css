@@ -270,12 +270,12 @@ video {
   left: 0;
   top: 0;
   opacity: 1;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 .divvideo {
   width: 60%;
   height: 300px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   overflow: hidden;
   position: relative;
   top: 50%;
