@@ -303,6 +303,23 @@ video {
   margin: 0;
   padding: 0;
 }
+@keyframes wave {
+  0% {
+    width: 5px;
+    height: 5px;
+    opacity: 1;
+  }
+  90% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+  }
+  1005 {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+}
 @keyframes animate {
   50% {
     filter: hue-rotate(0deg);
@@ -328,12 +345,13 @@ video {
   width: 300px;
   padding: 10px 0 ;
   margin: 120px auto;
-  border-radius: 50px;
+  border-radius: 10px;
   background: #ecf0f3;
-  box-shadow: -3px -3px 3px #3c87ff, 3px 3px 3px #3c87ff;
+  /* box-shadow: -5px -3px 10px #2d5cfe, 3px 3px 5px #ceced1; */
   /* transform:translate(-50%, -50%); */
   /* box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #3c87ff; */
   /* animation: animateBx 1.5s linear infinite; */
+  BORDER: 1px solid  #2d5cfe;
 }
 . .bg-mk {
   backdrop-filter: blur(50px);
@@ -467,15 +485,14 @@ li {
   /* box-shadow: inset -3px -3px 7px #ffffff, 3px 3px 5px #ceced1; */
 }
 .task:hover {
-  background: white;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 10px #ffffff, inset 3px 3px 5px #ceced1;
   color: rgba(0, 0, 0, 0.567);
   cursor: pointer;
   transform: scale(1.1);
   transition: 0.5s;
   border-radius: 30px;
   animation: 0.5s;
-  border: 0.5px solid #3c87ff;
-  box-shadow: inset -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
 }
 .task-box .task:last-child {
   margin-bottom: 0;
@@ -657,6 +674,55 @@ li {
 .mk-g {
   height: 300px;
   width: 300px;
+}
+.list-links {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: #ecf0f3;
+  box-shadow: -5px -5px 10px #ffffff, 3px 3px 5px #ceced1;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: 0.3s;
+  height: 50px;
+}
+.list-links .img-list {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  everflow: hidden;
+  margin-right: 30px;
+}
+.list-links .img-list img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+.list-links .list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(124 58 237);
+}
+.list-links .list-content h4 {
+  /* line-height: 1.2em; */
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.5s;
+  position: relative;
+  top: 10px;
+}
+.list-links .list-content p {
+  font-size: 10px;
+  transition: 0.5s;
+  color: black;
+  letter-spacing: 0.1rem;
+  position: relative;
+  bottom: 20px;
 }
 /* Mobile Preview */
 @media screen and (max-width: 576px) {
