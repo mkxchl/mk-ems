@@ -154,7 +154,7 @@ body {
   visibility: hidden;
   transform: translateY(30px);
   transition-property: opacity, visibility, transform;
-  transition-duration: 0.2s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-in;
 }
 
@@ -193,7 +193,7 @@ h2 {
 }
 
 .final-score-lbl {
-  font-size: 5rem;
+  font-size: 1.2rem;
   margin: -0.2em 0 0;
 }
 
@@ -255,6 +255,50 @@ a {
   text-decoration: none;
 }
 
+.play-normal-btn,
+.resume-btn,
+.menu-btn--pause {
+  background: white;
+  color: black;
+  border-radius: 15px;
+}
+.play-normal-btn:hover {
+  background: black;
+  color: white;
+  border-radius: 15px;
+}
+.play-casual-btn:hover {
+  background: black;
+  color: white;
+  border-radius: 15px;
+}
+.menu-btn--pause:hover {
+  background: black;
+  color: white;
+  border-radius: 15px;
+}
+.play-again-btn:hover {
+  background: black;
+  color: white;
+  border-radius: 15px;
+}
+.menu-btn--score:hover {
+  background: black;
+  color: white;
+  border-radius: 15px;
+}
+.resume-btn:hover {
+  background: black;
+  color: white;
+  border-radius: 15px;
+}
+.play-casual-btn,
+.menu-btn--pause {
+  margin-top: 10px;
+  background: white;
+  color: black;
+  border-radius: 15px;
+}
 /* Only enable hover state on large screens */
 @media (min-width: 1025px) {
   button:hover {
