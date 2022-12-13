@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 .card {
-  width: 380px;
+  max-width: 340px;
   margin: auto;
   overflow-y: hidden;
   position: relative;
