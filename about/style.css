@@ -59,7 +59,7 @@ a {
 }
 
 .card[data-state="#contact"] {
-  height: 400px;
+  height: 450px;
   width: 340px;
   transition: 0.5s;
 }
