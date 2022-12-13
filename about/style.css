@@ -53,9 +53,6 @@ a {
 .card[data-state="#about"] .card-main {
   padding-top: 0;
   transition: 0.5s;
-  height: 380px;
-  width: 340px;
-  transition: 0.5s;
 }
 
 .card[data-state="#contact"] {
