@@ -36,7 +36,7 @@ a {
 .card::-webkit-scrollbar {
   width: 5px;
 } */
-.card::-webkit-scrollbar-track {
+/* .card::-webkit-scrollbar-track {
   background: rgb(106, 106, 106);
   box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
   border-radius: 25px;
@@ -44,14 +44,16 @@ a {
 .card::-webkit-scrollbar-thumb {
   background: linear-gradient(135deg, #4ab1ff, #2d5cfe);
   border-radius: 25px;
-}
+} */
 .card[data-state="#about"] {
   height: 380px;
   transition: 0.5s;
-  width: 340px;
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
+  transition: 0.5s;
+  height: 380px;
+  width: 340px;
   transition: 0.5s;
 }
 
