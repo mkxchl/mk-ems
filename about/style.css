@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 .card {
-  max-width: 340px;
+  max-width: 400px;
   margin: auto;
   overflow-y: hidden;
   position: relative;
@@ -48,7 +48,7 @@ a {
 .card[data-state="#about"] {
   height: 380px;
   transition: 0.5s;
-  width: 400px;
+  /* width: 400px; */
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
