@@ -10,6 +10,7 @@ body {
   background: #ecf0f3;
   flex-wrap: wrap;
   padding: 20px;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -17,7 +18,7 @@ a {
 .card {
   max-width: 340px;
   margin: auto;
-  overflow-y: auto;
+  overflow-y: hidden;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
@@ -28,13 +29,13 @@ a {
   border-radius: 15px;
   box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
 }
-.card.overflow {
+/* .card.overflow {
   overflow-y: auto;
   height: 100px;
 }
 .card::-webkit-scrollbar {
   width: 5px;
-}
+} */
 .card::-webkit-scrollbar-track {
   background: rgb(106, 106, 106);
   box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
@@ -69,7 +70,7 @@ a {
   transition: 0.5s;
 }
 .card[data-state="#music"] {
-  height: 400px;
+  height: 280px;
   width: 340px;
   transition: 0.5s;
 }
@@ -325,7 +326,7 @@ a {
 }
 
 .card-item-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   position: relative;
   top: -3px;
