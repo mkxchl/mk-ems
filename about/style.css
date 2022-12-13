@@ -17,6 +17,7 @@ a {
 }
 .card {
   max-width: 340px;
+  position: relative;
   margin: auto;
   overflow-y: hidden;
   position: relative;
