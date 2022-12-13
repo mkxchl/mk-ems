@@ -70,14 +70,14 @@ a {
   height: 400px;
   width: 340px;
   transition: 0.5s;
-  top: 100px;
-  position: relative;
 }
 
 .card[data-state="#profile"] {
   height: 550px;
   width: 340px;
   transition: 0.5s;
+  top: 30px;
+  position: relative;
 }
 .card[data-state="#music"] {
   height: 280px;
