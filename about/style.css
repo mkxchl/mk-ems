@@ -29,6 +29,13 @@ a {
   border-radius: 15px;
   box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
 }
+.mk-cont {
+  font-size: 12px;
+  color: black;
+  font-weight: 300;
+  margin-top: -10px;
+  font-family: "DM Sans", sans-serif;
+}
 /* .card.overflow {
   overflow-y: auto;
   height: 100px;
@@ -46,19 +53,19 @@ a {
   border-radius: 25px;
 } */
 .card[data-state="#about"] {
-  height: 380px;
+  height: 390px;
   transition: 0.5s;
   width: 380px;
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
   transition: 0.5s;
-  height: 380px;
+  height: 390px;
   /* width: 380; */
 }
 
 .card[data-state="#contact"] {
-  height: 450px;
+  height: 400px;
   width: 340px;
   transition: 0.5s;
 }
