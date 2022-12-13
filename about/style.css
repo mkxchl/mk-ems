@@ -48,7 +48,7 @@ a {
 .card[data-state="#about"] {
   height: 380px;
   transition: 0.5s;
-  width: 340px;
+  width: 380px;
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
