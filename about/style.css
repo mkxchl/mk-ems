@@ -25,6 +25,7 @@ a {
   background: #ecf0f3;
   display: flex;
   transition: 0.5s;
+  bottom: 10px;
   flex-direction: column;
   border-radius: 15px;
   box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
