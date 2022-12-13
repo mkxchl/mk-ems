@@ -48,11 +48,13 @@ a {
 .card[data-state="#about"] {
   height: 380px;
   transition: 0.5s;
+  width: 380;
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
   transition: 0.5s;
   height: 380px;
+  width: 380;
 }
 
 .card[data-state="#contact"] {
