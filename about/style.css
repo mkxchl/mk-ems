@@ -73,12 +73,16 @@ a {
   width: 340px;
   transition: 0.5s;
 }
-
+.go {
+  position: absolute;
+  right: 500px;
+  font-size: 20px;
+}
 .card[data-state="#profile"] {
   height: 550px;
   width: 340px;
   transition: 0.5s;
-  top: 30px;
+  top: -10px;
   position: relative;
 }
 .card[data-state="#music"] {
@@ -265,8 +269,9 @@ a {
   color: #5c5c6d;
   transition: 0.5s;
   font-family: "Jost", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   outline: 0;
+  text-transform: uppercase;
   border-bottom: 1px solid transparent;
 }
 .card-buttons button.is-active,
