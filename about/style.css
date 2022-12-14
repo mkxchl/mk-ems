@@ -11,6 +11,8 @@ body {
   flex-wrap: wrap;
   padding: 20px;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -26,7 +28,7 @@ a {
   background: #ecf0f3;
   display: flex;
   transition: 0.5s;
-  top: 100px;
+  top: 10px;
   flex-direction: column;
   border-radius: 15px;
   box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
@@ -253,7 +255,7 @@ a {
   font-weight: 900;
 }
 .card-buttons button {
-  flex: 1 1 auto;
+  flex: 2 2 auto;
   user-select: none;
   background: white;
   font-size: 13px;
@@ -261,11 +263,11 @@ a {
   padding: 15px 5px;
   cursor: pointer;
   color: #5c5c6d;
-  transition: 0.3s;
+  transition: 0.5s;
   font-family: "Jost", sans-serif;
   font-weight: 500;
   outline: 0;
-  border-bottom: 3px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 .card-buttons button.is-active,
 .card-buttons button:hover {
@@ -394,6 +396,7 @@ a {
   left: 15px;
   bottom: 1px;
   font-weight: 500;
+  font-family: "DM Sans", sans-serif;
 }
 .fab {
   font-size: 20px;
