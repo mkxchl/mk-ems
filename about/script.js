@@ -18,8 +18,6 @@ buttons.forEach((btn) => {
 });
 
 function init() {
-  function playAudio() {
-    var e = document.getElementById("myAudio");
+  var e = document.getElementById("myAudio");
     (e.volume = 0.15), e.play();
-  }
 };
