@@ -41,7 +41,7 @@
                 <span class='tombolcari' class="cari-aja" onclick='cariok()'>cari</span> -->
             </div>
           </div>
-          <a href="https://mk-links.netlify.app/"><button class="btn-home">Get Started</button></a>
+          <a onclick="playAudio()"><button class="btn-home">Get Started</button></a>
         </div>
         <div class="card-section" id="profile">
           <div class="card-content">
@@ -120,12 +120,18 @@
       </div>
     </div>
     <audio id="myAudio">
-      <source width="0" height="0" src="/mix/mk-anime-song.mp3" type="audio/mpeg" autoplay="true" />
+      <source src="/mix/mk-anime-song.mp3" type="audio/mpeg"/>
     </audio>
     <!-- <iframe width="0" height="0" src="/mix/mk-anime-song.mp3" frameborder="0" allowfullscreen> </iframe> -->
     <!-- add style js -->
     <script type="text/javascript" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+    function playAudio() {
+  var e = document.getElementById("myAudio");
+  (e.volume = 0.15), e.play();
+}
+    </script>
   </body>
 </html>
