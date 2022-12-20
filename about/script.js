@@ -16,3 +16,10 @@ const handleButtonClick = (e) => {
 buttons.forEach((btn) => {
   btn.addEventListener("click", handleButtonClick);
 });
+
+function init() {
+  function playAudio() {
+    var e = document.getElementById("myAudio");
+    (e.volume = 0.15), e.play();
+  }
+};
