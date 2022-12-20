@@ -31,7 +31,7 @@ a {
   /* background: rgba(232, 232, 232, 0.099); */
   display: flex;
   transition: 0.5s;
-  top: 7px;
+  top: 5px;
   flex-direction: column;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.4);
