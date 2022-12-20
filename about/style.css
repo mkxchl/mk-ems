@@ -3,16 +3,19 @@
 }
 
 body {
-  color: #2b2c48;
+  color: #2d5cfe;
   font-family: "Jost", sans-serif;
   min-height: 100vh;
   display: flex;
-  background: #ecf0f3;
+  /* background: #ecf0f3; */
+  background-image: url("/assets/images/bg-anime.gif");
   flex-wrap: wrap;
   padding: 20px;
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-position: center;
 }
 a {
   text-decoration: none;
@@ -25,16 +28,22 @@ a {
   position: relative;
   z-index: 1;
   overflow-x: hidden;
-  background: #ecf0f3;
+  /* background: rgba(232, 232, 232, 0.099); */
   display: flex;
   transition: 0.5s;
   top: 10px;
   flex-direction: column;
   border-radius: 15px;
-  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  /* box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1; */
 }
 .mk-cont {
-  font-size: 12px;
+  font-size: 13px;
   color: black;
   font-weight: 300;
   margin-top: -10px;
@@ -72,6 +81,7 @@ a {
   height: 400px;
   width: 340px;
   transition: 0.5s;
+  color: #2d5cfe;
 }
 .go {
   position: absolute;
@@ -81,8 +91,9 @@ a {
 .card[data-state="#profile"] {
   height: 550px;
   width: 340px;
+  color: #2d5cfe;
   transition: 0.5s;
-  top: -10px;
+  top: -15px;
   position: relative;
 }
 .card[data-state="#music"] {
@@ -109,7 +120,7 @@ a {
 }
 .card.is-active .card-fullname,
 .card.is-active .card-jobtitle {
-  left: 86px;
+  left: 85px;
   transform: none;
 }
 .card.is-active .card-fullname {
@@ -120,6 +131,7 @@ a {
   bottom: 16px;
   letter-spacing: 1px;
   font-size: 10px;
+  left: 87px;
 }
 
 .card-header {
@@ -171,6 +183,9 @@ a {
   white-space: nowrap;
   transform: translateY(-10px) translateX(-50%);
   left: 50%;
+  /* color: black; */
+  /* font-family: "Courier", sans-serif; */
+  /* text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15); */
 }
 
 .card-jobtitle {
@@ -184,6 +199,7 @@ a {
   letter-spacing: 1.5px;
   margin: 0;
   left: 50%;
+  color: white;
   transform: translateX(-50%) translateY(-7px);
 }
 
@@ -251,7 +267,7 @@ a {
 
 .card-buttons {
   display: flex;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.25);
   margin-top: auto;
   position: sticky;
   bottom: 0;
@@ -261,7 +277,7 @@ a {
 .card-buttons button {
   flex: 2 2 auto;
   user-select: none;
-  background: white;
+  background: rgba(255, 255, 255, 0.25);
   font-size: 13px;
   border: 0;
   padding: 15px 5px;
@@ -278,8 +294,8 @@ a {
 .card-buttons button:hover {
   /* color: #2b2c48; */
   /* border-bottom: 3px solid #8a84ff; */
-  background: #ecf0f3;
-  box-shadow: inset -3px -3px 10px #ffffff, inset 3px 3px 5px #ceced1;
+  background: rgba(255, 255, 255, 0.25);
+  /* box-shadow: inset -3px -3px 10px #ffffff; */
   color: rgba(0, 0, 0, 0.567);
 }
 
@@ -397,10 +413,10 @@ a {
   font-size: 15px;
   /* top: 5px; */
   position: relative;
-  color: #6f6f7b;
   left: 15px;
   bottom: 1px;
   font-weight: 500;
+  color: #2d5cfe;
   font-family: "DM Sans", sans-serif;
 }
 .fab {
@@ -438,7 +454,7 @@ a {
 .btn-home {
   /* border: 1pz solid rgba(232, 232, 232, 0.095); */
   background: rgba(0, 0, 0, 0.095);
-  color: #000;
+  color: #fff;
   padding: 14px 16px;
   width: 70%;
   border-radius: 50px;
