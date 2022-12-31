@@ -53,7 +53,7 @@ a {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
-  top: 7px;
+  top: 5px;
   flex-direction: column;
   border-radius: 20px;
   background: #fff;
