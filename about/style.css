@@ -543,7 +543,7 @@ h2 {
   justify-content: center;
   background-color: #fff;
   padding: 6px;
-  border-radius: 6px;
+  border-radius: 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   transform: translateX(-100%);
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -560,7 +560,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: 25px;
   margin: 6px;
 }
 .media-icons a i {
