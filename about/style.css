@@ -319,9 +319,8 @@ a {
   background: rgba(255, 255, 255, 0.25);
   font-size: 12px;
   left: 10px;
-  margin-bottom: -10px;
   border: 0;
-  padding: 30px 30px;
+  padding: 15px 15px;
   cursor: pointer;
   color: #5c5c6d;
   transition: 0.5s;
