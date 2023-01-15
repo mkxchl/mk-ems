@@ -300,6 +300,9 @@ a {
 
 .card-buttons {
   display: flex;
+  align-items: center;
+  justify-content :center;
+  text-align :center;
   background: rgba(255, 255, 255, 0.25);
   margin-top: auto;
   position: sticky;
@@ -310,6 +313,9 @@ a {
 .card-buttons button {
   flex: 2 2 auto;
   user-select: none;
+  align-items: center;
+  justify-content :center;
+  text-align :center;
   background: rgba(255, 255, 255, 0.25);
   font-size: 13px;
   border: 0;
