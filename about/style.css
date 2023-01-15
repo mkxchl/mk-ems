@@ -76,7 +76,7 @@ a {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
-  top: -10px;
+  top: -5px;
   flex-direction: column;
   border-radius: 20px;
   background: conic-gradient(at var(--m) calc(var(--s) * 0.5777), transparent 270deg, #000 0deg), conic-gradient(at calc(100% - var(--m)) calc(var(--s) * 0.5777), #000 90deg, transparent 0deg),
@@ -324,7 +324,7 @@ a {
   align-items: center;
   justify-content :center;
   text-align :center;
-  background: fff;
+  background: rgba(255, 255, 255, 0.25);
   font-size: 12px;
   left: 10px;
   border: 0;
