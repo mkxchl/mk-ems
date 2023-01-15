@@ -42,6 +42,7 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -5;
+  top: -5px;
 }
 a {
   text-decoration: none;
@@ -314,7 +315,7 @@ a {
   background: rgba(255, 255, 255, 0.25);
   font-size: 13px;
   border: 0;
-  padding: 15px 5px;
+  padding: 15px 15px;
   cursor: pointer;
   color: #5c5c6d;
   transition: 0.5s;
