@@ -97,7 +97,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, transparent, white, transparent, white) left/400% 100%;
+  background: linear-gradient(120deg, transparent, white, transparent, white) left/400% 100%;
   animation: f 5s infinite alternate linear;
 }
 .mk-cont {
