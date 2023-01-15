@@ -481,11 +481,11 @@ a {
   /* border: 1pz solid rgba(232, 232, 232, 0.095); */
   background: rgba(0, 0, 0, 0.1);
   color: #2d5cfe;
-  padding: 14px 16px;
+  padding: 15px 15px;
   width: 70%;
   border-radius: 15px;
-  margin: 48px;
-  margin-top: 0px;
+  margin: 50px;
+  margin-top: -10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 900;
