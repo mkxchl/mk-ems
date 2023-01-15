@@ -180,7 +180,8 @@
     <!-- Audio  -->
     <script>
       function playMyAudio() {
-        document.getElementById("myAudio").play(), (volume = 0.10);
+        var e = document.getElementById("myAudio"); 
+        (e.volume = 0.15), e.play();
       }
     </script>
   </body>
