@@ -241,6 +241,7 @@ a {
 }
 
 .card-subtitle {
+  position: absolute;
   font-weight: 900;
   text-align: center;
   font-size: 15px;
@@ -390,7 +391,7 @@ a {
 }
 
 .card-item-desc {
-  font-size: 13px;
+  font-size: 11px;
   color: black;
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
