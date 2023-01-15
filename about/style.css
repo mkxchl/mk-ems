@@ -1,18 +1,17 @@
 * {
   box-sizing: border-box;
 }
-html {
-  --s: 67px; /* shape size */
-  --m: 4px; /* line thickness */
-
+/* html {
+  --s: 67px;
+  --m: 4px; 
   --v1: #fff 119.5deg, #0000 120.5deg;
   --v2: #000 119.5deg, #0000 120.5deg;
-  /* background: conic-gradient(at var(--m) calc(var(--s) * 0.5777), transparent 270deg, #000 0deg), conic-gradient(at calc(100% - var(--m)) calc(var(--s) * 0.5777), #000 90deg, transparent 0deg),
+  background: conic-gradient(at var(--m) calc(var(--s) * 0.5777), transparent 270deg, #000 0deg), conic-gradient(at calc(100% - var(--m)) calc(var(--s) * 0.5777), #000 90deg, transparent 0deg),
     conic-gradient(from -60deg at 50% calc(var(--s) * 0.8662), var(--v1)), conic-gradient(from -60deg at 50% calc(var(--s) * 0.8662 + 2 * var(--m)), var(--v2)),
     conic-gradient(from 120deg at 50% calc(var(--s) * 1.4435 + 3 * var(--m)), var(--v1)), conic-gradient(from 120deg at 50% calc(var(--s) * 1.4435 + var(--m)), var(--v2)),
     linear-gradient(90deg, #fff calc(50% - var(--m)), #000 0 calc(50% + var(--m)), #fff 0);
   background-size: calc(var(--s) + 2 * var(--m)) calc(var(--s) * 1.732 + 3 * var(--m));
-  mix-blend-mode: lighten; */
+  mix-blend-mode: lighten;
 }
 html:before {
   content: "";
@@ -20,7 +19,7 @@ html:before {
   inset: 0;
   background: linear-gradient(90deg, red, blue, green) left/400% 100%;
   animation: f 5s infinite alternate linear;
-}
+} */
 
 @keyframes f {
   100% {
@@ -33,7 +32,8 @@ body {
   min-height: 100vh;
   display: flex;
   /* background: #ecf0f3; */
-  background: rgb(45, 45, 45);
+  background-images: url('/assets/images/mkxchl-bg.gif');
+  backdrop-filter: blur(10px);
   flex-wrap: wrap;
   padding: 20px;
   overflow: hidden;
