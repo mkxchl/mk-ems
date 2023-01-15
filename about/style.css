@@ -101,7 +101,7 @@ a {
 }
 .mk-cont {
   font-size: 13px;
-  color: #e1306c;
+  color: #2d5cfe;
   font-weight: 300;
   margin-top: -10px;
   font-family: "DM Sans", sans-serif;
@@ -109,7 +109,7 @@ a {
   position: relative;
   justify-contnet: center;
   align-items: center;
-  animation: animateBx 1.5s linear infinite;
+  animation: animateBx 2.5s linear infinite;
 }
 .card[data-state="#home"] {
   height: 390px;
