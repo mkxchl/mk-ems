@@ -327,7 +327,7 @@ a {
 .card-buttons button.is-active,
 .card-buttons button:hover {
   /* color: #2b2c48; */
-  border-bottom: 3px solid #2d5cfe;
+  border-bottom: 5px solid #2d5cfe;
   background: rgba(255, 255, 255, 0.25);
   /* box-shadow: inset -3px -3px 10px #ffffff; */
   color: rgba(0, 0, 0, 0.567);
