@@ -306,6 +306,7 @@ a {
   bottom: 0;
   left: 0;
   font-weight: 900;
+  padding: 10px;
 }
 .card-buttons button {
   flex: 2 2 auto;
@@ -322,6 +323,7 @@ a {
   outline: 0;
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
+  margin: 10px;
 }
 .card-buttons button.is-active,
 .card-buttons button:hover {
