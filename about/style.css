@@ -74,12 +74,11 @@ a {
   position: relative;
   /* margin: auto; */
   overflow-y: hidden;
-  position: relative;
   /* z-index: 1; */
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
-  top: -10px;
+  top: -20px;
   flex-direction: column;
   border-radius: 20px;
   background: #fff;
