@@ -42,7 +42,6 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -5;
-  top: -5px;
 }
 a {
   text-decoration: none;
@@ -80,7 +79,7 @@ a {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
-  top: 10px;
+  top: -10px;
   flex-direction: column;
   border-radius: 20px;
   background: #fff;
