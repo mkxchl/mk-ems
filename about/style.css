@@ -41,10 +41,6 @@ body {
   display: flex;
   /* background: #ecf0f3; */
   background-image: url("/assets/images/bg-anime.gif");
-  background: conic-gradient(at var(--m) calc(var(--s) * 0.5777), transparent 270deg, #000 0deg), conic-gradient(at calc(100% - var(--m)) calc(var(--s) * 0.5777), #000 90deg, transparent 0deg),
-    conic-gradient(from -60deg at 50% calc(var(--s) * 0.8662), var(--v1)), conic-gradient(from -60deg at 50% calc(var(--s) * 0.8662 + 2 * var(--m)), var(--v2)),
-    conic-gradient(from 120deg at 50% calc(var(--s) * 1.4435 + 3 * var(--m)), var(--v1)), conic-gradient(from 120deg at 50% calc(var(--s) * 1.4435 + var(--m)), var(--v2)),
-    linear-gradient(90deg, #fff calc(50% - var(--m)), #000 0 calc(50% + var(--m)), #fff 0);
   flex-wrap: wrap;
   padding: 20px;
   overflow: hidden;
@@ -52,13 +48,6 @@ body {
   align-items: center;
   background-size: cover;
   background-position: center;
-}
-body:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, transparent, white) left/400% 100%;
-  animation: f 5s infinite alternate linear;
 }
 a {
   text-decoration: none;
