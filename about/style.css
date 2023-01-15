@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   display: flex;
   /* background: #ecf0f3; */
-  background-images: url("/assets/images/mkxchl-bg.gif");
+  background-images: url("./assets/images/mkxchl-bg.gif");
   flex-wrap: wrap;
   padding: 20px;
   overflow: hidden;
