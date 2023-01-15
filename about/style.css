@@ -41,6 +41,7 @@ body {
   display: flex;
   /* background: #ecf0f3; */
   background-image: url("/assets/images/mk-09.gif");
+  backdrop-filter: bluer(10px);
   flex-wrap: wrap;
   padding: 20px;
   overflow: hidden;
