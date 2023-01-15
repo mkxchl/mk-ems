@@ -26,6 +26,14 @@ html:before {
     background-position: right;
   }
 }
+@keyframes animateBx {
+  50% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
 body {
   color: #2d5cfe;
   font-family: "Jost", sans-serif;
@@ -101,6 +109,7 @@ a {
   position: relative;
   justify-contnet: center;
   align-items: center;
+  animation: animateBx 1.5s linear infinite;
 }
 .card[data-state="#home"] {
   height: 390px;
