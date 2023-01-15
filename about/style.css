@@ -323,7 +323,7 @@ a {
   outline: 0;
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
-  margin: 10px;
+  margin: 5px;
 }
 .card-buttons button.is-active,
 .card-buttons button:hover {
