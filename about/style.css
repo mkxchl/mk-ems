@@ -80,6 +80,8 @@ a {
   flex-direction: column;
   border-radius: 20px;
   background: #fff;
+  transform: translateX(-100%);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .mk-cont {
   font-size: 13px;
