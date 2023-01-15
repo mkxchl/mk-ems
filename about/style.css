@@ -319,7 +319,7 @@ a {
   background: rgba(255, 255, 255, 0.25);
   font-size: 13px;
   border: 0;
-  padding: 15px 15px;
+  padding: 20px 20px;
   cursor: pointer;
   color: #5c5c6d;
   transition: 0.5s;
@@ -328,7 +328,6 @@ a {
   outline: 0;
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
-  margin-right: 10px;
 }
 .card-buttons button.is-active,
 .card-buttons button:hover {
