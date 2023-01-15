@@ -44,7 +44,7 @@
                 <span class='tombolcari' class="cari-aja" onclick='cariok()'>cari</span> -->
             </div>
           </div>
-          <a href="https://chellxz.ml/"><button class="btn-home">Get Started</button></a>
+          <a href="https://mk-links.netlify.app/"><button class="btn-home">Get Started</button></a>
         </div>
         <div class="card-section" id="profile">
           <div class="card-content">
@@ -127,7 +127,7 @@
         <i class="bx bx-right-arrow"></i>
       </span>
       <div class="media-icons">
-        <a onclick="location.href='https://soundcloud.com/marchellkevandra'" style="background: #2d5cfe">
+        <a onclick="playMyAudio()" style="background: #2d5cfe">
           <i class="bx bxl-deezer"></i>
           <span class="tooltip" style="color: #e60023">Music</span>
         </a>
@@ -163,7 +163,7 @@
         <feDisplacementMap in="SourceGraphic" scale="30"/>
     </svg> -->
     <audio autoplay="true">
-      <source src="/mix/mk-anime-song.mp3" type="audio/mpeg" />
+      <source src="/mix/mk-anime-song.mp3" type="audio/mpeg" id="myAudio" />
     </audio>
     <!-- <iframe width="0" height="0" src="/mix/mk-anime-song.mp3" frameborder="0" allowfullscreen> </iframe> -->
     <!-- add style js -->
@@ -176,6 +176,12 @@
       closeBtn.addEventListener("click", () => {
         closeBtn.classList.toggle("open");
       });
+    </script>
+    <!-- Audio  -->
+    <script>
+      function playMyAudio() {
+        document.getElementById("myAudio").play();
+      }
     </script>
   </body>
 </html>
