@@ -317,7 +317,8 @@ a {
   justify-content :center;
   text-align :center;
   background: rgba(255, 255, 255, 0.25);
-  font-size: 13px;
+  font-size: 12px;
+  margin-left: 10px;
   border: 0;
   padding: 30px 30px;
   cursor: pointer;
