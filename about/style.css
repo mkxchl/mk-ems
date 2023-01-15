@@ -88,7 +88,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, transparent) left/400% 100%;
+  background: linear-gradient(90deg, transparent, white) left/400% 100%;
   animation: f 5s infinite alternate linear;
 }
 .mk-cont {
