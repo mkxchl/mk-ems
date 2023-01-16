@@ -405,6 +405,7 @@ a {
   bottom: 0;
   left: 50%;
   border: 2px solid #2d5cfe;
+  animation: circle-outer135 1.8s ease infinite 0.3s;
   transform: translateX(-50%) translateY(-64px);
 }
 
