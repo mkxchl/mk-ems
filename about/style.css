@@ -636,7 +636,7 @@ a {
   /* line-height: 1.6; */
   cursor: pointer;
   /* padding: 5px; */
-  /* margin-top: 10px; */
+  margin-top: 10px;
   /* font-weight: 500; */
 }
 .card-contact:hover {
@@ -664,7 +664,6 @@ a {
   /* top: 5px; */
   position: relative;
   left: 15px;
-  bottom: 1px;
   font-weight: 700;
   color: #2d5cfe;
   font-family: "DM Sans", sans-serif;
