@@ -93,7 +93,7 @@ a {
 }
 .mk-cont {
   font-size: 13px;
-  color: black;
+  color: rgb(60, 60, 60);
   font-weight: 300;
   margin-top: -10px;
   font-family: "DM Sans", sans-serif;
@@ -236,7 +236,7 @@ a {
   letter-spacing: 1.5px;
   margin: 0;
   left: 50%;
-  color: #000;
+  color: rgb(60, 60, 60);
   transform: translateX(-50%) translateY(-7px);
 }
 
@@ -325,7 +325,7 @@ a {
   align-items: center;
   justify-content :center;
   text-align :center;
-  background: rgba(255, 255, 255, 0.25);
+  background: #212121;
   font-size: 12px;
   left: 10px;
   border: 0;
@@ -343,7 +343,7 @@ a {
 .card-buttons button:hover {
   /* color: #2b2c48; */
   border-bottom: 5px solid #2d5cfe;
-  background: rgba(255, 255, 255, 0.25);
+  background: #212121;
   /* box-shadow: inset -3px -3px 10px #ffffff; */
   color: rgba(0, 0, 0, 0.567);
   z-index: 1;
@@ -494,7 +494,7 @@ a {
 }
 .btn-home {
   /* border: 1pz solid rgba(232, 232, 232, 0.095); */
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.50);
   color: #2d5cfe;
   padding: 15px 15px;
   width: 70%;
