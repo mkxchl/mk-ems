@@ -93,7 +93,7 @@ a {
 }
 .mk-cont {
   font-size: 13px;
-  color: rgb(60, 60, 60);
+  color: grey;
   font-weight: 300;
   margin-top: -10px;
   font-family: "DM Sans", sans-serif;
@@ -220,6 +220,7 @@ a {
   white-space: nowrap;
   transform: translateY(-10px) translateX(-50%);
   left: 50%;
+  font-family: "DM Sans", sans-serif;
   /* color: black; */
   /* font-family: "Courier", sans-serif; */
   /* text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15); */
@@ -231,12 +232,13 @@ a {
   font-size: 11px;
   white-space: nowrap;
   font-weight: 500;
+  font-family: "DM Sans", sans-serif;
   opacity: 0.7;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin: 0;
   left: 50%;
-  color: rgb(60, 60, 60);
+  color: grey;
   transform: translateX(-50%) translateY(-7px);
 }
 
@@ -312,7 +314,6 @@ a {
   align-items: center;
   justify-content :center;
   text-align :center;
-  background: rgba(255, 255, 255, 0.25);
   margin-top: auto;
   position: sticky;
   bottom: 0;
@@ -409,7 +410,7 @@ a {
 
 .card-item-desc {
   font-size: 11px;
-  color: black;
+  color: grey;
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
 }
