@@ -656,7 +656,7 @@ a {
   transition: 0.5s;
   color: #2d5cfe;
   padding-right: 15px;
-  top: 7px;
+  top: 8px;
   /* border-right: 5px solid #dfe2ec; */
 }
 .card-contact .title-cont {
@@ -666,9 +666,9 @@ a {
   left: 15px;
   bottom: 1px;
   font-weight: 700;
-  letter-spacing: 0.1rem;
   color: #2d5cfe;
   font-family: "DM Sans", sans-serif;
+  white-space: nowrap;
 }
 .fab {
   font-size: 20px;
