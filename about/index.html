@@ -27,7 +27,7 @@
       }
     </style>
   </head>
-  <body onload="init()">
+  <body onload="wifi_loader()">
     <div id="wifi-loader">
     <svg class="circle-outer" viewBox="0 0 86 86">
         <circle class="back" cx="43" cy="43" r="40"></circle>
@@ -199,6 +199,13 @@
         var e = document.getElementById("myAudio"); 
         (e.volume = 0.15), e.play();
       }
+    </script>
+    <script>
+      function wifi_loader() {
+                setTimeout(function(){
+                    $("#wifi-loader").hide();
+                },delay);
+            };
     </script>
   </body>
 </html>
