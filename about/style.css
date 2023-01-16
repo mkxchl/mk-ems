@@ -424,6 +424,16 @@ a {
   /* text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15); */
 }
 
+.card-fullname::before {
+  color: var(--text-color);
+}
+
+.card-fullname::after {
+  color: var(--front-color);
+  animation: text-animation76 3.6s ease infinite;
+  position: absolute;
+  left: 0;
+}
 .card-jobtitle {
   position: absolute;
   bottom: 0;
