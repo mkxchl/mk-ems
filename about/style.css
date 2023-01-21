@@ -106,6 +106,7 @@ body.dark-theme {
   flex-direction: column;
   border-radius: 30px;
   background: #ecf0f3;
+  text-align: center;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
 .mk-cont {
