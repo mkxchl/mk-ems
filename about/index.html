@@ -12,9 +12,14 @@
     <meta property="og:author" content="Chellxz" />
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
+    <!-- Fonts Link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- CSs Style -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Image URL -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <title>About | Mk</title>
@@ -27,26 +32,11 @@
       }
     </style>
   </head>
-  <body onload="loader()">
-<!--     <div id="wifi-loader">
-    <svg class="circle-outer" viewBox="0 0 86 86">
-        <circle class="back" cx="43" cy="43" r="40"></circle>
-        <circle class="front" cx="43" cy="43" r="40"></circle>
-        <circle class="new" cx="43" cy="43" r="40"></circle>
-    </svg>
-    <svg class="circle-middle" viewBox="0 0 60 60">
-        <circle class="back" cx="30" cy="30" r="27"></circle>
-        <circle class="front" cx="30" cy="30" r="27"></circle>
-    </svg>
-    <svg class="circle-inner" viewBox="0 0 34 34">
-        <circle class="back" cx="17" cy="17" r="14"></circle>
-        <circle class="front" cx="17" cy="17" r="14"></circle>
-    </svg>
-    <div class="text" data-text="Searching"></div>
-</div> -->
+  <body>
     <div class="card overflow" data-state="#home">
       <div class="card-header">
         <div class="card-cover"></div>
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
         <img class="card-avatar" src="/assets/images/mk-anime-1.jpg" alt="avatar" />
         <h1 class="card-fullname">Marchell Kevandra</h1>
         <h2 class="card-jobtitle">Be your self</h2>
@@ -56,8 +46,6 @@
           <div class="card-content">
             <div class="card-subtitle">
               <p class="mk-cont">Bangkit dari sebuah kehancuran, dan hancur lagi karena sebuah harapan.</p>
-              <!-- <input type='text' id='textcari' class="search" placeholder='cari di sini' autofocus></input>
-                <span class='tombolcari' class="cari-aja" onclick='cariok()'>cari</span> -->
             </div>
           </div>
           <a href="https://mk-links.netlify.app/"><button class="btn-home">Get Started</button></a>
@@ -93,10 +81,6 @@
           <div class="card-content">
             <!-- <div class="card-subtitle">Contact Me</div> -->
             <div class="card-contact-wrapper">
-              <div class="card-contact" onclick="location.href='https://tiktok.com/mkxchl'">
-                <i class="fas bx bxl-tiktok"></i>
-                <p class="title-cont">Tik Tok</p>
-              </div>
               <div class="card-contact" onclick="location.href='https://instagram.com/chellgnzxz_'">
                 <i class="fab fa-instagram"></i>
                 <p class="title-cont">Instagram</p>
@@ -105,36 +89,21 @@
                 <i class="fas bx bxl-telegram"></i>
                 <p class="title-cont">Telegram</p>
               </div>
+              <div class="card-contact" onclick="location.href='https://tiktok.com/mkxchl'">
+                <i class="fas bx bxl-tiktok"></i>
+                <p class="title-cont">Tiktok</p>
+              </div>
               <div class="card-contact" onclick="location.href='https://twitter.com/marchellkevandra'">
                 <i class="fas bx bxl-twitter"></i>
                 <p class="title-cont">Twitter</p>
               </div>
-              <!-- <div class="card-contact">
-                <i class="fas bx bxl-soundcloud"></i>
-                <p class="title-cont">SoundCloud</p>
-              </div> -->
             </div>
           </div>
         </div>
-        <!-- <div class="card-section" id="about">
-          <div class="card-content">
-            <div class="card-contact-wrapper">
-              <div class="card-contact" onclick="location.href='https://soundcloud.com/marchellkevandra'">
-                <i class="fas bx bxl-soundcloud"></i>
-                <p class="title-cont">Soundcloud</p>
-              </div>
-              <div class="card-contact" onclick="location.href='https://appscrck.netlify.app'">
-                <i class="fas bx bx-code-alt"></i>
-                <p class="title-cont">APK Modder</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="card-buttons">
           <button data-section="#home" class="is-active">HOME</button>
           <button data-section="#profile" onClick="playMyAudio()">PROFILE</button>
           <button data-section="#contact">CONTACT</button>
-          <!-- <button data-section="#about">ABOUT</button> -->
         </div>
       </div>
     </div>
@@ -143,23 +112,23 @@
         <i class="bx bx-right-arrow"></i>
       </span>
       <div class="media-icons">
-        <a style="background: #2d5cfe">
-          <i class="bx bxl-deezer" onClick="playMyAudio()"></i>
-          <span class="tooltip" style="color: #e60023">Music</span>
+        <a style="background: #2d5cfe; cursor: pointer" class="read">
+          <i class="bx bxs-bell-ring"></i>
+          <span class="tooltip" style="color: #e60023">Update</span>
         </a>
-        <a onclick="location.href='/menja/'" style="background: #2d5cfe">
+        <a onclick="location.href='/menja/'" style="background: #2d5cfe; cursor: pointer">
           <i class="bx bx-joystick"></i>
           <span class="tooltip" style="color: #e60023">Games</span>
         </a>
-        <a onclick="location.href='/'" style="background: #2d5cfe">
+        <a onclick="location.href='/'" style="background: #2d5cfe; cursor: pointer">
           <i class="bx bx-link"></i>
           <span class="tooltip" style="color: #ff0000">Website</span>
         </a>
-        <a href="#" style="background: #2d5cfe">
+        <a href="#" style="background: #2d5cfe; cursor: pointer">
           <i class="bx bx-code"></i>
           <span class="tooltip" style="color: #e60023">Project</span>
         </a>
-        <a onclick="location.href='https://chellxz.ml/home/bucin/'" style="background: #2d5cfe">
+        <a onclick="location.href='https://chellxz.ml/home/bucin/'" style="background: #2d5cfe; cursor: pointer">
           <i class="bx bxs-book-heart"></i>
           <span class="tooltip" style="color: #e60023">Love</span>
         </a>
@@ -172,42 +141,18 @@
       <div class="four"></div>
       <div class="five"></div>
     </div>
-    <!-- <svg>
-      <filter id="wavy">
-        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2" >
-        </feTurbulence>
-        <feDisplacementMap in="SourceGraphic" scale="30"/>
-    </svg> -->
+    <div class="modal" id="modal1">
+      <div class="modal-dialog">
+        <section class="modal-content"><b> Update Info </b> .<br /><br />- New Dark Theme Mode<br /><br />- New Icon Menu<br /></section>
+      </div>
+    </div>
     <audio autoplay="true" id="myAudio">
       <source src="/mix/mk-anime-song.mp3" type="audio/mpeg" />
     </audio>
-    <!-- <iframe width="0" height="0" src="/mix/mk-anime-song.mp3" frameborder="0" allowfullscreen> </iframe> -->
-    <!-- add style js -->
+    <!-- Style js -->
     <script type="text/javascript" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-      const closeBtn = document.querySelector(".close-btn");
-
-      closeBtn.addEventListener("click", () => {
-        closeBtn.classList.toggle("open");
-      });
-    </script>
-    <!-- Audio  -->
-    <script>
-      function playMyAudio() {
-        var e = document.getElementById("myAudio"); 
-        (e.volume = 0.15), e.play();
-      }
-    </script>
-    <script>
-      var delay = 10000;
-      function loader() {
-                setTimeout(function(){
-                    $("#wifi-loader").hide();
-                },delay);
-            };
-    </script>
   </body>
 </html>
