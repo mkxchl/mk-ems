@@ -73,18 +73,3 @@ const closeBtn = document.querySelector(".close-btn");
       closeBtn.addEventListener("click", () => {
         closeBtn.classList.toggle("open");
       });
-    </script>
-    <!-- Audio  -->
-    <script>
-      function playMyAudio() {
-        var e = document.getElementById("myAudio");
-        (e.volume = 0.15), e.play();
-      }
-    </script>
-    <script>
-      var delay = 10000;
-      function loader() {
-        setTimeout(function () {
-          $("#wifi-loader").hide();
-        }, delay);
-      }
