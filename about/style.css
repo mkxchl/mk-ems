@@ -106,6 +106,7 @@ body.dark-theme {
   border-radius: 30px;
   background: #ecf0f3;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  top: 1px;
 }
 .mk-cont {
   font-size: 12px;
