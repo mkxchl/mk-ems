@@ -115,7 +115,7 @@ body.dark-theme {
   margin-top: -10px;
   font-family: "DM Sans", sans-serif;
   position: relative;
-  right: 20px;
+  right: 5px;
   justify-contnet: center;
   align-items: center;
   animation: animateBx 2.5s linear infinite;
