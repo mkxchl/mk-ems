@@ -95,6 +95,7 @@ body.dark-theme {
 }
 .card {
   max-width: 340px;
+  width: 300px;
   position: relative;
   /* margin: auto; */
   overflow-y: hidden;
@@ -115,7 +116,7 @@ body.dark-theme {
   margin-top: -10px;
   font-family: "DM Sans", sans-serif;
   position: relative;
-  right: 5px;
+  text-align: center;
   justify-contnet: center;
   align-items: center;
   animation: animateBx 2.5s linear infinite;
