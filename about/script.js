@@ -62,7 +62,6 @@ if (selectedTheme) {
 }
 
 themeButton.addEventListener("click", () => {
-  // Add or remove the dark / icon theme
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
   localStorage.setItem("selected-theme", getCurrentTheme());
@@ -70,6 +69,6 @@ themeButton.addEventListener("click", () => {
 });
 const closeBtn = document.querySelector(".close-btn");
 
-      closeBtn.addEventListener("click", () => {
-        closeBtn.classList.toggle("open");
-      });
+closeBtn.addEventListener("click", () => {
+  closeBtn.classList.toggle("open");
+});
