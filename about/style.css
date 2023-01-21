@@ -109,7 +109,8 @@ body.dark-theme {
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
 .mk-cont {
-  font-size: 10px;
+  font-size: 12px;
+  width: 340px;
   color: grey;
   font-weight: 300;
   margin-top: -10px;
@@ -497,7 +498,7 @@ body.dark-theme {
   width: 70%;
   border-radius: 15px;
   margin: 45px;
-  margin-top: -20px;
+  margin-top: 10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 900;
