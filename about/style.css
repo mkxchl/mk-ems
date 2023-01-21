@@ -129,7 +129,7 @@ body.dark-theme {
   padding-top: 0;
   transition: 0.5s;
   height: 380px;
-  width: 340px;
+/*   width: 340px; */
 }
 
 .card[data-state="#contact"] {
