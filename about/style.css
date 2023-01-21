@@ -94,7 +94,7 @@ body.dark-theme {
   background-color: hsl(var(--hue), 8%, 32%);
 }
 .card {
-  max-width: 340px;
+  max-width: 350px;
   position: relative;
   /* margin: auto; */
   overflow-y: hidden;
@@ -123,13 +123,13 @@ body.dark-theme {
 .card[data-state="#home"] {
   height: 380px;
   transition: 0.5s;
-  width: 380px;
+  width: 350px;
 }
 .card[data-state="#home"] .card-main {
   padding-top: 0;
   transition: 0.5s;
   height: 380px;
-  width: 380px;
+  width: 350px;
 }
 
 .card[data-state="#contact"] {
