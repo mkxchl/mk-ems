@@ -106,7 +106,6 @@ body.dark-theme {
   flex-direction: column;
   border-radius: 30px;
   background: #ecf0f3;
-  text-align: center;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
 .mk-cont {
@@ -115,8 +114,8 @@ body.dark-theme {
   font-weight: 300;
   margin-top: -10px;
   font-family: "DM Sans", sans-serif;
-  text-align: center;
   position: relative;
+  right: 20px;
   justify-contnet: center;
   align-items: center;
   animation: animateBx 2.5s linear infinite;
