@@ -102,7 +102,7 @@ body.dark-theme {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
-  top: 10px;
+  top: 5px;
   flex-direction: column;
   border-radius: 30px;
   background: #ecf0f3;
