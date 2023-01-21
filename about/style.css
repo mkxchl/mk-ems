@@ -119,6 +119,7 @@ body.dark-theme {
   justify-contnet: center;
   align-items: center;
   animation: animateBx 2.5s linear infinite;
+  right: 10px;
 }
 .card[data-state="#home"] {
   height: 380px;
