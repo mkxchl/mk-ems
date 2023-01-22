@@ -134,7 +134,7 @@ body.dark-theme {
 }
 
 .card[data-state="#contact"] {
-  height: 350px;
+  height: 380px;
   width: 340px;
   transition: 0.5s;
   color: #2d5cfe;
