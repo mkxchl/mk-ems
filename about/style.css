@@ -74,6 +74,13 @@ body.dark-theme {
 .card-buttons button:hover {
   background-color: #212121;
 }
+.dark-theme .modal {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dark-theme .modal .modal-dialog {
+  background-color: #212121;
+  color: black;
+}
 .dark-theme .button__gray:hover {
   background-color: hsl(var(--hue), 24%, 16%);
 }
@@ -102,11 +109,11 @@ body.dark-theme {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
+  top: 10px;
   flex-direction: column;
   border-radius: 30px;
   background: #ecf0f3;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
-  top: -10px;
 }
 .mk-cont {
   font-size: 12px;
@@ -124,17 +131,17 @@ body.dark-theme {
 .card[data-state="#home"] {
   height: 390px;
   transition: 0.5s;
-  width: 350px;
+  width: 380px;
 }
 .card[data-state="#home"] .card-main {
   padding-top: 0;
   transition: 0.5s;
-  height: 380px;
-/*   width: 340px; */
+  height: 390px;
+  /* width: 380; */
 }
 
 .card[data-state="#contact"] {
-  height: 400px;
+  height: 310px;
   width: 340px;
   transition: 0.5s;
   color: #2d5cfe;
@@ -252,6 +259,16 @@ body.dark-theme {
   position: absolute;
   left: 0;
 }
+.mk-cont::before {
+  color: var(--text-color);
+}
+
+.mk-cont::after {
+  color: var(--text-color-light);
+  animation: text-animation76 3.6s ease infinite;
+  position: absolute;
+  left: 0;
+}
 .card-jobtitle {
   position: absolute;
   bottom: 0;
@@ -290,6 +307,8 @@ body.dark-theme {
 
 .card-content {
   padding: 20px;
+  overflow-y: auto;
+  max-height: 500px;
 }
 
 .card-desc {
@@ -373,16 +392,30 @@ body.dark-theme {
   color: grey;
   z-index: 1;
 }
-
 .card-section {
   display: none;
+  overflow-y: auto;
+  max-height: 400px;
+}
+.card-section::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.card-section::-webkit-scrollbar-track {
+  background: rgb(106, 106, 106);
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+  border-radius: 25px;
+}
+.card-section::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #4ab1ff, #2d5cfe);
+  border-radius: 25px;
 }
 .card-section.is-active {
   display: block;
   animation: fadeIn 0.6s both;
 }
 .card-timeline {
-  margin-top: 30px;
+  margin-top: 10px;
   position: relative;
 }
 .card-timeline:after {
@@ -498,8 +531,7 @@ body.dark-theme {
   width: 70%;
   border-radius: 15px;
   margin: 45px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: -10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 900;
@@ -597,6 +629,15 @@ h2 {
   transition: all 0.5s linear;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
+.mk-tool {
+  background: #2d5cfe;
+  cursor: pointer;
+}
+.mk-tool:hover {
+  transform: scale(1.1);
+  color: black;
+  transition: 0.5s;
+}
 a:hover .tooltip {
   opacity: 1;
   transform: translateY(0);
@@ -630,8 +671,8 @@ a:hover .tooltip {
   top: 160px;
 }
 .close-btn.open {
-  transform: rotate(180deg);
-  background-color: #de0611;
+  transform: rotate(360deg);
+  background-color: #2d5cfe;
 }
 .heart {
   background-color: #d62828;
@@ -758,7 +799,9 @@ a:hover .tooltip {
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.5s ease-in;
+  /* transition: all 0.5s ease-in; */
+  animation: up 1.5s both;
+  transition: 0.5s;
   overflow: hidden;
   box-shadow: 0 0 10px black;
   z-index: 9999;
@@ -774,6 +817,9 @@ a:hover .tooltip {
   background: #fbfbfb;
   overflow: hidden;
   cursor: default;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  transition: 0.5s;
+  border-radius: 15px;
 }
 
 .modal-dialog > * {
@@ -819,6 +865,93 @@ a:hover .tooltip {
 
 .modal-content::-webkit-scrollbar {
   display: none;
+}
+.game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  /* background: black; */
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  /* transition: all 0.5s ease-in; */
+  animation: up 1.5s both;
+  transition: 0.5s;
+  overflow: hidden;
+  box-shadow: 0 0 10px black;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+}
+
+.games-dialog {
+  position: relative;
+  max-width: 800px;
+  width: 300px;
+  max-height: 100vh;
+  border-radius: 5px;
+  background: #fbfbfb;
+  overflow: hidden;
+  cursor: default;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.games-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+  background: var(--lightgray);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header .modal-close {
+  font-size: 1.5rem;
+}
+
+.game p + p {
+  margin-top: 1rem;
+}
+
+.games {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.game.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.games-content {
+  scrollbar-width: none;
+  background-color: #fbfbfb;
+  box-shadow: 0 0 10px black;
+  padding: 30px;
+}
+
+.games-content::-webkit-scrollbar {
+  display: none;
+}
+.btn-games {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 /* ------------------------------------------------------------------------------------
   
