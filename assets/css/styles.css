@@ -66,8 +66,45 @@ img {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  /* background: #000000e0; */
   backdrop-filter: blur(10px);
+  inset: 4px;
+  /* background: #000000e0; */
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: 1;
+}
+/* .container::before {
+    content: '';
+    width: 35em;
+    height: 42em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(#ffff00, transparent, transparent, transparent);
+    animation: animateAll 4s linear infinite;
+}
+.container::after {
+    content: '';
+    width: 35em;
+    height: 42em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(#ffff00, transparent, transparent, transparent);
+    animation: animateAll 4s linear infinite;
+    animation-delay: -2s;
+} */
+@keyframes animateAll {
+    0% {
+        filter: hue-rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
 }
 .mywindow {
   width: 500px;
@@ -227,7 +264,6 @@ img {
 .mybuttonyes {
   text-align: center;
   border-radius: 20px;
-  margin-left: 10px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -260,7 +296,6 @@ img {
   /* border-radius: 30px; */
   z-index: 2;
   /* box-shadow: 0 0 10px white; */
-  border-radius: 20px;
 }
 .myhide {
   display: none;
@@ -287,7 +322,7 @@ video {
 .mknet {
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   color: #fff;
   width: calc(100vw - 50px);
   padding: 20px;
@@ -337,7 +372,7 @@ video {
   }
 }
 #myVideo {
-  border-radius: 30px;
+  /* border-radius: 30px; */
 
 }
 /* Body Menu */
@@ -347,11 +382,14 @@ video {
   margin: 120px auto;
   border-radius: 10px;
   background: #ecf0f3;
+  transition: all 0.5s;
+  inset: 4px;
+  z-index: 4px;
   /* box-shadow: -5px -3px 10px #2d5cfe, 3px 3px 5px #ceced1; */
   /* transform:translate(-50%, -50%); */
   /* box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #3c87ff; */
   /* animation: animateBx 1.5s linear infinite; */
-  BORDER: 1px solid  #2d5cfe;
+  border: 1px solid  #2d5cfe;
 }
 . .bg-mk {
   backdrop-filter: blur(50px);
@@ -491,8 +529,16 @@ li {
   cursor: pointer;
   transform: scale(1.1);
   transition: 0.5s;
-  border-radius: 30px;
+  border-radius: 10px;
   animation: 0.5s;
+  border: 1px solid #000;
+}
+.hd {
+  position: relative;
+  margin-left: 10px;
+  left: -10px;
+  top: 3px;
+  font-size: 20px;
 }
 .task-box .task:last-child {
   margin-bottom: 0;
