@@ -388,7 +388,7 @@ body.dark-theme {
 .card-buttons button.is-active,
 .card-buttons button:hover {
   border-bottom: 5px solid #2d5cfe;
-  background: #ecf0f3;
+  /* background: #ecf0f3; */
   color: grey;
   z-index: 1;
 }
@@ -470,6 +470,12 @@ body.dark-theme {
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
 }
+.mk-items {
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+  color: #2d5cfe;
+}
 
 .card-contact-wrapper {
   margin-top: -10px;
@@ -522,6 +528,15 @@ body.dark-theme {
 }
 .fas {
   font-size: 20px;
+}
+.mk-nxt {
+  position: relative;
+  color: #2d5cfe;
+  padding-right: 15px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
 }
 .btn-home {
   /* border: 1pz solid rgba(232, 232, 232, 0.095); */
