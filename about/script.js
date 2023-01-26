@@ -1,3 +1,5 @@
+/// Button Card Body Active Function ///
+
 const buttons = document.querySelectorAll(".card-buttons button");
 const sections = document.querySelectorAll(".card-section");
 const card = document.querySelector(".card");
@@ -16,6 +18,9 @@ const handleButtonClick = (e) => {
 buttons.forEach((btn) => {
   btn.addEventListener("click", handleButtonClick);
 });
+
+/// Button Active Tooltips Function ///
+
 function domReady(fn) {
   document.addEventListener("DOMContentLoaded", fn);
   // If late; I mean on time.
@@ -48,6 +53,74 @@ domReady(() => {
       }
     });
 });
+function domReady(fn) {
+  document.addEventListener("DOMContentLoaded", fn);
+  // If late; I mean on time.
+  if (document.readyState === "interactive" || document.readyState === "complete") {
+    fn();
+  }
+}
+
+function domReady(fn) {
+  document.addEventListener("DOMContentLoaded", fn);
+  // If late; I mean on time.
+  if (document.readyState === "interactive" || document.readyState === "complete") {
+    fn();
+  }
+}
+
+domReady(() => {
+  document
+    .getElementsByClassName("mk-game")
+    .item(0)
+    .addEventListener("click", function () {
+      document.getElementsByClassName("game").item(0).classList.add("is-visible");
+    });
+  document
+    .getElementsByClassName("game")
+    .item(0)
+    .addEventListener("click", function (e) {
+      if (e.target.classList.contains("is-visible")) {
+        e.target.classList.remove("is-visible");
+      }
+    });
+});
+
+function domReady(fn) {
+  document.addEventListener("DOMContentLoaded", fn);
+  // If late; I mean on time.
+  if (document.readyState === "interactive" || document.readyState === "complete") {
+    fn();
+  }
+}
+
+function domReady(fn) {
+  document.addEventListener("DOMContentLoaded", fn);
+  // If late; I mean on time.
+  if (document.readyState === "interactive" || document.readyState === "complete") {
+    fn();
+  }
+}
+
+domReady(() => {
+  document
+    .getElementsByClassName("links")
+    .item(0)
+    .addEventListener("click", function () {
+      document.getElementsByClassName("link").item(0).classList.add("is-visible");
+    });
+  document
+    .getElementsByClassName("link")
+    .item(0)
+    .addEventListener("click", function (e) {
+      if (e.target.classList.contains("is-visible")) {
+        e.target.classList.remove("is-visible");
+      }
+    });
+});
+
+/// Dark Mode Function ///
+
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "ri-sun-line";
@@ -72,6 +145,14 @@ const closeBtn = document.querySelector(".close-btn");
 closeBtn.addEventListener("click", () => {
   closeBtn.classList.toggle("open");
 });
-function playMyAudio() {
-        document.getElementById("myAudio").play();
-      }
+
+function mkAlert() {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Sedang dalam perbaikan",
+    showConfirmButton: false,
+    position: "center",
+    timer: 5000,
+  });
+}
