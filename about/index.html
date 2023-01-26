@@ -33,6 +33,7 @@
     </style>
   </head>
   <body>
+    <!-- Card Body -->
     <div class="card overflow" data-state="#home">
       <div class="card-header">
         <div class="card-cover"></div>
@@ -50,6 +51,7 @@
           </div>
           <a href="https://mk-links.netlify.app/"><button class="btn-home">Get Started</button></a>
         </div>
+        <!-- Card Profile -->
         <div class="card-section" id="profile">
           <div class="card-content">
             <!-- <div class="card-subtitle">Biodata</div> -->
@@ -81,6 +83,7 @@
             </div>
           </div>
         </div>
+        <!-- Card Contact -->
         <div class="card-section" id="contact">
           <div class="card-content">
             <!-- <div class="card-subtitle">Contact Me</div> -->
@@ -100,6 +103,7 @@
             </div>
           </div>
         </div>
+        <!-- Card Button Active -->
         <div class="card-buttons">
           <button data-section="#home" class="is-active">HOME</button>
           <button data-section="#profile" onClick="playMyAudio()">PROFILE</button>
@@ -107,6 +111,7 @@
         </div>
       </div>
     </div>
+    <!-- Tooltip Menu -->
     <div class="container">
       <span class="close-btn">
         <i class="ri-align-left"></i>
@@ -116,15 +121,15 @@
           <i class="bx bxs-bell-ring"></i>
           <!-- <span class="tooltip" style="color: #e60023">Update</span> -->
         </a>
-        <a onclick="location.href='/menja/'" class="mk-tool">
+        <a class="mk-tool mk-game">
           <i class="bx bx-joystick"></i>
           <!-- <span class="tooltip" style="color: #e60023">Games</span> -->
         </a>
-        <a onclick="location.href='/'" class="mk-tool">
+        <a class="mk-tool" onclick="mkAlert()">
           <i class="bx bx-link"></i>
           <!-- <span class="tooltip" style="color: #ff0000">Website</span> -->
         </a>
-        <a href="#" class="mk-tool">
+        <a class="mk-tool" onclick="mkAlert()">
           <i class="bx bx-code"></i>
           <!-- <span class="tooltip" style="color: #e60023">Project</span> -->
         </a>
@@ -134,6 +139,7 @@
         </a>
       </div>
     </div>
+    <!-- Love Object -->
     <div class="hearts">
       <div class="one"></div>
       <div class="two"></div>
@@ -141,17 +147,35 @@
       <div class="four"></div>
       <div class="five"></div>
     </div>
+    <!-- Tooltip Active -->
     <div class="modal" id="modal1">
       <div class="modal-dialog">
-        <section class="modal-content"><b> Update Info </b> .<br /><br />- New Dark Theme Mode<br /><br />- New Icon Menu<br /></section>
+        <section class="modal-content">
+          <b> Update Info ! </b><br /><br />- New Dark Theme Mode<br /><br />- New Icon Menu<br />
+          <p class="mk-code">- Mk x Codes -</p>
+        </section>
+      </div>
+    </div>
+    <div class="game" id="games">
+      <div class="games-dialog">
+        <section class="games-content">
+          <b> Game List </b><br /><br />
+          <button class="btn-games">Brain Games</button>
+          <br />
+          <button class="btn-games">Menja Games</button>
+          <br />
+          <button class="btn-games">Snake Games</button>
+          <br />
+          <button class="btn-games">Tictac Games</button>
+        </section>
       </div>
     </div>
     <!-- Coming Soon -->
-    <!-- <div class="game" id="games">
-      <div class="games-dialog">
-        <section class="games-content">
-          <b> Game List </b> .<br /><br />
-          <button class="btn-games">Brain Games</button>
+    <!-- <div class="link" id="link">
+      <div class="links-dialog">
+        <section class="links-content">
+          <b> Update Info ! </b><br /><br />- New Dark Theme Mode<br /><br />- New Icon Menu<br />
+          <p class="mk-code">- Mk x Codes -</p>
         </section>
       </div>
     </div> -->
@@ -163,5 +187,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
