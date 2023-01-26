@@ -156,3 +156,6 @@ function mkAlert() {
     timer: 5000,
   });
 }
+function playMyAudio() {
+        document.getElementById("myAudio").play();
+      }
