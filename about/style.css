@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-      Blue: hsl(207, 90%, 61%)
-      Purple: hsl(250, 66%, 75%)
-      Pink: hsl(356, 66%, 75%)
-      Teal: hsl(174, 63%, 62%)
-  */
-
   --hue: 207;
   --sat: 90%;
   --lig: 61%;
@@ -22,7 +13,6 @@
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
   --body-color: #fff;
   --container-color: #fff;
-
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
@@ -38,7 +28,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: 0.3s; /* For animation dark mode */
+  transition: 0.5s; /* For animation dark mode */
   justify-content: center;
   align-items: center;
   display: flex;
@@ -57,6 +47,7 @@ body {
 }
 .change-theme:hover {
   color: var(--first-color);
+  transform: rotate(360deg);
 }
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
@@ -72,12 +63,19 @@ body.dark-theme {
 }
 .dark-theme .card-buttons button.is-active,
 .card-buttons button:hover {
-  background-color: #212121;
+  background-color: transparent;
 }
 .dark-theme .modal {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .dark-theme .modal .modal-dialog {
+  background-color: #212121;
+  color: black;
+}
+.dark-theme .game {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dark-theme .game .games-dialog {
   background-color: #212121;
   color: black;
 }
@@ -126,17 +124,17 @@ body.dark-theme {
   align-items: center;
   animation: animateBx 2.5s linear infinite;
   right: 10px;
-  margin-top: -10px;
+  margin-top: -30px;
 }
 .card[data-state="#home"] {
-  height: 390px;
+  height: 360px;
   transition: 0.5s;
   width: 380px;
 }
 .card[data-state="#home"] .card-main {
   padding-top: 0;
   transition: 0.5s;
-  height: 390px;
+  height: 360px;
   /* width: 380; */
 }
 
@@ -328,12 +326,14 @@ body.dark-theme {
   margin: 0px 62px;
   margin-bottom: 4px;
 }
+
 .card-social svg {
   fill: #a5b5ce;
   width: 16px;
   display: block;
   transition: 0.3s;
 }
+
 .card-social a {
   color: #8797a1;
   height: 32px;
@@ -347,9 +347,11 @@ body.dark-theme {
   border-radius: 50%;
   margin-right: 10px;
 }
+
 .card-social a:hover svg {
   fill: #637faa;
 }
+
 .card-social a:last-child {
   margin-right: 0;
 }
@@ -365,6 +367,7 @@ body.dark-theme {
   left: 0;
   font-weight: 900;
 }
+
 .card-buttons button {
   flex: 2 2 auto;
   user-select: none;
@@ -436,9 +439,11 @@ body.dark-theme {
   padding-bottom: 30px;
   z-index: 1;
 }
+
 .card-item:last-child {
   padding-bottom: 5px;
 }
+
 .card-item:after {
   content: attr(data-year);
   width: 10px;
@@ -896,8 +901,8 @@ a:hover .tooltip {
   visibility: hidden;
   opacity: 0;
   /* transition: all 0.5s ease-in; */
-  animation: up 1.5s both;
-  transition: 0.5s;
+  animation: up 1s both;
+  transition: 1s;
   overflow: hidden;
   box-shadow: 0 0 10px black;
   z-index: 9999;
@@ -962,11 +967,111 @@ a:hover .tooltip {
 .games-content::-webkit-scrollbar {
   display: none;
 }
+.link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  /* background: black; */
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  /* transition: all 0.5s ease-in; */
+  animation: up 1s both;
+  transition: 1s;
+  overflow: hidden;
+  box-shadow: 0 0 10px black;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+}
+
+.links-dialog {
+  position: relative;
+  max-width: 800px;
+  width: 300px;
+  max-height: 100vh;
+  border-radius: 5px;
+  background: #fbfbfb;
+  overflow: hidden;
+  cursor: default;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.links-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+  background: var(--lightgray);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header .modal-close {
+  font-size: 1.5rem;
+}
+
+.link p + p {
+  margin-top: 1rem;
+}
+
+.links {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.link.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.links-content {
+  scrollbar-width: none;
+  background-color: #fbfbfb;
+  box-shadow: 0 0 10px black;
+  padding: 30px;
+}
+
+.links-content::-webkit-scrollbar {
+  display: none;
+}
 .btn-games {
   padding: 5px;
   background-color: black;
   color: white;
   cursor: pointer;
+  margin-bottom: 10px;
+  width: 240px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.btn-games:hover {
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.mk-code {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
 }
 /* ------------------------------------------------------------------------------------
   
