@@ -140,6 +140,7 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
 const closeBtn = document.querySelector(".close-btn");
 
 closeBtn.addEventListener("click", () => {
@@ -149,13 +150,14 @@ closeBtn.addEventListener("click", () => {
 function mkAlert() {
   Swal.fire({
     icon: "error",
-    title: "Oops...",
-    text: "Sedang dalam perbaikan",
-    showConfirmButton: false,
+    title: "Sedang dalam perbaikan, Thanks!",
+    toast: true,
     position: "center",
-    timer: 5000,
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
   });
 }
 function playMyAudio() {
-        document.getElementById("myAudio").play();
-      }
+  document.getElementById("myAudio").play();
+}
