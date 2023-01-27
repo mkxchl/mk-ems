@@ -32,7 +32,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="mk-box">
     <!-- Card Body -->
     <div class="card overflow" data-state="#home">
       <div class="card-header">
@@ -49,7 +49,7 @@
               <p class="mk-cont">Bangkit dari sebuah kehancuran, dan hancur lagi karena sebuah harapan.</p>
             </div>
           </div>
-          <a href="https://mk-links.netlify.app/"><button class="btn-home">Get Started</button></a>
+          <a onclick="mkWebsite()"><button class="btn-home">Get Started</button></a>
         </div>
         <!-- Card Profile -->
         <div class="card-section" id="profile">
@@ -88,17 +88,21 @@
           <div class="card-content">
             <!-- <div class="card-subtitle">Contact Me</div> -->
             <div class="card-contact-wrapper">
-              <div class="card-contact" onclick="location.href='https://instagram.com/chellgnzxz_'">
+              <div class="card-contact" onclick="mkInstagram()">
                 <i class="fab fa-instagram"></i>
                 <p class="title-cont">Instagram</p>
               </div>
-              <div class="card-contact" onclick="location.href='https://facebook.com/marchel.ganz'">
+              <div class="card-contact" onclick="mkFacebook()">
                 <i class="fas bx bxl-facebook"></i>
                 <p class="title-cont">Facebook</p>
               </div>
-              <div class="card-contact" onclick="location.href='https://tiktok.com/mkxchl'">
+              <div class="card-contact" onclick="mkTiktok()">
                 <i class="fas bx bxl-tiktok"></i>
                 <p class="title-cont">Tiktok</p>
+              </div>
+              <div class="card-contact" onclick="mkMusic()">
+                <i class="fas bx bxl-deezer"></i>
+                <p class="title-cont">Music</p>
               </div>
             </div>
           </div>
@@ -117,7 +121,7 @@
         <i class="ri-align-left"></i>
       </span>
       <div class="media-icons">
-        <a class="read mk-tool">
+        <a class="mk-tool read">
           <i class="bx bxs-bell-ring"></i>
           <!-- <span class="tooltip" style="color: #e60023">Update</span> -->
         </a>
@@ -133,7 +137,7 @@
           <i class="bx bx-code"></i>
           <!-- <span class="tooltip" style="color: #e60023">Project</span> -->
         </a>
-        <a onclick="location.href='https://chl-bcn.netlify.app/'" class="mk-tool">
+        <a class="mk-tool" onclick="mkBucin()">
           <i class="bx bxs-book-heart"></i>
           <!-- <span class="tooltip" style="color: #e60023">Love</span> -->
         </a>
