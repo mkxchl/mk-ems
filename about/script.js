@@ -154,10 +154,31 @@ function mkAlert() {
     toast: true,
     position: "center",
     showConfirmButton: false,
-    timer: 3000,
+    timer: 5000,
     timerProgressBar: true,
   });
 }
 function playMyAudio() {
   document.getElementById("myAudio").play();
+}
+
+/// Function Link  ///
+
+function mkMusic() {
+  window.location.replace("https://www.google.com/search?q=Marchell+Kevandra");
+}
+function mkFacebook() {
+  window.location.replace("https://www.facebook.com/marchel.ganz");
+}
+function mkInstagram() {
+  window.location.replace("https://www.instagram.com/chellgnzxz_");
+}
+function mkTiktok() {
+  window.location.replace("https://www.tiktok.com/mkxchl");
+}
+function mkWebsite() {
+  window.location.replace("https://mk-links.netlify.app/");
+}
+function mkBucin() {
+  window.location.replace("https://chl-bcn.netlify.app/");
 }
