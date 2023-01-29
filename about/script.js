@@ -441,3 +441,16 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 }
+
+var textArray = ["Be your self", "Be carefull", "I Love Girl"];
+var currentIndex = 0;
+var currentText = "";
+
+var interval = setInterval(function () {
+  if (currentIndex == textArray.length) {
+    currentIndex = 0;
+  }
+  currentText = textArray[currentIndex];
+  document.getElementById("text-display").innerHTML = currentText;
+  currentIndex++;
+}, 5000);
