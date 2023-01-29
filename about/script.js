@@ -453,4 +453,4 @@ var interval = setInterval(function () {
   currentText = textArray[currentIndex];
   document.getElementById("text-display").innerHTML = currentText;
   currentIndex++;
-}, 5000);
+}, 2000);
