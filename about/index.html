@@ -32,7 +32,7 @@
       }
     </style>
   </head>
-  <body class="mk-box">
+  <body onload="init()">
     <!-- Card Body -->
     <div class="card overflow" data-state="#home">
       <div class="card-header">
@@ -49,7 +49,7 @@
               <p class="mk-cont">Bangkit dari sebuah kehancuran, dan hancur lagi karena sebuah harapan.</p>
             </div>
           </div>
-          <a onclick="mkWebsite()"><button class="btn-home">Get Started</button></a>
+          <a><button class="btn-home">Get Started</button></a>
         </div>
         <!-- Card Profile -->
         <div class="card-section" id="profile">
@@ -110,7 +110,7 @@
         <!-- Card Button Active -->
         <div class="card-buttons">
           <button data-section="#home" class="is-active">HOME</button>
-          <button data-section="#profile" onClick="playMyAudio()">PROFILE</button>
+          <button data-section="#profile" onClick="playMyAudio()" class="hati">PROFILE</button>
           <button data-section="#contact">CONTACT</button>
         </div>
       </div>
@@ -183,11 +183,17 @@
         </section>
       </div>
     </div> -->
+    <form action="" method="get">
+      <input type="hidden" name="by" />
+    </form>
     <audio id="myAudio">
       <source src="/mix/mk-anime-song.mp3" type="audio/mpeg" />
     </audio>
-    <!-- Style js -->
+    <!-- Style JS -->
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="/assets/js/query.min.js"></script>
+    <!-- Library JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
