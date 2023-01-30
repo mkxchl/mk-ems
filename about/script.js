@@ -442,7 +442,7 @@ function confetti() {
   if (!onlyOnKonami) poof();
 }
 
-var textArray = ["Be your self", "Be carefull", "I Love Girl"];
+var textArray = ["Games", "Football", "Basketball", "Sleep", "Love you"];
 var currentIndex = 0;
 var currentText = "";
 
