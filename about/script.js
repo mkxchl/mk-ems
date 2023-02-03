@@ -442,7 +442,7 @@ function confetti() {
   if (!onlyOnKonami) poof();
 }
 
-var textArray = ["Games", "Football", "Basketball", "Sleep", "Love you"];
+var textArray = ["Belajar memang melelahkan, namun akan lebih melelahkan lagi bila saat ini kamu tidak belajar", "Hidup bukan tentang mendapatkan apa yang kamu inginkan, tapi tentang menghargai apa yang kamu miliki dan sabar menanti apa yang akan menghampiri", "Tak perlu menjadi serba bisa, tekuni salah satu bidang yang Kamu suka dan menjadi hebat lah dengannya"];
 var currentIndex = 0;
 var currentText = "";
 
