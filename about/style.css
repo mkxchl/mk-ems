@@ -107,7 +107,7 @@ body.dark-theme {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
-  top: 30px;
+  top: 50px;
   flex-direction: column;
   border-radius: 30px;
   background: #ecf0f3;
@@ -136,7 +136,6 @@ body.dark-theme {
   transition: 0.5s;
   height: 360px;
   /* width: 380; */
-  top: 30px;
 }
 
 .card[data-state="#contact"] {
