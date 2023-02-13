@@ -62,7 +62,7 @@ section {
   display: flex;
   padding: 10px;
   background: rgba(0, 0, 0, 0);
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 10px 0;
   cursor: pointer;
   transition: 0.5s;
@@ -76,10 +76,19 @@ section {
 .box .list-links:hover {
   background: #fff;
   box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+  transform: scale(1);
   z-index: 1000;
   color: black;
   transition: 0.5s;
+}
+.list-links:hover .bx {
+  color: black;
+}
+.list-links:hover h4 {
+  color: red;
+}
+.list-links:hover .mk-next {
+  color: red;
 }
 .box h3 {
   color: #2d5cfe;
