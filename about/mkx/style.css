@@ -28,6 +28,7 @@ section {
 .box {
   position: relative;
   min-width: 300px;
+  max-height: 400px;
   width: 200px;
   /* height: 300px; */
   background: #fff;
@@ -38,8 +39,10 @@ section {
   padding: 20px;
   animation: fadeIn 2.5s;
   overflow-y: auto;
-  max-height: 400px;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
+}
+.mk-box {
+  max-height: 500px;
 }
 .box::-webkit-scrollbar {
   width: 5px;
