@@ -83,12 +83,15 @@ section {
 }
 .list-links:hover .bx {
   color: black;
+  transition: 0.5s;
 }
 .list-links:hover h4 {
   color: red;
+  transition: 0.5s;
 }
 .list-links:hover .mk-next {
   color: red;
+  transition: 0.5s;
 }
 .box h3 {
   color: #2d5cfe;
