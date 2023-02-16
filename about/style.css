@@ -47,7 +47,6 @@ body {
 }
 .change-theme:hover {
   color: var(--first-color);
-  transform: rotate(360deg);
 }
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
