@@ -49,7 +49,7 @@ body {
   color: var(--first-color);
 }
 body.dark-theme {
-  background: url('/assets/images/mkxchl-bg.gif');
+  background-image: url('/assets/images/mkxchl-bg.gif');
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
   /*  --body-color: hsl(var(--hue), 40%, 8%); */
