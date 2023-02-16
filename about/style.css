@@ -43,7 +43,7 @@ body {
   font-size: 1.25rem;
   color: #2d5cfe;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 1s;
 }
 .change-theme:hover {
   color: var(--first-color);
@@ -58,6 +58,7 @@ body.dark-theme {
   --text-color: hsl(var(--hue), 12%, 75%);
   /*  --body-color: hsl(var(--hue), 40%, 8%); */
   --container-color: hsl(var(--hue), 24%, 12%);
+  transition: 1s;
 }
 .dark-theme .card {
   background-color: #212121;
