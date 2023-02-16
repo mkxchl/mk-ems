@@ -49,9 +49,10 @@ body {
   color: var(--first-color);
 }
 body.dark-theme {
+  background: url('/assets/images/mkxchl-bg.gif');
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
-  --body-color: hsl(var(--hue), 40%, 8%);
+  /*  --body-color: hsl(var(--hue), 40%, 8%); */
   --container-color: hsl(var(--hue), 24%, 12%);
 }
 .dark-theme .card {
