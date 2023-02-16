@@ -50,6 +50,10 @@ body {
 }
 body.dark-theme {
   background-image: url('/assets/images/mkxchl-bg.gif');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
   /*  --body-color: hsl(var(--hue), 40%, 8%); */
