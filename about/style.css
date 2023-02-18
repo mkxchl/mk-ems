@@ -529,9 +529,9 @@ body.dark-theme {
   background: rgba(0, 0, 0, 0.095);
   color: white;
 }
-/* .card-contact + .card-contact {
-  margin-top: 10px;
-} */
+.card-contact-wrapper {
+  margin-top: -10px;
+}
 .card-contact i {
   flex-shrink: 0;
   width: 35px;
