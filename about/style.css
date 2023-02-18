@@ -43,7 +43,7 @@ body {
   font-size: 1.25rem;
   color: #2d5cfe;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 .change-theme:hover {
   color: var(--first-color);
@@ -84,6 +84,12 @@ body.dark-theme {
   background-color: #212121;
   color: black;
 }
+.dark-theme .btn-home {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dark-theme .card-conta {
+  border: 1px solid #4a4a4a;
+}
 .dark-theme .button__gray:hover {
   background-color: hsl(var(--hue), 24%, 16%);
 }
@@ -112,7 +118,7 @@ body.dark-theme {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
-  top: 20px;
+  top: 10px;
   flex-direction: column;
   border-radius: 5px;
   background: #ecf0f3;
@@ -144,7 +150,7 @@ body.dark-theme {
 }
 
 .card[data-state="#contact"] {
-  height: 350px;
+  height: 370px;
   width: 340px;
   transition: 0.5s;
   color: #2d5cfe;
@@ -155,7 +161,7 @@ body.dark-theme {
   font-size: 20px;
 }
 .card[data-state="#profile"] {
-  height: 550px;
+  height: 530px;
   width: 340px;
   color: #2d5cfe;
   transition: 0.5s;
@@ -418,6 +424,19 @@ body.dark-theme {
   background: linear-gradient(135deg, #4ab1ff, #2d5cfe);
   border-radius: 25px;
 }
+/* .card-contact-wrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.card-contact-wrapper::-webkit-scrollbar-track {
+  background: rgb(106, 106, 106);
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+  border-radius: 25px;
+}
+.card-contact-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #4ab1ff, #2d5cfe);
+  border-radius: 25px;
+} */
 .card-section.is-active {
   display: block;
   animation: fadeIn 0.6s both;
@@ -482,14 +501,15 @@ body.dark-theme {
 }
 .mk-items {
   position: relative;
-  top: 1px;
+  top: 2px;
   margin-right: 5px;
   color: #2d5cfe;
+  font-size: 13px;
 }
 
-.card-contact-wrapper {
-  margin-top: -10px;
-}
+/* .card-contact-wrapper {
+  margin-top: -15px;
+} */
 
 .card-contact {
   display: flex;
@@ -502,10 +522,11 @@ body.dark-theme {
   /* padding: 5px; */
   margin-top: 10px;
   /* font-weight: 500; */
+  border: 1px solid #4a4a4a;
+  border-radius: 5px;
 }
 .card-contact:hover {
   background: rgba(0, 0, 0, 0.095);
-  border-radius: 10px;
   color: white;
 }
 /* .card-contact + .card-contact {
@@ -522,6 +543,16 @@ body.dark-theme {
   padding-right: 15px;
   top: 8px;
   /* border-right: 5px solid #dfe2ec; */
+}
+.mkxchl-next {
+  position: relative;
+  color: #2d5cfe;
+  padding-right: 15px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  left: 150px;
+  margin-right: 10px;
 }
 .card-contact .title-cont {
   font-size: 12px;
@@ -550,24 +581,29 @@ body.dark-theme {
 }
 .btn-home {
   /* border: 1pz solid rgba(232, 232, 232, 0.095); */
-  background: rgba(0, 0, 0, 0.5);
-  color: #2d5cfe;
-  padding: 15px 15px;
+  color: #7e97b8;
+  background-color: #e0e8ef;
+  padding: 10px;
   width: 70%;
-  border-radius: 15px;
+  border-radius: 5px;
   margin: 45px;
   margin-top: -10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 900;
   font-family: "Jost", sans-serif;
-  transition: 0.5s;
   text-transform: uppercase;
-  border: none;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%)
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.5s;
 }
 .btn-home:hover {
-  background: white;
-  color: black;
+  color: #516d91;
+  background-color: #E5EDF5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%)
   transition: 0.5s;
 }
 div {
