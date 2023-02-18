@@ -23,30 +23,22 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <title>About | Mk</title>
-    <style>
-      mkmk {
-        color: rgba(0, 0, 0, 0.1);
-      }
-      audio {
-        display: none;
-      }
-    </style>
   </head>
-  <body>
+  <body onload="init()">
     <!-- Card Body -->
     <div class="card overflow" data-state="#home">
       <div class="card-header">
         <div class="card-cover"></div>
         <i class="ri-moon-line change-theme" id="theme-button"></i>
-        <img class="card-avatar" src="/assets/images/mk-009.jpg" alt="avatar" />
+        <img class="card-avatar" src="/assets/images/mk-anime-1.jpg" alt="avatar" />
         <h1 class="card-fullname">Marchell Kevandra</h1>
-        <h2 class="card-jobtitle">Be your self</h2>
+        <h2 class="card-jobtitle">BE YOUR SELF</h2>
       </div>
       <div class="card-main">
         <div class="card-section is-active" id="home">
           <div class="card-content">
             <div class="card-subtitle">
-              <p class="mk-cont" id="text-display">Tak perlu menjadi serba bisa, tekuni salah satu bidang yang Kamu suka dan menjadi hebat lah dengannya</p>
+              <p class="mk-cont">Tak perlu menjadi serba bisa, Tekuni salah satu bidang yang Kamu suka Dan menjadi hebat lah dengannya.</p>
             </div>
           </div>
           <a href="mkx"><button class="btn-home">Get Started</button></a>
@@ -91,18 +83,22 @@
               <div class="card-contact" onclick="mkInstagram()">
                 <i class="fab fa-instagram"></i>
                 <p class="title-cont">Instagram</p>
+                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
               </div>
               <div class="card-contact" onclick="mkFacebook()">
                 <i class="fas bx bxl-facebook"></i>
                 <p class="title-cont">Facebook</p>
+                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
               </div>
               <div class="card-contact" onclick="mkTiktok()">
                 <i class="fas bx bxl-tiktok"></i>
                 <p class="title-cont">Tiktok</p>
+                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
               </div>
               <div class="card-contact" onclick="mkMusic()">
                 <i class="fas bx bxl-deezer"></i>
                 <p class="title-cont">Music</p>
+                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
               </div>
             </div>
           </div>
@@ -115,38 +111,43 @@
         </div>
       </div>
     </div>
-    <!-- Tooltip Menu None Active -->
-    <!--  <div class="container">
+    <!-- Tooltip Menu - None Active  -->
+    <!-- <div class="container">
       <span class="close-btn">
         <i class="ri-align-left"></i>
       </span>
       <div class="media-icons">
         <a class="mk-tool read">
           <i class="bx bxs-bell-ring"></i>
+          <span class="tooltip" style="color: #e60023">Update</span>
         </a>
         <a class="mk-tool mk-game">
           <i class="bx bx-joystick"></i>
+          <span class="tooltip" style="color: #e60023">Games</span>
         </a>
         <a class="mk-tool" onclick="mkAlert()">
           <i class="bx bx-link"></i>
+          <span class="tooltip" style="color: #ff0000">Website</span>
         </a>
         <a class="mk-tool" onclick="mkAlert()">
           <i class="bx bx-code"></i>
+          <span class="tooltip" style="color: #e60023">Project</span>
         </a>
         <a class="mk-tool" onclick="mkBucin()">
           <i class="bx bxs-book-heart"></i>
+          <span class="tooltip" style="color: #e60023">Love</span>
         </a>
       </div>
     </div> -->
-    <!-- Love Object -->
-<!-- <div class="hearts">
+    <!-- Love Object - None Active -->
+    <!-- <div class="hearts">
       <div class="one"></div>
       <div class="two"></div>
       <div class="three"></div>
       <div class="four"></div>
       <div class="five"></div>
     </div> -->
-    <!-- Tooltip None Active -->
+    <!-- Tooltip - None Active -->
     <!-- <div class="modal" id="modal1">
       <div class="modal-dialog">
         <section class="modal-content">
