@@ -93,6 +93,9 @@ body.dark-theme {
 .dark-theme .card-fullname {
   color: #FFD700;
 }
+.dark-theme .card-avatar {
+  border: 2px solid #FFD700;
+}
 .dark-theme .button__gray:hover {
   background-color: hsl(var(--hue), 24%, 16%);
 }
@@ -245,7 +248,6 @@ body.dark-theme {
   bottom: 0;
   left: 50%;
   border: 2px solid #2d5cfe;
-  animation: circle-outer135 1.8s ease infinite 0.3s;
   transform: translateX(-50%) translateY(-64px);
 }
 
