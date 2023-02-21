@@ -60,54 +60,72 @@ body.dark-theme {
   --container-color: hsl(var(--hue), 24%, 12%);
   transition: 1s;
 }
+
 .dark-theme .card {
   background-color: #212121;
   border: 0.5px solid #FFD700;
   transition: 0.5s;
 }
+
 .dark-theme .change-theme {
   color: #FFD700;
 }
+
 .dark-theme .card-buttons button {
   background-color: #212121;
 }
+
 .dark-theme .card-buttons button.is-active,
 .card-buttons button:hover {
   background-color: transparent;
   border-bottom: 1px solid #FFD700;
 }
+
 .dark-theme .modal {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
 .dark-theme .modal .modal-dialog {
   background-color: #212121;
   color: black;
 }
+
 .dark-theme .game {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
 .dark-theme .game .games-dialog {
   background-color: #212121;
   color: black;
 }
+
 .dark-theme .btn-home {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .dark-theme .card-contact {
   border: none;
 }
+
 .dark-theme .card-contact i {
   color: #FFD700; 
 }
+
 .dark-theme .title-cont {
   color: #E2E2E2;
 }
+
 .dark-theme .card-fullname {
   color: #FFD700;
 }
+
 .dark-theme .card-avatar {
   border: 2px solid #FFD700;
 }
+
+.dark-theme .card-item-title {
+  color: #FFD700;
+}
+
 .dark-theme .button__gray:hover {
   background-color: hsl(var(--hue), 24%, 16%);
 }
