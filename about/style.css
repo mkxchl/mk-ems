@@ -100,7 +100,7 @@ body.dark-theme {
   color: #FFD700; 
 }
 .dark-theme .title-cont {
-  color : #E2E2E2;
+  color: #E2E2E2;
 }
 .dark-theme .card-fullname {
   color: #FFD700;
@@ -168,7 +168,7 @@ body.dark-theme {
 }
 
 .card[data-state="#contact"] {
-  height: 370px;
+  height: 365px;
   width: 340px;
   transition: 0.5s;
   color: #2d5cfe;
