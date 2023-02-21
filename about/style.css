@@ -91,10 +91,7 @@ body.dark-theme {
   border: 1px solid #4a4a4a;
 }
 .dark-theme .card-fullname {
-  color: #ffffb900;
-}
-.dark-theme .card-jobtitle {
-  color: #ffffb900;
+  color: #FFD700;
 }
 .dark-theme .button__gray:hover {
   background-color: hsl(var(--hue), 24%, 16%);
