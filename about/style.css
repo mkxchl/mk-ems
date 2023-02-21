@@ -70,6 +70,7 @@ body.dark-theme {
 .dark-theme .card-buttons button.is-active,
 .card-buttons button:hover {
   background-color: transparent;
+  border-bottom: 1px solid #FFD700;
 }
 .dark-theme .modal {
   background-color: rgba(0, 0, 0, 0.1);
@@ -386,7 +387,7 @@ body.dark-theme {
 }
 .card-buttons button.is-active,
 .card-buttons button:hover {
-  border-bottom: 5px solid #2d5cfe;
+  border-bottom: 2px solid #2d5cfe;
   /* background: #ecf0f3; */
   color: grey;
   z-index: 1;
