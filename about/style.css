@@ -65,6 +65,9 @@ body.dark-theme {
   border: 0.5px solid #FFD700;
   transition: 0.5s;
 }
+.dark-theme .change-theme {
+  color: #FFD700;
+}
 .dark-theme .card-buttons button {
   background-color: #212121;
 }
@@ -91,10 +94,13 @@ body.dark-theme {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .dark-theme .card-contact {
-  border: 1px solid #4a4a4a;
+  border: none;
 }
 .dark-theme .card-contact i {
   color: #FFD700; 
+}
+.dark-theme .tittle-cont {
+  color : #E2E2E2;
 }
 .dark-theme .card-fullname {
   color: #FFD700;
