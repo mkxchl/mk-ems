@@ -62,7 +62,8 @@ body.dark-theme {
 }
 .dark-theme .card {
   background-color: #212121;
-  border: 2px solid #FFD700;
+  border: 0.25rem solid #FFD700;
+  transition: 0.5s;
 }
 .dark-theme .card-buttons button {
   background-color: #212121;
