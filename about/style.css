@@ -38,7 +38,7 @@ body {
 }
 .change-theme {
   position: absolute;
-  top: 30px;
+  top: 25px;
   right: 25px;
   font-size: 1.40rem;
   color: #2d5cfe;
@@ -92,6 +92,18 @@ body.dark-theme {
 }
 .dark-theme .card-contact {
   border: 1px solid #4a4a4a;
+}
+,dark-theme .fa-instagram {
+  color: #FFD700; 
+}
+,dark-theme .bxl-facebook {
+  color: #FFD700; 
+}
+,dark-theme .bxl-tiktok {
+  color: #FFD700; 
+}
+,dark-theme .bxl-deezer {
+  color: #FFD700; 
 }
 .dark-theme .card-fullname {
   color: #FFD700;
