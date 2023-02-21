@@ -93,16 +93,7 @@ body.dark-theme {
 .dark-theme .card-contact {
   border: 1px solid #4a4a4a;
 }
-,dark-theme .fa-instagram {
-  color: #FFD700; 
-}
-,dark-theme .bxl-facebook {
-  color: #FFD700; 
-}
-,dark-theme .bxl-tiktok {
-  color: #FFD700; 
-}
-,dark-theme .bxl-deezer {
+,dark-theme .card-contact i {
   color: #FFD700; 
 }
 .dark-theme .card-fullname {
