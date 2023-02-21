@@ -62,6 +62,7 @@ body.dark-theme {
 }
 .dark-theme .card {
   background-color: #212121;
+  border: 2px solid #FFD700;
 }
 .dark-theme .card-buttons button {
   background-color: #212121;
@@ -87,7 +88,7 @@ body.dark-theme {
 .dark-theme .btn-home {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.dark-theme .card-conta {
+.dark-theme .card-contact {
   border: 1px solid #4a4a4a;
 }
 .dark-theme .card-fullname {
@@ -261,27 +262,6 @@ body.dark-theme {
   transform: translateY(-10px) translateX(-50%);
   left: 50%;
   font-family: "DM Sans", sans-serif;
-}
-
-.card-fullname::before {
-  color: var(--text-color);
-}
-
-.card-fullname::after {
-  color: var(--front-color);
-  animation: text-animation76 3.6s ease infinite;
-  position: absolute;
-  left: 0;
-}
-.mk-cont::before {
-  color: var(--text-color);
-}
-
-.mk-cont::after {
-  color: var(--text-color-light);
-  animation: text-animation76 3.6s ease infinite;
-  position: absolute;
-  left: 0;
 }
 .card-jobtitle {
   position: absolute;
