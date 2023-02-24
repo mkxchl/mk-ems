@@ -117,7 +117,7 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 12pt;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .myanimated {
   transition: all ease 0.3s;
