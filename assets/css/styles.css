@@ -225,6 +225,7 @@ img {
 .mk-warn {
   font-size: 15px;
   font-weight: 500;
+  margin-bottom: 15px;
 }
 .mytext:focus ~ .mk-title,
 .mytext:valid ~ .mk-title {
