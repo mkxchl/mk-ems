@@ -68,7 +68,7 @@ img {
   height: 100vh;
   backdrop-filter: blur(10px);
   inset: 4px;
-  background: #212121;
+/*   background: #212121; */
   transition: all 0.5s;
   overflow: hidden;
   z-index: 1;
