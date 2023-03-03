@@ -472,7 +472,7 @@ a {
   color: #2d5cfe;
 }
 .mk-box {
-  background: white;
+  /* background: white; */
   border-radius: 30px;
   padding: 10px;
   height: 100%;
@@ -612,7 +612,7 @@ a {
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s;
-  /* background-color: rgba(255, 255, 255, 0.75); */
+  background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(5px);
   z-index: 99999;
 }
