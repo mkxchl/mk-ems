@@ -154,7 +154,7 @@ body.dark-theme {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
-  top: 10px;
+  top: 5px;
   flex-direction: column;
   border-radius: 5px;
   background: #ecf0f3;
@@ -181,7 +181,7 @@ body.dark-theme {
 .card[data-state="#home"] .card-main {
   padding-top: 0;
   transition: 0.5s;
-  height: 360px;
+  height: 300px;
   /* width: 380; */
 }
 
