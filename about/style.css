@@ -177,7 +177,7 @@ body.dark-theme {
 .card[data-state="#home"] {
   height: 360px;
   transition: 0.5s;
-  width: 380px;
+  width: 300px;
 }
 .card[data-state="#home"] .card-main {
   padding-top: 0;
