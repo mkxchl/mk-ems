@@ -15,7 +15,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="iphone">
+    <div class="iphone" id="full">
       <div class="iphone-14">
         <div class="operator-name"></div>
         <div class="dynamic-island"></div>
@@ -167,5 +167,30 @@
     </div>
     <script src="smart.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+      function getFullscreenElement() {
+        return document.getFullscreenElement;
+        !!document.webkitFullscreenElement;
+        !!document.mozFullScreenElement;
+        !!document.msFullScreenElement;
+      }
+      function toggleFullscreen() {
+        if (getFullscreenElement()) {
+          document.exitFullscreen();
+        } else {
+          document
+            .getElementById("full")
+            .requestFullscreen()
+            .catch((e) => {
+              getFullscreenElement();
+            });
+        }
+      }
+      document.addEventListener("click", () => {
+        document.documentElement.requestFullscreen().catch((e) => {
+          console.log(e);
+        });
+      });
+    </script>
   </body>
 </html>
