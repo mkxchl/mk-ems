@@ -38,9 +38,9 @@ body {
 }
 .change-theme {
   position: absolute;
-  top: 25px;
+  top: 1.6rem;
   right: 25px;
-  font-size: 1.40rem;
+  font-size: 1.25rem;
   color: #2d5cfe;
   cursor: pointer;
   transition: 0.5s;
@@ -60,72 +60,36 @@ body.dark-theme {
   --container-color: hsl(var(--hue), 24%, 12%);
   transition: 1s;
 }
-
 .dark-theme .card {
   background-color: #212121;
-  border: 0.5px solid #FFD700;
-  transition: 0.5s;
 }
-
-.dark-theme .change-theme {
-  color: #FFD700;
-}
-
 .dark-theme .card-buttons button {
   background-color: #212121;
 }
-
 .dark-theme .card-buttons button.is-active,
 .card-buttons button:hover {
   background-color: transparent;
-  border-bottom: 1px solid #FFD700;
 }
-
 .dark-theme .modal {
   background-color: rgba(0, 0, 0, 0.1);
 }
-
 .dark-theme .modal .modal-dialog {
   background-color: #212121;
   color: black;
 }
-
 .dark-theme .game {
   background-color: rgba(0, 0, 0, 0.1);
 }
-
 .dark-theme .game .games-dialog {
   background-color: #212121;
   color: black;
 }
-
 .dark-theme .btn-home {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.dark-theme .card-contact {
-  border: none;
+.dark-theme .card-conta {
+  border: 1px solid #4a4a4a;
 }
-
-.dark-theme .card-contact i {
-  color: #FFD700; 
-}
-
-.dark-theme .card-contact i .title-cont {
-  color: #E2E2E2;
-}
-
-.dark-theme .card-fullname {
-  color: #FFD700;
-}
-
-.dark-theme .card-avatar {
-  border: 2px solid #FFD700;
-}
-
-.dark-theme .card-item-title {
-  color: #FFD700;
-}
-
 .dark-theme .button__gray:hover {
   background-color: hsl(var(--hue), 24%, 16%);
 }
@@ -147,7 +111,6 @@ body.dark-theme {
 }
 .card {
   max-width: 340px;
-  max-height: 300px;
   position: relative;
   /* margin: auto; */
   overflow-y: hidden;
@@ -155,7 +118,7 @@ body.dark-theme {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s;
-  top: 5px;
+  top: 10px;
   flex-direction: column;
   border-radius: 5px;
   background: #ecf0f3;
@@ -182,12 +145,12 @@ body.dark-theme {
 .card[data-state="#home"] .card-main {
   padding-top: 0;
   transition: 0.5s;
-  height: 300px;
+  height: 360px;
   /* width: 380; */
 }
 
 .card[data-state="#contact"] {
-  height: 365px;
+  height: 370px;
   width: 340px;
   transition: 0.5s;
   color: #2d5cfe;
@@ -279,6 +242,7 @@ body.dark-theme {
   bottom: 0;
   left: 50%;
   border: 2px solid #2d5cfe;
+  animation: circle-outer135 1.8s ease infinite 0.3s;
   transform: translateX(-50%) translateY(-64px);
 }
 
@@ -292,6 +256,27 @@ body.dark-theme {
   transform: translateY(-10px) translateX(-50%);
   left: 50%;
   font-family: "DM Sans", sans-serif;
+}
+
+.card-fullname::before {
+  color: var(--text-color);
+}
+
+.card-fullname::after {
+  color: var(--front-color);
+  animation: text-animation76 3.6s ease infinite;
+  position: absolute;
+  left: 0;
+}
+.mk-cont::before {
+  color: var(--text-color);
+}
+
+.mk-cont::after {
+  color: var(--text-color-light);
+  animation: text-animation76 3.6s ease infinite;
+  position: absolute;
+  left: 0;
 }
 .card-jobtitle {
   position: absolute;
@@ -416,7 +401,7 @@ body.dark-theme {
 }
 .card-buttons button.is-active,
 .card-buttons button:hover {
-  border-bottom: 2px solid #2d5cfe;
+  border-bottom: 5px solid #2d5cfe;
   /* background: #ecf0f3; */
   color: grey;
   z-index: 1;
@@ -522,9 +507,9 @@ body.dark-theme {
   font-size: 13px;
 }
 
-/* .card-contact-wrapper {
-  margin-top: -15px;
-} */
+.card-contact-wrapper {
+  margin-top: -10px;
+}
 
 .card-contact {
   display: flex;
@@ -544,9 +529,9 @@ body.dark-theme {
   background: rgba(0, 0, 0, 0.095);
   color: white;
 }
-.card-contact-wrapper {
-  margin-top: -10px;
-}
+/* .card-contact + .card-contact {
+  margin-top: 10px;
+} */
 .card-contact i {
   flex-shrink: 0;
   width: 35px;
