@@ -147,6 +147,7 @@ body.dark-theme {
 }
 .card {
   max-width: 340px;
+  height: 300px;
   position: relative;
   /* margin: auto; */
   overflow-y: hidden;
