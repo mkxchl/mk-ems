@@ -37,6 +37,8 @@ var bellAnm = document.querySelector(".bell-animation");
 
 var soundIcon = document.querySelector(".bi-soundwave");
 var spotify = document.querySelector(".spotify");
+var mkMenuHomes = document.querySelector(".mk-menu-homes");
+
 spotify.addEventListener("click", function () {
   if (document.querySelector(".music-player").style.visibility !== "visible") {
     document.querySelector(".music-player").style.visibility = "visible";
@@ -45,7 +47,7 @@ spotify.addEventListener("click", function () {
     document.querySelector(".music-player").style.opacity = "1";
     document.querySelector(".notification").style.display = "none";
     document.querySelector(".flash-and-camera").style.display = "none";
-    document.querySelector(".mk-menu-icons").style.visibility = "hidden";
+    document.querySelector(".mk-menu-homes").style.visibility = "hidden";
     fuelArea.style.visibility = "hidden";
     fuelArea.style.bottom = "100px";
     fuelArea.style.opacity = "0";
@@ -58,6 +60,7 @@ spotify.addEventListener("click", function () {
     document.querySelector(".music-player").style.opacity = "0";
     document.querySelector(".notification").style.display = "block";
     document.querySelector(".flash-and-camera").style.display = "block";
+    document.querySelector(".mk-menu-homes").style.visibility = "visible";
   }
 });
 
@@ -95,6 +98,8 @@ fuelWidgetIcon.addEventListener("click", function () {
     geoIcon.style.visibility = "visible";
     geoIcon.style.opacity = "1";
     dynamicIsland.style.left = "83px";
+    fuelWidgetIcon.style.visibility = "hidden";
+    widgetArea.style.visibility = "hidden";
     document.querySelector(".dynamic-island-camera").style.right = "125px";
     document.querySelector(".bi-soundwave").style.left = "100px";
     fuelWidgetIcon.style.color = "red";
@@ -102,6 +107,8 @@ fuelWidgetIcon.addEventListener("click", function () {
     document.querySelector(".music-player").style.marginTop = "0px";
     document.querySelector(".music-player").style.opacity = "0";
     document.querySelector(".spotify").style.color = "white";
+    document.querySelector(".widget-area").style.visibility = "hidden";
+    document.querySelector(".line").style.visibility = "visible";
   } else {
     fuelArea.style.visibility = "hidden";
     fuelArea.style.opacity = "0";
@@ -110,18 +117,33 @@ fuelWidgetIcon.addEventListener("click", function () {
     geoIcon.style.visibility = "hidden";
     geoIcon.style.opacity = "0";
     dynamicIsland.style.left = "100px";
+    widgetArea.style.visibility = "hidden";
     document.querySelector(".dynamic-island-camera").style.right = "110px";
     document.querySelector(".bi-soundwave").style.left = "120px";
     fuelWidgetIcon.style.color = "white";
     document.querySelector(".widget").style.top = "5000px";
+    document.querySelector(".widget-area").style.visibility = "hidden";
+    document.querySelector(".line").style.visibility = "visible";
   }
+});
+
+var backMk = document.querySelector(".line");
+var fuelArea = document.querySelector(".fuel-area");
+var mkMusic = document.querySelector(".music-player");
+
+backMk.addEventListener("click", function () {
+  setTimeout("document.querySelector('.fuel-area').style.visibility='hidden'", 500);
+  setTimeout("document.querySelector('.fuel-area').style.opacity='0'", 500);
+  setTimeout("document.querySelector('.music-player').style.visibility='hidden'", 500);
+  setTimeout("document.querySelector('.music-player').style.opacity='0'", 500);
 });
 
 var sarki = document.getElementById("sarki");
 var oynat = document.getElementById("oynat");
 var ses = document.getElementById("ses");
 
-//What to do when you hit the play button
+/// What to do when you hit the play button ///
+
 oynat.onclick = function () {
   if (sarki.paused) {
     sarki.play();
@@ -157,3 +179,19 @@ function openFullscreen() {
 function openFullscreen() {
   elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
 }
+function getFullscreenElement() {
+  return document.getFullscreenElement;
+  !!document.webkitFullscreenElement;
+  !!document.mozFullScreenElement;
+  !!document.msFullScreenElement;
+}
+/// var elem = document.getElementById("mkfull");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  }
+} ///
