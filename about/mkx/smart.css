@@ -123,18 +123,18 @@ a {
   color: white;
   top: 150px;
   position: relative;
-  z-index: 999999;
+  z-index: 999;
   /* display: flex; */
 }
 
 .widget {
-  margin: 0 15px;
+  margin: 15px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: all 1s;
   cursor: pointer;
   position: relative;
-  bottom: -15px;
+  bottom: -30px;
   background: black;
 }
 .mk-moon {
@@ -147,7 +147,15 @@ a {
 .widget:hover .spotify {
   color: #1ed760;
 }
-
+.widget:hover {
+  background: white;
+}
+.widget:hover .fuelWidgetIcon {
+  color: black;
+}
+.widget:hover i {
+  color: black;
+}
 .quiet {
   display: none;
   color: gray;
@@ -170,9 +178,8 @@ a {
 }
 
 .notification {
-  /* margin: 0 40px; */
-  /* margin-top: 50px; */
-  /* top: -40px; */
+  margin: 0 40px;
+  margin-top: 300px;
   margin-left: 40px;
   left: 15px;
   padding: 15px;
@@ -182,8 +189,13 @@ a {
   background-color: rgba(255, 255, 255, 0.25);
   transition: all 0.5s;
   animation: notification 0.5s forwards;
-  animation-delay: 10s;
+  animation-delay: 5s;
   color: white;
+  z-index: 999;
+}
+
+.tittle-notif {
+  font-size: 18px;
 }
 
 @keyframes notification {
@@ -193,7 +205,7 @@ a {
     visibility: hidden;
   }
   to {
-    bottom: 300px;
+    bottom: 200px;
     opacity: 1;
     visibility: visible;
   }
@@ -206,6 +218,7 @@ a {
 .notification-text {
   font-size: 12px;
   color: #fff;
+  font-weight: 500;
 }
 
 .flash-and-camera img {
@@ -251,8 +264,16 @@ a {
   border-radius: 50px;
   background: #fff;
   left: 100px;
+  cursor: pointer;
+  z-index: 999999;
 }
-
+.line:hover {
+  background: blue;
+  transition: 0.5s;
+}
+.mkGanz {
+  cursor: pointer;
+}
 .bell-animation-area {
   width: 100px;
   height: 25px;
@@ -406,7 +427,7 @@ a {
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s;
-  top: -380px;
+  top: -350px;
   position: relative;
   z-index: 99999;
   backdrop-filter: blur(10);
@@ -493,7 +514,7 @@ a {
   everflow: hidden;
   margin-right: 50px;
   color: #2d5cfe;
-  top: 15px;
+  top: 5px;
   left: 15px;
 }
 .mk-setting-tittle {
@@ -501,7 +522,7 @@ a {
   font-weight: 600;
   transition: 0.5s;
   margin-left: 60px;
-  top: -25px;
+  top: -38px;
   position: relative;
   left: 25px;
 }
@@ -513,7 +534,7 @@ a {
   font-family: "DM Sans", sans-serif;
   letter-spacing: 0.1rem;
   margin-left: 60px;
-  top: -25px;
+  top: -38px;
   position: relative;
 }
 .mk-setting-list {
@@ -523,6 +544,9 @@ a {
   margin-top: -50px;
   top: 50px;
   position: relative;
+}
+.mk-list-content .mk-profile-title {
+  font-size: 12px;
 }
 .mk-setting-list header {
   font-size: 15px;
@@ -541,7 +565,10 @@ a {
   border-radius: 30px;
   cursor: pointer;
 }
-.mk-setting-list p .mk-ic {
+.mk-setting-list p {
+  cursor: pointer;
+}
+.mk-setting-list .mk-ic {
   cursor: pointer;
 }
 #sarki {
@@ -612,7 +639,7 @@ a {
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: white;
   backdrop-filter: blur(5px);
   z-index: 99999;
 }
@@ -760,4 +787,37 @@ a {
   font-size: 8px;
   font-weight: bold;
   letter-spacing: 0.2rem;
+}
+.mk-back {
+  display: flex;
+  position: relative;
+}
+.btn-mk-back {
+  position: relative;
+  font-size: 30px;
+  left: -10px;
+  top: -10px;
+  color: black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.mk-tittle-setting {
+  position: relative;
+  left: -20px;
+  color: black;
+  top: 7px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.mk-back:hover .btn-mk-back {
+  color: blue;
+}
+.mk-back:hover .mk-tittle-setting {
+  color: blue;
+}
+.mk-profile-title {
+  position: relative;
+  left: 20px;
+  font-size: 12px;
 }
