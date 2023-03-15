@@ -27,7 +27,7 @@ section {
 }
 .box {
   position: relative;
-  min-width: 290px;
+  min-width: 300px;
   max-height: 620px;
   width: 200px;
   /* height: 300px; */
