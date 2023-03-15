@@ -42,7 +42,7 @@ section {
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .mk-overflow {
-  overflow-y: auto;
+  overflow-y: hidden;
   max-height: 300px;
   margin-top: 20px;
 }
