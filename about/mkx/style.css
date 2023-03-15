@@ -42,25 +42,7 @@ section {
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .mk-overflow {
-  overflow-y: hidden;
-  max-height: 300px;
-  margin-top: 20px;
-}
-.mk-overflow::-webkit-scrollbar {
-  width: 5px;
-  height: 1px;
-  position: relative;
-  padding-right: 30px;
-}
-.mk-overflow::-webkit-scrollbar-track {
-  background: rgb(106, 106, 106);
-  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  border-radius: 25px;
-}
-.mk-overflow::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #4ab1ff, #2d5cfe);
-  border-radius: 25px;
-  margin-left: 20px;
+  overflow-y: auto;
 }
 .box .list-links {
   position: relative;
