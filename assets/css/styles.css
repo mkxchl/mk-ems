@@ -396,7 +396,7 @@ section {
   position: relative;
   min-width: 300px;
   max-height: 620px;
-  width: 300px;
+  width: 100px;
   background: #fff;
   border: 1px solid #2d5cfe;
   border-radius: 10px;
