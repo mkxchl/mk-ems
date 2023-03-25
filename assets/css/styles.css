@@ -694,11 +694,6 @@ section {
   .mk-warn-button {
     top: 100px;
   }
-  .box {
-    width: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   .mk-warn-back-button {
     top: 100px;
   }
