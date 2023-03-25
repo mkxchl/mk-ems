@@ -396,7 +396,7 @@ section {
   position: relative;
   min-width: 300px;
   max-height: 620px;
-  width: 200px;
+  width: 300px;
   background: #fff;
   border: 1px solid #2d5cfe;
   border-radius: 10px;
@@ -693,6 +693,12 @@ section {
   }
   .mk-warn-button {
     top: 100px;
+  }
+  .box {
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .mk-warn-back-button {
     top: 100px;
