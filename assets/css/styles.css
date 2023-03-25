@@ -691,6 +691,12 @@ section {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  .mk-warn-button {
+    top: 100px;
+  }
+  .mk-warn-back-button {
+    top: 100px;
+  }
   .divvideo {
     width: 90%;
   }
