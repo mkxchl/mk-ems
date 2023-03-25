@@ -398,7 +398,7 @@ section {
   max-height: 620px;
   width: 100px;
   background: #fff;
-  border: 1px solid #2d5cfe;
+  border: 2px solid #eee;
   border-radius: 10px;
   z-index: 1;
   backdrop-filter: blur(10px);
@@ -407,6 +407,7 @@ section {
   overflow: hidden;
   overflow-y: hidden;
   margin-bottom: 10px;
+  maragin-top: 10px;
   bottom: 10px;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
