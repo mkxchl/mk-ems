@@ -695,7 +695,7 @@ section {
     top: 100px;
   }
   .box {
-    width: 90%;
+    width: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
