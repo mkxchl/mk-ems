@@ -135,7 +135,7 @@ body.dark-theme {
   align-items: center;
   animation: animateBx 1s linear infinite;
   right: 10px;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 .card[data-state="#home"] {
   height: 360px;
