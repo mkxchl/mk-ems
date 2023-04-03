@@ -38,13 +38,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.bg-mk {
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
 img {
   width: 100vw;
   height: 100vh;
@@ -71,7 +64,6 @@ img {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(10px);
   inset: 4px;
   /* background: #212121; */
   transition: all 0.5s;
