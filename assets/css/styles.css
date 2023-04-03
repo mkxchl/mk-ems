@@ -67,7 +67,7 @@ img {
   height: 100vh;
   backdrop-filter: blur(10px);
   inset: 4px;
-  /*   background: #212121; */
+  /* background: #212121; */
   transition: all 0.5s;
   overflow: hidden;
   z-index: 1;
@@ -394,22 +394,27 @@ section {
 }
 .box {
   position: relative;
-  min-width: 280px;
-  max-height: 620px;
+  min-width: 300px;
+  height: 70px;
   width: 100px;
   background: #fff;
   border: 2px solid #eee;
-  border-radius: 10px;
+  border-radius: 5px;
   z-index: 1;
   backdrop-filter: blur(10px);
   padding: 30px;
   animation: fadeInUp 1s;
   overflow: hidden;
   overflow-y: hidden;
+  margin-top: 10px;
   margin-bottom: 10px;
-  maragin-top: 10px;
   bottom: 10px;
+  transition: height 1s ease-in-out;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
+}
+.box.active {
+  height: 390px;
+  transition: 1s;
 }
 .box .list-links {
   position: relative;
@@ -422,12 +427,12 @@ section {
   margin-right: 15px;
   margin-left: 15px;
   cursor: pointer;
-  transition: 0.5s;
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
   border: 2px solid #eee;
   box-shadow: 0 0 10px #eee;
   height: 30px;
+
 }
 .box .list-links .fade-right {
   animation: fadeInRight 1s;
@@ -535,6 +540,7 @@ section {
   border-radius: 5px;
   height: 50px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .mkx-header .mk-img-header {
   height: 50px;
@@ -629,11 +635,17 @@ section {
   right: 20px;
   color: #2d5cfe;
 }
+.mkLogUser {
+    margin-right: 5px;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
 .title-header {
-  font-size: 12px;
-  margin-left: 15px;
-  margin-bottom: -5px;
-  color: #2d5cfe;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-bottom: -5px;
+    color: #2d5cfe;
 }
 .mk-logs-button {
   position: absolute;
@@ -685,6 +697,75 @@ section {
   padding: 5px;
   border-radius: 5px;
   transition: 1s;
+}
+
+.box.active .toggle .mkToggle {
+    transform: rotate(-180deg);
+}
+.mk-games-box {
+  width: 65vmin;
+  height: 70vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background: #293447;
+  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.game-details {
+  color: #b8c6dc;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.play-board {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: #212837;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.play-board .food {
+  background: #ff003d;
+}
+.play-board .head {
+  background: #60cbff;
+}
+.controls {
+  display: none;
+  justify-content: space-between;
+}
+.controls i {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #b8c6dc;
+  width: calc(100% / 4);
+  cursor: pointer;
+  border-right: 1px solid #171b26;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .controls {
+    display: flex;
+  }
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
 }
 /* Mobile Preview */
 @media screen and (max-width: 576px) {
