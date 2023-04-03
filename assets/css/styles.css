@@ -38,7 +38,10 @@ body {
   margin: 0;
   padding: 0;
 }
-/* Add Username */
+.bg-mk {
+  background-size: cover;
+  background-position: center;
+}
 img {
   width: 100vw;
   height: 100vh;
