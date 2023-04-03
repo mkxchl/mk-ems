@@ -706,6 +706,18 @@ section {
   font-weight: bold;
   transition: 1s;
 }
+.mkContactFooterLogs {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  top: 15px;
+  margin-bottom: -10px;
+}
+.mkContactFooterLogs .mkCodexLinksLogs {
+  text-decoration: none;
+  font-weight: bold;
+  transition: 1s;
+}
 .mkCodexLinks:hover {
   color: black;
   transition: 1s;
