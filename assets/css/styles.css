@@ -698,6 +698,7 @@ section {
   transition: 1s;
 }
 .mkContactFooter {
+  position: relative;
   text-align: center;
   font-size: 12px;
   margin-top: 10px;
