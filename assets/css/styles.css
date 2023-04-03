@@ -41,6 +41,9 @@ body {
 .bg-mk {
   background-size: cover;
   background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 img {
   width: 100vw;
