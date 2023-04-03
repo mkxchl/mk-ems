@@ -55,20 +55,20 @@
     <!-- End Video Loading -->
     <!-- --------- -->
     <!--  Index OnLoad   -->
-    <!--  <img src="assets/images/logo.jpg" class="bg-mk" /> -->
+    <img src="https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="bg-mk" />
     <div class="container">
       <div class="mknet">
         <div class="mkbody">
           <section>
           <div class="box mk-box">
         <!-- <h3>Mk Links</h3> -->
-            <div class="mkx-header">
+            <div class="mkx-header toggle">
               <div class="mk-img-header">
                 <img src="/assets/images/logo.jpg" class="mk-img-content" />
               </div>
               <div class="mk-header-content">
                 <h4 id="spannama3"></h4>
-                <p>Your Name</p>
+                <p>Tap in here</p>
               </div>
               <div class="mk-button-header">
                 <div class="mk-button-header-back">
@@ -274,18 +274,17 @@
                 <i class="bx bxl-soundcloud mk-next"></i>
               </div>
             </div>
-          </div>
-          </section>
         </div>
-      </div>
-    
+      </section>
+    </div>
+ </div>
       <!--  Add UserName -->
       <div class="mywindow" id="myform">
         <div class="mycontrol"></div>
         <div class="mybody">
           <div class="mycontent">
             <input class="mytext" type="text" id="mynama" name="nama" required />
-            <label class="mk-title">Username</label>
+            <label class="mk-title"><i class="bx bx-user mkLogUser"></i>Username</label>
             <i class='bx bx-chevron-right mk-logs-button' onclick="mywrite()"></i>
           </div>
         </div>
@@ -303,6 +302,7 @@
         </div>
         <div class="myresize"></div>
       </div>
+      
     </div>
     </div>
     <!-- JAVASCRIPT MAIN -->
@@ -310,6 +310,7 @@
     <script src="assets/js/index.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/dist/aos.js"></script>
+    <script src="assets/js/snake.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -317,5 +318,12 @@
     <script>
       AOS.init();
     </script>
+      <script>
+          const MkCard = document.querySelector('.box');
+          const MkCardToggle = document.querySelector('.toggle');
+          MkCardToggle.onclick = function () {
+              MkCard.classList.toggle('active');
+          }
+      </script>
   </body>
 </html>
