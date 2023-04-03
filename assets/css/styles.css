@@ -700,6 +700,7 @@ section {
 .mkContactFooter {
   text-align: center;
   font-size: 12px;
+  margin-top: 10px;
 }
 .mkContactFooter .mkCodexLinks {
   text-decoration: none;
