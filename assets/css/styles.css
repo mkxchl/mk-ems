@@ -38,6 +38,7 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Add Username */
 img {
   width: 100vw;
   height: 100vh;
@@ -696,7 +697,19 @@ section {
   border-radius: 5px;
   transition: 1s;
 }
-
+.mkContactFooter {
+  text-align: center;
+  font-size: 12px;
+}
+.mkContactFooter .mkCodexLinks {
+  text-decoration: none;
+  font-weight: bold;
+  transition: 1s;
+}
+.mkCodexLinks:hover {
+  color: black;
+  transition: 1s;
+}
 .box.active .toggle .mkToggle {
     transform: rotate(-180deg);
 }
