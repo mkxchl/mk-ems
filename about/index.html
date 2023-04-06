@@ -30,7 +30,8 @@
       <div class="card-header">
         <div class="card-cover"></div>
         <i class="ri-moon-line change-theme" id="theme-button"></i>
-        <img class="card-avatar" src="/assets/images/MkAnime_20.jpg" alt="avatar" />
+        <i class="bx bxs-home MkxBack" onclick="mkHomesLink()"></i>
+        <img class="card-avatar hati" onclick="mkImageTouch()" src="https://ems-links.netlify.app/assets/images/MkAnime_20.jpg" alt="avatar" />
         <h1 class="card-fullname">Marchell Kevandra</h1>
         <h2 class="card-jobtitle">BE YOUR SELF</h2>
       </div>
@@ -41,7 +42,7 @@
               <p class="mk-cont">Tak perlu menjadi serba bisa, Tekuni salah satu bidang yang Kamu suka Dan menjadi hebat lah dengannya.</p>
             </div>
           </div>
-          <a href="mkx"><button class="btn-home">Get Started</button></a>
+          <a href="" class="mkGone"><button class="btn-home">Get Started</button></a>
         </div>
         <!-- Card Profile -->
         <div class="card-section" id="profile">
@@ -80,6 +81,11 @@
           <div class="card-content">
             <!-- <div class="card-subtitle">Contact Me</div> -->
             <div class="card-contact-wrapper">
+              <div class="card-contact" onclick="mkSoundcloud()">
+                <i class="fas bx bxl-soundcloud"></i>
+                <p class="title-cont">Soundcloud</p>
+                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
+              </div>
               <div class="card-contact" onclick="mkInstagram()">
                 <i class="fab fa-instagram"></i>
                 <p class="title-cont">Instagram</p>
@@ -95,15 +101,10 @@
                 <p class="title-cont">Tiktok</p>
                 <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
               </div>
-              <div class="card-contact" onclick="mkMusic()">
-                <i class="fas bx bxl-deezer"></i>
-                <p class="title-cont">Music</p>
-                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
-              </div>
             </div>
           </div>
         </div>
-        <!-- Card Button Active -->
+        <!-- Card Button -->
         <div class="card-buttons">
           <button data-section="#home" class="is-active">HOME</button>
           <button data-section="#profile" onClick="playMyAudio()" class="hati">PROFILE</button>
@@ -111,74 +112,6 @@
         </div>
       </div>
     </div>
-    <!-- Tooltip Menu - None Active  -->
-    <!-- <div class="container">
-      <span class="close-btn">
-        <i class="ri-align-left"></i>
-      </span>
-      <div class="media-icons">
-        <a class="mk-tool read">
-          <i class="bx bxs-bell-ring"></i>
-          <span class="tooltip" style="color: #e60023">Update</span>
-        </a>
-        <a class="mk-tool mk-game">
-          <i class="bx bx-joystick"></i>
-          <span class="tooltip" style="color: #e60023">Games</span>
-        </a>
-        <a class="mk-tool" onclick="mkAlert()">
-          <i class="bx bx-link"></i>
-          <span class="tooltip" style="color: #ff0000">Website</span>
-        </a>
-        <a class="mk-tool" onclick="mkAlert()">
-          <i class="bx bx-code"></i>
-          <span class="tooltip" style="color: #e60023">Project</span>
-        </a>
-        <a class="mk-tool" onclick="mkBucin()">
-          <i class="bx bxs-book-heart"></i>
-          <span class="tooltip" style="color: #e60023">Love</span>
-        </a>
-      </div>
-    </div> -->
-    <!-- Love Object - None Active -->
-    <!-- <div class="hearts">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div class="three"></div>
-      <div class="four"></div>
-      <div class="five"></div>
-    </div> -->
-    <!-- Tooltip - None Active -->
-    <!-- <div class="modal" id="modal1">
-      <div class="modal-dialog">
-        <section class="modal-content">
-          <b> Update Info ! </b><br /><br />- New Dark Theme Mode<br /><br />- New Icon Menu<br />
-          <p class="mk-code">- Mk x Codes -</p>
-        </section>
-      </div>
-    </div>
-    <div class="game" id="games">
-      <div class="games-dialog">
-        <section class="games-content">
-          <b> Game List </b><br /><br />
-          <button class="btn-games">Brain Games</button>
-          <br />
-          <button class="btn-games">Menja Games</button>
-          <br />
-          <button class="btn-games">Snake Games</button>
-          <br />
-          <button class="btn-games">Tictac Games</button>
-        </section>
-      </div>
-    </div> -->
-    <!-- Coming Soon -->
-    <!-- <div class="link" id="link">
-      <div class="links-dialog">
-        <section class="links-content">
-          <b> Update Info ! </b><br /><br />- New Dark Theme Mode<br /><br />- New Icon Menu<br />
-          <p class="mk-code">- Mk x Codes -</p>
-        </section>
-      </div>
-    </div> -->
     <audio id="myAudio">
       <source src="/mix/mk-anime-song.mp3" type="audio/mpeg" />
     </audio>
