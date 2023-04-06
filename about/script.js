@@ -149,9 +149,16 @@ function mkWebsite() {
 function mkBucin() {
   window.location.replace("https://chl-bcn.netlify.app/");
 }
+function mkSoundcloud() {
+  window.location.replace("https://soundcloud.com/marchellkevandra");
+}
+function mkHomesLink() {
+  window.location.replace("/");
+}
 function mkNotif() {
   openFullscreen(), $(".card , .container , .hearts").fadeOut(500);
 }
+
 var elem = document.documentElement;
 if (elem.requestFullscreen) {
   elem.requestFullscreen();
@@ -442,7 +449,7 @@ function confetti() {
   if (!onlyOnKonami) poof();
 }
 
-var textArray = ["Belajar memang melelahkan, namun akan lebih melelahkan lagi bila saat ini kamu tidak belajar", "Hidup bukan tentang mendapatkan apa yang kamu inginkan, tapi tentang menghargai apa yang kamu miliki dan sabar menanti apa yang akan menghampiri", "Tak perlu menjadi serba bisa, tekuni salah satu bidang yang Kamu suka dan menjadi hebat lah dengannya"];
+var textArray = ["Be your self", "Be carefull", "I Love Girl"];
 var currentIndex = 0;
 var currentText = "";
 
