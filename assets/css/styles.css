@@ -38,6 +38,68 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Navbar */
+.MkContainerx {
+  height: 30px;
+  width: 300px;
+  line-height: 80px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 500px;
+  left: 500px;
+  padding: 10px;
+  border-radius: 3rem;
+  backdrop-filter: blur(5px);
+  border: 1px solid #eee;
+}
+.MkContainerx .MkMenux {
+  display: flex;
+  position: relative;
+  margin-left: 30px;
+  top: -25px;
+}
+.MkContainerx .MkMenux li {
+  list-style: none;
+  flex: 1;
+  font-size: 1.1rem;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 10px;
+}
+.MkContainerx .MkMenux li a {
+  color: #2d5cfe;
+  transition: color 0.3s ease;
+}
+.MkContainerx .MkMenux li:hover a {
+  color: #2d5cfe;
+}
+.MkContainerx .MkMenux li:first-child a {
+  color: #2d5cfe;
+}
+.MkContainerx .MkMenux .MkLines {
+  position: absolute;
+  height: 2px;
+  width: 7%;
+  background: #f23b26;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+.MkContainerx .MkMenux li:nth-child(2):hover ~ .MkLines {
+  left: 20%;
+}
+.MkContainerx .MkMenux li:nth-child(3):hover ~ .MkLines {
+  left: 40%;
+}
+.MkContainerx .MkMenux li:nth-child(4):hover ~ .MkLines {
+  left: 60%;
+}
+.MkContainerx .MkMenux li:nth-child(5):hover ~ .MkLines {
+  left: 80%;
+}
 /* Add Username */
 img {
   width: 100vw;
@@ -208,7 +270,7 @@ img {
 .mk-title {
   position: relative;
   left: 0;
-  top: -39px;
+  top: -37px;
   padding: 20px 0;
   font-size: 16px;
   color: rgb(0, 51, 255);
@@ -398,7 +460,10 @@ section {
   width: 100px;
   background: #fff;
   border: 2px solid #eee;
-  border-radius: 5px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
   z-index: 1;
   backdrop-filter: blur(10px);
   padding: 30px;
@@ -413,13 +478,13 @@ section {
 }
 .box.active {
   height: 390px;
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 .box .list-links {
   position: relative;
   display: flex;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 30px;
   margin: 10px;
   top: 10px;
   margin-bottom: 25px;
@@ -431,7 +496,8 @@ section {
   border: 2px solid #eee;
   box-shadow: 0 0 10px #eee;
   height: 30px;
-
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 .box .list-links .fade-right {
   animation: fadeInRight 1s;
@@ -630,21 +696,24 @@ section {
 .mk-next {
   position: absolute;
   font-size: 20px;
-  top: 15px;
+  top: 10px;
   right: 20px;
   color: #2d5cfe;
+  background: #eee;
+  padding: 5px;
+  border-radius: 30px;
 }
 .mkLogUser {
-    margin-right: 5px;
-    font-size: 18px;
-    position: relative;
-    top: 2px;
+  margin-right: 5px;
+  font-size: 18px;
+  position: relative;
+  top: 2px;
 }
 .title-header {
-    font-size: 12px;
-    margin-left: 15px;
-    margin-bottom: -5px;
-    color: #2d5cfe;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-bottom: -5px;
+  color: #2d5cfe;
 }
 .mk-logs-button {
   position: absolute;
@@ -698,10 +767,8 @@ section {
   transition: 1s;
 }
 .mkContactFooter {
-  position: relative;
   text-align: center;
   font-size: 12px;
-  margin-top: 20px;
 }
 .mkContactFooter .mkCodexLinks {
   text-decoration: none;
@@ -725,7 +792,119 @@ section {
   transition: 1s;
 }
 .box.active .toggle .mkToggle {
-    transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.MkAboutPage,
+.MkAppModz,
+.MkFams,
+.MkTeams,
+.MkEntertaiment,
+.MkContactPages {
+  width: 95%;
+  height: 100%;
+  border: 2px solid #eee;
+  padding: 5px;
+  padding-bottom: 5px;
+  border-radius: 30px;
+  background: #fff;
+  margin-bottom: 50px;
+}
+/* Mk Contacts */
+
+.box .list-links-contact {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 10px;
+  top: 10px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  border: 3px solid #eee;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 0 10px #eee;
+  height: 30px;
+}
+.box .list-links-contact .fade-right {
+  animation: fadeInRight 1s;
+}
+.box .list-links-contact .img-list {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  everflow: hidden;
+  margin-right: 50px;
+  color: #2d5cfe;
+}
+.box .list-links-contact .img-list .bx {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.box .list-links-contact .list-content-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d5cfe;
+}
+.box .list-links-contact .list-content-contact h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+  top: 2px;
+}
+.box .list-links-contact .list-content-contact p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  opacity: 50;
+  transition: 0.5s;
+  color: grey;
+  position: relative;
+  right: -10px;
+  bottom: 15px;
+}
+.box .list-links-contact:hover {
+  background: #fff;
+  z-index: 1000;
+  color: black;
+  transition: 0.5s;
+  opacity: 50%;
+}
+.box .mk-back:hover {
+  color: red;
+}
+.box .mk-back:hover .mk-to-back {
+  color: red;
+}
+.list-links-contact:hover .bx {
+  color: black;
+  transition: 0.5s;
+}
+.list-links-contact:hover h4 {
+  color: red;
+  transition: 0.5s;
+}
+.list-links-contact:hover .mk-next {
+  color: red;
+  transition: 0.5s;
+}
+.list-links-contact:hover p {
+  color: #2d5cfe;
+  transition: 0.5s;
 }
 .mk-games-box {
   width: 65vmin;
