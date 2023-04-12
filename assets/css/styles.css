@@ -459,7 +459,7 @@ section {
   height: 70px;
   width: 100px;
   background: rgba(200, 200, 200, 0.156);
-  border: 0.4px solid #eee;
+  border: 0.4px solid rgba(200, 200, 200, 0.156);
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 5px;
