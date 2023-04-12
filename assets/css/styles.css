@@ -458,14 +458,14 @@ section {
   min-width: 300px;
   height: 70px;
   width: 100px;
-  background: #fff;
-  border: 2px solid #eee;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.4px solid #eee;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
   z-index: 1;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   padding: 30px;
   animation: fadeInUp 1s;
   overflow: hidden;
@@ -475,6 +475,9 @@ section {
   bottom: 10px;
   transition: height 1s ease-in-out;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
+}
+.MkBg {
+  opacity: 0.9;
 }
 .box.active {
   height: 390px;
@@ -493,8 +496,8 @@ section {
   cursor: pointer;
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
-  border: 2px solid #eee;
-  box-shadow: 0 0 10px #eee;
+  border: 2px solid rgba(200, 200, 200, 0.156);
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
   height: 30px;
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -530,7 +533,7 @@ section {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   line-height: 1.2em;
-  font-weight: 600;
+  font-weight: bold;
   transition: 0.5s;
   position: relative;
   right: -10px;
@@ -539,12 +542,11 @@ section {
 .box .list-links .list-content p {
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
-  opacity: 50;
   transition: 0.5s;
-  color: grey;
   position: relative;
   right: -10px;
   bottom: 15px;
+  color: black;
 }
 .box .list-links:hover {
   background: #fff;
@@ -601,11 +603,12 @@ section {
   position: relative;
   padding: 10px;
   display: flex;
-  border: 2px solid #eee;
-  border-radius: 5px;
+  border-radius: 50px;
   height: 50px;
   margin-bottom: 30px;
   cursor: pointer;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.1px solid rgb(200, 200, 200);
 }
 .mkx-header .mk-img-header {
   height: 50px;
@@ -617,7 +620,8 @@ section {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 50px;
+  border: 0.1px solid rgb(200, 200, 200);
 }
 .mkx-header .mk-header-content h4 {
   font-size: 15px;
@@ -640,11 +644,15 @@ section {
   font-size: 30px;
   cursor: pointer;
   transition: 1s;
+  color: #2d5cfe;
 }
 .mk-button-header:hover .mk-button-header-back {
-  color: red;
   transition: 1s;
+  color: red;
   transform: scale(1.1);
+}
+.UserNameMk {
+  color: #2d5cfe;
 }
 .mkx-footer {
   position: relative;
@@ -699,7 +707,8 @@ section {
   top: 10px;
   right: 20px;
   color: #2d5cfe;
-  background: #eee;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
   padding: 5px;
   border-radius: 30px;
 }
@@ -710,9 +719,9 @@ section {
   top: 2px;
 }
 .title-header {
-  font-size: 12px;
-  margin-left: 15px;
-  margin-bottom: -5px;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 30px;
   color: #2d5cfe;
 }
 .mk-logs-button {
@@ -769,6 +778,8 @@ section {
 .mkContactFooter {
   text-align: center;
   font-size: 12px;
+  color: white;
+  font-weight: 500;
 }
 .mkContactFooter .mkCodexLinks {
   text-decoration: none;
@@ -802,12 +813,12 @@ section {
 .MkContactPages {
   width: 95%;
   height: 100%;
-  border: 2px solid #eee;
   padding: 5px;
   padding-bottom: 5px;
-  border-radius: 30px;
-  background: #fff;
-  margin-bottom: 50px;
+  border-radius: 50px;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.1px solid rgb(200, 200, 200);
+  margin-bottom: 30px;
 }
 /* Mk Contacts */
 
@@ -817,17 +828,17 @@ section {
   padding: 10px;
   border-radius: 30px;
   margin: 10px;
-  top: 10px;
   margin-bottom: 25px;
   margin-right: 15px;
   margin-left: 15px;
+  top: 10px;
   cursor: pointer;
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
-  border: 3px solid #eee;
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  box-shadow: 0 0 10px #eee;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
   height: 30px;
 }
 .box .list-links-contact .fade-right {
