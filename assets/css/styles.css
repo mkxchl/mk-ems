@@ -480,7 +480,7 @@ section {
   opacity: 0.9;
 }
 .box.active {
-  height: 390px;
+  height: 400px;
   transition: 1s ease-in-out;
 }
 .box .list-links {
