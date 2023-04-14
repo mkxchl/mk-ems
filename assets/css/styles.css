@@ -168,14 +168,14 @@ img {
 }
 .mywindow {
   width: 500px;
-  background: #fff;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.4px solid rgba(200, 200, 200, 0.156);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 12pt;
   border-radius: 5px;
-  border: 2px solid #eee;
 }
 .myanimated {
   transition: all ease 0.3s;
