@@ -284,6 +284,7 @@ img {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 15px;
+  color: white;
 }
 .mytext:focus ~ .mk-title,
 .mytext:valid ~ .mk-title {
@@ -730,7 +731,8 @@ section {
   top: 45px;
   right: 30px;
   color: #2d4cfe;
-  background-color: #eee;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.4px solid rgba(200, 200, 200, 0.156);
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
@@ -757,7 +759,8 @@ section {
   top: 75px;
   right: 25px;
   color: #2d4cfe;
-  background-color: #eee;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.4px solid rgba(200, 200, 200, 0.156);
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
@@ -769,7 +772,8 @@ section {
   top: 75px;
   right: 70px;
   color: #2d4cfe;
-  background-color: #eee;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.4px solid rgba(200, 200, 200, 0.156);
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
