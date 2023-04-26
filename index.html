@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link href="assets/dist/aos.css" rel="stylesheet" />
@@ -42,6 +43,9 @@
     </audio>
     <audio id="dlg">
       <source src="mix/ems-mk.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="MkPlayAudio">
+      <source src="mix/EditorMiringSquad.mp3" type="audio/mpeg" />
     </audio>
     <!-- End Audio OnLoad -->
     <!-- --------- -->
@@ -77,7 +81,7 @@
                 </div>
                 <div class="mk-button-header">
                   <div class="mk-button-header-back">
-                    <i class="bx bx-reset" onclick="reverse()"></i>
+                    <i class="bx bx-menu-alt-left MkxGanzCls" onclick="openFullscreen()"></i>
                   </div>
                 </div>
               </div>
@@ -85,7 +89,7 @@
               <div class="mk-overflow">
                 <div class="MkAboutPage" id="MkAboutMe">
                   <h5 class="title-header">About Team</h5>
-                  <div class="list-links" onclick="location.href='https://instagram.com/yhoris_grvino'">
+                  <div class="list-links">
                     <div class="list-content">
                       <h4>Yhoris Gervino</h4>
                       <p>Founder Team</p>
@@ -238,20 +242,20 @@
                     </div>
                     <i class="bx bx-user-pin mk-next"></i>
                   </div>
-                  </div>
-                  <div class="MkTeams">
-                    <h5 class="title-header">Team Support</h5>
-                    <div class="list-links">
-                      <div class="list-content">
-                        <h4>Tangerang Cyber Army</h4>
-                        <p>Support team</p>
-                      </div>
-                      <i class="bx bx-user-pin mk-next"></i>
+                </div>
+                <div class="MkTeams">
+                  <h5 class="title-header">Team Support</h5>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Tangerang Cyber Army</h4>
+                      <p>Support team</p>
                     </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
                   <div class="list-links">
                     <div class="list-content">
                       <h4>Trisakti Cyber Army</h4>
-                      <p>Support tean</p>
+                      <p>Support team</p>
                     </div>
                     <i class="bx bx-user-pin mk-next"></i>
                   </div>
@@ -275,13 +279,6 @@
                   <div class="list-links" onclick="location.href='https://pornhub.com/'">
                     <div class="list-content">
                       <h4>Movie Action</h4>
-                      <p>Entertaiment</p>
-                    </div>
-                    <i class="bx bxs-cat mk-next"></i>
-                  </div>
-                  <div class="list-links" onclick="location.href='https://www4.javhdporn.net/'">
-                    <div class="list-content">
-                      <h4>Movie Love</h4>
                       <p>Entertaiment</p>
                     </div>
                     <i class="bx bxs-cat mk-next"></i>
@@ -328,8 +325,18 @@
                 <div class="mkContacts">
                   <p class="mkContactFooter">You can order design web in <a href="https://instagram.com/chellgnzxz_" class="mkCodexLinks">Mk Codex</a></p>
                 </div>
+              </div>
             </div>
           </section>
+          <!-- Nav -->
+          <div class="MkNavBar">
+            <div class="MkAreaNavbar">
+              <span class="widget"><i class="bx bx-music" onclick="MkPlayAudio()"></i></span>
+              <span class="widget"><i class="bx bx-fullscreen" onclick="openFullscreen()"></i></span>
+              <span class="widget"><i class="bx bx-cog"></i></span>
+              <span class="widget"><i class="bx bx-reset" onclick="reverse()"></i></span>
+            </div>
+          </div>
         </div>
       </div>
       <!--  Add UserName -->
@@ -338,7 +345,7 @@
         <div class="mybody">
           <div class="mycontent">
             <input class="mytext" type="text" id="mynama" name="nama" required />
-            <label class="mk-title"><i class="bx bx-user mkLogUser"></i>Username</label>
+            <label class="mk-title">Username</label>
             <i class="bx bx-chevron-right mk-logs-button" onclick="mywrite()"></i>
           </div>
         </div>
@@ -363,11 +370,11 @@
     <script src="assets/js/index.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/dist/aos.js"></script>
-    <script src="assets/js/snake.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/toast.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <!-- <script src="assets/js/toast.js"></script> -->
     <script>
       AOS.init();
     </script>
