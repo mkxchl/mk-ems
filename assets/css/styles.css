@@ -23,6 +23,14 @@
   src: url(https://fonts.gstatic.com/s/loveyalikeasister/v14/R70EjzUBlOqPeouhFDfR80-0FhOqJubN-BeL9Xxd.woff2) format("woff2");
 }
 /* All Styling */
+:root {
+  --dark: #34495e;
+  --light: #ffffff;
+  --success: #0abf30;
+  --error: #e24d4c;
+  --warning: #e9bd0c;
+  --info: #3498db;
+}
 * {
   font-family: Quicksand, sans-serif;
   -webkit-user-select: none;
@@ -169,7 +177,7 @@ img {
 .mywindow {
   width: 500px;
   background: rgba(200, 200, 200, 0.156);
-  border: 0.4px solid rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -642,10 +650,15 @@ section {
   right: 15px;
 }
 .mkx-header .mk-button-header .mk-button-header-back {
+  position: relative;
+  bottom: 10px;
   font-size: 30px;
+  padding: 10px;
   cursor: pointer;
   transition: 1s;
   color: #2d5cfe;
+  border-radius: 30px;
+  height: 30px;
 }
 .mk-button-header:hover .mk-button-header-back {
   transition: 1s;
@@ -732,7 +745,7 @@ section {
   right: 30px;
   color: #2d4cfe;
   background: rgba(200, 200, 200, 0.156);
-  border: 0.4px solid rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
@@ -741,17 +754,17 @@ section {
 .mk-logs-button:hover {
   background: #ddd;
   transition: 1s;
-  color: #fff;
+  color: #2d4cfe;
 }
 .mk-warn-button:hover {
   background: #ddd;
   transition: 1s;
-  color: #fff;
+  color: #2d4cfe;
 }
 .mk-warn-back-button:hover {
   background: #ddd;
   transition: 1s;
-  color: #fff;
+  color: #2d4cfe;
 }
 .mk-warn-button {
   position: absolute;
@@ -760,7 +773,7 @@ section {
   right: 25px;
   color: #2d4cfe;
   background: rgba(200, 200, 200, 0.156);
-  border: 0.4px solid rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
@@ -770,10 +783,10 @@ section {
   position: absolute;
   font-size: 30px;
   top: 75px;
-  right: 70px;
+  right: 75px;
   color: #2d4cfe;
   background: rgba(200, 200, 200, 0.156);
-  border: 0.4px solid rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
@@ -876,7 +889,7 @@ section {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   line-height: 1.2em;
-  font-weight: 600;
+  font-weight: bold;
   transition: 0.5s;
   position: relative;
   right: -10px;
@@ -921,69 +934,141 @@ section {
   color: #2d5cfe;
   transition: 0.5s;
 }
-.mk-games-box {
-  width: 65vmin;
-  height: 70vmin;
-  display: flex;
+/* Smarts */
+
+.MkNavBar {
+  position: relative;
+  width: 340px;
+  height: 70px;
   overflow: hidden;
-  flex-direction: column;
   justify-content: center;
-  border-radius: 5px;
-  background: #293447;
-  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+  align-items: center;
+  display: flex;
   visibility: hidden;
   opacity: 0;
+  transition: 1s ease-in-out;
+  z-index: 99999;
+  animation: showResponse 1s;
+  border-radius: 50px;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.1px solid rgb(200, 200, 200);
+}
+
+.MkAreaNavbar {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #2d5cfe;
+  position: relative;
+  z-index: 999;
+  font-weight: 700;
+}
+
+.widget {
+  margin: 20px;
+  padding: 10px;
+  transition: all 1s;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+.mk-moon {
+  cursor: default;
+}
+.widget i {
   transition: all 0.5s;
 }
-.game-details {
-  color: #b8c6dc;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 20px 27px;
-  display: flex;
-  justify-content: space-between;
+.widget:hover {
+  color: #1ed760;
 }
-.play-board {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  background: #212837;
-  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+.widget:hover i {
+  color: #1ed760;
 }
-.play-board .food {
-  background: #ff003d;
-}
-.play-board .head {
-  background: #60cbff;
-}
-.controls {
-  display: none;
-  justify-content: space-between;
-}
-.controls i {
-  padding: 25px 0;
-  text-align: center;
-  font-size: 1.3rem;
-  color: #b8c6dc;
-  width: calc(100% / 4);
-  cursor: pointer;
-  border-right: 1px solid #171b26;
-}
-@media screen and (max-width: 800px) {
-  .wrapper {
-    width: 90vmin;
-    height: 115vmin;
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 500px, 0);
   }
-  .game-details {
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fuel {
+  0%,
+  50%,
+  100% {
+    color: #fff;
+    opacity: 1;
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    color: red;
+    opacity: 0.8;
+  }
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes up {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes showResponse {
+  0% {
+    opacity: 1;
+    top: calc(50% - 36px);
+  }
+  70% {
+    opacity: 1;
+    top: calc(50% - 46px);
+  }
+  100% {
+    opacity: 0;
+    top: calc(50% - 46px);
+  }
+}
+
+@keyframes showResponse {
+  0% {
+    opacity: 1;
+    top: calc(50% - 36px);
+  }
+  70% {
+    opacity: 1;
+    top: calc(50% - 46px);
+  }
+  100% {
+    opacity: 0;
+    top: calc(50% - 46px);
+  }
+}
+@media screen and (max-width: 530px) {
+  .notifications {
+    width: 95%;
+  }
+  .notifications .toast {
+    width: 100%;
     font-size: 1rem;
-    padding: 15px 27px;
+    margin-left: 20px;
   }
-  .controls {
-    display: flex;
-  }
-  .controls i {
-    padding: 15px 0;
-    font-size: 1rem;
+  .buttons .btn {
+    margin: 0 1px;
+    font-size: 1.1rem;
+    padding: 8px 15px;
   }
 }
 /* Mobile Preview */
