@@ -958,7 +958,7 @@ section {
   margin-top: 10px;
   width: 100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   color: #2d5cfe;
   position: relative;
   z-index: 999;
@@ -966,7 +966,6 @@ section {
 }
 
 .widget {
-  margin: 20px;
   padding: 10px;
   transition: all 1s;
   cursor: pointer;
