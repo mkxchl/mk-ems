@@ -955,7 +955,7 @@ section {
 }
 
 .MkAreaNavbar {
-  margin-top: 5px;
+  margin-top: 7px;
   width: 100%;
   text-align: center;
   font-size: 25px;
@@ -966,7 +966,7 @@ section {
 }
 
 .widget {
-  margin: -50px;
+  margin: 15px;
   padding: 10px;
   transition: all 1s;
   cursor: pointer;
