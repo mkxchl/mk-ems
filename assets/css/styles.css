@@ -965,7 +965,7 @@ section {
 }
 
 .widget {
-  margin: -10px;
+  margin: -30px;
   padding: 10px;
   transition: all 1s;
   cursor: pointer;
