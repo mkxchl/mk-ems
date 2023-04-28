@@ -145,7 +145,7 @@ body.dark-theme {
     overflow-x: hidden;
     display: flex;
     transition: 0.5s;
-    top: -30px;
+    top: -20px;
     flex-direction: column;
     border-radius: 5px;
     background: #ecf0f3;
