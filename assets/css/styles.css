@@ -998,10 +998,6 @@ section {
   background: #212121;
   border-radius: 50px;
   border: 0.4px solid rgba(200, 200, 200, 0.156);
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
   right: 10px;
 }
 
