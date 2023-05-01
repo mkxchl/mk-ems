@@ -46,6 +46,52 @@ body {
   margin: 0;
   padding: 0;
 }
+body.dark-theme {
+  /* background-image: url("https://images.unsplash.com/photo-1614522562493-455408036ea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"); */
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  --title-color: hsl(var(--hue), 12%, 95%);
+  --text-color: hsl(var(--hue), 12%, 75%);
+  /*  --body-color: hsl(var(--hue), 40%, 8%); */
+  --container-color: hsl(var(--hue), 24%, 12%);
+  transition: 1s;
+}
+
+.dark-theme .box {
+  background-color: white;
+  transition: 1s;
+}
+.dark-theme .box .mkx-header {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkAboutPage {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkAppModz {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkFams {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkTeams {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkEntertaiment {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkContactPages {
+  background-color: transparent;
+  transition: 1s;
+}
 /* Navbar */
 .MkContainerx {
   height: 30px;
@@ -467,12 +513,13 @@ section {
   min-width: 300px;
   height: 70px;
   width: 100px;
-  background: rgba(200, 200, 200, 0.156);
+  background: #212121;
+  /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
   border: 0.4px solid rgba(200, 200, 200, 0.156);
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
   z-index: 1;
   backdrop-filter: blur(2px);
   padding: 30px;
@@ -555,7 +602,7 @@ section {
   position: relative;
   right: -10px;
   bottom: 15px;
-  color: black;
+  color: #f5c242;
 }
 .box .list-links:hover {
   background: #fff;
@@ -616,7 +663,7 @@ section {
   height: 50px;
   margin-bottom: 30px;
   cursor: pointer;
-  background: rgba(200, 200, 200, 0.156);
+  background: #212121;
   border: 0.1px solid rgb(200, 200, 200);
 }
 .mkx-header .mk-img-header {
@@ -630,7 +677,6 @@ section {
   height: 50px;
   margin-right: 10px;
   border-radius: 50px;
-  border: 0.1px solid rgb(200, 200, 200);
 }
 .mkx-header .mk-header-content h4 {
   font-size: 15px;
@@ -639,10 +685,11 @@ section {
   bottom: 10px;
 }
 .mkx-header .mk-header-content p {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 300;
   position: relative;
   bottom: 30px;
+  color: #f5c242;
 }
 .mkx-header .mk-button-header {
   position: absolute;
@@ -720,7 +767,7 @@ section {
   font-size: 20px;
   top: 10px;
   right: 20px;
-  color: #2d5cfe;
+  color: #f5c242;
   background: rgba(200, 200, 200, 0.156);
   border: 0.2px solid rgba(200, 200, 200, 0.156);
   padding: 5px;
@@ -795,7 +842,7 @@ section {
 .mkContactFooter {
   text-align: center;
   font-size: 12px;
-  color: white;
+  color: #f5c242;
   font-weight: 500;
 }
 .mkContactFooter .mkCodexLinks {
@@ -833,8 +880,8 @@ section {
   padding: 5px;
   padding-bottom: 5px;
   border-radius: 50px;
-  background: rgba(200, 200, 200, 0.156);
-  border: 0.1px solid rgb(200, 200, 200);
+  background: #212121;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
   margin-bottom: 30px;
 }
 /* Mk Contacts */
@@ -938,7 +985,7 @@ section {
 
 .MkNavBar {
   position: relative;
-  width: 300px;
+  width: 340px;
   height: 70px;
   overflow: hidden;
   justify-content: center;
@@ -949,26 +996,30 @@ section {
   transition: 1s ease-in-out;
   z-index: 99999;
   animation: showResponse 1s;
+  background: #212121;
   border-radius: 50px;
-  background: rgba(200, 200, 200, 0.156);
-  border: 0.1px solid rgb(200, 200, 200);
+  border: 0.4px solid rgba(200, 200, 200, 0.156);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .MkAreaNavbar {
-  margin-top: 7px;
+  margin-top: 10px;
   width: 100%;
   text-align: center;
-  font-size: 25px;
-  color: #2d5cfe;
+  font-size: 18px;
+  color: #f5c242;
   position: relative;
   z-index: 999;
   font-weight: 700;
 }
 
 .widget {
-  margin: 15px;
+  margin: 20px;
   padding: 10px;
-  transition: all 1s;
+  transition: all 0.5s;
   cursor: pointer;
   position: relative;
   text-align: center;
@@ -980,10 +1031,10 @@ section {
   transition: all 0.5s;
 }
 .widget:hover {
-  color: #1ed760;
+  color: #2d5cfe;
 }
 .widget:hover i {
-  color: #1ed760;
+  color: #2d5cfe;
 }
 @keyframes fadeInUp {
   from {
