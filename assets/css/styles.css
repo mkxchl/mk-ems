@@ -881,7 +881,7 @@ section {
   padding-bottom: 5px;
   border-radius: 50px;
   background: #212121;
-  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+  border: 0.1px solid rgb(200, 200, 200);
   margin-bottom: 30px;
 }
 /* Mk Contacts */
