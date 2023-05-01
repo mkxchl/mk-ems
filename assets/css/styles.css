@@ -994,7 +994,6 @@ section {
   visibility: hidden;
   opacity: 0;
   transition: 1s ease-in-out;
-  z-index: 99999;
   animation: showResponse 1s;
   background: #212121;
   border-radius: 50px;
