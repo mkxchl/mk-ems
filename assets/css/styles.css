@@ -987,7 +987,6 @@ section {
   position: relative;
   width: 340px;
   height: 70px;
-  right: 10px;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -1003,6 +1002,7 @@ section {
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
+  right: 10px;
 }
 
 .MkAreaNavbar {
