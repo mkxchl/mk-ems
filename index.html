@@ -11,15 +11,15 @@
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
     <!-- Meta Property -->
-    <meta property="og:title" content="✘ Editor Miring Squad ✘" />
-    <meta property="og:description" content="ㅅ Official Website ㅅ" />
+    <meta property="og:title" content="EMS REVOLUTION - Officiall website editor miring squad revolution!" />
+    <meta property="og:description" content="Coding by Marchell Kevandra" />
     <meta property="og:url" content="https://ems-links.netlify.app/" />
-    <meta property="og:image" content="https://ems-links.netlify.app/assets/images/ems-1.png" />
-    <meta property="og:image:secure_url" content="https://ems-links.netlify.app/assets/images/ems-1.png" />
-    <meta property="og:author" content="✘ Marchell Kevandra ✘" />
+    <meta property="og:image" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <meta property="og:image:secure_url" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <meta property="og:author" content="Chellxz" />
     <!-- Link Rel Assets -->
-    <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/ems-1.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/ems-1.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
@@ -69,10 +69,42 @@
     <div class="container">
       <div class="mknet">
         <div class="mkbody">
+          <nav>
+            <ul>
+              <i class="bx bx-chevrons-left MkUserIconsBack" onclick="closeMenu()"></i>
+              <img src="assets/images/logo.jpg" class="MkUserListImages" />
+              <div class="MkUserMenuSetting">
+                <div class="MkUserList">
+                  <div class="MkUserContent">
+                    <h4>Home</h4>
+                  </div>
+                  <i class="bx bx-chevrons-right MkUserIcons"></i>
+                </div>
+                <div class="MkUserList">
+                  <div class="MkUserContent">
+                    <h4>About</h4>
+                  </div>
+                  <i class="bx bx-chevrons-right MkUserIcons"></i>
+                </div>
+                <div class="MkUserList MkAboutx">
+                  <div class="MkUserContent">
+                    <h4>Skill</h4>
+                  </div>
+                  <i class="bx bx-chevrons-right MkUserIcons"></i>
+                </div>
+                <div class="MkUserList">
+                  <div class="MkUserContent">
+                    <h4>Blog</h4>
+                  </div>
+                  <i class="bx bx-chevrons-right MkUserIcons"></i>
+                </div>
+              </div>
+            </ul>
+          </nav>
           <section>
             <div class="box mk-box">
               <!-- <h3>Mk Links</h3> -->
-              <div class="mkx-header toggle MkxGanzCls MkFullX">
+              <div class="mkx-header toggle MkxGanzCls">
                 <div class="mk-img-header">
                   <img src="/assets/images/logo.jpg" class="mk-img-content" />
                 </div>
@@ -97,7 +129,7 @@
                     </div>
                     <i class="bx bx-user mk-next"></i>
                   </div>
-                  <div class="list-links" onclick="location.href='about/'">
+                  <div class="list-links MkAboutx">
                     <div class="list-content">
                       <h4>Marchell Kevandra</h4>
                       <p>Founder Team</p>
@@ -138,21 +170,21 @@
                   <div class="list-links" onclick="location.href='https://sfile.mobi/ak4R0snkoom'">
                     <div class="list-content">
                       <h4>Kinemaster V1</h4>
-                      <p>Mod By Yhoris Gervino</p>
+                      <p>Get Link</p>
                     </div>
                     <i class="bx bxs-download mk-next"></i>
                   </div>
                   <div class="list-links" onclick="location.href='https://sfile.mobi/auvof2K1lm3'">
                     <div class="list-content">
                       <h4>Kinemaster V2</h4>
-                      <p>Mod By Yhoris Gervino</p>
+                      <p>Get Link</p>
                     </div>
                     <i class="bx bxs-download mk-next"></i>
                   </div>
                   <div class="list-links" onclick="location.href='https://sfile.mobi/84sZ8oGUUMk'">
                     <div class="list-content">
                       <h4>Kinemaster V3</h4>
-                      <p>Mod By Yhoris Gervino</p>
+                      <p>Get Link</p>
                     </div>
                     <i class="bx bxs-download mk-next"></i>
                   </div>
@@ -332,9 +364,10 @@
           <!-- Nav -->
           <div class="MkNavBar">
             <div class="MkAreaNavbar">
-              <span class="widget"><i class="bx bx-music" onclick="MkPlayAudio()"></i></span>
-              <span class="widget"><i class="bx bx-fullscreen" onclick="openFullscreen()"></i></span>
-              <span class="widget"><i class="bx bx-reset" onclick="reverse()"></i></span>
+              <span class="widget"><i class="bx bx-music MkIconEms" onclick="MkPlayAudio()"></i></span>
+              <span class="widget"><i class="bx bx-fullscreen MkIconEms" onclick="openFullscreen()"></i></span>
+              <span class="widget"><i class="bx bx-reset MkIconEms" onclick="reverse()"></i></span>
+              <span class="widget"><i class="bx bx-menu MkIconEms" onclick="openMenu()"></i></span>
               <!-- <span class="widget"><i class="ri-moon-line change-theme" id="theme-button"></i></span> -->
             </div>
           </div>
@@ -385,6 +418,16 @@
       MkCardToggle.onclick = function () {
         MkCard.classList.toggle("active");
       };
+    </script>
+    <script>
+      function openMenu() {
+        var open = document.querySelector("ul");
+        (open.style.right = "0%"), (open.style.transition = "all 1s ease-out");
+      }
+      function closeMenu() {
+        var close = document.querySelector("ul");
+        (close.style.right = "-1000%"), (close.style.transition = "all 1s ease-out");
+      }
     </script>
   </body>
 </html>
