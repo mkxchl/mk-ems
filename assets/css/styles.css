@@ -31,6 +31,9 @@
   --warning: #e9bd0c;
   --info: #3498db;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   font-family: Quicksand, sans-serif;
   -webkit-user-select: none;
@@ -1508,6 +1511,6 @@ nav ul .MkUserIconsBack {
     background: #212121;
     border-radius: 50px;
     border: 0.4px solid rgba(200, 200, 200, 0.156);
-    left: -2px;
+    left: -10px;
   }
 }
