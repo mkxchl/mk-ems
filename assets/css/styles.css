@@ -389,6 +389,7 @@ img {
   opacity: 1;
   /* box-shadow: 0 4px 8px 0 rgba(0.2), 0 6px 20px 0 #3c87ff; */
   box-shadow: -3px -3px 7px #3c87ff, 3px 3px 5px #3c87ff;
+  z-index: 99999999;
 }
 .mybuttonno,
 .mybuttonyes {
@@ -1511,6 +1512,6 @@ nav ul .MkUserIconsBack {
     background: #212121;
     border-radius: 50px;
     border: 0.4px solid rgba(200, 200, 200, 0.156);
-    left: -15px;
+    left: -20px;
   }
 }
