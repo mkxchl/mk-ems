@@ -1366,8 +1366,8 @@ nav ul .MkUserIconsBack {
     z-index: 500000;
     font-size: 20px;
     padding: 10px;
-    bottom: 240px;
-    right: 80px;
+    bottom: 220px;
+    right: 50px;
     border-radius: 50px;
   }
 }
@@ -1508,6 +1508,6 @@ nav ul .MkUserIconsBack {
     background: #212121;
     border-radius: 50px;
     border: 0.4px solid rgba(200, 200, 200, 0.156);
-    left: -5px;
+    left: -2px;
   }
 }
