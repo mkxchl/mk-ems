@@ -32,7 +32,7 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-# Function Km | Ems - Links
+/// Function Km | Ems - Links ///
 
 function KmEmsA() {
   window.location.replace("https://sfile.mobi/ak4R0snkoom");
@@ -44,7 +44,7 @@ function KmEmsC() {
   window.location.replace("https://sfile.mobi/84sZ8oGUUMk");
 }
 
-# Function About - Links
+/// Function About - Links ///
 
 function YgK() {
   window.location.replace("https://instagram.com/yhoris_grvino");
@@ -65,7 +65,7 @@ function AnD() {
   window.location.replace("https://instagram.com/andreasoktrap");
 }
 
-# Function Entertaiment - Links
+/// Function Entertaiment - Links ///
 
 function MkEntx() {
   window.location.replace("https://www4.javhdporn.net/");
@@ -77,7 +77,7 @@ function MkEntxxx() {
   window.location.replace("https://pornhub.com/");
 }
 
-# Function Contact - Links
+/// Function Contact - Links ///
 
 function DscX() {
   window.location.replace("https://discord.gg/MarchellKevandra");
