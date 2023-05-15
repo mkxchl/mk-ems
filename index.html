@@ -72,31 +72,46 @@
           <nav>
             <ul>
               <i class="bx bx-chevrons-left MkUserIconsBack" onclick="closeMenu()"></i>
-              <img src="assets/images/logo.jpg" class="MkUserListImages" />
               <div class="MkUserMenuSetting">
-                <div class="MkUserList">
-                  <div class="MkUserContent">
-                    <h4>Home</h4>
+                <div class="MkUserListInfo">
+                  <div class="MkUserContentInfo">
+                    <h4>Announcement</h4>
+                    <p>
+                      Welcome to my website <b>Marchell Kevandra </b> This is my project website build in Html, Css and JavaScript.<br />
+                      <b class="MkForgets">Jangan lupa follow Social Media saya di bawah ini!.</b>
+                      <br />
+                    </p>
                   </div>
-                  <i class="bx bx-chevrons-right MkUserIcons"></i>
                 </div>
-                <div class="MkUserList">
+                <div class="MkUserList" onclick="DscX()">
                   <div class="MkUserContent">
-                    <h4>About</h4>
+                    <h4>Discord</h4>
                   </div>
-                  <i class="bx bx-chevrons-right MkUserIcons"></i>
+                  <i class="bx bxl-discord MkUserIcons"></i>
                 </div>
-                <div class="MkUserList MkAboutx">
+                <div class="MkUserList" onclick="IntX()">
                   <div class="MkUserContent">
-                    <h4>Skill</h4>
+                    <h4>Instagram</h4>
                   </div>
-                  <i class="bx bx-chevrons-right MkUserIcons"></i>
+                  <i class="bx bxl-instagram MkUserIcons"></i>
                 </div>
-                <div class="MkUserList">
+                <div class="MkUserList MkAboutx" onclick="FbX()">
                   <div class="MkUserContent">
-                    <h4>Blog</h4>
+                    <h4>Facebook</h4>
                   </div>
-                  <i class="bx bx-chevrons-right MkUserIcons"></i>
+                  <i class="bx bxl-facebook MkUserIcons"></i>
+                </div>
+                <div class="MkUserList" onclick="TlX()">
+                  <div class="MkUserContent">
+                    <h4>Telegram</h4>
+                  </div>
+                  <i class="bx bxl-telegram MkUserIcons"></i>
+                </div>
+                <div class="MkUserList" onclick="TtX()">
+                  <div class="MkUserContent">
+                    <h4>Tiktok</h4>
+                  </div>
+                  <i class="bx bxl-tiktok MkUserIcons"></i>
                 </div>
               </div>
             </ul>
@@ -104,7 +119,7 @@
           <section>
             <div class="box mk-box">
               <!-- <h3>Mk Links</h3> -->
-              <div class="mkx-header toggle MkxGanzCls MkFullX">
+              <div class="mkx-header toggle MkxGanzCls">
                 <div class="mk-img-header">
                   <img src="/assets/images/logo.jpg" class="mk-img-content" />
                 </div>
@@ -129,7 +144,7 @@
                     </div>
                     <i class="bx bx-user mk-next"></i>
                   </div>
-                  <div class="list-links MkAboutx">
+                  <div class="list-links MkAboutx" onclick="location.href='about/'">
                     <div class="list-content">
                       <h4>Marchell Kevandra</h4>
                       <p>Founder Team</p>
@@ -317,44 +332,6 @@
                     <i class="bx bxs-cat mk-next"></i>
                   </div>
                 </div>
-                <div class="MkContactPages">
-                  <h5 class="title-header">Contact us</h5>
-                  <div class="list-links-contact" onclick="DscX()">
-                    <div class="list-content-contact">
-                      <h4>Discord</h4>
-                      <!-- <p>Marchell Kevandra</p> -->
-                    </div>
-                    <i class="bx bxl-discord mk-next"></i>
-                  </div>
-                  <div class="list-links-contact" onclick="IntX()">
-                    <div class="list-content-contact">
-                      <h4>Instagram</h4>
-                      <!-- <p>Marchell Kevandra</p> -->
-                    </div>
-                    <i class="bx bxl-instagram mk-next"></i>
-                  </div>
-                  <div class="list-links-contact" onclick="FbX()">
-                    <div class="list-content-contact">
-                      <h4>Facebook</h4>
-                      <!-- <p>Marchell Kevandra</p> -->
-                    </div>
-                    <i class="bx bxl-facebook mk-next"></i>
-                  </div>
-                  <div class="list-links-contact" onclick="TtX()">
-                    <div class="list-content-contact">
-                      <h4>Tiktok</h4>
-                      <!-- <p>Marchell Kevandra</p> -->
-                    </div>
-                    <i class="bx bxl-tiktok mk-next"></i>
-                  </div>
-                  <div class="list-links-contact" onclick="TlX()">
-                    <div class="list-content-contact">
-                      <h4>Telegram</h4>
-                      <!-- <p>Marchell Kevandra</p> -->
-                    </div>
-                    <i class="bx bxl-telegram mk-next"></i>
-                  </div>
-                </div>
                 <div class="mkContacts">
                   <p class="mkContactFooter">You can order design web in <a onclick="IntX()" class="mkCodexLinks">Mk Codex</a></p>
                 </div>
@@ -367,7 +344,7 @@
               <span class="widget"><i class="bx bx-music MkIconEms" onclick="MkPlayAudio()"></i></span>
               <span class="widget"><i class="bx bx-fullscreen MkIconEms" onclick="openFullscreen()"></i></span>
               <span class="widget"><i class="bx bx-reset MkIconEms" onclick="reverse()"></i></span>
-              <span class="widget"><i class="bx bx-menu MkIconEms" onclick="openMenu()"></i></span>
+              <span class="widget"><i class="bx bxs-user-account MkIconEms" onclick="openMenu()"></i></span>
               <!-- <span class="widget"><i class="ri-moon-line change-theme" id="theme-button"></i></span> -->
             </div>
           </div>
@@ -422,11 +399,11 @@
     <script>
       function openMenu() {
         var open = document.querySelector("ul");
-        (open.style.right = "0%"), (open.style.transition = "all 1s ease-out");
+        open.style.right = "0%";
       }
       function closeMenu() {
         var close = document.querySelector("ul");
-        (close.style.right = "-1000%"), (close.style.transition = "all 1s ease-out");
+        close.style.right = "-1000%";
       }
     </script>
   </body>
