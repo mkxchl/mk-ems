@@ -34,6 +34,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   font-family: Quicksand, sans-serif;
   -webkit-user-select: none;
@@ -64,7 +65,7 @@ body.dark-theme {
 }
 
 .dark-theme .box {
-  background-color: white;
+  background-color: #212121;
   transition: 1s;
 }
 .dark-theme .box .mkx-header {
@@ -389,7 +390,7 @@ img {
   opacity: 1;
   /* box-shadow: 0 4px 8px 0 rgba(0.2), 0 6px 20px 0 #3c87ff; */
   box-shadow: -3px -3px 7px #3c87ff, 3px 3px 5px #3c87ff;
-  z-index: 99999999;
+  z-index: 9999999;
 }
 .mybuttonno,
 .mybuttonyes {
@@ -612,8 +613,7 @@ section {
   background: #fff;
   z-index: 1000;
   color: black;
-  transition: 0.5s;
-  opacity: 50%;
+  transition: 1s;
 }
 .box .mk-back:hover {
   color: red;
@@ -659,6 +659,70 @@ section {
   border-radius: 25px;
   margin-left: 20px;
 }
+/* Header Information */
+.Mk_Information {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  border-radius: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  background: #212121;
+  border: 0.1px solid rgb(200, 200, 200);
+  z-index: 999999999;
+}
+.Mk_Information .MkImagesInformation {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+.Mk_Information .MkImagesInformation .MkImagesContent {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.Mk_Information .MkInformationContent h4 {
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  bottom: 10px;
+}
+.Mk_Information .MkInformationContent p {
+  font-size: 10px;
+  font-weight: 300;
+  position: relative;
+  bottom: 30px;
+  color: #f5c242;
+}
+.Mk_Information .mk-button-header {
+  position: absolute;
+  margin-top: 10px;
+  right: 15px;
+}
+.Mk_Information .mk-button-header .mk-button-header-back {
+  position: relative;
+  bottom: 10px;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 1s;
+  color: #2d5cfe;
+  border-radius: 30px;
+  height: 30px;
+}
+.mk-button-header:hover .mk-button-header-back {
+  transition: 1s;
+  color: red;
+  transform: scale(1.1);
+}
+.MKInfoUserNameMk {
+  color: #2d5cfe;
+}
+
+/* Header Contents */
 .mkx-header {
   position: relative;
   padding: 10px;
@@ -853,6 +917,8 @@ section {
   text-decoration: none;
   font-weight: bold;
   transition: 1s;
+  color: #2d5cfe;
+  cursor: pointer;
 }
 .mkContactFooterLogs {
   position: relative;
@@ -867,7 +933,7 @@ section {
   transition: 1s;
 }
 .mkCodexLinks:hover {
-  color: black;
+  color: #f5c242;
   transition: 1s;
 }
 .box.active .toggle .mkToggle {
@@ -989,7 +1055,7 @@ section {
 
 .MkNavBar {
   position: relative;
-  width: 340px;
+  width: 355px;
   height: 70px;
   overflow: hidden;
   justify-content: center;
@@ -1000,7 +1066,7 @@ section {
   transition: 1s ease-in-out;
   animation: dynamicIslandAnm 1s;
   background: #212121;
-  border-radius: 50px;
+  border-radius: 5px;
   border: 0.4px solid rgba(200, 200, 200, 0.156);
   left: 480px;
 }
@@ -1009,11 +1075,12 @@ section {
   margin-top: 10px;
   width: 100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: #f5c242;
   position: relative;
   z-index: 999;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .widget {
@@ -1024,20 +1091,31 @@ section {
   transition: all 1s;
   cursor: pointer;
   position: relative;
-  margin: 10px;
-  height: 20px;
-  width: 20px;
+  margin: 11px;
+  height: 50px;
+  width: 50px;
   padding: 10px;
-  bottom: 5px;
 }
 .MkIconEms {
   position: relative;
-  top: 1px;
+  top: 2px;
+}
+.widget:hover {
+  background: #fff;
+  z-index: 1000;
+  color: #f5c242;
+  transition: 1s;
+}
+.MkForgets {
+  position: relative;
+  margin-top: 10px;
+  font-weight: normal;
+  color: red;
 }
 /* Nav Active */
 
 nav {
-  background: black;
+  background: white;
   margin: 0;
   padding: 0;
 }
@@ -1070,14 +1148,29 @@ nav button li {
   height: 15px;
   font-weight: bold;
   outline: none;
-  transition: all 2s;
+  transition: all 1s;
 }
 nav i {
   font-size: 20px;
   margin-right: 1%;
 }
+.MKInformation {
+  position: relative;
+  z-index: 999999;
+}
+.MKInformation .MkTittleInfo h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
 .MkUserIconsBack {
   color: white;
+}
+.MkUserIconsBack:hover {
+  background: #fff;
+  z-index: 1000;
+  color: #f5c242;
+  transition: 1s;
 }
 #bar {
   color: white;
@@ -1112,13 +1205,109 @@ nav .MkUserMenuSetting {
   bottom: 600px;
   border-radius: 50px;
 }
+.MkUserListInfo {
+  position: relative;
+  display: flex;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 10px;
+  top: -650px;
+  left: 430px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 15px;
+  margin-left: 50px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  border: 2px solid rgba(200, 200, 200, 0.156);
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+  height: 70px;
+}
+.MkUserListInfo .fade-right {
+  animation: fadeInRight 1s;
+}
+.MkUserIMagesInfo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  everflow: hidden;
+  margin-right: 50px;
+  color: #2d5cfe;
+}
+.MkUserIMagesInfo .MkUserIMagesInfox {
+  position: absolute;
+  object-fit: cover;
+  width: 50%;
+  height: 50%;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+}
+.MkUserListInfo .MkUserContentInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d5cfe;
+}
+.MkUserListInfo .MkUserContentInfo h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: bold;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+  top: 10px;
+  margin-top: 30px;
+}
+.MkUserListInfo .MkUserContentInfo p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+  bottom: 10px;
+  color: #f5c242;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.MkUserIconsInfo {
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 20px;
+  color: #f5c242;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  padding: 5px;
+  border-radius: 30px;
+}
+nav .MkUserMenuSetting {
+  display: block;
+  text-align: left;
+  outline: none;
+  color: white;
+  width: 50%;
+}
+.MkUserListImages {
+  position: relative;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  left: 50px;
+  bottom: 600px;
+  border-radius: 50px;
+}
 .MkUserList {
   position: relative;
   display: flex;
   padding: 10px;
   border-radius: 30px;
   margin: 10px;
-  top: -500px;
+  top: -650px;
   left: 430px;
   margin-bottom: 20px;
   margin-right: 15px;
@@ -1227,8 +1416,8 @@ nav ul .MkUserIconsBack {
   z-index: 500000;
   font-size: 20px;
   padding: 10px;
-  bottom: 700px;
-  right: 150px;
+  left: -180px;
+  bottom: 590px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -1243,6 +1432,86 @@ nav ul .MkUserIconsBack {
     padding-bottom: 10%;
     color: white;
     width: 100%;
+  }
+  .MkUserListInfo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px;
+    top: -100px;
+    left: 25px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    border: 2px solid rgba(200, 200, 200, 0.156);
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+    height: 70px;
+    z-index: 9999999;
+  }
+  .MkUserListInfo .fade-right {
+    animation: fadeInRight 1s;
+  }
+  .MkUserIMagesInfo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    everflow: hidden;
+    margin-right: 50px;
+    color: #2d5cfe;
+  }
+  .MkUserIMagesInfo .MkUserIMagesInfox {
+    position: absolute;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+  }
+  .MkUserListInfo .MkUserContentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2d5cfe;
+  }
+  .MkUserListInfo .MkUserContentInfo h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    top: 10px;
+    margin-top: 30px;
+  }
+  .MkUserListInfo .MkUserContentInfo p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    bottom: 10px;
+    color: #f5c242;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .MkUserIconsInfo {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 20px;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    padding: 5px;
+    border-radius: 30px;
   }
   .MkUserListImages {
     position: relative;
@@ -1261,8 +1530,8 @@ nav ul .MkUserIconsBack {
     padding: 10px;
     border-radius: 30px;
     margin: 10px;
-    top: -100px;
-    left: 2px;
+    top: -200px;
+    left: 5px;
     margin-bottom: 20px;
     margin-right: 15px;
     margin-left: 50px;
@@ -1370,9 +1639,87 @@ nav ul .MkUserIconsBack {
     z-index: 500000;
     font-size: 20px;
     padding: 10px;
-    bottom: 220px;
-    right: 50px;
+    bottom: 100px;
+    left: -130px;
     border-radius: 50px;
+  }
+  .MkUserListInfo {
+    position: relative;
+    display: flex;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+    top: -700px;
+    left: 430px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    border: 2px solid rgba(200, 200, 200, 0.156);
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+    height: 70px;
+  }
+  .MkUserListInfo .fade-right {
+    animation: fadeInRight 1s;
+  }
+  .MkUserIMagesInfo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    everflow: hidden;
+    margin-right: 50px;
+    color: #2d5cfe;
+  }
+  .MkUserIMagesInfo .MkUserIMagesInfox {
+    position: absolute;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+  }
+  .MkUserListInfo .MkUserContentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2d5cfe;
+  }
+  .MkUserListInfo .MkUserContentInfo h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    top: 10px;
+    margin-top: 30px;
+  }
+  .MkUserListInfo .MkUserContentInfo p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    bottom: 10px;
+    color: #f5c242;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .MkUserIconsInfo {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 20px;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    padding: 5px;
+    border-radius: 30px;
   }
 }
 @keyframes dynamicIslandAnm {
@@ -1478,7 +1825,7 @@ nav ul .MkUserIconsBack {
   }
 }
 /* Mobile Preview */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   .mywindow {
     width: 90%;
     left: 50%;
@@ -1499,6 +1846,222 @@ nav ul .MkUserIconsBack {
   }
   .MkNavBar {
     position: relative;
+    width: 345px;
+    height: 70px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    animation: dynamicIslandAnm 1s;
+    background: #212121;
+    border-radius: 5px;
+    border: 0.4px solid rgba(200, 200, 200, 0.156);
+    left: -5px;
+    top: -150px;
+  }
+  .MkUserListInfo {
+    position: relative;
+    display: flex;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+    top: -200px;
+    left: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    border: 2px solid rgba(200, 200, 200, 0.156);
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+    height: 100px;
+  }
+  .MkUserListInfo .fade-right {
+    animation: fadeInRight 1s;
+  }
+  .MkUserIMagesInfo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    everflow: hidden;
+    margin-right: 50px;
+    color: #2d5cfe;
+  }
+  .MkUserIMagesInfo .MkUserIMagesInfox {
+    position: absolute;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+  }
+  .MkUserListInfo .MkUserContentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2d5cfe;
+  }
+  .MkUserListInfo .MkUserContentInfo h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    top: 10px;
+  }
+  .MkUserListInfo .MkUserContentInfo p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    transition: 0.5s;
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    color: #f5c242;
+    width: 90%;
+    bottom: 5px;
+    padding-top: 5px;
+  }
+  .MkUserIconsInfo {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 20px;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    padding: 5px;
+    border-radius: 30px;
+  }
+}
+/* @media screen and (max-width: 360px) {
+  .container {
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .mk-overflow {
+    width: 92%;
+  }
+  .mkx-header {
+    position: relative;
+    width: 85%;
+    padding: 10px;
+    display: flex;
+    border-radius: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: #212121;
+    border: 0.1px solid rgb(200, 200, 200);
+  }
+  .mkx-header .mk-img-header {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+  .mkx-header .mk-img-header .mk-img-content {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+  }
+  .mkx-header .mk-header-content h4 {
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+  }
+  .mkx-header .mk-header-content p {
+    font-size: 10px;
+    font-weight: 300;
+    position: relative;
+    bottom: 30px;
+    color: #f5c242;
+  }
+  .mkx-header .mk-button-header {
+    position: absolute;
+    margin-top: 10px;
+    right: 15px;
+  }
+  .mkx-header .mk-button-header .mk-button-header-back {
+    position: relative;
+    bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+    color: #2d5cfe;
+    border-radius: 30px;
+    height: 30px;
+  }
+  .mk-button-header:hover .mk-button-header-back {
+    transition: 1s;
+    color: red;
+    transform: scale(1.1);
+  }
+  .UserNameMk {
+    color: #2d5cfe;
+  }
+  .MkNavBar {
+    position: relative;
+    width: 80%;
+    height: 70px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    animation: dynamicIslandAnm 1s;
+    background: #212121;
+    border-radius: 50px;
+    border: 0.4px solid rgba(200, 200, 200, 0.156);
+    left: 480px;
+  }
+
+  .MkAreaNavbar {
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    color: #f5c242;
+    position: relative;
+    z-index: 999;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .widget {
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    border-radius: 50px;
+    transition: all 1s;
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    right: 10px;
+  }
+  .MkIconEms {
+    position: relative;
+    top: 2px;
+  }
+  .MkNavBar {
+    position: relative;
     width: 340px;
     height: 70px;
     overflow: hidden;
@@ -1512,6 +2075,7 @@ nav ul .MkUserIconsBack {
     background: #212121;
     border-radius: 50px;
     border: 0.4px solid rgba(200, 200, 200, 0.156);
-    left: -20px;
+    left: -5px;
+    top: -120px;
   }
-}
+} */
