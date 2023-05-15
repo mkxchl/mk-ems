@@ -7,7 +7,7 @@ document.body.addEventListener("click", (e) => {
   document.body.append(element);
   setTimeout(() => {
     element.remove();
-  }, 900);
+  }, 5000);
 });
 
 /// Dark Mode Function ///
