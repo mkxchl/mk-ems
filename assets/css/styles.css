@@ -1408,7 +1408,7 @@ nav i {
 #bar {
   display: block;
 }
-nav ul .MkUserIconsBack {
+nav ul . {
   position: relative;
   color: #f5c242;
   background: rgba(200, 200, 200, 0.156);
@@ -1416,7 +1416,7 @@ nav ul .MkUserIconsBack {
   z-index: 500000;
   font-size: 20px;
   padding: 10px;
-  left: -180px;
+  left: -170px;
   bottom: 590px;
   border-radius: 50px;
   cursor: pointer;
@@ -1859,7 +1859,7 @@ nav ul .MkUserIconsBack {
     background: #212121;
     border-radius: 5px;
     border: 0.4px solid rgba(200, 200, 200, 0.156);
-    left: -5px;
+    left: -17px;
     top: -150px;
   }
   .MkUserListInfo {
@@ -1933,12 +1933,24 @@ nav ul .MkUserIconsBack {
     position: absolute;
     font-size: 20px;
     top: 10px;
-    right: 20px;
+    right: 10px;
     color: #f5c242;
     background: rgba(200, 200, 200, 0.156);
     border: 0.2px solid rgba(200, 200, 200, 0.156);
     padding: 5px;
     border-radius: 30px;
+  }
+  nav ul .MkUserIconsBack {
+    position: relative;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    z-index: 500000;
+    font-size: 20px;
+    padding: 10px;
+    bottom: 100px;
+    left: -110px;
+    border-radius: 50px;
   }
 }
 /* @media screen and (max-width: 360px) {
