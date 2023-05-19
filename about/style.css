@@ -169,7 +169,7 @@ body.dark-theme {
 }
 
 .card[data-state="#home"] {
-    height: 370px;
+    height: 380px;
     transition: 0.5s;
     width: 380px;
 }
@@ -177,7 +177,7 @@ body.dark-theme {
 .card[data-state="#home"] .card-main {
     padding-top: 0;
     transition: 0.5s;
-    height: 360px;
+    height: 380px;
     /* width: 380; */
 }
 
@@ -199,7 +199,7 @@ body.dark-theme {
     width: 340px;
     color: #2d5cfe;
     transition: 0.5s;
-    top: -15px;
+    top: -10px;
     position: relative;
 }
 
