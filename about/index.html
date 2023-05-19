@@ -45,32 +45,34 @@
         </div>
         <!-- Card Profile -->
         <div class="card-section" id="profile">
-          <div class="card-content">
-            <!-- <div class="card-subtitle">Biodata</div> -->
-            <div class="card-timeline">
-              <div class="card-item">
-                <div class="card-item-title">Name</div>
-                <div class="card-item-desc"><i class="ri-user-3-line mk-items"></i>Marchell Nathan Kevandra</div>
-              </div>
-              <div class="card-item">
-                <div class="card-item-title">Date of birth</div>
-                <div class="card-item-desc"><i class="ri-calendar-fill mk-items"></i>07 - March - 2003</div>
-              </div>
-              <div class="card-item">
-                <div class="card-item-title">Address</div>
-                <div class="card-item-desc"><i class="ri-map-pin-line mk-items"></i>Jakarta, Indonesian</div>
-              </div>
-              <div class="card-item">
-                <div class="card-item-title">Hobby</div>
-                <div class="card-item-desc"><i class="ri-dropbox-fill mk-items"></i>Coding - Basketball</div>
-              </div>
-              <div class="card-item">
-                <div class="card-item-title">Now focus on</div>
-                <div class="card-item-desc"><i class="ri-terminal-line mk-items"></i>Data Analyst & Social Engineering</div>
-              </div>
-              <div class="card-item">
-                <div class="card-item-title">Favorite song</div>
-                <div class="card-item-desc"><i class="ri-spotify-line mk-items"></i>Diary Depresiku - Last Child</div>
+          <div class="MKOverflowx">
+            <div class="card-content">
+              <!-- <div class="card-subtitle">Biodata</div> -->
+              <div class="card-timeline">
+                <div class="card-item">
+                  <div class="card-item-title">Name</div>
+                  <div class="card-item-desc"><i class="ri-user-3-line mk-items"></i>Marchell Nathan Kevandra</div>
+                </div>
+                <div class="card-item">
+                  <div class="card-item-title">Date of Birth</div>
+                  <div class="card-item-desc"><i class="ri-calendar-fill mk-items"></i>07 - March - 2003</div>
+                </div>
+                <div class="card-item">
+                  <div class="card-item-title">Address</div>
+                  <div class="card-item-desc"><i class="ri-map-pin-line mk-items"></i>Jakarta, Indonesian</div>
+                </div>
+                <div class="card-item">
+                  <div class="card-item-title">Hobby</div>
+                  <div class="card-item-desc"><i class="ri-dropbox-fill mk-items"></i><b id="Mkx_Bio_Change" class="MkChange">Coding</b></div>
+                </div>
+                <div class="card-item">
+                  <div class="card-item-title">Now focus on</div>
+                  <div class="card-item-desc"><i class="ri-terminal-line mk-items"></i>Data Analyst & Social Engineering</div>
+                </div>
+                <div class="card-item">
+                  <div class="card-item-title">Spotify List</div>
+                  <div class="card-item-desc"><i class="ri-spotify-line mk-items"></i><b id="Mkx_Change" class="MkChange">Last Child - Depresiku</b></div>
+                </div>
               </div>
             </div>
           </div>
@@ -83,7 +85,6 @@
               <div class="card-contact" onclick="mkSoundcloud()">
                 <i class="fas bx bxl-soundcloud"></i>
                 <p class="title-cont">Soundcloud</p>
-                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
               </div>
               <div class="card-contact" onclick="mkInstagram()">
                 <i class="fab fa-instagram"></i>
@@ -106,7 +107,7 @@
         <!-- Card Button -->
         <div class="card-buttons">
           <button data-section="#home" class="is-active">HOME</button>
-          <button data-section="#profile" onClick="playMyAudio()" class="hati">PROFILE</button>
+          <button data-section="#profile" onClick="playMyAudio()">PROFILE</button>
           <button data-section="#contact">CONTACT</button>
         </div>
       </div>
@@ -123,5 +124,39 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      var textArray = ["Last Child - Duka.", "Jakarta Hari Ini - Stereo Wall", "Kawan Sejalan - Reggae"];
+      var currentIndex = 0;
+      function changeText() {
+        var element = document.getElementById("Mkx_Change");
+        element.classList.remove("show");
+        element.innerHTML = textArray[currentIndex];
+        currentIndex = (currentIndex + 1) % textArray.length;
+      }
+      setTimeout(function () {
+        element.innerHTML = textArray[currentIndex];
+        currentIndex = (currentIndex + 1) % textArray.length;
+        element.classList.add("show");
+      }, 500);
+
+      setInterval(changeText, 9000);
+    </script>
+    <script>
+      var mktextArray = ["BasketBall", "Football", "Developer"];
+      var currentIndex = 0;
+      function changeText() {
+        var element = document.getElementById("Mkx_Bio_Change");
+        element.classList.remove("show");
+        element.innerHTML = mktextArray[currentIndex];
+        currentIndex = (currentIndex + 1) % mktextArray.length;
+      }
+      setTimeout(function () {
+        element.innerHTML = mktextArray[currentIndex];
+        currentIndex = (currentIndex + 1) % mktextArray.length;
+        element.classList.add("show");
+      }, 500);
+
+      setInterval(changeText, 9000);
+    </script>
   </body>
 </html>
