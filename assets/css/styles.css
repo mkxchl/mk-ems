@@ -1995,6 +1995,2176 @@ nav ul . {
     top: -100px;
   }
 }
+@media screen and (max-width: 500px) {
+  .MkNavBar {
+    position: relative;
+    left: 45px;
+  }
+  nav ul .MkUserIconsBack {
+    position: relative;
+    left: -175px;
+  }
+}
+/* @media screen and (max-width: 1280px) {
+  .box {
+    width: 800px;
+  }
+  .MkNavBar {
+    position: relative;
+    width: 820px;
+    top: -100px;
+    left: 200px;
+  }
+  .widget {
+    margin-right: 100px;
+    left: 10px;
+  }
+} */
+/* @media screen and (max-width: 360px) {
+  .container {
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .mk-overflow {
+    width: 92%;
+  }
+  .mkx-header {
+    position: relative;
+    width: 85%;
+    padding: 10px;
+    display: flex;
+    border-radius: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: #212121;
+    border: 0.1px solid rgb(200, 200, 200);
+  }
+  .mkx-header .mk-img-header {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+  .mkx-header .mk-img-header .mk-img-content {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+  }
+  .mkx-header .mk-header-content h4 {
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+  }
+  .mkx-header .mk-header-content p {
+    font-size: 10px;
+    font-weight: 300;
+    position: relative;
+    bottom: 30px;
+    color: #f5c242;
+  }
+  .mkx-header .mk-button-header {
+    position: absolute;
+    margin-top: 10px;
+    right: 15px;
+  }
+  .mkx-header .mk-button-header .mk-button-header-back {
+    position: relative;
+    bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+    color: #2d5cfe;
+    border-radius: 30px;
+    height: 30px;
+  }
+  .mk-button-header:hover .mk-button-header-back {
+    transition: 1s;
+    color: red;
+    transform: scale(1.1);
+  }
+  .UserNameMk {
+    color: #2d5cfe;
+  }
+  .MkNavBar {
+    position: relative;
+    width: 80%;
+    height: 70px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    animation: dynamicIslandAnm 1s;
+    background: #212121;
+    border-radius: 50px;
+    border: 0.4px solid rgba(200, 200, 200, 0.156);
+    left: 480px;
+  }
+
+  .MkAreaNavbar {
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    color: #f5c242;
+    position: relative;
+    z-index: 999;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .widget {
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    border-radius: 50px;
+    transition: all 1s;
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    right: 10px;
+  }
+  .MkIconEms {
+    position: relative;
+    top: 2px;
+  }
+  .MkNavBar {
+    position: relative;
+    width: 340px;
+    height: 70px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    animation: dynamicIslandAnm 1s;
+    background: #212121;
+    border-radius: 50px;
+    border: 0.4px solid rgba(200, 200, 200, 0.156);
+    left: -5px;
+    top: -120px;
+  }
+} */
+@font-face {
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
+  src: url(https://fonts.googleapis.com/css2?family=Quicksand);
+}
+@font-face {
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+  src: url(https://fonts.googleapis.com/css2?family=Quicksand);
+}
+@font-face {
+  font-family: Quicksand, sans-serif;
+  font-weight: 300;
+  src: url(https://fonts.googleapis.com/css2?family=Quicksand);
+}
+@font-face {
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
+  src: url(https://fonts.googleapis.com/css2?family=Quicksand);
+}
+@font-face {
+  font-family: pixles;
+  src: url(https://fonts.gstatic.com/s/loveyalikeasister/v14/R70EjzUBlOqPeouhFDfR80-0FhOqJubN-BeL9Xxd.woff2) format("woff2");
+}
+/* All Styling */
+:root {
+  --dark: #34495e;
+  --light: #ffffff;
+  --success: #0abf30;
+  --error: #e24d4c;
+  --warning: #e9bd0c;
+  --info: #3498db;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: Quicksand, sans-serif;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+body {
+  overflow: hidden;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+body.dark-theme {
+  /* background-image: url("https://images.unsplash.com/photo-1614522562493-455408036ea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"); */
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  --title-color: hsl(var(--hue), 12%, 95%);
+  --text-color: hsl(var(--hue), 12%, 75%);
+  /*  --body-color: hsl(var(--hue), 40%, 8%); */
+  --container-color: hsl(var(--hue), 24%, 12%);
+  transition: 1s;
+}
+
+.dark-theme .box {
+  background-color: #212121;
+  transition: 1s;
+}
+.dark-theme .box .mkx-header {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkAboutPage {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkAppModz {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkFams {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkTeams {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkEntertaiment {
+  background-color: transparent;
+  transition: 1s;
+}
+.dark-theme .MkContactPages {
+  background-color: transparent;
+  transition: 1s;
+}
+/* Navbar */
+.MkContainerx {
+  height: 30px;
+  width: 300px;
+  line-height: 80px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 500px;
+  left: 500px;
+  padding: 10px;
+  border-radius: 3rem;
+  backdrop-filter: blur(5px);
+  border: 1px solid #eee;
+}
+.MkContainerx .MkMenux {
+  display: flex;
+  position: relative;
+  margin-left: 30px;
+  top: -25px;
+}
+.MkContainerx .MkMenux li {
+  list-style: none;
+  flex: 1;
+  font-size: 1.1rem;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 10px;
+}
+.MkContainerx .MkMenux li a {
+  color: #2d5cfe;
+  transition: color 0.3s ease;
+}
+.MkContainerx .MkMenux li:hover a {
+  color: #2d5cfe;
+}
+.MkContainerx .MkMenux li:first-child a {
+  color: #2d5cfe;
+}
+.MkContainerx .MkMenux .MkLines {
+  position: absolute;
+  height: 2px;
+  width: 7%;
+  background: #f23b26;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+.MkContainerx .MkMenux li:nth-child(2):hover ~ .MkLines {
+  left: 20%;
+}
+.MkContainerx .MkMenux li:nth-child(3):hover ~ .MkLines {
+  left: 40%;
+}
+.MkContainerx .MkMenux li:nth-child(4):hover ~ .MkLines {
+  left: 60%;
+}
+.MkContainerx .MkMenux li:nth-child(5):hover ~ .MkLines {
+  left: 80%;
+}
+/* Add Username */
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+}
+.preload {
+  position: absolute;
+  height: 100vh;
+  line-height: 100vh;
+  width: 100vw;
+  background: #000000e0;
+  backdrop-filter: blur(15px);
+  font-weight: lighter;
+  font-size: 20pt;
+  z-index: 100;
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  transition: all ease 2s;
+  font-family: monospace;
+}
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  inset: 4px;
+  /* background: #212121; */
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: 1;
+}
+/* .container::before {
+    content: '';
+    width: 35em;
+    height: 42em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(#ffff00, transparent, transparent, transparent);
+    animation: animateAll 4s linear infinite;
+}
+.container::after {
+    content: '';
+    width: 35em;
+    height: 42em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(#ffff00, transparent, transparent, transparent);
+    animation: animateAll 4s linear infinite;
+    animation-delay: -2s;
+} */
+@keyframes animateAll {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.mywindow {
+  width: 500px;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12pt;
+  border-radius: 5px;
+}
+.myanimated {
+  transition: all ease 0.3s;
+  transform: unset;
+  width: 500px;
+}
+.mycontrol {
+  position: absolute;
+  display: inline-block;
+  height: 30px;
+  left: 10px;
+  padding: 0 5px;
+}
+.myheader {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px 10px 0 0;
+  background: #d1d1d1;
+  background: white;
+  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  box-shadow: inset 0 -7px 5px rgba(0, 0, 0, 0.025), inset 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.myclose,
+.mymax,
+.mymini {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-right: 2px;
+}
+.myclose {
+  background: #fe5d56;
+  border: 1px solid #ea3e4a;
+}
+.myclose:hover {
+  background: #ea3e4a;
+}
+.mymini {
+  background: #f6bd28;
+  border: 1px solid #f8ae1c;
+}
+.mymini:hover {
+  background: #f8ae1c;
+}
+.mymax {
+  background: #26cd3c;
+  border: 1px solid #4bba54;
+}
+.mymax:hover {
+  background: #4bba54;
+}
+.mybody {
+  padding: 30px;
+  padding-bottom: 50px;
+}
+.mk-headers {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.mytitle {
+  font-weight: 700;
+  font-size: 14pt;
+  margin-bottom: 10px;
+  color: rgb(0, 51, 255);
+}
+.mytext {
+  margin-top: 10px;
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: 0;
+  border-bottom: 2px solid #eee;
+}
+.mk-title {
+  position: relative;
+  left: 0;
+  top: -37px;
+  padding: 20px 0;
+  font-size: 16px;
+  color: rgb(0, 51, 255);
+  pointer-events: none;
+  transition: 0.5s;
+}
+.mk-username {
+  color: red;
+}
+.mk-warn {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: white;
+}
+.mytext:focus ~ .mk-title,
+.mytext:valid ~ .mk-title {
+  top: -70px;
+  left: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(0, 51, 255);
+}
+.mytext:hover {
+  cursor: text;
+  color: rgb(0, 51, 255);
+}
+.mybutton {
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  background: #3c87ff;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  padding: 15px;
+  animation: 0.5s;
+  transition: 0.5s;
+}
+.mybutton:hover {
+  opacity: 0.3;
+  transition: 0.5s;
+  animation: 0.5s;
+  border: 1px solid #ccc;
+}
+.mk-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid #3c87ff;
+  animation: wave 0.8s forwards;
+  opacity: 1;
+  /* box-shadow: 0 4px 8px 0 rgba(0.2), 0 6px 20px 0 #3c87ff; */
+  box-shadow: -3px -3px 7px #3c87ff, 3px 3px 5px #3c87ff;
+  z-index: 9999999;
+}
+.mybuttonno,
+.mybuttonyes {
+  text-align: center;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.mybuttonyes {
+  cursor: pointer;
+  color: white;
+}
+.mybuttonno {
+  background: #fff;
+  border: 1px solid #c6c6c6;
+}
+.mybuttonno:hover {
+  background: black;
+  color: white;
+}
+.myresize {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+}
+.vidcont {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  background: #000000a0;
+  /* border-radius: 30px; */
+  z-index: 2;
+  /* box-shadow: 0 0 10px white; */
+}
+.myhide {
+  display: none;
+}
+video {
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  /* border-radius: 30px; */
+}
+.divvideo {
+  width: 60%;
+  height: 300px;
+  /* border-radius: 30px; */
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  /* box-shadow: 0 0 10px white; */
+}
+.mknet {
+  display: none;
+  z-index: 1;
+  color: #fff;
+  width: calc(100vw - 50px);
+  padding: 20px;
+  color: black;
+  position: absolute;
+}
+.mkbody {
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+  top: 20px;
+  position: absolute;
+}
+@keyframes wave {
+  0% {
+    width: 5px;
+    height: 5px;
+    opacity: 1;
+  }
+  90% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+}
+@keyframes animate {
+  50% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes animateBx {
+  50% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+#myVideo {
+  /* border-radius: 30px; */
+}
+/* Body Menu */
+section {
+  position: relative;
+  right: 20px;
+  min-height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.box {
+  position: relative;
+  min-width: 300px;
+  height: 60px;
+  width: 100px;
+  background: white;
+  /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
+  border: 0.4px solid rgba(200, 200, 200, 0.156);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+  padding: 30px;
+  animation: fadeInUp 1s;
+  overflow: hidden;
+  overflow-y: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  bottom: 10px;
+  transition: height 1s ease-in-out;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
+}
+.MkBg {
+  opacity: 0.9;
+}
+.box.active {
+  height: 390px;
+  transition: 1s ease-in-out;
+}
+.box .list-links {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 10px;
+  top: 10px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  border: 2px solid rgba(200, 200, 200, 0.156);
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+  height: 30px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.box .list-links .fade-right {
+  animation: fadeInRight 1s;
+}
+.box .list-links .img-list {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  everflow: hidden;
+  margin-right: 50px;
+  color: #2d5cfe;
+}
+.box .list-links .img-list .bx {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.box .list-links .list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d5cfe;
+}
+.box .list-links .list-content h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: bold;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+  top: 10px;
+}
+.box .list-links .list-content p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+  bottom: 15px;
+  color: #f5c242;
+}
+.box .list-links:hover {
+  background: #fff;
+  z-index: 1000;
+  color: black;
+  transition: 1s;
+}
+.box .mk-back:hover {
+  color: red;
+}
+.box .mk-back:hover .mk-to-back {
+  color: red;
+}
+.list-links:hover .bx {
+  color: black;
+  transition: 0.5s;
+}
+.list-links:hover h4 {
+  color: red;
+  transition: 0.5s;
+}
+.list-links:hover .mk-next {
+  color: red;
+  transition: 0.5s;
+}
+.list-links:hover p {
+  color: #2d5cfe;
+  transition: 0.5s;
+}
+.mk-overflow {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+.mk-overflow::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+  height: 1px;
+  position: relative;
+  padding-right: 30px;
+}
+.mk-overflow::-webkit-scrollbar-track {
+  background: rgb(106, 106, 106);
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+  border-radius: 25px;
+}
+.mk-overflow::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #4ab1ff, #2d5cfe);
+  border-radius: 25px;
+  margin-left: 20px;
+}
+/* Header Information */
+.Mk_Information {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  border-radius: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  background: #212121;
+  border: 0.1px solid rgb(200, 200, 200);
+  z-index: 999999999;
+}
+.Mk_Information .MkImagesInformation {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+.Mk_Information .MkImagesInformation .MkImagesContent {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.Mk_Information .MkInformationContent h4 {
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  bottom: 10px;
+}
+.Mk_Information .MkInformationContent p {
+  font-size: 10px;
+  font-weight: 300;
+  position: relative;
+  bottom: 30px;
+  color: #f5c242;
+}
+.Mk_Information .mk-button-header {
+  position: absolute;
+  margin-top: 10px;
+  right: 15px;
+}
+.Mk_Information .mk-button-header .mk-button-header-back {
+  position: relative;
+  bottom: 10px;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 1s;
+  color: #2d5cfe;
+  border-radius: 30px;
+  height: 30px;
+}
+.mk-button-header:hover .mk-button-header-back {
+  transition: 1s;
+  color: red;
+  transform: scale(1.1);
+}
+.MKInfoUserNameMk {
+  color: #2d5cfe;
+}
+
+/* Header Contents */
+.mkx-header {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  border-radius: 50px;
+  height: 40px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0.1px solid rgb(200, 200, 200);
+}
+.mkx-header .mk-img-header {
+  height: 40px;
+  width: 40px;
+  margin-right: 30px;
+}
+.mkx-header .mk-img-header .mk-img-content {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.mkx-header .mk-header-content h4 {
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  bottom: 9px;
+}
+.mkx-header .mk-header-content p {
+  font-size: 10px;
+  font-weight: 300;
+  position: relative;
+  bottom: 25px;
+  color: #f5c242;
+}
+.mkx-header .mk-button-header {
+  position: absolute;
+  margin-top: 10px;
+  right: 15px;
+}
+.mkx-header .mk-button-header .mk-button-header-back {
+  position: relative;
+  bottom: 10px;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 1s;
+  color: #2d5cfe;
+  border-radius: 30px;
+  height: 30px;
+}
+.mk-button-header:hover .mk-button-header-back {
+  transition: 1s;
+  color: red;
+  transform: scale(1.1);
+}
+.UserNameMk {
+  color: #2d5cfe;
+}
+.mkx-footer {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  height: 50px;
+}
+.mkx-footer .mk-img-footer {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+.mkx-footer .mk-img-footer .mk-img-content {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.mkx-footer .mk-footer-content h4 {
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  bottom: 10px;
+}
+.mkx-footer .mk-footer-content p {
+  font-size: 12px;
+  font-weight: 300;
+  position: relative;
+  bottom: 30px;
+}
+.mkx-footer .mk-button-footer {
+  position: absolute;
+  margin-top: 10px;
+  right: 15px;
+}
+.mkx-footer .mk-button-footer .mk-button-footer-back {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 1s;
+}
+.mk-button-footer:hover .mk-button-footer-back {
+  color: red;
+  transition: 1s;
+  transform: scale(1.1);
+}
+.mk-next {
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 20px;
+  color: #f5c242;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  padding: 5px;
+  border-radius: 30px;
+}
+.mkLogUser {
+  margin-right: 5px;
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+}
+.title-header {
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 30px;
+  color: #2d5cfe;
+}
+.mk-logs-button {
+  position: absolute;
+  font-size: 30px;
+  top: 45px;
+  right: 30px;
+  color: #2d4cfe;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 1s;
+}
+.mk-logs-button:hover {
+  background: #ddd;
+  transition: 1s;
+  color: #2d4cfe;
+}
+.mk-warn-button:hover {
+  background: #ddd;
+  transition: 1s;
+  color: #2d4cfe;
+}
+.mk-warn-back-button:hover {
+  background: #ddd;
+  transition: 1s;
+  color: #2d4cfe;
+}
+.mk-warn-button {
+  position: absolute;
+  font-size: 30px;
+  top: 75px;
+  right: 25px;
+  color: #2d4cfe;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 1s;
+}
+.mk-warn-back-button {
+  position: absolute;
+  font-size: 30px;
+  top: 75px;
+  right: 75px;
+  color: #2d4cfe;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 1s;
+}
+.mkContactFooter {
+  text-align: center;
+  font-size: 12px;
+  color: #f5c242;
+  font-weight: 500;
+}
+.mkContactFooter .mkCodexLinks {
+  text-decoration: none;
+  font-weight: bold;
+  transition: 1s;
+  color: #2d5cfe;
+  cursor: pointer;
+}
+.mkContactFooterLogs {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  top: 15px;
+  margin-bottom: -10px;
+}
+.mkContactFooterLogs .mkCodexLinksLogs {
+  text-decoration: none;
+  font-weight: bold;
+  transition: 1s;
+}
+.mkCodexLinks:hover {
+  color: #f5c242;
+  transition: 1s;
+}
+.box.active .toggle .mkToggle {
+  transform: rotate(-180deg);
+}
+.MkAboutPage,
+.MkAppModz,
+.MkFams,
+.MkTeams,
+.MkEntertaiment,
+.MkContactPages {
+  width: 95%;
+  height: 100%;
+  padding: 5px;
+  padding-bottom: 5px;
+  border-radius: 50px;
+  background: none;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+  margin-bottom: 30px;
+}
+/* Mk Contacts */
+
+.box .list-links-contact {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 10px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+  top: 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+  height: 30px;
+}
+.box .list-links-contact .fade-right {
+  animation: fadeInRight 1s;
+}
+.box .list-links-contact .img-list {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  everflow: hidden;
+  margin-right: 50px;
+  color: #2d5cfe;
+}
+.box .list-links-contact .img-list .bx {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.box .list-links-contact .list-content-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d5cfe;
+}
+.box .list-links-contact .list-content-contact h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: bold;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+  top: 2px;
+}
+.box .list-links-contact .list-content-contact p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  opacity: 50;
+  transition: 0.5s;
+  color: grey;
+  position: relative;
+  right: -10px;
+  bottom: 15px;
+}
+.box .list-links-contact:hover {
+  background: #fff;
+  z-index: 1000;
+  color: black;
+  transition: 0.5s;
+  opacity: 50%;
+}
+.box .mk-back:hover {
+  color: red;
+}
+.box .mk-back:hover .mk-to-back {
+  color: red;
+}
+.list-links-contact:hover .bx {
+  color: black;
+  transition: 0.5s;
+}
+.list-links-contact:hover h4 {
+  color: red;
+  transition: 0.5s;
+}
+.list-links-contact:hover .mk-next {
+  color: red;
+  transition: 0.5s;
+}
+.list-links-contact:hover p {
+  color: #2d5cfe;
+  transition: 0.5s;
+}
+/* Smarts */
+
+.MkNavBar {
+  position: relative;
+  width: 355px;
+  height: 70px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  animation: dynamicIslandAnm 1s;
+  background: white;
+  border-radius: 5px;
+  border: 0.4px solid rgba(200, 200, 200, 0.156);
+  left: 480px;
+}
+
+.MkAreaNavbar {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #f5c242;
+  position: relative;
+  z-index: 999;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.widget {
+  color: #f5c242;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  border-radius: 30px;
+  transition: all 1s;
+  cursor: pointer;
+  position: relative;
+  margin: 11px;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+.MkIconEms {
+  position: relative;
+  top: 2px;
+}
+.widget:hover {
+  background: #fff;
+  z-index: 1000;
+  color: #f5c242;
+  transition: 1s;
+}
+.MkForgets {
+  position: relative;
+  margin-top: 10px;
+  font-weight: normal;
+  color: red;
+}
+/* Nav Active */
+
+nav {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  overflow: auto;
+  float: left;
+  text-align: center;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+nav button li {
+  padding: 8px;
+  background: #212121;
+  border: 1px solid gray;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #2e8b57, 0 0 30px #2e8b57, 0 0 40px #208fc6, 0 0 55px #208fc6, 0 0 75px #208fc6; */
+  width: 100px;
+  height: 15px;
+  font-weight: bold;
+  outline: none;
+  transition: all 1s;
+}
+nav i {
+  font-size: 20px;
+  margin-right: 1%;
+}
+.MKInformation {
+  position: relative;
+  z-index: 999999;
+}
+.MKInformation .MkTittleInfo h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.MkUserIconsBack {
+  position: relative;
+  bottom: 600px;
+  right: 175px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  border-radius: 100%;
+  cursor: pointer;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+}
+.MkUserIconsBack:hover {
+  background: #fff;
+  z-index: 1000;
+  color: #f5c242;
+  transition: 1s;
+}
+#bar {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  position: fixed;
+  right: 1%;
+  top: 4%;
+  border: none;
+  background: none;
+  outline: none;
+  display: none;
+  padding: 10px;
+  z-index: 500;
+  /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #208fc6, 0 0 30px #208fc6, 0 0 40px #208fc6, 0 0 55px #208fc6, 0 0 75px #208fc6; */
+}
+nav .MkUserMenuSetting {
+  display: block;
+  text-align: left;
+  outline: none;
+  color: white;
+  width: 50%;
+}
+.MkUserListImages {
+  position: relative;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  left: 50px;
+  bottom: 600px;
+  border-radius: 50px;
+}
+.MkUserListInfo {
+  position: relative;
+  display: flex;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 10px;
+  top: -650px;
+  left: 430px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 15px;
+  margin-left: 50px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  border: 2px solid rgba(200, 200, 200, 0.156);
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+  height: 70px;
+}
+.MkUserListInfo .fade-right {
+  animation: fadeInRight 1s;
+}
+.MkUserIMagesInfo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  everflow: hidden;
+  margin-right: 50px;
+  color: #2d5cfe;
+}
+.MkUserIMagesInfo .MkUserIMagesInfox {
+  position: absolute;
+  object-fit: cover;
+  width: 50%;
+  height: 50%;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+}
+.MkUserListInfo .MkUserContentInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d5cfe;
+}
+.MkUserListInfo .MkUserContentInfo h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: bold;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+  top: 10px;
+  margin-top: 30px;
+}
+.MkUserListInfo .MkUserContentInfo p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+  bottom: 10px;
+  color: #f5c242;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.MkUserIconsInfo {
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 20px;
+  color: #f5c242;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  padding: 5px;
+  border-radius: 30px;
+}
+nav .MkUserMenuSetting {
+  display: block;
+  text-align: left;
+  outline: none;
+  color: white;
+  width: 50%;
+}
+.MkUserListImages {
+  position: relative;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  left: 50px;
+  bottom: 600px;
+  border-radius: 50px;
+}
+.MkUserList {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 10px;
+  top: -650px;
+  left: 430px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 50px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  border: 2px solid rgba(200, 200, 200, 0.156);
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+  height: 30px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.MkUserList .fade-right {
+  animation: fadeInRight 1s;
+}
+.MkUserList .img-list {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  everflow: hidden;
+  margin-right: 50px;
+  color: #2d5cfe;
+}
+.MkUserList .img-list .bx {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.MkUserList .MkUserContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d5cfe;
+}
+.MkUserList .MkUserContent h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: bold;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+}
+.MkUserList .MkUserContent p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  transition: 0.5s;
+  position: relative;
+  right: -10px;
+  bottom: 15px;
+  color: #f5c242;
+}
+.MkUserList:hover {
+  background: #fff;
+  z-index: 1000;
+  color: black;
+  transition: 0.5s;
+  opacity: 50%;
+}
+.MkUserIcons {
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 20px;
+  color: #f5c242;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  padding: 5px;
+  border-radius: 30px;
+}
+nav ul {
+  position: fixed;
+  height: 100vh;
+  right: -1000%;
+  top: 0%;
+  width: 100%;
+  padding-top: 50%;
+  padding-left: 20%;
+  padding-right: 10%;
+  z-index: 5000;
+  transition: all 1s ease-out;
+  background-color: black;
+}
+nav a {
+  outline: none;
+  text-decoration: none;
+}
+nav i {
+  font-size: 20px;
+  margin-right: 3%;
+}
+#bar {
+  display: block;
+}
+nav ul . {
+  position: relative;
+  color: #f5c242;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
+  z-index: 500000;
+  font-size: 20px;
+  padding: 10px;
+  left: -170px;
+  bottom: 590px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.MkUserIconsBack {
+  position: relative;
+}
+/* MkPopUp */
+
+@media screen and (max-width: 600px) {
+  nav .MkUserMenuSetting {
+    display: block;
+    text-align: left;
+    outline: none;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: white;
+    width: 100%;
+  }
+  .MkUserListInfo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px;
+    top: -100px;
+    left: 25px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    border: 2px solid rgba(200, 200, 200, 0.156);
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+    height: 70px;
+    z-index: 9999999;
+  }
+  .MkUserListInfo .fade-right {
+    animation: fadeInRight 1s;
+  }
+  .MkUserIMagesInfo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    everflow: hidden;
+    margin-right: 50px;
+    color: #2d5cfe;
+  }
+  .MkUserIMagesInfo .MkUserIMagesInfox {
+    position: absolute;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+  }
+  .MkUserListInfo .MkUserContentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2d5cfe;
+  }
+  .MkUserListInfo .MkUserContentInfo h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    top: 10px;
+    margin-top: 30px;
+  }
+  .MkUserListInfo .MkUserContentInfo p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    bottom: 10px;
+    color: #f5c242;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .MkUserIconsInfo {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 20px;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    padding: 5px;
+    border-radius: 30px;
+  }
+  .MkUserListImages {
+    position: relative;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: -10px;
+    bottom: 100px;
+    border-radius: 50px;
+  }
+  .MkUserList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px;
+    top: -200px;
+    left: 5px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    border: 2px solid rgba(200, 200, 200, 0.156);
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+    height: 30px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .MkUserList .fade-right {
+    animation: fadeInRight 1s;
+  }
+  .MkUserList .img-list {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    everflow: hidden;
+    margin-right: 50px;
+    color: #2d5cfe;
+  }
+  .MkUserList .img-list .bx {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+  }
+  .MkUserList .MkUserContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2d5cfe;
+  }
+  .MkUserList .MkUserContent h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+  }
+  .MkUserList .MkUserContent p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    bottom: 15px;
+    color: #f5c242;
+  }
+  .MkUserList:hover {
+    background: #fff;
+    z-index: 1000;
+    color: black;
+    transition: 0.5s;
+    opacity: 50%;
+  }
+  .MkUserIcons {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 20px;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    padding: 5px;
+    border-radius: 30px;
+  }
+  nav ul {
+    position: fixed;
+    height: 100vh;
+    right: -1000%;
+    top: 0%;
+    width: 100%;
+    padding-top: 50%;
+    padding-left: 20%;
+    padding-right: 10%;
+    z-index: 5000;
+    transition: all 1s ease-out;
+    background-color: black;
+  }
+  nav a {
+    outline: none;
+    text-decoration: none;
+  }
+  nav i {
+    font-size: 20px;
+    margin-right: 3%;
+  }
+  #bar {
+    display: block;
+  }
+  nav ul .MkUserIconsBack {
+    position: relative;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    z-index: 500000;
+    font-size: 20px;
+    padding: 10px;
+    bottom: 100px;
+    left: -130px;
+    border-radius: 50px;
+  }
+  .MkUserListInfo {
+    position: relative;
+    display: flex;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+    top: -700px;
+    left: 430px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    border: 2px solid rgba(200, 200, 200, 0.156);
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+    height: 70px;
+  }
+  .MkUserListInfo .fade-right {
+    animation: fadeInRight 1s;
+  }
+  .MkUserIMagesInfo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    everflow: hidden;
+    margin-right: 50px;
+    color: #2d5cfe;
+  }
+  .MkUserIMagesInfo .MkUserIMagesInfox {
+    position: absolute;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+  }
+  .MkUserListInfo .MkUserContentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2d5cfe;
+  }
+  .MkUserListInfo .MkUserContentInfo h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    top: 10px;
+    margin-top: 30px;
+  }
+  .MkUserListInfo .MkUserContentInfo p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    bottom: 10px;
+    color: #f5c242;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .MkUserIconsInfo {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 20px;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    padding: 5px;
+    border-radius: 30px;
+  }
+}
+@keyframes dynamicIslandAnm {
+  0%,
+  100% {
+    width: 100px;
+    height: 25px;
+    left: 100px;
+    opacity: 0 !important;
+  }
+  20%,
+  80% {
+    width: 270px;
+    height: 40px;
+    left: 15px;
+    display: block;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 500px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fuel {
+  0%,
+  50%,
+  100% {
+    color: #fff;
+    opacity: 1;
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    color: red;
+    opacity: 0.8;
+  }
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes up {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes showResponse {
+  0% {
+    opacity: 1;
+    top: calc(50% - 36px);
+  }
+  70% {
+    opacity: 1;
+    top: calc(50% - 46px);
+  }
+  100% {
+    opacity: 0;
+    top: calc(50% - 46px);
+  }
+}
+
+@keyframes showResponse {
+  0% {
+    opacity: 1;
+    top: calc(50% - 36px);
+  }
+  70% {
+    opacity: 1;
+    top: calc(50% - 46px);
+  }
+  100% {
+    opacity: 0;
+    top: calc(50% - 46px);
+  }
+}
+@media screen and (max-width: 530px) {
+  .notifications {
+    width: 95%;
+  }
+  .notifications .toast {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  .buttons .btn {
+    margin: 0 1px;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+  }
+}
+/* Mobile Preview */
+@media screen and (max-width: 600px) {
+  .mywindow {
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .mk-warn-button {
+    top: 100px;
+  }
+  .mk-warn-back-button {
+    top: 100px;
+  }
+  .divvideo {
+    width: 90%;
+  }
+  .myanimated {
+    transform: unset;
+  }
+  .MkNavBar {
+    position: relative;
+    width: 350px;
+    height: 70px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    animation: dynamicIslandAnm 1s;
+    border-radius: 5px;
+    border: 0.4px solid rgba(200, 200, 200, 0.156);
+    left: -9px;
+    top: -150px;
+  }
+  .MkUserListInfo {
+    position: relative;
+    display: flex;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+    top: -200px;
+    left: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    border: 2px solid rgba(200, 200, 200, 0.156);
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+    height: 100px;
+  }
+  .MkUserListInfo .fade-right {
+    animation: fadeInRight 1s;
+  }
+  .MkUserIMagesInfo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    everflow: hidden;
+    margin-right: 50px;
+    color: #2d5cfe;
+  }
+  .MkUserIMagesInfo .MkUserIMagesInfox {
+    position: absolute;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+  }
+  .MkUserListInfo .MkUserContentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2d5cfe;
+  }
+  .MkUserListInfo .MkUserContentInfo h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
+    top: 10px;
+  }
+  .MkUserListInfo .MkUserContentInfo p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    transition: 0.5s;
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    color: #f5c242;
+    width: 90%;
+    bottom: 5px;
+    padding-top: 5px;
+  }
+  .MkUserIconsInfo {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    padding: 5px;
+    border-radius: 30px;
+  }
+  nav ul .MkUserIconsBack {
+    position: relative;
+    color: #f5c242;
+    background: rgba(200, 200, 200, 0.156);
+    border: 0.2px solid rgba(200, 200, 200, 0.156);
+    z-index: 500000;
+    font-size: 20px;
+    padding: 10px;
+    bottom: 100px;
+    left: -125px;
+    border-radius: 100%;
+  }
+}
+@media screen and (max-width: 393px) {
+  .MkNavBar {
+    position: relative;
+    width: 355px;
+  }
+  .widget {
+    /* right: 23px; */
+  }
+}
+@media screen and (max-width: 375px) {
+  .MkNavBar {
+    position: relative;
+    left: -15px;
+    top: -80px;
+  }
+  .widget {
+    /* right: 23px; */
+  }
+}
+@media screen and (max-width: 360px) {
+  .box {
+    width: 300px;
+  }
+  .MkNavBar {
+    position: relative;
+    width: 360px;
+    left: -100px;
+    top: -100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .MkNavBar {
+    position: relative;
+    left: 45px;
+  }
+  nav ul .MkUserIconsBack {
+    position: relative;
+    left: -175px;
+  }
+}
 /* @media screen and (max-width: 1280px) {
   .box {
     width: 800px;
