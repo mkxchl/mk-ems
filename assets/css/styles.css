@@ -1995,6 +1995,9 @@ nav ul . {
     left: -50px;
     top: -150px;
   }
+  .widget {
+    left: 10px;
+  }
 }
 
 /* @media screen and (max-width: 1280px) {
