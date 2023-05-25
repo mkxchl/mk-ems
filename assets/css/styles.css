@@ -64,10 +64,6 @@ body.dark-theme {
   transition: 1s;
 }
 
-.dark-theme .box {
-  background-color: #212121;
-  transition: 1s;
-}
 .dark-theme .box .mkx-header {
   background-color: transparent;
   transition: 1s;
