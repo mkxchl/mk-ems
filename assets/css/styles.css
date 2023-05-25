@@ -534,15 +534,17 @@ section {
   margin-top: 10px;
   margin-bottom: 10px;
   bottom: 10px;
-  transition: height 1s ease-in-out;
+  transition: 1s ease-in-out;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .MkBg {
   opacity: 0.9;
 }
 .box.active {
+  position: relative;
   height: 390px;
   transition: 1s ease-in-out;
+  bottom: 50px;
 }
 .box .list-links {
   position: relative;
@@ -1991,7 +1993,7 @@ nav ul . {
     position: relative;
     width: 375px;
     left: -50px;
-    top: -100px;
+    top: -150px;
   }
 }
 
