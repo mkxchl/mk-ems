@@ -516,9 +516,9 @@ section {
 .box {
   position: relative;
   min-width: 300px;
-  height: 70px;
+  height: 60px;
   width: 100px;
-  background: #212121;
+  background: white;
   /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
   border: 0.4px solid rgba(200, 200, 200, 0.156);
   border-top-left-radius: 50px;
@@ -728,35 +728,35 @@ section {
   padding: 10px;
   display: flex;
   border-radius: 50px;
-  height: 50px;
+  height: 40px;
   margin-bottom: 30px;
   cursor: pointer;
-  background: #212121;
+  background: transparent;
   border: 0.1px solid rgb(200, 200, 200);
 }
 .mkx-header .mk-img-header {
-  height: 50px;
-  width: 50px;
-  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  margin-right: 30px;
 }
 .mkx-header .mk-img-header .mk-img-content {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
   border-radius: 50px;
 }
 .mkx-header .mk-header-content h4 {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   position: relative;
-  bottom: 10px;
+  bottom: 9px;
 }
 .mkx-header .mk-header-content p {
   font-size: 10px;
   font-weight: 300;
   position: relative;
-  bottom: 30px;
+  bottom: 25px;
   color: #f5c242;
 }
 .mkx-header .mk-button-header {
@@ -950,7 +950,7 @@ section {
   padding: 5px;
   padding-bottom: 5px;
   border-radius: 50px;
-  background: #212121;
+  background: none;
   box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
   margin-bottom: 30px;
 }
@@ -1065,7 +1065,7 @@ section {
   opacity: 0;
   transition: 1s ease-in-out;
   animation: dynamicIslandAnm 1s;
-  background: #212121;
+  background: white;
   border-radius: 5px;
   border: 0.4px solid rgba(200, 200, 200, 0.156);
   left: 480px;
@@ -1096,6 +1096,7 @@ section {
   width: 50px;
   padding: 10px;
 }
+
 .MkIconEms {
   position: relative;
   top: 2px;
@@ -1164,7 +1165,16 @@ nav i {
   font-weight: bold;
 }
 .MkUserIconsBack {
+  position: relative;
+  bottom: 600px;
+  right: 175px;
+  padding: 10px;
+  font-size: 20px;
   color: white;
+  border-radius: 100%;
+  cursor: pointer;
+  background: rgba(200, 200, 200, 0.156);
+  border: 0.2px solid rgba(200, 200, 200, 0.156);
 }
 .MkUserIconsBack:hover {
   background: #fff;
@@ -1420,6 +1430,9 @@ nav ul . {
   bottom: 590px;
   border-radius: 50px;
   cursor: pointer;
+}
+.MkUserIconsBack {
+  position: relative;
 }
 /* MkPopUp */
 
@@ -1846,7 +1859,7 @@ nav ul . {
   }
   .MkNavBar {
     position: relative;
-    width: 345px;
+    width: 350px;
     height: 70px;
     overflow: hidden;
     justify-content: center;
@@ -1856,10 +1869,9 @@ nav ul . {
     opacity: 0;
     transition: 1s ease-in-out;
     animation: dynamicIslandAnm 1s;
-    background: #212121;
     border-radius: 5px;
     border: 0.4px solid rgba(200, 200, 200, 0.156);
-    left: -17px;
+    left: -9px;
     top: -150px;
   }
   .MkUserListInfo {
@@ -1949,10 +1961,55 @@ nav ul . {
     font-size: 20px;
     padding: 10px;
     bottom: 100px;
-    left: -110px;
-    border-radius: 50px;
+    left: -125px;
+    border-radius: 100%;
   }
 }
+@media screen and (max-width: 393px) {
+  .MkNavBar {
+    position: relative;
+    width: 355px;
+  }
+  .widget {
+    /* right: 23px; */
+  }
+}
+@media screen and (max-width: 375px) {
+  .MkNavBar {
+    position: relative;
+    left: -15px;
+    top: -80px;
+  }
+  .widget {
+    /* right: 23px; */
+  }
+}
+@media screen and (max-width: 360px) {
+  .box {
+    width: 300px;
+  }
+  .MkNavBar {
+    position: relative;
+    width: 360px;
+    left: -100px;
+    top: -100px;
+  }
+}
+/* @media screen and (max-width: 1280px) {
+  .box {
+    width: 800px;
+  }
+  .MkNavBar {
+    position: relative;
+    width: 820px;
+    top: -100px;
+    left: 200px;
+  }
+  .widget {
+    margin-right: 100px;
+    left: 10px;
+  }
+} */
 /* @media screen and (max-width: 360px) {
   .container {
     width: 90%;
