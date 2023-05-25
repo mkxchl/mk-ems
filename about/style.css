@@ -42,7 +42,7 @@ body {
 .change-theme {
     position: absolute;
     top: 1.7rem;
-    right: 30px;
+    right: 25px;
     font-size: 1.25rem;
     color: #2d5cfe;
     cursor: pointer;
@@ -352,7 +352,6 @@ body.dark-theme {
     position: relative;
     font-weight: 900;
     left: 10px;
-    top: 10px;
     text-align: center;
     font-size: 15px;
     justify-content: center;
@@ -544,8 +543,8 @@ body.dark-theme {
     font-size: 15px;
     position: relative;
     top: -3px;
-    left: 10px;
-    margin-bottom: 5px;
+    left: 9px;
+    /* margin-bottom: 5px; */
 }
 
 .card-item-desc {
