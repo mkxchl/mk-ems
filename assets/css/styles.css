@@ -1,4 +1,9 @@
 @font-face {
+  font-family: Chilanka, sans-serif;
+  font-weight: 400;
+  src: url(https://fonts.googleapis.com/css2?family=Chilanka&display=swap);
+}
+@font-face {
   font-family: Quicksand, sans-serif;
   font-weight: 400;
   src: url(https://fonts.googleapis.com/css2?family=Quicksand);
@@ -64,6 +69,10 @@ body.dark-theme {
   transition: 1s;
 }
 
+/* .dark-theme .box {
+  background-color: #212121;
+  transition: 1s;
+} */
 .dark-theme .box .mkx-header {
   background-color: transparent;
   transition: 1s;
@@ -511,17 +520,18 @@ section {
 }
 .box {
   position: relative;
-  min-width: 300px;
+  min-width: 270px;
   height: 60px;
   width: 100px;
   background: white;
   /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
   border: 0.4px solid rgba(200, 200, 200, 0.156);
-  border-top-left-radius: 50px;
+  /* border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 20px; */
   z-index: 1;
+  border-radius: 50px;
   backdrop-filter: blur(2px);
   padding: 30px;
   animation: fadeInUp 1s;
@@ -1062,7 +1072,7 @@ section {
   visibility: hidden;
   opacity: 0;
   transition: 1s ease-in-out;
-  animation: dynamicIslandAnm 1s;
+  animation: fadeInUp 1s;
   background: white;
   border-radius: 5px;
   border: 0.4px solid rgba(200, 200, 200, 0.156);
@@ -1093,6 +1103,7 @@ section {
   height: 50px;
   width: 50px;
   padding: 10px;
+  left: -5px;
 }
 
 .MkIconEms {
@@ -1277,8 +1288,20 @@ nav .MkUserMenuSetting {
   right: -10px;
   bottom: 10px;
   color: #f5c242;
-  width: 50%;
+  width: 40%;
   margin-bottom: 30px;
+}
+.MkUserMenuSetting .MkFootxx p {
+  position: relative;
+  bottom: 180px;
+  left: 15px;
+  text-align: center;
+  color: white;
+  z-index: 99999999999;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 .MkUserIconsInfo {
   position: absolute;
@@ -1866,7 +1889,7 @@ nav ul . {
     visibility: hidden;
     opacity: 0;
     transition: 1s ease-in-out;
-    animation: dynamicIslandAnm 1s;
+    animation: Up 1s;
     border-radius: 5px;
     border: 0.4px solid rgba(200, 200, 200, 0.156);
     left: -9px;
@@ -1963,14 +1986,8 @@ nav ul . {
     border-radius: 100%;
   }
 }
-@media screen and (max-width: 393px) {
-  .MkNavBar {
-    position: relative;
-    width: 355px;
-  }
-  .widget {
-    /* right: 23px; */
-  }
+@media screen and (max-width: 390px) {
+  
 }
 /* @media screen and (max-width: 375px) {
   .MkNavBar {
@@ -1981,18 +1998,50 @@ nav ul . {
   .widget {
   }
 } */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 412px) {
+  .MkNavBar {
+    position: relative;
+    width: 320px;
+    left: 10px;
+    top: -150px;
+  }
+  nav ul .MkUserIconsBack {
+    position: relative;
+    left: -135px;
+  }
+  .widget {
+    left: -4px;
+  }
+}
+@media screen and (max-width: 800px) {
   .box {
-    width: 360px;
+    width: 500px;
   }
   .MkNavBar {
     position: relative;
-    width: 375px;
-    left: -50px;
+    width: 550px;
+    left: 100px;
     top: -150px;
   }
   .widget {
-    left: 10px;
+    left: -5px;
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .MkNavBar {
+    position: relative;
+    width: 320px;
+    left: -10px;
+    top: -150px;
+  }
+  .widget {
+    left: 2px;
+    margin: 10px;
+  }
+  nav ul .MkUserIconsBack {
+    position: relative;
+    left: -110px;
   }
 }
 
