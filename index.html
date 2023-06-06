@@ -1,182 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="in">
+  <!-- First Heading -->
   <head>
+    <title>EMS | Website</title>
+    <!-- Meta UTF -->
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" name="og:title" content="Marchell Kevandra" />
-    <meta property="og:image" name="og:image" content="https://ems-links.netlify.app/" />
-    <meta property="og:description" name="og:description" content="Just an ordinary person." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
+    <!-- Meta Property -->
+    <meta property="og:title" content="EMS REVOLUTION - Officiall website editor miring squad revolution!" />
+    <meta property="og:description" content="Coding by Marchell Kevandra" />
     <meta property="og:url" content="https://ems-links.netlify.app/" />
     <meta property="og:image" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <meta property="og:image:secure_url" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <meta property="og:author" content="Chellxz" />
-    <!-- Google Search Console -->
-    <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
-    <!-- Fonts Link -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <!-- CSs Style -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Image URL -->
+    <!-- Link Rel Assets -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
-    <title>About | Mk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/dist/aos.css" />
+    <style>
+      Mkxx {
+        color: rgba(200, 200, 200, 0.156);
+      }
+    </style>
   </head>
-  <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
-    <!-- Card Body -->
-    <div class="card overflow" data-state="#home">
-      <div class="card-header">
-        <div class="card-cover"></div>
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
-        <img class="card-avatar hati" onclick="mkImageTouch()" src="https://ems-links.netlify.app/assets/images/MkAnime_20.jpg" alt="avatar" />
-        <h1 class="card-fullname">Marchell Kevandra</h1>
-        <h2 class="card-jobtitle">BE YOUR SELF</h2>
-      </div>
-      <div class="card-main">
-        <div class="card-section is-active" id="home">
-          <div class="card-content">
-            <div class="card-subtitle">
-              <p class="mk-cont">Tak perlu menjadi serba bisa, Tekuni salah satu bidang yang Kamu suka Dan menjadi hebat lah dengannya.</p>
-            </div>
-          </div>
-          <a href="https://mk-links.netlify.app/" class="mkGone"><button class="btn-home">Get Started</button></a>
-        </div>
-        <!-- Card Profile -->
-        <div class="card-section" id="profile">
-          <div class="MKOverflowx">
-            <div class="card-content">
-              <!-- <div class="card-subtitle">Biodata</div> -->
-              <div class="card-timeline">
-                <div class="card-item">
-                  <div class="card-item-title">Name</div>
-                  <div class="card-item-desc"><i class="ri-user-3-line mk-items"></i>Marchell Nathan Kevandra</div>
-                </div>
-                <div class="card-item">
-                  <div class="card-item-title">Date of Birth</div>
-                  <div class="card-item-desc"><i class="ri-calendar-fill mk-items"></i>07 - March - 2003</div>
-                </div>
-                <div class="card-item">
-                  <div class="card-item-title">Address</div>
-                  <div class="card-item-desc"><i class="ri-map-pin-line mk-items"></i>Jakarta, Indonesian</div>
-                </div>
-                <div class="card-item">
-                  <div class="card-item-title">Hobby</div>
-                  <div class="card-item-desc"><i class="ri-dropbox-fill mk-items"></i><b id="Mkx_Bio_Change" class="MkChange">Coding</b></div>
-                </div>
-                <div class="card-item">
-                  <div class="card-item-title">Now focus on</div>
-                  <div class="card-item-desc"><i class="ri-terminal-line mk-items"></i>Data Analyst & Social Engineering</div>
-                </div>
-                <div class="card-item">
-                  <div class="card-item-title">Spotify List</div>
-                  <div class="card-item-desc"><i class="ri-spotify-line mk-items"></i><b id="Mkx_Change" class="MkChange">Last Child - Depresiku</b></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card Contact -->
-        <div class="card-section" id="contact">
-          <div class="card-content">
-            <!-- <div class="card-subtitle">Contact Me</div> -->
-            <div class="card-contact-wrapper">
-              <div class="card-contact" onclick="mkSoundcloud()">
-                <i class="fas bx bxl-soundcloud"></i>
-                <p class="title-cont">Soundcloud</p>
-              </div>
-              <div class="card-contact" onclick="mkInstagram()">
-                <i class="fab fa-instagram"></i>
-                <p class="title-cont">Instagram</p>
-                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
-              </div>
-              <div class="card-contact" onclick="mkFacebook()">
-                <i class="fas bx bxl-facebook"></i>
-                <p class="title-cont">Facebook</p>
-                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
-              </div>
-              <div class="card-contact" onclick="mkTiktok()">
-                <i class="fas bx bxl-tiktok"></i>
-                <p class="title-cont">Tiktok</p>
-                <!-- <i class="bx bx-chevron-right mkxchl-next"></i> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card Button -->
-        <div class="card-buttons">
-          <button data-section="#home" class="is-active">HOME</button>
-          <button data-section="#profile" onClick="playMyAudio()">PROFILE</button>
-          <button data-section="#contact">CONTACT</button>
-        </div>
+  <!-- End Heading -->
+  <!-- Body OnLoad -->
+  <body onload="init()">
+    <!-- First Audio OnLoading  -->
+    <audio id="myAudio">
+      <source src="mix/ems-mk.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="myOpening">
+      <source src="assets/msc/start.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="dlg">
+      <source src="mix/ems-mk.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="MkPlayAudio">
+      <source src="https://ems-links.netlify.app/mix/EditorMiringSquad.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- End Audio OnLoad -->
+    <!-- --------- -->
+    <!-- Loading Page -->
+    <div class="preload">Loading</div>
+    <!-- End Loading -->
+    <!-- --------- -->
+    <!-- First Video Laoding -->
+    <div class="vidcont">
+      <div class="divvideo">
+        <video id="myVideo" width="100%" height="100%">
+          <source src="assets/images/mk-video.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
-    <audio id="myAudio">
-      <source src="/mix/mk-anime-song.mp3" type="audio/mpeg" />
-    </audio>
-    <!-- Style JS -->
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="/assets/js/query.min.js"></script>
-    <!-- Library JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+    <!-- End Video Loading -->
+    <!-- --------- -->
+    <!--  Index OnLoad   -->
+    <img src="assets/images/MKImageAnime.jpg" class="MkBg" />
+    <div class="container">
+      <div class="mknet">
+        <div class="mkbody">
+          <nav>
+            <ul>
+              <i class="bx bx-chevrons-left MkUserIconsBack" onclick="closeMenu()"></i>
+              <div class="MkUserMenuSetting">
+                <div class="MkUserListInfo">
+                  <div class="MkUserContentInfo">
+                    <h4>Information</h4>
+                    <span id="language"></span>
+                  </div>
+                </div>
+                <div class="MkUserList" onclick="DscX()">
+                  <div class="MkUserContent">
+                    <h4>Discord</h4>
+                  </div>
+                  <i class="bx bxl-discord MkUserIcons"></i>
+                </div>
+                <div class="MkUserList" onclick="IntX()">
+                  <div class="MkUserContent">
+                    <h4>Instagram</h4>
+                  </div>
+                  <i class="bx bxl-instagram MkUserIcons"></i>
+                </div>
+                <div class="MkUserList MkAboutx" onclick="FbX()">
+                  <div class="MkUserContent">
+                    <h4>Facebook</h4>
+                  </div>
+                  <i class="bx bxl-facebook MkUserIcons"></i>
+                </div>
+                <div class="MkUserList" onclick="TlX()">
+                  <div class="MkUserContent">
+                    <h4>Telegram</h4>
+                  </div>
+                  <i class="bx bxl-telegram MkUserIcons"></i>
+                </div>
+                <div class="MkUserList" onclick="TtX()">
+                  <div class="MkUserContent">
+                    <h4>Tiktok</h4>
+                  </div>
+                  <i class="bx bxl-tiktok MkUserIcons"></i>
+                </div>
+                <div class="MkFootxx">
+                  <p>Copyright 2023 - Marchell Kevandra</p>
+                </div>
+              </div>
+            </ul>
+          </nav>
+          <section>
+            <div class="box mk-box">
+              <!-- <h3>Mk Links</h3> -->
+              <div class="mkx-header toggle MkxGanzCls">
+                <div class="mk-img-header">
+                  <img src="/assets/images/logo.jpg" class="mk-img-content" />
+                </div>
+                <div class="mk-header-content">
+                  <h4 id="spannama3" class="UserNameMk"></h4>
+                  <p>Tap in here</p>
+                </div>
+                <div class="mk-button-header">
+                  <div class="mk-button-header-back">
+                    <!-- <i class="bx bx-menu-alt-left"></i> -->
+                  </div>
+                </div>
+              </div>
+              <!-- <i class="bx bxs-chevron-left mk-back"><a href="/about/" class="mk-to-back">Back</a></i> -->
+              <div class="mk-overflow">
+                <div class="MkAboutPage" id="MkAboutMe">
+                  <h5 class="title-header">About Team</h5>
+                  <div class="list-links">
+                    <div class="list-content" onclick="YgK()">
+                      <h4>Yhoris Gervino</h4>
+                      <p>Founder Team</p>
+                    </div>
+                    <i class="bx bx-user mk-next"></i>
+                  </div>
+                  <div class="list-links show-modal">
+                    <div class="list-content">
+                      <h4>Marchell Kevandra</h4>
+                      <p>Founder Team</p>
+                    </div>
+                    <i class="bx bx-user mk-next"></i>
+                  </div>
+                  <div class="list-links" onclick="TyN()">
+                    <div class="list-content">
+                      <h4>Thyan Christian</h4>
+                      <p>Founder Team</p>
+                    </div>
+                    <i class="bx bx-user mk-next"></i>
+                  </div>
+                  <div class="list-links" onclick="JnG()">
+                    <div class="list-content">
+                      <h4>Juna Gnz</h4>
+                      <p>Leader Team</p>
+                    </div>
+                    <i class="bx bx-user mk-next"></i>
+                  </div>
+                  <div class="list-links" onclick="AgS()">
+                    <div class="list-content">
+                      <h4>Agus Capitall</h4>
+                      <p>Co Lead Team</p>
+                    </div>
+                    <i class="bx bx-user mk-next"></i>
+                  </div>
+                  <div class="list-links" onclick="AnD()">
+                    <div class="list-content">
+                      <h4>Andreas Editor</h4>
+                      <p>Co Lead Team</p>
+                    </div>
+                    <i class="bx bx-user mk-next"></i>
+                  </div>
+                </div>
+                <div class="MkAppModz">
+                  <h5 class="title-header">App Mods</h5>
+                  <div class="list-links" onclick="KmEmsA()">
+                    <div class="list-content">
+                      <h4>Kinemaster V1</h4>
+                      <p>Get Link</p>
+                    </div>
+                    <i class="bx bxs-download mk-next"></i>
+                  </div>
+                  <div class="list-links" onclick="KmEmsB()">
+                    <div class="list-content">
+                      <h4>Kinemaster V2</h4>
+                      <p>Get Link</p>
+                    </div>
+                    <i class="bx bxs-download mk-next"></i>
+                  </div>
+                  <div class="list-links" onclick="KmEmsC()">
+                    <div class="list-content">
+                      <h4>Kinemaster V3</h4>
+                      <p>Get Link</p>
+                    </div>
+                    <i class="bx bxs-download mk-next"></i>
+                  </div>
+                </div>
+                <div class="MkFams">
+                  <h5 class="title-header">Family</h5>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Community Tanker Solidarity</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Community Music Recorder</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Secret Never Surender</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Editor Miring Squad Girls</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>SPK Management</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>King Lyric Kinemaster</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Biak Rese Nation</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Design Project Squad</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Squad Geser Font</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Break Lyric Revolution</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Chell Ganz Team</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Jabar Lirik Squad</h4>
+                      <p>Family team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                </div>
+                <div class="MkTeams">
+                  <h5 class="title-header">Team Support</h5>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Tangerang Cyber Army</h4>
+                      <p>Support team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                  <div class="list-links">
+                    <div class="list-content">
+                      <h4>Trisakti Cyber Army</h4>
+                      <p>Support team</p>
+                    </div>
+                    <i class="bx bx-user-pin mk-next"></i>
+                  </div>
+                </div>
+                <div class="MkEntertaiment">
+                  <h5 class="title-header">Entertaiment</h5>
+                  <div class="list-links" onclick="MkEntx()">
+                    <div class="list-content">
+                      <h4>Movie Japanese</h4>
+                      <p>Entertaiment</p>
+                    </div>
+                    <i class="bx bxs-cat mk-next"></i>
+                  </div>
+                  <div class="list-links" onclick="MkEntxx()">
+                    <div class="list-content">
+                      <h4>Movie Drama</h4>
+                      <p>Entertaiment</p>
+                    </div>
+                    <i class="bx bxs-cat mk-next"></i>
+                  </div>
+                  <div class="list-links" onclick="MkEntxxx()">
+                    <div class="list-content">
+                      <h4>Movie Action</h4>
+                      <p>Entertaiment</p>
+                    </div>
+                    <i class="bx bxs-cat mk-next"></i>
+                  </div>
+                </div>
+                <div class="mkContacts">
+                  <p class="mkContactFooter">You can order design web in <a onclick="IntX()" class="mkCodexLinks">Mk Codex</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Nav -->
+          <div class="MkNavBar">
+            <div class="MkAreaNavbar">
+              <span class="widget"><i class="bx bx-music MkIconEms" onclick="MkPlayAudio()"></i></span>
+              <span class="widget"><i class="bx bx-fullscreen MkIconEms" onclick="openFullscreen()"></i></span>
+              <span class="widget"><i class="bx bx-reset MkIconEms" onclick="reverse()"></i></span>
+              <span class="widget"><i class="bx bxs-user-circle MkIconEms" onclick="openMenu()"></i></span>
+              <!-- <span class="widget show-modal"><i class="bx bxs-user-circle MkIconEms"></i></span> -->
+              <!-- <span class="widget"><i class="ri-moon-line change-theme" id="theme-button"></i></span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  Add UserName -->
+      <div class="mywindow" id="myform">
+        <div class="mycontrol"></div>
+        <div class="mybody">
+          <div class="mycontent">
+            <input class="mytext" type="text" id="mynama" name="nama" required />
+            <label class="mk-title">Username</label>
+            <i class="bx bx-chevron-right mk-logs-button" onclick="mywrite()"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Warning Page -->
+      <div class="mywindow myanimated myhide" id="mywindow">
+        <div class="mycontrol"></div>
+        <div class="mybody">
+          <!-- <div class="mytitle" id="mywindowheader">Your Name : <span id="spannama" class="mk-username"></span></div> -->
+          <div class="mycontent mk-warn" id="mywindowheader">
+            <b>Hello <span id="spannama"> </span></b> Welcome to my website official Editor Miring Squad, Enjoy the world
+          </div>
+          <i class="bx bx-chevron-right mk-warn-button" onclick="playVid()"></i>
+          <i class="bx bx-chevron-left mk-warn-back-button" onclick="reverse()"></i>
+          <!-- <i class='bx bx-chevron-right mk-logs-button' onclick="mywrite()"></i> -->
+        </div>
+      </div>
+      <div class="myresize"></div>
+    </div>
+    <!-- JAVASCRIPT MAIN -->
+    <script src="assets/js/query.min.js"></script>
+    <script src="assets/js/index.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/dist/aos.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/dev.js"></script>
+    <!-- <script src="assets/js/toast.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-      var textArray = ["Last Child - Duka.", "Jakarta Hari Ini - Stereo Wall", "Kawan Sejalan - Reggae"];
-      var currentIndex = 0;
-      function changeText() {
-        var element = document.getElementById("Mkx_Change");
-        element.classList.remove("show");
-        element.innerHTML = textArray[currentIndex];
-        currentIndex = (currentIndex + 1) % textArray.length;
-      }
-      setTimeout(function () {
-        element.innerHTML = textArray[currentIndex];
-        currentIndex = (currentIndex + 1) % textArray.length;
-        element.classList.add("show");
-      }, 500);
-
-      setInterval(changeText, 9000);
+      AOS.init();
     </script>
     <script>
-      var mktextArray = ["BasketBall", "Football", "Developer"];
-      var currentIndex = 0;
-      function changeText() {
-        var element = document.getElementById("Mkx_Bio_Change");
-        element.classList.remove("show");
-        element.innerHTML = mktextArray[currentIndex];
-        currentIndex = (currentIndex + 1) % mktextArray.length;
-      }
-      setTimeout(function () {
-        element.innerHTML = mktextArray[currentIndex];
-        currentIndex = (currentIndex + 1) % mktextArray.length;
-        element.classList.add("show");
-      }, 500);
-
-      setInterval(changeText, 9000);
-    </script>
-    <script>
-      document.onkeydown = function (e) {
-        if (e.keyCode == 123) {
-          return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-          return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-          return false;
-        }
-        if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-          return false;
-        }
-
-        if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-          return false;
-        }
+      const MkCard = document.querySelector(".box");
+      const MkCardToggle = document.querySelector(".toggle");
+      MkCardToggle.onclick = function () {
+        MkCard.classList.toggle("active");
       };
+    </script>
+    <script>
+      function openMenu() {
+        var open = document.querySelector("ul");
+        open.style.right = "0%";
+      }
+      function closeMenu() {
+        var close = document.querySelector("ul");
+        close.style.right = "-1000%";
+      }
     </script>
   </body>
 </html>
