@@ -24,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <title>About | Mk</title>
   </head>
-  <body>
+  <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
     <!-- Card Body -->
     <div class="card overflow" data-state="#home">
       <div class="card-header">
@@ -157,6 +157,26 @@
       }, 500);
 
       setInterval(changeText, 9000);
+    </script>
+    <script>
+      document.onkeydown = function (e) {
+        if (e.keyCode == 123) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+          return false;
+        }
+
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+          return false;
+        }
+      };
     </script>
   </body>
 </html>
