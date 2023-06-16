@@ -51,12 +51,13 @@
     <!-- End Audio OnLoad -->
     <!-- --------- -->
     <!-- Loading Page -->
-    <div class="preload">Loading</div>
+    <!-- <div class="preload">Loading</div> -->
     <!-- End Loading -->
     <!-- --------- -->
     <!-- First Video Laoding -->
     <div class="vidcont">
-      <div class="divvideo">
+      <!-- <input id="vol-control" type="range" min="0" max="100" step="1"></input> -->
+      <div class="divvideo left">
         <video id="myVideo" width="100%" height="100%">
           <source src="assets/images/mk-video.mp4" type="video/mp4" />
         </video>
@@ -65,7 +66,7 @@
     <!-- End Video Loading -->
     <!-- --------- -->
     <!--  Index OnLoad   -->
-    <img src="assets/images/MKImageAnime.jpg" class="MkBg" />
+    <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="MkBg" />
     <div class="container">
       <div class="mknet">
         <div class="mkbody">
@@ -76,8 +77,12 @@
                 <div class="MkUserListInfo">
                   <div class="MkUserContentInfo">
                     <h4>Information</h4>
-                    <span id="language"></span>
+                    <p>
+                      Welcome to my web project Marchell Kevandra This is website Make by Xz Team Cyber<br />
+                      <b>Don't Forget Follow My Social Media</b>
+                    </p>
                   </div>
+                  <i class="bx bx-user MkOwnerIcons"></i>
                 </div>
                 <div class="MkUserList" onclick="DscX()">
                   <div class="MkUserContent">
@@ -143,7 +148,7 @@
                     </div>
                     <i class="bx bx-user mk-next"></i>
                   </div>
-                  <div class="list-links" onclick="location.href='about/'">
+                  <div class="list-links show-modal">
                     <div class="list-content">
                       <h4>Marchell Kevandra</h4>
                       <p>Founder Team</p>
@@ -337,14 +342,14 @@
               </div>
             </div>
           </section>
-          
+
           <!-- Nav -->
           <div class="MkNavBar">
             <div class="MkAreaNavbar">
               <span class="widget"><i class="bx bx-music MkIconEms" onclick="MkPlayAudio()"></i></span>
               <span class="widget"><i class="bx bx-fullscreen MkIconEms" onclick="openFullscreen()"></i></span>
               <span class="widget"><i class="bx bx-reset MkIconEms" onclick="reverse()"></i></span>
-              <span class="widget"><i class="bx bxs-user-circle MkIconEms" onclick="openMenu()"></i></span>
+              <!-- <span class="widget"><i class="bx bxs-user-circle MkIconEms" onclick="openMenu()"></i></span> -->
               <!-- <span class="widget show-modal"><i class="bx bxs-user-circle MkIconEms"></i></span> -->
               <!-- <span class="widget"><i class="ri-moon-line change-theme" id="theme-button"></i></span> -->
             </div>
@@ -381,6 +386,7 @@
     <script src="assets/js/query.min.js"></script>
     <script src="assets/js/index.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/vid.js"></script> -->
     <script src="assets/dist/aos.js"></script>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/dev.js"></script>
@@ -390,6 +396,17 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      var video = document.getElementById("myVideo");
+      var volumeControl = document.getElementById("vol-control");
+
+      var setVolume = function () {
+        video.volume = this.value / 100;
+      };
+
+      volumeControl.addEventListener("change", setVolume);
+      volumeControl.addEventListener("input", setVolume);
     </script>
     <script>
       const MkCard = document.querySelector(".box");
