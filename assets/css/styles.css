@@ -231,7 +231,7 @@ img {
 }
 .mywindow {
   width: 500px;
-  background: rgba(200, 200, 200, 0.156);
+  background: white;
   border: 0.2px solid rgba(200, 200, 200, 0.156);
   position: absolute;
   left: 50%;
@@ -325,10 +325,12 @@ img {
   box-sizing: border-box;
   background: transparent;
   border: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
   outline: 0;
   border-bottom: 2px solid #eee;
+  color: blue;
+  font-size: 12px;
 }
 .mk-title {
   position: relative;
@@ -347,7 +349,7 @@ img {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 15px;
-  color: white;
+  color: black;
 }
 .mytext:focus ~ .mk-title,
 .mytext:valid ~ .mk-title {
@@ -531,7 +533,6 @@ section {
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px; */
   z-index: 1;
-  border-radius: 50px;
   backdrop-filter: blur(2px);
   padding: 30px;
   animation: fadeInUp 1s;
@@ -959,11 +960,36 @@ section {
   padding-bottom: 5px;
   border-radius: 50px;
   background: none;
-  box-shadow: 0 0 10px rgba(200, 200, 200, 0.156);
+  /* box-shadow: 0 0 10px rgba(200, 200, 200, 0.156); */
+  border: 1px solid #ddd;
   margin-bottom: 30px;
 }
 /* Mk Contacts */
-
+.MkOwner {
+  color: #2d5cfe;
+}
+#vol-control {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: 3px;
+  height: 50px;
+  width: 50%;
+  border-radius: none;
+  background: #ddd;
+  cursor: pointer;
+  -webkit-appearance: none;
+  z-index: 9999999;
+}
+#vol-control::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 100px;
+      height: 20px;
+      margin-top: -3px;
+      border-radius: none;
+      background: #ddd;
+      border: 0.5px solid #eee;
+    }
 .box .list-links-contact {
   position: relative;
   display: flex;
@@ -1063,7 +1089,7 @@ section {
 
 .MkNavBar {
   position: relative;
-  width: 355px;
+  width: 320px;
   height: 70px;
   overflow: hidden;
   justify-content: center;
@@ -1076,7 +1102,7 @@ section {
   background: white;
   border-radius: 5px;
   border: 0.4px solid rgba(200, 200, 200, 0.156);
-  left: 480px;
+  left: 430px;
 }
 
 .MkAreaNavbar {
@@ -1099,11 +1125,11 @@ section {
   transition: all 1s;
   cursor: pointer;
   position: relative;
-  margin: 11px;
-  height: 50px;
-  width: 50px;
-  padding: 10px;
-  left: -5px;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  padding: 15px;
+  left: -2px;
 }
 
 .MkIconEms {
@@ -1111,7 +1137,7 @@ section {
   top: 2px;
 }
 .widget:hover {
-  background: #fff;
+  background: black;
   z-index: 1000;
   color: #f5c242;
   transition: 1s;
@@ -1236,7 +1262,6 @@ nav .MkUserMenuSetting {
   margin-top: 30px;
   margin-right: 15px;
   margin-left: 50px;
-  cursor: pointer;
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
   border: 2px solid rgba(200, 200, 200, 0.156);
@@ -1287,7 +1312,7 @@ nav .MkUserMenuSetting {
   position: relative;
   right: -10px;
   bottom: 10px;
-  color: #f5c242;
+  color: #fff;
   width: 40%;
   margin-bottom: 30px;
 }
@@ -1302,6 +1327,7 @@ nav .MkUserMenuSetting {
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 .MkUserIconsInfo {
   position: absolute;
@@ -1309,8 +1335,19 @@ nav .MkUserMenuSetting {
   top: 10px;
   right: 20px;
   color: #f5c242;
-  background: rgba(200, 200, 200, 0.156);
+  /* background: rgba(200, 200, 200, 0.156); */
   border: 0.2px solid rgba(200, 200, 200, 0.156);
+  padding: 5px;
+  border-radius: 30px;
+}
+.MkOwnerIcons {
+  position: absolute;
+  font-size: 30px;
+  top: 30px;
+  right: 20px;
+  color: #f5c242;
+  /* background: rgba(200, 200, 200, 0.156); */
+  /* border: 0.2px solid rgba(200, 200, 200, 0.156); */
   padding: 5px;
   border-radius: 30px;
 }
@@ -1455,6 +1492,122 @@ nav ul . {
 .MkUserIconsBack {
   position: relative;
 }
+
+.bottom-sheet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 1s linear;
+}
+.bottom-sheet.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.bottom-sheet .sheet-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background: #000;
+}
+.bottom-sheet .content {
+  width: 100%;
+  position: relative;
+  background: #fff;
+  max-height: 100vh;
+  height: 50vh;
+  padding: 25px 30px;
+  transform: translateY(100%);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+  transition: 1s ease;
+}
+.bottom-sheet.show .content {
+  transform: translateY(0%);
+}
+.bottom-sheet.dragging .content {
+  transition: none;
+}
+.bottom-sheet.fullscreen .content {
+  border-radius: 0;
+  overflow-y: hidden;
+}
+.bottom-sheet .header {
+  display: flex;
+  justify-content: center;
+}
+.header .drag-icon {
+  cursor: grab;
+  user-select: none;
+  padding: 15px;
+  margin-top: -15px;
+}
+.header .drag-icon span {
+  height: 4px;
+  width: 70px;
+  display: block;
+  background: #c7d0e1;
+  border-radius: 50px;
+}
+.bottom-sheet .body {
+  height: 100%;
+  overflow-y: auto;
+  padding: 15px 0 40px;
+  scrollbar-width: none;
+}
+.bottom-sheet .body::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+.bottom-sheet .body h2 {
+  font-size: 1.8rem;
+}
+.bottom-sheet .body p {
+  margin-top: 20px;
+  font-size: 1.05rem;
+}
+.options button {
+  height: 40px;
+  width: 40px;
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: #efefef;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.divvideo button :where(i, span) {
+  divvideo100%;
+  width: 100%;
+  line-height: 40px;
+}
+.divvideo button:hover :where(i, span) {
+  color: #fff;
+}
+.divvideo button:active :where(i, span) {
+  transform: scale(0.9);
+}
+.divvideo button span {
+  font-size: 23px;
+}
+.divvideo input {
+  height: 4px;
+  margin-left: 3px;
+  max-width: 75px;
+  accent-color: #0078ff;
+}
 /* MkPopUp */
 
 @media screen and (max-width: 600px) {
@@ -1542,7 +1695,7 @@ nav ul . {
     top: 10px;
     right: 20px;
     color: #f5c242;
-    background: rgba(200, 200, 200, 0.156);
+    /* background: rgba(200, 200, 200, 0.156); */
     border: 0.2px solid rgba(200, 200, 200, 0.156);
     padding: 5px;
     border-radius: 30px;
@@ -1750,7 +1903,7 @@ nav ul . {
     top: 10px;
     right: 20px;
     color: #f5c242;
-    background: rgba(200, 200, 200, 0.156);
+    /* background: rgba(200, 200, 200, 0.156); */
     border: 0.2px solid rgba(200, 200, 200, 0.156);
     padding: 5px;
     border-radius: 30px;
@@ -1880,7 +2033,7 @@ nav ul . {
   }
   .MkNavBar {
     position: relative;
-    width: 350px;
+    width: 300px;
     height: 70px;
     overflow: hidden;
     justify-content: center;
@@ -1968,7 +2121,7 @@ nav ul . {
     top: 10px;
     right: 10px;
     color: #f5c242;
-    background: rgba(200, 200, 200, 0.156);
+    /* background: rgba(200, 200, 200, 0.156); */
     border: 0.2px solid rgba(200, 200, 200, 0.156);
     padding: 5px;
     border-radius: 30px;
@@ -1987,7 +2140,6 @@ nav ul . {
   }
 }
 @media screen and (max-width: 390px) {
-  
 }
 /* @media screen and (max-width: 375px) {
   .MkNavBar {
@@ -2031,20 +2183,49 @@ nav ul . {
 @media screen and (max-width: 360px) {
   .MkNavBar {
     position: relative;
-    width: 320px;
-    left: -10px;
+    width: 100%;
+    left: -20px;
     top: -150px;
   }
   .widget {
-    left: 2px;
-    margin: 10px;
+    left: 1px;
+    margin: 15px;
   }
   nav ul .MkUserIconsBack {
     position: relative;
     left: -110px;
   }
+  .MkUserListInfo .MkUserContentInfo h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .MkUserListInfo .MkUserContentInfo p {
+    margin-top: 0;
+    color: white;
+  }
+  .MkOwnerIcons {
+    top: 40px;
+  }
+  .mywindow {
+    width: 86%;
+  }
 }
-
+/* @media screen and (max-width: 390px) {
+  .MkNavBar {
+    position: relative;
+    width: 430px;
+    left: -200px;
+    top: -150px;
+  }
+  .widget {
+    left: 37px;
+    margin: 15px;
+  }
+  nav ul .MkUserIconsBack {
+    position: relative;
+    left: -110px;
+  }
+} */
 /* @media screen and (max-width: 1280px) {
   .box {
     width: 800px;
