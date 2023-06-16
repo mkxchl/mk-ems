@@ -76,6 +76,9 @@ function MkEntxx() {
 function MkEntxxx() {
   window.location.replace("https://pornhub.com/");
 }
+function MkEntxxxx() {
+  window.location.replace("https://ukdevilz.com/");
+}
 
 /// Function Contact - Links ///
 
