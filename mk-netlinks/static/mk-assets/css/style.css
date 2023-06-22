@@ -196,7 +196,7 @@ section::after {
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
-  transition: 0.1s linear;
+  transition: 1s linear;
   z-index: 99999999;
 }
 .bottom-sheet.show {
@@ -224,7 +224,7 @@ section::after {
   transform: translateY(100%);
   border-radius: 12px 12px 0 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
-  transition: 0.3s ease;
+  transition: 1s ease;
 }
 .bottom-sheet.show .content {
   transform: translateY(0%);
