@@ -433,6 +433,6 @@ section::after {
     margin-bottom: 5px;
   }
   .bottom-sheet .content {
-    margin-bottom: -30px;
+    margin-bottom: -50px;
   }
 }
