@@ -14,13 +14,13 @@ let isDragging = false,
 const showBottomSheet = () => {
   bottomSheet.classList.add("show");
   document.body.style.overflowY = "hidden";
-  updateSheetHeight(50);
+  updateSheetHeight(40);
 };
 
 const updateSheetHeight = (height) => {
   sheetContent.style.height = `${height}vh`; //updates the height of the sheet content
   // Toggles the fullscreen class to bottomSheet if the height is equal to 100
-  bottomSheet.classList.toggle("fullscreen", height === 100);
+  bottomSheet.classList.toggle("fullscreen", height === 40);
 };
 
 // Hide the bottom sheet and show body vertical scrollbar
@@ -41,7 +41,7 @@ const dragStart = (e) => {
 const dragging = (e) => {
   if (!isDragging) return;
   const delta = startY - (e.pageY || e.touches?.[0].pageY);
-  const newHeight = startHeight + (delta / window.innerHeight) * 100;
+  const newHeight = startHeight + (delta / window.innerHeight) * 40;
   updateSheetHeight(newHeight);
 };
 
@@ -51,7 +51,7 @@ const dragStop = () => {
   isDragging = false;
   bottomSheet.classList.remove("dragging");
   const sheetHeight = parseInt(sheetContent.style.height);
-  sheetHeight < 25 ? hideBottomSheet() : sheetHeight > 75 ? updateSheetHeight(100) : updateSheetHeight(50);
+  sheetHeight < 30 ? hideBottomSheet() : sheetHeight > 30 ? updateSheetHeight(40) : updateSheetHeight(50);
 };
 
 dragIcon.addEventListener("mousedown", dragStart);
@@ -75,4 +75,191 @@ function Mkxxx() {
     confirmButtonText: "Tutup",
     confirmTextColor: "#d33",
   });
+}
+
+/// Function Contact - Links ///
+
+function MkxBlog() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://mk-links.netlify.app/");
+}
+function MkxSpfy() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://open.spotify.com/playlist/1ZaVZkzQxjsSPUSnLDrL27?si=F6zRz0mdRJG-EXqyDmE-Bw");
+}
+function MkxHeal() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://ems-links.netlify.app/about/mkx/heal/");
+}
+function DscX() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://discord.gg/MarchellKevandra");
+}
+function IntX() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://instagram.com/chellgnzxz_");
+}
+function FbX() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://facebook.com/marchel.ganz");
+}
+function TtX() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://tiktok.com/@mkxchl");
+}
+function TlX() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://t.me/Marchell_Junior");
 }
