@@ -26,40 +26,74 @@
   </head>
   <style>
     Mkx {
-      color: rgb(255, 247, 0);
+      color: #2600ff;
     }
   </style>
   <body>
+    <div class="fuel-area">
+      <div class="mk-box">
+        <div class="setting-content">
+          <img src="static/mk-assets/img/logo.jpg" alt="Maps" class="img-setting" />
+        </div>
+        <div class="setting-list">
+          <p class="mk-setting-tittle">Marchell Kevandra</p>
+          <p class="mk-setting-desc">EMS Revolution</p>
+        </div>
+        <div class="mk-setting-list">
+          <header>Setting</header>
+          <div class="mk-list-content">
+            <p>Music</p>
+            <i class="bx mk-ic bxs-music"></i>
+          </div>
+        </div>
+        <div class="mk-setting-list">
+          <header>Social Media</header>
+          <div class="mk-list-content">
+            <p>chellgnzxz_</p>
+            <i class="bx mk-ic bxl-instagram"></i>
+          </div>
+          <div class="mk-list-content">
+            <p>Marchell</p>
+            <i class="bx mk-ic bxl-facebook"></i>
+          </div>
+          <div class="mk-list-content">
+            <p>Marchell Junior</p>
+            <i class="bx mk-ic bxl-telegram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
     <section>
       <!-- BODY -->
       <div class="box">
         <h3>
           Marchell Kevandra
+          <i class="bx bxs-badge-check MkxVeriv"></i>
           <p class="MKdexsc">Programmer & Owner</p>
           <li class="bx bx-user us show-modal"></li>
         </h3>
         <hr class="MkBottom" />
-        <div class="list-links" onclick="location.href='https://mk-links.netlify.app/'">
+        <div class="list-links" onclick="MkxBlog()">
           <div class="img-list">
-            <i class="bx bx-link"></i>
+            <i class="bx bx-link mkall"></i>
           </div>
           <div class="list-content">
             <h4>Blog</h4>
           </div>
           <i class="bx bx-chevron-right MKNexxx"></i>
         </div>
-        <div class="list-links" onclick="location.href='https://open.spotify.com/playlist/1ZaVZkzQxjsSPUSnLDrL27?si=F6zRz0mdRJG-EXqyDmE-Bw'">
+        <div class="list-links" onclick="MkxSpfy()">
           <div class="img-list">
-            <i class="bx bxl-spotify"></i>
+            <i class="bx bxl-spotify spx"></i>
           </div>
           <div class="list-content">
             <h4>Spotify Playlist</h4>
           </div>
           <i class="bx bx-chevron-right MKNexxx"></i>
         </div>
-        <div class="list-links" onclick="location.href='https://ems-links.netlify.app/about/mkx/heal/'">
+        <div class="list-links" onclick="MkxHeal()">
           <div class="img-list">
-            <i class="bx bx-joystick-button"></i>
+            <i class="bx bx-joystick-button mkall"></i>
           </div>
           <div class="list-content">
             <h4>Link G4cor</h4>
@@ -68,7 +102,7 @@
         </div>
         <div class="list-links" onclick="Mkxxx()">
           <div class="img-list">
-            <i class="bx bx-message-alt"></i>
+            <i class="bx bx-message-alt mkall"></i>
           </div>
           <div class="list-content">
             <h4>Chat Realtime</h4>
@@ -83,11 +117,13 @@
       <div class="sheet-overlay"></div>
       <div class="content">
         <div class="header">
+          <div class="MkCircle"></div>
           <div class="drag-icon"><span></span></div>
+          <div class="MkCirclex"></div>
         </div>
         <h2 class="MKTittleHeader">Info</h2>
-        <!-- <i class="bx bxs-music MKIcHeader"></i>
-        <i class="bx bx-moon MKIcChange"></i> -->
+        <i class="bx bxs-music MKIcHeader"></i>
+        <i class="bx bx-moon MKIcChange"></i>
         <div class="body">
           <!-- <h5 class="MkDragListTittle">Device</h5> -->
           <div class="MkDragPrev">
@@ -97,7 +133,7 @@
             <div class="MkDragxContent">
               <h5 id="current-date"></h5>
             </div>
-            <i class="bx bx-chevron-right MkDragIcNext"></i>
+            <!-- <i class="bx bx-chevron-right MkDragIcNext"></i> -->
           </div>
           <div class="MkDragPrev">
             <div class="MkDragIc">
@@ -106,15 +142,16 @@
             <div class="MkDragxContent">
               <h5 id="device"></h5>
             </div>
-            <i class="bx bx-chevron-right MkDragIcNext"></i>
+            <!-- <i class="bx bx-chevron-right MkDragIcNext"></i> -->
           </div>
           <div class="icons">
-            <a onclick="Mkxxx()" class="fb"><i class="fab fa-facebook-f"></i></a>
-            <a onclick="Mkxxx()" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a onclick="Mkxxx()" class="insta"><i class="fab fa-instagram"></i></a>
-            <a onclick="Mkxxx()" class="git"><i class="fab fa-github"></i></a>
-            <a onclick="Mkxxx()" class="yt"><i class="fab fa-youtube"></i></a>
+            <a onclick="FbX()" class="fb"><i class="fab fa-facebook-f"></i></a>
+            <a onclick="TlX()" class="twitter"><i class="fab fa-telegram"></i></a>
+            <a onclick="IntX()" class="insta"><i class="fab fa-instagram"></i></a>
+            <a onclick="Mkxxx()" class="git"><i class="fab fa-tiktok"></i></a>
+            <!-- <a onclick="Mkxxx()" class="yt"><i class="fab fa-youtube"></i></a> -->
           </div>
+        </div>
       </div>
     </div>
     <!-- AOS REPOSITORY -->
@@ -130,6 +167,15 @@
         MkCard.classList.toggle("active");
       };
     </script>
+    <!-- <script>
+    function displayAlert() {
+      alert("Teks tidak boleh dipilih di website ini.");
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("selectstart", displayAlert);
+    });
+  </script> -->
     <!-- END AOS REPOSITORY -->
   </body>
 </html>
