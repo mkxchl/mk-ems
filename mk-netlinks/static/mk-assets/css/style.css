@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Helvetica, Arial", sans-serif; */
+  font-family: Chilanka, sans-serif;
 }
 ::selection {
   background: purple;
@@ -57,16 +60,24 @@ section::after {
 .box h3 {
   color: #2d5cfe;
   padding: 15px;
+  font-size: 15px;
 }
 .MKdexsc {
   color: grey;
   font-size: 10px;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  letter-spacing: 1.3px;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 .MkBottom {
   color: grey;
   margin-bottom: 30px;
+}
+.MkxVeriv {
+  position: relative;
+  top: 3px;
+  color: #42a5f5;
+  font-size: 18px;
 }
 .us {
   /* position: relative; */
@@ -75,9 +86,9 @@ section::after {
   justify-content: space-between;
   position: absolute;
   right: 25px;
-  top: 35px;
+  top: 30px;
   padding: 10px;
-  color: rgb(255, 247, 0);
+  color: #c7d0e1;
   cursor: pointer;
   transition: 1s;
 }
@@ -95,14 +106,15 @@ section::after {
   position: relative;
   display: flex;
   padding: 10px;
-  background: black;
-  border: 1px solid rgb(255, 247, 0);
+  background: #c7d0e1b4;
+  /* border: 0.5px solid #c7d0e1; */
+  /* box-shadow: 0 5px 15px #c7d0e1; */
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
   transition: 1s ease-in-out;
   overflow: hidden;
-  height: 50px;
+  height: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -121,7 +133,7 @@ section::after {
   width: 60px;
   height: 60px;
   everflow: hidden;
-  margin-right: 15px;
+  margin-right: -10px;
 }
 .box .list-links .img-list i {
   position: absolute;
@@ -129,28 +141,31 @@ section::after {
   padding: 10px;
   width: 100%;
   height: 100%;
-  left: 10px;
+  left: -5px;
+  bottom: -10px;
   font-size: 30px;
   border-radius: 10px;
-  color: #2d5cfe;
+  /* color: #2d5cfe; */
 }
 .MKNexxx {
   position: absolute;
   font-size: 30px;
   color: white;
-  top: 20px;
+  top: 10px;
   right: 10px;
 }
 .box .list-links .list-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #2d5cfe;
+  color: #2600ff;
 }
 .box .list-links .list-content h4 {
+  position: relative;
   line-height: 1.2em;
   font-weight: 600;
   transition: 0.5s;
+  top: 2px;
 }
 .box .list-links .list-content p {
   font-size: 0.75em;
@@ -159,6 +174,12 @@ section::after {
 .box .list-links:hover .list-content h4,
 .box .list-links:hover .list-content p {
   color: #333;
+}
+.mkall {
+  color: #4267b2;
+}
+.spx {
+  color: #1db954;
 }
 .ig {
   color: #e1306c;
@@ -196,7 +217,7 @@ section::after {
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
-  transition: 1s linear;
+  transition: 0.3s linear;
   z-index: 99999999;
 }
 .bottom-sheet.show {
@@ -224,7 +245,7 @@ section::after {
   transform: translateY(100%);
   border-radius: 12px 12px 0 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 .bottom-sheet.show .content {
   transform: translateY(0%);
@@ -235,6 +256,26 @@ section::after {
 .bottom-sheet.fullscreen .content {
   border-radius: 12px 12px 0 0;
   overflow-y: hidden;
+}
+.MkCircle {
+  position: relative;
+  border-radius: 50%;
+  bottom: 3px;
+  display: block;
+  background: #c7d0e1;
+  height: 10px;
+  width: 10px;
+  left: 10px;
+}
+.MkCirclex {
+  position: relative;
+  border-radius: 50%;
+  bottom: 3px;
+  display: block;
+  background: #c7d0e1;
+  height: 10px;
+  width: 10px;
+  right: 10px;
 }
 .bottom-sheet .header {
   display: flex;
@@ -287,13 +328,15 @@ section::after {
   justify-content: flex-end;
   font-size: 25px;
   left: 200px;
-  bottom: 7px;
+  bottom: 40px;
   border-radius: 50%;
   color: #2d5cfe;
   /* background: #574484; */
   height: 25px;
   width: 25px;
   padding: 10px;
+  margin-bottom: -50px;
+  cursor: pointer;
 }
 .MKIcChange {
   position: relative;
@@ -302,13 +345,14 @@ section::after {
   justify-content: flex-end;
   font-size: 25px;
   left: 245px;
-  bottom: 50px;
+  bottom: 35px;
   border-radius: 50%;
   color: #2d5cfe;
   height: 25px;
   width: 25px;
   padding: 10px;
-  margin-bottom: -50px;
+  margin-bottom: -30px;
+  cursor: pointer;
 }
 .MkDragPrev {
   position: relative;
@@ -342,11 +386,15 @@ section::after {
   color: #2d5cfe;
 }
 .MkDragPrev .MkDragxContent h5 {
+  position: relative;
+  top: 2px;
   line-height: 1.1em;
   font-weight: 600;
   transition: 0.5s;
 }
 .MkDragPrev .MkDragxContent p {
+  position: relative;
+  top: 2px;
   line-height: 1.2em;
   font-size: 12px;
   font-weight: normal;
@@ -365,7 +413,7 @@ section::after {
   position: relative;
   height: 30px;
   width: 30px;
-  left: 10px;
+  left: 31px;
   margin: 0 10px;
   display: inline-flex;
   text-decoration: none;
@@ -413,6 +461,117 @@ section::after {
 .icons a.yt i {
   color: #ff0000;
 }
+.mk-box {
+  /* background: white; */
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 30px;
+  padding: 10px;
+  height: 100%;
+}
+.setting-content {
+  display: flex;
+}
+.setting-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d5cfe;
+}
+.setting-content .img-setting {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  everflow: hidden;
+  margin-right: 50px;
+  color: #2d5cfe;
+  top: 5px;
+  left: 15px;
+}
+.mk-setting-tittle {
+  line-height: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
+  margin-left: 60px;
+  top: -38px;
+  position: relative;
+  left: 25px;
+  font-family: "Helvetica, Arial", sans-serif;
+}
+.mk-setting-desc {
+  font-size: 0.6em;
+  transition: 0.5s;
+  left: 25px;
+  color: gray;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-left: 60px;
+  top: -38px;
+  position: relative;
+}
+.mk-setting-list {
+  padding: 10px;
+}
+.mk-list-content {
+  margin-top: -50px;
+  top: 50px;
+  position: relative;
+  background: black;
+  padding: 20px;
+  height: 10px;
+  border-radius: 5px;
+}
+.mk-list-content .mk-profile-title {
+  font-size: 12px;
+}
+.mk-setting-list header {
+  font-size: 18px;
+  margin-left: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.mk-setting-list p {
+  position: relative;
+  font-size: 15px;
+  margin-left: 20px;
+  bottom: 12px;
+  left: 10px;
+  /* background: black; */
+  color: white;
+  padding: 10px;
+  width: 185px;
+  line-height: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.mk-setting-list p {
+  cursor: pointer;
+}
+.mk-setting-list .mk-ic {
+  position: relative;
+  cursor: pointer;
+  bottom: 42px;
+  right: 5px;
+  font-size: 20px;
+  color: white;
+}
+.fuel-area {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 325px;
+  height: 500px;
+  top: 75px;
+  left: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  background-color: grey;
+  z-index: 99999;
+}
 @media screen and (max-width: 360px) {
   .box {
     min-width: 280px;
@@ -433,6 +592,6 @@ section::after {
     margin-bottom: 5px;
   }
   .bottom-sheet .content {
-    margin-bottom: -50px;
+    margin-bottom: -10px;
   }
 }
