@@ -19,7 +19,7 @@ body {
 }
 section {
   position: relative;
-  background: #fff;
+  background: linear-gradient(85deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 124, 1) 0%, rgba(106, 106, 106, 1) 49%);
   min-height: 100vh;
   overflow: hidden;
   justify-content: center;
@@ -574,7 +574,7 @@ section::after {
 }
 @media screen and (max-width: 360px) {
   .box {
-    min-width: 280px;
+    min-width: 250px;
   }
   .box .list-links .footer {
     justify-content: center;
