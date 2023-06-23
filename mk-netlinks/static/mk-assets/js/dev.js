@@ -14,7 +14,7 @@ function updateDateTime() {
   var daysOfWeek = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
   var dayOfWeek = currentDateTime.getDay();
 
-  var formattedDateTime = daysOfWeek[dayOfWeek] + ", " + day + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
+  var formattedDateTime = daysOfWeek[dayOfWeek] + ", " + day + ":" + month + ":" + year + " " + hours + ":" + minutes + ":" + seconds;
 
   currentDateElement.textContent = formattedDateTime;
 }
