@@ -209,7 +209,7 @@ section::after {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   opacity: 0;
@@ -574,7 +574,7 @@ section::after {
 }
 @media screen and (max-width: 360px) {
   .box {
-    min-width: 280px;
+    min-width: 250px;
   }
   .box .list-links .footer {
     justify-content: center;
