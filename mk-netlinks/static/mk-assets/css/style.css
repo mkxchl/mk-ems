@@ -154,7 +154,7 @@ section::after {
   width: 100%;
   height: 100%;
   left: -5px;
-  bottom: -10px;
+  bottom: -11px;
   font-size: 30px;
   border-radius: 10px;
   /* color: #2d5cfe; */
@@ -177,7 +177,7 @@ section::after {
   line-height: 1.2em;
   font-weight: 600;
   transition: 0.5s;
-  top: 2px;
+  top: 3px;
 }
 .box .list-links .list-content p {
   font-size: 0.75em;
