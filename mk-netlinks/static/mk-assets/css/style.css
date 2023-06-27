@@ -19,8 +19,9 @@ body {
 }
 section {
   position: relative;
-  background: linear-gradient(85deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 124, 1) 0%, rgba(106, 106, 106, 1) 49%);
+  /* background: linear-gradient(85deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 124, 1) 0%, rgba(106, 106, 106, 1) 49%); */
   min-height: 100vh;
+  background-color: #c7d0e1;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -31,7 +32,7 @@ section::before {
   position: absolute;
   width: 400px;
   height: 400px;
-  background: black;
+  /* background: black; */
   border-radius: 50%;
   transform: translate(-250px, -120px);
 }
@@ -40,9 +41,19 @@ section::after {
   position: absolute;
   width: 350px;
   height: 350px;
-  background: black;
+  /* background: black; */
   border-radius: 50%;
   transform: translate(250px, 150px);
+}
+.MkxCodexLink:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+.MkxCodexLink:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 .box {
   position: relative;
@@ -50,11 +61,12 @@ section::after {
   min-height: 200px;
   width: 200px;
   /* height: 300px; */
-  background: #212121;
-  border-radius: 5px;
+  background: #fff;
+  border-radius: 10px;
   z-index: 10;
   padding: 20px;
-  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
+  border: 1px solid #c7d0e1;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .box h3 {
@@ -70,7 +82,7 @@ section::after {
   margin-top: 5px;
 }
 .MkBottom {
-  color: grey;
+  color: #c7d0e1;
   margin-bottom: 30px;
 }
 .MkxVeriv {
@@ -121,7 +133,7 @@ section::after {
 .box .list-links:hover {
   background: #fff;
   box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
-  transform: scale(1.02);
+  transform: scale(1);
   z-index: 1000;
   border: none;
 }
@@ -174,6 +186,15 @@ section::after {
 .box .list-links:hover .list-content h4,
 .box .list-links:hover .list-content p {
   color: #333;
+}
+.MkxxFooterx {
+  text-align: center;
+  font-size: 12px;
+}
+.MkxCodexLink {
+  animation: glitch 1s linear infinite;
+  color: #2d5cfe;
+  font-weight: bold;
 }
 .mkall {
   color: #4267b2;
@@ -571,6 +592,45 @@ section::after {
   transition: all 0.5s;
   background-color: grey;
   z-index: 99999;
+}
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
 }
 @media screen and (max-width: 360px) {
   .box {
