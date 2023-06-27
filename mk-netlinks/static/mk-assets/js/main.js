@@ -79,6 +79,30 @@ function Mkxxx() {
 
 /// Function Contact - Links ///
 
+function MkxAbout() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://ems-links.netlify.app/about/");
+}
+
 function MkxBlog() {
   let timerInterval;
   Swal.fire({
