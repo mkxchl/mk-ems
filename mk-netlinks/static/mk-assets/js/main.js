@@ -1,16 +1,13 @@
-// Select DOM elements
 const showModalBtn = document.querySelector(".show-modal");
 const bottomSheet = document.querySelector(".bottom-sheet");
 const sheetOverlay = bottomSheet.querySelector(".sheet-overlay");
 const sheetContent = bottomSheet.querySelector(".content");
 const dragIcon = bottomSheet.querySelector(".drag-icon");
 
-// Global variables for tracking drag events
 let isDragging = false,
   startY,
   startHeight;
 
-// Show the bottom sheet, hide body vertical scrollbar, and call updateSheetHeight
 const showBottomSheet = () => {
   bottomSheet.classList.add("show");
   document.body.style.overflowY = "hidden";
@@ -18,18 +15,15 @@ const showBottomSheet = () => {
 };
 
 const updateSheetHeight = (height) => {
-  sheetContent.style.height = `${height}vh`; //updates the height of the sheet content
-  // Toggles the fullscreen class to bottomSheet if the height is equal to 100
+  sheetContent.style.height = `${height}vh`;
   bottomSheet.classList.toggle("fullscreen", height === 40);
 };
 
-// Hide the bottom sheet and show body vertical scrollbar
 const hideBottomSheet = () => {
   bottomSheet.classList.remove("show");
   document.body.style.overflowY = "auto";
 };
 
-// Sets initial drag position, sheetContent height and add dragging class to the bottom sheet
 const dragStart = (e) => {
   isDragging = true;
   startY = e.pageY || e.touches?.[0].pageY;
@@ -37,7 +31,6 @@ const dragStart = (e) => {
   bottomSheet.classList.add("dragging");
 };
 
-// Calculates the new height for the sheet content and call the updateSheetHeight function
 const dragging = (e) => {
   if (!isDragging) return;
   const delta = startY - (e.pageY || e.touches?.[0].pageY);
@@ -45,8 +38,6 @@ const dragging = (e) => {
   updateSheetHeight(newHeight);
 };
 
-// Determines whether to hide, set to fullscreen, or set to default
-// height based on the current height of the sheet content
 const dragStop = () => {
   isDragging = false;
   bottomSheet.classList.remove("dragging");
@@ -78,30 +69,6 @@ function Mkxxx() {
 }
 
 /// Function Contact - Links ///
-
-function MkxAbout() {
-  let timerInterval;
-  Swal.fire({
-    timer: 5000,
-    timerProgressBar: true,
-    didOpen: () => {
-      Swal.showLoading();
-      const b = Swal.getHtmlContainer().querySelector("b");
-      timerInterval = setInterval(() => {
-        b.textContent = Swal.getTimerLeft();
-      }, 500);
-    },
-    willClose: () => {
-      clearInterval(timerInterval);
-    },
-  }).then((result) => {
-    /* Read more about handling dismissals below */
-    if (result.dismiss === Swal.DismissReason.timer) {
-      console.log("I was closed by the timer");
-    }
-  });
-  window.location.replace("https://ems-links.netlify.app/about/");
-}
 
 function MkxBlog() {
   let timerInterval;
@@ -280,10 +247,119 @@ function TlX() {
       clearInterval(timerInterval);
     },
   }).then((result) => {
-    /* Read more about handling dismissals below */
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
     }
   });
   window.location.replace("https://t.me/Marchell_Junior");
 }
+
+function Gogel() {
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+  window.location.replace("https://www.google.com/search?q=Marchell+Kevandra");
+}
+
+var MkNavBar = document.querySelector(".MkNavBar");
+var MkxGanzCls = document.querySelector(".MkxGanzCls");
+
+MkxGanzCls.addEventListener("click", function () {
+  if (MkNavBar.style.visibility !== "visible") {
+    MkNavBar.style.visibility = "visible";
+    MkNavBar.style.opacity = "1";
+    MkNavBar.style.bottom = "100px";
+  } else {
+    MkNavBar.style.visibility = "hidden";
+    MkNavBar.style.opacity = "0";
+    MkNavBar.style.bottom = "300px";
+  }
+});
+
+var MkxCloseMusic = document.querySelector(".bx-menu");
+var MkNavBar = document.querySelector(".MkNavBar");
+
+MkxCloseMusic.addEventListener("click", function () {
+  if (document.querySelector(".music-player").style.visibility !== "hidden") {
+    document.querySelector(".music-player").style.visibility = "hidden";
+    document.querySelector(".music-player").style.opacity = "0";
+    document.querySelector(".MkNavBar").style.visibility = "hidden";
+    document.querySelector(".MkNavBar").style.opacity = "0";
+  } else {
+    document.querySelector(".music-player").style.visibility = "hidden";
+    document.querySelector(".music-player").style.opacity = "0";
+  }
+});
+
+var MkBack = document.querySelector(".MkxxBackxx");
+
+MkBack.addEventListener("click", function () {
+  if (document.querySelector(".music-player").style.visibility !== "hidden") {
+    document.querySelector(".music-player").style.visibility = "hidden";
+    document.querySelector(".music-player").style.opacity = "0";
+    document.querySelector(".music-player").style.bottom = "-500px";
+  } else {
+    document.querySelector(".music-player").style.visibility = "hidden";
+    document.querySelector(".music-player").style.opacity = "0";
+    document.querySelector(".music-player").style.bottom = "-500px";
+  }
+});
+
+var MkMusix = document.querySelector(".MKIcHeader");
+var MkNavBar = document.querySelector(".MkNavBar");
+var MkxGanzCls = document.querySelector(".MkxGanzCls");
+
+MkMusix.addEventListener("click", function () {
+  if (document.querySelector(".music-player").style.visibility !== "visible") {
+    document.querySelector(".music-player").style.visibility = "visible";
+    document.querySelector(".music-player").style.marginTop = "10px";
+    document.querySelector(".music-player").style.top = "-800px";
+    document.querySelector(".music-player").style.opacity = "1";
+    document.querySelector(".MkNavBar").style.top = "-100px";
+    document.querySelector(".MkNavBar").style.visibility = "hidden";
+    document.querySelector(".MkNavBar").style.opacity = "0";
+  } else {
+    document.querySelector(".music-player").style.visibility = "visible";
+    document.querySelector(".music-player").style.marginTop = "-10px";
+    document.querySelector(".music-player").style.opacity = "1";
+  }
+});
+
+var sarki = document.getElementById("sarki");
+var oynat = document.getElementById("oynat");
+var ses = document.getElementById("ses");
+
+oynat.onclick = function () {
+  if (sarki.paused) {
+    sarki.play();
+    document.querySelector(".bi-pause-fill").style.display = "inline";
+    document.querySelector(".bi-play-fill").style.display = "none";
+    document.querySelector(".music-poster").style.transform = "scale(1)";
+    document.querySelector(".bi-soundwave").style.display = "block";
+  } else {
+    sarki.pause();
+    document.querySelector(".bi-pause-fill").style.display = "none";
+    document.querySelector(".bi-play-fill").style.display = "inline";
+    document.querySelector(".bi-soundwave").style.display = "none";
+  }
+};
+
+sarki.onvolumechange = function () {
+  ses.value = sarki.volume * 100;
+};
