@@ -329,7 +329,7 @@ MkMusix.addEventListener("click", function () {
   if (document.querySelector(".music-player").style.visibility !== "visible") {
     document.querySelector(".music-player").style.visibility = "visible";
     document.querySelector(".music-player").style.marginTop = "10px";
-    document.querySelector(".music-player").style.top = "-800px";
+    document.querySelector(".music-player").style.top = "-780px";
     document.querySelector(".music-player").style.opacity = "1";
     document.querySelector(".MkNavBar").style.top = "-100px";
     document.querySelector(".MkNavBar").style.visibility = "hidden";
