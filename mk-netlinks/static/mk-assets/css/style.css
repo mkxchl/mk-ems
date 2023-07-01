@@ -810,4 +810,8 @@ input[type="range"] {
     left: -10px;
     width: 300px;
   }
+  .icons a {
+    position: relative;
+    left: 30px;
+  }
 }
