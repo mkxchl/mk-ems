@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id" dir="ltr">
   <head>
-    <title>Mk NetLinks</title>
+    <title>Mk NetLink</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
     <link rel="stylesheet" href="static/mk-assets/css/style.css" />
   </head>
@@ -37,7 +39,7 @@
           Marchell Kevandra
           <i class="bx bxs-badge-check MkxVeriv"></i>
           <p class="MKdexsc">Programmer & Owner</p>
-          <li class="bx bx-user us" onclick="MkxAbout()"></li>
+          <i class="bx bx-user us MkxGanzCls"></i>
         </h3>
         <hr class="MkBottom" />
         <div class="list-links" onclick="MkxBlog()">
@@ -80,9 +82,18 @@
           <p class="MkxTextFooter">You can order design web in <a onclick="TlX()" class="MkxCodexLink">Mk Codex</a></p>
         </div>
       </div>
-
-      <!-- END BODY -->
     </section>
+    <div class="MkNavBar">
+      <div class="MkAreaNavbar">
+        <span class="widget MKIcHeader"><i class="bx bx-music MkIconEms"></i></span>
+        <span class="widget" onclick="Gogel()"><i class="bx bx-home MkIconEms"></i></span>
+        <span class="widget show-modal"><i class="bx bx-menu MkIconEms"></i></span>
+        <!-- <span class="widget"><i class="bx bxs-user-circle MkIconEms" onclick="openMenu()"></i></span> -->
+        <!-- <span class="widget show-modal"><i class="bx bxs-user-circle MkIconEms"></i></span> -->
+        <!-- <span class="widget"><i class="ri-moon-line change-theme" id="theme-button"></i></span> -->
+      </div>
+    </div>
+    <!-- END BODY -->
     <div class="bottom-sheet">
       <div class="sheet-overlay"></div>
       <div class="content">
@@ -124,6 +135,32 @@
         </div>
       </div>
     </div>
+    <div class="music-player">
+      <div class="music-details">
+        <div class="mk-images">
+          <img src="static/mk-assets/img/logo.jpg" alt="Music" class="music-poster" />
+        </div>
+        <div class="list-mk">
+          <p class="mk-music-tittle">Marchell Kevandra</p>
+          <p class="mk-music-desc">Be Your Self</p>
+        </div>
+        <!-- Audio Library -->
+        <audio id="sarki" loop controls src="https://ems-links.netlify.app/mix/mk-anime-song.mp3"></audio>
+        <!-- Button Music Activity -->
+        <div class="player">
+          <i class="bi bi-skip-backward-fill"></i>
+          <button id="oynat">
+            <i class="bi bi-play-fill"></i>
+            <i class="bi bi-pause-fill"></i>
+          </button>
+          <i class="bi bi-skip-forward-fill"></i>
+          <i class="bx bx-x MkxxBackxx"></i>
+          <!-- <i class="bi bi-volume-down volx" id="vollx"></i> -->
+          <!-- <input id="slider" type="range" min="0" max="100" value="0" step="1" /> -->
+        </div>
+      </div>
+    </div>
+
     <!-- AOS REPOSITORY -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -131,12 +168,24 @@
     <script src="static/mk-assets/js/main.js"></script>
     <script src="static/mk-assets/js/dev.js"></script>
     <script>
+      const linkItems = document.querySelectorAll(".link-item");
+      linkItems.forEach((linkItem, index) => {
+        linkItem.addEventListener("click", () => {
+          document.querySelector(".active").classList.remove("active");
+          linkItem.classList.add("active");
+          const indicator = document.querySelector(".indicator");
+          indicator.style.left = `${index * 95 + 48}px`;
+        });
+      });
+    </script>
+    <script></script>
+    <!-- <script>
       const MkCard = document.querySelector(".list-links");
       const MkCardToggle = document.querySelector(".toggle");
       MkCardToggle.onclick = function () {
         MkCard.classList.toggle("active");
       };
-    </script>
+    </script> -->
     <!-- <script>
     function displayAlert() {
       alert("Teks tidak boleh dipilih di website ini.");
