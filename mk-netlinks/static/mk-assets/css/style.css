@@ -16,12 +16,14 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
+  background-color: #c7d0e1;
+  height: 300px;
 }
+
 section {
   position: relative;
   /* background: linear-gradient(85deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 124, 1) 0%, rgba(106, 106, 106, 1) 49%); */
   min-height: 100vh;
-  background-color: #c7d0e1;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -73,6 +75,7 @@ section::after {
   color: #2d5cfe;
   padding: 15px;
   font-size: 15px;
+  /* animation: glitch 1s linear; */
 }
 .MKdexsc {
   color: grey;
@@ -105,7 +108,7 @@ section::after {
   transition: 1s;
 }
 .us:hover {
-  color: white;
+  color: #42a5f5;
   transform: scale(1.01);
 }
 .list-links.active {
@@ -154,8 +157,8 @@ section::after {
   width: 100%;
   height: 100%;
   left: -5px;
-  bottom: -11px;
-  font-size: 30px;
+  bottom: -13px;
+  font-size: 25px;
   border-radius: 10px;
   /* color: #2d5cfe; */
 }
@@ -342,7 +345,7 @@ section::after {
   display: flex;
   margin-bottom: -10px;
 }
-.MKIcHeader {
+/* .MKIcHeader {
   position: relative;
   display: flex;
   align-items: center;
@@ -352,13 +355,13 @@ section::after {
   bottom: 40px;
   border-radius: 50%;
   color: #2d5cfe;
-  /* background: #574484; */
+  background: #574484;
   height: 25px;
   width: 25px;
   padding: 10px;
   margin-bottom: -50px;
   cursor: pointer;
-}
+} */
 .MKIcChange {
   position: relative;
   display: flex;
@@ -429,6 +432,15 @@ section::after {
   color: #2d5cfe;
   font-size: 30px;
 }
+.theme-selector button {
+  position: relative;
+  padding: 5px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+  margin-left: 20px;
+}
 .icons a {
   background: #ecf0f3;
   position: relative;
@@ -482,116 +494,174 @@ section::after {
 .icons a.yt i {
   color: #ff0000;
 }
-.mk-box {
-  /* background: white; */
+#sarki {
+  height: 15px;
+  width: 300px;
+  position: absolute;
   visibility: hidden;
-  opacity: 0;
-  border-radius: 30px;
+  left: -110px;
+  margin-top: -15px;
+  color: blue;
+  background: black;
+}
+.music-player {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
+  top: -1000px;
+  z-index: 99999;
+  backdrop-filter: blur(10);
+  background: transparent;
+}
+.music-details {
+  width: 280px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  color: #000;
   padding: 10px;
-  height: 100%;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 5px;
+  overflow: hidden;
+  position: relative;
 }
-.setting-content {
-  display: flex;
+.music-details .mk-images {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-right: 50px;
+  color: #2d5cfe;
 }
-.setting-list {
+.music-poster {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  everflow: hidden;
+  margin-right: 150px;
+  color: #2d5cfe;
+  border-radius: 10px;
+}
+.mk-music-tittle {
+  line-height: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
+  margin-left: 60px;
+  top: -40px;
+  position: relative;
+}
+.mk-music-desc {
+  font-size: 0.6em;
+  transition: 0.5s;
+  color: gray;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-left: 60px;
+  top: -40px;
+  position: relative;
+}
+.bi-pause-fill {
+  display: none;
+}
+.volx {
+  position: relative;
+  left: 30px;
+  margin-left: 30px;
+}
+.voly {
+  position: relative;
+  left: 30px;
+  margin-left: 30px;
+}
+.list-mk {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #2d5cfe;
 }
-.setting-content .img-setting {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  everflow: hidden;
-  margin-right: 50px;
-  color: #2d5cfe;
-  top: 5px;
-  left: 15px;
+input[type="range"] {
+  width: 100%;
 }
-.mk-setting-tittle {
-  line-height: 1.2em;
-  font-weight: 600;
-  transition: 0.5s;
-  margin-left: 60px;
-  top: -38px;
-  position: relative;
-  left: 25px;
-  font-family: "Helvetica, Arial", sans-serif;
+.player {
+  /* margin-top: 10px; */
+  text-align: center;
 }
-.mk-setting-desc {
-  font-size: 0.6em;
-  transition: 0.5s;
-  left: 25px;
-  color: gray;
-  font-family: "DM Sans", sans-serif;
-  letter-spacing: 0.1rem;
-  margin-left: 60px;
-  top: -38px;
-  position: relative;
+
+.player i {
+  font-size: 25px;
+  margin: 0 10px;
 }
-.mk-setting-list {
-  padding: 10px;
-}
-.mk-list-content {
-  margin-top: -50px;
-  top: 50px;
-  position: relative;
-  background: black;
-  padding: 20px;
-  height: 10px;
-  border-radius: 5px;
-}
-.mk-list-content .mk-profile-title {
-  font-size: 12px;
-}
-.mk-setting-list header {
-  font-size: 18px;
-  margin-left: 5px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.mk-setting-list p {
-  position: relative;
-  font-size: 15px;
-  margin-left: 20px;
-  bottom: 12px;
-  left: 10px;
-  /* background: black; */
-  color: white;
-  padding: 10px;
-  width: 185px;
-  line-height: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-}
-.mk-setting-list p {
-  cursor: pointer;
-}
-.mk-setting-list .mk-ic {
-  position: relative;
-  cursor: pointer;
-  bottom: 42px;
-  right: 5px;
-  font-size: 20px;
-  color: white;
-}
-.fuel-area {
+
+.bx-x {
   position: absolute;
+  bottom: 85px;
+  right: 5px;
+  font-size: 30px !important;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.bx-x:hover {
+  transition: 0.5s linear;
+  color: #f5c242;
+}
+.player button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.MkNavBar {
+  position: relative;
+  width: 320px;
+  height: 70px;
   justify-content: center;
   align-items: center;
-  width: 325px;
-  height: 500px;
-  top: 75px;
-  left: 15px;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 0 6px;
+  display: flex;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.5s;
-  background-color: grey;
-  z-index: 99999;
+  transition: 0.5s linear;
+  /* animation: dynamicIslandAnm 1s; */
+  background: #fff;
+  bottom: 100px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+.MkAreaNavbar {
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  color: #f5c242;
+  position: relative;
+  z-index: 999;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.widget {
+  position: relative;
+  color: #2d5cfe;
+  text-align: center;
+  /* background: rgba(200, 200, 200, 0.156); */
+  /* border: 0.2px solid rgba(200, 200, 200, 0.156); */
+  border-radius: 50px;
+  transition: all 1s;
+  cursor: pointer;
+  margin: 20px;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  right: 5px;
+}
+.MkIconEms {
+  position: relative;
+  top: 2px;
+}
+.widget:hover {
+  background-color: #c7d0e1;
 }
 @keyframes glitchTop {
   2%,
@@ -632,6 +702,77 @@ section::after {
     transform: translate(0, 0) skew(5deg);
   }
 }
+@media screen and (max-width: 414px) {
+  .MkNavBar {
+    position: relative;
+    left: 35px;
+    width: 340px;
+  }
+  .widget {
+    position: relative;
+    margin: 21px;
+  }
+  .music-details {
+    position: relative;
+    left: 7px;
+    width: 320px;
+  }
+  .bottom-sheet {
+    width: 80%;
+    left: 40px;
+  }
+  .bottom-sheet h2 {
+    position: relative;
+    left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .bottom-sheet .content {
+    margin-bottom: -10px;
+  }
+  .icons a {
+    position: relative;
+    left: 50px;
+  }
+}
+@media screen and (max-width: 393px) {
+  body {
+    height: 300px;
+  }
+  .MkNavBar {
+    position: relative;
+    left: 30px;
+    width: 330px;
+  }
+  .widget {
+    position: relative;
+    margin: 21px;
+  }
+  .bottom-sheet {
+    width: 80%;
+    left: 40px;
+  }
+  .bottom-sheet h2 {
+    position: relative;
+    left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .bottom-sheet .content {
+    margin-bottom: -10px;
+  }
+  .icons a {
+    position: relative;
+    left: 45px;
+  }
+  .music-details {
+    width: 315px;
+  }
+}
 @media screen and (max-width: 360px) {
   .box {
     min-width: 280px;
@@ -653,5 +794,20 @@ section::after {
   }
   .bottom-sheet .content {
     margin-bottom: -10px;
+  }
+  .MkNavBar {
+    position: relative;
+    left: 20px;
+    width: 320px;
+  }
+  .widget {
+    position: relative;
+    margin: 21px;
+  }
+  .music-details {
+    position: relative;
+    top: 15px;
+    left: -10px;
+    width: 300px;
   }
 }
