@@ -68,7 +68,7 @@ section::after {
   z-index: 10;
   padding: 20px;
   /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
-  border: 1px solid #c7d0e1;
+  border: 4px solid #c7d0e1;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .box h3 {
@@ -323,6 +323,8 @@ section::after {
   overflow-y: auto;
   padding: 15px 0 40px;
   scrollbar-width: none;
+  justify-content: center;
+  align-items: center;
 }
 .bottom-sheet .body::-webkit-scrollbar {
   width: 0;
@@ -344,6 +346,168 @@ section::after {
 .MKTittleHeader {
   display: flex;
   margin-bottom: -10px;
+}
+.MkxBodyMusic {
+  font-family: "Poppins", sans-serif;
+}
+.MkImagesHeader {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  left: 108px;
+  bottom: 10px;
+  border-radius: 50%;
+  border: 1px solid #c7d0e1;
+}
+.MkxBodyMusicTittle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-top: -10px;
+}
+.MkxBodyMusicDesc {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+.MkxBodyMusicShareTitle {
+  text-align: center;
+  /* width: 300px; */
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  font-family: "Poppins", sans-serif;
+}
+.MkBodyMusicBtn {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  width: 290px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1db954;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s ease-in-out;
+}
+.MkBodyMusicBtn:hover {
+  background-color: #c7d0e1;
+  color: #000;
+}
+.MkBodyMusicBtn:hover .bxl-spotify {
+  color: #000;
+}
+.bxl-spotify {
+  position: relative;
+  font-size: 30px;
+  bottom: 35px;
+  left: 10px;
+  margin-right: 10px;
+  color: #1db954;
+}
+.MkBodyMusicBtnA {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  width: 280px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2d5cfe;
+  color: #fff;
+}
+.boxContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 10px;
+  --boxSize: 4px;
+  --gutter: 4px;
+  width: calc((var(--boxSize) + var(--gutter)) * 4);
+  left: 128px;
+  bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.MusicBox {
+  transform: scaleY(0.3);
+  height: 100%;
+  width: var(--boxSize);
+  background: #000;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  border-radius: 8px;
+}
+
+.MusicBox1 {
+  animation-name: quiet;
+}
+
+.MusicBox2 {
+  animation-name: normal;
+}
+
+.MusicBox3 {
+  animation-name: quiet;
+}
+
+.MusicBox4 {
+  animation-name: loud;
+}
+
+.MusicBox5 {
+  animation-name: quiet;
+}
+@keyframes sound {
+  0% {
+    opacity: 0.35;
+    height: 3px;
+  }
+  100% {
+    opacity: 1;
+    height: 25px;
+  }
+}
+@keyframes quiet {
+  25% {
+    transform: scaleY(0.6);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(0.8);
+  }
+}
+
+@keyframes normal {
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(0.6);
+  }
+}
+@keyframes loud {
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(1.2);
+  }
 }
 /* .MKIcHeader {
   position: relative;
@@ -411,14 +575,14 @@ section::after {
 }
 .MkDragPrev .MkDragxContent h5 {
   position: relative;
-  top: 2px;
+  top: 4px;
   line-height: 1.1em;
   font-weight: 600;
   transition: 0.5s;
 }
 .MkDragPrev .MkDragxContent p {
   position: relative;
-  top: 2px;
+  top: 4px;
   line-height: 1.2em;
   font-size: 12px;
   font-weight: normal;
@@ -468,7 +632,7 @@ section::after {
 }
 .icons a i {
   position: relative;
-  z-index: 3;
+  z-index: 5;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -507,7 +671,7 @@ section::after {
 .music-player {
   position: relative;
   visibility: visible;
-  opacity: 1;
+  opacity: 0;
   transition: all 1s;
   top: -1000px;
   z-index: 99999;
@@ -517,7 +681,7 @@ section::after {
 .music-details {
   width: 280px;
   background-color: #fff;
-  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 4px 8px 0px;
   color: #000;
   padding: 10px;
   border-radius: 10px;
@@ -646,7 +810,7 @@ input[type="range"] {
   color: #2d5cfe;
   text-align: center;
   /* background: rgba(200, 200, 200, 0.156); */
-  /* border: 0.2px solid rgba(200, 200, 200, 0.156); */
+  /* border: 0.4px solid rgba(200, 200, 200, 0.156); */
   border-radius: 50px;
   transition: all 1s;
   cursor: pointer;
@@ -658,7 +822,7 @@ input[type="range"] {
 }
 .MkIconEms {
   position: relative;
-  top: 2px;
+  top: 4px;
 }
 .widget:hover {
   background-color: #c7d0e1;
@@ -666,24 +830,24 @@ input[type="range"] {
 @keyframes glitchTop {
   2%,
   64% {
-    transform: translate(2px, -2px);
+    transform: translate(4px, -4px);
   }
   4%,
   60% {
-    transform: translate(-2px, 2px);
+    transform: translate(-4px, 4px);
   }
   62% {
-    transform: translate(13px, -1px) skew(-13deg);
+    transform: translate(13px, -4px) skew(-13deg);
   }
 }
 @keyframes glitchBotom {
   2%,
   64% {
-    transform: translate(-2px, 0);
+    transform: translate(-4px, 0);
   }
   4%,
   60% {
-    transform: translate(-2px, 0);
+    transform: translate(-4px, 0);
   }
   62% {
     transform: translate(-22px, 5px) skew(21deg);
@@ -692,11 +856,11 @@ input[type="range"] {
 @keyframes glitch {
   2%,
   64% {
-    transform: translate(2px, 0) skew(0deg);
+    transform: translate(4px, 0) skew(0deg);
   }
   4%,
   60% {
-    transform: translate(-2px, 0) skew(0deg);
+    transform: translate(-4px, 0) skew(0deg);
   }
   62% {
     transform: translate(0, 0) skew(5deg);
@@ -772,6 +936,103 @@ input[type="range"] {
   .music-details {
     width: 315px;
   }
+  .MkxBodyMusic {
+    font-family: "Poppins", sans-serif;
+  }
+  .MkImagesHeader {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    left: 120px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 1px solid #c7d0e1;
+  }
+  .MkxBodyMusicTittle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-top: -10px;
+  }
+  .MkxBodyMusicDesc {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  .MkxBodyMusicShareTitle {
+    text-align: center;
+    /* width: 300px; */
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodyMusicBtn {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 315px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1db954;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s ease-in-out;
+  }
+  .MkBodyMusicBtn:hover {
+    background-color: #c7d0e1;
+    color: #000;
+  }
+  .MkBodyMusicBtn:hover .bxl-spotify {
+    color: #000;
+  }
+  .bxl-spotify {
+    position: relative;
+    font-size: 30px;
+    bottom: 35px;
+    left: 10px;
+    margin-right: 10px;
+    color: #1db954;
+  }
+  .MkBodyMusicBtnA {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 280px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2d5cfe;
+    color: #fff;
+  }
+  .boxContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    --boxSize: 4px;
+    --gutter: 4px;
+    width: calc((var(--boxSize) + var(--gutter)) * 4);
+    left: 140px;
+    bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .MusicBox {
+    transform: scaleY(0.3);
+    height: 100%;
+    width: var(--boxSize);
+    background: #000;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+  }
 }
 @media screen and (max-width: 360px) {
   .box {
@@ -813,5 +1074,102 @@ input[type="range"] {
   .icons a {
     position: relative;
     left: 30px;
+  }
+  .MkxBodyMusic {
+    font-family: "Poppins", sans-serif;
+  }
+  .MkImagesHeader {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    left: 107px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 1px solid #c7d0e1;
+  }
+  .MkxBodyMusicTittle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-top: -10px;
+  }
+  .MkxBodyMusicDesc {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  .MkxBodyMusicShareTitle {
+    text-align: center;
+    /* width: 300px; */
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodyMusicBtn {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 290px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1db954;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s ease-in-out;
+  }
+  .MkBodyMusicBtn:hover {
+    background-color: #c7d0e1;
+    color: #000;
+  }
+  .MkBodyMusicBtn:hover .bxl-spotify {
+    color: #000;
+  }
+  .bxl-spotify {
+    position: relative;
+    font-size: 30px;
+    bottom: 35px;
+    left: 10px;
+    margin-right: 10px;
+    color: #1db954;
+  }
+  .MkBodyMusicBtnA {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 280px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2d5cfe;
+    color: #fff;
+  }
+  .boxContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    --boxSize: 4px;
+    --gutter: 4px;
+    width: calc((var(--boxSize) + var(--gutter)) * 4);
+    left: 128px;
+    bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .MusicBox {
+    transform: scaleY(0.3);
+    height: 100%;
+    width: var(--boxSize);
+    background: #000;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
   }
 }
