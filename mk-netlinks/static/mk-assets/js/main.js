@@ -363,3 +363,8 @@ oynat.onclick = function () {
 sarki.onvolumechange = function () {
   ses.value = sarki.volume * 100;
 };
+
+function MkxElementx() {
+  var e = document.getElementById("myAudio");
+  (e.volume = 0.15), e.play();
+}
