@@ -209,8 +209,16 @@ section::after {
   color: #e1306c;
   cursor: pointer;
 }
+.Bgig {
+  background-color: #e1306c;
+  cursor: pointer;
+}
 .fb {
   color: #4267b2;
+  cursor: pointer;
+}
+.Bgtl {
+  background-color: #38bdf8;
   cursor: pointer;
 }
 .tl {
@@ -257,6 +265,7 @@ section::after {
   height: 100%;
   opacity: 0.2;
   background: #000;
+  visibility: hidden;
 }
 .bottom-sheet .content {
   width: 100%;
@@ -268,7 +277,7 @@ section::after {
   padding: 25px 30px;
   transform: translateY(100%);
   border-radius: 12px 12px 0 0;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 100);
   transition: 0.5s ease;
 }
 .bottom-sheet.show .content {
@@ -347,8 +356,65 @@ section::after {
   display: flex;
   margin-bottom: -10px;
 }
+.MkxBodyProfile {
+  font-family: "Poppins", sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+.MkProfileImagesHeader {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  left: 108px;
+  bottom: 10px;
+  border-radius: 50%;
+  border: 1px solid #c7d0e1;
+}
+.MkxBodyProfileTittle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-top: -10px;
+}
+.MkxBodyProfileDesc {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+.MkxBodyProfileShareTitle {
+  text-align: center;
+  /* width: 300px; */
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  font-family: "Poppins", sans-serif;
+}
+.MkBodyProfileBtn {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  width: 290px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s ease-in-out;
+}
+.MkBodyProfileBtn:hover {
+  background-color: #c7d0e1;
+  color: #000;
+}
 .MkxBodyMusic {
   font-family: "Poppins", sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
 }
 .MkImagesHeader {
   position: relative;
@@ -611,7 +677,7 @@ section::after {
   height: 30px;
   width: 30px;
   left: 31px;
-  margin: 0 10px;
+  margin: 5px;
   display: inline-flex;
   text-decoration: none;
   border-radius: 50%;
@@ -932,6 +998,7 @@ input[type="range"] {
   .icons a {
     position: relative;
     left: 45px;
+    font-size: 30px;
   }
   .music-details {
     width: 315px;
@@ -1032,6 +1099,61 @@ input[type="range"] {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     border-radius: 8px;
+  }
+  .MkxBodyProfile {
+    font-family: "Poppins", sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+  .MkProfileImagesHeader {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    left: 120px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 1px solid #c7d0e1;
+  }
+  .MkxBodyProfileTittle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-top: -10px;
+  }
+  .MkxBodyProfileDesc {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  .MkxBodyProfileShareTitle {
+    text-align: center;
+    /* width: 300px; */
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodyProfileBtn {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 290px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s ease-in-out;
+  }
+  .MkBodyProfileBtn:hover {
+    background-color: #c7d0e1;
+    color: #000;
   }
 }
 @media screen and (max-width: 360px) {
@@ -1171,5 +1293,59 @@ input[type="range"] {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     border-radius: 8px;
+  }
+  .MkxBodyProfile {
+    font-family: "Poppins", sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+  .MkProfileImagesHeader {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    left: 108px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 1px solid #c7d0e1;
+  }
+  .MkxBodyProfileTittle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-top: -10px;
+  }
+  .MkxBodyProfileDesc {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  .MkxBodyProfileShareTitle {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodyProfileBtn {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+    width: 290px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s ease-in-out;
+  }
+  .MkBodyProfileBtn:hover {
+    background-color: #c7d0e1;
+    color: #000;
   }
 }
