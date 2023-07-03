@@ -8,6 +8,35 @@ let isDragging = false,
   startY,
   startHeight;
 
+var MkxShare = document.querySelector(".MkxShare");
+
+MkxShare.addEventListener("click", function () {
+  if (document.querySelector(".MkxBodyMusic").style.visibility !== "hidden") {
+    document.querySelector(".MkxBodyMusic").style.visibility = "hidden";
+    document.querySelector(".MkxBodyProfile").style.visibility = "visible";
+    document.querySelector(".MkxBodyProfile").style.opacity = "1";
+    document.querySelector(".MkxBodyMusic").style.opacity = "0";
+    document.querySelector(".MkxBodyProfile").style.display = "inline";
+    sheetOverlay.style.visibility = "visible";
+    sheetOverlay.style.opacity = "0";
+  }
+});
+
+var MkxxMusixSpfy = document.querySelector(".MkxXxSpfy");
+
+MkxxMusixSpfy.addEventListener("click", function () {
+  if (document.querySelector(".MkxBodyMusic").style.visibility !== "visible") {
+    document.querySelector(".MkxBodyMusic").style.visibility = "visible";
+    document.querySelector(".MkxBodyMusic").style.opacity = "1";
+    document.querySelector(".MkxBodyMusic").style.display = "inline";
+    document.querySelector(".MkxBodyProfile").style.visibility = "hidden";
+    document.querySelector(".MkxBodyProfile").style.display = "none";
+    document.querySelector(".MkxBodyProfile").style.opacity = "0";
+    sheetOverlay.style.visibility = "visible";
+    sheetOverlay.style.opacity = "0";
+  }
+});
+
 const showBottomSheet = () => {
   bottomSheet.classList.add("show");
   document.body.style.overflowY = "hidden";
@@ -25,7 +54,7 @@ const hideBottomSheet = () => {
 };
 
 const dragStart = (e) => {
-  isDragging = true;
+  isDragging = false;
   startY = e.pageY || e.touches?.[0].pageY;
   startHeight = parseInt(sheetContent.style.height);
   bottomSheet.classList.add("dragging");
@@ -54,6 +83,7 @@ document.addEventListener("touchmove", dragging);
 document.addEventListener("touchend", dragStop);
 
 sheetOverlay.addEventListener("click", hideBottomSheet);
+MkxxMusixSpfy.addEventListener("click", showBottomSheet);
 showModalBtn.addEventListener("click", showBottomSheet);
 
 function Mkxxx() {
@@ -307,6 +337,18 @@ MkxCloseMusic.addEventListener("click", function () {
   }
 });
 
+var MkxShare = document.querySelector(".MkxShare");
+
+MkxShare.addEventListener("click", function () {
+  if (document.querySelector(".MkxBodyMusic").style.visibility !== "visible") {
+    document.querySelector(".MkxBodyMusic").style.visibility = "visible";
+    document.querySelector(".MkxBodyMusic").style.opacity = "1";
+  } else {
+    document.querySelector(".MkxBodyMusic").style.visibility = "visible";
+    document.querySelector(".MkxBodyMusic").style.opacity = "1";
+  }
+});
+
 var MkBack = document.querySelector(".MkxxBackxx");
 
 MkBack.addEventListener("click", function () {
@@ -367,4 +409,20 @@ sarki.onvolumechange = function () {
 function MkxElementx() {
   var e = document.getElementById("myAudio");
   (e.volume = 0.15), e.play();
+  var MkxxMusixSpfy = document.querySelector(".MkxXxSpfy");
+  var MkxxBtnModalxx = document.querySelector(".bottom-sheet");
+
+  MkxxMusixSpfy.addEventListener("click", function () {
+    if (document.querySelector(".MkxBodyMusic").style.visibility !== "visible") {
+      document.querySelector(".MkxBodyMusic").style.visibility = "visible";
+      document.querySelector(".MkxBodyMusic").style.opacity = "1";
+      document.querySelector(".bottom-sheet").style.visibility = "visible";
+      document.querySelector(".bottom-sheet").style.opacity = "1";
+    } else {
+      document.querySelector(".MkxBodyMusic").style.visibility = "visible";
+      document.querySelector(".MkxBodyMusic").style.opacity = "1";
+      document.querySelector(".bottom-sheet").style.visibility = "visible";
+      document.querySelector(".bottom-sheet").style.opacity = "1";
+    }
+  });
 }
