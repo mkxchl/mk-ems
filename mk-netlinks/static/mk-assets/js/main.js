@@ -13,6 +13,7 @@ var MkxShare = document.querySelector(".MkxShare");
 MkxShare.addEventListener("click", function () {
   if (document.querySelector(".MkxBodyMusic").style.visibility !== "hidden") {
     document.querySelector(".MkxBodyMusic").style.visibility = "hidden";
+    document.querySelector(".MkxBodyMusic").style.display = "none";
     document.querySelector(".MkxBodyProfile").style.visibility = "visible";
     document.querySelector(".MkxBodyProfile").style.opacity = "1";
     document.querySelector(".MkxBodyMusic").style.opacity = "0";
@@ -32,6 +33,45 @@ MkxxMusixSpfy.addEventListener("click", function () {
     document.querySelector(".MkxBodyProfile").style.visibility = "hidden";
     document.querySelector(".MkxBodyProfile").style.display = "none";
     document.querySelector(".MkxBodyProfile").style.opacity = "0";
+    document.querySelector(".MkxBodySettings").style.visibility = "hidden";
+    document.querySelector(".MkxBodySettings").style.display = "none";
+    document.querySelector(".MkxBodySettings").style.opacity = "0";
+    sheetOverlay.style.visibility = "visible";
+    sheetOverlay.style.opacity = "0";
+  }
+});
+
+var MkxxSettings = document.querySelector(".MkxxSettings");
+
+MkxxSettings.addEventListener("click", function () {
+  if (document.querySelector(".MkxBodySettings").style.visibility !== "visible") {
+    document.querySelector(".MkxBodySettings").style.visibility = "visible";
+    document.querySelector(".MkxBodySettings").style.opacity = "1";
+    document.querySelector(".MkxBodySettings").style.display = "inline";
+    document.querySelector(".MkxBodyProfile").style.visibility = "hidden";
+    document.querySelector(".MkxBodyProfile").style.opacity = "0";
+    document.querySelector(".MkxBodyProfile").style.display = "none";
+    document.querySelector(".MkxBodyMusic").style.visibility = "hidden";
+    document.querySelector(".MkxBodyMusic").style.opacity = "0";
+    document.querySelector(".MkxBodyMusic").style.display = "none";
+    sheetOverlay.style.visibility = "visible";
+    sheetOverlay.style.opacity = "0";
+  }
+});
+
+var MkxSettingBtnxBack = document.querySelector(".MkxxSettingsBtnBack");
+
+MkxSettingBtnxBack.addEventListener("click", function () {
+  if (document.querySelector(".MkxBodySettings").style.visibility !== "hidden") {
+    document.querySelector(".MkxBodySettings").style.visibility = "hidden";
+    document.querySelector(".MkxBodySettings").style.opacity = "0";
+    document.querySelector(".MkxBodySettings").style.display = "none";
+    document.querySelector(".MkxBodyProfile").style.visibility = "visible";
+    document.querySelector(".MkxBodyProfile").style.opacity = "1";
+    document.querySelector(".MkxBodyProfile").style.display = "inline";
+    document.querySelector(".MkxBodyMusic").style.visibility = "hidden";
+    document.querySelector(".MkxBodyMusic").style.opacity = "0";
+    document.querySelector(".MkxBodyMusic").style.display = "none";
     sheetOverlay.style.visibility = "visible";
     sheetOverlay.style.opacity = "0";
   }
@@ -87,14 +127,21 @@ MkxxMusixSpfy.addEventListener("click", showBottomSheet);
 showModalBtn.addEventListener("click", showBottomSheet);
 
 function Mkxxx() {
-  Swal.fire({
-    title: "Warning!",
-    text: "Sedang Dalam Perbaikan!",
-    icon: "warning",
-    confirmButtonColor: "#3085d6",
-    cancelButtonColor: "#d33",
-    confirmButtonText: "Tutup",
-    confirmTextColor: "#d33",
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-start",
+    showConfirmButton: false,
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener("mouseenter", Swal.stopTimer);
+      toast.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+  });
+
+  Toast.fire({
+    icon: "info",
+    title: "Sedang Dalam Perbaikan!",
   });
 }
 
@@ -105,6 +152,7 @@ function MkxBlog() {
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
+    position: "top-start",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -128,6 +176,7 @@ function MkxSpfy() {
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
+    position: "top-start",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -151,6 +200,7 @@ function MkxHeal() {
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
+    position: "top-start",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -174,6 +224,7 @@ function DscX() {
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
+    position: "top-start",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -197,6 +248,7 @@ function IntX() {
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
+    position: "top-start",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -220,6 +272,7 @@ function FbX() {
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
+    position: "top-start",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -243,6 +296,7 @@ function TtX() {
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
+    position: "top-start",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -266,6 +320,7 @@ function TlX() {
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
+    position: "top-start",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -289,6 +344,7 @@ function Gogel() {
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
+    position: "top-start",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -409,20 +465,4 @@ sarki.onvolumechange = function () {
 function MkxElementx() {
   var e = document.getElementById("myAudio");
   (e.volume = 0.15), e.play();
-  var MkxxMusixSpfy = document.querySelector(".MkxXxSpfy");
-  var MkxxBtnModalxx = document.querySelector(".bottom-sheet");
-
-  MkxxMusixSpfy.addEventListener("click", function () {
-    if (document.querySelector(".MkxBodyMusic").style.visibility !== "visible") {
-      document.querySelector(".MkxBodyMusic").style.visibility = "visible";
-      document.querySelector(".MkxBodyMusic").style.opacity = "1";
-      document.querySelector(".bottom-sheet").style.visibility = "visible";
-      document.querySelector(".bottom-sheet").style.opacity = "1";
-    } else {
-      document.querySelector(".MkxBodyMusic").style.visibility = "visible";
-      document.querySelector(".MkxBodyMusic").style.opacity = "1";
-      document.querySelector(".bottom-sheet").style.visibility = "visible";
-      document.querySelector(".bottom-sheet").style.opacity = "1";
-    }
-  });
 }
