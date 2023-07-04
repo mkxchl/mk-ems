@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,6 +8,31 @@
   /* font-family: "Helvetica, Arial", sans-serif; */
   font-family: Chilanka, sans-serif;
 }
+.swal2-popup {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --hue: 207;
+  --sat: 90%;
+  --lig: 61%;
+  --first-color: hsl(var(--hue), var(--sat), var(--lig));
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color: #2d5cfe;
+  --text-color-light: hsl(var(--hue), 8%, 75%);
+  --text-color-lighten: hsl(var(--hue), 8%, 92%);
+  --body-color: #fff;
+  --container-color: #fff;
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+}
+
 ::selection {
   background: purple;
   color: white;
@@ -18,8 +43,66 @@ body {
   align-items: center;
   background-color: #c7d0e1;
   height: 300px;
+  /* transition: 1s; */
 }
-
+body.dark-theme {
+  background-image: url("https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  --title-color: hsl(var(--hue), 12%, 95%);
+  --text-color: hsl(var(--hue), 12%, 75%);
+  /*  --body-color: hsl(var(--hue), 40%, 8%); */
+  --container-color: hsl(var(--hue), 24%, 12%);
+  transition: 0.5s;
+}
+.dark-theme .box {
+  background-color: #212121;
+  border: none;
+}
+.dark-theme .box .us {
+  color: white;
+}
+.dark-theme .box h3 {
+  color: white;
+}
+.dark-theme .box .list-links {
+  background: transparent;
+}
+.dark-theme .box .list-links .img-list i {
+  color: white;
+}
+.dark-theme .box .list-links .list-content {
+  color: white;
+}
+.dark-theme .box .list-links:hover .img-list i {
+  color: black;
+}
+.dark-theme .box .MKdexsc {
+  color: white;
+}
+.dark-theme .bottom-sheet .content {
+  background-color: #212121;
+  border: 0.5px solid #c7d0e1;
+}
+.dark-theme .bottom-sheet .content .body {
+  color: white;
+}
+.dark-theme .bottom-sheet .content .body .MkxBodyMusic .boxContainer .MusicBox {
+  background-color: white;
+}
+.dark-theme .MkxxSettingsBack {
+  color: white;
+}
+.dark-theme .box .MkxxFooterx {
+  color: white;
+}
+#myAudio {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
 section {
   position: relative;
   /* background: linear-gradient(85deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 124, 1) 0%, rgba(106, 106, 106, 1) 49%); */
@@ -69,6 +152,7 @@ section::after {
   padding: 20px;
   /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
   border: 4px solid #c7d0e1;
+  transition: 0.5s;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .box h3 {
@@ -361,6 +445,7 @@ section::after {
   visibility: hidden;
   opacity: 0;
   display: none;
+  transition: 1s ease-in-out;
 }
 .MkProfileImagesHeader {
   position: relative;
@@ -410,11 +495,158 @@ section::after {
   background-color: #c7d0e1;
   color: #000;
 }
+.MkxBodySettings {
+  font-family: "Poppins", sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  transition: 0.5s ease-in-out;
+  animation: up 1s ease-in-out;
+}
+.MkSettingsImagesHeader {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 1px solid #c7d0e1;
+}
+.MkxBodySettingsTittle {
+  position: relative;
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  left: 75px;
+  bottom: 55px;
+  font-family: "Poppins", sans-serif;
+}
+.MkxBodySettingsDesc {
+  position: relative;
+  display: flex;
+  left: 75px;
+  bottom: 60px;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+.MkxBodySettingList {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  /* background: grey; */
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: -15px;
+  bottom: 80px;
+  font-family: "Poppins", sans-serif;
+}
+.MkxxSettingsBack {
+  position: relative;
+  left: 245px;
+  bottom: 95px;
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+  animation: pulse-animation 2s infinite;
+  border-radius: 50%;
+}
+.MKSettingsNexxx {
+  position: absolute;
+  font-size: 30px;
+  color: black;
+  top: 10px;
+  right: 10px;
+}
+.MkxxSettingsBtnBack {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  width: 288px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  bottom: 70px;
+  border: none;
+  transition: 1s;
+}
+.MkxBodySettingList .MkxImgList {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  everflow: hidden;
+  margin-right: -10px;
+}
+.MkxBodySettingList .MkxImgList i {
+  position: absolute;
+  object-fit: cover;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  left: -5px;
+  bottom: -13px;
+  font-size: 25px;
+  border-radius: 10px;
+  /* color: #2d5cfe; */
+}
+.MkxBodySettingList .MkxSettingsListContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* color: #2600ff; */
+}
+.MkxBodySettingList .MkxSettingsListContent h4 {
+  position: relative;
+  line-height: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  right: 10px;
+}
+.MkxBodySettingList .MkxSettingsListContent p {
+  position: relative;
+  right: 10px;
+  font-size: 0.75em;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+}
+.MkxBodySettingsShareTitle {
+  text-align: center;
+  /* width: 300px; */
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  font-family: "Poppins", sans-serif;
+}
+.MkBodySettingsBtn {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  width: 290px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.MkBodySettingsBtn:hover {
+  background-color: #c7d0e1;
+  color: #000;
+}
 .MkxBodyMusic {
   font-family: "Poppins", sans-serif;
   visibility: hidden;
   opacity: 0;
   display: none;
+  transition: 1s ease-in-out;
 }
 .MkImagesHeader {
   position: relative;
@@ -550,6 +782,27 @@ section::after {
   }
   75% {
     transform: scaleY(0.8);
+  }
+}
+@keyframes heart {
+  0% {
+    transform: translateY(0) rotate(-45deg) scale(0.3);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-150px) rotate(-45deg) scale(1.3);
+    opacity: 0.5;
+  }
+}
+@keyframes up {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
   }
 }
 
@@ -893,6 +1146,14 @@ input[type="range"] {
 .widget:hover {
   background-color: #c7d0e1;
 }
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
 @keyframes glitchTop {
   2%,
   64% {
@@ -965,6 +1226,212 @@ input[type="range"] {
   .icons a {
     position: relative;
     left: 50px;
+  }
+  .MkxBodyProfile {
+    font-family: "Poppins", sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: 1s ease-in-out;
+  }
+  .MkProfileImagesHeader {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    left: 130px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 1px solid #c7d0e1;
+  }
+  .MkxBodyProfileTittle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-top: -10px;
+  }
+  .MkxBodyProfileDesc {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  .MkxBodyProfileShareTitle {
+    text-align: center;
+    /* width: 300px; */
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodyProfileBtn {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 330px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s ease-in-out;
+    border: none;
+  }
+  .MkBodyProfileBtn:hover {
+    background-color: #c7d0e1;
+    color: #000;
+  }
+  .MkxBodySettings {
+    font-family: "Poppins", sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: 0.5s ease-in-out;
+    animation: up 1s ease-in-out;
+  }
+  .MkSettingsImagesHeader {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    border: 1px solid #c7d0e1;
+  }
+  .MkxBodySettingsTittle {
+    position: relative;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    left: 75px;
+    bottom: 55px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkxBodySettingsDesc {
+    position: relative;
+    display: flex;
+    left: 75px;
+    bottom: 60px;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  .MkxBodySettingList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    /* background: grey; */
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    bottom: 80px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkxxSettingsBack {
+    position: relative;
+    left: 290px;
+    bottom: 95px;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+    animation: pulse-animation 2s infinite;
+    border-radius: 50%;
+  }
+  .MKSettingsNexxx {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    top: 10px;
+    right: 10px;
+  }
+  .MkxxSettingsBtnBack {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 327px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    bottom: 70px;
+    border: none;
+    transition: 1s;
+  }
+  .MkxxSettingsBtnBack:hover {
+    background-color: #c7d0e1;
+    color: #000;
+  }
+  .MkxBodySettingList .MkxImgList {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    everflow: hidden;
+    margin-right: -10px;
+  }
+  .MkxBodySettingList .MkxImgList i {
+    position: absolute;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    left: -5px;
+    bottom: -13px;
+    font-size: 25px;
+    border-radius: 10px;
+    /* color: #2d5cfe; */
+  }
+  .MkxBodySettingList .MkxSettingsListContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: #2600ff; */
+  }
+  .MkxBodySettingList .MkxSettingsListContent h4 {
+    position: relative;
+    line-height: 1.2em;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    right: 10px;
+  }
+  .MkxBodySettingList .MkxSettingsListContent p {
+    position: relative;
+    right: 10px;
+    font-size: 0.75em;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkxBodySettingsShareTitle {
+    text-align: center;
+    /* width: 300px; */
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodySettingsBtn {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 310px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodySettingsBtn:hover {
+    background-color: #c7d0e1;
+    color: #000;
   }
 }
 @media screen and (max-width: 393px) {
@@ -1105,6 +1572,7 @@ input[type="range"] {
     visibility: hidden;
     opacity: 0;
     display: none;
+    transition: 1s ease-in-out;
   }
   .MkProfileImagesHeader {
     position: relative;
@@ -1144,14 +1612,164 @@ input[type="range"] {
     position: relative;
     margin-top: 20px;
     padding: 10px;
-    width: 290px;
+    width: 310px;
     border-radius: 10px;
-    border: none;
     color: #fff;
     font-family: "Poppins", sans-serif;
     transition: 0.5s ease-in-out;
+    border: none;
   }
   .MkBodyProfileBtn:hover {
+    background-color: #c7d0e1;
+    color: #000;
+  }
+  .MkxBodySettings {
+    font-family: "Poppins", sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: 0.5s ease-in-out;
+    animation: up 1s ease-in-out;
+  }
+  .MkSettingsImagesHeader {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    border: 1px solid #c7d0e1;
+  }
+  .MkxBodySettingsTittle {
+    position: relative;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    left: 75px;
+    bottom: 55px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkxBodySettingsDesc {
+    position: relative;
+    display: flex;
+    left: 75px;
+    bottom: 60px;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  .MkxBodySettingList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    /* background: grey; */
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    bottom: 80px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkxxSettingsBack {
+    position: relative;
+    left: 270px;
+    bottom: 95px;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+    animation: pulse-animation 2s infinite;
+    border-radius: 50%;
+  }
+  .MKSettingsNexxx {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    top: 10px;
+    right: 10px;
+  }
+  .MkxxSettingsBtnBack {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 310px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    bottom: 70px;
+    border: none;
+    transition: 1s;
+  }
+  .MkxxSettingsBtnBack:hover {
+    background-color: #c7d0e1;
+    color: #000;
+  }
+  .MkxBodySettingList .MkxImgList {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    everflow: hidden;
+    margin-right: -10px;
+  }
+  .MkxBodySettingList .MkxImgList i {
+    position: absolute;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    left: -5px;
+    bottom: -13px;
+    font-size: 25px;
+    border-radius: 10px;
+    /* color: #2d5cfe; */
+  }
+  .MkxBodySettingList .MkxSettingsListContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: #2600ff; */
+  }
+  .MkxBodySettingList .MkxSettingsListContent h4 {
+    position: relative;
+    line-height: 1.2em;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    right: 10px;
+  }
+  .MkxBodySettingList .MkxSettingsListContent p {
+    position: relative;
+    right: 10px;
+    font-size: 0.75em;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkxBodySettingsShareTitle {
+    text-align: center;
+    /* width: 300px; */
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodySettingsBtn {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 290px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodySettingsBtn:hover {
     background-color: #c7d0e1;
     color: #000;
   }
@@ -1238,7 +1856,7 @@ input[type="range"] {
     position: relative;
     margin-top: 20px;
     padding: 10px;
-    width: 290px;
+    width: 285px;
     border-radius: 10px;
     border: none;
     background-color: #1db954;
@@ -1345,6 +1963,156 @@ input[type="range"] {
     transition: 0.5s ease-in-out;
   }
   .MkBodyProfileBtn:hover {
+    background-color: #c7d0e1;
+    color: #000;
+  }
+  .MkxBodySettings {
+    font-family: "Poppins", sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: 0.5s ease-in-out;
+    animation: up 1s ease-in-out;
+  }
+  .MkSettingsImagesHeader {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    border: 1px solid #c7d0e1;
+  }
+  .MkxBodySettingsTittle {
+    position: relative;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    left: 75px;
+    bottom: 55px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkxBodySettingsDesc {
+    position: relative;
+    display: flex;
+    left: 75px;
+    bottom: 60px;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  .MkxBodySettingList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    /* background: grey; */
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    bottom: 80px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkxxSettingsBack {
+    position: relative;
+    left: 250px;
+    bottom: 95px;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+    animation: pulse-animation 2s infinite;
+    border-radius: 50%;
+  }
+  .MKSettingsNexxx {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    top: 10px;
+    right: 10px;
+  }
+  .MkxxSettingsBtnBack {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 285px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    bottom: 70px;
+    border: none;
+    transition: 1s;
+  }
+  .MkxxSettingsBtnBack:hover {
+    background-color: #c7d0e1;
+    color: #000;
+  }
+  .MkxBodySettingList .MkxImgList {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    everflow: hidden;
+    margin-right: -10px;
+  }
+  .MkxBodySettingList .MkxImgList i {
+    position: absolute;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    left: -5px;
+    bottom: -13px;
+    font-size: 25px;
+    border-radius: 10px;
+    /* color: #2d5cfe; */
+  }
+  .MkxBodySettingList .MkxSettingsListContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: #2600ff; */
+  }
+  .MkxBodySettingList .MkxSettingsListContent h4 {
+    position: relative;
+    line-height: 1.2em;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    right: 10px;
+  }
+  .MkxBodySettingList .MkxSettingsListContent p {
+    position: relative;
+    right: 10px;
+    font-size: 0.75em;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkxBodySettingsShareTitle {
+    text-align: center;
+    /* width: 300px; */
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodySettingsBtn {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  .MkBodySettingsBtn:hover {
     background-color: #c7d0e1;
     color: #000;
   }
