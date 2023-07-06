@@ -113,7 +113,7 @@ body.dark-theme {
 }
 .dark-theme .bottom-sheet .content {
   background-color: #212121;
-  border: 0.5px solid #c7d0e1;
+  /* border: 0.5px solid #c7d0e1; */
 }
 .dark-theme .bottom-sheet .content .body {
   color: white;
@@ -1910,7 +1910,7 @@ input[type="range"] {
   .MkxBodyMusicShareTitle {
     text-align: center;
     /* width: 300px; */
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     margin-top: 5px;
     margin-bottom: -5px;
