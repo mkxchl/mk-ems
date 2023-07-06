@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
 
 * {
   margin: 0;
@@ -55,7 +56,11 @@ body.dark-theme {
   --text-color: hsl(var(--hue), 12%, 75%);
   /*  --body-color: hsl(var(--hue), 40%, 8%); */
   --container-color: hsl(var(--hue), 24%, 12%);
-  transition: 0.5s;
+  /* transition: 0.5s; */
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  font-weight: bold;
+  transition: 0.7s 0.6s transform cubic-bezier(100, 0, 10, 1);
 }
 .dark-theme .box {
   background-color: #212121;
@@ -65,16 +70,40 @@ body.dark-theme {
   color: white;
 }
 .dark-theme .box h3 {
+  font-family: "Rajdhani", sans-serif;
   color: white;
+  font-weight: bold;
+  transition: 0.5s linear;
+  text-transform: uppercase;
+}
+.dark-theme .box .MKdexsc {
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s linear;
+  letter-spacing: 2px;
 }
 .dark-theme .box .list-links {
   background: transparent;
 }
 .dark-theme .box .list-links .img-list i {
   color: white;
+  transition: 0.5s;
 }
 .dark-theme .box .list-links .list-content {
+  font-family: "Rajdhani", sans-serif;
+  position: relative;
   color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.dark-theme .box .list-links .list-content h4 {
+  position: relative;
+  top: 1px;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
 }
 .dark-theme .box .list-links:hover .img-list i {
   color: black;
@@ -95,8 +124,12 @@ body.dark-theme {
 .dark-theme .MkxxSettingsBack {
   color: white;
 }
-.dark-theme .box .MkxxFooterx {
+.dark-theme .box .MkxxFooterx p,
+.MkxCodexLink {
+  font-family: "Rajdhani", sans-serif;
   color: white;
+  font-weight: bold;
+  transition: 0.5s;
 }
 #myAudio {
   visibility: hidden;
@@ -152,17 +185,19 @@ section::after {
   padding: 20px;
   /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
   border: 4px solid #c7d0e1;
-  transition: 0.5s;
+  transition: 0.7s 0.6s all cubic-bezier(0.86, 0, 0.07, 1);
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .box h3 {
   color: #2d5cfe;
   padding: 15px;
   font-size: 15px;
+  transition: 0.5s linear;
   /* animation: glitch 1s linear; */
 }
 .MKdexsc {
   color: grey;
+  transition: 0.5s linear;
   font-size: 10px;
   letter-spacing: 1.3px;
   margin-bottom: 15px;
@@ -334,6 +369,7 @@ section::after {
   flex-direction: column;
   justify-content: flex-end;
   transition: 0.3s linear;
+  /* transition: 0.7s 0.6s transform cubic-bezier(100, 0, 10, 1); */
   z-index: 99999999;
 }
 .bottom-sheet.show {
@@ -360,7 +396,7 @@ section::after {
   max-width: 1150px;
   padding: 25px 30px;
   transform: translateY(100%);
-  border-radius: 12px 12px 0 0;
+  border-radius: 20px 20px 0 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 100);
   transition: 0.5s ease;
 }
@@ -418,6 +454,7 @@ section::after {
   scrollbar-width: none;
   justify-content: center;
   align-items: center;
+  transition: 1s 1s transform cubic-bezier(0.86, 0, 0.07, 1);
 }
 .bottom-sheet .body::-webkit-scrollbar {
   width: 0;
@@ -445,7 +482,7 @@ section::after {
   visibility: hidden;
   opacity: 0;
   display: none;
-  transition: 1s ease-in-out;
+  /* transition: 1s ease-in-out; */
 }
 .MkProfileImagesHeader {
   position: relative;
@@ -457,19 +494,20 @@ section::after {
   bottom: 10px;
   border-radius: 50%;
   border: 1px solid #c7d0e1;
+  transition: 1s 1s transform cubic-bezier(0.86, 0, 0.07, 1);
 }
 .MkxBodyProfileTittle {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   margin-top: -10px;
 }
 .MkxBodyProfileDesc {
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 300;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   letter-spacing: 1px;
 }
 .MkxBodyProfileShareTitle {
@@ -479,7 +517,7 @@ section::after {
   font-weight: 500;
   margin-top: 5px;
   margin-bottom: -5px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 .MkBodyProfileBtn {
   position: relative;
@@ -488,8 +526,10 @@ section::after {
   width: 290px;
   border-radius: 10px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   transition: 0.5s ease-in-out;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 .MkBodyProfileBtn:hover {
   background-color: #c7d0e1;
@@ -519,10 +559,10 @@ section::after {
   position: relative;
   display: flex;
   font-size: 15px;
-  font-weight: 700;
   left: 75px;
   bottom: 55px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
 }
 .MkxBodySettingsDesc {
   position: relative;
@@ -558,6 +598,8 @@ section::after {
   cursor: pointer;
   animation: pulse-animation 2s infinite;
   border-radius: 50%;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
 }
 .MKSettingsNexxx {
   position: absolute;
@@ -573,10 +615,11 @@ section::after {
   width: 288px;
   border-radius: 10px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
   bottom: 70px;
   border: none;
   transition: 1s;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
 }
 .MkxBodySettingList .MkxImgList {
   position: relative;
@@ -642,7 +685,8 @@ section::after {
   color: #000;
 }
 .MkxBodyMusic {
-  font-family: "Poppins", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
   visibility: hidden;
   opacity: 0;
   display: none;
@@ -1254,7 +1298,7 @@ input[type="range"] {
   }
   .MkxBodyProfileDesc {
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
@@ -1448,8 +1492,8 @@ input[type="range"] {
     margin: 21px;
   }
   .bottom-sheet {
-    width: 80%;
-    left: 40px;
+    width: 85%;
+    left: 30px;
   }
   .bottom-sheet h2 {
     position: relative;
@@ -1479,44 +1523,50 @@ input[type="range"] {
     width: 70px;
     justify-content: center;
     align-items: center;
-    left: 120px;
+    left: 130px;
     bottom: 10px;
     border-radius: 50%;
     border: 1px solid #c7d0e1;
   }
   .MkxBodyMusicTittle {
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     margin-top: -10px;
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
   }
   .MkxBodyMusicDesc {
     text-align: center;
-    font-size: 12px;
-    font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Rajdhani", sans-serif;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    
   }
   .MkxBodyMusicShareTitle {
     text-align: center;
     /* width: 300px; */
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 5px;
     margin-bottom: -5px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
   }
   .MkBodyMusicBtn {
     position: relative;
     margin-top: 20px;
     padding: 10px;
-    width: 315px;
+    width: 330px;
     border-radius: 10px;
     border: none;
     background-color: #1db954;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
     transition: 0.5s ease-in-out;
   }
   .MkBodyMusicBtn:hover {
@@ -1552,7 +1602,7 @@ input[type="range"] {
     --boxSize: 4px;
     --gutter: 4px;
     width: calc((var(--boxSize) + var(--gutter)) * 4);
-    left: 140px;
+    left: 150px;
     bottom: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -1580,23 +1630,25 @@ input[type="range"] {
     width: 70px;
     justify-content: center;
     align-items: center;
-    left: 120px;
+    left: 130px;
     bottom: 10px;
     border-radius: 50%;
     border: 1px solid #c7d0e1;
   }
   .MkxBodyProfileTittle {
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
     margin-top: -10px;
   }
   .MkxBodyProfileDesc {
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
+    text-transform: uppercase;
     font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
     letter-spacing: 1px;
   }
   .MkxBodyProfileShareTitle {
@@ -1612,19 +1664,23 @@ input[type="range"] {
     position: relative;
     margin-top: 20px;
     padding: 10px;
-    width: 310px;
+    width: 330px;
     border-radius: 10px;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
     transition: 0.5s ease-in-out;
     border: none;
+    font-weight: bold;
+    font-size: 18px;
   }
   .MkBodyProfileBtn:hover {
     background-color: #c7d0e1;
     color: #000;
   }
   .MkxBodySettings {
-    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
     visibility: hidden;
     opacity: 0;
     display: none;
@@ -1646,11 +1702,12 @@ input[type="range"] {
   .MkxBodySettingsTittle {
     position: relative;
     display: flex;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 20px;
     left: 75px;
     bottom: 55px;
-    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
   }
   .MkxBodySettingsDesc {
     position: relative;
@@ -1659,7 +1716,8 @@ input[type="range"] {
     bottom: 60px;
     font-size: 12px;
     font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
     letter-spacing: 1px;
   }
   .MkxBodySettingList {
@@ -1679,7 +1737,7 @@ input[type="range"] {
   }
   .MkxxSettingsBack {
     position: relative;
-    left: 270px;
+    left: 300px;
     bottom: 95px;
     font-size: 25px;
     color: #000;
@@ -1698,13 +1756,16 @@ input[type="range"] {
     position: relative;
     margin-top: 20px;
     padding: 10px;
-    width: 310px;
+    width: 333px;
     border-radius: 10px;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
     bottom: 70px;
     border: none;
     transition: 1s;
+    font-size: 18px;
+    font-weight; bold;
   }
   .MkxxSettingsBtnBack:hover {
     background-color: #c7d0e1;
@@ -1777,6 +1838,7 @@ input[type="range"] {
 @media screen and (max-width: 360px) {
   .box {
     min-width: 280px;
+    transition: 0.7s 0.6s transform cubic-bezier(0.86, 0, 0.07, 1);
   }
   .box .list-links .footer {
     justify-content: center;
@@ -1785,8 +1847,9 @@ input[type="range"] {
     position: center;
   }
   .bottom-sheet {
-    width: 80%;
-    left: 35px;
+    width: 83%;
+    left: 30px;
+    border-radius: 30px 0 0;
   }
   .bottom-sheet h2 {
     font-weight: bold;
@@ -1824,17 +1887,18 @@ input[type="range"] {
     width: 70px;
     justify-content: center;
     align-items: center;
-    left: 107px;
+    left: 113px;
     bottom: 10px;
     border-radius: 50%;
     border: 1px solid #c7d0e1;
   }
   .MkxBodyMusicTittle {
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
     margin-top: -10px;
+    text-transform: uppercase;
   }
   .MkxBodyMusicDesc {
     text-align: center;
@@ -1856,12 +1920,14 @@ input[type="range"] {
     position: relative;
     margin-top: 20px;
     padding: 10px;
-    width: 285px;
+    width: 300px;
     border-radius: 10px;
     border: none;
     background-color: #1db954;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
     transition: 0.5s ease-in-out;
   }
   .MkBodyMusicBtn:hover {
@@ -1897,7 +1963,7 @@ input[type="range"] {
     --boxSize: 4px;
     --gutter: 4px;
     width: calc((var(--boxSize) + var(--gutter)) * 4);
-    left: 128px;
+    left: 133px;
     bottom: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -1913,7 +1979,7 @@ input[type="range"] {
     border-radius: 8px;
   }
   .MkxBodyProfile {
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
     visibility: hidden;
     opacity: 0;
     display: none;
@@ -1924,42 +1990,43 @@ input[type="range"] {
     width: 70px;
     justify-content: center;
     align-items: center;
-    left: 108px;
+    left: 112px;
     bottom: 10px;
     border-radius: 50%;
     border: 1px solid #c7d0e1;
   }
   .MkxBodyProfileTittle {
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
     margin-top: -10px;
   }
   .MkxBodyProfileDesc {
     text-align: center;
-    font-size: 12px;
-    font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-family: "Rajdhani", sans-serif;
     letter-spacing: 1px;
   }
   .MkxBodyProfileShareTitle {
     text-align: center;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: bold;
     margin-top: 5px;
     margin-bottom: -5px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
   }
   .MkBodyProfileBtn {
     position: relative;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px;
-    width: 290px;
+    width: 295px;
     border-radius: 10px;
     border: none;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
     transition: 0.5s ease-in-out;
   }
   .MkBodyProfileBtn:hover {
@@ -1967,7 +2034,8 @@ input[type="range"] {
     color: #000;
   }
   .MkxBodySettings {
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
     visibility: hidden;
     opacity: 0;
     display: none;
@@ -1989,11 +2057,12 @@ input[type="range"] {
   .MkxBodySettingsTittle {
     position: relative;
     display: flex;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     left: 75px;
     bottom: 55px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
   }
   .MkxBodySettingsDesc {
     position: relative;
@@ -2001,8 +2070,8 @@ input[type="range"] {
     left: 75px;
     bottom: 60px;
     font-size: 12px;
-    font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
     letter-spacing: 1px;
   }
   .MkxBodySettingList {
@@ -2029,6 +2098,7 @@ input[type="range"] {
     cursor: pointer;
     animation: pulse-animation 2s infinite;
     border-radius: 50%;
+    font-weight: 300;
   }
   .MKSettingsNexxx {
     position: absolute;
@@ -2041,10 +2111,12 @@ input[type="range"] {
     position: relative;
     margin-top: 20px;
     padding: 10px;
-    width: 285px;
+    width: 295px;
     border-radius: 10px;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
     bottom: 70px;
     border: none;
     transition: 1s;
