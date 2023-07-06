@@ -37,7 +37,7 @@ MkxxMusixSpfy.addEventListener("click", function () {
     document.querySelector(".MkxBodySettings").style.display = "none";
     document.querySelector(".MkxBodySettings").style.opacity = "0";
     sheetOverlay.style.visibility = "visible";
-    sheetOverlay.style.opacity = "0";
+    sheetOverlay.style.opacity = "0.2";
   }
 });
 
@@ -55,7 +55,7 @@ MkxxSettings.addEventListener("click", function () {
     document.querySelector(".MkxBodyMusic").style.opacity = "0";
     document.querySelector(".MkxBodyMusic").style.display = "none";
     sheetOverlay.style.visibility = "visible";
-    sheetOverlay.style.opacity = "0";
+    sheetOverlay.style.opacity = "0.2";
   }
 });
 
@@ -73,7 +73,7 @@ MkxSettingBtnxBack.addEventListener("click", function () {
     document.querySelector(".MkxBodyMusic").style.opacity = "0";
     document.querySelector(".MkxBodyMusic").style.display = "none";
     sheetOverlay.style.visibility = "visible";
-    sheetOverlay.style.opacity = "0";
+    sheetOverlay.style.opacity = "0.2";
   }
 });
 
