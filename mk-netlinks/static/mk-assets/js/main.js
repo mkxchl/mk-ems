@@ -8,84 +8,15 @@ let isDragging = false,
   startY,
   startHeight;
 
-var MkxShare = document.querySelector(".MkxShare");
-
-MkxShare.addEventListener("click", function () {
-  if (document.querySelector(".MkxBodyMusic").style.visibility !== "hidden") {
-    document.querySelector(".MkxBodyMusic").style.visibility = "hidden";
-    document.querySelector(".MkxBodyMusic").style.display = "none";
-    document.querySelector(".MkxBodyProfile").style.visibility = "visible";
-    document.querySelector(".MkxBodyProfile").style.opacity = "1";
-    document.querySelector(".MkxBodyMusic").style.opacity = "0";
-    document.querySelector(".MkxBodyProfile").style.display = "inline";
-    sheetOverlay.style.visibility = "visible";
-    sheetOverlay.style.opacity = "0";
-  }
-});
-
-var MkxxMusixSpfy = document.querySelector(".MkxXxSpfy");
-
-MkxxMusixSpfy.addEventListener("click", function () {
-  if (document.querySelector(".MkxBodyMusic").style.visibility !== "visible") {
-    document.querySelector(".MkxBodyMusic").style.visibility = "visible";
-    document.querySelector(".MkxBodyMusic").style.opacity = "1";
-    document.querySelector(".MkxBodyMusic").style.display = "inline";
-    document.querySelector(".MkxBodyProfile").style.visibility = "hidden";
-    document.querySelector(".MkxBodyProfile").style.display = "none";
-    document.querySelector(".MkxBodyProfile").style.opacity = "0";
-    document.querySelector(".MkxBodySettings").style.visibility = "hidden";
-    document.querySelector(".MkxBodySettings").style.display = "none";
-    document.querySelector(".MkxBodySettings").style.opacity = "0";
-    sheetOverlay.style.visibility = "visible";
-    sheetOverlay.style.opacity = "0.2";
-  }
-});
-
-var MkxxSettings = document.querySelector(".MkxxSettings");
-
-MkxxSettings.addEventListener("click", function () {
-  if (document.querySelector(".MkxBodySettings").style.visibility !== "visible") {
-    document.querySelector(".MkxBodySettings").style.visibility = "visible";
-    document.querySelector(".MkxBodySettings").style.opacity = "1";
-    document.querySelector(".MkxBodySettings").style.display = "inline";
-    document.querySelector(".MkxBodyProfile").style.visibility = "hidden";
-    document.querySelector(".MkxBodyProfile").style.opacity = "0";
-    document.querySelector(".MkxBodyProfile").style.display = "none";
-    document.querySelector(".MkxBodyMusic").style.visibility = "hidden";
-    document.querySelector(".MkxBodyMusic").style.opacity = "0";
-    document.querySelector(".MkxBodyMusic").style.display = "none";
-    sheetOverlay.style.visibility = "visible";
-    sheetOverlay.style.opacity = "0.2";
-  }
-});
-
-var MkxSettingBtnxBack = document.querySelector(".MkxxSettingsBtnBack");
-
-MkxSettingBtnxBack.addEventListener("click", function () {
-  if (document.querySelector(".MkxBodySettings").style.visibility !== "hidden") {
-    document.querySelector(".MkxBodySettings").style.visibility = "hidden";
-    document.querySelector(".MkxBodySettings").style.opacity = "0";
-    document.querySelector(".MkxBodySettings").style.display = "none";
-    document.querySelector(".MkxBodyProfile").style.visibility = "visible";
-    document.querySelector(".MkxBodyProfile").style.opacity = "1";
-    document.querySelector(".MkxBodyProfile").style.display = "inline";
-    document.querySelector(".MkxBodyMusic").style.visibility = "hidden";
-    document.querySelector(".MkxBodyMusic").style.opacity = "0";
-    document.querySelector(".MkxBodyMusic").style.display = "none";
-    sheetOverlay.style.visibility = "visible";
-    sheetOverlay.style.opacity = "0.2";
-  }
-});
-
 const showBottomSheet = () => {
   bottomSheet.classList.add("show");
   document.body.style.overflowY = "hidden";
-  updateSheetHeight(40);
+  updateSheetHeight(75);
 };
 
 const updateSheetHeight = (height) => {
   sheetContent.style.height = `${height}vh`;
-  bottomSheet.classList.toggle("fullscreen", height === 40);
+  bottomSheet.classList.toggle("fullscreen", height === 75);
 };
 
 const hideBottomSheet = () => {
@@ -103,7 +34,7 @@ const dragStart = (e) => {
 const dragging = (e) => {
   if (!isDragging) return;
   const delta = startY - (e.pageY || e.touches?.[0].pageY);
-  const newHeight = startHeight + (delta / window.innerHeight) * 40;
+  const newHeight = startHeight + (delta / window.innerHeight) * 75;
   updateSheetHeight(newHeight);
 };
 
@@ -111,7 +42,7 @@ const dragStop = () => {
   isDragging = false;
   bottomSheet.classList.remove("dragging");
   const sheetHeight = parseInt(sheetContent.style.height);
-  sheetHeight < 30 ? hideBottomSheet() : sheetHeight > 30 ? updateSheetHeight(40) : updateSheetHeight(50);
+  sheetHeight < 30 ? hideBottomSheet() : sheetHeight > 30 ? updateSheetHeight(75) : updateSheetHeight(75);
 };
 
 dragIcon.addEventListener("mousedown", dragStart);
@@ -123,7 +54,6 @@ document.addEventListener("touchmove", dragging);
 document.addEventListener("touchend", dragStop);
 
 sheetOverlay.addEventListener("click", hideBottomSheet);
-MkxxMusixSpfy.addEventListener("click", showBottomSheet);
 showModalBtn.addEventListener("click", showBottomSheet);
 
 function Mkxxx() {
@@ -361,108 +291,4 @@ function Gogel() {
     }
   });
   window.location.replace("https://www.google.com/search?q=Marchell+Kevandra");
-}
-
-var MkNavBar = document.querySelector(".MkNavBar");
-var MkxGanzCls = document.querySelector(".MkxGanzCls");
-
-MkxGanzCls.addEventListener("click", function () {
-  if (MkNavBar.style.visibility !== "visible") {
-    MkNavBar.style.visibility = "visible";
-    MkNavBar.style.opacity = "1";
-    MkNavBar.style.bottom = "100px";
-  } else {
-    MkNavBar.style.visibility = "hidden";
-    MkNavBar.style.opacity = "0";
-    MkNavBar.style.bottom = "300px";
-  }
-});
-
-var MkxCloseMusic = document.querySelector(".bx-menu");
-var MkNavBar = document.querySelector(".MkNavBar");
-
-MkxCloseMusic.addEventListener("click", function () {
-  if (document.querySelector(".music-player").style.visibility !== "hidden") {
-    document.querySelector(".music-player").style.visibility = "hidden";
-    document.querySelector(".music-player").style.opacity = "0";
-    document.querySelector(".MkNavBar").style.visibility = "hidden";
-    document.querySelector(".MkNavBar").style.opacity = "0";
-  } else {
-    document.querySelector(".music-player").style.visibility = "hidden";
-    document.querySelector(".music-player").style.opacity = "0";
-  }
-});
-
-var MkxShare = document.querySelector(".MkxShare");
-
-MkxShare.addEventListener("click", function () {
-  if (document.querySelector(".MkxBodyMusic").style.visibility !== "visible") {
-    document.querySelector(".MkxBodyMusic").style.visibility = "visible";
-    document.querySelector(".MkxBodyMusic").style.opacity = "1";
-  } else {
-    document.querySelector(".MkxBodyMusic").style.visibility = "visible";
-    document.querySelector(".MkxBodyMusic").style.opacity = "1";
-  }
-});
-
-var MkBack = document.querySelector(".MkxxBackxx");
-
-MkBack.addEventListener("click", function () {
-  if (document.querySelector(".music-player").style.visibility !== "hidden") {
-    document.querySelector(".music-player").style.visibility = "hidden";
-    document.querySelector(".music-player").style.opacity = "0";
-    document.querySelector(".music-player").style.bottom = "-500px";
-  } else {
-    document.querySelector(".music-player").style.visibility = "hidden";
-    document.querySelector(".music-player").style.opacity = "0";
-    document.querySelector(".music-player").style.bottom = "-500px";
-  }
-});
-
-var MkMusix = document.querySelector(".MKIcHeader");
-var MkNavBar = document.querySelector(".MkNavBar");
-var MkxGanzCls = document.querySelector(".MkxGanzCls");
-
-MkMusix.addEventListener("click", function () {
-  if (document.querySelector(".music-player").style.visibility !== "visible") {
-    document.querySelector(".music-player").style.visibility = "visible";
-    document.querySelector(".music-player").style.marginTop = "10px";
-    document.querySelector(".music-player").style.top = "-780px";
-    document.querySelector(".music-player").style.opacity = "1";
-    document.querySelector(".MkNavBar").style.top = "-100px";
-    document.querySelector(".MkNavBar").style.visibility = "hidden";
-    document.querySelector(".MkNavBar").style.opacity = "0";
-  } else {
-    document.querySelector(".music-player").style.visibility = "visible";
-    document.querySelector(".music-player").style.marginTop = "-10px";
-    document.querySelector(".music-player").style.opacity = "1";
-  }
-});
-
-var sarki = document.getElementById("sarki");
-var oynat = document.getElementById("oynat");
-var ses = document.getElementById("ses");
-
-oynat.onclick = function () {
-  if (sarki.paused) {
-    sarki.play();
-    document.querySelector(".bi-pause-fill").style.display = "inline";
-    document.querySelector(".bi-play-fill").style.display = "none";
-    document.querySelector(".music-poster").style.transform = "scale(1)";
-    document.querySelector(".bi-soundwave").style.display = "block";
-  } else {
-    sarki.pause();
-    document.querySelector(".bi-pause-fill").style.display = "none";
-    document.querySelector(".bi-play-fill").style.display = "inline";
-    document.querySelector(".bi-soundwave").style.display = "none";
-  }
-};
-
-sarki.onvolumechange = function () {
-  ses.value = sarki.volume * 100;
-};
-
-function MkxElementx() {
-  var e = document.getElementById("myAudio");
-  (e.volume = 0.15), e.play();
 }
