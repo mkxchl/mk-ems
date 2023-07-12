@@ -7,7 +7,7 @@
   padding: 0;
   /* font-family: "Poppins", sans-serif; */
   /* font-family: "Helvetica, Arial", sans-serif; */
-  font-family: Chilanka, sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 .swal2-popup {
   font-family: "Poppins", sans-serif;
@@ -44,7 +44,11 @@ body {
   align-items: center;
   background-color: #c7d0e1;
   height: 300px;
-  /* transition: 1s; */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 body.dark-theme {
   background-image: url("https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
@@ -60,7 +64,7 @@ body.dark-theme {
   font-family: "Rajdhani", sans-serif;
   color: white;
   font-weight: bold;
-  transition: 0.7s 0.6s transform cubic-bezier(100, 0, 10, 1);
+  transition: 0.3s all;
 }
 .dark-theme .box {
   background-color: #212121;
@@ -73,7 +77,7 @@ body.dark-theme {
   font-family: "Rajdhani", sans-serif;
   color: white;
   font-weight: bold;
-  transition: 0.5s linear;
+  transition: 0.3s all;
   text-transform: uppercase;
 }
 .dark-theme .box .MKdexsc {
@@ -113,10 +117,12 @@ body.dark-theme {
 }
 .dark-theme .bottom-sheet .content {
   background-color: #212121;
+  transition: 0.3s all;
   /* border: 0.5px solid #c7d0e1; */
 }
 .dark-theme .bottom-sheet .content .body {
   color: white;
+  transition: 0.3s all;
 }
 .dark-theme .bottom-sheet .content .body .MkxBodyMusic .boxContainer .MusicBox {
   background-color: white;
@@ -129,12 +135,22 @@ body.dark-theme {
   font-family: "Rajdhani", sans-serif;
   color: white;
   font-weight: bold;
-  transition: 0.5s;
+  transition: 0.3s all;
 }
 #myAudio {
   visibility: hidden;
   opacity: 0;
   display: none;
+}
+#theme-button {
+  position: relative;
+  font-size: 30px;
+  left: 255px;
+  bottom: 405px;
+  color: #000;
+  cursor: pointer;
+  animation: pulse-animation 2s infinite;
+  border-radius: 50%;
 }
 section {
   position: relative;
@@ -185,23 +201,22 @@ section::after {
   padding: 20px;
   /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
   border: 4px solid #c7d0e1;
-  transition: 0.7s 0.6s all cubic-bezier(0.86, 0, 0.07, 1);
+  transition: 0.3s all;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .box h3 {
-  color: #2d5cfe;
+  color: #05bfdb;
   padding: 15px;
-  font-size: 15px;
+  font-size: 20px;
   transition: 0.5s linear;
   /* animation: glitch 1s linear; */
 }
 .MKdexsc {
   color: grey;
   transition: 0.5s linear;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1.3px;
   margin-bottom: 15px;
-  margin-top: 5px;
 }
 .MkBottom {
   color: #c7d0e1;
@@ -211,7 +226,7 @@ section::after {
   position: relative;
   top: 3px;
   color: #42a5f5;
-  font-size: 18px;
+  font-size: 22px;
 }
 .us {
   /* position: relative; */
@@ -266,7 +281,7 @@ section::after {
   position: relative;
   width: 60px;
   height: 60px;
-  everflow: hidden;
+  overflow: hidden;
   margin-right: -10px;
 }
 .box .list-links .img-list i {
@@ -280,11 +295,12 @@ section::after {
   font-size: 25px;
   border-radius: 10px;
   /* color: #2d5cfe; */
+  color: #05bfdb;
 }
 .MKNexxx {
   position: absolute;
   font-size: 30px;
-  color: white;
+  color: #05bfdb;
   top: 10px;
   right: 10px;
 }
@@ -292,14 +308,13 @@ section::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #2600ff;
 }
 .box .list-links .list-content h4 {
   position: relative;
   line-height: 1.2em;
   font-weight: 600;
   transition: 0.5s;
-  top: 3px;
+  bottom: 0;
 }
 .box .list-links .list-content p {
   font-size: 0.75em;
@@ -315,7 +330,7 @@ section::after {
 }
 .MkxCodexLink {
   animation: glitch 1s linear infinite;
-  color: #2d5cfe;
+  color: #05bfdb;
   font-weight: bold;
 }
 .mkall {
@@ -360,7 +375,7 @@ section::after {
   position: fixed;
   top: 0;
   left: 0;
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: flex;
   opacity: 0;
@@ -369,8 +384,8 @@ section::after {
   flex-direction: column;
   justify-content: flex-end;
   transition: 0.3s linear;
+  z-index: 999;
   /* transition: 0.7s 0.6s transform cubic-bezier(100, 0, 10, 1); */
-  z-index: 99999999;
 }
 .bottom-sheet.show {
   opacity: 1;
@@ -385,7 +400,6 @@ section::after {
   height: 100%;
   opacity: 0.2;
   background: #000;
-  visibility: hidden;
 }
 .bottom-sheet .content {
   width: 100%;
@@ -398,7 +412,7 @@ section::after {
   transform: translateY(100%);
   border-radius: 20px 20px 0 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 100);
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 .bottom-sheet.show .content {
   transform: translateY(0%);
@@ -430,6 +444,21 @@ section::after {
   width: 10px;
   right: 10px;
 }
+.MkBottomBorder {
+  cursor: grab;
+  user-select: none;
+  padding: 15px;
+  margin-top: -15px;
+  text-align: center;
+}
+.MkBottomBorder span {
+  height: 4px;
+  width: 40px;
+  display: block;
+  background: #c7d0e1;
+  border-radius: 50px;
+  text-align: center;
+}
 .bottom-sheet .header {
   display: flex;
   justify-content: center;
@@ -454,7 +483,7 @@ section::after {
   scrollbar-width: none;
   justify-content: center;
   align-items: center;
-  transition: 1s 1s transform cubic-bezier(0.86, 0, 0.07, 1);
+  transition: 0.3s all;
 }
 .bottom-sheet .body::-webkit-scrollbar {
   width: 0;
@@ -478,11 +507,99 @@ section::after {
   margin-bottom: -10px;
 }
 .MkxBodyProfile {
-  font-family: "Poppins", sans-serif;
-  visibility: hidden;
+  font-family: "Rajdhani", sans-serif;
+}
+.MkMrTop {
+  margin-top: 5px;
+}
+.MkxchlTittle {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+  color: #05bfdb;
+  text-transform: uppercase;
+}
+.MkxchlTittleDesc {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 1.3px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+.MkxchlTittleDesc i {
+  position: relative;
+  font-weight: normal;
+  font-size: 18px;
+  top: 5px;
+  left: 5px;
+}
+.MkxchlList {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: -5px;
+  margin-top: -5px;
+}
+.MkxchlList .MkxchlIcons {
+  position: relative;
+  display: flex;
+  margin-right: 10px;
+}
+.MkxchlList .MkxchlIcons i {
+  position: relative;
+  right: 10px;
+  font-size: 25px;
+}
+.MkxchlList .MkxchlContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.MkxchlList .MkxchlContent h4 {
+  position: relative;
+  font-size: 18px;
+  font-family: "Rajdhani", sans-serif;
+  bottom: 3px;
+}
+.MKUppercaser {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.MkxchlModeTheme h4 {
+  position: relative;
+  font-size: 20px;
+  font-family: "Rajdhani", sans-serif;
+  margin-top: 5px;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 60px;
+  top: 30px;
+}
+.MkBottomBorder {
+  cursor: grab;
+  user-select: none;
+  padding: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+.MkBottomBorder span {
+  height: 4px;
+  width: 260px;
+  display: block;
+  background: #c7d0e1;
+  border-radius: 50px;
+  text-align: center;
   opacity: 0;
-  display: none;
-  /* transition: 1s ease-in-out; */
 }
 .MkProfileImagesHeader {
   position: relative;
@@ -490,199 +607,10 @@ section::after {
   width: 70px;
   justify-content: center;
   align-items: center;
-  left: 108px;
+  left: 112px;
   bottom: 10px;
   border-radius: 50%;
   border: 1px solid #c7d0e1;
-  transition: 1s 1s transform cubic-bezier(0.86, 0, 0.07, 1);
-}
-.MkxBodyProfileTittle {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Rajdhani", sans-serif;
-  margin-top: -10px;
-}
-.MkxBodyProfileDesc {
-  text-align: center;
-  font-size: 15px;
-  font-weight: 300;
-  font-family: "Rajdhani", sans-serif;
-  letter-spacing: 1px;
-}
-.MkxBodyProfileShareTitle {
-  text-align: center;
-  /* width: 300px; */
-  font-size: 15px;
-  font-weight: 500;
-  margin-top: 5px;
-  margin-bottom: -5px;
-  font-family: "Rajdhani", sans-serif;
-}
-.MkBodyProfileBtn {
-  position: relative;
-  margin-top: 20px;
-  padding: 10px;
-  width: 290px;
-  border-radius: 10px;
-  color: #fff;
-  font-family: "Rajdhani", sans-serif;
-  transition: 0.5s ease-in-out;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-.MkBodyProfileBtn:hover {
-  background-color: #c7d0e1;
-  color: #000;
-}
-.MkxBodySettings {
-  font-family: "Poppins", sans-serif;
-  visibility: hidden;
-  opacity: 0;
-  display: none;
-  transition: 0.5s ease-in-out;
-  animation: up 1s ease-in-out;
-}
-.MkSettingsImagesHeader {
-  position: relative;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  justify-content: center;
-  align-items: center;
-  bottom: 10px;
-  left: 10px;
-  border-radius: 50%;
-  border: 1px solid #c7d0e1;
-}
-.MkxBodySettingsTittle {
-  position: relative;
-  display: flex;
-  font-size: 15px;
-  left: 75px;
-  bottom: 55px;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: bold;
-}
-.MkxBodySettingsDesc {
-  position: relative;
-  display: flex;
-  left: 75px;
-  bottom: 60px;
-  font-size: 12px;
-  font-weight: 300;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
-}
-.MkxBodySettingList {
-  position: relative;
-  display: flex;
-  padding: 10px;
-  /* background: grey; */
-  border-radius: 10px;
-  margin: 10px;
-  cursor: pointer;
-  overflow: hidden;
-  height: 30px;
-  margin-top: 20px;
-  margin-bottom: -15px;
-  bottom: 80px;
-  font-family: "Poppins", sans-serif;
-}
-.MkxxSettingsBack {
-  position: relative;
-  left: 245px;
-  bottom: 95px;
-  font-size: 25px;
-  color: #000;
-  cursor: pointer;
-  animation: pulse-animation 2s infinite;
-  border-radius: 50%;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: bold;
-}
-.MKSettingsNexxx {
-  position: absolute;
-  font-size: 30px;
-  color: black;
-  top: 10px;
-  right: 10px;
-}
-.MkxxSettingsBtnBack {
-  position: relative;
-  margin-top: 20px;
-  padding: 10px;
-  width: 288px;
-  border-radius: 10px;
-  color: #fff;
-  bottom: 70px;
-  border: none;
-  transition: 1s;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: bold;
-}
-.MkxBodySettingList .MkxImgList {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  everflow: hidden;
-  margin-right: -10px;
-}
-.MkxBodySettingList .MkxImgList i {
-  position: absolute;
-  object-fit: cover;
-  padding: 10px;
-  width: 100%;
-  height: 100%;
-  left: -5px;
-  bottom: -13px;
-  font-size: 25px;
-  border-radius: 10px;
-  /* color: #2d5cfe; */
-}
-.MkxBodySettingList .MkxSettingsListContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* color: #2600ff; */
-}
-.MkxBodySettingList .MkxSettingsListContent h4 {
-  position: relative;
-  line-height: 1.2em;
-  font-weight: 600;
-  transition: 0.5s;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  right: 10px;
-}
-.MkxBodySettingList .MkxSettingsListContent p {
-  position: relative;
-  right: 10px;
-  font-size: 0.75em;
-  transition: 0.5s;
-  font-family: "Poppins", sans-serif;
-}
-.MkxBodySettingsShareTitle {
-  text-align: center;
-  /* width: 300px; */
-  font-size: 15px;
-  font-weight: 500;
-  margin-top: 5px;
-  margin-bottom: -5px;
-  font-family: "Poppins", sans-serif;
-}
-.MkBodySettingsBtn {
-  position: relative;
-  margin-top: 20px;
-  padding: 10px;
-  width: 290px;
-  border-radius: 10px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
-.MkBodySettingsBtn:hover {
-  background-color: #c7d0e1;
-  color: #000;
 }
 .MkxBodyMusic {
   font-family: "Rajdhani", sans-serif;
@@ -1273,9 +1201,6 @@ input[type="range"] {
   }
   .MkxBodyProfile {
     font-family: "Poppins", sans-serif;
-    visibility: hidden;
-    opacity: 0;
-    display: none;
     transition: 1s ease-in-out;
   }
   .MkProfileImagesHeader {
@@ -1543,7 +1468,6 @@ input[type="range"] {
     font-family: "Rajdhani", sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    
   }
   .MkxBodyMusicShareTitle {
     text-align: center;
@@ -1618,11 +1542,100 @@ input[type="range"] {
     border-radius: 8px;
   }
   .MkxBodyProfile {
-    font-family: "Poppins", sans-serif;
-    visibility: hidden;
-    opacity: 0;
-    display: none;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .MkMrTop {
+    margin-top: 5px;
+  }
+  .MkxchlTittle {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Rajdhani", sans-serif;
+    color: #05bfdb;
+    text-transform: uppercase;
+  }
+  .MkxchlTittleDesc {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    font-family: "Rajdhani", sans-serif;
+    letter-spacing: 1.3px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+  .MkxchlTittleDesc i {
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    top: 5px;
+    left: 5px;
+  }
+  .MkxchlList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
     transition: 1s ease-in-out;
+    overflow: hidden;
+    height: 30px;
+    margin-bottom: -5px;
+    margin-top: -5px;
+  }
+  .MkxchlList .MkxchlIcons {
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+  }
+  .MkxchlList .MkxchlIcons i {
+    position: relative;
+    right: 5px;
+    left: 5px;
+    font-size: 25px;
+  }
+  .MkxchlList .MkxchlContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MkxchlList .MkxchlContent h4 {
+    position: relative;
+    font-size: 18px;
+    font-family: "Rajdhani", sans-serif;
+    bottom: 3px;
+    left: 10px;
+  }
+  .MKUppercaser {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .MkxchlModeTheme h4 {
+    position: relative;
+    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 60px;
+    top: 30px;
+  }
+  .MkBottomBorder {
+    cursor: grab;
+    user-select: none;
+    padding: 15px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .MkBottomBorder span {
+    height: 4px;
+    width: 260px;
+    display: block;
+    background: #c7d0e1;
+    border-radius: 50px;
+    text-align: center;
   }
   .MkProfileImagesHeader {
     position: relative;
@@ -1630,209 +1643,10 @@ input[type="range"] {
     width: 70px;
     justify-content: center;
     align-items: center;
-    left: 130px;
+    left: 112px;
     bottom: 10px;
     border-radius: 50%;
     border: 1px solid #c7d0e1;
-  }
-  .MkxBodyProfileTittle {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: "Rajdhani", sans-serif;
-    margin-top: -10px;
-  }
-  .MkxBodyProfileDesc {
-    text-align: center;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-family: "Rajdhani", sans-serif;
-    letter-spacing: 1px;
-  }
-  .MkxBodyProfileShareTitle {
-    text-align: center;
-    /* width: 300px; */
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 5px;
-    margin-bottom: -5px;
-    font-family: "Poppins", sans-serif;
-  }
-  .MkBodyProfileBtn {
-    position: relative;
-    margin-top: 20px;
-    padding: 10px;
-    width: 330px;
-    border-radius: 10px;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Rajdhani", sans-serif;
-    transition: 0.5s ease-in-out;
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .MkBodyProfileBtn:hover {
-    background-color: #c7d0e1;
-    color: #000;
-  }
-  .MkxBodySettings {
-    text-transform: uppercase;
-    font-family: "Rajdhani", sans-serif;
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-    transition: 0.5s ease-in-out;
-    animation: up 1s ease-in-out;
-  }
-  .MkSettingsImagesHeader {
-    position: relative;
-    display: flex;
-    height: 50px;
-    width: 50px;
-    justify-content: center;
-    align-items: center;
-    bottom: 10px;
-    left: 10px;
-    border-radius: 50%;
-    border: 1px solid #c7d0e1;
-  }
-  .MkxBodySettingsTittle {
-    position: relative;
-    display: flex;
-    font-size: 20px;
-    left: 75px;
-    bottom: 55px;
-    text-transform: uppercase;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: bold;
-  }
-  .MkxBodySettingsDesc {
-    position: relative;
-    display: flex;
-    left: 75px;
-    bottom: 60px;
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-family: "Rajdhani", sans-serif;
-    letter-spacing: 1px;
-  }
-  .MkxBodySettingList {
-    position: relative;
-    display: flex;
-    padding: 10px;
-    /* background: grey; */
-    border-radius: 10px;
-    margin: 10px;
-    cursor: pointer;
-    overflow: hidden;
-    height: 30px;
-    margin-top: 20px;
-    margin-bottom: -15px;
-    bottom: 80px;
-    font-family: "Poppins", sans-serif;
-  }
-  .MkxxSettingsBack {
-    position: relative;
-    left: 300px;
-    bottom: 95px;
-    font-size: 25px;
-    color: #000;
-    cursor: pointer;
-    animation: pulse-animation 2s infinite;
-    border-radius: 50%;
-  }
-  .MKSettingsNexxx {
-    position: absolute;
-    font-size: 30px;
-    color: black;
-    top: 10px;
-    right: 10px;
-  }
-  .MkxxSettingsBtnBack {
-    position: relative;
-    margin-top: 20px;
-    padding: 10px;
-    width: 333px;
-    border-radius: 10px;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Rajdhani", sans-serif;
-    bottom: 70px;
-    border: none;
-    transition: 1s;
-    font-size: 18px;
-    font-weight; bold;
-  }
-  .MkxxSettingsBtnBack:hover {
-    background-color: #c7d0e1;
-    color: #000;
-  }
-  .MkxBodySettingList .MkxImgList {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    everflow: hidden;
-    margin-right: -10px;
-  }
-  .MkxBodySettingList .MkxImgList i {
-    position: absolute;
-    object-fit: cover;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    left: -5px;
-    bottom: -13px;
-    font-size: 25px;
-    border-radius: 10px;
-    /* color: #2d5cfe; */
-  }
-  .MkxBodySettingList .MkxSettingsListContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* color: #2600ff; */
-  }
-  .MkxBodySettingList .MkxSettingsListContent h4 {
-    position: relative;
-    line-height: 1.2em;
-    font-weight: 600;
-    transition: 0.5s;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    right: 10px;
-  }
-  .MkxBodySettingList .MkxSettingsListContent p {
-    position: relative;
-    right: 10px;
-    font-size: 0.75em;
-    transition: 0.5s;
-    font-family: "Poppins", sans-serif;
-  }
-  .MkxBodySettingsShareTitle {
-    text-align: center;
-    /* width: 300px; */
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 5px;
-    margin-bottom: -5px;
-    font-family: "Poppins", sans-serif;
-  }
-  .MkBodySettingsBtn {
-    position: relative;
-    margin-top: 20px;
-    padding: 10px;
-    width: 290px;
-    border-radius: 10px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-  }
-  .MkBodySettingsBtn:hover {
-    background-color: #c7d0e1;
-    color: #000;
   }
 }
 @media screen and (max-width: 360px) {
@@ -1980,9 +1794,97 @@ input[type="range"] {
   }
   .MkxBodyProfile {
     font-family: "Rajdhani", sans-serif;
-    visibility: hidden;
-    opacity: 0;
-    display: none;
+  }
+  .MkMrTop {
+    margin-top: 5px;
+  }
+  .MkxchlTittle {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Rajdhani", sans-serif;
+    color: #05bfdb;
+    text-transform: uppercase;
+  }
+  .MkxchlTittleDesc {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    font-family: "Rajdhani", sans-serif;
+    letter-spacing: 1.3px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+  .MkxchlTittleDesc i {
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    top: 5px;
+    left: 5px;
+  }
+  .MkxchlList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    height: 30px;
+    margin-bottom: -5px;
+    margin-top: -5px;
+  }
+  .MkxchlList .MkxchlIcons {
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+  }
+  .MkxchlList .MkxchlIcons i {
+    position: relative;
+    right: 10px;
+    font-size: 25px;
+  }
+  .MkxchlList .MkxchlContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MkxchlList .MkxchlContent h4 {
+    position: relative;
+    font-size: 18px;
+    font-family: "Rajdhani", sans-serif;
+    bottom: 3px;
+  }
+  .MKUppercaser {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .MkxchlModeTheme h4 {
+    position: relative;
+    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 60px;
+    top: 30px;
+  }
+  .MkBottomBorder {
+    cursor: grab;
+    user-select: none;
+    padding: 15px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .MkBottomBorder span {
+    height: 4px;
+    width: 260px;
+    display: block;
+    background: #c7d0e1;
+    border-radius: 50px;
+    text-align: center;
   }
   .MkProfileImagesHeader {
     position: relative;
@@ -1994,198 +1896,5 @@ input[type="range"] {
     bottom: 10px;
     border-radius: 50%;
     border: 1px solid #c7d0e1;
-  }
-  .MkxBodyProfileTittle {
-    text-align: center;
-    font-size: 20px;
-    font-family: "Rajdhani", sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: -10px;
-  }
-  .MkxBodyProfileDesc {
-    text-align: center;
-    font-size: 15px;
-    font-family: "Rajdhani", sans-serif;
-    letter-spacing: 1px;
-  }
-  .MkxBodyProfileShareTitle {
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: -5px;
-    font-family: "Rajdhani", sans-serif;
-  }
-  .MkBodyProfileBtn {
-    position: relative;
-    margin-top: 20px;
-    padding: 10px;
-    width: 295px;
-    border-radius: 10px;
-    border: none;
-    color: #fff;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: bold;
-    transition: 0.5s ease-in-out;
-  }
-  .MkBodyProfileBtn:hover {
-    background-color: #c7d0e1;
-    color: #000;
-  }
-  .MkxBodySettings {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: bold;
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-    transition: 0.5s ease-in-out;
-    animation: up 1s ease-in-out;
-  }
-  .MkSettingsImagesHeader {
-    position: relative;
-    display: flex;
-    height: 50px;
-    width: 50px;
-    justify-content: center;
-    align-items: center;
-    bottom: 10px;
-    left: 10px;
-    border-radius: 50%;
-    border: 1px solid #c7d0e1;
-  }
-  .MkxBodySettingsTittle {
-    position: relative;
-    display: flex;
-    font-size: 18px;
-    font-weight: 700;
-    left: 75px;
-    bottom: 55px;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: bold;
-  }
-  .MkxBodySettingsDesc {
-    position: relative;
-    display: flex;
-    left: 75px;
-    bottom: 60px;
-    font-size: 12px;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  .MkxBodySettingList {
-    position: relative;
-    display: flex;
-    padding: 10px;
-    /* background: grey; */
-    border-radius: 10px;
-    margin: 10px;
-    cursor: pointer;
-    overflow: hidden;
-    height: 30px;
-    margin-top: 20px;
-    margin-bottom: -15px;
-    bottom: 80px;
-    font-family: "Poppins", sans-serif;
-  }
-  .MkxxSettingsBack {
-    position: relative;
-    left: 250px;
-    bottom: 95px;
-    font-size: 25px;
-    color: #000;
-    cursor: pointer;
-    animation: pulse-animation 2s infinite;
-    border-radius: 50%;
-    font-weight: 300;
-  }
-  .MKSettingsNexxx {
-    position: absolute;
-    font-size: 30px;
-    color: black;
-    top: 10px;
-    right: 10px;
-  }
-  .MkxxSettingsBtnBack {
-    position: relative;
-    margin-top: 20px;
-    padding: 10px;
-    width: 295px;
-    border-radius: 10px;
-    color: #fff;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    bottom: 70px;
-    border: none;
-    transition: 1s;
-  }
-  .MkxxSettingsBtnBack:hover {
-    background-color: #c7d0e1;
-    color: #000;
-  }
-  .MkxBodySettingList .MkxImgList {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    everflow: hidden;
-    margin-right: -10px;
-  }
-  .MkxBodySettingList .MkxImgList i {
-    position: absolute;
-    object-fit: cover;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    left: -5px;
-    bottom: -13px;
-    font-size: 25px;
-    border-radius: 10px;
-    /* color: #2d5cfe; */
-  }
-  .MkxBodySettingList .MkxSettingsListContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* color: #2600ff; */
-  }
-  .MkxBodySettingList .MkxSettingsListContent h4 {
-    position: relative;
-    line-height: 1.2em;
-    font-weight: 600;
-    transition: 0.5s;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    right: 10px;
-  }
-  .MkxBodySettingList .MkxSettingsListContent p {
-    position: relative;
-    right: 10px;
-    font-size: 0.75em;
-    transition: 0.5s;
-    font-family: "Poppins", sans-serif;
-  }
-  .MkxBodySettingsShareTitle {
-    text-align: center;
-    /* width: 300px; */
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 5px;
-    margin-bottom: -5px;
-    font-family: "Poppins", sans-serif;
-  }
-  .MkBodySettingsBtn {
-    position: relative;
-    margin-top: 20px;
-    padding: 10px;
-    width: 250px;
-    border-radius: 10px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-  }
-  .MkBodySettingsBtn:hover {
-    background-color: #c7d0e1;
-    color: #000;
   }
 }
