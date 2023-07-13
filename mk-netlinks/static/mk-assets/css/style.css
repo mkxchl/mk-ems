@@ -1880,10 +1880,10 @@ input[type="range"] {
   }
   .MkxchlList .MkxchlContent h4 {
     position: relative;
+    left: -10px;
+    bottom: 5px;
     font-size: 18px;
     font-family: "Rajdhani", sans-serif;
-    bottom: 3px;
-    left: -10px;
   }
   .MKUppercaser {
     text-transform: uppercase;
