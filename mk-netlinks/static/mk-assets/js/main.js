@@ -11,12 +11,12 @@ let isDragging = false,
 const showBottomSheet = () => {
   bottomSheet.classList.add("show");
   document.body.style.overflowY = "hidden";
-  updateSheetHeight(75);
+  updateSheetHeight(65);
 };
 
 const updateSheetHeight = (height) => {
   sheetContent.style.height = `${height}vh`;
-  bottomSheet.classList.toggle("fullscreen", height === 75);
+  bottomSheet.classList.toggle("fullscreen", height === 65);
 };
 
 const hideBottomSheet = () => {
@@ -34,7 +34,7 @@ const dragStart = (e) => {
 const dragging = (e) => {
   if (!isDragging) return;
   const delta = startY - (e.pageY || e.touches?.[0].pageY);
-  const newHeight = startHeight + (delta / window.innerHeight) * 75;
+  const newHeight = startHeight + (delta / window.innerHeight) * 65;
   updateSheetHeight(newHeight);
 };
 
@@ -42,7 +42,7 @@ const dragStop = () => {
   isDragging = false;
   bottomSheet.classList.remove("dragging");
   const sheetHeight = parseInt(sheetContent.style.height);
-  sheetHeight < 30 ? hideBottomSheet() : sheetHeight > 30 ? updateSheetHeight(75) : updateSheetHeight(75);
+  sheetHeight < 30 ? hideBottomSheet() : sheetHeight > 30 ? updateSheetHeight(65) : updateSheetHeight(65);
 };
 
 dragIcon.addEventListener("mousedown", dragStart);
