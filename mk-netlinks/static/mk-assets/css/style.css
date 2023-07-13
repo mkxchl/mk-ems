@@ -549,7 +549,6 @@ section::after {
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
-  cursor: pointer;
   transition: 1s ease-in-out;
   overflow: hidden;
   height: 30px;
@@ -1592,7 +1591,6 @@ input[type="range"] {
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
-    cursor: pointer;
     transition: 1s ease-in-out;
     overflow: hidden;
     height: 30px;
@@ -1873,7 +1871,7 @@ input[type="range"] {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    bottom: 2px;
+    bottom: 3px;
   }
   .MkxchlList .MkxchlContent {
     display: flex;
