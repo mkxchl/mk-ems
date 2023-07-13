@@ -332,6 +332,12 @@ section::after {
   animation: glitch 1s linear infinite;
   color: #05bfdb;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.MkxCodexLink:hover {
+  color: black;
+  transition: 0.3s all;
 }
 .mkall {
   color: #4267b2;
@@ -560,6 +566,14 @@ section::after {
   right: 10px;
   font-size: 25px;
 }
+.MkxchlList .MkxchlIcons img {
+  position: relative;
+  left: -10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  bottom: 2px;
+}
 .MkxchlList .MkxchlContent {
   display: flex;
   flex-direction: column;
@@ -567,9 +581,9 @@ section::after {
 }
 .MkxchlList .MkxchlContent h4 {
   position: relative;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Rajdhani", sans-serif;
-  bottom: 3px;
+  bottom: 2px;
 }
 .MKUppercaser {
   text-transform: uppercase;
@@ -1588,13 +1602,21 @@ input[type="range"] {
   .MkxchlList .MkxchlIcons {
     position: relative;
     display: flex;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .MkxchlList .MkxchlIcons i {
     position: relative;
     right: 5px;
-    left: 5px;
+    left: -5px;
     font-size: 25px;
+  }
+  .MkxchlList .MkxchlIcons img {
+    position: relative;
+    left: -10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    bottom: 3px;
   }
   .MkxchlList .MkxchlContent {
     display: flex;
@@ -1820,7 +1842,7 @@ input[type="range"] {
     position: relative;
     font-weight: normal;
     font-size: 18px;
-    top: 5px;
+    top: 2px;
     left: 5px;
   }
   .MkxchlList {
@@ -1829,7 +1851,6 @@ input[type="range"] {
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
-    cursor: pointer;
     transition: 1s ease-in-out;
     overflow: hidden;
     height: 30px;
@@ -1843,8 +1864,16 @@ input[type="range"] {
   }
   .MkxchlList .MkxchlIcons i {
     position: relative;
-    right: 10px;
+    left: -10px;
     font-size: 25px;
+  }
+  .MkxchlList .MkxchlIcons img {
+    position: relative;
+    left: -10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    bottom: 2px;
   }
   .MkxchlList .MkxchlContent {
     display: flex;
@@ -1856,6 +1885,7 @@ input[type="range"] {
     font-size: 18px;
     font-family: "Rajdhani", sans-serif;
     bottom: 3px;
+    left: -10px;
   }
   .MKUppercaser {
     text-transform: uppercase;
