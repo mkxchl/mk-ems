@@ -1881,7 +1881,7 @@ input[type="range"] {
   .MkxchlList .MkxchlContent h4 {
     position: relative;
     left: -10px;
-    bottom: 5px;
+    bottom: 1px;
     font-size: 18px;
     font-family: "Rajdhani", sans-serif;
   }
