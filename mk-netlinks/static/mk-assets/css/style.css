@@ -2068,6 +2068,7 @@ input[type="range"] {
     color: #05bfdb;
     font-weight: normal;
     transition: 0.5s all;
+    cursor: none;
   }
   .MkxchlModeTheme .MkxchlIconsSettings:hover {
     color: #fff;
@@ -2084,6 +2085,7 @@ input[type="range"] {
     color: #05bfdb;
     font-weight: 300;
     transition: 0.5s all;
+    cursor: none;
   }
   .MkxchlModeTheme .MkxchlMusic:hover {
     color: #fff;
@@ -2099,6 +2101,7 @@ input[type="range"] {
     padding: 10px 10px 10px;
     color: #05bfdb;
     transition: 0.5s all;
+    cursor: none;
   }
   .MkxchlModeTheme i {
     position: relative;
@@ -2553,6 +2556,7 @@ input[type="range"] {
     color: #05bfdb;
     font-weight: normal;
     transition: 0.5s all;
+    cursor: none;
   }
   .MkxchlModeTheme .MkxchlIconsSettings:hover {
     color: #fff;
@@ -2569,6 +2573,7 @@ input[type="range"] {
     color: #05bfdb;
     font-weight: 300;
     transition: 0.5s all;
+    cursor: none;
   }
   .MkxchlModeTheme .MkxchlMusic:hover {
     color: #fff;
@@ -2584,6 +2589,7 @@ input[type="range"] {
     padding: 10px 10px 10px;
     color: #05bfdb;
     transition: 0.5s all;
+    cursor: none;
   }
   .MkxchlModeTheme i {
     position: relative;
