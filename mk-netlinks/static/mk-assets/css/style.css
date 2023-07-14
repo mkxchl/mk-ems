@@ -2542,7 +2542,7 @@ input[type="range"] {
     font-size: 30px;
     left: 250px;
     border-radius: 50%;
-    bottom: 510px;
+    bottom: 505px;
     padding: 10px 10px 10px;
     color: #05bfdb;
     font-weight: normal;
@@ -2558,7 +2558,7 @@ input[type="range"] {
     font-size: 30px;
     left: 145px;
     border-radius: 50%;
-    bottom: 510px;
+    bottom: 505px;
     padding: 10px 10px 10px;
     color: #05bfdb;
     font-weight: 300;
@@ -2574,7 +2574,7 @@ input[type="range"] {
     font-size: 30px;
     left: 250px;
     border-radius: 50%;
-    bottom: 510px;
+    bottom: 505px;
     padding: 10px 10px 10px;
     color: #05bfdb;
     transition: 0.5s all;
@@ -2668,7 +2668,7 @@ input[type="range"] {
     position: relative;
     font-size: 30px;
     left: 73px;
-    top: 5px;
+    top: 10px;
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
@@ -2686,7 +2686,7 @@ input[type="range"] {
     font-size: 30px;
     left: 227px;
     cursor: pointer;
-    bottom: 15px;
+    bottom: 10px;
     padding: 10px;
     border-radius: 50%;
     visibility: hidden;
@@ -2702,7 +2702,7 @@ input[type="range"] {
     position: relative;
     font-size: 30px;
     left: 30px;
-    top: 5px;
+    top: 10px;
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
@@ -2720,7 +2720,7 @@ input[type="range"] {
     font-size: 30px;
     left: 227px;
     cursor: pointer;
-    bottom: 15px;
+    bottom: 10px;
     padding: 10px;
     border-radius: 50%;
     visibility: hidden;
@@ -2736,7 +2736,7 @@ input[type="range"] {
     position: relative;
     font-size: 30px;
     left: 12px;
-    top: 5px;
+    top: 10px;
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
@@ -2754,7 +2754,7 @@ input[type="range"] {
     font-size: 30px;
     left: 227px;
     cursor: pointer;
-    bottom: 15px;
+    bottom: 10px;
     padding: 10px;
     border-radius: 50%;
     visibility: hidden;
@@ -2770,7 +2770,7 @@ input[type="range"] {
     position: relative;
     font-size: 30px;
     left: 27px;
-    top: 5px;
+    top: 10px;
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
@@ -2788,7 +2788,7 @@ input[type="range"] {
     font-size: 30px;
     left: 227px;
     cursor: pointer;
-    bottom: 15px;
+    bottom: 10px;
     padding: 10px;
     border-radius: 50%;
     visibility: hidden;
