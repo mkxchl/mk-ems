@@ -2542,7 +2542,7 @@ input[type="range"] {
     font-size: 30px;
     left: 250px;
     border-radius: 50%;
-    bottom: 505px;
+    bottom: 500px;
     padding: 10px 10px 10px;
     color: #05bfdb;
     font-weight: normal;
@@ -2558,7 +2558,7 @@ input[type="range"] {
     font-size: 30px;
     left: 145px;
     border-radius: 50%;
-    bottom: 505px;
+    bottom: 500px;
     padding: 10px 10px 10px;
     color: #05bfdb;
     font-weight: 300;
@@ -2574,7 +2574,7 @@ input[type="range"] {
     font-size: 30px;
     left: 250px;
     border-radius: 50%;
-    bottom: 505px;
+    bottom: 500px;
     padding: 10px 10px 10px;
     color: #05bfdb;
     transition: 0.5s all;
