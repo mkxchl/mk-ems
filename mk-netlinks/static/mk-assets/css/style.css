@@ -1619,6 +1619,9 @@ input[type="range"] {
     color: #05bfdb;
     transition: 0.5s all;
   }
+  .MkxchlModeTheme {
+    cursor: none;
+  }
   .MkxchlPlayMusicA {
     position: relative;
     font-size: 30px;
@@ -1971,6 +1974,9 @@ input[type="range"] {
   .MKUppercaser {
     text-transform: uppercase;
     font-size: 12px;
+  }
+  .MkxchlModeTheme {
+    cursor: none;
   }
   .MkxchlModeTheme h4 {
     position: relative;
@@ -2593,6 +2599,9 @@ input[type="range"] {
     text-align: right;
     margin-right: 60px;
     top: 30px;
+  }
+  .MkxchlModeTheme {
+    cursor: none;
   }
   .MkBottomBorder {
     cursor: grab;
