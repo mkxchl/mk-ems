@@ -160,6 +160,10 @@ body.dark-theme {
   animation: pulse-animation 2s infinite;
   border-radius: 50%;
 }
+.move {
+  transform: translateX(300px);
+  opacity: 0;
+}
 section {
   position: relative;
   /* background: linear-gradient(85deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 124, 1) 0%, rgba(106, 106, 106, 1) 49%); */
@@ -176,7 +180,7 @@ section::before {
   height: 400px;
   /* background: black; */
   border-radius: 50%;
-  transform: translate(-250px, -120px);
+  /* transform: translate(-250px, -120px); */
 }
 section::after {
   content: "";
@@ -185,7 +189,7 @@ section::after {
   height: 350px;
   /* background: black; */
   border-radius: 50%;
-  transform: translate(250px, 150px);
+  /* transform: translate(250px, 150px); */
 }
 .MkxCodexLink:before {
   animation: glitchTop 1s linear infinite;
@@ -210,6 +214,7 @@ section::after {
   /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
   border: 4px solid #c7d0e1;
   transition: 0.3s all;
+  animation: fadeInUp 1s;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .box h3 {
@@ -322,7 +327,7 @@ section::after {
   line-height: 1.2em;
   font-weight: 600;
   transition: 0.5s;
-  bottom: 0;
+  top: 1px;
 }
 .box .list-links .list-content p {
   font-size: 0.75em;
@@ -1024,6 +1029,48 @@ section::after {
   }
   75% {
     transform: scaleY(0.8);
+  }
+}
+@keyframes anim {
+  50% {
+    filter: blur(10px);
+    transform: rotate(-15deg);
+    box-shadow: 0px 0px 10px 3px;
+  }
+  100% {
+    height: 100px;
+    width: 500px;
+    left: 10px;
+    top: 10px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 1, 0.3);
+    opacity: 0.7;
+  }
+}
+
+@keyframes anim2 {
+  50% {
+    filter: blur(40px);
+    transform: rotate(-15deg);
+  }
+  100% {
+    height: 60px;
+    width: 60px;
+    left: 10px;
+    top: 10px;
+    margin-left: 435px;
+    margin-top: 30px;
+    opacity: 0.8;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 500px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 @keyframes heart {
