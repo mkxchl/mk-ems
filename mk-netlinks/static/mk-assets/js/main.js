@@ -332,6 +332,7 @@ MkxxUserProfile.addEventListener("click", function () {
 });
 
 var MkxchlIconsSettings = document.querySelector(".MkxchlIconsSettings");
+var MkxBodyProfile = document.querySelector(".MkxBodyProfile");
 
 MkxchlIconsSettings.addEventListener("click", hideBottomSheet);
 
@@ -341,6 +342,7 @@ MkxchlMusic.addEventListener("click", function () {
     document.querySelector(".MkxchlBodyMusic").style.visibility = "visible";
     sheetOverlay.style.opacity = "0.2";
     sheetOverlay.style.visibility = "hidden";
+    MkxBodyProfile.classList.add("move");
     document.querySelector(".MkxchlBodyMusic").style.opacity = "1";
     document.querySelector(".MkxchlBodyMusic").style.display = "inline";
     document.querySelector(".MKxMusicBtnBack").style.visibility = "visible";
@@ -621,3 +623,7 @@ oynatD.onclick = function () {
     document.querySelector(".MkxchlPauseMusicD").style.opacity = "0";
   }
 };
+function start() {
+  document.getElementById("MkxBodyId").style.animation = "anim 2s 2s forward";
+  document.getElementById("earthlogo").style.animation = "anim2 2s 2s forward";
+}
