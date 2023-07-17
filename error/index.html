@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Not Found</title>
+    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Meta Property -->
+    <meta property="og:title" content="Marchell Kevandra - NetLinks" />
+    <meta property="og:description" content="Be Your Self!" />
+    <meta property="og:url" content="https://ems-links.netlify.app/" />
+    <meta property="og:image" content="../static/mk-assets/img/logo.jpg" />
+    <meta property="og:image:secure_url" content="../static/mk-assets/img/logo.jpg" />
+    <meta property="og:author" content="Marchell Kevandra" />
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
+    <!-- Link Rel Assets Images Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/mk-assets/img/logo.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/mk-assets/img/logo.jpg" />
+    <!-- Link Font Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,latin-ext" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <div class="header">
+          <p>
+            <a id="back-link" href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path
+                  fill="#007067"
+                  d="M11.9998836,4.09370803 L8.55809517,7.43294953 C8.23531459,7.74611298 8.23531459,8.25388736 8.55809517,8.56693769 L12,11.9062921 L9.84187871,14 L4.24208544,8.56693751 C3.91930485,8.25388719 3.91930485,7.74611281 4.24208544,7.43294936 L9.84199531,2 L11.9998836,4.09370803 Z"
+                />
+              </svg>
+              Back to our site
+            </a>
+          </p>
+          <h1>Page Not Found</h1>
+        </div>
+        <div class="body">
+          <p>Looks like you've followed a broken link or entered a URL that doesn't exist on this site.</p>
+          <hr />
+          <p>
+            If this is your site, and you weren't expecting a 404 for this path, please visit Mk
+            <a onclick="TlX()">"Page Not Found Support Guide"</a> for troubleshooting tips.
+          </p>
+          <p class="FooterMkx">Coding with Mk Codex</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        if (document.referrer && document.location.host && document.referrer.match(new RegExp("/" + document.location.host))) {
+          document.getElementById("back-link").setAttribute("href", document.referrer);
+        }
+      })();
+    </script>
+    <script src="../static/mk-assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
