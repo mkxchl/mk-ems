@@ -1,4 +1,4 @@
 [[redirects]]
-from = "/*"
-to = "mk-netlinks/error/"
+from = "/"
+to = "https://ems-links.netlify.app/error/"
 status = 404
