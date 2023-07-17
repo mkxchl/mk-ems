@@ -50,7 +50,7 @@ function YgK() {
   window.location.replace("https://instagram.com/yhoris_grvino");
 }
 function MnK() {
-  window.location.replace("https://instagram.com/chellgnzxz_");
+  window.location.replace("https://ems-links.netlify.app/mk-netlinks/");
 }
 function TyN() {
   window.location.replace("https://instagram.com/thyan_story");
