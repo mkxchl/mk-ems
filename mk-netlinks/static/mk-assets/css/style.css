@@ -7,6 +7,7 @@
   padding: 0;
   /* font-family: "Poppins", sans-serif; */
   /* font-family: "Helvetica, Arial", sans-serif; */
+  /* font-family: 'Medula One', sans-serif; */
   font-family: "Rajdhani", sans-serif;
 }
 .swal2-popup {
@@ -33,7 +34,6 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 }
-
 ::selection {
   background: purple;
   color: white;
@@ -49,93 +49,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-body.dark-theme {
-  background-image: url("https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  --title-color: hsl(var(--hue), 12%, 95%);
-  --text-color: hsl(var(--hue), 12%, 75%);
-  /*  --body-color: hsl(var(--hue), 40%, 8%); */
-  --container-color: hsl(var(--hue), 24%, 12%);
-  /* transition: 0.5s; */
-  font-family: "Rajdhani", sans-serif;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s all;
-}
-.dark-theme .box {
-  background-color: #212121;
-  border: none;
-}
-.dark-theme .box .us {
-  color: white;
-}
-.dark-theme .box h3 {
-  font-family: "Rajdhani", sans-serif;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s all;
-  text-transform: uppercase;
-}
-.dark-theme .box .MKdexsc {
-  font-family: "Rajdhani", sans-serif;
-  color: white;
-  font-weight: bold;
-  transition: 0.5s linear;
-  letter-spacing: 2px;
-}
-.dark-theme .box .list-links {
-  background: transparent;
-}
-.dark-theme .box .list-links .img-list i {
-  color: white;
-  transition: 0.5s;
-}
-.dark-theme .box .list-links .list-content {
-  font-family: "Rajdhani", sans-serif;
-  position: relative;
-  color: white;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.dark-theme .box .list-links .list-content h4 {
-  position: relative;
-  top: 1px;
-  font-family: "Rajdhani", sans-serif;
-  color: white;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.dark-theme .box .list-links:hover .img-list i {
-  color: black;
-}
-.dark-theme .box .MKdexsc {
-  color: white;
-}
-.dark-theme .bottom-sheet .content {
-  background-color: #212121;
-  transition: 0.3s all;
-  /* border: 0.5px solid #c7d0e1; */
-}
-.dark-theme .bottom-sheet .content .body {
-  color: white;
-  transition: 0.3s all;
-}
-.dark-theme .bottom-sheet .content .body .MkxBodyMusic .boxContainer .MusicBox {
-  background-color: white;
-}
-.dark-theme .MkxxSettingsBack {
-  color: white;
-}
-.dark-theme .box .MkxxFooterx p,
-.MkxCodexLink {
-  font-family: "Rajdhani", sans-serif;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s all;
+  transition: 1s;
 }
 #myAudio {
   visibility: hidden;
@@ -160,13 +74,21 @@ body.dark-theme {
   animation: pulse-animation 2s infinite;
   border-radius: 50%;
 }
-.move {
-  transform: translateX(300px);
-  opacity: 0;
+.mk-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid #05bfdb;
+  animation: wave 1s forwards linear;
+  opacity: 1;
+  box-shadow: -3px -3px 7px #05bfdb, 3px 3px 5px #05bfdb;
+  z-index: 99999;
 }
 section {
   position: relative;
-  /* background: linear-gradient(85deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 124, 1) 0%, rgba(106, 106, 106, 1) 49%); */
   min-height: 100vh;
   overflow: hidden;
   justify-content: center;
@@ -178,51 +100,43 @@ section::before {
   position: absolute;
   width: 400px;
   height: 400px;
-  /* background: black; */
   border-radius: 50%;
-  /* transform: translate(-250px, -120px); */
 }
 section::after {
   content: "";
   position: absolute;
   width: 350px;
   height: 350px;
-  /* background: black; */
   border-radius: 50%;
-  /* transform: translate(250px, 150px); */
 }
-.MkxCodexLink:before {
-  animation: glitchTop 1s linear infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+.MkxListLinksContent {
+  display: block;
+  transition: 1s linear;
 }
-.MkxCodexLink:after {
-  animation: glitchBotom 1.5s linear infinite;
-  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+
+.MkxListLinksContentGacor {
+  opacity: 0;
+  display: none;
+  transition: 1s linear;
 }
 .box {
   position: relative;
   min-width: 300px;
   min-height: 200px;
   width: 200px;
-  /* height: 300px; */
   background: #fff;
   border-radius: 10px;
   z-index: 10;
   padding: 20px;
-  /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
   border: 4px solid #c7d0e1;
   transition: 0.3s all;
   animation: fadeInUp 1s;
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, lfr)); */
 }
 .box h3 {
   color: #05bfdb;
   padding: 15px;
   font-size: 20px;
   transition: 0.5s linear;
-  /* animation: glitch 1s linear; */
 }
 .MKdexsc {
   color: grey;
@@ -241,8 +155,23 @@ section::after {
   color: #42a5f5;
   font-size: 22px;
 }
+.MkxGacorBack {
+  display: block;
+  font-size: 30px;
+  justify-content: space-between;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  padding: 10px;
+  color: #c7d0e1;
+  cursor: pointer;
+  transition: 1s;
+}
+.MkxGacorBack:hover {
+  color: #42a5f5;
+  transform: scale(1.01);
+}
 .us {
-  /* position: relative; */
   display: block;
   font-size: 30px;
   justify-content: space-between;
@@ -262,15 +191,12 @@ section::after {
   position: relative;
   height: 300px;
   transition: 1s ease-in-out;
-  /* bottom: 50px; */
 }
 .box .list-links {
   position: relative;
   display: flex;
   padding: 10px;
   background: #c7d0e1b4;
-  /* border: 0.5px solid #c7d0e1; */
-  /* box-shadow: 0 5px 15px #c7d0e1; */
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
@@ -307,7 +233,6 @@ section::after {
   bottom: -13px;
   font-size: 25px;
   border-radius: 10px;
-  /* color: #2d5cfe; */
   color: #05bfdb;
 }
 .MKNexxx {
@@ -342,7 +267,6 @@ section::after {
   font-size: 12px;
 }
 .MkxCodexLink {
-  animation: glitch 1s linear infinite;
   color: #05bfdb;
   font-weight: bold;
   cursor: pointer;
@@ -404,7 +328,6 @@ section::after {
   justify-content: flex-end;
   transition: 0.3s linear;
   z-index: 999;
-  /* transition: 0.7s 0.6s transform cubic-bezier(100, 0, 10, 1); */
 }
 .bottom-sheet.show {
   opacity: 1;
@@ -1009,6 +932,24 @@ section::after {
 
 .MusicBox5 {
   animation-name: quiet;
+}
+@keyframes wave {
+  0% {
+    width: 5px;
+    height: 5px;
+    opacity: 1;
+  }
+  90% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: 0.5s;
+  }
 }
 @keyframes sound {
   0% {
