@@ -96,9 +96,9 @@ function MkxBlog() {
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
+      window.location.replace("https://mk-links.netlify.app/");
     }
   });
-  window.location.replace("https://mk-links.netlify.app/");
 }
 function MkxSpfy() {
   let timerInterval;
@@ -119,9 +119,9 @@ function MkxSpfy() {
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
+      window.location.replace("https://open.spotify.com/playlist/1ZaVZkzQxjsSPUSnLDrL27?si=F6zRz0mdRJG-EXqyDmE-Bw");
     }
   });
-  window.location.replace("https://open.spotify.com/playlist/1ZaVZkzQxjsSPUSnLDrL27?si=F6zRz0mdRJG-EXqyDmE-Bw");
 }
 function MkxHeal() {
   let timerInterval;
@@ -142,9 +142,9 @@ function MkxHeal() {
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
+      window.location.replace("https://ems-links.netlify.app/about/mkx/heal/");
     }
   });
-  window.location.replace("https://ems-links.netlify.app/about/mkx/heal/");
 }
 function DscX() {
   let timerInterval;
@@ -165,9 +165,9 @@ function DscX() {
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
+      window.location.replace("https://discord.gg/MarchellKevandra");
     }
   });
-  window.location.replace("https://discord.gg/MarchellKevandra");
 }
 function IntX() {
   let timerInterval;
@@ -188,9 +188,9 @@ function IntX() {
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
+      window.location.replace("https://instagram.com/chellgnzxz_");
     }
   });
-  window.location.replace("https://instagram.com/chellgnzxz_");
 }
 function FbX() {
   let timerInterval;
@@ -211,9 +211,9 @@ function FbX() {
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
+      window.location.replace("https://facebook.com/marchel.ganz");
     }
   });
-  window.location.replace("https://facebook.com/marchel.ganz");
 }
 function TtX() {
   let timerInterval;
@@ -234,9 +234,9 @@ function TtX() {
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
+      window.location.replace("https://tiktok.com/@mkxchl");
     }
   });
-  window.location.replace("https://tiktok.com/@mkxchl");
 }
 function TlX() {
   let timerInterval;
@@ -257,9 +257,9 @@ function TlX() {
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
+      window.location.replace("https://t.me/Marchell_Junior");
     }
   });
-  window.location.replace("https://t.me/Marchell_Junior");
 }
 
 function Gogel() {
@@ -281,9 +281,9 @@ function Gogel() {
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       console.log("I was closed by the timer");
+      window.location.replace("https://www.google.com/search?q=Marchell+Kevandra");
     }
   });
-  window.location.replace("https://www.google.com/search?q=Marchell+Kevandra");
 }
 
 var MkxxUserProfile = document.querySelector(".MkxxUserProfile");
@@ -623,7 +623,51 @@ oynatD.onclick = function () {
     document.querySelector(".MkxchlPauseMusicD").style.opacity = "0";
   }
 };
-function start() {
-  document.getElementById("MkxBodyId").style.animation = "anim 2s 2s forward";
-  document.getElementById("earthlogo").style.animation = "anim2 2s 2s forward";
+function MkxxSettings() {
+  Swal.fire({
+    icon: "error",
+    title: "Warning!",
+    text: "Area Only 18+",
+    showCancelButton: false,
+    confirmButtonColor: "#DD6B55",
+    confirmButtonBorder: "none",
+    confirmButtonText: "Understand",
+  });
+  document.querySelector(".MkxListLinksContent").style.opacity = "0";
+  document.querySelector(".MkxListLinksContent").style.display = "none";
+  document.querySelector(".MkxListLinksContentGacor").style.opacity = "1";
+  document.querySelector(".MkxListLinksContentGacor").style.display = "block";
+  document.querySelector(".box").style.border = "none";
+  document.querySelector("body").style.backgroundImage = "url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80')";
+  document.querySelector("body").style.backgroundSize = "cover";
+  document.querySelector("body").style.backgroundPosition = "center";
+  document.querySelector("body").style.minHeight = "100vh";
+  document.querySelector("body").style.justifyContent = "center";
+  document.querySelector("body").style.alignItems = "center";
+  document.querySelector("body").style.transition = "1s";
 }
+function MKxxGacorBack() {
+  document.querySelector(".MkxListLinksContent").style.opacity = "1";
+  document.querySelector(".MkxListLinksContent").style.display = "inline";
+  document.querySelector(".MkxListLinksContentGacor").style.opacity = "0";
+  document.querySelector(".MkxListLinksContentGacor").style.display = "none";
+  document.querySelector("body").style.background = "#c7d0e1";
+  document.querySelector("body").style.transition = "1s";
+}
+
+const MkxCodexLink = document.querySelector(".MkxCodexLink"),
+  toast = document.querySelector(".toast"),
+  closeIcon = document.querySelector(".close"),
+  progress = document.querySelector(".progress");
+
+MkxCodexLink.addEventListener("click", () => {
+  toast.classList.add("active");
+
+  closeIcon.addEventListener("click", () => {
+    toast.classList.remove("active");
+
+    setTimeout(() => {
+      progress.classList.remove("active");
+    }, 300);
+  });
+});
