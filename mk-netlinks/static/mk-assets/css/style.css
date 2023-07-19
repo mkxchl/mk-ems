@@ -148,6 +148,7 @@ section::after {
 .MkBottom {
   color: #c7d0e1;
   margin-bottom: 30px;
+  opacity: 1;
 }
 .MkxVeriv {
   position: relative;
@@ -166,6 +167,11 @@ section::after {
   color: #c7d0e1;
   cursor: pointer;
   transition: 1s;
+  -webkit-animation: MkxxColorChange 1s infinite;
+  -moz-animation: MkxxColorChange 1s infinite;
+  -o-animation: MkxxColorChange 1s infinite;
+  -ms-animation: MkxxColorChange 1s infinite;
+  animation: MkxxColorChange 1s infinite;
 }
 .MkxGacorBack:hover {
   color: #42a5f5;
@@ -261,6 +267,14 @@ section::after {
 .box .list-links:hover .list-content h4,
 .box .list-links:hover .list-content p {
   color: #333;
+}
+.MKxxchlWarning {
+  /* color: red; */
+  -webkit-animation: MkxxColorChange 1s infinite;
+  -moz-animation: MkxxColorChange 1s infinite;
+  -o-animation: MkxxColorChange 1s infinite;
+  -ms-animation: MkxxColorChange 1s infinite;
+  animation: MkxxColorChange 1s infinite;
 }
 .MkxxFooterx {
   text-align: center;
@@ -932,6 +946,17 @@ section::after {
 
 .MusicBox5 {
   animation-name: quiet;
+}
+@keyframes MkxxColorChange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: red;
+  }
 }
 @keyframes wave {
   0% {
