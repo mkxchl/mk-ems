@@ -1,8 +1,8 @@
 const showModalBtn = document.querySelector(".show-modal");
 const bottomSheet = document.querySelector(".bottom-sheet");
-const sheetOverlay = bottomSheet.querySelector(".sheet-overlay");
-const sheetContent = bottomSheet.querySelector(".content");
-const dragIcon = bottomSheet.querySelector(".drag-icon");
+const sheetOverlay = document.querySelector(".sheet-overlay");
+const sheetContent = document.querySelector(".content");
+const dragIcon = document.querySelector(".drag-icon");
 
 let isDragging = false,
   startY,
@@ -11,16 +11,17 @@ let isDragging = false,
 const showBottomSheet = () => {
   bottomSheet.classList.add("show");
   document.body.style.overflowY = "hidden";
-  updateSheetHeight(65);
+  updateSheetHeight(75);
 };
 
 const updateSheetHeight = (height) => {
   sheetContent.style.height = `${height}vh`;
-  bottomSheet.classList.toggle("fullscreen", height === 65);
+  bottomSheet.classList.toggle("fullscreen", height === 75);
 };
 
 const hideBottomSheet = () => {
   bottomSheet.classList.remove("show");
+  document.body.style.background = "#c7d0e1";
   document.body.style.overflowY = "auto";
 };
 
@@ -34,7 +35,7 @@ const dragStart = (e) => {
 const dragging = (e) => {
   if (!isDragging) return;
   const delta = startY - (e.pageY || e.touches?.[0].pageY);
-  const newHeight = startHeight + (delta / window.innerHeight) * 65;
+  const newHeight = startHeight + (delta / window.innerHeight) * 75;
   updateSheetHeight(newHeight);
 };
 
@@ -42,16 +43,8 @@ const dragStop = () => {
   isDragging = false;
   bottomSheet.classList.remove("dragging");
   const sheetHeight = parseInt(sheetContent.style.height);
-  sheetHeight < 30 ? hideBottomSheet() : sheetHeight > 30 ? updateSheetHeight(65) : updateSheetHeight(65);
+  sheetHeight < 30 ? hideBottomSheet() : sheetHeight > 30 ? updateSheetHeight(75) : updateSheetHeight(75);
 };
-
-dragIcon.addEventListener("mousedown", dragStart);
-document.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
-
-dragIcon.addEventListener("touchstart", dragStart);
-document.addEventListener("touchmove", dragging);
-document.addEventListener("touchend", dragStop);
 
 sheetOverlay.addEventListener("click", hideBottomSheet);
 showModalBtn.addEventListener("click", showBottomSheet);
@@ -292,6 +285,14 @@ MkxxUserProfile.addEventListener("click", function () {
   if (document.querySelector(".MkxBodyProfile").style.visibility !== "visible") {
     sheetOverlay.style.opacity = "0.2";
     sheetOverlay.style.visibility = "visible";
+    document.querySelector("body").style.backgroundImage = "url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80')";
+    document.querySelector("body").style.backgroundSize = "cover";
+    document.querySelector("body").style.backgroundPosition = "center";
+    document.querySelector("body").style.minHeight = "100vh";
+    document.querySelector("body").style.justifyContent = "center";
+    document.querySelector("body").style.alignItems = "center";
+    document.querySelector("body").style.transition = "1s infinite";
+    document.querySelector(".box").style.border = "none";
     document.querySelector(".MkxBodyProfile").style.visibility = "visible";
     document.querySelector(".MkxBodyProfile").style.opacity = "1";
     document.querySelector(".MkxBodyProfile").style.display = "inline";
@@ -307,7 +308,18 @@ MkxxUserProfile.addEventListener("click", function () {
     document.querySelector(".MkxchlIconsSettings").style.visibility = "visible";
     document.querySelector(".MkxchlIconsSettings").style.opacity = "1";
     document.querySelector(".MkxchlIconsSettings").style.display = "inline";
+    document.querySelector(".MkMusicSpotifyContenx").style.visibility = "hidden";
+    document.querySelector(".MkMusicSpotifyContenx").style.opacity = "0";
+    document.querySelector(".MkMusicSpotifyContenx").style.display = "none";
   } else {
+    document.querySelector("body").style.backgroundImage = "url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80')";
+    document.querySelector("body").style.backgroundSize = "cover";
+    document.querySelector("body").style.backgroundPosition = "center";
+    document.querySelector("body").style.minHeight = "100vh";
+    document.querySelector("body").style.justifyContent = "center";
+    document.querySelector("body").style.alignItems = "center";
+    document.querySelector("body").style.transition = "1s infinite";
+    document.querySelector(".box").style.border = "none";
     document.querySelector(".MkxBodyProfile").style.visibility = "visible";
     document.querySelector(".MkxBodyProfile").style.opacity = "1";
     document.querySelector(".MkxBodyProfile").style.display = "inline";
@@ -343,6 +355,14 @@ MkxchlMusic.addEventListener("click", function () {
     sheetOverlay.style.opacity = "0.2";
     sheetOverlay.style.visibility = "hidden";
     MkxBodyProfile.classList.add("move");
+    document.querySelector("body").style.backgroundImage = "url('https://ems-links.netlify.app/assets/images/xchl.jpg')";
+    document.querySelector("body").style.backgroundSize = "cover";
+    document.querySelector("body").style.backgroundPosition = "center";
+    document.querySelector("body").style.minHeight = "100vh";
+    document.querySelector("body").style.justifyContent = "center";
+    document.querySelector("body").style.alignItems = "center";
+    document.querySelector("body").style.transition = "1s infinite";
+    document.querySelector(".box").style.border = "none";
     document.querySelector(".MkxchlBodyMusic").style.opacity = "1";
     document.querySelector(".MkxchlBodyMusic").style.display = "inline";
     document.querySelector(".MKxMusicBtnBack").style.visibility = "visible";
@@ -393,6 +413,14 @@ MKxMusicBtnBack.addEventListener("click", function () {
   if (document.querySelector(".MkxchlBodyMusic").style.visibility !== "hidden") {
     sheetOverlay.style.opacity = "0.2";
     sheetOverlay.style.visibility = "visible";
+    document.querySelector("body").style.backgroundImage = "url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80')";
+    document.querySelector("body").style.backgroundSize = "cover";
+    document.querySelector("body").style.backgroundPosition = "center";
+    document.querySelector("body").style.minHeight = "100vh";
+    document.querySelector("body").style.justifyContent = "center";
+    document.querySelector("body").style.alignItems = "center";
+    document.querySelector("body").style.transition = "1s infinite";
+    document.querySelector(".box").style.border = "none";
     document.querySelector(".MkxchlBodyMusic").style.visibility = "hidden";
     document.querySelector(".MkxchlBodyMusic").style.opacity = "0";
     document.querySelector(".MkxchlBodyMusic").style.display = "none";
@@ -644,7 +672,7 @@ function MkxxSettings() {
   document.querySelector("body").style.minHeight = "100vh";
   document.querySelector("body").style.justifyContent = "center";
   document.querySelector("body").style.alignItems = "center";
-  document.querySelector("body").style.transition = "1s";
+  document.querySelector("body").style.transition = "1s infinite";
 }
 function MKxxGacorBack() {
   document.querySelector(".MkxListLinksContent").style.opacity = "1";
@@ -652,8 +680,12 @@ function MKxxGacorBack() {
   document.querySelector(".MkxListLinksContentGacor").style.opacity = "0";
   document.querySelector(".MkxListLinksContentGacor").style.display = "none";
   document.querySelector("body").style.background = "#c7d0e1";
-  document.querySelector("body").style.transition = "1s";
+  document.querySelector("body").style.transition = "1s infinite";
 }
+
+var MkViewPlaylist = document.querySelector(".MkViewPlaylist");
+
+MkViewPlaylist.addEventListener("click", hideBottomSheet);
 
 const MkxCodexLink = document.querySelector(".MkxCodexLink"),
   toast = document.querySelector(".toast"),
