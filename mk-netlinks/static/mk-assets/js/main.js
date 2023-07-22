@@ -11,12 +11,12 @@ let isDragging = false,
 const showBottomSheet = () => {
   bottomSheet.classList.add("show");
   document.body.style.overflowY = "hidden";
-  updateSheetHeight(75);
+  updateSheetHeight(50);
 };
 
 const updateSheetHeight = (height) => {
   sheetContent.style.height = `${height}vh`;
-  bottomSheet.classList.toggle("fullscreen", height === 75);
+  bottomSheet.classList.toggle("fullscreen", height === 50);
 };
 
 const hideBottomSheet = () => {
@@ -35,7 +35,7 @@ const dragStart = (e) => {
 const dragging = (e) => {
   if (!isDragging) return;
   const delta = startY - (e.pageY || e.touches?.[0].pageY);
-  const newHeight = startHeight + (delta / window.innerHeight) * 75;
+  const newHeight = startHeight + (delta / window.innerHeight) * 50;
   updateSheetHeight(newHeight);
 };
 
@@ -43,7 +43,7 @@ const dragStop = () => {
   isDragging = false;
   bottomSheet.classList.remove("dragging");
   const sheetHeight = parseInt(sheetContent.style.height);
-  sheetHeight < 30 ? hideBottomSheet() : sheetHeight > 30 ? updateSheetHeight(75) : updateSheetHeight(75);
+  sheetHeight < 30 ? hideBottomSheet() : sheetHeight > 30 ? updateSheetHeight(50) : updateSheetHeight(50);
 };
 
 sheetOverlay.addEventListener("click", hideBottomSheet);
@@ -282,9 +282,11 @@ function Gogel() {
 var MkxxUserProfile = document.querySelector(".MkxxUserProfile");
 
 MkxxUserProfile.addEventListener("click", function () {
-  if (document.querySelector(".MkxBodyProfile").style.visibility !== "visible") {
+  if (document.querySelector(".MkxProfileContentx").style.opacity !== "1") {
     sheetOverlay.style.opacity = "0.2";
     sheetOverlay.style.visibility = "visible";
+    document.querySelector(".MkxProfileContentx").style.opacity = "1";
+    document.querySelector(".MkxProfileContentx").style.display = "inline";
     document.querySelector("body").style.backgroundImage = "url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80')";
     document.querySelector("body").style.backgroundSize = "cover";
     document.querySelector("body").style.backgroundPosition = "center";
