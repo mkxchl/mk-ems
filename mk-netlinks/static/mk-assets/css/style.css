@@ -74,6 +74,9 @@ body {
   animation: pulse-animation 2s infinite;
   border-radius: 50%;
 }
+.bx {
+  font-weight: 100;
+}
 .mk-cursor {
   position: absolute;
   top: 0;
@@ -423,23 +426,31 @@ section::after {
   /* cursor: grab; */
   user-select: none;
   padding: 15px;
-  margin-top: -15px;
+  /* margin-top: -15px; */
 }
 .header .drag-icon span {
+  position: relative;
   height: 4px;
   width: 40px;
   display: block;
   background: #c7d0e1;
   border-radius: 50px;
+  bottom: 30px;
 }
 .bottom-sheet .body {
+  position: relative;
+  /* width: 100%; */
+  /* right: 10px; */
   height: 100%;
   overflow-y: auto;
-  padding: 15px 0 40px;
+  /* padding: 10px; */
+  bottom: 30px;
+  /* right: 50px; */
   scrollbar-width: none;
   justify-content: center;
   align-items: center;
   transition: 0.3s all;
+  z-index: -1;
 }
 .bottom-sheet .body::-webkit-scrollbar {
   width: 0;
@@ -451,6 +462,135 @@ section::after {
 .bottom-sheet .body p {
   margin-top: 20px;
   font-size: 1.05rem;
+}
+.MkxProfileContentx {
+  display: none;
+  opacity: 0;
+  transition: 0.5s linear;
+}
+.MKxProfileUserPagesx {
+  display: none;
+  opacity: 0;
+  transition: 0.5s linear;
+}
+.ProfileContentxList {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  right: 30px;
+  background: white;
+  width: 85%;
+  bottom: 5px;
+  transition: 0.5s all;
+}
+.ProfileContentxList .ProfileContentxListIcons {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin-right: 5px;
+}
+.ProfileContentxList .ProfileContentxListIcons i {
+  position: relative;
+  object-fit: cover;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  left: 10px;
+  font-size: 25px;
+  font-weight: 300;
+  border-radius: 10px;
+  top: 2px;
+  color: #000;
+  transition: 0.5s all;
+}
+.ProfileContentxList .ProfileContentxListText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ProfileContentxList .ProfileContentxListText h4 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2em;
+  font-weight: 500;
+  transition: 0.5s all;
+}
+.MKxProfileUserPagesxContent {
+  width: 80%;
+}
+.MKxProfileUserPagesxContent .MkxProfileHeaderTittle {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+.MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: -20px;
+}
+.MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText i {
+  position: relative;
+  display: flex;
+  font-size: 25px;
+  top: 18px;
+}
+.MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText h4 {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  line-height: 1.1em;
+  font-weight: 500;
+  left: 40px;
+  bottom: 10px;
+  transition: 0.5s all;
+}
+.MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText p {
+  position: relative;
+  font-size: 0.9em;
+  left: 40px;
+  bottom: 30px;
+}
+.MkxProfileContentSupportx {
+  opacity: 0;
+  display: none;
+  transition: 0.5s all;
+}
+.MkxProfileSupportxContent {
+  width: 90%;
+  display: flex;
+  margin-bottom: 10px;
+}
+.MkxProfileSupportHeaderTittle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.MkxProfileSupportxContent .MkxProfileSupportxContentImages img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 10px;
+}
+.MkxProfileSupportxContent .MkxProfileSupportxContentText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.MkxProfileSupportxContent .MkxProfileSupportxContentText h4 {
+  position: relative;
+  font-family: "Rajdhani", sans-serif;
+  line-height: 1.1em;
+  font-weight: 600;
+  left: 20px;
+  bottom: 3px;
+  transition: 0.5s all;
 }
 .MkDragListTittle {
   padding: 5px;
@@ -962,9 +1102,9 @@ section::after {
   width: 70px;
   height: 70px;
   left: 47%;
-  bottom: 5%;
+  top: 2%;
   border-radius: 50%;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
 }
 .MkMusicSpotifyContenx h3 {
   text-align: center;
@@ -994,6 +1134,8 @@ section::after {
   font-weight: bold;
   margin-bottom: -5px;
   text-align: center;
+  cursor: pointer;
+  transition: 0.3s linear;
 }
 .MkButtonSpotifyMusic .MkViewPlaylist {
   position: relative;
@@ -1008,6 +1150,8 @@ section::after {
   border-radius: 10px;
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
+  transition: 0.3s linear;
 }
 .MkButtonSpotifyMusic .MkViewProfile:hover {
   background-color: black;
@@ -1553,6 +1697,136 @@ input[type="range"] {
   .icons a {
     position: relative;
     left: 50px;
+  }
+  .MkxProfileContentx {
+    display: none;
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  .MKxProfileUserPagesx {
+    display: none;
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  .ProfileContentxList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    right: 30px;
+    background: white;
+    width: 85%;
+    bottom: 5px;
+    transition: 0.5s all;
+  }
+  .ProfileContentxList .ProfileContentxListIcons {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 5px;
+  }
+  .ProfileContentxList .ProfileContentxListIcons i {
+    position: relative;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 10px;
+    top: 2px;
+    color: #000;
+    transition: 0.5s all;
+  }
+  .ProfileContentxList .ProfileContentxListText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ProfileContentxList .ProfileContentxListText h4 {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2em;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .MKxProfileUserPagesxContent {
+    width: 80%;
+  }
+  .MKxProfileUserPagesxContent .MkxProfileHeaderTittle {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -20px;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText i {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    top: 18px;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText h4 {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    line-height: 1.1em;
+    font-weight: 500;
+    left: 40px;
+    bottom: 10px;
+    transition: 0.5s all;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText p {
+    position: relative;
+    font-size: 0.9em;
+    left: 40px;
+    bottom: 30px;
+  }
+  .MkxProfileContentSupportx {
+    opacity: 0;
+    display: none;
+    transition: 0.5s all;
+  }
+  .MkxProfileSupportxContent {
+    width: 90%;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .MkxProfileSupportHeaderTittle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .MkxProfileSupportxContent .MkxProfileSupportxContentImages img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: 10px;
+  }
+  .MkxProfileSupportxContent .MkxProfileSupportxContentText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MkxProfileSupportxContent .MkxProfileSupportxContentText h4 {
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    line-height: 1.1em;
+    font-weight: 600;
+    left: 20px;
+    bottom: 3px;
+    transition: 0.5s all;
   }
   .MkxBodyProfile {
     font-family: "Poppins", sans-serif;
@@ -2553,6 +2827,136 @@ input[type="range"] {
     color: #fff;
     transition: 0.3s linear;
   }
+  .MkxProfileContentx {
+    display: none;
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  .MKxProfileUserPagesx {
+    display: none;
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  .ProfileContentxList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    right: 30px;
+    background: white;
+    width: 85%;
+    bottom: 5px;
+    transition: 0.5s all;
+  }
+  .ProfileContentxList .ProfileContentxListIcons {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 5px;
+  }
+  .ProfileContentxList .ProfileContentxListIcons i {
+    position: relative;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 10px;
+    top: 2px;
+    color: #000;
+    transition: 0.5s all;
+  }
+  .ProfileContentxList .ProfileContentxListText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ProfileContentxList .ProfileContentxListText h4 {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2em;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .MKxProfileUserPagesxContent {
+    width: 80%;
+  }
+  .MKxProfileUserPagesxContent .MkxProfileHeaderTittle {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -20px;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText i {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    top: 18px;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText h4 {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    line-height: 1.1em;
+    font-weight: 500;
+    left: 40px;
+    bottom: 10px;
+    transition: 0.5s all;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText p {
+    position: relative;
+    font-size: 0.9em;
+    left: 40px;
+    bottom: 30px;
+  }
+  .MkxProfileContentSupportx {
+    opacity: 0;
+    display: none;
+    transition: 0.5s all;
+  }
+  .MkxProfileSupportxContent {
+    width: 90%;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .MkxProfileSupportHeaderTittle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .MkxProfileSupportxContent .MkxProfileSupportxContentImages img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: 10px;
+  }
+  .MkxProfileSupportxContent .MkxProfileSupportxContentText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MkxProfileSupportxContent .MkxProfileSupportxContentText h4 {
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    line-height: 1.1em;
+    font-weight: 600;
+    left: 20px;
+    bottom: 3px;
+    transition: 0.5s all;
+  }
 }
 @media screen and (max-width: 360px) {
   .box {
@@ -2586,6 +2990,136 @@ input[type="range"] {
   .widget {
     position: relative;
     margin: 21px;
+  }
+  .MkxProfileContentx {
+    display: none;
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  .MKxProfileUserPagesx {
+    display: none;
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  .ProfileContentxList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    right: 30px;
+    background: white;
+    width: 85%;
+    bottom: 5px;
+    transition: 0.5s all;
+  }
+  .ProfileContentxList .ProfileContentxListIcons {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 5px;
+  }
+  .ProfileContentxList .ProfileContentxListIcons i {
+    position: relative;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 10px;
+    top: 2px;
+    color: #000;
+    transition: 0.5s all;
+  }
+  .ProfileContentxList .ProfileContentxListText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ProfileContentxList .ProfileContentxListText h4 {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2em;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .MKxProfileUserPagesxContent {
+    width: 80%;
+  }
+  .MKxProfileUserPagesxContent .MkxProfileHeaderTittle {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -20px;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText i {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    top: 18px;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText h4 {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    line-height: 1.1em;
+    font-weight: 500;
+    left: 40px;
+    bottom: 10px;
+    transition: 0.5s all;
+  }
+  .MKxProfileUserPagesxContent .MKxProfileUserPagesxContentText p {
+    position: relative;
+    font-size: 0.9em;
+    left: 40px;
+    bottom: 30px;
+  }
+  .MkxProfileContentSupportx {
+    opacity: 0;
+    display: none;
+    transition: 0.5s all;
+  }
+  .MkxProfileSupportxContent {
+    width: 90%;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .MkxProfileSupportHeaderTittle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .MkxProfileSupportxContent .MkxProfileSupportxContentImages img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: 10px;
+  }
+  .MkxProfileSupportxContent .MkxProfileSupportxContentText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MkxProfileSupportxContent .MkxProfileSupportxContentText h4 {
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    line-height: 1.1em;
+    font-weight: 600;
+    left: 20px;
+    bottom: 3px;
+    transition: 0.5s all;
   }
   .music-details {
     position: relative;
@@ -3059,9 +3593,9 @@ input[type="range"] {
     width: 70px;
     height: 70px;
     left: 38%;
-    bottom: 5%;
+    top: 1%;
     border-radius: 50%;
-    margin-bottom: -10px;
+    margin-bottom: 5px;
   }
   .MkMusicSpotifyContenx h3 {
     text-align: center;
@@ -3069,6 +3603,11 @@ input[type="range"] {
   }
   .MkMusicSpotifyContenx p {
     text-align: center;
+  }
+  .MkMusicSpotifyContenx .MkListens {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
   }
   .MkMusicSpotifyContenx .MkButtonSpotifyMusic {
     position: relative;
