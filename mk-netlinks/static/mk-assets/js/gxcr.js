@@ -98,21 +98,12 @@ function MkxSpotifyProfile() {
 function MkxSpotifyMusic() {
   bottomSheet.classList.add("show");
   updateSheetHeight(40);
-  document.querySelector(".MkxchlMusic").style.visibility = "hidden";
-  document.querySelector(".MkxchlMusic").style.opacity = "0";
-  document.querySelector(".MkxchlMusic").style.display = "none";
-  document.querySelector(".MkxchlIconsSettings").style.visibility = "hidden";
-  document.querySelector(".MkxchlIconsSettings").style.opacity = "0";
-  document.querySelector(".MkxchlIconsSettings").style.display = "none";
-  document.querySelector(".MkxchlBodyMusic").style.visibility = "hidden";
-  document.querySelector(".MkxchlBodyMusic").style.opacity = "0";
-  document.querySelector(".MkxchlBodyMusic").style.display = "none";
-  document.querySelector(".MkxBodyProfile").style.visibility = "hidden";
-  document.querySelector(".MkxBodyProfile").style.opacity = "0";
-  document.querySelector(".MkxBodyProfile").style.display = "none";
-  document.querySelector(".MKxMusicBtnBack").style.visibility = "hidden";
-  document.querySelector(".MKxMusicBtnBack").style.opacity = "0";
-  document.querySelector(".MKxMusicBtnBack").style.display = "none";
+  document.querySelector(".MKxProfileUserPagesx").style.opacity = "0";
+  document.querySelector(".MKxProfileUserPagesx").style.display = "none";
+  document.querySelector(".MkxProfileContentx").style.opacity = "0";
+  document.querySelector(".MkxProfileContentx").style.display = "none";
+  document.querySelector(".MkxProfileContentSupportx").style.opacity = "0";
+  document.querySelector(".MkxProfileContentSupportx").style.display = "none";
   document.querySelector(".MkMusicSpotifyContenx").style.visibility = "visible";
   document.querySelector(".MkMusicSpotifyContenx").style.opacity = "1";
   document.querySelector(".MkMusicSpotifyContenx").style.display = "inline";
@@ -121,8 +112,78 @@ function MkxSpotifyMusic() {
   document.querySelector("body").style.transition = "1s infinite";
 }
 var MkxSongsA = document.getElementById("MkxSongsA");
-function MkSpotifyMusicPlay() {
-  if (MkxSongsA.paused) {
-    MkxSongsA.play();
-  }
+function MkSpotifyMusicxXx() {
+  bottomSheet.classList.add("show");
+  updateSheetHeight(60);
+  document.querySelector(".MkxProfileContentx").style.opacity = "0";
+  document.querySelector(".MkxProfileContentx").style.display = "none";
+  document.querySelector(".MkMusicSpotifyContenx").style.opacity = "0";
+  document.querySelector(".MkMusicSpotifyContenx").style.display = "none";
+  document.querySelector(".MkMusicSpotifyContenx").style.visibility = "hidden";
+  document.querySelector(".MKxProfileUserPagesx").style.opacity = "1";
+  document.querySelector(".MKxProfileUserPagesx").style.display = "inline";
+}
+/// Function ComingSoon ///
+
+var MkxProfileSettingsx = document.querySelector(".MkxProfileSettingsx");
+var MkxProfileLanguagex = document.querySelector(".MkxProfileLanguagex");
+var MkxProfileSharex = document.querySelector(".MkxProfileSharex");
+
+MkxProfileSettingsx.addEventListener("click", hideBottomSheet);
+MkxProfileLanguagex.addEventListener("click", hideBottomSheet);
+MkxProfileSharex.addEventListener("click", hideBottomSheet);
+
+function MkxProfileSettingsBtn() {
+  let timerInterval;
+  Swal.fire({
+    icon: "error",
+    timer: 5000,
+    timerProgressBar: true,
+    title: "Warning!",
+    text: "Sedang Dalam Perbaikan",
+    showCancelButton: false,
+    showConfirmButton: false,
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+}
+
+/// Function UserPageProfile ///
+
+var MKxProfileUserPagesx = document.querySelector(".MKxProfileUserPagesx");
+var ProfileContentxList = document.querySelector(".ProfileContentxList");
+
+function MkxProfileUserPages() {
+  bottomSheet.classList.add("show");
+  updateSheetHeight(60);
+  document.querySelector(".MkxProfileContentx").style.opacity = "0";
+  document.querySelector(".MkxProfileContentx").style.display = "none";
+  document.querySelector(".MkMusicSpotifyContenx").style.opacity = "0";
+  document.querySelector(".MkMusicSpotifyContenx").style.display = "none";
+  document.querySelector(".MkMusicSpotifyContenx").style.visibility = "hidden";
+  document.querySelector(".MKxProfileUserPagesx").style.opacity = "1";
+  document.querySelector(".MKxProfileUserPagesx").style.display = "inline";
+  document.querySelector(".MkxProfileContentSupportx").style.opacity = "0";
+  document.querySelector(".MkxProfileContentSupportx").style.display = "none";
+}
+
+/// Function SupportPageProfile ///
+
+function MkxProfileSupportxBtn() {
+  bottomSheet.classList.add("show");
+  updateSheetHeight(35);
+  document.querySelector(".MkxProfileContentx").style.opacity = "0";
+  document.querySelector(".MkxProfileContentx").style.display = "none";
+  document.querySelector(".MkMusicSpotifyContenx").style.opacity = "0";
+  document.querySelector(".MkMusicSpotifyContenx").style.display = "none";
+  document.querySelector(".MkMusicSpotifyContenx").style.visibility = "hidden";
+  document.querySelector(".MKxProfileUserPagesx").style.opacity = "0";
+  document.querySelector(".MKxProfileUserPagesx").style.display = "none";
+  document.querySelector(".MkxProfileContentSupportx").style.opacity = "1";
+  document.querySelector(".MkxProfileContentSupportx").style.display = "inline";
 }
