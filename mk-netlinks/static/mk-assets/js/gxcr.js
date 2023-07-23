@@ -128,10 +128,12 @@ function MkSpotifyMusicxXx() {
 var MkxProfileSettingsx = document.querySelector(".MkxProfileSettingsx");
 var MkxProfileLanguagex = document.querySelector(".MkxProfileLanguagex");
 var MkxProfileSharex = document.querySelector(".MkxProfileSharex");
+var MkViewPlaylist = document.querySelector(".MkViewPlaylist");
 
 MkxProfileSettingsx.addEventListener("click", hideBottomSheet);
 MkxProfileLanguagex.addEventListener("click", hideBottomSheet);
 MkxProfileSharex.addEventListener("click", hideBottomSheet);
+MkViewPlaylist.addEventListener("click", hideBottomSheet);
 
 function MkxProfileSettingsBtn() {
   let timerInterval;
@@ -187,3 +189,8 @@ function MkxProfileSupportxBtn() {
   document.querySelector(".MkxProfileContentSupportx").style.opacity = "1";
   document.querySelector(".MkxProfileContentSupportx").style.display = "inline";
 }
+
+/// MkSpotifyContent ///
+
+var MkViewPlaylist = document.querySelector(".MkViewPlaylist");
+MkViewPlaylist.addEventListener("click", hideBottomSheet);
