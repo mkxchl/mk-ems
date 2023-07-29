@@ -41,7 +41,8 @@
 #MkxSongsA,
 #MkxSongsB,
 #MkxSongsC,
-#MkxSongsD {
+#MkxSongsD,
+#MkxSongGanz {
   visibility: hidden;
   opacity: 0;
   display: none;
@@ -52,12 +53,14 @@ body {
   align-items: center;
   background-image: url("https://images.unsplash.com/photo-1614522562493-455408036ea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
   height: 300px;
+  background-size: cover;
+  background-position: center;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  transition: 1s linear;
+  transition: 1s ease;
 }
 .MkSectionOne {
   position: relative;
@@ -67,7 +70,6 @@ body {
   min-height: 100vh;
   align-items: center;
   transition: 1s linear;
-  animation: fadeInUp 1s;
 }
 .MkSectionTwo {
   opacity: 0;
@@ -75,8 +77,7 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  transition: 0.3s linear;
-  animation: fadeInUp 1s;
+  transition: 1s linear;
 }
 /* section {
   position: relative;
@@ -88,64 +89,58 @@ body {
 } */
 .MKSectionPage {
   position: relative;
-  min-width: 300px;
-  height: 50px;
-  width: 200px;
+  height: 70px;
+  width: 70px;
   background: #fff;
   border-radius: 10px;
   z-index: 10;
-  padding: 20px;
-  transition: 0.3s all;
+  padding: 10px;
+  transition: 1s linear;
   animation: fadeInUp 1s;
+}
+.MKSectionPage.active {
+  position: relative;
+  transition: 1s linear;
+  opacity: 0;
 }
 .MKSectionPage .MKSectionContentList {
   position: relative;
+  width: 70px;
+  height: 70px;
   display: flex;
   border-radius: 10px;
-  margin: 10px;
   cursor: pointer;
   transition: 1s ease-in-out;
   overflow: hidden;
-  height: 70px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  bottom: 17px;
+  justify-content: center;
+  align-items: center;
 }
 .MKSectionPage .MKSectionContentList .MkSectionImageList {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 .MKSectionContentList .MkSectionImageList img {
   position: absolute;
   object-fit: cover;
-  padding: 10px;
   width: 100%;
   height: 100%;
   font-size: 25px;
   border-radius: 50%;
   color: #05bfdb;
 }
-.MKSectionPage .MkSectionListContentText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.MKSectionPage .MkSectionListContentText h4 {
-  position: relative;
-  font-weight: 700;
-  font-size: 20px;
-  transition: 0.5s;
-  left: 20px;
-  color: #2d5cfe;
-}
-.MKSectionPage .MkSectionListContentText p {
-  position: relative;
-  font-weight: 300;
-  font-size: 15px;
-  transition: 0.5s;
-  left: 20px;
-  bottom: 5px;
+.mk-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid #05bfdb;
+  animation: wave 1s forwards linear;
+  opacity: 1;
+  box-shadow: -3px -3px 7px #05bfdb, 3px 3px 5px #05bfdb;
+  z-index: 99999;
 }
 .box {
   position: relative;
@@ -157,8 +152,7 @@ body {
   z-index: 10;
   padding: 20px;
   border: 4px solid #c7d0e1;
-  transition: 0.3s all;
-  animation: fadeInUp 1s;
+  transition: 0.5s linear;
 }
 .box h3 {
   color: #05bfdb;
@@ -185,7 +179,6 @@ body {
   font-size: 22px;
 }
 .us {
-  display: block;
   font-size: 30px;
   justify-content: space-between;
   position: absolute;
@@ -194,7 +187,7 @@ body {
   padding: 10px;
   color: #c7d0e1;
   cursor: pointer;
-  transition: 1s;
+  transition: 1s linear;
 }
 .us:hover {
   color: #42a5f5;
@@ -775,6 +768,46 @@ body {
   transition: 0.5s ease;
   background: red;
 }
+.MKOpenMenuApkModder {
+  position: relative;
+  opacity: 1;
+}
+.MKOpenMenuApkModder .MkOpenMenuApkListContents {
+  position: relative;
+}
+.MKOpenMenuApkModder .MkOpenMenuApkListContents .MkOpenMenuApkContent {
+  position: relative;
+  padding: 10px;
+  margin-left: 20px;
+  display: flex;
+}
+.MkOpenMenuApkContent .MkOpenApkMenuImageList i {
+  position: relative;
+  font-size: 35px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 35px;
+  color: #f5c242;
+  transition: 0.5s linear;
+}
+.MkOpenMenuApkContent .MkOpenApkMenuImageList h4 {
+  position: relative;
+  width: 10px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  display: flex;
+  left: 21px;
+  top: 5px;
+  display: flex;
+  font-size: 15px;
+}
+.MkOpenApkMenuImageList:hover i {
+  background: red;
+  transition: 0.5s linear;
+}
 
 /* Media Responsive Mobile */
 
@@ -1201,6 +1234,46 @@ body {
     transition: 0.5s ease;
     background: red;
   }
+  .MKOpenMenuApkModder {
+    position: relative;
+    opacity: 1;
+  }
+  .MKOpenMenuApkModder .MkOpenMenuApkListContents {
+    position: relative;
+  }
+  .MKOpenMenuApkModder .MkOpenMenuApkListContents .MkOpenMenuApkContent {
+    position: relative;
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+  }
+  .MkOpenMenuApkContent .MkOpenApkMenuImageList i {
+    position: relative;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 50px;
+    color: #f5c242;
+    transition: 0.5s linear;
+  }
+  .MkOpenMenuApkContent .MkOpenApkMenuImageList h4 {
+    position: relative;
+    width: 10px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    display: flex;
+    left: 21px;
+    top: 5px;
+    display: flex;
+    font-size: 15px;
+  }
+  .MkOpenApkMenuImageList:hover i {
+    background: red;
+    transition: 0.5s linear;
+  }
 }
 
 /* Widht 393 */
@@ -1452,12 +1525,13 @@ body {
   }
   .MKUserSettingBtnBackPassed i {
     position: relative;
-    left: 260px;
+    left: 280px;
     bottom: 30px;
     font-size: 30px;
     color: black;
     border-radius: 50%;
     z-index: -9;
+    padding: 10px;
   }
   .MkUserSettingContentList .MkxTittleSettingPage {
     position: relative;
@@ -1615,7 +1689,7 @@ body {
   .MkOpenLinkListContent .MkOpenLinkImageTextList h4 {
     position: relative;
     font-size: 15px;
-    left: 8px;
+    left: 13px;
   }
   .MkOpenLinkListContent .MkOpenLinkImageTextList h3 {
     position: relative;
@@ -1626,6 +1700,46 @@ body {
     transition: 0.5s ease;
     background: red;
   }
+  .MKOpenMenuApkModder {
+    position: relative;
+    opacity: 1;
+  }
+  .MKOpenMenuApkModder .MkOpenMenuApkListContents {
+    position: relative;
+  }
+  .MKOpenMenuApkModder .MkOpenMenuApkListContents .MkOpenMenuApkContent {
+    position: relative;
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+  }
+  .MkOpenMenuApkContent .MkOpenApkMenuImageList i {
+    position: relative;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 53px;
+    color: #f5c242;
+    transition: 0.5s linear;
+  }
+  .MkOpenMenuApkContent .MkOpenApkMenuImageList h4 {
+    position: relative;
+    width: 10px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    display: flex;
+    left: 21px;
+    top: 5px;
+    display: flex;
+    font-size: 15px;
+  }
+  .MkOpenApkMenuImageList:hover i {
+    background: red;
+    transition: 0.5s linear;
+  }
 }
 
 /* Width 360 */
@@ -1635,6 +1749,10 @@ body {
     min-width: 280px;
     transition: 0.7s 0.6s transform cubic-bezier(0.86, 0, 0.07, 1);
   }
+  /* .MKSectionPage {
+    min-width: 270px;
+    transition: 0.7s 0.6s transform cubic-bezier(0.86, 0, 0.07, 1);
+  } */
   .box .list-links .footer {
     justify-content: center;
     text-align: center;
@@ -1887,12 +2005,12 @@ body {
   }
   .MKUserSettingBtnBackPassed i {
     position: relative;
-    left: 260px;
+    left: 245px;
     bottom: 30px;
     font-size: 30px;
     color: black;
     border-radius: 50%;
-    z-index: -9;
+    padding: 10px;
   }
   .MkUserSettingContentList .MkxTittleSettingPage {
     position: relative;
@@ -2062,6 +2180,46 @@ body {
     transition: 0.5s ease;
     background: red;
   }
+  .MKOpenMenuApkModder {
+    position: relative;
+    opacity: 1;
+  }
+  .MKOpenMenuApkModder .MkOpenMenuApkListContents {
+    position: relative;
+  }
+  .MKOpenMenuApkModder .MkOpenMenuApkListContents .MkOpenMenuApkContent {
+    position: relative;
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+  }
+  .MkOpenMenuApkContent .MkOpenApkMenuImageList i {
+    position: relative;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 35px;
+    color: #f5c242;
+    transition: 0.5s linear;
+  }
+  .MkOpenMenuApkContent .MkOpenApkMenuImageList h4 {
+    position: relative;
+    width: 10px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    display: flex;
+    left: 21px;
+    top: 5px;
+    display: flex;
+    font-size: 15px;
+  }
+  .MkOpenApkMenuImageList:hover i {
+    background: red;
+    transition: 0.5s linear;
+  }
 }
 @keyframes gradient {
   0% {
@@ -2072,5 +2230,33 @@ body {
   }
   100% {
     background-position: 0% 0%;
+  }
+}
+@keyframes wave {
+  0% {
+    width: 5px;
+    height: 5px;
+    opacity: 1;
+  }
+  90% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 500px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
