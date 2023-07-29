@@ -3,7 +3,7 @@ function MkxxGacorA() {
   let timerInterval;
   Swal.fire({
     timer: 5000,
-    position: "top-center",
+    position: "top-start",
     timerProgressBar: true,
     didOpen: () => {
       Swal.showLoading();
@@ -98,20 +98,21 @@ function MkxxGacorD() {
 function MkOpenSectionTwoxx() {
   var MkSectionTwo = document.querySelector(".MkSectionTwo");
   var MkSectionOne = document.querySelector(".MkSectionOne");
+  var MkxSongGanz = document.getElementById("MkxSongGanz");
   setTimeout("document.querySelector('.MkSectionTwo').style.opacity='1'", 500);
   setTimeout("document.querySelector('.MkSectionTwo').style.transition='1s linear'", 500);
-  setTimeout("document.querySelector('.MkSectionTwo').style.animation='fadeInUp 1s'", 500);
   setTimeout("document.querySelector('.MkSectionOne').style.opacity='0'", 500);
   setTimeout("document.querySelector('.MkSectionOne').style.transition='1s linear'", 500);
   document.querySelector("body").style.background = "#c7d0e1";
   MkSectionTwo.style.display = "flex";
   MkSectionOne.style.display = "none";
   MkSectionOne.style.transition = "1s linear";
+  MkxSongGanz.play(), (MkxSongGanz.volume = 0.15);
 }
 
 function MkOpenMenu() {
   bottomSheet.classList.add("show");
-  updateSheetHeight(50);
+  updateSheetHeight(58);
   document.querySelector(".MkxProfileContentx").style.display = "inline";
   document.querySelector(".MkxProfileContentx").style.opacity = "1";
   document.querySelector(".MKxProfileUserPagesx").style.display = "none";
@@ -124,6 +125,14 @@ function MkOpenMenu() {
   document.querySelector(".MkUserSettingContentList").style.opacity = "0";
   document.querySelector(".MkContactPagesContent").style.display = "none";
   document.querySelector(".MkContactPagesContent").style.opacity = "0";
+  document.querySelector("body").style.backgroundImage = "url('https://images.unsplash.com/photo-1614522562493-455408036ea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)";
+  document.querySelector("body").style.transition = "1s linear";
+  document.querySelector("body").style.backgroundSize = "cover";
+  document.querySelector(".box").style.border = "none";
+  document.querySelector(".MKOpenMenuApkModder").style.opacity = "0";
+  document.querySelector(".MKOpenMenuApkModder").style.display = "none";
+  document.querySelector(".MkOpenLink").style.opacity = "0";
+  document.querySelector(".MkOpenLink").style.display = "none";
 }
 
 function MkxSpotifyProfile() {
@@ -157,7 +166,7 @@ function MkxSpotifyMusic() {
 var MkxSongsA = document.getElementById("MkxSongsA");
 function MkSpotifyMusicxXx() {
   bottomSheet.classList.add("show");
-  updateSheetHeight(55);
+  updateSheetHeight(57);
   document.querySelector(".MkxProfileContentx").style.opacity = "0";
   document.querySelector(".MkxProfileContentx").style.display = "none";
   document.querySelector(".MkMusicSpotifyContenx").style.opacity = "0";
@@ -205,7 +214,7 @@ var ProfileContentxList = document.querySelector(".ProfileContentxList");
 
 function MkxProfileUserPages() {
   bottomSheet.classList.add("show");
-  updateSheetHeight(55);
+  updateSheetHeight(57);
   document.querySelector(".MkxProfileContentx").style.opacity = "0";
   document.querySelector(".MkxProfileContentx").style.display = "none";
   document.querySelector(".MkMusicSpotifyContenx").style.opacity = "0";
@@ -260,6 +269,8 @@ function MkxProfileSupportxBtn() {
   document.querySelector(".MkContactPagesContent").style.opacity = "0";
   document.querySelector(".MkOpenLink").style.opacity = "0";
   document.querySelector(".MkOpenLink").style.display = "none";
+  document.querySelector(".MKOpenMenuApkModder").style.opacity = "0";
+  document.querySelector(".MKOpenMenuApkModder").style.display = "none";
 }
 
 /// MkxContactPages ///
@@ -308,7 +319,7 @@ function MkxUserSettingsPages() {
 }
 function MkxUserSettingBtnCallBack() {
   bottomSheet.classList.add("show");
-  updateSheetHeight(50);
+  updateSheetHeight(60);
   document.querySelector(".MkxProfileContentx").style.display = "inline";
   document.querySelector(".MkxProfileContentx").style.opacity = "1";
   document.querySelector(".MKxProfileUserPagesx").style.display = "none";
@@ -319,6 +330,29 @@ function MkxUserSettingBtnCallBack() {
   document.querySelector(".MkMusicSpotifyContenx").style.opacity = "0";
   document.querySelector(".MkUserSettingContentList").style.display = "none";
   document.querySelector(".MkUserSettingContentList").style.opacity = "0";
+  document.querySelector(".MkContactPagesContent").style.display = "none";
+  document.querySelector(".MkContactPagesContent").style.opacity = "0";
+  document.querySelector(".MkOpenLink").style.opacity = "0";
+  document.querySelector(".MkOpenLink").style.display = "none";
+}
+
+/// OpenMenuApkModder ///
+
+function OpenMenuApkModder() {
+  bottomSheet.classList.add("show");
+  updateSheetHeight(35);
+  document.querySelector(".MKOpenMenuApkModder").style.opacity = "1";
+  document.querySelector(".MKOpenMenuApkModder").style.display = "inline";
+  document.querySelector(".MkUserSettingContentList").style.display = "none";
+  document.querySelector(".MkUserSettingContentList").style.opacity = "0";
+  document.querySelector(".MkxProfileContentx").style.display = "none";
+  document.querySelector(".MkxProfileContentx").style.opacity = "0";
+  document.querySelector(".MKxProfileUserPagesx").style.display = "none";
+  document.querySelector(".MKxProfileUserPagesx").style.opacity = "0";
+  document.querySelector(".MkxProfileContentSupportx").style.display = "none";
+  document.querySelector(".MkxProfileContentSupportx").style.opacity = "0";
+  document.querySelector(".MkMusicSpotifyContenx").style.display = "none";
+  document.querySelector(".MkMusicSpotifyContenx").style.opacity = "0";
   document.querySelector(".MkContactPagesContent").style.display = "none";
   document.querySelector(".MkContactPagesContent").style.opacity = "0";
   document.querySelector(".MkOpenLink").style.opacity = "0";
