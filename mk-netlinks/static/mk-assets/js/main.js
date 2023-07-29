@@ -309,4 +309,6 @@ MkxxUserProfile.addEventListener("click", function () {
   document.querySelector(".MkContactPagesContent").style.opacity = "0";
   document.querySelector(".MkOpenLink").style.opacity = "0";
   document.querySelector(".MkOpenLink").style.display = "none";
+  document.querySelector(".MKOpenMenuApkModder").style.opacity = "0";
+  document.querySelector(".MKOpenMenuApkModder").style.display = "none";
 });
