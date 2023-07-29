@@ -589,17 +589,22 @@ body {
 }
 .MkUserSettingContentList .MKUserSettingBtnBackPassed {
   position: relative;
-  padding: 20px;
+  cursor: pointer;
   transition: 0.5s linear;
 }
 .MKUserSettingBtnBackPassed i {
   position: relative;
-  left: 260px;
-  bottom: 30px;
+  left: 1120px;
+  bottom: 20px;
   font-size: 30px;
   color: black;
   border-radius: 50%;
-  z-index: -9;
+  cursor: pointer;
+  padding: 10px;
+}
+.MKUserSettingBtnBackPassed h4 {
+  position: relative;
+  left: -5px;
 }
 .MkUserSettingContentList .MkxTittleSettingPage {
   position: relative;
@@ -1054,17 +1059,20 @@ body {
   }
   .MkUserSettingContentList .MKUserSettingBtnBackPassed {
     position: relative;
-    padding: 20px;
     transition: 0.5s linear;
+    cursor: pointer;
   }
   .MKUserSettingBtnBackPassed i {
     position: relative;
-    left: 290px;
+    left: 300px;
     bottom: 30px;
     font-size: 30px;
     color: black;
     border-radius: 50%;
-    z-index: -9;
+  }
+  .MKUserSettingBtnBackPassed h4 {
+    position: relative;
+    left: -10px;
   }
   .MkUserSettingContentList .MkxTittleSettingPage {
     position: relative;
@@ -1530,8 +1538,10 @@ body {
     font-size: 30px;
     color: black;
     border-radius: 50%;
-    z-index: -9;
-    padding: 10px;
+  }
+  .MKUserSettingBtnBackPassed h4 {
+    position: relative;
+    left: -30px;
   }
   .MkUserSettingContentList .MkxTittleSettingPage {
     position: relative;
@@ -2000,8 +2010,8 @@ body {
   }
   .MkUserSettingContentList .MKUserSettingBtnBackPassed {
     position: relative;
-    padding: 20px;
     transition: 0.5s linear;
+    cursor: pointer;
   }
   .MKUserSettingBtnBackPassed i {
     position: relative;
@@ -2010,12 +2020,11 @@ body {
     font-size: 30px;
     color: black;
     border-radius: 50%;
-    padding: 10px;
   }
-  .MkUserSettingContentList .MkxTittleSettingPage {
+  .MKUserSettingBtnBackPassed h4 {
     position: relative;
+    left: -30px;
     bottom: 60px;
-    right: 30px;
     font-size: 20px;
     font-family: "Rajdhani", sans-serif;
     font-weight: 700;
