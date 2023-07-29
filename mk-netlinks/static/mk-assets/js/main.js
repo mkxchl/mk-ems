@@ -11,7 +11,7 @@ let isDragging = false,
 const showBottomSheet = () => {
   bottomSheet.classList.add("show");
   document.body.style.overflowY = "hidden";
-  updateSheetHeight(50);
+  updateSheetHeight(0);
 };
 
 const updateSheetHeight = (height) => {
@@ -71,11 +71,12 @@ function Mkxxx() {
 /// Function Contact - Links ///
 
 function MkxBlog() {
+  bottomSheet.classList.remove("show");
   let timerInterval;
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
-    position: "top-start",
+    position: "top-center",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -94,11 +95,13 @@ function MkxBlog() {
   });
 }
 function MkxSpfy() {
+  bottomSheet.classList.remove("show");
+  bottomSheet.classList.remove("show");
   let timerInterval;
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
-    position: "top-start",
+    position: "top-center",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -117,11 +120,12 @@ function MkxSpfy() {
   });
 }
 function MkxHeal() {
+  bottomSheet.classList.remove("show");
   let timerInterval;
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
-    position: "top-start",
+    position: "top-center",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -140,11 +144,12 @@ function MkxHeal() {
   });
 }
 function DscX() {
+  bottomSheet.classList.remove("show");
   let timerInterval;
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
-    position: "top-start",
+    position: "top-center",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -163,11 +168,12 @@ function DscX() {
   });
 }
 function IntX() {
+  bottomSheet.classList.remove("show");
   let timerInterval;
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
-    position: "top-start",
+    position: "top-center",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -186,11 +192,12 @@ function IntX() {
   });
 }
 function FbX() {
+  bottomSheet.classList.remove("show");
   let timerInterval;
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
-    position: "top-start",
+    position: "top-center",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -209,11 +216,12 @@ function FbX() {
   });
 }
 function TtX() {
+  bottomSheet.classList.remove("show");
   let timerInterval;
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
-    position: "top-start",
+    position: "top-center",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -232,11 +240,12 @@ function TtX() {
   });
 }
 function TlX() {
+  bottomSheet.classList.remove("show");
   let timerInterval;
   Swal.fire({
     timer: 5000,
     timerProgressBar: true,
-    position: "top-start",
+    position: "top-center",
     didOpen: () => {
       Swal.showLoading();
       const b = Swal.getHtmlContainer().querySelector("b");
@@ -254,8 +263,9 @@ function TlX() {
     }
   });
 }
-
 function Gogel() {
+  bottomSheet.classList.remove("show");
+
   let timerInterval;
   Swal.fire({
     timer: 5000,
@@ -293,4 +303,10 @@ MkxxUserProfile.addEventListener("click", function () {
   document.querySelector(".MkxProfileContentSupportx").style.opacity = "0";
   document.querySelector(".MkMusicSpotifyContenx").style.display = "none";
   document.querySelector(".MkMusicSpotifyContenx").style.opacity = "0";
+  document.querySelector(".MkUserSettingContentList").style.display = "none";
+  document.querySelector(".MkUserSettingContentList").style.opacity = "0";
+  document.querySelector(".MkContactPagesContent").style.display = "none";
+  document.querySelector(".MkContactPagesContent").style.opacity = "0";
+  document.querySelector(".MkOpenLink").style.opacity = "0";
+  document.querySelector(".MkOpenLink").style.display = "none";
 });
