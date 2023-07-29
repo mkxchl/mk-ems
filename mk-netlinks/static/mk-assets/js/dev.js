@@ -1,3 +1,9 @@
+const MkCard = document.querySelector(".MKSectionPage");
+const MkCardToggle = document.querySelector(".toggle");
+MkCardToggle.onclick = function () {
+  MkCard.classList.toggle("active");
+};
+
 document.body.addEventListener("click", (e) => {
   const element = document.createElement("span");
   element.className = "mk-cursor";
