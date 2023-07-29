@@ -2044,18 +2044,19 @@ body {
     padding: 10px;
     border-radius: 50%;
     margin-right: 25px;
+    right: 13px;
     color: #f5c242;
     transition: 0.5s ease;
   }
   .MkOpenLinkListContent .MkOpenLinkImageTextList h4 {
     position: relative;
     font-size: 15px;
-    left: 8px;
+    left: 3px;
   }
   .MkOpenLinkListContent .MkOpenLinkImageTextList h3 {
     position: relative;
     font-size: 15px;
-    right: 1px;
+    left: -7px;
   }
   .MkOpenLinkImageTextList:hover i {
     transition: 0.5s ease;
