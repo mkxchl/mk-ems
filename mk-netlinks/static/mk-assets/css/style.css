@@ -50,22 +50,102 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  background-color: #c7d0e1;
+  background-image: url("https://images.unsplash.com/photo-1614522562493-455408036ea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
   height: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  transition: 1s;
+  transition: 1s linear;
 }
-section {
+.MkSectionOne {
+  position: relative;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  transition: 1s linear;
+  animation: fadeInUp 1s;
+}
+.MkSectionTwo {
+  opacity: 0;
+  display: none;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s linear;
+  animation: fadeInUp 1s;
+}
+/* section {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   display: flex;
+} */
+.MKSectionPage {
+  position: relative;
+  min-width: 300px;
+  height: 50px;
+  width: 200px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 10;
+  padding: 20px;
+  transition: 0.3s all;
+  animation: fadeInUp 1s;
+}
+.MKSectionPage .MKSectionContentList {
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  bottom: 17px;
+}
+.MKSectionPage .MKSectionContentList .MkSectionImageList {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.MKSectionContentList .MkSectionImageList img {
+  position: absolute;
+  object-fit: cover;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  border-radius: 50%;
+  color: #05bfdb;
+}
+.MKSectionPage .MkSectionListContentText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.MKSectionPage .MkSectionListContentText h4 {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  transition: 0.5s;
+  left: 20px;
+  color: #2d5cfe;
+}
+.MKSectionPage .MkSectionListContentText p {
+  position: relative;
+  font-weight: 300;
+  font-size: 15px;
+  transition: 0.5s;
+  left: 20px;
+  bottom: 5px;
 }
 .box {
   position: relative;
@@ -87,7 +167,7 @@ section {
   transition: 0.5s linear;
 }
 .MKdexsc {
-  color: grey;
+  color: #f5c242;
   transition: 0.5s linear;
   font-size: 12px;
   letter-spacing: 1.3px;
@@ -261,10 +341,8 @@ section {
   justify-content: center;
 }
 .header .drag-icon {
-  /* cursor: grab; */
   user-select: none;
   padding: 15px;
-  /* margin-top: -15px; */
 }
 .header .drag-icon span {
   position: relative;
@@ -277,13 +355,9 @@ section {
 }
 .bottom-sheet .body {
   position: relative;
-  /* width: 100%; */
-  /* right: 10px; */
   height: 100%;
-  overflow-y: auto;
-  /* padding: 10px; */
+  /* overflow-x: auto; */
   bottom: 30px;
-  /* right: 50px; */
   scrollbar-width: none;
   justify-content: center;
   align-items: center;
@@ -324,7 +398,6 @@ section {
   margin-bottom: 20px;
   right: 30px;
   background: white;
-  width: 85%;
   bottom: 5px;
   transition: 0.5s all;
 }
@@ -516,6 +589,192 @@ section {
   color: #fff;
   transition: 0.3s linear;
 }
+.MkUserSettingContentList {
+  position: relative;
+  opacity: 0;
+  display: none;
+}
+.MkUserSettingContentList .MKUserSettingBtnBackPassed {
+  position: relative;
+  padding: 20px;
+  transition: 0.5s linear;
+}
+.MKUserSettingBtnBackPassed i {
+  position: relative;
+  left: 260px;
+  bottom: 30px;
+  font-size: 30px;
+  color: black;
+  border-radius: 50%;
+  z-index: -9;
+}
+.MkUserSettingContentList .MkxTittleSettingPage {
+  position: relative;
+  bottom: 60px;
+  right: 30px;
+  font-size: 20px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+}
+.MKUserSettingBtnBackPassed:hover i {
+  color: red;
+  transition: 0.5s linear;
+}
+.MkxUserSettingContentList:hover {
+  background: black;
+  color: white;
+}
+.MkUserSettingPages .MkUserSettingPagesList {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+  overflow-x: hidden;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: -15px;
+  right: 30px;
+  bottom: 70px;
+  transition: 0.5s all;
+  width: 100%;
+}
+.MkUserSettingPages .MkUserSettingPagesList i {
+  position: relative;
+  object-fit: cover;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  font-weight: 300;
+  border-radius: 10px;
+  color: #000;
+  bottom: 7px;
+  transition: 0.5s all;
+  font-weight: 300;
+  left: 5px;
+}
+.MkUserSettingPages .MkUserSettingsPagesContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.MkUserSettingPages .MkUserSettingsPagesContents h4 {
+  position: relative;
+  margin-left: 10px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.1em;
+  font-weight: 500;
+  left: 30px;
+  font-size: 15px;
+  bottom: 88px;
+  transition: 0.5s all;
+}
+.MkTitleGameWeb {
+  position: relative;
+  margin-bottom: 40px;
+}
+.MkTitleGameWeb h4 {
+  position: relative;
+  right: 10px;
+  bottom: 50px;
+  font-size: 20px;
+}
+.MkContactPagesContent {
+  opacity: 0;
+  display: none;
+}
+.MkxContactPagesListContent {
+  padding: 10px;
+}
+.MkxContactPagesListContent .MkContactxxText {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.MkContactList {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  height: 40px;
+  margin-bottom: 10px;
+  transition: 0.5s linear;
+}
+.MkContactList .MkContactIcons {
+  position: relative;
+  top: 7px;
+  right: 10px;
+  margin-right: 10px;
+  transition: 0.5s linear;
+}
+.MkContactList .MkContactIcons i {
+  font-size: 30px;
+}
+.MkContactList .MkContactTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s linear;
+}
+.MkContactList .MkContactTextContent h4 {
+  position: relative;
+  font-size: 18px;
+  top: 15px;
+}
+.MkContactList .MkContactTextContent p {
+  position: relative;
+  font-size: 15px;
+  bottom: 10px;
+}
+.MkContactList:hover .MkContactIcons {
+  transition: 0.5s linear;
+  color: #05bfdb;
+}
+.MkContactList:hover .MkContactTextContent {
+  transition: 0.5s linear;
+  color: #05bfdb;
+}
+.MkOpenLink {
+  position: relative;
+  opacity: 0;
+  display: none;
+}
+.MkOpenLink .MkOpenContent {
+  position: relative;
+}
+.MkOpenContent h4 {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.MkOpenLinkListContent {
+  position: relative;
+  /* padding: 15px; */
+  display: flex;
+}
+.MkOpenLinkListContent .MkOpenLinkImageTextList i {
+  position: relative;
+  font-size: 35px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 25px;
+  color: #f5c242;
+  transition: 0.5s ease;
+}
+.MkOpenLinkListContent .MkOpenLinkImageTextList h4 {
+  position: relative;
+  font-size: 15px;
+  left: 8px;
+}
+.MkOpenLinkListContent .MkOpenLinkImageTextList h3 {
+  position: relative;
+  font-size: 15px;
+  right: 1px;
+}
+.MkOpenLinkImageTextList:hover i {
+  transition: 0.5s ease;
+  background: red;
+}
 
 /* Media Responsive Mobile */
 
@@ -560,7 +819,6 @@ section {
     margin-bottom: 20px;
     right: 30px;
     background: white;
-    width: 85%;
     bottom: 5px;
     transition: 0.5s all;
   }
@@ -755,6 +1013,193 @@ section {
     background-color: black;
     color: #fff;
     transition: 0.3s linear;
+  }
+  .MkUserSettingContentList {
+    position: relative;
+    opacity: 0;
+    display: none;
+  }
+  .MkUserSettingContentList .MKUserSettingBtnBackPassed {
+    position: relative;
+    padding: 20px;
+    transition: 0.5s linear;
+  }
+  .MKUserSettingBtnBackPassed i {
+    position: relative;
+    left: 290px;
+    bottom: 30px;
+    font-size: 30px;
+    color: black;
+    border-radius: 50%;
+    z-index: -9;
+  }
+  .MkUserSettingContentList .MkxTittleSettingPage {
+    position: relative;
+    bottom: 60px;
+    right: 30px;
+    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+  }
+  .MKUserSettingBtnBackPassed:hover i {
+    color: red;
+    transition: 0.5s linear;
+  }
+  .MkxUserSettingContentList:hover {
+    background: black;
+    color: white;
+  }
+  .MkUserSettingPages .MkUserSettingPagesList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    overflow-x: hidden;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+    right: 30px;
+    bottom: 70px;
+    transition: 0.5s all;
+    width: 100%;
+  }
+  .MkUserSettingPages .MkUserSettingPagesList i {
+    position: relative;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 10px;
+    color: #000;
+    bottom: 7px;
+    transition: 0.5s all;
+    font-weight: 300;
+    left: 5px;
+  }
+  .MkUserSettingPages .MkUserSettingsPagesContents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MkUserSettingPages .MkUserSettingsPagesContents h4 {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.1em;
+    font-weight: 500;
+    left: 30px;
+    font-size: 15px;
+    bottom: 88px;
+    transition: 0.5s all;
+  }
+  .MkTitleGameWeb {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .MkTitleGameWeb h4 {
+    position: relative;
+    right: 10px;
+    bottom: 50px;
+    font-size: 20px;
+  }
+  .MkContactPagesContent {
+    opacity: 0;
+    display: none;
+  }
+  .MkxContactPagesListContent {
+    padding: 10px;
+  }
+  .MkxContactPagesListContent .MkContactxxText {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .MkContactList {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    height: 40px;
+    margin-bottom: 10px;
+    transition: 0.5s linear;
+  }
+  .MkContactList .MkContactIcons {
+    position: relative;
+    top: 7px;
+    right: 10px;
+    margin-right: 10px;
+    transition: 0.5s linear;
+  }
+  .MkContactList .MkContactIcons i {
+    font-size: 30px;
+  }
+  .MkContactList .MkContactTextContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s linear;
+  }
+  .MkContactList .MkContactTextContent h4 {
+    position: relative;
+    font-size: 18px;
+    top: 15px;
+  }
+  .MkContactList .MkContactTextContent p {
+    position: relative;
+    font-size: 15px;
+    bottom: 10px;
+  }
+  .MkContactList:hover .MkContactIcons {
+    transition: 0.5s linear;
+    color: #05bfdb;
+  }
+  .MkContactList:hover .MkContactTextContent {
+    transition: 0.5s linear;
+    color: #05bfdb;
+  }
+  .MkOpenLink {
+    position: relative;
+    opacity: 0;
+    display: none;
+  }
+  .MkOpenLink .MkOpenContent {
+    position: relative;
+  }
+  .MkOpenContent h4 {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .MkOpenLinkListContent {
+    position: relative;
+    /* padding: 15px; */
+    display: flex;
+  }
+  .MkOpenLinkListContent .MkOpenLinkImageTextList i {
+    position: relative;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 25px;
+    color: #f5c242;
+    transition: 0.5s ease;
+    margin-left: 6px;
+  }
+  .MkOpenLinkListContent .MkOpenLinkImageTextList h4 {
+    position: relative;
+    font-size: 15px;
+    left: 15px;
+  }
+  .MkOpenLinkListContent .MkOpenLinkImageTextList h3 {
+    position: relative;
+    font-size: 15px;
+    left: 5px;
+  }
+  .MkOpenLinkImageTextList:hover i {
+    transition: 0.5s ease;
+    background: red;
   }
 }
 
@@ -995,6 +1440,192 @@ section {
     color: #fff;
     transition: 0.3s linear;
   }
+  .MkUserSettingContentList {
+    position: relative;
+    opacity: 0;
+    display: none;
+  }
+  .MkUserSettingContentList .MKUserSettingBtnBackPassed {
+    position: relative;
+    padding: 20px;
+    transition: 0.5s linear;
+  }
+  .MKUserSettingBtnBackPassed i {
+    position: relative;
+    left: 260px;
+    bottom: 30px;
+    font-size: 30px;
+    color: black;
+    border-radius: 50%;
+    z-index: -9;
+  }
+  .MkUserSettingContentList .MkxTittleSettingPage {
+    position: relative;
+    bottom: 60px;
+    right: 30px;
+    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+  }
+  .MKUserSettingBtnBackPassed:hover i {
+    color: red;
+    transition: 0.5s linear;
+  }
+  .MkxUserSettingContentList:hover {
+    background: black;
+    color: white;
+  }
+  .MkUserSettingPages .MkUserSettingPagesList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    overflow-x: hidden;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+    right: 30px;
+    bottom: 70px;
+    transition: 0.5s all;
+    width: 100%;
+  }
+  .MkUserSettingPages .MkUserSettingPagesList i {
+    position: relative;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 10px;
+    color: #000;
+    bottom: 7px;
+    transition: 0.5s all;
+    font-weight: 300;
+    left: 5px;
+  }
+  .MkUserSettingPages .MkUserSettingsPagesContents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MkUserSettingPages .MkUserSettingsPagesContents h4 {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.1em;
+    font-weight: 500;
+    left: 30px;
+    font-size: 15px;
+    bottom: 88px;
+    transition: 0.5s all;
+  }
+  .MkTitleGameWeb {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .MkTitleGameWeb h4 {
+    position: relative;
+    right: 10px;
+    bottom: 50px;
+    font-size: 20px;
+  }
+  .MkContactPagesContent {
+    opacity: 0;
+    display: none;
+  }
+  .MkxContactPagesListContent {
+    padding: 10px;
+  }
+  .MkxContactPagesListContent .MkContactxxText {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .MkContactList {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    height: 40px;
+    margin-bottom: 10px;
+    transition: 0.5s linear;
+  }
+  .MkContactList .MkContactIcons {
+    position: relative;
+    top: 7px;
+    right: 10px;
+    margin-right: 10px;
+    transition: 0.5s linear;
+  }
+  .MkContactList .MkContactIcons i {
+    font-size: 30px;
+  }
+  .MkContactList .MkContactTextContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s linear;
+  }
+  .MkContactList .MkContactTextContent h4 {
+    position: relative;
+    font-size: 18px;
+    top: 15px;
+  }
+  .MkContactList .MkContactTextContent p {
+    position: relative;
+    font-size: 15px;
+    bottom: 10px;
+  }
+  .MkContactList:hover .MkContactIcons {
+    transition: 0.5s linear;
+    color: #05bfdb;
+  }
+  .MkContactList:hover .MkContactTextContent {
+    transition: 0.5s linear;
+    color: #05bfdb;
+  }
+  .MkOpenLink {
+    position: relative;
+    opacity: 0;
+    display: none;
+  }
+  .MkOpenLink .MkOpenContent {
+    position: relative;
+  }
+  .MkOpenContent h4 {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .MkOpenLinkListContent {
+    position: relative;
+    /* padding: 15px; */
+    display: flex;
+  }
+  .MkOpenLinkListContent .MkOpenLinkImageTextList i {
+    position: relative;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 25px;
+    color: #f5c242;
+    transition: 0.5s ease;
+  }
+  .MkOpenLinkListContent .MkOpenLinkImageTextList h4 {
+    position: relative;
+    font-size: 15px;
+    left: 8px;
+  }
+  .MkOpenLinkListContent .MkOpenLinkImageTextList h3 {
+    position: relative;
+    font-size: 15px;
+    right: 1px;
+  }
+  .MkOpenLinkImageTextList:hover i {
+    transition: 0.5s ease;
+    background: red;
+  }
 }
 
 /* Width 360 */
@@ -1023,6 +1654,9 @@ section {
   .bottom-sheet .content {
     margin-bottom: -10px;
   }
+  .bottom-sheet .content .body {
+    width: 100%;
+  }
   .MkxProfileContentx {
     display: none;
     opacity: 0;
@@ -1045,9 +1679,8 @@ section {
     margin-top: 10px;
     margin-bottom: 20px;
     right: 30px;
-    background: white;
-    width: 85%;
     bottom: 5px;
+    width: 100%;
     transition: 0.5s all;
   }
   .ProfileContentxList .ProfileContentxListIcons {
@@ -1241,5 +1874,202 @@ section {
     background-color: black;
     color: #fff;
     transition: 0.3s linear;
+  }
+  .MkUserSettingContentList {
+    position: relative;
+    opacity: 0;
+    display: none;
+  }
+  .MkUserSettingContentList .MKUserSettingBtnBackPassed {
+    position: relative;
+    padding: 20px;
+    transition: 0.5s linear;
+  }
+  .MKUserSettingBtnBackPassed i {
+    position: relative;
+    left: 260px;
+    bottom: 30px;
+    font-size: 30px;
+    color: black;
+    border-radius: 50%;
+    z-index: -9;
+  }
+  .MkUserSettingContentList .MkxTittleSettingPage {
+    position: relative;
+    bottom: 60px;
+    right: 30px;
+    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+  }
+  .MKUserSettingBtnBackPassed:hover i {
+    color: red;
+    transition: 0.5s linear;
+  }
+  .MkxUserSettingContentList:hover {
+    background: black;
+    color: white;
+  }
+  .MkUserSettingPages .MkUserSettingPagesList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    overflow-x: hidden;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+    right: 30px;
+    bottom: 70px;
+    transition: 0.5s all;
+    width: 100%;
+  }
+  .MkUserSettingPages .MkUserSettingPagesList i {
+    position: relative;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 10px;
+    color: #000;
+    bottom: 7px;
+    transition: 0.5s all;
+    font-weight: 300;
+    left: 5px;
+  }
+  .MkUserSettingPages .MkUserSettingsPagesContents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MkUserSettingPages .MkUserSettingsPagesContents h4 {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.1em;
+    font-weight: 500;
+    left: 30px;
+    font-size: 15px;
+    bottom: 88px;
+    transition: 0.5s all;
+  }
+  .MkTitleGameWeb {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .MkTitleGameWeb h4 {
+    position: relative;
+    right: 10px;
+    bottom: 50px;
+    font-size: 20px;
+  }
+  .MkContactPagesContent {
+    opacity: 0;
+    display: none;
+  }
+  .MkxContactPagesListContent {
+    padding: 10px;
+  }
+  .MkxContactPagesListContent .MkContactxxText {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .MkContactList {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    height: 40px;
+    margin-bottom: 10px;
+    transition: 0.5s linear;
+  }
+  .MkContactList .MkContactIcons {
+    position: relative;
+    top: 7px;
+    right: 10px;
+    margin-right: 10px;
+    transition: 0.5s linear;
+  }
+  .MkContactList .MkContactIcons i {
+    font-size: 30px;
+  }
+  .MkContactList .MkContactTextContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s linear;
+  }
+  .MkContactList .MkContactTextContent h4 {
+    position: relative;
+    font-size: 18px;
+    top: 15px;
+  }
+  .MkContactList .MkContactTextContent p {
+    position: relative;
+    font-size: 15px;
+    bottom: 10px;
+  }
+  .MkContactList:hover .MkContactIcons {
+    transition: 0.5s linear;
+    color: #05bfdb;
+  }
+  .MkContactList:hover .MkContactTextContent {
+    transition: 0.5s linear;
+    color: #05bfdb;
+  }
+  .MkOpenLink {
+    position: relative;
+    opacity: 0;
+    display: none;
+  }
+  .MkOpenLink .MkOpenContent {
+    position: relative;
+  }
+  .MkOpenContent h4 {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .MkOpenLinkListContent {
+    position: relative;
+    /* padding: 15px; */
+    display: flex;
+  }
+  .MkOpenLinkListContent .MkOpenLinkImageTextList i {
+    position: relative;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 25px;
+    color: #f5c242;
+    transition: 0.5s ease;
+  }
+  .MkOpenLinkListContent .MkOpenLinkImageTextList h4 {
+    position: relative;
+    font-size: 15px;
+    left: 8px;
+  }
+  .MkOpenLinkListContent .MkOpenLinkImageTextList h3 {
+    position: relative;
+    font-size: 15px;
+    right: 1px;
+  }
+  .MkOpenLinkImageTextList:hover i {
+    transition: 0.5s ease;
+    background: red;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }
