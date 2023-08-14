@@ -1,0 +1,1091 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* body {
+  position: relative;
+  background: #c7d0e1;
+  padding: 10px;
+  width: 100%;
+  height: 100vh;
+} */
+::selection {
+  background: purple;
+  color: white;
+  padding: 10px;
+}
+section {
+  position: relative;
+  min-height: 90vh;
+  overflow: hidden;
+  background: #ecf4fe;
+  padding: 30px;
+}
+.MkBoxAccount {
+  position: relative;
+  padding: 5px;
+  margin-top: 30px;
+}
+.MkBoxAccount .MkBoxList .MkMenu {
+  position: absolute;
+  font-size: 20px;
+  color: #000;
+  top: -40px;
+  right: -10px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+.MkBoxAccount .MkBoxList .MkMenu:hover {
+  color: white;
+  background: #ddd;
+  transition: 0.5s all;
+}
+.MkBoxAccount .MkBoxList i {
+  display: flex;
+  font-size: 25px;
+  color: #05bfdb;
+}
+.MkBoxAccount .MkBoxList h4 {
+  position: relative;
+  left: 30px;
+  bottom: 23px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.MkBoxAccount .MkBoxList .MkTitleHeader {
+  position: relative;
+  bottom: 15px;
+  margin-left: 5px;
+}
+.MkBoxAccount .MkBoxList .MkTitleHeader h3 {
+  font-size: 30px;
+}
+.MkBoxAccount .MkBoxList .MkTitleHeader p {
+  font-size: 13px;
+}
+.MkBoxAccount .MkBoxList .MkTitleHeader .MkLinkProfile {
+  color: #05bfdb;
+  font-weight: bold;
+  transition: 0.5s all;
+}
+.MkBoxAccount .MkBoxList .MkTitleHeader .MkLinkProfile:hover {
+  color: black;
+  transition: 0.5s all;
+}
+.MkBoxAccount .MkBoxList .MkBoxUsername {
+  position: relative;
+  background: #fff;
+  height: 70px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.MkBoxAccount .MkBoxList .MkBoxUsername img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.MkBoxAccount .MkBoxList .MkBoxUsername h4 {
+  position: relative;
+  left: 70px;
+  margin-left: 5px;
+  bottom: 58px;
+  font-weight: bold;
+}
+.MkBoxAccount .MkBoxList .MkBoxUsername p {
+  position: relative;
+  bottom: 60px;
+  font-size: 15px;
+  left: 75px;
+}
+.MkBoxAccount .MkBoxList .MkBoxUsername i {
+  position: relative;
+  font-size: 30px;
+  bottom: 93px;
+  left: 250px;
+  color: black;
+}
+.MkBoxAccount .MkBoxList .MkBoxContent {
+  position: relative;
+  margin-top: 50px;
+}
+.MkBoxAccount .MkBoxList .MkBoxContent h4 {
+  position: relative;
+  left: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+.MkBoxAccount .MkBoxList .MkBoxContentList {
+  position: relative;
+  background: #dee3e9;
+  border-radius: 10px;
+  padding: 3px;
+}
+.MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  margin-top: 1px;
+}
+.MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew i {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+}
+.MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew h4 {
+  position: relative;
+  margin-left: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  bottom: 15px;
+}
+.MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew:hover {
+  background: #dee3e9;
+}
+.bottom-sheet {
+  position: fixed;
+  top: 0;
+  left: 30px;
+  width: 83%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s linear;
+  z-index: 999;
+}
+.bottom-sheet.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.bottom-sheet .sheet-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background: #000;
+}
+.bottom-sheet .content {
+  width: 100%;
+  position: relative;
+  background: #fff;
+  max-height: 100vh;
+  height: 40vh;
+  max-width: 1150px;
+  padding: 25px 30px;
+  transform: translateY(100%);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 100);
+  transition: 0.3s ease;
+}
+.bottom-sheet.show .content {
+  transform: translateY(0%);
+}
+.bottom-sheet.dragging .content {
+  transition: none;
+}
+.bottom-sheet.fullscreen .content {
+  border-radius: 12px 12px 0 0;
+  overflow-y: hidden;
+}
+.bottom-sheet .header {
+  display: flex;
+  justify-content: center;
+}
+.header .drag-icon {
+  user-select: none;
+  padding: 15px;
+}
+.header .drag-icon span {
+  position: relative;
+  height: 4px;
+  width: 40px;
+  display: block;
+  background: #c7d0e1;
+  border-radius: 50px;
+  bottom: 30px;
+}
+.bottom-sheet .body {
+  position: relative;
+  height: 100%;
+  /* overflow-x: auto; */
+  bottom: 30px;
+  scrollbar-width: none;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  z-index: -1;
+}
+.bottom-sheet .body::-webkit-scrollbar {
+  width: 0;
+}
+.bottom-sheet h2 {
+  font-size: 1.8rem;
+  margin-bottom: -30px;
+}
+.bottom-sheet .body p {
+  margin-top: 20px;
+  font-size: 1.05rem;
+}
+.MkLeanMoreProfile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: -30px;
+}
+.MkLeanMoreProfile .MkLeanMoreProfileContent {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.MkLeanMoreProfileImages img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  padding: 5px;
+}
+.MkLeanMoreProfileContent .MkLeanMoreProfileList h4 {
+  position: relative;
+}
+.MkLeanMoreProfileContent .MkLeanMoreProfileList p {
+  position: relative;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.MkLeanMoreProfileContent .MkListProfilePreview {
+  position: relative;
+  text-align: left;
+  margin-top: 10px;
+  background: #eee;
+  border-radius: 10px;
+  padding: 2px;
+}
+.MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+}
+.MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons {
+  position: relative;
+  display: flex;
+}
+.MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons i {
+  position: relative;
+  font-size: 30px;
+  margin-left: 10px;
+}
+.MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons h4 {
+  position: relative;
+  left: 20px;
+  top: 5px;
+  font-weight: 500;
+}
+.MkButtonClose {
+  padding: 10px;
+}
+.MkButtonClose i {
+  position: absolute;
+  font-size: 30px;
+  top: -15px;
+  right: -15px;
+  border-radius: 50%;
+}
+.MkButtonClose i:hover {
+  background: #eee;
+}
+footer {
+  position: relative;
+  margin-top: 10p=px;
+  bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+footer i {
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 360px) {
+  section {
+    position: relative;
+    min-height: 90vh;
+    overflow: hidden;
+    background: #ecf4fe;
+    padding: 30px;
+  }
+  .MkBoxAccount {
+    position: relative;
+    padding: 5px;
+    margin-top: 30px;
+  }
+  .MkBoxAccount .MkBoxList .MkMenu {
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+    top: -40px;
+    right: -10px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList .MkMenu:hover {
+    color: white;
+    background: #ddd;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList i {
+    display: flex;
+    font-size: 25px;
+    color: #05bfdb;
+  }
+  .MkBoxAccount .MkBoxList h4 {
+    position: relative;
+    left: 30px;
+    bottom: 23px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader {
+    position: relative;
+    bottom: 15px;
+    margin-left: 5px;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader h3 {
+    font-size: 30px;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader p {
+    font-size: 13px;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader .MkLinkProfile {
+    color: #05bfdb;
+    font-weight: bold;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader .MkLinkProfile:hover {
+    color: black;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername {
+    position: relative;
+    background: #fff;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername h4 {
+    position: relative;
+    left: 70px;
+    margin-left: 5px;
+    bottom: 58px;
+    font-weight: bold;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername p {
+    position: relative;
+    bottom: 60px;
+    font-size: 15px;
+    left: 75px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername i {
+    position: relative;
+    font-size: 30px;
+    bottom: 93px;
+    left: 250px;
+    color: black;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContent {
+    position: relative;
+    margin-top: 50px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContent h4 {
+    position: relative;
+    left: 0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList {
+    position: relative;
+    background: #dee3e9;
+    border-radius: 10px;
+    padding: 3px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    margin-top: 1px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew i {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew h4 {
+    position: relative;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    bottom: 15px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew:hover {
+    background: #dee3e9;
+  }
+  .bottom-sheet {
+    position: fixed;
+    top: 0;
+    left: 30px;
+    width: 83%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s linear;
+    z-index: 999;
+  }
+  .bottom-sheet.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .bottom-sheet .sheet-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .bottom-sheet .content {
+    width: 100%;
+    position: relative;
+    background: #fff;
+    max-height: 100vh;
+    height: 40vh;
+    max-width: 1150px;
+    padding: 25px 30px;
+    transform: translateY(100%);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 100);
+    transition: 0.3s ease;
+  }
+  .bottom-sheet.show .content {
+    transform: translateY(0%);
+  }
+  .bottom-sheet.dragging .content {
+    transition: none;
+  }
+  .bottom-sheet.fullscreen .content {
+    border-radius: 12px 12px 0 0;
+    overflow-y: hidden;
+  }
+  .bottom-sheet .header {
+    display: flex;
+    justify-content: center;
+  }
+  .header .drag-icon {
+    user-select: none;
+    padding: 15px;
+  }
+  .header .drag-icon span {
+    position: relative;
+    height: 4px;
+    width: 40px;
+    display: block;
+    background: #c7d0e1;
+    border-radius: 50px;
+    bottom: 30px;
+  }
+  .bottom-sheet .body {
+    position: relative;
+    height: 100%;
+    /* overflow-x: auto; */
+    bottom: 30px;
+    scrollbar-width: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    z-index: -1;
+  }
+  .bottom-sheet .body::-webkit-scrollbar {
+    width: 0;
+  }
+  .bottom-sheet h2 {
+    font-size: 1.8rem;
+    margin-bottom: -30px;
+  }
+  .bottom-sheet .body p {
+    margin-top: 20px;
+    font-size: 1.05rem;
+  }
+  .MkLeanMoreProfile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: -30px;
+  }
+  .MkLeanMoreProfile .MkLeanMoreProfileContent {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .MkLeanMoreProfileImages img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    padding: 5px;
+  }
+  .MkLeanMoreProfileContent .MkLeanMoreProfileList h4 {
+    position: relative;
+  }
+  .MkLeanMoreProfileContent .MkLeanMoreProfileList p {
+    position: relative;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview {
+    position: relative;
+    text-align: left;
+    margin-top: 10px;
+    background: #eee;
+    border-radius: 10px;
+    padding: 2px;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons {
+    position: relative;
+    display: flex;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons i {
+    position: relative;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons h4 {
+    position: relative;
+    left: 20px;
+    top: 5px;
+    font-weight: 500;
+  }
+  .MkButtonClose {
+    padding: 10px;
+  }
+  .MkButtonClose i {
+    position: absolute;
+    font-size: 30px;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+  }
+  .MkButtonClose i:hover {
+    background: #eee;
+  }
+  footer {
+    position: relative;
+    margin-top: 10p=px;
+    bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  footer i {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 414px) {
+  section {
+    position: relative;
+    min-height: 90vh;
+    overflow: hidden;
+    background: #ecf4fe;
+    padding: 30px;
+  }
+  .MkBoxAccount {
+    position: relative;
+    padding: 5px;
+    margin-top: 30px;
+  }
+  .MkBoxAccount .MkBoxList .MkMenu {
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+    top: -40px;
+    right: -10px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList .MkMenu:hover {
+    color: white;
+    background: #ddd;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList i {
+    display: flex;
+    font-size: 25px;
+    color: #05bfdb;
+  }
+  .MkBoxAccount .MkBoxList h4 {
+    position: relative;
+    left: 30px;
+    bottom: 23px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader {
+    position: relative;
+    bottom: 15px;
+    margin-left: 5px;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader h3 {
+    font-size: 30px;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader p {
+    font-size: 13px;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader .MkLinkProfile {
+    color: #05bfdb;
+    font-weight: bold;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader .MkLinkProfile:hover {
+    color: black;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername {
+    position: relative;
+    background: #fff;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername h4 {
+    position: relative;
+    left: 70px;
+    margin-left: 5px;
+    bottom: 58px;
+    font-weight: bold;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername p {
+    position: relative;
+    bottom: 60px;
+    font-size: 15px;
+    left: 75px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername i {
+    position: relative;
+    font-size: 30px;
+    bottom: 93px;
+    left: 300px;
+    color: black;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContent {
+    position: relative;
+    margin-top: 50px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContent h4 {
+    position: relative;
+    left: 0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList {
+    position: relative;
+    background: #dee3e9;
+    border-radius: 10px;
+    padding: 3px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    margin-top: 1px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew i {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew h4 {
+    position: relative;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    bottom: 15px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew:hover {
+    background: #dee3e9;
+  }
+  .bottom-sheet {
+    width: 80%;
+    left: 40px;
+  }
+  .MkLeanMoreProfile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: -30px;
+  }
+  .MkLeanMoreProfile .MkLeanMoreProfileContent {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .MkLeanMoreProfileImages img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    padding: 5px;
+  }
+  .MkLeanMoreProfileContent .MkLeanMoreProfileList h4 {
+    position: relative;
+  }
+  .MkLeanMoreProfileContent .MkLeanMoreProfileList p {
+    position: relative;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview {
+    position: relative;
+    text-align: left;
+    margin-top: 10px;
+    background: #eee;
+    border-radius: 10px;
+    padding: 2px;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons {
+    position: relative;
+    display: flex;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons i {
+    position: relative;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons h4 {
+    position: relative;
+    left: 20px;
+    top: 5px;
+    font-weight: 500;
+  }
+  .MkButtonClose {
+    padding: 10px;
+  }
+  .MkButtonClose i {
+    position: absolute;
+    font-size: 30px;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+  }
+  .MkButtonClose i:hover {
+    background: #eee;
+  }
+  footer {
+    position: relative;
+    margin-top: 10p=px;
+    bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  footer i {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 393px) {
+  section {
+    position: relative;
+    min-height: 90vh;
+    overflow: hidden;
+    background: #ecf4fe;
+    padding: 30px;
+  }
+  .MkBoxAccount {
+    position: relative;
+    padding: 5px;
+    margin-top: 30px;
+  }
+  .MkBoxAccount .MkBoxList .MkMenu {
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+    top: -40px;
+    right: -10px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList .MkMenu:hover {
+    color: white;
+    background: #ddd;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList i {
+    display: flex;
+    font-size: 25px;
+    color: #05bfdb;
+  }
+  .MkBoxAccount .MkBoxList h4 {
+    position: relative;
+    left: 30px;
+    bottom: 23px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader {
+    position: relative;
+    bottom: 15px;
+    margin-left: 5px;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader h3 {
+    font-size: 30px;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader p {
+    font-size: 13px;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader .MkLinkProfile {
+    color: #05bfdb;
+    font-weight: bold;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList .MkTitleHeader .MkLinkProfile:hover {
+    color: black;
+    transition: 0.5s all;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername {
+    position: relative;
+    background: #fff;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername h4 {
+    position: relative;
+    left: 70px;
+    margin-left: 5px;
+    bottom: 58px;
+    font-weight: bold;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername p {
+    position: relative;
+    bottom: 60px;
+    font-size: 15px;
+    left: 75px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxUsername i {
+    position: relative;
+    font-size: 30px;
+    bottom: 93px;
+    left: 250px;
+    color: black;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContent {
+    position: relative;
+    margin-top: 50px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContent h4 {
+    position: relative;
+    left: 0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList {
+    position: relative;
+    background: #dee3e9;
+    border-radius: 10px;
+    padding: 3px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    margin-top: 1px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew i {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew h4 {
+    position: relative;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    bottom: 15px;
+  }
+  .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew:hover {
+    background: #dee3e9;
+  }
+  .bottom-sheet {
+    width: 85%;
+    left: 30px;
+  }
+  .bottom-sheet h2 {
+    position: relative;
+    left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .MkLeanMoreProfile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: -30px;
+  }
+  .MkLeanMoreProfile .MkLeanMoreProfileContent {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .MkLeanMoreProfileImages img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    padding: 5px;
+  }
+  .MkLeanMoreProfileContent .MkLeanMoreProfileList h4 {
+    position: relative;
+  }
+  .MkLeanMoreProfileContent .MkLeanMoreProfileList p {
+    position: relative;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview {
+    position: relative;
+    text-align: left;
+    margin-top: 10px;
+    background: #eee;
+    border-radius: 10px;
+    padding: 2px;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons {
+    position: relative;
+    display: flex;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons i {
+    position: relative;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons h4 {
+    position: relative;
+    left: 20px;
+    top: 5px;
+    font-weight: 500;
+  }
+  .MkButtonClose {
+    padding: 10px;
+  }
+  .MkButtonClose i {
+    position: absolute;
+    font-size: 30px;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+  }
+  .MkButtonClose i:hover {
+    background: #eee;
+  }
+  footer {
+    position: relative;
+    margin-top: 10p=px;
+    bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  footer i {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+  }
+}
