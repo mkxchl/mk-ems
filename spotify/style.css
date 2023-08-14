@@ -9,13 +9,9 @@
   font-family: "Rajdhani", sans-serif;
 }
 
-/* body {
-  position: relative;
-  background: #c7d0e1;
-  padding: 10px;
-  width: 100%;
-  height: 100vh;
-} */
+body {
+  overflow: hidden;
+}
 ::selection {
   background: purple;
   color: white;
@@ -111,7 +107,7 @@ section {
   position: relative;
   font-size: 30px;
   bottom: 93px;
-  left: 700px;
+  left: 250px;
   color: black;
 }
 .MkBoxAccount .MkBoxList .MkBoxContent {
