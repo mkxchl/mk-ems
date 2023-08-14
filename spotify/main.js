@@ -31,5 +31,5 @@ function MkProfileMenu() {
 }
 function MkClosePage() {
   bottomSheet.classList.remove("show");
-  document.body.style.overflowY = "auto";
+  document.body.style.overflowY = "hidden";
 }
