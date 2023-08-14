@@ -21,6 +21,7 @@ section {
   position: relative;
   min-height: 90vh;
   overflow: hidden;
+  overflowY: hidden;
   background: #ecf4fe;
   padding: 30px;
 }
