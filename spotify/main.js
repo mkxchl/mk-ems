@@ -8,10 +8,15 @@ const MkListHeaderBottom = document.querySelector(".MkListHeaderBottom");
 const MkClose = document.querySelector(".MkClose");
 const MkBoxAccount = document.querySelector(".MkBoxAccount");
 const MkAccountListContent = document.querySelector(".MkAccountListContent");
+const MkAccountList = document.querySelector(".MkAccountList");
 const MkSpotifyContentxx = document.querySelector(".MkSpotifyContentxx");
+const MkSpotifyListxx = document.querySelector(".MkSpotifyListxx");
 const MkLnkGcrContentxx = document.querySelector(".MkLnkGcrContentxx");
 const MKTeamSupportContentxx = document.querySelector(".MKTeamSupportContentxx");
+const MkPaused = document.querySelector(".MkPaused");
+const MkContactContentxx = document.querySelector(".MkContactContentxx");
 const NamePlayList = document.getElementById("NamePlayList");
+const MKAudio = document.getElementById("MKAudio");
 
 const showBottomSheet = () => {
   bottomSheet.classList.add("show");
@@ -43,6 +48,8 @@ function MkProfileMenu() {
   MKTeamSupportContentxx.style.display = "none";
   MKTeamSupportContentxx.style.opacity = "0";
   MkBoxAccount.style.opacity = "0";
+  MkContactContentxx.style.opacity = "0";
+  MkContactContentxx.style.display = "none";
 }
 function MkClosePage() {
   bottomSheet.classList.remove("show");
@@ -60,6 +67,8 @@ function MkOpenSpotifyPlaylist() {
   MKTeamSupportContentxx.style.display = "none";
   MKTeamSupportContentxx.style.opacity = "0";
   MkBoxAccount.style.opacity = "0";
+  MkContactContentxx.style.opacity = "0";
+  MkContactContentxx.style.display = "none";
 }
 function MkOpenLnkGcr() {
   bottomSheet.classList.add("show");
@@ -73,6 +82,8 @@ function MkOpenLnkGcr() {
   MKTeamSupportContentxx.style.display = "none";
   MKTeamSupportContentxx.style.opacity = "0";
   MkBoxAccount.style.opacity = "0";
+  MkContactContentxx.style.opacity = "0";
+  MkContactContentxx.style.display = "none";
 }
 function MkOpenTeamSpt() {
   bottomSheet.classList.add("show");
@@ -86,4 +97,21 @@ function MkOpenTeamSpt() {
   MKTeamSupportContentxx.style.display = "inline";
   MKTeamSupportContentxx.style.opacity = "1";
   MkBoxAccount.style.opacity = "0";
+  MkContactContentxx.style.opacity = "0";
+  MkContactContentxx.style.display = "none";
+}
+function MkOpenContact() {
+  bottomSheet.classList.add("show");
+  NamePlayList.innerHTML = "Contact Me";
+  MkAccountListContent.style.opacity = "0";
+  MkAccountListContent.style.display = "none";
+  MkLnkGcrContentxx.style.opacity = "0";
+  MkLnkGcrContentxx.style.display = "none";
+  MkSpotifyContentxx.style.opacity = "0";
+  MkSpotifyContentxx.style.display = "none";
+  MKTeamSupportContentxx.style.display = "none";
+  MKTeamSupportContentxx.style.opacity = "0";
+  MkBoxAccount.style.opacity = "0";
+  MkContactContentxx.style.opacity = "1";
+  MkContactContentxx.style.display = "inline";
 }
