@@ -13,7 +13,7 @@
 body {
   height: 100vh;
   user-select: none;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 ::selection {
   background: purple;
