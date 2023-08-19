@@ -115,3 +115,27 @@ function MkOpenContact() {
   MkContactContentxx.style.opacity = "1";
   MkContactContentxx.style.display = "inline";
 }
+function MkViewPageSpotify() {
+  bottomSheet.classList.remove("show");
+  let timerInterval;
+  Swal.fire({
+    title: "Opened Spotify",
+    timer: 5000,
+    timerProgressBar: true,
+    position: "top-center",
+    didOpen: () => {
+      Swal.showLoading();
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+      window.location.replace("https://open.spotify.com/playlist/1ZaVZkzQxjsSPUSnLDrL27?si=F6zRz0mdRJG-EXqyDmE-Bw");
+    }
+  });
+}
