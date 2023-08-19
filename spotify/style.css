@@ -13,7 +13,7 @@
 body {
   user-select: none;
   overflow: hidden;
-  overflowy: hidden;
+  overflow-y: hidden;
   background: #ecf4fe;
 }
 ::selection {
@@ -25,7 +25,7 @@ section {
   position: relative;
   min-height: 90vh;
   overflow: hidden;
-  overflowy: hidden;
+  overflow-y: hidden;
   background: #ecf4fe;
   padding: 30px;
 }
