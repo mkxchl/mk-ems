@@ -13,7 +13,7 @@
 body {
   user-select: none;
   overflow: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   background: #ecf4fe;
 }
 ::selection {
@@ -1918,12 +1918,13 @@ footer i {
   .MkAlertDialogBoxLnkGcr i {
     position: relative;
     margin-left: 5px;
+    margin-top: 1px;
     font-size: 20px;
     margin-right: 10px;
   }
   .MkAlertDialogBoxLnkGcr h4 {
     position: relative;
-    top: 2px;
+    top: 5px;
     color: #000;
     font-size: 13px;
   }
@@ -1935,13 +1936,14 @@ footer i {
     padding: 10px;
   }
   .MKTeamSupportListContentxx img {
+    margin-top: 3px;
     width: 30px;
     height: 30px;
     border-radius: 50px;
   }
   .MKTeamSupportListContentxx h4 {
     position: relative;
-    top: 5px;
+    top: 8px;
     margin-left: 10px;
   }
 
