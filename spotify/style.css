@@ -1799,7 +1799,7 @@ footer i {
     left: 41px;
   }
   .bottom-sheet .content {
-    top: 10px;
+    top: -60px;
     right: 5px;
   }
   .MkListHeaderBottom {
@@ -1866,7 +1866,7 @@ footer i {
   }
   .MkSpotifyListxx h4 {
     position: relative;
-    top: 5px;
+    top: 4px;
     font-size: 14px;
     font-weight: normal;
   }
@@ -1915,7 +1915,7 @@ footer i {
   }
   .MkLnkGcrListContentxx h4 {
     position: relative;
-    top: 5px;
+    top: 4px;
     font-size: 14px;
     font-weight: normal;
   }
