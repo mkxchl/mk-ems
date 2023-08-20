@@ -1799,7 +1799,7 @@ footer i {
     left: 41px;
   }
   .bottom-sheet .content {
-    top: 30px;
+    top: 10px;
     right: 5px;
   }
   .MkListHeaderBottom {
@@ -1837,12 +1837,13 @@ footer i {
   }
   .MkAcountList i {
     font-size: 20px;
+    margin-top: 3px;
     margin-left: 5px;
     margin-right: 10px;
   }
   .MkAcountList h4 {
     position: relative;
-    top: 2px;
+    top: 5px;
     font-size: 14px;
     font-weight: normal;
   }
@@ -1859,12 +1860,13 @@ footer i {
   }
   .MkSpotifyListxx i {
     font-size: 20px;
+    margin-top: 3px;
     margin-left: 5px;
     margin-right: 10px;
   }
   .MkSpotifyListxx h4 {
     position: relative;
-    top: 2px;
+    top: 5px;
     font-size: 14px;
     font-weight: normal;
   }
@@ -1907,12 +1909,13 @@ footer i {
   }
   .MkLnkGcrListContentxx i {
     font-size: 20px;
+    margin-top: 2px;
     margin-left: 5px;
     margin-right: 10px;
   }
   .MkLnkGcrListContentxx h4 {
     position: relative;
-    top: 2px;
+    top: 5px;
     font-size: 14px;
     font-weight: normal;
   }
@@ -1952,7 +1955,8 @@ footer i {
     padding: 10px;
   }
   .MKTeamSupportListContentxx img {
-    margin-top: 3px;
+    margin-left: 10px;
+    margin-top: 2px;
     width: 30px;
     height: 30px;
     border-radius: 50px;
@@ -1960,7 +1964,7 @@ footer i {
   .MKTeamSupportListContentxx h4 {
     position: relative;
     top: 8px;
-    margin-left: 10px;
+    margin-left: 17px;
   }
 
   .MkLeanMoreProfile {
@@ -2089,6 +2093,7 @@ footer i {
     padding: 10px;
   }
   .MkContactListContentxxx img {
+    margin-top: 1px;
     width: 40px;
     height: 40px;
     border-radius: 10px;
@@ -2102,7 +2107,7 @@ footer i {
   .MkContactListContentxxx .MkContactListJobDesx h4 {
     position: relative;
     margin-left: 5px;
-    top: 8px;
+    top: 9px;
     font-size: 15px;
   }
   .MkContactListContentxxx .MkContactListJobDesx p {
@@ -2167,6 +2172,7 @@ footer i {
   }
   .MkFooterContact h4 {
     padding: 10px;
+    margin-right: 5px;
     text-align: center;
     font-size: 15px;
   }
