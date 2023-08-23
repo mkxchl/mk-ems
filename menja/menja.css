@@ -279,7 +279,8 @@ a {
   color: white;
   border-radius: 15px;
 }
-.play-again-btn {
+.play-again-btn,
+.menu-btn--pause {
   color: black;
 }
 .play-again-btn:hover {
