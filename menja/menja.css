@@ -280,7 +280,7 @@ a {
   border-radius: 15px;
 }
 .play-again-btn,
-.menu-btn--pause {
+.menu-btn--score {
   color: black;
 }
 .play-again-btn:hover {
