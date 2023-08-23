@@ -149,7 +149,7 @@
   align-items: center;
   user-select: none;
   text-align: center;
-  color: #000;
+  color: rgba(255, 255, 255, 0.9);
   opacity: 0;
   visibility: hidden;
   transform: translateY(30px);
@@ -254,6 +254,9 @@ a {
   text-decoration: none;
 }
 
+.menu--score {
+  color: black;
+}
 .play-normal-btn,
 .resume-btn,
 .menu-btn--pause {
