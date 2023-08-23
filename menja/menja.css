@@ -276,6 +276,9 @@ a {
   color: white;
   border-radius: 15px;
 }
+.play-again-btn {
+  color: black;
+}
 .play-again-btn:hover {
   background: black;
   color: white;
