@@ -16,6 +16,10 @@ body {
   overflow-y: auto;
   background: #ecf4fe;
 }
+.MkMenjaGames {
+  background: #ecf4fe;
+}
+
 ::-webkit-scrollbar {
   border-radius: 0.5rem;
   background-color: #ffffff;
@@ -309,6 +313,43 @@ section {
   right: 87px;
 } */
 /* Music End */
+.MkxxLeftSheet {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s linear;
+  z-index: 999999;
+}
+.MkxxLeftSheet.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.MkxxLeftSheet .MkxxLeftSheetOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background: #000;
+}
+.MkxxLeftSheet .MkxxLeftSheetContent {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  height: 100%;
+  transition: 0.3s ease;
+}
 .bottom-sheet {
   position: fixed;
   top: 0;
@@ -736,6 +777,41 @@ footer i {
 .MkContactSheet .MkContactSheetOverlay {
   background: #000;
   opacity: 0.2;
+}
+.MkGameListContentxx {
+  position: relative;
+  margin-top: 10px;
+  background: #fff;
+  display: flex;
+  padding: 10px;
+}
+.MkGameListContentxx i {
+  margin-left: 5px;
+  margin-top: 1px;
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.MkGameListContentxx h4 {
+  margin-left: 20px;
+  margin-top: 7px;
+}
+.MkGameListContentxx a {
+  position: absolute;
+  top: 12px;
+  left: 340px;
+  background: #ccc;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.MkGameListContentxx a:hover {
+  background: transparent;
+  transition: 0.5s ease-in-out;
 }
 @media screen and (max-width: 414px) {
   section {
@@ -1617,9 +1693,9 @@ footer i {
   .MkBoxAccount .MkBoxList h4 {
     position: relative;
     left: 30px;
-    bottom: 23px;
+    bottom: 22px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: bold;
   }
   .MkBoxAccount .MkBoxList .MkTitleHeader {
     position: relative;
@@ -1836,6 +1912,8 @@ footer i {
     border-left: 5px solid #05bfdb;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
     padding: 10px;
   }
@@ -1860,6 +1938,8 @@ footer i {
     border-left: 5px solid #1db954;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     /* bottom: 190px; */
   }
   .MkSpotifyListxx i {
@@ -1908,6 +1988,8 @@ footer i {
     border-left: 5px solid #2d5cfe;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     /* bottom: 190px; */
     cursor: pointer;
   }
@@ -1934,15 +2016,16 @@ footer i {
     position: relative;
     display: flex;
     margin-top: 10px;
-    /* bottom: 170px; */
     background: #ff0000;
-    padding: 10px;
+    /* padding: 10px; */
+    border-radius: 5px;
     transition: 0.5s ease-in-out;
   }
   .MkAlertDialogBoxLnkGcr i {
     position: absolute;
     margin-left: 5px;
     right: -2px;
+    bottom: 3px;
     font-size: 30px;
     margin-right: 10px;
     color: #fff;
@@ -1954,8 +2037,9 @@ footer i {
   }
   .MkAlertDialogBoxLnkGcr h4 {
     position: relative;
-    padding: 5px;
-    bottom: 5px;
+    padding: 1px;
+    top: 0;
+    bottom: 0;
     color: #fff;
     font-size: 15px;
   }
@@ -2197,6 +2281,41 @@ footer i {
     margin-right: 7px;
     text-align: center;
     font-size: 15px;
+  }
+  .MkGameListContentxx {
+    position: relative;
+    margin-top: 10px;
+    background: #fff;
+    display: flex;
+    padding: 10px;
+  }
+  .MkGameListContentxx i {
+    margin-left: 5px;
+    margin-top: 1px;
+    font-size: 20px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .MkGameListContentxx h4 {
+    margin-left: 20px;
+    margin-top: 7px;
+  }
+  /* .MkGameListContentxx a {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: #ccc;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  } */
+  .MkGameListContentxx a:hover {
+    background: transparent;
+    transition: 0.5s ease-in-out;
   }
 }
 /* Animation */
