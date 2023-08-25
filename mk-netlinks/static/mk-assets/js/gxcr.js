@@ -94,7 +94,30 @@ function MkxxGacorD() {
     }
   });
 }
-
+function MkxxGacorE() {
+  bottomSheet.classList.remove("show");
+  let timerInterval;
+  Swal.fire({
+    timer: 5000,
+    position: "top-center",
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const b = Swal.getHtmlContainer().querySelector("b");
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft();
+      }, 500);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+      window.location.replace("https://xnxx.com/");
+    }
+  });
+}
 function MkOpenSectionTwoxx() {
   var MkSectionTwo = document.querySelector(".MkSectionTwo");
   var MkSectionOne = document.querySelector(".MkSectionOne");
