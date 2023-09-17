@@ -14,10 +14,7 @@ body {
   user-select: none;
   overflow: hidden;
   overflow-y: auto;
-  background: #ecf4fe;
-}
-.MkMenjaGames {
-  background: #ecf4fe;
+  background-color: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar {
@@ -45,7 +42,7 @@ section {
   min-height: 90vh;
   overflow: hidden;
   overflow-y: hidden;
-  background: #ecf4fe;
+  background-color: rgb(255, 255, 255);
   padding: 30px;
 }
 .MkBoxAccount {
@@ -88,6 +85,7 @@ section {
 }
 .MkBoxAccount .MkBoxList .MkTitleHeader h3 {
   font-size: 30px;
+  color: #05bfdb;
 }
 .MkBoxAccount .MkBoxList .MkTitleHeader p {
   font-size: 13px;
@@ -349,7 +347,56 @@ section {
   background: #fff;
   height: 100%;
   transition: 0.3s ease;
+  border-top-right-radius: 50px;
 }
+.MkxAccountBottomSheet {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  height: 100;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s linear;
+  z-index: 9999;
+}
+.MkxAccountBottomSheet .MkxAccountBottomSheetOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background: #000;
+}
+.MkxAccountBottomSheet.show {
+  opacity: 1;
+  pointer-events: auto;
+  top: 50px;
+}
+.MkxAccountBottomSheet .MkxAccountBottomSheetContent {
+  position: relative;
+  width: 100vw;
+  background: #fff;
+  /* background: #ecf4fe; */
+  height: 100vh;
+  transition: 0.3s ease;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+/* .MkxAccountBottomSheet .MkxAccountBottomSheetContent .MkAccountBottomHeader { 
+  position: relative;
+  padding: 30px;
+  color: white;
+}
+.MkxAccountBottomSheetContent .MkAccountBottomHeader h4 {
+  position: relative;
+} */
 .bottom-sheet {
   position: fixed;
   top: 0;
@@ -460,7 +507,7 @@ section {
   cursor: pointer;
 }
 .MkListHeaderBottom i:hover {
-  background: #ddd;
+  background: #ccc;
   color: #000;
 }
 .MkAcountList {
@@ -480,6 +527,22 @@ section {
   top: 2px;
   font-size: 14px;
   font-weight: normal;
+}
+.MkAccountViewProfile {
+  position: relative;
+  text-align: center;
+  background: white;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out; 
+}
+.MkAccountViewProfile h4 {
+  padding: 10px;
+}
+.MkAccountViewProfile:hover {
+  background: #05bfdb;
+  color: white;
+  transition: 0.3s ease-in-out; 
 }
 .MkSpotifyListxx {
   position: relative;
@@ -813,12 +876,12 @@ footer i {
   background: transparent;
   transition: 0.5s ease-in-out;
 }
+
 @media screen and (max-width: 414px) {
   section {
     position: relative;
     min-height: 90vh;
     overflow: hidden;
-    background: #ecf4fe;
     padding: 30px;
   }
   .MkBoxAccount {
@@ -1280,7 +1343,6 @@ footer i {
     position: relative;
     min-height: 90vh;
     overflow: hidden;
-    background: #ecf4fe;
     padding: 30px;
   }
   .MkBoxAccount {
@@ -1658,11 +1720,104 @@ footer i {
   }
 }
 @media screen and (max-width: 360px) {
+  .MkCustomeAlert {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #fff;
+    z-index: 9999999;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    right: 0;
+    left: 0;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert {
+    position: relative;
+    width: 90%;
+    padding: 5px;
+    background: #ddd;
+    justify-content: center;
+    border-radius: 10px;
+    animation: fadeInUp 1s;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MkAlertDialogImage {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MkAlertDialogImage i {
+    position: relative;
+    font-size: 50px;
+    padding: 10px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MkAlertDialogImage h4 {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MkAlertDialogImage p {
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MKAlertButton {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MKAlertButton .BgFollow {
+    background: #FF0077FF;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MKAlertButton .BgOpen {
+    background: #1db954;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MKAlertButton .BgClose {
+    background: #2d5cfe;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MKAlertButton .BgFollow:hover {
+    background: #fff;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MKAlertButton .BgOpen:hover {
+    background: #fff;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MKAlertButton .BgClose:hover {
+    background: #fff;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  .MkCustomeAlert .MkBoxCustomeAlert .MKAlertButton  button {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
   section {
     position: relative;
     min-height: 90vh;
     overflow: hidden;
-    background: #ecf4fe;
     padding: 30px;
   }
   .MkBoxAccount {
@@ -1723,6 +1878,7 @@ footer i {
     height: 70px;
     margin-top: 10px;
     border-radius: 10px;
+    border: 0.3px solid #ddd;
   }
   .MkBoxAccount .MkBoxList .MkBoxUsername img {
     position: relative;
@@ -1749,7 +1905,7 @@ footer i {
     font-size: 30px;
     bottom: 85px;
     left: 250px;
-    color: black;
+    color: #f5c242;
   }
   .MkBoxAccount .MkBoxList .MkBoxContent {
     position: relative;
@@ -1760,6 +1916,14 @@ footer i {
     left: 0;
     font-size: 25px;
     font-weight: bold;
+  }
+  .MKBorderTop {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .MKBorderBottom {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   .MkBoxAccount .MkBoxList .MkBoxContentList {
     position: relative;
@@ -1777,6 +1941,7 @@ footer i {
     top: 10px;
     left: 10px;
     font-size: 30px;
+    color: #f5c242;
   }
   .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew h4 {
     position: relative;
@@ -1862,7 +2027,7 @@ footer i {
   }
   footer {
     position: relative;
-    margin-top: 10p=px;
+    margin-top: 10px;
     bottom: 10px;
     text-align: center;
     margin-bottom: 10px;
@@ -1873,6 +2038,111 @@ footer i {
     position: relative;
     top: 2px;
     margin-right: 5px;
+  }
+  .MkxAccountBottomSheet .MkxAccountBottomSheetContent {
+    position: relative;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .MkAccountBottomHeader {
+    position: relative;
+    padding: 10px;
+    margin-top: 15px;
+  }
+  .MkAccountBottomHeader i {
+    position: absolute;
+    padding: 3px;
+    left: 20px;
+    top: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+  }
+  .MkAccountBottomHeader i:hover {
+    background: #000;
+    color: white;
+  }
+  .MkAccountBottomHeader h4 {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .MkAccountBottomHeader p {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .MkAccountBottomList {
+    position: relative;
+    padding: 10px;
+    margin-left: 15px;
+    width: 86%;
+    height: 100px;
+    background: #eee;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+  }
+  .MkAccountBottomList img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    border-radius: 50px;
+  }
+  .MkAccountBottomList h4 {
+    position: relative;
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .MkAccountBottomList p {
+    position: relative;
+    top: 25px;
+    right: 40px;
+  }
+  .MkDetail {
+    position: relative;
+    display: flex;
+    background: #eee;
+    height: 40px;
+    padding: 10px;
+    margin-left: 15px;
+    width: 86%;
+    bottom: 50px;
+    transition: 0.3s ease-in-out;
+    border: none;
+  }
+  .MkDetail i {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 23px;
+    font-size: 25px;
+    display: flex;
+  }
+  .MkDetail h4 {
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    top: 3px;
+  }
+  .MkDetail p {
+    position: relative;
+    display: flex;
+    top: 20px;
+  }
+  .MkMenuListAccountLean {
+    position: relative;
+    margin-left: 18px;
+    bottom: 40px;
+    padding: 10px;
+  }
+  .MkMenuListAccountLean h4 {
+    font-size: 20px;
+    font-weight: bold;
   }
   .bottom-sheet {
     width: 80%;
@@ -1892,18 +2162,20 @@ footer i {
   }
   .MkListHeaderBottom h4 {
     position: relative;
-    padding: 10px;
+    padding: 9px;
+    margin-left: 10px;
   }
   .MkListHeaderBottom i {
     position: relative;
     font-size: 20px;
     padding: 10px;
     left: 43px;
-    background: #fff;
-    color: #05bfdb;
     cursor: pointer;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+  .MkListHeaderBottom i:hover {
+    background: #cccccc;
   }
   .MkAcountList {
     position: relative;
@@ -1979,6 +2251,11 @@ footer i {
     color: #000;
     transition: 0.3s;
   }
+  .MkLinkGacorOverflow {
+    position: relative;
+    height: 85%;
+    overflow-x: auto;
+  }
   .MkLnkGcrListContentxx {
     position: relative;
     margin-top: 10px;
@@ -2016,8 +2293,7 @@ footer i {
     position: relative;
     display: flex;
     margin-top: 10px;
-    background: #ff0000;
-    /* padding: 10px; */
+    background: #ffffff;
     border-radius: 5px;
     transition: 0.5s ease-in-out;
   }
@@ -2028,11 +2304,7 @@ footer i {
     bottom: 3px;
     font-size: 30px;
     margin-right: 10px;
-    color: #fff;
-    transition: 0.3s ease-in-out;
-  }
-  .MkAlertDialogBoxLnkGcr i:hover {
-    color: #000;
+    color: #2d5cfe;
     transition: 0.3s ease-in-out;
   }
   .MkAlertDialogBoxLnkGcr h4 {
@@ -2040,7 +2312,7 @@ footer i {
     padding: 1px;
     top: 0;
     bottom: 0;
-    color: #fff;
+    color: #2d5cfe;
     font-size: 15px;
   }
   .MKTeamSupportListContentxx {
@@ -2271,6 +2543,29 @@ footer i {
     font-size: 20px;
     transition: 0.3s ease-in-out;
   }
+  .MkListJObDescContent {
+    background: #ddd;
+    display: flex;
+  }
+  .MkListJObDescContent i {
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  .MkListJObDescContent .MkListFlowRap {
+    position: relative;
+  }
+  .MkListJObDescContent .MkListFlowRap h4 {
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+  }
+  .MkListJObDescContent .MkListFlowRap p {
+    position: relative;
+    bottom: 9px;
+    font-size: 13px;
+  }
   .MkFooterContact {
     position: relative;
     background: #fff;
@@ -2355,6 +2650,16 @@ footer i {
   }
   100% {
     color: red;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 500px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 @keyframes wave {
