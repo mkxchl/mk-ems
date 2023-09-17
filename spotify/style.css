@@ -2253,7 +2253,7 @@ footer i {
   }
   .MkLinkGacorOverflow {
     position: relative;
-    margin-top: 10px;
+    margin-top: 5px;
     height: 85%;
     overflow-x: auto;
   }
