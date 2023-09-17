@@ -89,7 +89,7 @@ function _0x3575() {
     "location",
     "show",
     "getElementById",
-    "Link\x20Gacor",
+    "Film",
     "classList",
     "2hJitVR",
     ".MkListHeaderBottom",
