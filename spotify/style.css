@@ -598,7 +598,6 @@ section {
 }
 .MkLnkGcrListContentxx:hover {
   background: #2d5cfe;
-  transform: scale(1.02);
   transition: 0.3s ease-in-out;
 }
 .MkLnkGcrListContentxx:hover i {
