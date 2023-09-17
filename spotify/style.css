@@ -2253,13 +2253,13 @@ footer i {
   }
   .MkLinkGacorOverflow {
     position: relative;
+    margin-top: 10px;
     height: 85%;
     overflow-x: auto;
   }
   .MkLinkGacorOverflow::-webkit-scrollbar {
     width: 0;
   }
-
   .MkLinkGacorOverflow::-webkit-scrollbar-thumb {
     width: 0;
   }
