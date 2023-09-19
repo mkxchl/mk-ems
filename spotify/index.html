@@ -264,8 +264,8 @@
           </div>
           <div class="MKSheetLeft_NgLink">
             <div class="MKSheetLeft_NgLink_Content">
-              <img src="/mk-netlinks/static/mk-assets/img/logo.jpg" class="Mk_Logo" />
-              <h4>chellgnzxz_ <img src="/mk-netlinks/static/mk-assets/img/mk_veriv.png" class="MkVer" /></h4>
+              <img src="/static/mk-assets/img/logo.jpg" class="Mk_Logo" />
+              <h4>chellgnzxz_ <img src="/static/mk-assets/img/mk_veriv.png" class="MkVer" /></h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo libero, dolores eveniet tempora atque quibusdam veniam vero quae, non repellat quos? In optio eligendi reprehenderit dolorem excepturi! Pariatur, minus.
               </p>
@@ -288,7 +288,7 @@
           </div>
           <div class="MkSheetLeft_Android">
             <div class="MkSheetLeft_AndroidContent">
-              <img src="/mk-netlinks/static/mk-assets/img/editorpro.png" />
+              <img src="/static/mk-assets/img/editorpro.png" />
               <div class="MkSheetLeft_AndroidContentList">
                 <h4>MK Tools</h4>
                 <p>Version 5.0.0</p>
@@ -331,8 +331,27 @@
       <source src="/static/mk-assets/mix/MkxchlSong-2.mp3" />
     </audio> -->
     <!-- Javasctipt Main -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- <script>
+      const links = document.querySelectorAll(".nav-link");
+
+      if (links.length) {
+        links.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            links.forEach((link) => {
+              link.classList.remove("active");
+            });
+            e.preventDefault();
+            link.classList.add("active");
+          });
+        });
+      }
+    </script> -->
     <script src="main.js"></script>
     <script src="script.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
