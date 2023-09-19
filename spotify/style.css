@@ -10,11 +10,24 @@
   font-family: "Gemunu Libre", sans-serif;
 }
 
+:root {
+  --color-bg: #1f1f39;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgb(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --transition: all 400ms ease;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
 body {
   user-select: none;
   overflow: hidden;
   overflow-y: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-bg);
 }
 
 ::-webkit-scrollbar {
@@ -37,12 +50,44 @@ body {
   color: white;
   padding: 10px;
 }
+nav {
+  background: rgba(0, 0, 0, 0.1);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 9999;
+  position: fixed;
+  left: 37%;
+  display: flex;
+  bottom: 2rem;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  text-decoration: none;
+  background: transparent;
+  padding: 1rem;
+  display: flex;
+  border-radius: 50%;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+nav a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
 section {
   position: relative;
   min-height: 90vh;
   overflow: hidden;
   overflow-y: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-bg);
   padding: 30px;
 }
 .MkBoxAccount {
@@ -77,6 +122,7 @@ section {
   bottom: 23px;
   font-size: 15px;
   font-weight: 500;
+  color: #05bfdb;
 }
 .MkBoxAccount .MkBoxList .MkTitleHeader {
   position: relative;
@@ -89,6 +135,7 @@ section {
 }
 .MkBoxAccount .MkBoxList .MkTitleHeader p {
   font-size: 13px;
+  color: var(--color-light);
 }
 .MkBoxAccount .MkBoxList .MkTitleHeader .MkLinkProfile {
   color: #05bfdb;
@@ -125,6 +172,7 @@ section {
   margin-left: 5px;
   bottom: 55px;
   font-weight: bold;
+  color: black;
 }
 .MkBoxAccount .MkBoxList .MkBoxUsername p {
   position: relative;
@@ -173,230 +221,203 @@ section {
   font-weight: 600;
   font-size: 15px;
   bottom: 15px;
+  color: black;
 }
 .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew:hover {
   background: #dee3e9;
 }
-.MkMusicListContent {
-  position: absolute;
-  border-radius: 10px;
-  padding: 10px;
+.Sheet_Left {
+  position: fixed;
+  top: 0;
+  right: -999px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  background: #fff;
-  margin-top: 10px;
-  width: 30%;
-  right: 10px;
-  border: 1px solid #eee;
-  transition: 1s ease-in-out;
-}
-.MkMusicListContent img {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 13px;
   opacity: 0;
-  cursor: pointer;
-  transition: 1s ease-in-out;
+  pointer-events: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.5s ease-in-out;
+  z-index: 999;
 }
-.MkMusicListContent i {
-  position: relative;
-  margin-left: 10px;
-  margin-right: -10px;
-}
-.MkMusicListContent h4 {
-  position: relative;
-  top: 5px;
-  font-weight: 900;
-  transition: 1s ease-in-out;
-}
-.MkMusicListContent p {
-  position: relative;
-  top: 25px;
-  font-size: 12px;
-  right: 137px;
-  transition: 1s ease-in-out;
-}
-.MkMusicListContent .MkButtonListMusic {
-  position: relative;
-  display: flex;
-}
-.MkMusicListContent .MkButtonListMusic .MkPaused {
-  position: relative;
-  font-size: 40px;
-  padding: 5px;
-  right: 5px;
-}
-.MkMusicListContent .MkButtonListMusic .MkPaused:hover {
-  color: black;
+.Sheet_Left.show {
+  right: 0;
+  opacity: 1;
+  pointer-events: auto;
   transition: 0.5s ease-in-out;
 }
-/* Music */
-.bars {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 4px solid #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 1s ease-in-out;
-}
-.bar {
-  width: 5px;
-  height: 30px;
-  background: #000;
-  margin: 3px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  animation: quiet ease-in-out 0.8s infinite;
-}
-.bar:nth-child(2) {
-  height: 15px;
-  animation: secBar ease-in-out 0.8s infinite;
-}
-/* .MkContactSheet {
-  position: fixed;
-  top: 0;
-  bottom: 300px;
-  left: 37%;
-  width: 30%;
-  display: flex;
-  opacity: 1;
-  pointer-events: none;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  transition: 0.3s linear;
-  z-index: 9999;
-}
-.MkContactSheet .MkContactSheetOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.Sheet_Left .Sheet_Left_Content {
   width: 100%;
-  height: 100%;
-  opacity: 0.2;
-  background: #000;
-}
-.MkContactSheet .MkContactList {
   position: relative;
-  display: flex;
-  width: 100%;
   background: #fff;
-  max-height: 100vh;
-  height: 40vh;
-  max-width: 1150px;
-  transform: translateY(100%);
-  transition: 0.3s ease;
-}
-.MkContactSheet .MkContactList img {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  border-radius: 5px;
-  margin-left: 10px;
-}
-.MkContactSheet .MkContactList h4 {
-  position: relative;
-  top: 20px;
-  font-size: 20px;
-  margin-left: 30px;
-}
-.MkContactSheet .MkContactList p {
-  position: relative;
-  top: 40px;
-  right: 87px;
-} */
-/* Music End */
-.MkxxLeftSheet {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  opacity: 0;
-  pointer-events: none;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  transition: 0.3s linear;
-  z-index: 999999;
-}
-.MkxxLeftSheet.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-.MkxxLeftSheet .MkxxLeftSheetOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
-  background: #000;
-}
-.MkxxLeftSheet .MkxxLeftSheetContent {
-  position: relative;
-  width: 100%;
-  background: #fff;
-  height: 100%;
-  transition: 0.3s ease;
-  border-top-right-radius: 50px;
-}
-.MkxAccountBottomSheet {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  height: 100;
-  display: flex;
-  opacity: 0;
-  pointer-events: none;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  transition: 0.3s linear;
-  z-index: 9999;
-}
-.MkxAccountBottomSheet .MkxAccountBottomSheetOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
-  background: #000;
-}
-.MkxAccountBottomSheet.show {
-  opacity: 1;
-  pointer-events: auto;
-  top: 50px;
-}
-.MkxAccountBottomSheet .MkxAccountBottomSheetContent {
-  position: relative;
-  width: 100vw;
-  background: #fff;
-  /* background: #ecf4fe; */
   height: 100vh;
-  transition: 0.3s ease;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  max-width: 100%;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+  transition: 0.5s ease-in-out;
 }
-/* .MkxAccountBottomSheet .MkxAccountBottomSheetContent .MkAccountBottomHeader { 
-  position: relative;
-  padding: 30px;
-  color: white;
+.Sheet_Left .Sheet_Left_Body {
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
-.MkxAccountBottomSheetContent .MkAccountBottomHeader h4 {
+.Sheet_Left .Sheet_Left_Body .MkSheetLeft_Header {
   position: relative;
-} */
+  padding: 10px;
+  display: flex;
+  background: var(--color-bg);
+  color: var(--color-light);
+}
+.Sheet_Left .Sheet_Left_Body .MkSheetLeft_Header i {
+  margin-top: 5px;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.Sheet_Left .Sheet_Left_Body .MkSheetLeft_Header h4 {
+  margin-top: 5px;
+  font-size: 18px;
+}
+.Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger {
+    display: none;
+    opacity: 0;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger .MKSheetLeft_BloggerContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger .MKSheetLeft_BloggerContent h4 {
+    position: relative;
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink {
+    position: relative;
+    opacity: 1;
+    display: inline;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content {
+    position: relative;
+    text-align: center;
+    align-items: center;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content .Mk_Logo {
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #ccc;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content p {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .MkVer {
+    position: fixed;
+    top: 145px;
+    width: 15px;
+    margin-left: 3px;
+  }
+  .MkSheetLeft_NgLinkList {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+  }
+  .MkSheetLeft_NgLinkList h4 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox {
+    position: relative;
+    width: 88%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox:hover {
+    background: #ccc;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox h4 {
+    position: relative;
+    bottom: 8px;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox p {
+    position: relative;
+    bottom: 12px;
+    left: 10px;
+  }
+  .MkSheetLeft_Android {
+    position: relative;
+    display: flex;
+  }
+  .MkSheetLeft_AndroidContent {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .MkSheetLeft_AndroidContent img {
+    width: 50px;
+  }
+  .MkSheetLeft_AndroidContentList {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .MkSheetLeft_AndroidContentList p {
+    font-size: 13px;
+  }
+  .MkSheetLeft_AndroidContentListInfo {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  .MkSheetLeft_AndroidContentListInfo i {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .MkSheetLeft_AndroidContentListInfo p {
+    position: relative;
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .MkButtonDownload {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  .MkButtonDownload:hover {
+    background: #ccc;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
 .bottom-sheet {
   position: fixed;
   top: 0;
@@ -410,7 +431,7 @@ section {
   flex-direction: column;
   justify-content: flex-end;
   transition: 0.3s linear;
-  z-index: 999;
+  z-index: 99;
 }
 .bottom-sheet.show {
   opacity: 1;
@@ -830,11 +851,13 @@ footer {
   font-size: 13px;
   font-weight: 500;
   bottom: 30px;
+  color: var(--color-light);
 }
 footer i {
   position: relative;
   top: 2px;
   margin-right: 5px;
+  color: var(--color-light);
 }
 .MkContactSheet .MkContactSheetOverlay {
   background: #000;
@@ -877,6 +900,146 @@ footer i {
 }
 
 @media screen and (max-width: 414px) {
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger {
+    display: none;
+    opacity: 0;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger .MKSheetLeft_BloggerContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger .MKSheetLeft_BloggerContent h4 {
+    position: relative;
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink {
+    position: relative;
+    opacity: 1;
+    display: inline;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content {
+    position: relative;
+    text-align: center;
+    align-items: center;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content .Mk_Logo {
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #ccc;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content p {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .MkVer {
+    position: fixed;
+    top: 145px;
+    width: 15px;
+    margin-left: 3px;
+  }
+  .MkSheetLeft_NgLinkList {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+  }
+  .MkSheetLeft_NgLinkList h4 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox {
+    position: relative;
+    width: 88%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox:hover {
+    background: #ccc;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox h4 {
+    position: relative;
+    bottom: 8px;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox p {
+    position: relative;
+    bottom: 12px;
+    left: 10px;
+  }
+  .MkSheetLeft_Android {
+    position: relative;
+    display: flex;
+  }
+  .MkSheetLeft_AndroidContent {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .MkSheetLeft_AndroidContent img {
+    width: 50px;
+  }
+  .MkSheetLeft_AndroidContentList {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .MkSheetLeft_AndroidContentList p {
+    font-size: 13px;
+  }
+  .MkSheetLeft_AndroidContentListInfo {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  .MkSheetLeft_AndroidContentListInfo i {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .MkSheetLeft_AndroidContentListInfo p {
+    position: relative;
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .MkButtonDownload {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  .MkButtonDownload:hover {
+    background: #ccc;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
   section {
     position: relative;
     min-height: 90vh;
@@ -1338,6 +1501,146 @@ footer i {
   }
 }
 @media screen and (max-width: 393px) {
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger {
+    display: none;
+    opacity: 0;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger .MKSheetLeft_BloggerContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger .MKSheetLeft_BloggerContent h4 {
+    position: relative;
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink {
+    position: relative;
+    opacity: 1;
+    display: inline;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content {
+    position: relative;
+    text-align: center;
+    align-items: center;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content .Mk_Logo {
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #ccc;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content p {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .MkVer {
+    position: fixed;
+    top: 145px;
+    width: 15px;
+    margin-left: 3px;
+  }
+  .MkSheetLeft_NgLinkList {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+  }
+  .MkSheetLeft_NgLinkList h4 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox {
+    position: relative;
+    width: 88%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox:hover {
+    background: #ccc;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox h4 {
+    position: relative;
+    bottom: 8px;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox p {
+    position: relative;
+    bottom: 12px;
+    left: 10px;
+  }
+  .MkSheetLeft_Android {
+    position: relative;
+    display: flex;
+  }
+  .MkSheetLeft_AndroidContent {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .MkSheetLeft_AndroidContent img {
+    width: 50px;
+  }
+  .MkSheetLeft_AndroidContentList {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .MkSheetLeft_AndroidContentList p {
+    font-size: 13px;
+  }
+  .MkSheetLeft_AndroidContentListInfo {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  .MkSheetLeft_AndroidContentListInfo i {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .MkSheetLeft_AndroidContentListInfo p {
+    position: relative;
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .MkButtonDownload {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  .MkButtonDownload:hover {
+    background: #ccc;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
   section {
     position: relative;
     min-height: 90vh;
@@ -1719,6 +2022,30 @@ footer i {
   }
 }
 @media screen and (max-width: 360px) {
+  nav {
+    background: rgba(0, 0, 0, 0.1);
+    width: max-content;
+    display: block;
+    padding: 5px;
+    z-index: 2;
+    left: 15%;
+    position: fixed;
+    display: flex;
+    bottom: 2rem;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(5px);
+  }
+
+  nav a {
+    text-decoration: none;
+    background: transparent;
+    padding: 1rem;
+    display: flex;
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: 1.1rem;
+  }
   .MkCustomeAlert {
     position: absolute;
     justify-content: center;
@@ -1952,196 +2279,161 @@ footer i {
   .MkBoxAccount .MkBoxList .MkBoxContentList .MkBoxContentListPrievew:hover {
     background: #dee3e9;
   }
-  .MkLeanMoreProfile {
+  .Sheet_Left .Sheet_Left_Body .MkSheetLeft_Header {
     position: relative;
+    padding: 10px;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    border-radius: 10px;
-    padding: 5px;
-    margin-top: -30px;
+    background: var(--color-bg);
+    color: var(--color-light);
   }
-  .MkLeanMoreProfile .MkLeanMoreProfileContent {
+  .Sheet_Left .Sheet_Left_Body .MkSheetLeft_Header i {
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  .Sheet_Left .Sheet_Left_Body .MkSheetLeft_Header h4 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger {
+    display: none;
+    opacity: 0;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger .MKSheetLeft_BloggerContent {
     position: relative;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
   }
-  .MkLeanMoreProfileImages img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid #eee;
-    padding: 5px;
-  }
-  .MkLeanMoreProfileContent .MkLeanMoreProfileList h4 {
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_Blogger .MKSheetLeft_BloggerContent h4 {
     position: relative;
-  }
-  .MkLeanMoreProfileContent .MkLeanMoreProfileList p {
-    position: relative;
+    font-weight: normal;
     font-size: 15px;
-    margin-top: 5px;
-  }
-  .MkLeanMoreProfileContent .MkListProfilePreview {
-    position: relative;
-    text-align: left;
-    margin-top: 10px;
-    background: #eee;
-    border-radius: 10px;
-    padding: 2px;
-  }
-  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent {
-    position: relative;
-    padding: 10px;
-    border-radius: 10px;
-    background: #fff;
-  }
-  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons {
-    position: relative;
-    display: flex;
-  }
-  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons i {
-    position: relative;
-    font-size: 30px;
-    margin-left: 10px;
-  }
-  .MkLeanMoreProfileContent .MkListProfilePreview .MkListProfilePreviewContent .MkListProfilePreviewIcons h4 {
-    position: relative;
-    left: 20px;
-    top: 5px;
-    font-weight: 500;
-  }
-  .MkButtonClose {
-    padding: 10px;
-  }
-  .MkButtonClose i {
-    position: absolute;
-    font-size: 30px;
-    top: -15px;
-    right: -15px;
-    border-radius: 50%;
-  }
-  .MkButtonClose i:hover {
-    background: #eee;
-  }
-  footer {
-    position: relative;
-    margin-top: 10px;
-    bottom: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 13px;
-    font-weight: 500;
-  }
-  footer i {
-    position: relative;
-    top: 2px;
-    margin-right: 5px;
-  }
-  .MkxAccountBottomSheet .MkxAccountBottomSheetContent {
-    position: relative;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-  }
-  .MkAccountBottomHeader {
-    position: relative;
-    padding: 10px;
-    margin-top: 15px;
-  }
-  .MkAccountBottomHeader i {
-    position: absolute;
-    padding: 3px;
-    left: 20px;
-    top: 20px;
-    font-size: 30px;
-    border-radius: 50%;
-  }
-  .MkAccountBottomHeader i:hover {
-    background: #000;
-    color: white;
-  }
-  .MkAccountBottomHeader h4 {
-    margin-top: 10px;
-    font-size: 25px;
-    text-align: center;
-  }
-  .MkAccountBottomHeader p {
-    padding: 10px;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 18px;
-  }
-  .MkAccountBottomList {
-    position: relative;
-    padding: 10px;
-    margin-left: 15px;
-    width: 86%;
-    height: 100px;
-    background: #eee;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    display: flex;
-  }
-  .MkAccountBottomList img {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    border-radius: 50px;
-  }
-  .MkAccountBottomList h4 {
-    position: relative;
-    margin-left: 15px;
-    margin-top: 5px;
-    font-size: 20px;
-  }
-  .MkAccountBottomList p {
-    position: relative;
-    top: 25px;
-    right: 40px;
-  }
-  .MkDetail {
-    position: relative;
-    display: flex;
-    background: #eee;
-    height: 40px;
-    padding: 10px;
-    margin-left: 15px;
-    width: 86%;
-    bottom: 50px;
-    transition: 0.3s ease-in-out;
-    border: none;
-  }
-  .MkDetail i {
-    position: relative;
-    margin-top: 10px;
-    margin-left: 23px;
-    font-size: 25px;
-    display: flex;
-  }
-  .MkDetail h4 {
-    position: relative;
-    display: flex;
     margin-left: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    top: 3px;
+    margin-top: 10px;
   }
-  .MkDetail p {
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink {
+    position: relative;
+    opacity: 1;
+    display: inline;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content {
+    position: relative;
+    text-align: center;
+    align-items: center;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content .Mk_Logo {
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #ccc;
+  }
+  .Sheet_Left .Sheet_Left_Body .MKSheetLeft_NgLink .MKSheetLeft_NgLink_Content p {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .MkVer {
+    position: fixed;
+    top: 145px;
+    width: 15px;
+    margin-left: 3px;
+  }
+  .MkSheetLeft_NgLinkList {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+  }
+  .MkSheetLeft_NgLinkList h4 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox {
+    position: relative;
+    width: 88%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox:hover {
+    background: #ccc;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox h4 {
+    position: relative;
+    bottom: 8px;
+  }
+  .MkSheetLeft_NgLinkList .MKSheetLeft_NgLinkListBox p {
+    position: relative;
+    bottom: 12px;
+    left: 10px;
+  }
+  .MkSheetLeft_Android {
     position: relative;
     display: flex;
-    top: 20px;
   }
-  .MkMenuListAccountLean {
+  .MkSheetLeft_AndroidContent {
     position: relative;
-    margin-left: 18px;
-    bottom: 40px;
+    display: flex;
     padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
   }
-  .MkMenuListAccountLean h4 {
-    font-size: 20px;
-    font-weight: bold;
+  .MkSheetLeft_AndroidContent img {
+    width: 50px;
+  }
+  .MkSheetLeft_AndroidContentList {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .MkSheetLeft_AndroidContentList p {
+    font-size: 13px;
+  }
+  .MkSheetLeft_AndroidContentListInfo {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  .MkSheetLeft_AndroidContentListInfo i {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .MkSheetLeft_AndroidContentListInfo p {
+    position: relative;
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .MkButtonDownload {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  .MkButtonDownload:hover {
+    background: #ccc;
+    color: black;
+    transition: 0.5s ease-in-out;
   }
   .bottom-sheet {
     width: 80%;
