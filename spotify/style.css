@@ -270,7 +270,7 @@ section {
   color: var(--color-light);
 }
 .Sheet_Left .Sheet_Left_Body .MkSheetLeft_Header i {
-  margin-top: 5px;
+  margin-top: 3px;
   margin-right: 15px;
   font-size: 25px;
 }
@@ -2287,7 +2287,7 @@ footer i {
     color: var(--color-light);
   }
   .Sheet_Left .Sheet_Left_Body .MkSheetLeft_Header i {
-    margin-top: 5px;
+    margin-top: 3px;
     margin-right: 15px;
     font-size: 25px;
   }
