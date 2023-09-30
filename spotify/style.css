@@ -2980,10 +2980,11 @@ footer i {
   .MKSheetLeft_Store {
     position: relative;
     display: flex;
+    background: #000;
   }
   .MKSheetLeft_Store .MKSheetLeft_StoreListContent {
     width: 100%;
-    height: 100%;
+    height: 150%;
     background: #000;
   }
   .MKSheetLeft_Store .MKSheetLeft_StoreListContent .MKSheetLeft_StoreContent {
