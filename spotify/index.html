@@ -40,7 +40,7 @@
         <div class="MkBoxList">
           <div class="MkMenu"></div>
           <i class="bx bx-code"></i>
-          <h4>Programmer Gabut</h4>
+          <h4>Programmer & Developer</h4>
           <div class="MkTitleHeader">
             <h3>About</h3>
             <p>
@@ -56,22 +56,26 @@
             <i class="bx bx-chevron-right"></i>
           </div>
           <div class="MkBoxContent">
-            <h4>Menu List</h4>
+            <h4>List Menu</h4>
             <div class="MkBoxContentList">
               <div class="MkBoxContentListPrievew MKBorderTop" onclick="MkOpenSpotifyPlaylist()">
-                <i class="bx bxl-spotify"></i>
+                <i class="bi bi-spotify"></i>
                 <h4>Spotify Playlist</h4>
               </div>
               <div class="MkBoxContentListPrievew" onclick="MkOpenLnkGcr()">
-                <i class="bx bx-video-recording"></i>
+                <i class="bi bi-camera-reels"></i>
                 <h4>Film</h4>
               </div>
               <div class="MkBoxContentListPrievew" onclick="MkOpenTeamSpt()">
-                <i class="bx bxs-user-detail"></i>
+                <i class="bi bi-people-fill"></i>
                 <h4>My Team</h4>
               </div>
+              <div class="MkBoxContentListPrievew" onclick="MKOpenStore()">
+                <i class="bi bi-shop"></i>
+                <h4>Mk Store</h4>
+              </div>
               <div class="MkBoxContentListPrievew MKBorderBottom" onclick="MkOpenContact()">
-                <i class="bx bx-chat"></i>
+                <i class="bi bi-chat"></i>
                 <h4>Contact Me</h4>
               </div>
             </div>
@@ -238,16 +242,16 @@
     </div>
     <nav>
       <a href="#" class="nav-link active">
-        <i class="bx bx-home"></i>
+        <i class="bi bi-house"></i>
       </a>
       <a href="#" class="nav-link" onclick="MkSheetBLogger()">
-        <i class="bx bxl-blogger"></i>
+        <i class="bi bi-link-45deg"></i>
       </a>
       <a href="#" class="nav-link" onclick="MkSheetNgLink()">
-        <i class="bx bxs-chat"></i>
+        <i class="bi bi-chat-square-dots"></i>
       </a>
       <a href="#" class="nav-link" onclick="MkSheetAndroid()">
-        <i class="bx bxl-android"></i>
+        <i class="bi bi-android2"></i>
       </a>
     </nav>
     <div class="Sheet_Left">
@@ -255,7 +259,7 @@
         <div class="Sheet_Left_Body">
           <div class="MkSheetLeft_Header">
             <i class="bx bx-chevron-left" onclick="MkSheetLeftBack()"></i>
-            <h4 id="MkSheetHeaderTitle">Marchell</h4>
+            <h4 id="MkSheetHeaderTitle"></h4>
           </div>
           <div class="MKSheetLeft_Blogger">
             <div class="MKSheetLeft_BloggerContent">
@@ -264,8 +268,8 @@
           </div>
           <div class="MKSheetLeft_NgLink">
             <div class="MKSheetLeft_NgLink_Content">
-              <img src="/mk-netlinks/static/mk-assets/img/logo.jpg" class="Mk_Logo" />
-              <h4>chellgnzxz_ <img src="/mk-netlinks/static/mk-assets/img/mk_veriv.png" class="MkVer" /></h4>
+              <img src="/static/mk-assets/img/logo.jpg" class="Mk_Logo" />
+              <h4>chellgnzxz_ <img src="/static/mk-assets/img/mk_veriv.png" class="MkVer" /></h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo libero, dolores eveniet tempora atque quibusdam veniam vero quae, non repellat quos? In optio eligendi reprehenderit dolorem excepturi! Pariatur, minus.
               </p>
@@ -288,7 +292,7 @@
           </div>
           <div class="MkSheetLeft_Android">
             <div class="MkSheetLeft_AndroidContent">
-              <img src="/mk-netlinks/static/mk-assets/img/editorpro.png" />
+              <img src="/static/mk-assets/img/editorpro.png" />
               <div class="MkSheetLeft_AndroidContentList">
                 <h4>MK Tools</h4>
                 <p>Version 5.0.0</p>
@@ -322,6 +326,54 @@
               <h4>Coming Soon</h4>
             </div>
           </div>
+          <div class="MKSheetLeft_Store">
+            <div class="MKSheetLeft_StoreListContent">
+              <div class="MKSheetLeft_StoreContent">
+                <div class="MkStoreImageHeader">
+                  <img src="https://ems-links.netlify.app/assets/images/MkStore_Header.jpg" />
+                  <h4>Selamat datang di Mk Store</h4>
+                  <p>Situs Top up Termurah. Tercepat, Teraman Se Dunia :v</p>
+                </div>
+                <div class="MkStoreSearchContent">
+                  <input type="text" placeholder="Search..." />
+                </div>
+                <div class="MkStoreMain">
+                  <main class="main">
+                    <section class="filters">
+                      <!--=============== FILTERS TABS ===============-->
+                      <ul class="filters__content">
+                        <button class="filters__button filter-tab-active" data-target="#game">Game</button>
+                        <button class="filters__button" data-target="#voucher">Voucher</button>
+                      </ul>
+
+                      <div class="filters__sections">
+                        <div class="projects__content grid filters__active" data-content id="game">
+                          <p>Page Game Sedang dalam pengembangan</p>
+                          <!-- <article class="projects__card">
+                            <img src="/static/mk-assets/img/logo.jpg" alt="" class="projects__img" />
+
+                            <div class="projects__modal">
+                              <div>
+                                <span class="projects__subtitle">G</span>
+                                <h3 class="projects__title">Gallery Sites</h3>
+                                <a href="#" class="projects__button button button__small">
+                                  <i class="ri-link"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </article> -->
+                        </div>
+
+                        <div class="skills__content grid" data-content id="voucher">
+                          <p>Page Voucher Sedang dalam pengembangan</p>
+                        </div>
+                      </div>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -331,31 +383,12 @@
       <source src="/static/mk-assets/mix/MkxchlSong-2.mp3" />
     </audio> -->
     <!-- Javasctipt Main -->
-    <script>
-      AOS.init();
-    </script>
-    <!-- <script>
-      const links = document.querySelectorAll(".nav-link");
-
-      if (links.length) {
-        links.forEach((link) => {
-          link.addEventListener("click", (e) => {
-            links.forEach((link) => {
-              link.classList.remove("active");
-            });
-            e.preventDefault();
-            link.classList.add("active");
-          });
-        });
-      }
-    </script> -->
     <script src="main.js"></script>
     <script src="script.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <!--     <script src="https://ems-links.netlify.app/mk-netlinks/static/mk-assets/js/gxcr.js"></script> -->
+    <!--  <script src="https://ems-links.netlify.app/mk-netlinks/static/mk-assets/js/gxcr.js"></script> -->
   </body>
 </html>
