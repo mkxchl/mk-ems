@@ -72,27 +72,27 @@ body {
 .MKNavHeader {
     position: relative;
     background: #fff;
-    padding: 10px;
+    padding: 15px;
   }
   .MKNavHeader .MkNavHeaderContent {
     margin-left: 10px;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavHeaderRightIcon i {
     position: absolute;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
   }
   .MkHeart {
-    top: 14px;
-    right: 40px;
+    top: 20px;
+    right: 45px;
     bottom: 10px;
   }
   .MkRefresh {
-    top: 14px;
+    top: 20px;
     right: 10px;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun {
-    font-size: 20px;
+    font-size: 25px;
     color: #05bfdb;
     animation: flash 1.2s linear infinite;
   }
@@ -1147,27 +1147,27 @@ footer i {
   .MKNavHeader {
     position: relative;
     background: #fff;
-    padding: 10px;
+    padding: 15px;
   }
   .MKNavHeader .MkNavHeaderContent {
     margin-left: 10px;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavHeaderRightIcon i {
     position: absolute;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
   }
   .MkHeart {
-    top: 14px;
-    right: 40px;
+    top: 20px;
+    right: 45px;
     bottom: 10px;
   }
   .MkRefresh {
-    top: 14px;
+    top: 20px;
     right: 10px;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun {
-    font-size: 20px;
+    font-size: 25px;
     color: #05bfdb;
     animation: flash 1.2s linear infinite;
   }
@@ -1984,27 +1984,27 @@ footer i {
   .MKNavHeader {
     position: relative;
     background: #fff;
-    padding: 10px;
+    padding: 15px;
   }
   .MKNavHeader .MkNavHeaderContent {
     margin-left: 10px;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavHeaderRightIcon i {
     position: absolute;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
   }
   .MkHeart {
-    top: 14px;
-    right: 40px;
+    top: 20px;
+    right: 45px;
     bottom: 10px;
   }
   .MkRefresh {
-    top: 14px;
+    top: 20px;
     right: 10px;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun {
-    font-size: 20px;
+    font-size: 25px;
     color: #05bfdb;
     animation: flash 1.2s linear infinite;
   }
@@ -2731,27 +2731,27 @@ footer i {
   .MKNavHeader {
     position: relative;
     background: #fff;
-    padding: 10px;
+    padding: 15px;
   }
   .MKNavHeader .MkNavHeaderContent {
     margin-left: 10px;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavHeaderRightIcon i {
     position: absolute;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
   }
   .MkHeart {
-    top: 14px;
-    right: 40px;
+    top: 20px;
+    right: 45px;
     bottom: 10px;
   }
   .MkRefresh {
-    top: 14px;
+    top: 20px;
     right: 10px;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun {
-    font-size: 20px;
+    font-size: 25px;
     color: #05bfdb;
     animation: flash 1.2s linear infinite;
   }
