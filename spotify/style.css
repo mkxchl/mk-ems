@@ -93,6 +93,7 @@ body {
   }
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun {
     font-size: 25px;
+    font-weight: bold;
     color: #05bfdb;
     animation: flash 1.2s linear infinite;
   }
@@ -1169,6 +1170,7 @@ footer i {
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun {
     font-size: 25px;
     color: #05bfdb;
+    font-weight: bold;
     animation: flash 1.2s linear infinite;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun:nth-child(1) {
@@ -2006,6 +2008,7 @@ footer i {
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun {
     font-size: 25px;
     color: #05bfdb;
+    font-weight: bold;
     animation: flash 1.2s linear infinite;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun:nth-child(1) {
@@ -2753,6 +2756,7 @@ footer i {
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun {
     font-size: 25px;
     color: #05bfdb;
+    font-weight: bold;
     animation: flash 1.2s linear infinite;
   }
   .MKNavHeader .MkNavHeaderContent .MkNavTextRun:nth-child(1) {
