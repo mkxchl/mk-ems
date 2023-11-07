@@ -3,6 +3,7 @@ const MkFollowSectionOverlay = document.querySelector(".MkFollowSectionOverlay")
 const MkFollowSectionContent = document.querySelector(".MkFollowSectionContent");
 const MkListLinkSheet = document.querySelector(".MkListLinkSheet");
 const MkListLinkSheetOverlay = document.querySelector(".MkListLinkSheetOverlay");
+const MkStalkOverlay = document.querySelector(".MkStalkOverlay");
 const MkSettingSheet = document.querySelector(".MkSettingSheet");
 const MkMusicSheet = document.querySelector(".MkMusicSheet");
 const MkStalk = document.querySelector(".MkStalk");
@@ -213,6 +214,7 @@ function RefreshLoad() {
 const hideBottomSheet = () => {
   MkFollowSection.classList.remove("show");
   MkListLinkSheet.classList.remove("Mkshow");
+  MkStalk.classList.remove("MkStalkShow");
   document.body.style.overflowY = "auto";
 };
 
@@ -222,3 +224,4 @@ const updateSheetHeight = (height) => {
 };
 
 MkFollowSectionOverlay.addEventListener("click", hideBottomSheet);
+MkStalkOverlay.addEventListener("click", hideBottomSheet);
