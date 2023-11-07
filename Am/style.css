@@ -1,0 +1,4413 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/icon?family=Gemunu+Libre:300,400,500,600,700");
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --pink: #ff74a4;
+  --violet: #9f6ea3;
+  --lightblack: #515c6f;
+  --white: #ffffff;
+  --darkwhite: #cecaca;
+  --pinkshadow: #ffcbdd;
+  --lightbshadow: rgba(0, 0, 0, 0.15);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+}
+body {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg"); */
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+body .MkBodyOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+  bottom: 50px;
+  opacity: 0.2;
+  overflow: hidden;
+}
+
+nav {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 9999;
+  display: flex;
+  gap: 3rem;
+  top: 650px;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+nav a {
+  text-decoration: none;
+  background: transparent;
+  padding: 1rem;
+  display: flex;
+  border-radius: 50%;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+section {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+section .MkHeaderImages {
+  position: relative;
+  justify-content: Center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+section .MkHeaderImages img {
+  position: relative;
+  justify-content: Center;
+  align-items: center;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+}
+section .MKListName {
+  position: relative;
+  justify-content: Center;
+  align-items: center;
+  text-align: center;
+}
+section .MKListName h4 {
+  color: #000;
+  font-size: 18px;
+}
+section .MKListName p {
+  font-size: 15px;
+  color: #000;
+}
+section .MkListSocialIcon {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+section .MkListSocialIcon i {
+  padding: 7px;
+  background: #fff;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #ccc;
+}
+section .MkListSocialIcon i:hover {
+  background: #2d5cfe;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+section .MktitleMenu {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+section .MktitleMenu h4 {
+  font-size: 25px;
+  color: #fff;
+}
+section .MkListLink {
+  position: relative;
+  display: flex;
+  padding: 13px;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+section .MkListLink i {
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+section .MkListLink h4 {
+  margin-top: 3px;
+  font-size: 18px;
+}
+.spotify:hover {
+  background: #1db954;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.film:hover {
+  background: #2d5cfe;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.portfolio:hover {
+  background: #ddd;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.team:hover {
+  background: #f5c242;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+footer {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  color: #000;
+}
+footer .GotoProfile {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+footer .GotoProfile:hover {
+  color: #2d5cfe;
+  transition: 0.3s ease-in-out;
+}
+.MkFollowSection {
+  position: fixed;
+  top: 0;
+  bottom: 30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s linear;
+  z-index: 9999;
+}
+.MkFollowSection.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.MkFollowSection .MkFollowSectionOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+}
+.MkFollowSection.show .MkFollowSectionContent {
+  transform: translateY(0%);
+}
+.MkFollowSection .MkFollowSectionContent {
+  position: relative;
+  width: 100%;
+  /* height: 50vh; */
+  max-height: 100vh;
+  max-width: 1150px;
+  transform: translateY(100%);
+  transition: 0.3s ease;
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  pointer-events: auto;
+}
+.MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader {
+  position: relative;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+}
+.MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader i {
+  position: absolute;
+  font-size: 30px;
+  right: 10px;
+  top: 5px;
+  border-radius: 50%;
+  padding: 7px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader i:hover {
+  background: #ccc;
+  transition: 0.5s ease-in-out;
+}
+.MkFollowSectionContentAccount {
+  position: relative;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.MkFollowSectionContentAccount .MkFollowSectionAccountIcon {
+  position: relative;
+  padding: 5px;
+  display: flex;
+}
+.MkFollowSectionContentAccount .MkFollowSectionAccountIcon img {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  margin-left: 5px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.MkFollowSectionContentAccount .MkFollowSectionAccountIcon i {
+  position: relative;
+  padding: 10px;
+  background: #eee;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  font-size: 23px;
+  margin-right: 20px;
+}
+.MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText {
+  position: relative;
+  margin-top: 4px;
+}
+.MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText h4 {
+  position: relative;
+  font-size: 15px;
+}
+.MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText p {
+  position: relative;
+  font-size: 15px;
+}
+.MkFollowSectionContentAccount:hover {
+  background: #ccc;
+  transition: 0.5s ease-in-out;
+}
+.MkSectionProfileSheet {
+  position: relative;
+  height: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.MkSectionProfileBackground {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+  opacity: 0.2;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.MkSectionProfileSheetContent {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  text-align: center;
+}
+.MkSectionProfileSheetContent h4 {
+  font-size: 18px;
+}
+.MkSectionProfileSheetContent p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.MkSectionProfileButtonFollow {
+  position: relative;
+  padding: 15px;
+  text-align: center;
+  background: #2481cc;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.MkSectionProfileButtonFollow:hover {
+  background: #ccc;
+  transition: 0.5s ease-in-out;
+}
+.MkSectionProfileButtonFollow:hover h4 {
+  color: #000;
+  transition: 0.5s ease-in-out;
+}
+.MkSectionProfileSheetContentInfo {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+.MkSectionProfileSheetContentInfo h4 {
+  font-size: 18px;
+}
+.MkSectionProfileSheetContentInfo p {
+  font-size: 15px;
+}
+.MkSectionProfileSheetContent img {
+  position: relative;
+  margin-top: 20px;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+.MkListLinkSheet {
+  position: fixed;
+  bottom: 50%;
+  width: 100%;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  pointer-events: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s linear;
+  z-index: 9999;
+}
+.MkListLinkSheet.Mkshow {
+  opacity: 1;
+  pointer-events: auto;
+}
+.MkListLinkSheet .MkListLinkSheetOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background: #000;
+}
+.MkListLinkSheet .MkListLinkSheetContent {
+  width: 100%;
+  position: relative;
+  max-height: 100vh;
+  height: 40vh;
+  max-width: 1150px;
+  transform: translateY(100%);
+  transition: 0.3s ease;
+  /* background: #fff; */
+}
+.MkListLinkSheet.Mkshow .MkListLinkSheetContent {
+  transform: translateY(0%);
+}
+.MkListLinkSheet .MkListLinkSheetContent .MkListLinkSheetContentBody {
+  position: relative;
+  height: 100%;
+  bottom: 30px;
+  scrollbar-width: none;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  z-index: -1;
+}
+.MkListLinkSheetContentBody .MkListLinkSheetContentHeader {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  background: #fff;
+  width: 72%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.MkListLinkSheetContentBody .MkListLinkSheetContentHeader h4 {
+  position: relative;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.MkListLinkSheetContentHeader i {
+  position: relative;
+  font-size: 23px;
+  padding: 10px;
+  left: 143px;
+  background: #fff;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.MkNoteFilm {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #000;
+  background: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+.MkLinkSheetTimeline {
+  position: relative;
+  margin-top: 20px;
+  z-index: 9999;
+}
+.MkLinkSheetTimeline:after {
+  position: absolute;
+  content: "";
+  background: #fff;
+  left: 10%;
+  width: 6px;
+  top: 0;
+  height: 100%;
+  margin-top: 20px;
+}
+.MkLinkSheetItem {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+.MkLinkSheetItem:last-child {
+  padding-bottom: 5px;
+}
+.MkLinkSheetItem:after {
+  content: attr(data-year);
+  width: 10px;
+  position: absolute;
+  top: 10px;
+  left: 34px;
+  width: 8px;
+  height: 8px;
+  line-height: 0.6;
+  border: 1px solid #fff;
+  font-size: 11px;
+  text-indent: -35px;
+  border-radius: 50%;
+  background: #fff;
+}
+.MkLinkSheetItem:before {
+  content: attr(data-year);
+  width: 10px;
+  position: absolute;
+  top: 70px;
+  left: 34px;
+  width: 8px;
+  height: 8px;
+  line-height: 0.6;
+  border: 1px solid #fff;
+  font-size: 11px;
+  text-indent: -35px;
+  border-radius: 50%;
+  background: #fff;
+}
+.MkLinkSheetItemTitle {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  left: 10px;
+}
+.MkLinkSheetItemDesc {
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  left: 10px;
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+}
+.MkLinkSheetItemSection {
+  position: relative;
+  padding: 5px;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+.MkLinkSheetItemSection:hover {
+  background: white;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.MkLinkSheetItemSection:hover .MkLinkSheetItemTitle {
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.MkLinkSheetItemSection:hover .MkLinkSheetItemDesc {
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.MkLinkSheetItemButton {
+  position: absolute;
+  width: 20%;
+  top: 15px;
+  background: #2d5cfe;
+  color: #fff;
+  text-align: center;
+}
+.MkLinkSheetItemButton i {
+  padding: 10px;
+  font-size: 20px;
+}
+.MkButtonSpotify {
+  position: relative;
+  padding: 10px;
+  font-size: 18px;
+  background: #1db954;
+  color: #fff;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.MkButtonSpotify:hover {
+  background: white;
+  color: #000;
+  transition: 0.5s ease-in-out;
+}
+.MkLinkSheetSpotify {
+  position: relative;
+}
+.MkLinkSheetFilm {
+  position: relative;
+}
+.MkSettingSheet {
+  position: fixed;
+  top: 0;
+  right: -999px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.5s ease-in-out;
+  z-index: 99999;
+}
+.MkSettingSheet.MkSettingshow {
+  right: 0;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.MkSettingSheet .MkSettingSheetContent {
+  width: 100%;
+  position: relative;
+  background: #edf6fe;
+  height: 100vh;
+  max-width: 100%;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+  transition: 0.5s ease-in-out;
+}
+.MkSettingSheet .MkSettingSheetContentList {
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.MkSettingSheetContentListHeader {
+  position: relative;
+  display: flex;
+  background: #344854;
+  padding: 10px;
+  width: 100%;
+}
+.MkSettingSheetContentListHeader i {
+  font-size: 25px;
+  margin-right: 10px;
+  padding: 3px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  color: #fff;
+}
+.MkSettingSheetContentListHeader i:hover {
+  /* background: #fff; */
+  color: red;
+  transition: 0.5s ease-in-out;
+}
+.MkSettingSheetContentListHeader h4 {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+.MkSettingHeaderTitle {
+  position: relative;
+  padding: 10px;
+  background: #edf6fe;
+  margin-top: 1px;
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+.MkSettingHeaderTitle h4 {
+  margin-left: 10px;
+  color: #000;
+}
+.MkSettingUser {
+  position: relative;
+  background: #22222225;
+  padding: 10px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+.MkSettingUserImage {
+  position: relative;
+  display: flex;
+}
+.MkSettingUser .MkSettingUserImage img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 59%;
+  margin-left: 10px;
+}
+.MkSettingUserName {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  color: #000;
+}
+.MkSettingUserName h4 {
+  margin-top: 7px;
+}
+.MkSettingUserName p {
+  margin-top: -5px;
+  color: #000;
+  font-size: 15px;
+}
+.MkSettingListContentIcon {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.MkSettingListIcon i {
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10%;
+  font-size: 25px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.MkSettingListIcon i:hover {
+  background: #ccc;
+  transition: 0.5s ease-in-out;
+}
+.MkSettingListIcon h4 {
+  position: relative;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.MkPageNew {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  place-items: Center;
+  display: flex;
+  margin-top: 50px;
+}
+.MkPageNew img {
+  width: 50%;
+  height: 50%;
+}
+.MkMusicSheet {
+  position: fixed;
+  top: 0;
+  right: -999px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.5s ease-in-out;
+  z-index: 99999;
+}
+.MkMusicSheet.MkMusicShow {
+  opacity: 1;
+  right: 0;
+  pointer-events: auto;
+}
+.MkMusicSheet .MkMusicSheetOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+}
+.MkMusicSheet .MkMusicSheetContent {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+.MkMusicSheet .MkMusicSheetHeader {
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+}
+.MkMusicSheet .MkMusicSheetHeader i {
+  position: relative;
+  font-size: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.MkMusicSheet .MkMusicSheetHeader i:hover {
+  color: red;
+  transition: 0.3s ease-in-out;
+}
+.MkMusicSheet .MkMusicSheetHeader h4 {
+  position: relative;
+  font-size: 19px;
+}
+.MkMusicSheet .MkMusicSheetListContent {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+/* Music */
+.MkMusicSheet .wrapper {
+  width: 100%;
+  margin-right: 20px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.MkMusicSheet .wrapper i {
+  cursor: pointer;
+}
+.top-bar,
+.progress-area .song-timer,
+.controls,
+.music-list .header,
+.music-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-bar i {
+  font-size: 30px;
+  color: var(--lightblack);
+}
+.top-bar i:first-child {
+  margin-left: -7px;
+}
+.top-bar span {
+  font-size: 18px;
+  margin-left: -3px;
+  color: var(--lightblack);
+}
+.img-area {
+  width: 100%;
+  height: 256px;
+  overflow: hidden;
+  margin-top: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px var(--lightbshadow);
+}
+.img-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.song-details {
+  text-align: center;
+  margin: 30px 0;
+}
+.song-details p {
+  color: var(--lightblack);
+}
+.song-details .name {
+  font-size: 21px;
+  font-weight: bold;
+}
+.song-details .artist {
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 35px;
+}
+.progress-area {
+  height: 6px;
+  width: 100%;
+  border-radius: 50px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+.progress-area .progress-bar {
+  height: inherit;
+  width: 0%;
+  position: relative;
+  border-radius: inherit;
+  background: #2d5cfe;
+}
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  top: 50%;
+  right: -5px;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  background: inherit;
+  transition: opacity 0.2s ease;
+}
+.progress-area:hover .progress-bar::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+.progress-area .song-timer {
+  margin-top: 2px;
+}
+.song-timer span {
+  font-size: 13px;
+  color: var(--lightblack);
+}
+.controls {
+  margin: 40px 0 5px 0;
+}
+.controls i {
+  font-size: 28px;
+  user-select: none;
+  color: #2d5cfe;
+  /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+  /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+.controls i:nth-child(2),
+.controls i:nth-child(4) {
+  font-size: 43px;
+}
+.controls #prev {
+  margin-right: -13px;
+}
+.controls #next {
+  margin-left: -13px;
+}
+.controls .play-pause {
+  height: 54px;
+  width: 54px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%); */
+  /* box-shadow: 0px 0px 5px var(--pink); */
+  color: #2d5cfe;
+}
+.play-pause::before {
+  position: absolute;
+  content: "";
+  height: 43px;
+  width: 43px;
+  border-radius: inherit;
+  /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+}
+.play-pause i {
+  height: 43px;
+  width: 43px;
+  line-height: 43px;
+  text-align: center;
+  background: inherit;
+  /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  position: absolute;
+}
+.music-list {
+  position: absolute;
+  background: var(--white);
+  width: 100%;
+  left: 0;
+  bottom: -100%;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 5;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.15s ease-in-out;
+}
+.music-list.show {
+  bottom: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+.header .row {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  color: var(--lightblack);
+}
+.header .row i {
+  cursor: default;
+}
+.header .row span {
+  margin-top: 2px;
+  margin-left: 5px;
+}
+.header #close {
+  font-size: 22px;
+  color: var(--lightblack);
+}
+.music-list ul {
+  margin: 10px 0;
+  max-height: 260px;
+  overflow: auto;
+}
+.music-list ul::-webkit-scrollbar {
+  width: 0px;
+}
+.music-list ul li {
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: var(--lightblack);
+  border-bottom: 1px solid #e5e5e5;
+}
+.music-list ul li:last-child {
+  border-bottom: 0px;
+}
+.music-list ul li .row span {
+  font-size: 17px;
+  font-weight: bold;
+}
+.music-list ul li .row p {
+  opacity: 0.9;
+}
+ul li .audio-duration {
+  font-size: 16px;
+}
+ul li.playing {
+  pointer-events: none;
+  color: var(--violet);
+}
+/* Stalking Area */
+.MkStalk {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  z-index: 99999999;
+}
+.MkStalk.MkStalkShow {
+  opacity: 1;
+  pointer-events: auto;
+}
+.MkStalk .MkStalkOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+}
+.MkStalk .MkStalkContent {
+  position: relative;
+  background: #fff;
+  width: 70%;
+  height: 30%;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.MkStalk .MkStalkContent i {
+  position: relative;
+  top: 20px;
+  font-size: 70px;
+}
+.MkStalk .MkStalkContent h4 {
+  position: relative;
+  top: 30px;
+  font-weight: 500;
+}
+.MkStalk .MkStalkContent p {
+  position: relative;
+  top: 50px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-weight: 600;
+}
+.MkStalk .MkStalkContent p:hover {
+  color: red;
+  transition: 0.5s ease-in-out;
+}
+@media screen and (max-width: 414px) {
+  body .MkBodyOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    bottom: 50px;
+    opacity: 0.2;
+    overflow: hidden;
+  }
+
+  nav {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    z-index: 9999;
+    display: flex;
+    gap: 4.2rem;
+    top: 730px;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+  }
+  nav a {
+    text-decoration: none;
+    background: transparent;
+    padding: 1rem;
+    display: flex;
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: 1.1rem;
+  }
+  nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  section {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  section .MkHeaderImages {
+    position: relative;
+    justify-content: Center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  section .MkHeaderImages img {
+    position: relative;
+    justify-content: Center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  section .MKListName {
+    position: relative;
+    justify-content: Center;
+    align-items: center;
+    text-align: center;
+  }
+  section .MKListName h4 {
+    color: #000;
+    font-size: 18px;
+  }
+  section .MKListName p {
+    font-size: 15px;
+    color: #000;
+  }
+  section .MkListSocialIcon {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  section .MkListSocialIcon i {
+    padding: 7px;
+    background: #fff;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #ccc;
+  }
+  section .MkListSocialIcon i:hover {
+    background: #2d5cfe;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  section .MktitleMenu {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+  }
+  section .MktitleMenu h4 {
+    font-size: 25px;
+    color: #fff;
+  }
+  section .MkListLink {
+    position: relative;
+    display: flex;
+    padding: 13px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+  }
+  section .MkListLink i {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+  section .MkListLink h4 {
+    margin-top: 3px;
+    font-size: 18px;
+  }
+  .spotify:hover {
+    background: #1db954;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  .film:hover {
+    background: #2d5cfe;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  .portfolio:hover {
+    background: #ddd;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .team:hover {
+    background: #f5c242;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  footer {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #000;
+  }
+  footer .GotoProfile {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  footer .GotoProfile:hover {
+    color: #2d5cfe;
+    transition: 0.3s ease-in-out;
+  }
+  .MkFollowSection {
+    position: fixed;
+    top: 0;
+    bottom: 30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s linear;
+    z-index: 9999;
+  }
+  .MkFollowSection.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkFollowSection .MkFollowSectionOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkFollowSection.show .MkFollowSectionContent {
+    transform: translateY(0%);
+  }
+  .MkFollowSection .MkFollowSectionContent {
+    position: relative;
+    width: 100%;
+    /* height: 50vh; */
+    max-height: 100vh;
+    max-width: 1150px;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    pointer-events: auto;
+  }
+  .MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader {
+    position: relative;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+  }
+  .MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader i {
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    top: 5px;
+    border-radius: 50%;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader i:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkFollowSectionContentAccount {
+    position: relative;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon {
+    position: relative;
+    padding: 5px;
+    display: flex;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon img {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon i {
+    position: relative;
+    padding: 10px;
+    background: #eee;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    font-size: 23px;
+    margin-right: 20px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText {
+    position: relative;
+    margin-top: 4px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText h4 {
+    position: relative;
+    font-size: 15px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText p {
+    position: relative;
+    font-size: 15px;
+  }
+  .MkFollowSectionContentAccount:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileSheet {
+    position: relative;
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  .MkSectionProfileBackground {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    opacity: 0.2;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .MkSectionProfileSheetContent {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    text-align: center;
+  }
+  .MkSectionProfileSheetContent h4 {
+    font-size: 18px;
+  }
+  .MkSectionProfileSheetContent p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .MkSectionProfileButtonFollow {
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    background: #2481cc;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileButtonFollow:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileButtonFollow:hover h4 {
+    color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileSheetContentInfo {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 7px;
+  }
+  .MkSectionProfileSheetContentInfo h4 {
+    font-size: 18px;
+  }
+  .MkSectionProfileSheetContentInfo p {
+    font-size: 15px;
+  }
+  .MkSectionProfileSheetContent img {
+    position: relative;
+    margin-top: 20px;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+  }
+  .MkListLinkSheet {
+    position: fixed;
+    bottom: 50%;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s linear;
+    z-index: 9999;
+  }
+  .MkListLinkSheet.Mkshow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkListLinkSheet .MkListLinkSheetOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background: #000;
+  }
+  .MkListLinkSheet .MkListLinkSheetContent {
+    width: 100%;
+    position: relative;
+    max-height: 100vh;
+    height: 40vh;
+    max-width: 1150px;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+    /* background: #fff; */
+  }
+  .MkListLinkSheet.Mkshow .MkListLinkSheetContent {
+    transform: translateY(0%);
+  }
+  .MkListLinkSheet .MkListLinkSheetContent .MkListLinkSheetContentBody {
+    position: relative;
+    height: 100%;
+    bottom: 30px;
+    scrollbar-width: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    z-index: -1;
+  }
+  .MkListLinkSheetContentBody .MkListLinkSheetContentHeader {
+    position: relative;
+    margin-left: 30px;
+    display: flex;
+    background: #fff;
+    width: 75%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .MkListLinkSheetContentBody .MkListLinkSheetContentHeader h4 {
+    position: relative;
+    width: 45%;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .MkListLinkSheetContentHeader i {
+    position: relative;
+    font-size: 23px;
+    padding: 10px;
+    left: 163px;
+    background: #fff;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .MkNoteFilm {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #000;
+    background: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .MkLinkSheetTimeline {
+    position: relative;
+    margin-top: 20px;
+    z-index: 9999;
+  }
+  .MkLinkSheetTimeline:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    left: 8%;
+    width: 6px;
+    top: 0;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .MkLinkSheetItem {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .MkLinkSheetItem:last-child {
+    padding-bottom: 5px;
+  }
+  .MkLinkSheetItem:after {
+    content: attr(data-year);
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 8px;
+    height: 8px;
+    line-height: 0.6;
+    border: 1px solid #fff;
+    font-size: 11px;
+    text-indent: -35px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .MkLinkSheetItem:before {
+    content: attr(data-year);
+    width: 10px;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    width: 8px;
+    height: 8px;
+    line-height: 0.6;
+    border: 1px solid #fff;
+    font-size: 11px;
+    text-indent: -35px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .MkLinkSheetItemTitle {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    left: 10px;
+  }
+  .MkLinkSheetItemDesc {
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+    left: 10px;
+    line-height: 1.5;
+    font-family: "DM Sans", sans-serif;
+  }
+  .MkLinkSheetItemSection {
+    position: relative;
+    padding: 5px;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemSection:hover {
+    background: white;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemSection:hover .MkLinkSheetItemTitle {
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemSection:hover .MkLinkSheetItemDesc {
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemButton {
+    position: absolute;
+    width: 20%;
+    top: 15px;
+    background: #2d5cfe;
+    color: #fff;
+    text-align: center;
+  }
+  .MkLinkSheetItemButton i {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .MkButtonSpotify {
+    position: relative;
+    padding: 10px;
+    font-size: 18px;
+    background: #1db954;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkButtonSpotify:hover {
+    background: white;
+    color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .MkLinkSheetSpotify {
+    position: relative;
+  }
+  .MkLinkSheetFilm {
+    position: relative;
+  }
+  .MkSettingSheet {
+    position: fixed;
+    top: 0;
+    right: -999px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  .MkSettingSheet.MkSettingshow {
+    right: 0;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingSheet .MkSettingSheetContent {
+    width: 100%;
+    position: relative;
+    background: #edf6fe;
+    height: 100vh;
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingSheet .MkSettingSheetContentList {
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .MkSettingSheetContentListHeader {
+    position: relative;
+    display: flex;
+    background: #344854;
+    padding: 10px;
+    width: 100%;
+  }
+  .MkSettingSheetContentListHeader i {
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+  }
+  .MkSettingSheetContentListHeader i:hover {
+    /* background: #fff; */
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingSheetContentListHeader h4 {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .MkSettingHeaderTitle {
+    position: relative;
+    padding: 10px;
+    background: #edf6fe;
+    margin-top: 1px;
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+  .MkSettingHeaderTitle h4 {
+    margin-left: 10px;
+    color: #000;
+  }
+  .MkSettingUser {
+    position: relative;
+    background: #22222225;
+    padding: 10px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 3px;
+  }
+  .MkSettingUserImage {
+    position: relative;
+    display: flex;
+  }
+  .MkSettingUser .MkSettingUserImage img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 59%;
+    margin-left: 10px;
+  }
+  .MkSettingUserName {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    color: #000;
+  }
+  .MkSettingUserName h4 {
+    margin-top: 7px;
+  }
+  .MkSettingUserName p {
+    margin-top: -5px;
+    color: #000;
+    font-size: 15px;
+  }
+  .MkSettingListContentIcon {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .MkSettingListIcon i {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10%;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingListIcon i:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingListIcon h4 {
+    position: relative;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .MkPageNew {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    place-items: Center;
+    display: flex;
+    margin-top: 50px;
+  }
+  .MkPageNew img {
+    width: 50%;
+    height: 50%;
+  }
+  .MkMusicSheet {
+    position: fixed;
+    top: 0;
+    right: -999px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  .MkMusicSheet.MkMusicShow {
+    opacity: 1;
+    right: 0;
+    pointer-events: auto;
+  }
+  .MkMusicSheet .MkMusicSheetOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkMusicSheet .MkMusicSheetContent {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+  }
+  .MkMusicSheet .MkMusicSheetHeader {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  .MkMusicSheet .MkMusicSheetHeader i {
+    position: relative;
+    font-size: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .MkMusicSheet .MkMusicSheetHeader i:hover {
+    color: red;
+    transition: 0.3s ease-in-out;
+  }
+  .MkMusicSheet .MkMusicSheetHeader h4 {
+    position: relative;
+    font-size: 19px;
+  }
+  .MkMusicSheet .MkMusicSheetListContent {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  /* Music */
+  .MkMusicSheet .wrapper {
+    width: 100%;
+    margin-right: 20px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .MkMusicSheet .wrapper i {
+    cursor: pointer;
+  }
+  .top-bar,
+  .progress-area .song-timer,
+  .controls,
+  .music-list .header,
+  .music-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-bar i {
+    font-size: 30px;
+    color: var(--lightblack);
+  }
+  .top-bar i:first-child {
+    margin-left: -7px;
+  }
+  .top-bar span {
+    font-size: 18px;
+    margin-left: -3px;
+    color: var(--lightblack);
+  }
+  .img-area {
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px var(--lightbshadow);
+  }
+  .img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .song-details {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .song-details p {
+    color: var(--lightblack);
+  }
+  .song-details .name {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .song-details .artist {
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 35px;
+  }
+  .progress-area {
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  .progress-area .progress-bar {
+    height: inherit;
+    width: 0%;
+    position: relative;
+    border-radius: inherit;
+    background: #2d5cfe;
+  }
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    right: -5px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: inherit;
+    transition: opacity 0.2s ease;
+  }
+  .progress-area:hover .progress-bar::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .progress-area .song-timer {
+    margin-top: 2px;
+  }
+  .song-timer span {
+    font-size: 13px;
+    color: var(--lightblack);
+  }
+  .controls {
+    margin: 40px 0 5px 0;
+  }
+  .controls i {
+    font-size: 28px;
+    user-select: none;
+    color: #2d5cfe;
+    /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+    /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  }
+  .controls i:nth-child(2),
+  .controls i:nth-child(4) {
+    font-size: 43px;
+  }
+  .controls #prev {
+    margin-right: -13px;
+  }
+  .controls #next {
+    margin-left: -13px;
+  }
+  .controls .play-pause {
+    height: 54px;
+    width: 54px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%); */
+    /* box-shadow: 0px 0px 5px var(--pink); */
+    color: #2d5cfe;
+  }
+  .play-pause::before {
+    position: absolute;
+    content: "";
+    height: 43px;
+    width: 43px;
+    border-radius: inherit;
+    /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+  }
+  .play-pause i {
+    height: 43px;
+    width: 43px;
+    line-height: 43px;
+    text-align: center;
+    background: inherit;
+    /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+    position: absolute;
+  }
+  .music-list {
+    position: absolute;
+    background: var(--white);
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.15s ease-in-out;
+  }
+  .music-list.show {
+    bottom: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .header .row {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    color: var(--lightblack);
+  }
+  .header .row i {
+    cursor: default;
+  }
+  .header .row span {
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+  .header #close {
+    font-size: 22px;
+    color: var(--lightblack);
+  }
+  .music-list ul {
+    margin: 10px 0;
+    max-height: 260px;
+    overflow: auto;
+  }
+  .music-list ul::-webkit-scrollbar {
+    width: 0px;
+  }
+  .music-list ul li {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: var(--lightblack);
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .music-list ul li:last-child {
+    border-bottom: 0px;
+  }
+  .music-list ul li .row span {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .music-list ul li .row p {
+    opacity: 0.9;
+  }
+  ul li .audio-duration {
+    font-size: 16px;
+  }
+  ul li.playing {
+    pointer-events: none;
+    color: var(--violet);
+  }
+  /* Stalking Area */
+  .MkStalk {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    z-index: 99999999;
+  }
+  .MkStalk.MkStalkShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkStalk .MkStalkOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkStalk .MkStalkContent {
+    position: relative;
+    background: #fff;
+    width: 70%;
+    height: 30%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .MkStalk .MkStalkContent i {
+    position: relative;
+    top: 20px;
+    font-size: 70px;
+  }
+  .MkStalk .MkStalkContent h4 {
+    position: relative;
+    top: 30px;
+    font-weight: 500;
+  }
+  .MkStalk .MkStalkContent p {
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-weight: 600;
+  }
+  .MkStalk .MkStalkContent p:hover {
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+}
+@media screen and (max-width: 393px) {
+  body .MkBodyOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    bottom: 50px;
+    opacity: 0.2;
+    overflow: hidden;
+  }
+
+  nav {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    z-index: 9999;
+    display: flex;
+    gap: 3.6rem;
+    top: 680px;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+  }
+  nav a {
+    text-decoration: none;
+    background: transparent;
+    padding: 1rem;
+    display: flex;
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: 1.1rem;
+  }
+  nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  section {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  section .MkHeaderImages {
+    position: relative;
+    justify-content: Center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  section .MkHeaderImages img {
+    position: relative;
+    justify-content: Center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  section .MKListName {
+    position: relative;
+    justify-content: Center;
+    align-items: center;
+    text-align: center;
+  }
+  section .MKListName h4 {
+    color: #000;
+    font-size: 18px;
+  }
+  section .MKListName p {
+    font-size: 15px;
+    color: #000;
+  }
+  section .MkListSocialIcon {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  section .MkListSocialIcon i {
+    padding: 7px;
+    background: #fff;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #ccc;
+  }
+  section .MkListSocialIcon i:hover {
+    background: #2d5cfe;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  section .MktitleMenu {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+  }
+  section .MktitleMenu h4 {
+    font-size: 25px;
+    color: #fff;
+  }
+  section .MkListLink {
+    position: relative;
+    display: flex;
+    padding: 13px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+  }
+  section .MkListLink i {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+  section .MkListLink h4 {
+    margin-top: 3px;
+    font-size: 18px;
+  }
+  .spotify:hover {
+    background: #1db954;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  .film:hover {
+    background: #2d5cfe;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  .portfolio:hover {
+    background: #ddd;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .team:hover {
+    background: #f5c242;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  footer {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #000;
+  }
+  footer .GotoProfile {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  footer .GotoProfile:hover {
+    color: #2d5cfe;
+    transition: 0.3s ease-in-out;
+  }
+  .MkFollowSection {
+    position: fixed;
+    top: 0;
+    bottom: 30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s linear;
+    z-index: 9999;
+  }
+  .MkFollowSection.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkFollowSection .MkFollowSectionOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkFollowSection.show .MkFollowSectionContent {
+    transform: translateY(0%);
+  }
+  .MkFollowSection .MkFollowSectionContent {
+    position: relative;
+    width: 100%;
+    /* height: 50vh; */
+    max-height: 100vh;
+    max-width: 1150px;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    pointer-events: auto;
+  }
+  .MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader {
+    position: relative;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+  }
+  .MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader i {
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    top: 5px;
+    border-radius: 50%;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader i:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkFollowSectionContentAccount {
+    position: relative;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon {
+    position: relative;
+    padding: 5px;
+    display: flex;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon img {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon i {
+    position: relative;
+    padding: 10px;
+    background: #eee;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    font-size: 23px;
+    margin-right: 20px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText {
+    position: relative;
+    margin-top: 4px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText h4 {
+    position: relative;
+    font-size: 15px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText p {
+    position: relative;
+    font-size: 15px;
+  }
+  .MkFollowSectionContentAccount:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileSheet {
+    position: relative;
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  .MkSectionProfileBackground {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    opacity: 0.2;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .MkSectionProfileSheetContent {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    text-align: center;
+  }
+  .MkSectionProfileSheetContent h4 {
+    font-size: 18px;
+  }
+  .MkSectionProfileSheetContent p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .MkSectionProfileButtonFollow {
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    background: #2481cc;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileButtonFollow:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileButtonFollow:hover h4 {
+    color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileSheetContentInfo {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 7px;
+  }
+  .MkSectionProfileSheetContentInfo h4 {
+    font-size: 18px;
+  }
+  .MkSectionProfileSheetContentInfo p {
+    font-size: 15px;
+  }
+  .MkSectionProfileSheetContent img {
+    position: relative;
+    margin-top: 20px;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+  }
+  .MkListLinkSheet {
+    position: fixed;
+    bottom: 50%;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s linear;
+    z-index: 9999;
+  }
+  .MkListLinkSheet.Mkshow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkListLinkSheet .MkListLinkSheetOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background: #000;
+  }
+  .MkListLinkSheet .MkListLinkSheetContent {
+    width: 100%;
+    position: relative;
+    max-height: 100vh;
+    height: 40vh;
+    max-width: 1150px;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+    /* background: #fff; */
+  }
+  .MkListLinkSheet.Mkshow .MkListLinkSheetContent {
+    transform: translateY(0%);
+  }
+  .MkListLinkSheet .MkListLinkSheetContent .MkListLinkSheetContentBody {
+    position: relative;
+    height: 100%;
+    bottom: 30px;
+    scrollbar-width: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    z-index: -1;
+  }
+  .MkListLinkSheetContentBody .MkListLinkSheetContentHeader {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    background: #fff;
+    width: 72%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .MkListLinkSheetContentBody .MkListLinkSheetContentHeader h4 {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .MkListLinkSheetContentHeader i {
+    position: relative;
+    font-size: 23px;
+    padding: 10px;
+    left: 143px;
+    background: #fff;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .MkNoteFilm {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #000;
+    background: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .MkLinkSheetTimeline {
+    position: relative;
+    margin-top: 20px;
+    z-index: 9999;
+  }
+  .MkLinkSheetTimeline:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    left: 10%;
+    width: 6px;
+    top: 0;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .MkLinkSheetItem {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .MkLinkSheetItem:last-child {
+    padding-bottom: 5px;
+  }
+  .MkLinkSheetItem:after {
+    content: attr(data-year);
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: 34px;
+    width: 8px;
+    height: 8px;
+    line-height: 0.6;
+    border: 1px solid #fff;
+    font-size: 11px;
+    text-indent: -35px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .MkLinkSheetItem:before {
+    content: attr(data-year);
+    width: 10px;
+    position: absolute;
+    top: 70px;
+    left: 34px;
+    width: 8px;
+    height: 8px;
+    line-height: 0.6;
+    border: 1px solid #fff;
+    font-size: 11px;
+    text-indent: -35px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .MkLinkSheetItemTitle {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    left: 10px;
+  }
+  .MkLinkSheetItemDesc {
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+    left: 10px;
+    line-height: 1.5;
+    font-family: "DM Sans", sans-serif;
+  }
+  .MkLinkSheetItemSection {
+    position: relative;
+    padding: 5px;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemSection:hover {
+    background: white;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemSection:hover .MkLinkSheetItemTitle {
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemSection:hover .MkLinkSheetItemDesc {
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemButton {
+    position: absolute;
+    width: 20%;
+    top: 15px;
+    background: #2d5cfe;
+    color: #fff;
+    text-align: center;
+  }
+  .MkLinkSheetItemButton i {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .MkButtonSpotify {
+    position: relative;
+    padding: 10px;
+    font-size: 18px;
+    background: #1db954;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkButtonSpotify:hover {
+    background: white;
+    color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .MkLinkSheetSpotify {
+    position: relative;
+  }
+  .MkLinkSheetFilm {
+    position: relative;
+  }
+  .MkSettingSheet {
+    position: fixed;
+    top: 0;
+    right: -999px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  .MkSettingSheet.MkSettingshow {
+    right: 0;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingSheet .MkSettingSheetContent {
+    width: 100%;
+    position: relative;
+    background: #edf6fe;
+    height: 100vh;
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingSheet .MkSettingSheetContentList {
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .MkSettingSheetContentListHeader {
+    position: relative;
+    display: flex;
+    background: #344854;
+    padding: 10px;
+    width: 100%;
+  }
+  .MkSettingSheetContentListHeader i {
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+  }
+  .MkSettingSheetContentListHeader i:hover {
+    /* background: #fff; */
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingSheetContentListHeader h4 {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .MkSettingHeaderTitle {
+    position: relative;
+    padding: 10px;
+    background: #edf6fe;
+    margin-top: 1px;
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+  .MkSettingHeaderTitle h4 {
+    margin-left: 10px;
+    color: #000;
+  }
+  .MkSettingUser {
+    position: relative;
+    background: #22222225;
+    padding: 10px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 3px;
+  }
+  .MkSettingUserImage {
+    position: relative;
+    display: flex;
+  }
+  .MkSettingUser .MkSettingUserImage img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 59%;
+    margin-left: 10px;
+  }
+  .MkSettingUserName {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    color: #000;
+  }
+  .MkSettingUserName h4 {
+    margin-top: 7px;
+  }
+  .MkSettingUserName p {
+    margin-top: -5px;
+    color: #000;
+    font-size: 15px;
+  }
+  .MkSettingListContentIcon {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .MkSettingListIcon i {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10%;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingListIcon i:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingListIcon h4 {
+    position: relative;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .MkPageNew {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    place-items: Center;
+    display: flex;
+    margin-top: 50px;
+  }
+  .MkPageNew img {
+    width: 50%;
+    height: 50%;
+  }
+  .MkMusicSheet {
+    position: fixed;
+    top: 0;
+    right: -999px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  .MkMusicSheet.MkMusicShow {
+    opacity: 1;
+    right: 0;
+    pointer-events: auto;
+  }
+  .MkMusicSheet .MkMusicSheetOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkMusicSheet .MkMusicSheetContent {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+  }
+  .MkMusicSheet .MkMusicSheetHeader {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  .MkMusicSheet .MkMusicSheetHeader i {
+    position: relative;
+    font-size: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .MkMusicSheet .MkMusicSheetHeader i:hover {
+    color: red;
+    transition: 0.3s ease-in-out;
+  }
+  .MkMusicSheet .MkMusicSheetHeader h4 {
+    position: relative;
+    font-size: 19px;
+  }
+  .MkMusicSheet .MkMusicSheetListContent {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  /* Music */
+  .MkMusicSheet .wrapper {
+    width: 100%;
+    margin-right: 20px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .MkMusicSheet .wrapper i {
+    cursor: pointer;
+  }
+  .top-bar,
+  .progress-area .song-timer,
+  .controls,
+  .music-list .header,
+  .music-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-bar i {
+    font-size: 30px;
+    color: var(--lightblack);
+  }
+  .top-bar i:first-child {
+    margin-left: -7px;
+  }
+  .top-bar span {
+    font-size: 18px;
+    margin-left: -3px;
+    color: var(--lightblack);
+  }
+  .img-area {
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px var(--lightbshadow);
+  }
+  .img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .song-details {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .song-details p {
+    color: var(--lightblack);
+  }
+  .song-details .name {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .song-details .artist {
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 35px;
+  }
+  .progress-area {
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  .progress-area .progress-bar {
+    height: inherit;
+    width: 0%;
+    position: relative;
+    border-radius: inherit;
+    background: #2d5cfe;
+  }
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    right: -5px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: inherit;
+    transition: opacity 0.2s ease;
+  }
+  .progress-area:hover .progress-bar::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .progress-area .song-timer {
+    margin-top: 2px;
+  }
+  .song-timer span {
+    font-size: 13px;
+    color: var(--lightblack);
+  }
+  .controls {
+    margin: 40px 0 5px 0;
+  }
+  .controls i {
+    font-size: 28px;
+    user-select: none;
+    color: #2d5cfe;
+    /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+    /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  }
+  .controls i:nth-child(2),
+  .controls i:nth-child(4) {
+    font-size: 43px;
+  }
+  .controls #prev {
+    margin-right: -13px;
+  }
+  .controls #next {
+    margin-left: -13px;
+  }
+  .controls .play-pause {
+    height: 54px;
+    width: 54px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%); */
+    /* box-shadow: 0px 0px 5px var(--pink); */
+    color: #2d5cfe;
+  }
+  .play-pause::before {
+    position: absolute;
+    content: "";
+    height: 43px;
+    width: 43px;
+    border-radius: inherit;
+    /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+  }
+  .play-pause i {
+    height: 43px;
+    width: 43px;
+    line-height: 43px;
+    text-align: center;
+    background: inherit;
+    /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+    position: absolute;
+  }
+  .music-list {
+    position: absolute;
+    background: var(--white);
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.15s ease-in-out;
+  }
+  .music-list.show {
+    bottom: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .header .row {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    color: var(--lightblack);
+  }
+  .header .row i {
+    cursor: default;
+  }
+  .header .row span {
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+  .header #close {
+    font-size: 22px;
+    color: var(--lightblack);
+  }
+  .music-list ul {
+    margin: 10px 0;
+    max-height: 260px;
+    overflow: auto;
+  }
+  .music-list ul::-webkit-scrollbar {
+    width: 0px;
+  }
+  .music-list ul li {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: var(--lightblack);
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .music-list ul li:last-child {
+    border-bottom: 0px;
+  }
+  .music-list ul li .row span {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .music-list ul li .row p {
+    opacity: 0.9;
+  }
+  ul li .audio-duration {
+    font-size: 16px;
+  }
+  ul li.playing {
+    pointer-events: none;
+    color: var(--violet);
+  }
+  /* Stalking Area */
+  .MkStalk {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    z-index: 99999999;
+  }
+  .MkStalk.MkStalkShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkStalk .MkStalkOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkStalk .MkStalkContent {
+    position: relative;
+    background: #fff;
+    width: 70%;
+    height: 30%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .MkStalk .MkStalkContent i {
+    position: relative;
+    top: 20px;
+    font-size: 70px;
+  }
+  .MkStalk .MkStalkContent h4 {
+    position: relative;
+    top: 30px;
+    font-weight: 500;
+  }
+  .MkStalk .MkStalkContent p {
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-weight: 600;
+  }
+  .MkStalk .MkStalkContent p:hover {
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+}
+@media screen and (max-width: 360px) {
+  body .MkBodyOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    bottom: 50px;
+    opacity: 0.2;
+    overflow: hidden;
+  }
+
+  nav {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    z-index: 9999;
+    display: flex;
+    gap: 3rem;
+    top: 650px;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+  }
+  nav a {
+    text-decoration: none;
+    background: transparent;
+    padding: 1rem;
+    display: flex;
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: 1.1rem;
+  }
+  nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  section {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  section .MkHeaderImages {
+    position: relative;
+    justify-content: Center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  section .MkHeaderImages img {
+    position: relative;
+    justify-content: Center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  section .MKListName {
+    position: relative;
+    justify-content: Center;
+    align-items: center;
+    text-align: center;
+  }
+  section .MKListName h4 {
+    color: #000;
+    font-size: 18px;
+  }
+  section .MKListName p {
+    font-size: 15px;
+    color: #000;
+  }
+  section .MkListSocialIcon {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  section .MkListSocialIcon i {
+    padding: 7px;
+    background: #fff;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #ccc;
+  }
+  section .MkListSocialIcon i:hover {
+    background: #2d5cfe;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  section .MktitleMenu {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+  }
+  section .MktitleMenu h4 {
+    font-size: 25px;
+    color: #fff;
+  }
+  section .MkListLink {
+    position: relative;
+    display: flex;
+    padding: 13px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+  }
+  section .MkListLink i {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+  section .MkListLink h4 {
+    margin-top: 3px;
+    font-size: 18px;
+  }
+  .spotify:hover {
+    background: #1db954;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  .film:hover {
+    background: #2d5cfe;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  .portfolio:hover {
+    background: #ddd;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .team:hover {
+    background: #f5c242;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  footer {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #000;
+  }
+  footer .GotoProfile {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  footer .GotoProfile:hover {
+    color: #2d5cfe;
+    transition: 0.3s ease-in-out;
+  }
+  .MkFollowSection {
+    position: fixed;
+    top: 0;
+    bottom: 30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s linear;
+    z-index: 9999;
+  }
+  .MkFollowSection.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkFollowSection .MkFollowSectionOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkFollowSection.show .MkFollowSectionContent {
+    transform: translateY(0%);
+  }
+  .MkFollowSection .MkFollowSectionContent {
+    position: relative;
+    width: 100%;
+    /* height: 50vh; */
+    max-height: 100vh;
+    max-width: 1150px;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    pointer-events: auto;
+  }
+  .MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader {
+    position: relative;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+  }
+  .MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader i {
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    top: 5px;
+    border-radius: 50%;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkFollowSection .MkFollowSectionContent .MkFollowSectionContentHeader i:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkFollowSectionContentAccount {
+    position: relative;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon {
+    position: relative;
+    padding: 5px;
+    display: flex;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon img {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon i {
+    position: relative;
+    padding: 10px;
+    background: #eee;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    font-size: 23px;
+    margin-right: 20px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText {
+    position: relative;
+    margin-top: 4px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText h4 {
+    position: relative;
+    font-size: 15px;
+  }
+  .MkFollowSectionContentAccount .MkFollowSectionAccountIcon .MkFollowSectionAccountText p {
+    position: relative;
+    font-size: 15px;
+  }
+  .MkFollowSectionContentAccount:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileSheet {
+    position: relative;
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  .MkSectionProfileBackground {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    opacity: 0.2;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .MkSectionProfileSheetContent {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    text-align: center;
+  }
+  .MkSectionProfileSheetContent h4 {
+    font-size: 18px;
+  }
+  .MkSectionProfileSheetContent p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .MkSectionProfileButtonFollow {
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    background: #2481cc;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileButtonFollow:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileButtonFollow:hover h4 {
+    color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSectionProfileSheetContentInfo {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 7px;
+  }
+  .MkSectionProfileSheetContentInfo h4 {
+    font-size: 18px;
+  }
+  .MkSectionProfileSheetContentInfo p {
+    font-size: 15px;
+  }
+  .MkSectionProfileSheetContent img {
+    position: relative;
+    margin-top: 20px;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+  }
+  .MkListLinkSheet {
+    position: fixed;
+    bottom: 50%;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s linear;
+    z-index: 9999;
+  }
+  .MkListLinkSheet.Mkshow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkListLinkSheet .MkListLinkSheetOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background: #000;
+  }
+  .MkListLinkSheet .MkListLinkSheetContent {
+    width: 100%;
+    position: relative;
+    max-height: 100vh;
+    height: 40vh;
+    max-width: 1150px;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+    /* background: #fff; */
+  }
+  .MkListLinkSheet.Mkshow .MkListLinkSheetContent {
+    transform: translateY(0%);
+  }
+  .MkListLinkSheet .MkListLinkSheetContent .MkListLinkSheetContentBody {
+    position: relative;
+    height: 100%;
+    bottom: 30px;
+    scrollbar-width: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    z-index: -1;
+  }
+  .MkListLinkSheetContentBody .MkListLinkSheetContentHeader {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    background: #fff;
+    width: 70%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .MkListLinkSheetContentBody .MkListLinkSheetContentHeader h4 {
+    position: relative;
+    width: 70%;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .MkListLinkSheetContentHeader i {
+    position: relative;
+    font-size: 23px;
+    padding: 10px;
+    left: 70px;
+    background: #fff;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .MkNoteFilm {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #000;
+    background: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .MkLinkSheetTimeline {
+    position: relative;
+    margin-top: 20px;
+    z-index: 9999;
+  }
+  .MkLinkSheetTimeline:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    left: 10%;
+    width: 6px;
+    top: 0;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .MkLinkSheetItem {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .MkLinkSheetItem:last-child {
+    padding-bottom: 5px;
+  }
+  .MkLinkSheetItem:after {
+    content: attr(data-year);
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: 34px;
+    width: 8px;
+    height: 8px;
+    line-height: 0.6;
+    border: 1px solid #fff;
+    font-size: 11px;
+    text-indent: -35px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .MkLinkSheetItem:before {
+    content: attr(data-year);
+    width: 10px;
+    position: absolute;
+    top: 70px;
+    left: 34px;
+    width: 8px;
+    height: 8px;
+    line-height: 0.6;
+    border: 1px solid #fff;
+    font-size: 11px;
+    text-indent: -35px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .MkLinkSheetItemTitle {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    left: 10px;
+  }
+  .MkLinkSheetItemDesc {
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+    left: 10px;
+    line-height: 1.5;
+    font-family: "DM Sans", sans-serif;
+  }
+  .MkLinkSheetItemSection {
+    position: relative;
+    padding: 5px;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemSection:hover {
+    background: white;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemSection:hover .MkLinkSheetItemTitle {
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemSection:hover .MkLinkSheetItemDesc {
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .MkLinkSheetItemButton {
+    position: absolute;
+    width: 20%;
+    top: 15px;
+    background: #2d5cfe;
+    color: #fff;
+    text-align: center;
+  }
+  .MkLinkSheetItemButton i {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .MkButtonSpotify {
+    position: relative;
+    padding: 10px;
+    font-size: 18px;
+    background: #1db954;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkButtonSpotify:hover {
+    background: white;
+    color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .MkLinkSheetSpotify {
+    position: relative;
+  }
+  .MkLinkSheetFilm {
+    position: relative;
+  }
+  .MkSettingSheet {
+    position: fixed;
+    top: 0;
+    right: -999px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  .MkSettingSheet.MkSettingshow {
+    right: 0;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingSheet .MkSettingSheetContent {
+    width: 100%;
+    position: relative;
+    background: #edf6fe;
+    height: 100vh;
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingSheet .MkSettingSheetContentList {
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .MkSettingSheetContentListHeader {
+    position: relative;
+    display: flex;
+    background: #344854;
+    padding: 10px;
+    width: 100%;
+  }
+  .MkSettingSheetContentListHeader i {
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+  }
+  .MkSettingSheetContentListHeader i:hover {
+    /* background: #fff; */
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingSheetContentListHeader h4 {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .MkSettingHeaderTitle {
+    position: relative;
+    padding: 10px;
+    background: #edf6fe;
+    margin-top: 1px;
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+  .MkSettingHeaderTitle h4 {
+    margin-left: 10px;
+    color: #000;
+  }
+  .MkSettingUser {
+    position: relative;
+    background: #22222225;
+    padding: 10px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 3px;
+  }
+  .MkSettingUserImage {
+    position: relative;
+    display: flex;
+  }
+  .MkSettingUser .MkSettingUserImage img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 59%;
+    margin-left: 10px;
+  }
+  .MkSettingUserName {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    color: #000;
+  }
+  .MkSettingUserName h4 {
+    margin-top: 7px;
+  }
+  .MkSettingUserName p {
+    margin-top: -5px;
+    color: #000;
+    font-size: 15px;
+  }
+  .MkSettingListContentIcon {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .MkSettingListIcon i {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10%;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingListIcon i:hover {
+    background: #ccc;
+    transition: 0.5s ease-in-out;
+  }
+  .MkSettingListIcon h4 {
+    position: relative;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .MkPageNew {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    place-items: Center;
+    display: flex;
+    margin-top: 50px;
+  }
+  .MkPageNew img {
+    width: 50%;
+    height: 50%;
+  }
+  .MkMusicSheet {
+    position: fixed;
+    top: 0;
+    right: -999px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  .MkMusicSheet.MkMusicShow {
+    opacity: 1;
+    right: 0;
+    pointer-events: auto;
+  }
+  .MkMusicSheet .MkMusicSheetOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkMusicSheet .MkMusicSheetContent {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+  }
+  .MkMusicSheet .MkMusicSheetHeader {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  .MkMusicSheet .MkMusicSheetHeader i {
+    position: relative;
+    font-size: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .MkMusicSheet .MkMusicSheetHeader i:hover {
+    color: red;
+    transition: 0.3s ease-in-out;
+  }
+  .MkMusicSheet .MkMusicSheetHeader h4 {
+    position: relative;
+    font-size: 19px;
+  }
+  .MkMusicSheet .MkMusicSheetListContent {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  /* Music */
+  .MkMusicSheet .wrapper {
+    width: 100%;
+    margin-right: 20px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .MkMusicSheet .wrapper i {
+    cursor: pointer;
+  }
+  .top-bar,
+  .progress-area .song-timer,
+  .controls,
+  .music-list .header,
+  .music-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-bar i {
+    font-size: 30px;
+    color: var(--lightblack);
+  }
+  .top-bar i:first-child {
+    margin-left: -7px;
+  }
+  .top-bar span {
+    font-size: 18px;
+    margin-left: -3px;
+    color: var(--lightblack);
+  }
+  .img-area {
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px var(--lightbshadow);
+  }
+  .img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .song-details {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .song-details p {
+    color: var(--lightblack);
+  }
+  .song-details .name {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .song-details .artist {
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 35px;
+  }
+  .progress-area {
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  .progress-area .progress-bar {
+    height: inherit;
+    width: 0%;
+    position: relative;
+    border-radius: inherit;
+    background: #2d5cfe;
+  }
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    right: -5px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: inherit;
+    transition: opacity 0.2s ease;
+  }
+  .progress-area:hover .progress-bar::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .progress-area .song-timer {
+    margin-top: 2px;
+  }
+  .song-timer span {
+    font-size: 13px;
+    color: var(--lightblack);
+  }
+  .controls {
+    margin: 40px 0 5px 0;
+  }
+  .controls i {
+    font-size: 28px;
+    user-select: none;
+    color: #2d5cfe;
+    /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+    /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  }
+  .controls i:nth-child(2),
+  .controls i:nth-child(4) {
+    font-size: 43px;
+  }
+  .controls #prev {
+    margin-right: -13px;
+  }
+  .controls #next {
+    margin-left: -13px;
+  }
+  .controls .play-pause {
+    height: 54px;
+    width: 54px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%); */
+    /* box-shadow: 0px 0px 5px var(--pink); */
+    color: #2d5cfe;
+  }
+  .play-pause::before {
+    position: absolute;
+    content: "";
+    height: 43px;
+    width: 43px;
+    border-radius: inherit;
+    /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+  }
+  .play-pause i {
+    height: 43px;
+    width: 43px;
+    line-height: 43px;
+    text-align: center;
+    background: inherit;
+    /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+    position: absolute;
+  }
+  .music-list {
+    position: absolute;
+    background: var(--white);
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.15s ease-in-out;
+  }
+  .music-list.show {
+    bottom: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .header .row {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    color: var(--lightblack);
+  }
+  .header .row i {
+    cursor: default;
+  }
+  .header .row span {
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+  .header #close {
+    font-size: 22px;
+    color: var(--lightblack);
+  }
+  .music-list ul {
+    margin: 10px 0;
+    max-height: 260px;
+    overflow: auto;
+  }
+  .music-list ul::-webkit-scrollbar {
+    width: 0px;
+  }
+  .music-list ul li {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: var(--lightblack);
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .music-list ul li:last-child {
+    border-bottom: 0px;
+  }
+  .music-list ul li .row span {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .music-list ul li .row p {
+    opacity: 0.9;
+  }
+  ul li .audio-duration {
+    font-size: 16px;
+  }
+  ul li.playing {
+    pointer-events: none;
+    color: var(--violet);
+  }
+  /* Stalking Area */
+  .MkStalk {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    z-index: 99999999;
+  }
+  .MkStalk.MkStalkShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkStalk .MkStalkOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkStalk .MkStalkContent {
+    position: relative;
+    background: #fff;
+    width: 70%;
+    height: 30%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .MkStalk .MkStalkContent i {
+    position: relative;
+    top: 20px;
+    font-size: 70px;
+  }
+  .MkStalk .MkStalkContent h4 {
+    position: relative;
+    top: 30px;
+    font-weight: 500;
+  }
+  .MkStalk .MkStalkContent p {
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-weight: 600;
+  }
+  .MkStalk .MkStalkContent p:hover {
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+}
+/* section .MkListLink.shine {
+  background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #ddd 75.52%, rgba(100, 181, 239, 0) 100%);
+  background-repeat: no-repeat;
+  animation: bg-move 5s linear infinite;
+} */
+/* section .MkListLink:nth-child(1) {
+  animation-delay: 0.1s;
+}
+section .MkListLink:nth-child(2) {
+  animation-delay: 0.2s;
+}
+section .MkListLink:nth-child(3) {
+  animation-delay: 0.3s;
+}
+section .MkListLink:nth-child(4) {
+  animation-delay: 0.4s;
+} */
+/* @-webkit-keyframes bg-move {
+  0% {
+    background-position: -500px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+@keyframes bg-move {
+  0% {
+    background-position: -500px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+} */

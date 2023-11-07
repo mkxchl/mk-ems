@@ -1,0 +1,328 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/icon?family=Gemunu+Libre:300,400,500,600,700");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+}
+body {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: #ccc;
+  overflow: hidden;
+  height: 100vh;
+}
+.CogMk {
+  position: absolute;
+  background: #ddd;
+  padding: 5px;
+  top: 15px;
+  right: 5px;
+  font-size: 25px;
+  color: #000;
+  z-index: 9999;
+  cursor: pointer;
+  border-radius: 50%;
+}
+section {
+  position: relative;
+  margin-bottom: 20px;
+}
+section header {
+  position: relative;
+}
+section header img {
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+}
+.MkLandingPage {
+  position: relative;
+  background: #fff;
+  margin-left: 15px;
+  margin-right: 15px;
+  bottom: 40px;
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.MkIconUser i {
+  position: absolute;
+  font-size: 50px;
+  left: 130px;
+  top: -40px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s linear;
+  animation: pulse-animation 2s infinite;
+}
+.MkIconUser i:hover {
+  background: #ddd;
+  transition: 0.3s linear;
+  transform: scale(1.2);
+}
+.MkLandingPage .MkAbout {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+}
+.MkLandingPage .MkAbout h4 {
+  position: relative;
+  margin-left: 10px;
+  font-size: 25px;
+}
+.MkLandingPage .MkAbout p {
+  position: relative;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.MkLandingPage .MkAbout h1 {
+  position: relative;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.MkAbout h1:hover {
+  color: red;
+  transition: 0.5s ease-in-out;
+}
+.MkListMenu {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.MkListMenu h4 {
+  position: relative;
+  margin-left: 10px;
+  font-size: 25px;
+}
+.MkMenuListContent {
+  position: relative;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.MkMenuListContentIcon {
+  position: relative;
+  margin: 10px;
+  background: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px #33333340;
+  cursor: pointer;
+  transform: transform 400ms ease-in-out;
+  transition: 0.5s;
+}
+.MkMenuListContentIcon i {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.MkMenuListContentIcon span {
+  position: relative;
+  top: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+}
+.MkMenuListContentIcon:hover {
+  background-color: #212121;
+  color: #ddd;
+  transition: 0.5s;
+}
+.MkMenuListContentIcon h4 {
+  text-align: center;
+  font-size: 18px;
+}
+.MkPagePortFolio {
+  position: relative;
+  padding: 10px;
+  background: #2d5cfe;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.MkPagePortFolio h4 {
+  font-size: 18px;
+  color: #fff;
+}
+.MkPagePortFolio:hover {
+  background: #ccc;
+  transition: 0.5s;
+}
+.MkPagePortFolio:hover h4 {
+  color: #000;
+  transition: 0.5s;
+}
+footer {
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+}
+.MkUserPage {
+  position: absolute;
+  top: 1000px;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  background: #adadad;
+  transition: 0.5s ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+.MkUserPage.show {
+  opacity: 1;
+  top: 0;
+  pointer-events: auto;
+  overflow: auto;
+}
+.MkUserPageHeader {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  background: #2d5cfe;
+  z-index: 1;
+}
+.MkUserPageHeader h4 {
+  position: relative;
+  font-size: 20px;
+  margin-top: 1px;
+  color: #fff;
+  margin-left: 5px;
+}
+.MkUserPageHeader i {
+  position: absolute;
+  right: 10px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+.MkUserContentPage {
+  position: relative;
+}
+.MkUserContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.MkUserContent img {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+}
+.MkUserContentInfo {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.MkUserContentInfo h4 {
+  position: relative;
+  font-size: 18px;
+}
+.MkUserHeaderPage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MkUserHeaderPage button {
+  position: relative;
+  margin: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+.MkUserHeaderPage button.BtnActive {
+  background: #2d5cfe;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.MkUserPageContentxx {
+  position: relative;
+  height: 100vh;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  overflow-y: auto;
+  margin-top: 30px;
+}
+.MkUserPageContentxx.MkUserHide {
+  opacity: 0;
+  pointer-events: none;
+  left: -1000px;
+  transition: 0.5s ease-in-out;
+}
+.MkUserContentList {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-left: 5px solid #2d5cfe;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.MkUserContentList h4 {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.MkUserContentList p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/* @keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+} */

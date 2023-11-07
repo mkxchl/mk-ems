@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Marchell Kevandra</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Meta Property -->
+    <meta property="og:title" content="Marchell Kevandra" />
+    <meta property="og:description" content="Be Your Self!" />
+    <meta property="og:url" content="https://ems-links.netlify.app/" />
+    <meta property="og:image" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <meta property="og:image:secure_url" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <meta property="og:author" content="Marchell Kevandra" />
+    <!-- Link Rel Assets Images Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <!-- Link Rel Assets Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <!-- Link Rel Assets Font or Style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Gemunu+Libre:300,400,500,600,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <style>
+    Mk {
+      color: #22222225;
+    }
+  </style>
+  <body>
+    <!-- Start Landing Page -->
+    <div class="MkBodyOverlay"></div>
+    <nav>
+      <a onclick="RefreshLoad()" class="nav-link">
+        <i class="bi bi-house"></i>
+      </a>
+      <a class="nav-link" onclick="OpenMusicPageMk()">
+        <i class="ri-music-line"></i>
+      </a>
+      <a class="nav-link">
+        <i class="ri-download-2-line"></i>
+      </a>
+      <a class="nav-link" onclick="MkSheetSetting()">
+        <i class="ri-settings-5-line"></i>
+      </a>
+    </nav>
+    <!-- Home Page -->
+    <section>
+      <div class="MkSectionContainer">
+        <div class="MkHeaderImages" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+          <img src="https://ems-links.netlify.app/assets/images/logo.jpg" alt="Marchell Kevandra" />
+        </div>
+        <div class="MKListName" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+          <h4>Marchell Kevandra</h4>
+          <p>Programmer & Developer</p>
+        </div>
+        <div class="MkListSocialIcon" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="350">
+          <i class="bx bxl-instagram" onclick="OpenLinkInsta()"></i>
+          <i class="bx bxl-facebook" onclick="OpenLinkFace()"></i>
+          <i class="bx bxl-github" onclick="OpenLinkGit()"></i>
+          <i class="bx bxl-tiktok" onclick="OpenLinkTiktok()"></i>
+        </div>
+        <!-- <div class="MktitleMenu">
+        <h4>Menu List</h4>
+      </div> -->
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
+          <div class="MkListLink shine spotify" onclick="MkLinkSpotify()">
+            <i class="bx bxl-spotify"></i>
+            <h4>Spotify Playlist</h4>
+          </div>
+          <div class="MkListLink shine film" onclick="MkLinkFilm()">
+            <i class="bx bxs-film"></i>
+            <h4>Film Playlist</h4>
+          </div>
+          <div class="MkListLink shine portfolio">
+            <i class="bx bx-scatter-chart"></i>
+            <h4>Portfolio</h4>
+          </div>
+          <div class="MkListLink shine team" onclick="showTip()">
+            <i class="ri-eye-line"></i>
+            <h4>Stalker Insta</h4>
+          </div>
+          <div class="MkListLink shine team" onclick="showTeam()">
+            <i class="bx bx-support"></i>
+            <h4>Team Support</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bottom Sheet -->
+    <div class="MkFollowSection">
+      <div class="MkFollowSectionOverlay"></div>
+      <div class="MkFollowSectionContent">
+        <div class="MkFollowSectionContentHeader">
+          <header id="MkHeaderSheet">Follow Me</header>
+          <i class="bx bx-chevron-down" id="btnHideDown" onclick="btnCloseSheet()"></i>
+        </div>
+        <div class="MkFollowSectionContentAccount MkInstax InstaLink" id="#MkInsta">
+          <div class="MkFollowSectionAccountIcon">
+            <i class="bx bxl-instagram"></i>
+            <div class="MkFollowSectionAccountText">
+              <h4>chellgnzxz_</h4>
+              <p>instagram.com/chellgnzxz_</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="MkFollowSectionContentAccount MkFacex FbLink" id="#MkFace">
+          <div class="MkFollowSectionAccountIcon">
+            <i class="bx bxl-facebook"></i>
+            <div class="MkFollowSectionAccountText">
+              <h4>Marchell</h4>
+              <p>facebook.com/marchell_ganz</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="MkFollowSectionContentAccount MkGitx GithubLink" id="#MkGit">
+          <div class="MkFollowSectionAccountIcon">
+            <i class="bx bxl-github"></i>
+            <div class="MkFollowSectionAccountText">
+              <h4>Marchell Kevandra</h4>
+              <p>github.com/mkxchl</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="MkFollowSectionContentAccount MkTiktokx TiktokLink" id="#MkTiktok">
+          <div class="MkFollowSectionAccountIcon">
+            <i class="bx bxl-tiktok"></i>
+            <div class="MkFollowSectionAccountText">
+              <h4>Marchell Kevandra</h4>
+              <p>tiktok.com/mkxchl</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="MkFollowSectionContentAccount MkTca" id="#MkTca">
+          <div class="MkFollowSectionAccountIcon">
+            <img src="https://ems-links.netlify.app/assets/images/tca.jpg" alt="Trisakti Cyber Army" />
+            <div class="MkFollowSectionAccountText">
+              <h4>Trisakti Cyber Army</h4>
+              <p>Since 2017</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="MkFollowSectionContentAccount MkTng" id="#MkTng">
+          <div class="MkFollowSectionAccountIcon">
+            <img src="https://ems-links.netlify.app/assets/images/TNG.jpg" alt="TNG Programmer" />
+            <div class="MkFollowSectionAccountText">
+              <h4>TNG Programmer</h4>
+              <p>Since 2017</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="MkFollowSectionContentAccount MkEms" id="#Mkems">
+          <div class="MkFollowSectionAccountIcon">
+            <img src="https://ems-links.netlify.app/assets/images/Ems-rev.jpg" alt="EMS Revolution" />
+            <div class="MkFollowSectionAccountText">
+              <h4>EMS Revolution</h4>
+              <p>Since 2018</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="MkSectionProfileSheet MkProf" id="#MkProf">
+          <div class="MkSectionProfileBackground"></div>
+          <div class="MkSectionProfileSheetContent">
+            <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+            <h4>Marchell Kevandra</h4>
+            <p>Be Your Self</p>
+          </div>
+          <div class="MkSectionProfileButtonFollow TlLink">
+            <h4>Send Message</h4>
+          </div>
+          <!-- Beta Code -->
+          <!-- <div class="MkSectionProfileSheetContentInfo">
+            <h4>About</h4>
+            <p>Jadilah Diri Sendiri</p>
+          </div>
+          <div class="MkSectionProfileSheetContentInfo">
+            <h4>Place</h4>
+            <p>Jakarta, Indonesia</p>
+          </div>
+          <div class="MkSectionProfileSheetContentInfo">
+            <h4>Language</h4>
+            <p>Html, Css and JavaScript</p>
+          </div>
+          <div class="MkSectionProfileSheetContentInfo">
+            <h4>Support</h4>
+            <p>Netlify App / Github</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Playlist Center -->
+    <div class="MkListLinkSheet">
+      <div class="MkListLinkSheetOverlay"></div>
+      <div class="MkListLinkSheetContent">
+        <div class="MkListLinkSheetContentBody">
+          <div class="MkListLinkSheetContentHeader">
+            <h4 id="MkListSheetHeaderText"></h4>
+            <i class="bx bx-x MkLinkSheetClose" onclick="closeLink()"></i>
+          </div>
+          <div class="MkLinkSheetSpotify">
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Jakarta Hari Ini</div>
+                  <div class="MkLinkSheetItemDesc">Spotify Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Payung Teduh</div>
+                  <div class="MkLinkSheetItemDesc">Spotify Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Dear God</div>
+                  <div class="MkLinkSheetItemDesc">Spotify Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Duka</div>
+                  <div class="MkLinkSheetItemDesc">Spotify Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Slank</div>
+                  <div class="MkLinkSheetItemDesc">Spotify Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Kesepian</div>
+                  <div class="MkLinkSheetItemDesc">Spotify Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkButtonSpotify SpotifyLink">
+              <h4>View All Playlist</h4>
+            </div>
+          </div>
+          <div class="MkLinkSheetFilm">
+            <div class="MkNoteFilm">Choose your genre.</div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Romantic</div>
+                  <div class="MkLinkSheetItemDesc">Film Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Sad Ending</div>
+                  <div class="MkLinkSheetItemDesc">Film Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Family Friendly</div>
+                  <div class="MkLinkSheetItemDesc">Film Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Drama</div>
+                  <div class="MkLinkSheetItemDesc">Film Playlist</div>
+                </div>
+              </div>
+            </div>
+            <div class="MkLinkSheetTimeline">
+              <div class="MkLinkSheetItem">
+                <div class="MkLinkSheetItemSection">
+                  <div class="MkLinkSheetItemTitle">Action</div>
+                  <div class="MkLinkSheetItemDesc">Film Playlist</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Setting Page -->
+    <div class="MkSettingSheet">
+      <div class="MkSettingSheetContent">
+        <div class="MkSettingSheetContentList">
+          <div class="MkSettingSheetContentListHeader">
+            <i class="bx bx-chevron-left" onclick="MkSettingClose()"></i>
+            <h4>Settings</h4>
+          </div>
+          <div class="MkSettingHeaderTitle">
+            <h4>Info</h4>
+          </div>
+          <div class="MkSettingUser">
+            <div class="MkSettingUserImage">
+              <img src="https://ems-links.netlify.app/assets/images/logo.jpg" alt="Marchell Kevandra" />
+            </div>
+            <div class="MkSettingUserName">
+              <h4>Marchell Kevandra</h4>
+              <p>chellgnzxz_</p>
+            </div>
+          </div>
+          <div class="MkSettingHeaderTitle">
+            <h4>Feature</h4>
+          </div>
+          <div class="MkSettingListContentIcon">
+            <div class="MkSettingListIcon">
+              <i class="ri-gamepad-line"></i>
+              <h4>Games</h4>
+            </div>
+            <div class="MkSettingListIcon" onclick="OpenMusicPageMk()">
+              <i class="ri-music-line"></i>
+              <h4>Music</h4>
+            </div>
+            <div class="MkSettingListIcon">
+              <i class="ri-film-line"></i>
+              <h4>Film</h4>
+            </div>
+          </div>
+          <div class="MkSettingListContentIcon">
+            <div class="MkSettingListIcon">
+              <i class="ri-spotify-line"></i>
+              <h4>Spotify</h4>
+            </div>
+            <div class="MkSettingListIcon">
+              <i class="ri-download-2-line"></i>
+              <h4>Unduhan</h4>
+            </div>
+            <div class="MkSettingListIcon">
+              <i class="ri-mail-line"></i>
+              <h4>Contact</h4>
+            </div>
+          </div>
+          <div class="MkSettingHeaderTitle">
+            <h4>Coming Soon</h4>
+          </div>
+          <div class="MkPageNew">
+            <img src="https://media.tenor.com/Xy1ZlUr8KfwAAAAC/pentol-stiker.gif" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Music Page -->
+    <div class="MkMusicSheet">
+      <div class="MkMusicSheetOverlay"></div>
+      <div class="MkMusicSheetContent">
+        <div class="MkMusicSheetHeader">
+          <i class="bx bx-chevron-left" onclick="MkMusicSheetClose()"></i>
+          <h4>Music</h4>
+        </div>
+        <div class="MkMusicSheetListContent">
+          <div class="wrapper">
+            <!-- <div class="top-bar">
+              <i class="material-icons">expand_more</i>
+              <span>Now Playing</span>
+              <i class="material-icons">more_horiz</i>
+            </div> -->
+            <div class="img-area">
+              <img src="https://ems-links.netlify.app/assets/images/xchl.jpg" alt="" />
+            </div>
+            <div class="song-details">
+              <p class="name"></p>
+              <p class="artist"></p>
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+              </div>
+              <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+              </div>
+            </div>
+            <div class="controls">
+              <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+              <i id="prev" class="material-icons">skip_previous</i>
+              <div class="play-pause">
+                <i class="material-icons play">play_arrow</i>
+              </div>
+              <i id="next" class="material-icons">skip_next</i>
+              <i id="more-music" class="material-icons">queue_music</i>
+            </div>
+            <div class="music-list">
+              <div class="header">
+                <div class="row">
+                  <i class="list material-icons">queue_music</i>
+                  <span>Music list</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+              </div>
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Stalker Page -->
+    <div class="MkStalk">
+      <div class="MkStalkOverlay"></div>
+      <div class="MkStalkContent">
+        <i class="ri-information-line"></i>
+        <h4>Hanya developer yang dapat mengakses feature ini.</h4>
+        <p class="CloseBtnStalk" onclick="closeTip()">Back</p>
+      </div>
+    </div>
+    <footer>Copyright 2023 - <b class="GotoProfile" onclick="MkProfileFooter()">Marchell Kevandra</b></footer>
+    <script src="js/main.js"></script>
+    <script src="js/mklinks.js"></script>
+    <script src="js/music-list.js"></script>
+    <script src="js/mkscript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="music-list.js"></script> -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- <script src="scrollreveal.min.js"></script> -->
+  </body>
+</html>
