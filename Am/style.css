@@ -31,7 +31,6 @@ body {
   /* background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg"); */
   width: 100%;
   height: 100vh;
-  overflow-y: hidden;
 }
 body .MkBodyOverlay {
   position: absolute;
