@@ -2874,7 +2874,7 @@ ul li.playing {
     transition: 0.5s ease-in-out;
   }
   .MkSettingSheetContentListHeader h4 {
-    margin-top: 3px;
+    margin-top: 4px;
     font-size: 18px;
     color: #fff;
   }
@@ -2951,7 +2951,7 @@ ul li.playing {
   }
   .MkSettingListIcon h4 {
     position: relative;
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: 15px;
     font-weight: 500;
   }
