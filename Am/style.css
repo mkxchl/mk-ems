@@ -31,6 +31,7 @@ body {
   /* background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg"); */
   width: 100%;
   height: 100vh;
+  user-select: none;
 }
 body .MkBodyOverlay {
   position: absolute;
@@ -67,9 +68,9 @@ nav a {
   color: var(--color-light);
   font-size: 1.1rem;
 }
-nav a:hover {
+/* nav a:hover {
   background: rgba(0, 0, 0, 0.3);
-}
+} */
 section {
   position: relative;
   justify-content: center;
@@ -487,7 +488,7 @@ footer .GotoProfile:hover {
   margin-top: 20px;
   z-index: 9999;
 }
-.MkLinkSheetTimeline:after {
+/* .MkLinkSheetTimeline:after {
   position: absolute;
   content: "";
   background: #fff;
@@ -496,7 +497,7 @@ footer .GotoProfile:hover {
   top: 0;
   height: 100%;
   margin-top: 20px;
-}
+} */
 .MkLinkSheetItem {
   position: relative;
   margin-top: 20px;
@@ -509,7 +510,7 @@ footer .GotoProfile:hover {
 .MkLinkSheetItem:last-child {
   padding-bottom: 5px;
 }
-.MkLinkSheetItem:after {
+/* .MkLinkSheetItem:after {
   content: attr(data-year);
   width: 10px;
   position: absolute;
@@ -538,7 +539,7 @@ footer .GotoProfile:hover {
   text-indent: -35px;
   border-radius: 50%;
   background: #fff;
-}
+} */
 .MkLinkSheetItemTitle {
   position: relative;
   font-weight: 700;
@@ -1117,6 +1118,38 @@ ul li.playing {
   color: red;
   transition: 0.5s ease-in-out;
 }
+.MkStore {
+  position: fixed;
+  top: 0;
+  /* right: -999px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 1;
+  pointer-events: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.5s ease-in-out;
+  z-index: 99999;
+}
+..MkStoreOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+}
+.MkStoreContent {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
 @media screen and (max-width: 414px) {
   body .MkBodyOverlay {
     position: absolute;
@@ -1153,9 +1186,9 @@ ul li.playing {
     color: var(--color-light);
     font-size: 1.1rem;
   }
-  nav a:hover {
+  /* nav a:hover {
     background: rgba(0, 0, 0, 0.3);
-  }
+  } */
   section {
     position: relative;
     justify-content: center;
@@ -1572,7 +1605,7 @@ ul li.playing {
     margin-top: 20px;
     z-index: 9999;
   }
-  .MkLinkSheetTimeline:after {
+  /* .MkLinkSheetTimeline:after {
     position: absolute;
     content: "";
     background: #fff;
@@ -1581,7 +1614,7 @@ ul li.playing {
     top: 0;
     height: 100%;
     margin-top: 20px;
-  }
+  } */
   .MkLinkSheetItem {
     position: relative;
     margin-top: 20px;
@@ -1594,7 +1627,7 @@ ul li.playing {
   .MkLinkSheetItem:last-child {
     padding-bottom: 5px;
   }
-  .MkLinkSheetItem:after {
+  /* .MkLinkSheetItem:after {
     content: attr(data-year);
     width: 10px;
     position: absolute;
@@ -1623,7 +1656,7 @@ ul li.playing {
     text-indent: -35px;
     border-radius: 50%;
     background: #fff;
-  }
+  } */
   .MkLinkSheetItemTitle {
     position: relative;
     font-weight: 700;
@@ -2239,9 +2272,9 @@ ul li.playing {
     color: var(--color-light);
     font-size: 1.1rem;
   }
-  nav a:hover {
+  /* nav a:hover {
     background: rgba(0, 0, 0, 0.3);
-  }
+  } */
   section {
     position: relative;
     justify-content: center;
@@ -2330,10 +2363,10 @@ ul li.playing {
     font-size: 25px;
     margin-right: 10px;
     margin-left: 10px;
-    margin-top: 3px;
+    margin-top: 4px;
   }
   section .MkListLink h4 {
-    margin-top: 3px;
+    margin-top: 4px;
     font-size: 18px;
   }
   .spotify:hover {
@@ -3326,9 +3359,9 @@ ul li.playing {
     color: var(--color-light);
     font-size: 1.1rem;
   }
-  nav a:hover {
+  /* nav a:hover {
     background: rgba(0, 0, 0, 0.3);
-  }
+  } */
   section {
     position: relative;
     justify-content: center;
@@ -3420,7 +3453,7 @@ ul li.playing {
     margin-top: 3px;
   }
   section .MkListLink h4 {
-    margin-top: 3px;
+    margin-top: 4px;
     font-size: 18px;
   }
   .spotify:hover {
@@ -3746,7 +3779,7 @@ ul li.playing {
     margin-top: 20px;
     z-index: 9999;
   }
-  .MkLinkSheetTimeline:after {
+  /* .MkLinkSheetTimeline:after {
     position: absolute;
     content: "";
     background: #fff;
@@ -3755,7 +3788,7 @@ ul li.playing {
     top: 0;
     height: 100%;
     margin-top: 20px;
-  }
+  } */
   .MkLinkSheetItem {
     position: relative;
     margin-top: 20px;
@@ -3768,7 +3801,7 @@ ul li.playing {
   .MkLinkSheetItem:last-child {
     padding-bottom: 5px;
   }
-  .MkLinkSheetItem:after {
+  /* .MkLinkSheetItem:after {
     content: attr(data-year);
     width: 10px;
     position: absolute;
@@ -3797,7 +3830,7 @@ ul li.playing {
     text-indent: -35px;
     border-radius: 50%;
     background: #fff;
-  }
+  } */
   .MkLinkSheetItemTitle {
     position: relative;
     font-weight: 700;
@@ -3928,7 +3961,7 @@ ul li.playing {
     transition: 0.5s ease-in-out;
   }
   .MkSettingSheetContentListHeader h4 {
-    margin-top: 5px;
+    margin-top: 3px;
     font-size: 18px;
     color: #fff;
   }
@@ -3936,7 +3969,6 @@ ul li.playing {
     position: relative;
     padding: 10px;
     background: #edf6fe;
-    margin-top: 1px;
     font-size: 18px;
     margin-bottom: 1px;
   }
@@ -4375,6 +4407,137 @@ ul li.playing {
   .MkStalk .MkStalkContent p:hover {
     color: red;
     transition: 0.5s ease-in-out;
+  }
+  .MkStore {
+    position: fixed;
+    top: 0;
+    /* right: -999px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 1;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  .MkStore .MkStoreOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  .MkStore .MkStoreContent {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    pointer-events: auto;
+    overflow: auto;
+  }
+  .MkStoreContent .MkStoreHeader {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #ccc;
+  }
+  .MkStoreHeader i {
+    margin-top: 2px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkStoreHeader i:hover {
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+  .MkStoreHeader h4 {
+    font-size: 18px;
+    margin-top: 3px;
+    margin-left: 10px;
+  }
+  .MkStoreContent .MkStoreBody {
+    position: relative;
+    /* margin-right: 20px; */
+    /* margin-left: 20px; */
+    margin-top: 10px;
+  }
+  .MkStoreBody img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .MkStoreBodyContent {
+    position: relative;
+    background: #fff;
+    bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+  }
+  .MkStoreBodyContent i {
+    position: relative;
+    bottom: 50px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 50px;
+  }
+  .MkStoreButton {
+    position: fixed;
+    margin-right: 10px;
+    margin-left: 10px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+    background: #ccc;
+    border-radius: 30px;
+  }
+  .MkStoreButton button {
+    position: relative;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  .MkStoreList {
+    position: relative;
+    text-align: left;
+    bottom: 30px;
+  }
+  .MkStoreList h4 {
+    margin-left: 10px;
   }
 }
 /* section .MkListLink.shine {
