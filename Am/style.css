@@ -2874,7 +2874,7 @@ ul li.playing {
     transition: 0.5s ease-in-out;
   }
   .MkSettingSheetContentListHeader h4 {
-    margin-top: 5px;
+    margin-top: 3px;
     font-size: 18px;
     color: #fff;
   }
@@ -3025,6 +3025,7 @@ ul li.playing {
     transition: 0.3s ease-in-out;
   }
   .MkMusicSheet .MkMusicSheetHeader h4 {
+    margin-top: 1px;
     position: relative;
     font-size: 19px;
   }
