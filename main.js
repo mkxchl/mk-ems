@@ -12,20 +12,87 @@ const EmsSong = document.querySelector(".EmsSong");
 const EmsSongContent = document.querySelector(".EmsSongContent");
 const EmsApp = document.querySelector(".EmsApp");
 const EmsAppContent = document.querySelector(".EmsAppContent");
+const EmsVideo = document.querySelector(".EmsVideo");
+const EmsVideoContent = document.querySelector(".EmsVideoContent");
+const EmsVideoBody = document.querySelector(".EmsVideoBody");
+const EmsVideoBodyContent = document.querySelector(".EmsVideoBodyContent");
 
-window.addEventListener("load", () => {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) {
-    document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) {
-    document.webkitExitFullscreen();
+window.addEventListener("click", function enterFullScreen(element) {
+  if (element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen(); // Firefox
+  } else if (element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen(); // Safari
+  } else if (element.msRequestFullscreen) {
+    element.msRequestFullscreen(); // IE/Edge
   }
 });
 
 EmsMenuToggle.onclick = function () {
   EmsMenuContentTeamFams.classList.toggle("TeamUpdateHeight");
 };
+function OpenVideo() {
+  $("#MkEmsVideoStaff").show(), $(".EmsVideoContentSrc").fadeIn(), vid.play();
+  EmsVideo.classList.add("EmsVideoShow");
+  EmsMenu.classList.remove("EmsMenuShow");
+}
+/// Video Function ///
+
+var elem = document.documentElement,
+  vid = document.getElementById("MkEmsVideoStaff"),
+  vidA = document.getElementById("EmsVideoMegaCollabA"),
+  vidB = document.getElementById("EmsVideoMegaCollabB"),
+  vidC = document.getElementById("EmsVideoMegaCollabC");
+vid.onended = function () {
+  $(".EmsVideoContentSrc").fadeOut(), OpenVideoBodyContent();
+  EmsVideo.classList.remove("EmsVideoShow");
+};
+vidA.addEventListener("click", function () {
+  $("#EmsVideoMegaCollabA").prop("muted", false);
+  $("#EmsVideoMegaCollabB").prop("muted", true);
+  $("#EmsVideoMegaCollabC").prop("muted", true);
+  vidA.play();
+  vidB.pause();
+  vidC.pause();
+});
+vidB.addEventListener("click", function () {
+  $("#EmsVideoMegaCollabA").prop("muted", true);
+  $("#EmsVideoMegaCollabB").prop("muted", false);
+  $("#EmsVideoMegaCollabC").prop("muted", true);
+  vidA.pause();
+  vidB.play();
+  vidC.pause();
+});
+vidC.addEventListener("click", function () {
+  $("#EmsVideoMegaCollabA").prop("muted", true);
+  $("#EmsVideoMegaCollabB").prop("muted", true);
+  $("#EmsVideoMegaCollabC").prop("muted", false);
+  $("#EmsVideoMegaCollabC").prop("autoplay", true);
+  vidA.pause();
+  vidB.pause();
+  vidC.play();
+});
+
+function CloseVidContent() {
+  EmsMenu.classList.add("EmsMenuShow");
+  EmsVideoBody.classList.remove("EmsVideoBodyShow");
+  $("#EmsVideoMegaCollabA").prop("muted", true);
+  $("#EmsVideoMegaCollabB").prop("muted", true);
+  $("#EmsVideoMegaCollabC").prop("muted", true);
+  vidA.pause();
+  vidB.pause();
+  vidC.pause();
+}
+function OpenVideoBodyContent() {
+  EmsVideoBody.classList.add("EmsVideoBodyShow");
+  $("#EmsVideoMegaCollabA").prop("muted", true);
+  $("#EmsVideoMegaCollabA").prop("autoplay", false);
+  $("#EmsVideoMegaCollabB").prop("muted", true);
+  $("#EmsVideoMegaCollabB").prop("autoplay", false);
+  $("#EmsVideoMegaCollabC").prop("muted", true);
+  $("#EmsVideoMegaCollabC").prop("autoplay", false);
+}
 function OpenApp() {
   EmsApp.classList.add("EmsAppShow");
   EmsMenu.classList.remove("EmsMenuShow");
@@ -80,10 +147,10 @@ EmsLinkOverlay.addEventListener("click", hideBottomSheet);
 /// Instagram Link ///
 
 function YgkInsta() {
-  window.location.replace("https://instagram.com/yhoris_gervino");
+  window.location.replace("https://instagram.com/yhoris_grvino");
 }
 function MkInsta() {
-  window.location.replace("https://instagram.com/marchell_kevandra");
+  window.location.replace("https://instagram.com/marchell_kvandra");
 }
 function ThInsta() {
   window.location.replace("https://instagram.com/thyan_story");
