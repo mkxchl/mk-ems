@@ -143,7 +143,7 @@
                 <h4>Founder</h4>
               </div>
               <div class="EmsAuthorContentStaffIinfoName">
-                <h4>Thyan Christian</h4>
+                <h4>Thyan Story</h4>
               </div>
               <div class="EmsAuthorContentStaffIinfoPlace">
                 <ul>
@@ -326,9 +326,9 @@
               </div>
             </div>
             <div class="EmsMenuContentFeature">
-              <div class="EmsMenuContentFeatureList">
-                <i class="ri-film-line"></i>
-                <h4>Intro</h4>
+              <div class="EmsMenuContentFeatureList" onclick="OpenVideo()">
+                <i class="ri-archive-line"></i>
+                <h4>Archive</h4>
               </div>
               <div class="EmsMenuContentFeatureList" onclick="OpenApp()">
                 <i class="ri-download-2-line"></i>
@@ -400,9 +400,29 @@
           <div class="EmsSongContentBodyMusicList">
             <ul class="BodyMusicListContent">
               <div class="BodyMusicListContentAuthor">
-                <h4>Comming Soon</h4>
+                <div class="BodyMusicListContentAuthorImages">
+                  <img src="assets/images/Ems-V2.jpg" />
+                </div>
+                <div class="BodyMusicListContentAuthorInfo">
+                  <h4 class="BodyMusicListContentAuthorMusicName" id="AuthorMusicName"></h4>
+                  <p class="BodyMusicListContentAuthorMusicArtist" id="AuthorMusicArtis"></p>
+                </div>
               </div>
             </ul>
+            <!-- <div class="BodyMusicContentTrackBar">
+              <div class="EmsTrackPlayBar">
+                <img src="https://ems-links.netlify.app/assets/images/Ems-rev.jpg" class="album-art" />
+                <div class="EmsTrackInfo">
+                  <div class="EmsTrackSubtitle">
+                    <h4>I Bet You Look Good On The Dancefloor</h4>
+                  </div>
+                  <p class="EmsTrackArtist">Arctic Monkeys</p>
+                </div>
+                <div class="EmsButtonPlay">
+                  <i class="ri-play-fill"></i>
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -456,7 +476,43 @@
         </div>
       </div>
     </div>
+    <div class="EmsVideo">
+      <div class="EmsVideoContent">
+        <div class="EmsVideoContentSrc">
+          <video width="100%" height="100%" id="MkEmsVideoStaff">
+            <source src="https://ems-links.netlify.app/assets/images/mk-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="EmsVideoBody">
+      <div class="EmsVideoBodyContent">
+        <div class="EmsVideoBodyContentHeader">
+          <i class="bx bx-chevron-left" onclick="CloseVidContent()"></i>
+          <h4>Archive</h4>
+        </div>
+        <div class="EmsVideoBodyContentMeta">
+          <div class="EmsVideoBodyContentMetaImages">
+            <h4>Mega Collab</h4>
+            <div class="EmsVideoBodyContentMetaImagesContent">
+              <div class="EmsVideoBodyContentMetaImagesContentVideo">
+                <video class="EmsVideoMegaCollab" id="EmsVideoMegaCollabA" muted loop>
+                  <source src="assets/mv/EmsVideosDistrack.mp4" type="video/mp4" />
+                </video>
+                <video class="EmsVideoMegaCollab" id="EmsVideoMegaCollabB" muted loop>
+                  <source src="assets/mv/EmsVideos.mp4" type="video/mp4" />
+                </video>
+                <video class="EmsVideoMegaCollab" id="EmsVideoMegaCollabC" muted loop>
+                  <source src="assets/mv/EmsVideos-2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- End Download -->
+    <script src="https://ems-links.netlify.app/assets/js/query.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
