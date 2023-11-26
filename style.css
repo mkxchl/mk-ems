@@ -4,6 +4,14 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/icon?family=Gemunu+Libre:300,400,500,600,700");
 
+:root {
+  --clr-neutral-50: #f9fafb;
+  --clr-neutral-400: #9ca3af;
+  --clr-neutral-600: #4b5563;
+  --clr-neutral-900: #111827;
+  --clr-neutral-950: #030712;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -26,7 +34,9 @@ body {
   .EmsMenu,
   .EmsLink,
   .EmsSong,
-  .EmsApp {
+  .EmsApp,
+  .EmsVideo,
+  .EmsVideoBody {
     display: none;
   }
 }
@@ -36,11 +46,49 @@ body {
   .EmsMenu,
   .EmsLink,
   .EmsSong,
-  .EmsApp {
+  .EmsApp,
+  .EmsVideo,
+  .EmsVideoBody {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  section,
+  .EmsAuthor,
+  .EmsMenu,
+  .EmsLink,
+  .EmsSong,
+  .EmsApp,
+  .EmsVideo,
+  .EmsVideoBody {
+    display: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  section,
+  .EmsAuthor,
+  .EmsMenu,
+  .EmsLink,
+  .EmsSong,
+  .EmsApp,
+  .EmsVideo,
+  .EmsVideoBody {
     display: none;
   }
 }
 @media screen and (max-width: 393px) {
+  section,
+  .EmsAuthor,
+  .EmsMenu,
+  .EmsLink,
+  .EmsSong,
+  .EmsApp,
+  .EmsVideo,
+  .EmsVideoBody {
+    display: none;
+  }
+}
+/* @media screen and (max-width: 393px) {
   .MkxEmsBackground {
     position: absolute;
     width: 100%;
@@ -137,7 +185,6 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
-    /* bottom: 50%; */
     left: 0;
     width: 100%;
     height: 100vh;
@@ -184,10 +231,6 @@ body {
     margin-top: 1px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-    /* animation-name: floating;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; */
   }
   .EmsAuthorContentHeader i:hover {
     color: red;
@@ -304,7 +347,6 @@ body {
     margin: 10px;
     width: 10%;
     border-radius: 50%;
-    /* animation: text-animation 5s infinite alternate linear; */
   }
   .EmsMenu {
     position: fixed;
@@ -380,14 +422,12 @@ body {
     height: 30px;
     cursor: pointer;
     border: 0.5px solid #ccc;
-    /* transition: 0.5s all; */
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
     border-radius: 5px;
     overflow-y: hidden;
   }
   .EmsMenuContentTeamFams.TeamUpdateHeight {
     height: 37%;
-    /* transition: 0.5s all; */
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
   }
   .EmsMenuContentTeamFams.TeamUpdateHeight i {
@@ -573,7 +613,6 @@ body {
   .EmsSongContent .EmsSongContentHeader {
     position: relative;
     display: flex;
-    /* background: #1313134f; */
     background: linear-gradient(90deg, rgba(70, 67, 67, 1) 0%, rgba(119, 114, 114, 1) 35%, rgba(0, 0, 0, 1) 100%);
     padding: 10px;
   }
@@ -605,7 +644,6 @@ body {
   }
   .EmsSongContentBodyThumbnailHeader {
     position: relative;
-    /* background: #1313134f; */
     background: linear-gradient(90deg, rgba(70, 67, 67, 1) 0%, rgba(119, 114, 114, 1) 35%, rgba(0, 0, 0, 1) 100%);
     padding: 10px;
   }
@@ -685,8 +723,6 @@ body {
     background: #000;
     color: #fff;
   }
-  /* Start Styling Games */
-  /* End Styling Games */
   .EmsApp {
     position: fixed;
     top: 0;
@@ -799,7 +835,7 @@ body {
   }
   .MkEmsAppContentBodyMetaButton h4 {
   }
-}
+} */
 /* Size Smartphone */
 @media screen and (max-width: 360px) {
   .MkxEmsBackground {
@@ -1300,6 +1336,12 @@ body {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .EmsLinkContentBodyMetaIcon i:hover {
+    background: transparent;
+    color: red;
+    transition: 0.5s ease-in-out;
   }
   .EmsSong {
     position: fixed;
@@ -1416,6 +1458,7 @@ body {
     display: flex;
     font-family: "Rajdhani", sans-serif;
     margin-top: 5px;
+    margin-left: 1px;
   }
   .EmsSongContentBodyDescInfoLike i {
     font-size: 20px;
@@ -1446,6 +1489,57 @@ body {
     background: #000;
     color: #fff;
   }
+  .BodyMusicContentTrackBar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+  }
+  .BodyMusicContentTrackBar .EmsTrackPlayBar {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr repeat(2, 3.5rem);
+    grid-template-rows: 3.5rem 2px;
+    width: 30rem;
+    padding: 10px;
+    /* padding-inline: 0.6rem; */
+    row-gap: 0.6rem;
+    border-radius: 0.375rem;
+    background-color: var(--clr-neutral-900);
+    color: #fff;
+  }
+
+  .album-art {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .EmsTrackInfo {
+    margin-top: 8px;
+    margin-left: 5px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent 100%);
+  }
+
+  .EmsTrackSubtitle {
+    margin-top: 5px;
+    overflow-x: hidden;
+  }
+
+  .EmsTrackSubtitle h4 {
+    font-size: 12px;
+    white-space: nowrap;
+    animation: text-animation 5s infinite alternate linear;
+  }
+
+  .EmsTrackArtist {
+    font-size: 12px;
+    color: #fff;
+  }
+
   /* Start Styling Games */
   /* End Styling Games */
   .EmsApp {
@@ -1560,6 +1654,131 @@ body {
   }
   .MkEmsAppContentBodyMetaButton h4 {
   }
+  /* Start Ems Video */
+  .EmsVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .EmsVideo.EmsVideoShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .EmsVideo.EmsVideoShow .EmsVideoContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .EmsVideo .EmsVideoContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #000000a0;
+    overflow-y: auto;
+  }
+  .EmsVideoContent .EmsVideoContentSrc {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .EmsVideoBody {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .EmsVideoBody.EmsVideoBodyShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .EmsVideoBody.EmsVideoBodyShow .EmsVideoBodyContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .EmsVideoBody .EmsVideoBodyContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .EmsVideoBodyContent::-webkit-scrollbar {
+    display: none;
+    width: 2px;
+    height: 1px;
+    position: relative;
+  }
+  .EmsVideoBodyContent .EmsVideoBodyContentHeader {
+    positoin: relative;
+    display: flex;
+    padding: 10px;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .EmsVideoBodyContentHeader i {
+    font-size: 22px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .EmsVideoBodyContentHeader i:hover {
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+  .EmsVideoBodyContentHeader h4 {
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  .EmsVideoBodyContent .EmsVideoBodyContentMeta {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  .EmsVideoBodyContentMeta .EmsVideoBodyContentMetaImages {
+    position: relative;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .EmsVideoBodyContentMetaImages h4 {
+    font-size: 20px;
+  }
+  .EmsVideoBodyContentMetaImages .EmsVideoBodyContentMetaImagesContentVideo {
+    position: relative;
+    margin-top: 10px;
+  }
+  .EmsVideoBodyContentMetaImages .EmsVideoBodyContentMetaImagesContentVideo .EmsVideoMegaCollab {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+  }
+  /* End Ems Video */
 }
 /* Animation */
 
