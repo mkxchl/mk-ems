@@ -1070,12 +1070,15 @@ body {
   }
   .EmsAuthorContentStaffBodyAbout .EmsAuthorContentStaffBodyAboutSubtitle {
     font-family: "Rajdhani", sans-serif;
+    text-align: center;
   }
   .EmsAuthorContentStaffBodyAboutSubtitle h4 {
     font-size: 35px;
     letter-spacing: -3px;
   }
   .EmsAuthorContentStaffBodyAboutSubtitle p {
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 13px;
   }
   .EmsAuthorContentStaff {
