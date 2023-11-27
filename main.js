@@ -16,27 +16,20 @@ const EmsVideo = document.querySelector(".EmsVideo");
 const EmsVideoContent = document.querySelector(".EmsVideoContent");
 const EmsVideoBody = document.querySelector(".EmsVideoBody");
 const EmsVideoBodyContent = document.querySelector(".EmsVideoBodyContent");
-
-window.addEventListener("click", function enterFullScreen(element) {
-  if (element.requestFullscreen) {
-    element.requestFullscreen();
-  } else if (element.mozRequestFullScreen) {
-    element.mozRequestFullScreen(); // Firefox
-  } else if (element.webkitRequestFullscreen) {
-    element.webkitRequestFullscreen(); // Safari
-  } else if (element.msRequestFullscreen) {
-    element.msRequestFullscreen(); // IE/Edge
-  }
-});
+const EmsIntro = document.querySelector(".EmsIntro");
+const EmsIntroOverlay = document.querySelector(".EmsIntroOverlay");
+const EmsIntroContent = document.querySelector(".EmsIntroContent");
 
 EmsMenuToggle.onclick = function () {
   EmsMenuContentTeamFams.classList.toggle("TeamUpdateHeight");
 };
+
 function OpenVideo() {
   $("#MkEmsVideoStaff").show(), $(".EmsVideoContentSrc").fadeIn(), vid.play();
   EmsVideo.classList.add("EmsVideoShow");
   EmsMenu.classList.remove("EmsMenuShow");
 }
+
 /// Video Function ///
 
 var elem = document.documentElement,
@@ -44,10 +37,21 @@ var elem = document.documentElement,
   vidA = document.getElementById("EmsVideoMegaCollabA"),
   vidB = document.getElementById("EmsVideoMegaCollabB"),
   vidC = document.getElementById("EmsVideoMegaCollabC");
+
 vid.onended = function () {
   $(".EmsVideoContentSrc").fadeOut(), OpenVideoBodyContent();
   EmsVideo.classList.remove("EmsVideoShow");
 };
+
+var vidInt = document.getElementById("EmsIntroVidz");
+
+vidInt.onended = function () {
+  AuthorOpenedz();
+  EmsIntro.classList.remove("EmsIntroShow");
+};
+function AuthorOpenedz() {
+  EmsAuthor.classList.add("AuthorShow");
+}
 vidA.addEventListener("click", function () {
   $("#EmsVideoMegaCollabA").prop("muted", false);
   $("#EmsVideoMegaCollabB").prop("muted", true);
@@ -93,6 +97,15 @@ function OpenVideoBodyContent() {
   $("#EmsVideoMegaCollabC").prop("muted", true);
   $("#EmsVideoMegaCollabC").prop("autoplay", false);
 }
+function OpenIntro() {
+  vidInt.play();
+  EmsIntro.classList.add("EmsIntroShow");
+  EmsBodyAll.classList.add("Hide");
+}
+function AuthorOpenedz() {
+  EmsAuthor.classList.add("AuthorShow");
+  EmsBodyAll.classList.add("Hide");
+}
 function OpenApp() {
   EmsApp.classList.add("EmsAppShow");
   EmsMenu.classList.remove("EmsMenuShow");
@@ -104,10 +117,6 @@ function OpenSong() {
 function OpenLink() {
   EmsMenu.classList.remove("EmsMenuShow");
   EmsLink.classList.add("EmsLinkShow");
-}
-function OpenAuthor() {
-  EmsAuthor.classList.add("AuthorShow");
-  EmsBodyAll.classList.add("Hide");
 }
 function AuthorClose() {
   EmsAuthor.classList.remove("AuthorShow");
