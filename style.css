@@ -35,9 +35,21 @@ body {
   .EmsLink,
   .EmsSong,
   .EmsApp,
+  .EmsIntro,
   .EmsVideo,
   .EmsVideoBody {
     display: none;
+  }
+  .MkxEmsBackground {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    bottom: 50px;
+    opacity: 0.2;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 800px) {
@@ -47,9 +59,21 @@ body {
   .EmsLink,
   .EmsSong,
   .EmsApp,
+  .EmsIntro,
   .EmsVideo,
   .EmsVideoBody {
     display: none;
+  }
+  .MkxEmsBackground {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    bottom: 50px;
+    opacity: 0.2;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 600px) {
@@ -59,9 +83,21 @@ body {
   .EmsLink,
   .EmsSong,
   .EmsApp,
+  .EmsIntro,
   .EmsVideo,
   .EmsVideoBody {
     display: none;
+  }
+  .MkxEmsBackground {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    bottom: 50px;
+    opacity: 0.2;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 414px) {
@@ -71,9 +107,21 @@ body {
   .EmsLink,
   .EmsSong,
   .EmsApp,
+  .EmsIntro,
   .EmsVideo,
   .EmsVideoBody {
     display: none;
+  }
+  .MkxEmsBackground {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    bottom: 50px;
+    opacity: 0.2;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 393px) {
@@ -83,9 +131,21 @@ body {
   .EmsLink,
   .EmsSong,
   .EmsApp,
+  .EmsIntro,
   .EmsVideo,
   .EmsVideoBody {
     display: none;
+  }
+  .MkxEmsBackground {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ems-links.netlify.app/assets/images/pattern.svg");
+    bottom: 50px;
+    opacity: 0.2;
+    overflow: hidden;
   }
 }
 /* @media screen and (max-width: 393px) {
@@ -1777,6 +1837,60 @@ body {
     width: 100%;
     height: 300px;
     border-radius: 5px;
+  }
+  .EmsIntro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .EmsIntro.EmsIntroShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .EmsIntro .EmsIntroOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .EmsIntro.EmsIntroShow .EmsIntroContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .EmsIntro .EmsIntroContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #000000;
+    overflow-y: auto;
+  }
+  .EmsIntroContent .EmsIntroContentVideo {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .EmsIntroContent .EmsIntroContentVideo .EmsIntroContentVideoA {
+    width: 100%;
   }
   /* End Ems Video */
 }
