@@ -1062,6 +1062,22 @@ body {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .EmsAuthorContentStaffBodyAbout {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .EmsAuthorContentStaffBodyAbout .EmsAuthorContentStaffBodyAboutSubtitle {
+    font-family: "Rajdhani", sans-serif;
+  }
+  .EmsAuthorContentStaffBodyAboutSubtitle h4 {
+    font-size: 35px;
+    letter-spacing: -3px;
+  }
+  .EmsAuthorContentStaffBodyAboutSubtitle p {
+    font-size: 15px;
+  }
   .EmsAuthorContentStaff {
     position: relative;
     justify-content: center;
