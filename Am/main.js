@@ -9,6 +9,9 @@ const MkSupportOverlay = document.querySelector(".MkSupportOverlay");
 const body = document.querySelector("body");
 const MkAudio = document.getElementById("MkAudio");
 
+MkAudio.onended = function () {
+  $("#MkAudio").prop("autoplay", true);
+};
 function OpenLink() {
   MkLink.classList.add("MkLinkShow");
   MkHeaderBody.classList.add("Hide");
