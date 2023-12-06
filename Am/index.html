@@ -9,12 +9,12 @@
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
     <!-- Meta Property -->
-    <meta property="og:title" content="EMS REVOLUTION - Officiall website editor miring squad revolution!" />
-    <meta property="og:description" content="Coding by Marchell Kevandra" />
+    <meta property="og:title" content="Mk Profile" />
+    <meta property="og:description" content="Mk Profile" />
     <meta property="og:url" content="https://ems-links.netlify.app/" />
     <meta property="og:image" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <meta property="og:image:secure_url" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
-    <meta property="og:author" content="Chellxz" />
+    <meta property="og:author" content="Marchell Kevandra" />
     <!-- Link Rel Assets -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
@@ -64,11 +64,19 @@
             </div>
           </div>
         </div>
+        <div class="MkBodyChat">
+          <div class="MkBodyChatContent" onclick="OpenChat()">
+            <i class="ri-chat-1-line"></i>
+            <div class="MkBodyChatSubtitle">
+              <h4>Mk Fans</h4>
+              <p>Saluran Siaran</p>
+            </div>
+          </div>
+        </div>
         <div class="MkBodyButton">
           <div class="MkBodyButtonList">
             <a class="MkBodyButtonContent">
-              <i class="bx bx-user-plus"></i>
-              <h4>Follow</h4>
+              <button>Follow</button>
             </a>
           </div>
         </div>
@@ -81,13 +89,14 @@
             <i class="bx bx-music"></i>
             <i class="bx bx-link" onclick="OpenLink()"></i>
             <i class="bx bxl-spotify" onclick="OpenSpotify()"></i>
+            <i class="bx bx-joystick" onclick="OpenGame()"></i>
           </div>
         </div>
       </div>
       <div class="MkBodyLine"></div>
       <div class="MkBodyPost">
         <div class="MkBodyPostHeader">
-          <h4>Postingan</h4>
+          <h4>Post</h4>
         </div>
       </div>
       <div class="MkBodyLine"></div>
@@ -231,10 +240,100 @@
         </div>
       </div>
     </div>
+    <div class="MkChat">
+      <div class="MkChatContent">
+        <div class="MkChatContentHeader">
+          <div class="MkChatContentHeaderIc">
+            <i class="ri-arrow-left-line" onclick="CloseChat()"></i>
+          </div>
+          <div class="MkChatContentHeaderUser">
+            <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+            <div class="MkChatContentHeaderSubtitle">
+              <h4>Mk Fans</h4>
+              <p>Saluran Siaran</p>
+            </div>
+          </div>
+        </div>
+        <div class="MkChatBodyContent">
+          <div class="MkChatBodyContentUser">
+            <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+            <h4>Mkxchl.id</h4>
+          </div>
+          <div class="MkChatBodyContentSocial">
+            <div class="MkChatBodyContentSocialContent">
+              <i class="ri-link-m"></i>
+              <h4>Tautan</h4>
+            </div>
+            <div class="MkChatBodyContentSocialContent">
+              <i class="ri-information-line"></i>
+              <h4>Lihat Detail</h4>
+            </div>
+          </div>
+          <div class="MkChatBodyContentDate">
+            <p>7 Jul 18.00</p>
+          </div>
+          <div class="MkChatBodyContentSaluranInfo">
+            <h4><b class="UserInfo">chellgnzxz_</b> menamai saluran ini Mk Fans</h4>
+          </div>
+        </div>
+        <!-- <div class="MkChatBodyContentSaluranMessage">
+          <div class="MkChatBodyContentSaluranImage">
+            <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+          </div>
+          <div class="MkChatBodyContentSaluranTextArea">
+            <p>Jangan Lupa Follow Social Media Saya.</p>
+            <div class="MkChatBodyContentSaluranTextAreaLink">
+              <div class="MkChatBodyContentSaluranTextAreaLinkContent" onclick="MkxXxInsta()">
+                <i class="ri-instagram-line"></i>
+                <h4>chellgnzxz_</h4>
+              </div>
+              <div class="MkChatBodyContentSaluranTextAreaLinkContent" onclick="MkxXxTiktok()">
+                <i class="bx bxl-tiktok"></i>
+                <h4>Marchell Kevandra</h4>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="MkChatInfoUpdate">
+          <div class="MkChatInfoUpdateContent">
+            <div class="MkChatInfoUpdateHeader">
+              <h4>New Update</h4>
+            </div>
+            <div class="MkChatInfoUpdateContentBody">
+              <li>Fixed Bug</li>
+              <li>Feature Saluran</li>
+              <li>Feature Team Support</li>
+              <li>Feature Link</li>
+              <li>Feature Spotify</li>
+            </div>
+          </div>
+        </div>
+        <div class="MkChatHeaderJoin">
+          <button class="LainKali" onclick="CloseChat()">Lain Kali</button>
+          <i class="bx bx-x" onclick="CloseBtn()"></i>
+          <button>Gabung</button>
+        </div>
+      </div>
+    </div>
+    <div class="MkGame">
+      <div class="MkGameOverlay"></div>
+      <div class="MkGameContent">
+        <div class="MkGameContentBody">
+          <i class="bx bx-joystick"></i>
+        </div>
+        <div class="MkGameContentBody">
+          <i class="bx bx-joystick"></i>
+        </div>
+        <div class="MkGameContentBody">
+          <i class="bx bx-joystick"></i>
+        </div>
+      </div>
+    </div>
     <audio id="MkAudio">
       <source src="https://ems-links.netlify.app/am/mix/MkxchlSong-5.mp3" type="audio/mpeg" />
     </audio>
     <script src="main.js"></script>
+    <script src="script.js"></script>
     <script src="https://ems-links.netlify.app/mk-netlinks/static/mk-assets/js/gxcr.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
