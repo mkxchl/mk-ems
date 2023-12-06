@@ -1059,15 +1059,14 @@ body {
   }
   .MkChatInfoUpdate {
     position: relative;
-    width: 100%;
     top: 80px;
     padding: 10px;
   }
   .MkChatInfoUpdateContent {
     position: relative;
-    margin-right: 15px;
-    margin-left: 15px;
     background: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
     border: 1px solid #eee;
     border-radius: 10px;
   }
