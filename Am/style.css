@@ -289,37 +289,74 @@ body {
     position: relative;
     font-weight: 500;
   }
+  .MkBodyChat {
+    position: relative;
+    bottom: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .MkBodyChat .MkBodyChatContent {
+    position: relative;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .MkBodyChat .MkBodyChatContent i {
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .MkBodyChatContent .MkBodyChatSubtitle {
+    position: relative;
+  }
+  .MkBodyChatContent .MkBodyChatSubtitle h4 {
+    position: relative;
+    top: 4px;
+    font-size: 16px;
+  }
+  .MkBodyChatContent .MkBodyChatSubtitle p {
+    position: relative;
+    top: 1px;
+    font-size: 15px;
+  }
   .MkBodyButton {
     position: relative;
     bottom: 50px;
   }
   .MkBodyButtonList {
     position: relative;
-    background: #0866ff;
-    color: #fff;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 8px;
-    border-radius: 5px;
     justify-content: center;
     align-items: center;
     text-align: center;
     cursor: pointer;
     transition: 0.5s ease-in-out;
   }
-  .MkBodyButtonList:hover {
-    background: #fff;
-    color: #000;
-    transition: 0.5s ease-in-out;
-  }
-  .MkBodyButtonList a {
+  .MkBodyButtonList a button {
     position: relative;
     display: flex;
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: #0866ff;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  .MkBodyButtonList a button:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s ease-in-out;
   }
   .MkBodyButtonList a h4 {
     position: relative;
@@ -821,6 +858,362 @@ body {
     position: relative;
     font-size: 14px;
     bottom: 2px;
+  }
+  .MkChat {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 99999999;
+  }
+  .MkChat.MkChatShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkChat.MkChatShow .MkChatContent {
+    transform: translateX(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MkChat .MkChatContent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    background: #fff;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .MkChatContent::-webkit-scrollbar {
+    display: none;
+    width: 2px;
+    height: 1px;
+    position: relative;
+  }
+  .MkChatContent .MkChatContentHeader {
+    position: fixed;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    width: 100%;
+  }
+  .MkChatContentHeader .MkChatContentHeaderIc {
+    position: relative;
+    display: flex;
+  }
+  .MkChatContentHeader .MkChatContentHeaderIc i {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    margin-top: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .MkChatContentHeader .MkChatContentHeaderUser {
+    position: relative;
+    display: flex;
+  }
+  .MkChatContentHeader .MkChatContentHeaderUser img {
+    position: relative;
+    margin-top: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .MkChatContentHeader .MkChatContentHeaderUser .MkChatContentHeaderSubtitle {
+    position: relative;
+  }
+  .MkChatContentHeader .MkChatContentHeaderUser .MkChatContentHeaderSubtitle h4 {
+    font-size: 15px;
+  }
+  .MkChatContentHeader .MkChatContentHeaderUser .MkChatContentHeaderSubtitle p {
+    position: relative;
+    font-size: 10px;
+    bottom: 2px;
+  }
+  .MkChatBodyContent {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    place-content; center;
+    text-align: center;
+    top: 50px;
+    padding: 10px;
+  }
+  .MkChatBodyContent .MkChatBodyContentUser img {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 20%;
+    border-radius: 50%;
+  }
+  .MkChatBodyContent .MkChatBodyContentUser h4 {
+    font-size: 18px;
+  }
+  .MkChatBodyContent .MkChatBodyContentSocial {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    place-content; center;
+    text-align: center;
+    display: flex;
+  }
+  .MkChatBodyContentSocial .MkChatBodyContentSocialContent {
+    positoin: relative;
+    margin: 10px;
+    width: 30%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .MkChatBodyContentSocialContent i {
+    font-size: 30px;
+  }
+  .MkChatBodyContentSocialContent h4 {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .MkChatBodyContentDate p {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .MkChatBodyContentSaluranInfo h4 {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .MkChatBodyContentSaluranInfo .UserInfo {
+    cursor: pointer;
+  }
+  .MkChatBodyContentSaluranMessage {
+    position: relative;
+    top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+  }
+  .MkChatBodyContentSaluranMessage .MkChatBodyContentSaluranImage {
+    position: relative;
+    display: flex;
+  }
+  .MkChatBodyContentSaluranMessage .MkChatBodyContentSaluranImage img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  .MkChatBodyContentSaluranTextArea {
+    position: relative;
+    top: 5px;
+    height: 85px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 10px;
+    color: #000;
+    border-radius: 20px;
+    border: 1px solid #eee;
+  }
+  .MkChatBodyContentSaluranTextArea p {
+    position: relative;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .MkChatBodyContentSaluranTextAreaLink {
+    position: relative;
+    margin-top: 10px;
+  }
+  .MkChatBodyContentSaluranTextAreaLink .MkChatBodyContentSaluranTextAreaLinkContent {
+    position: relative;
+    display: flex;
+    width: 60%;
+    padding: 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .MkChatBodyContentSaluranTextAreaLinkContent i {
+    position: relative;
+    font-size: 16px;
+  }
+  .MkChatBodyContentSaluranTextAreaLinkContent h4 {
+    position: relative;
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: 500;
+  }
+  .MkChatInfoUpdate {
+    position: relative;
+    width: 100%;
+    top: 80px;
+    padding: 10px;
+  }
+  .MkChatInfoUpdateContent {
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+  }
+  .MkChatInfoUpdateContent .MkChatInfoUpdateHeader {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+  }
+  .MkChatInfoUpdateContent .MkChatInfoUpdateHeader h4 {
+    font-size: 16px;
+  }
+  .MkChatInfoUpdateContentBody {
+    position: relative;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .MkChatInfoUpdateContentBody li {
+    position: relative;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .MkChatHeaderJoin {
+    position: fixed;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    margin-top: -50px;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MkChatHeaderJoin.HideJoin {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    transform: translateY(0);
+  }
+  .MkChatHeaderJoin button {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    outline: none;
+    border-radius: 5px;
+    background: #0866ff;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    border: none;
+    font-size: 15px;
+  }
+  .MkChatHeaderJoin .LainKali {
+    background: #fff;
+    color: #000;
+    border: 1px solid #eee;
+  }
+  .MkChatHeaderJoin i {
+    position: absolute;
+    font-size: 30px;
+    top: -30px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .MkGame {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 99999999;
+  }
+  .MkGame.MkGameShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkGame .MkGameOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .MkGame.MkGameShow .MkGameContent {
+    transform: translateX(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MkGame .MkGameContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: #fff;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .MkGameContent .MkGameContentBody {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-content: center;
+    place-items: center;
+  }
+  .MkGameContent .MkGameContentBody i {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-content: center;
+    place-items: center;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-size: 20px;
+    background: #eee;
+    padding: 7px;
+    border-radius: 5px;
+  }
+  .MkGameContentBody i:hover {
+    background: #000;
+    color: #eee;
+    transition: 0.5s ease-in-out;
   }
 }
 @keyframes flash {
