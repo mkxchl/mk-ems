@@ -55,7 +55,7 @@
             <h4>Marchell Kevandra</h4>
           </div>
           <div class="MkHeaderBodyHeaderBio">
-            <div class="MkHeaderBodyHeaderBioSocialMedia">
+            <div class="MkHeaderBodyHeaderBioSocialMedia" onclick="MkxXxFacebook()">
               <i class="bx bxl-facebook"></i>
               <p>Marchell</p>
             </div>
@@ -75,9 +75,15 @@
         </div>
         <div class="MkBodyButton">
           <div class="MkBodyButtonList">
-            <a class="MkBodyButtonContent">
+            <a class="MkBodyButtonContent" onclick="OpenFollowed()">
               <button>Follow</button>
             </a>
+          </div>
+        </div>
+        <div class="MkBodyButtonProject">
+          <div class="MkBodyButtonProjectContent">
+            <button class="MkBtnProject" onclick="OpenProject()">Mk Project</button>
+            <button class="MkBtnProfile"><i class="fa-regular fa-user"></i></button>
           </div>
         </div>
       </div>
@@ -272,9 +278,9 @@
           <div class="MkChatBodyContentDate">
             <p>7 Jul 18.00</p>
           </div>
-          <div class="MkChatBodyContentSaluranInfo">
+          <!-- <div class="MkChatBodyContentSaluranInfo">
             <h4><b class="UserInfo">chellgnzxz_</b> menamai saluran ini Mk Fans</h4>
-          </div>
+          </div> -->
         </div>
         <!-- <div class="MkChatBodyContentSaluranMessage">
           <div class="MkChatBodyContentSaluranImage">
@@ -308,11 +314,11 @@
             </div>
           </div>
         </div>
-        <div class="MkChatHeaderJoin">
+        <!-- <div class="MkChatHeaderJoin">
           <button class="LainKali" onclick="CloseChat()">Lain Kali</button>
           <i class="bx bx-x" onclick="CloseBtn()"></i>
           <button>Gabung</button>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="MkGame">
@@ -329,12 +335,71 @@
         </div>
       </div>
     </div>
+    <div class="MkScMediaFlw">
+      <div class="MkScMediaFlwOverlay"></div>
+      <div class="MkScMediaFlwContent">
+        <div class="MkScMediaFlwContentBody" onclick="MkxXxInsta()">
+          <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="MkScMediaFlwContentBody" onclick="MkxXxFacebook()">
+          <i class="bx bxl-facebook"></i>
+        </div>
+        <div class="MkScMediaFlwContentBody" onclick="MkxXxTiktok()">
+          <i class="bx bxl-tiktok"></i>
+        </div>
+        <div class="MkScMediaFlwContentBody" onclick="MkxXxGithub()">
+          <i class="bx bxl-github"></i>
+        </div>
+        <div class="MkScMediaFlwContentBody BtnClose" onclick="CloseFollowed()">
+          <i class="bx bx-x"></i>
+        </div>
+      </div>
+    </div>
+    <div class="MKProject">
+      <div class="MKProjectOverlay"></div>
+      <div class="MKProjectContent">
+        <div class="MKProjectBodyContent">
+          <div class="MKProjectBodyHeader">
+            <h4>Mk Project</h4>
+            <i class="bx bx-chevron-down" onclick="CloseProject()"></i>
+          </div>
+          <div class="MKProjectBodyList">
+            <div class="MKProjectBodyListHeader">
+              <h4>Coming Soon</h4>
+            </div>
+            <div class="MKProjectBodyListContent">
+              <p>Chat App Realtime</p>
+            </div>
+            <div class="MKProjectBodyListContent">
+              <p>Music App</p>
+            </div>
+            <div class="MKProjectBodyListContent">
+              <p>Game App</p>
+            </div>
+          </div>
+        </div>
+        <div class="MKProjectBodyContentx">
+          <div class="MKProjectBodyListx">
+            <div class="MKProjectBodyListHeaderx">
+              <h4>Published</h4>
+            </div>
+            <div class="MKProjectBodyListContentx">
+              <p>Website Editor Miring Squad</p>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="MKProjectBodyListContentx">
+              <p>Website Mkxchl Portfolio</p>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <audio id="MkAudio">
       <source src="https://ems-links.netlify.app/am/mix/MkxchlSong-5.mp3" type="audio/mpeg" />
     </audio>
     <script src="main.js"></script>
-    <script src="script.js"></script>
-    <script src="https://ems-links.netlify.app/mk-netlinks/static/mk-assets/js/gxcr.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ems-links.netlify.app/assets/js/query.min.js"></script>
   </body>
 </html>
