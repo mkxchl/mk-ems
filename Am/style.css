@@ -751,7 +751,6 @@ body {
   .MkLink .MkLinkContent {
     position: relative;
     width: 100%;
-    height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
     overflow-y: hidden;
@@ -1487,6 +1486,151 @@ body {
   }
   .MKProjectBodyListContentx i:hover {
     color: #eee;
+    transition: 0.5s ease-in-out;
+  }
+  .MkPageMediaSocialInsta {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 99999999;
+  }
+  .MkPageMediaSocialInsta.MkPageMediaSocialInstaShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkPageMediaSocialInsta .MkPageMediaSocialInstaOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  } 
+  .MkPageMediaSocialInsta.MkPageMediaSocialInstaShow .MkPageMediaSocialInstaContent {
+    /* transform: translateX(0) */
+    transform: scale(1);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MkPageMediaSocialInsta .MkPageMediaSocialInstaContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    /* transform: translateX(-100%); */
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MkPageMediaSocialInstaContent .MkPageMediaSocialInstaBody {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    display: flex;
+    height: 40%;
+    top: 30%;
+    background: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 30px;
+  }
+  .MkPageMediaSocialInstaBody .MkPageMediaSocialInstaBodyContent {
+    position: relative;
+    padding: 10px;
+  }
+  .MkPageMediaSocialInstaBody .MkPageMediaSocialInstaBodyIcon {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    text-align; center;
+    display: flex;
+  }
+  .MkPageMediaSocialInstaBody .MkPageMediaSocialInstaBodyIcon i {
+    position: relative;
+    bottom: 25px;
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    border-radius: 50%;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  }
+  .MkPageMediaSocialInstaBodyUsername {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: -5px;
+  }
+  .MkPageMediaSocialInstaBodyUsername h4 {
+    font-size: 20px;
+  }
+  .MkPageMediaSocialInstaBodyUsername p {
+    font-size: 15px;
+  }
+  .MkPageMediaSocialInstaBodyButton {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    padding: 10px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkPageMediaSocialInstaBodyButton h4 {
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  .MkPageMediaSocialInstaBodyButton:hover {
+    background: #eee;
+    transition: 0.5s ease-in-out;
+  }
+  .MkPageMediaSocialInstaBodyButton:hover h4 {
+    color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .MkPageMediaSocialInstaButtonClose {
+    position: absolute;
+    left: 43%;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-itmes: center;
+    bottom: 27%;
+  }
+  .MkPageMediaSocialInstaButtonClose i {
+    padding: 10px;
+    background: #fff;
+    font-size: 27px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkPageMediaSocialInstaButtonClose i:hover {
+    background: #eee;
     transition: 0.5s ease-in-out;
   }
 }
