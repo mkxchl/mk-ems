@@ -1,308 +1,341 @@
-const _0x597843 = _0x6edb;
-(function (_0x5d72f3, _0x58b074) {
-  const _0x4ee4a5 = _0x6edb,
-    _0x30d38a = _0x5d72f3();
+const _0x1c5833 = _0x3651;
+function _0x3651(_0x5f9ce, _0x2dfc16) {
+  const _0x5a21b9 = _0x5a21();
+  return (
+    (_0x3651 = function (_0x36518c, _0x213b9b) {
+      _0x36518c = _0x36518c - 0x183;
+      let _0x4d5c6c = _0x5a21b9[_0x36518c];
+      return _0x4d5c6c;
+    }),
+    _0x3651(_0x5f9ce, _0x2dfc16)
+  );
+}
+(function (_0x517c7a, _0xaf06af) {
+  const _0x31a402 = _0x3651,
+    _0x3915f8 = _0x517c7a();
   while (!![]) {
     try {
-      const _0x35cd38 =
-        -parseInt(_0x4ee4a5(0x16a)) / 0x1 +
-        parseInt(_0x4ee4a5(0x196)) / 0x2 +
-        (parseInt(_0x4ee4a5(0x15e)) / 0x3) * (-parseInt(_0x4ee4a5(0x175)) / 0x4) +
-        (parseInt(_0x4ee4a5(0x18b)) / 0x5) * (parseInt(_0x4ee4a5(0x16c)) / 0x6) +
-        (parseInt(_0x4ee4a5(0x16e)) / 0x7) * (parseInt(_0x4ee4a5(0x168)) / 0x8) +
-        parseInt(_0x4ee4a5(0x156)) / 0x9 +
-        parseInt(_0x4ee4a5(0x191)) / 0xa;
-      if (_0x35cd38 === _0x58b074) break;
-      else _0x30d38a["push"](_0x30d38a["shift"]());
-    } catch (_0x3fc1b2) {
-      _0x30d38a["push"](_0x30d38a["shift"]());
+      const _0x4b70c6 =
+        (-parseInt(_0x31a402(0x1bf)) / 0x1) * (parseInt(_0x31a402(0x196)) / 0x2) +
+        -parseInt(_0x31a402(0x1dd)) / 0x3 +
+        (parseInt(_0x31a402(0x1b1)) / 0x4) * (-parseInt(_0x31a402(0x189)) / 0x5) +
+        parseInt(_0x31a402(0x1cb)) / 0x6 +
+        -parseInt(_0x31a402(0x197)) / 0x7 +
+        -parseInt(_0x31a402(0x1c9)) / 0x8 +
+        parseInt(_0x31a402(0x183)) / 0x9;
+      if (_0x4b70c6 === _0xaf06af) break;
+      else _0x3915f8["push"](_0x3915f8["shift"]());
+    } catch (_0x211cc6) {
+      _0x3915f8["push"](_0x3915f8["shift"]());
     }
   }
-})(_0x1166, 0x88ba6);
-const MkHeaderBody = document[_0x597843(0x179)](_0x597843(0x16d)),
-  MkSpotify = document[_0x597843(0x179)](_0x597843(0x18e)),
-  MkPreloader = document["querySelector"](".MkPreloader"),
-  MkLink = document[_0x597843(0x179)](".MkLink"),
-  MkLinkOverlay = document[_0x597843(0x179)](_0x597843(0x162)),
-  MkLinkContentBodyLink = document["querySelector"](_0x597843(0x155)),
-  MkSupport = document[_0x597843(0x179)](_0x597843(0x16f)),
-  MkSupportOverlay = document[_0x597843(0x179)](_0x597843(0x176)),
-  MkChatHeaderJoin = document[_0x597843(0x179)](_0x597843(0x183)),
-  MkGame = document[_0x597843(0x179)](_0x597843(0x18f)),
-  MkGameOverlay = document["querySelector"](_0x597843(0x14e)),
-  MkScMediaFlw = document[_0x597843(0x179)](".MkScMediaFlw"),
-  MkScMediaFlwOverlay = document[_0x597843(0x179)](_0x597843(0x169)),
-  MkPageMediaSocialInsta = document[_0x597843(0x179)](_0x597843(0x159)),
-  MkPageMediaSocialInstaOverlay = document[_0x597843(0x179)](_0x597843(0x184)),
-  MKProject = document[_0x597843(0x179)](_0x597843(0x152)),
-  MKProjectOverlay = document[_0x597843(0x179)](_0x597843(0x15d)),
-  MkChat = document[_0x597843(0x179)](".MkChat"),
-  BtnSocialMediax = document[_0x597843(0x179)](".BtnSocialMediax"),
-  body = document["querySelector"](_0x597843(0x182)),
-  MkAudio = document[_0x597843(0x180)](_0x597843(0x17a)),
-  IconSocialMedia = document[_0x597843(0x180)](_0x597843(0x174)),
-  TitleSocialMedia = document[_0x597843(0x180)]("TitleSocialMedia"),
-  DescSocialMedia = document[_0x597843(0x180)]("DescSocialMedia"),
-  ButtonLlnkSocialMedia = document[_0x597843(0x180)]("ButtonLlnkSocialMedia"),
-  selectedIcon = localStorage["getItem"](_0x597843(0x185)),
-  iconInsta = _0x597843(0x17b),
-  iconFace = _0x597843(0x189),
-  iconTkTok = "ri-tiktok-line";
+})(_0x5a21, 0x1b64f);
+const MkHeaderBody = document[_0x1c5833(0x1b7)](_0x1c5833(0x190)),
+  MkSpotify = document[_0x1c5833(0x1b7)](_0x1c5833(0x1b5)),
+  MkPreloader = document[_0x1c5833(0x1b7)](_0x1c5833(0x1de)),
+  MkLink = document["querySelector"](_0x1c5833(0x19b)),
+  MkLinkOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x198)),
+  MkLinkContentBodyLink = document["querySelector"](".MkLinkContentBodyLink"),
+  MkSupport = document["querySelector"](_0x1c5833(0x1d0)),
+  MkSupportOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x1ce)),
+  MkChatHeaderJoin = document[_0x1c5833(0x1b7)](_0x1c5833(0x18f)),
+  MkGame = document["querySelector"](_0x1c5833(0x1ae)),
+  MkGameOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x1a4)),
+  MkScMediaFlw = document[_0x1c5833(0x1b7)](_0x1c5833(0x1a6)),
+  MkScMediaFlwOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x1a8)),
+  MkPageMediaSocialInsta = document["querySelector"](_0x1c5833(0x1ba)),
+  MkPageMediaSocialInstaOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x199)),
+  MKProject = document[_0x1c5833(0x1b7)](_0x1c5833(0x1b4)),
+  MKProjectOverlay = document[_0x1c5833(0x1b7)](".MKProjectOverlay"),
+  MkChat = document[_0x1c5833(0x1b7)](_0x1c5833(0x1c1)),
+  BtnSocialMediax = document[_0x1c5833(0x1b7)](_0x1c5833(0x187)),
+  MkPageMediaSocialInstaBodyButton = document[_0x1c5833(0x1b7)](_0x1c5833(0x19c)),
+  body = document["querySelector"](_0x1c5833(0x1d6)),
+  MkAudio = document[_0x1c5833(0x19e)](_0x1c5833(0x18b)),
+  IconSocialMedia = document[_0x1c5833(0x19e)](_0x1c5833(0x18d)),
+  TitleSocialMedia = document[_0x1c5833(0x19e)](_0x1c5833(0x191)),
+  DescSocialMedia = document[_0x1c5833(0x19e)](_0x1c5833(0x1a0)),
+  ButtonLlnkSocialMedia = document[_0x1c5833(0x19e)]("ButtonLlnkSocialMedia"),
+  selectedIcon = localStorage[_0x1c5833(0x18a)](_0x1c5833(0x1b8)),
+  iconInsta = "ri-instagram-line",
+  iconFace = _0x1c5833(0x1da),
+  iconTkTok = _0x1c5833(0x1b2);
 function OpenProject() {
-  const _0x2e3683 = _0x597843;
-  MKProject["classList"][_0x2e3683(0x165)](_0x2e3683(0x15f)), MkHeaderBody["classList"][_0x2e3683(0x165)](_0x2e3683(0x18c));
+  const _0x3a08c6 = _0x1c5833;
+  MKProject[_0x3a08c6(0x1b3)]["add"]("MKProjectShow"), MkHeaderBody["classList"][_0x3a08c6(0x1ca)]("Hide");
 }
 function OpenFollowed() {
-  const _0x279f6c = _0x597843;
-  MkScMediaFlw[_0x279f6c(0x18a)][_0x279f6c(0x165)](_0x279f6c(0x190));
+  const _0x5861c3 = _0x1c5833;
+  MkScMediaFlw[_0x5861c3(0x1b3)][_0x5861c3(0x1ca)]("MkScMediaFlwShow");
 }
 function OpenInts() {
-  const _0x59946b = _0x597843;
-  MkPageMediaSocialInsta[_0x59946b(0x18a)]["add"](_0x59946b(0x17e)),
-    MkHeaderBody["classList"][_0x59946b(0x165)](_0x59946b(0x18c)),
-    MkScMediaFlw["classList"]["remove"](_0x59946b(0x190)),
-    (TitleSocialMedia[_0x59946b(0x15a)] = _0x59946b(0x172)),
-    (DescSocialMedia["innerHTML"] = _0x59946b(0x166)),
-    (IconSocialMedia[_0x59946b(0x154)] = _0x59946b(0x17b)),
-    (BtnSocialMediax[_0x59946b(0x15a)] = _0x59946b(0x158)),
-    BtnSocialMediax[_0x59946b(0x151)](_0x59946b(0x170), function () {
-      const _0x1a8359 = _0x59946b;
-      window[_0x1a8359(0x178)][_0x1a8359(0x195)](_0x1a8359(0x16b)), MkPageMediaSocialInsta["classList"][_0x1a8359(0x14d)](_0x1a8359(0x17e)), MkHeaderBody[_0x1a8359(0x18a)][_0x1a8359(0x14d)](_0x1a8359(0x18c));
+  const _0x5cf70c = _0x1c5833;
+  MkPageMediaSocialInsta[_0x5cf70c(0x1b3)][_0x5cf70c(0x1ca)](_0x5cf70c(0x1db)),
+    MkHeaderBody["classList"][_0x5cf70c(0x1ca)](_0x5cf70c(0x1c4)),
+    MkScMediaFlw[_0x5cf70c(0x1b3)][_0x5cf70c(0x19f)](_0x5cf70c(0x1d8)),
+    (TitleSocialMedia[_0x5cf70c(0x1ad)] = _0x5cf70c(0x1a9)),
+    (DescSocialMedia[_0x5cf70c(0x1ad)] = _0x5cf70c(0x1c0)),
+    (IconSocialMedia[_0x5cf70c(0x1bb)] = "ri-instagram-line"),
+    (BtnSocialMediax["innerHTML"] = _0x5cf70c(0x1ac)),
+    (IconSocialMedia[_0x5cf70c(0x1df)]["background"] = _0x5cf70c(0x1d4)),
+    (IconSocialMedia[_0x5cf70c(0x1df)][_0x5cf70c(0x1a2)] = _0x5cf70c(0x1b9)),
+    (IconSocialMedia[_0x5cf70c(0x1df)][_0x5cf70c(0x1a2)] = "-webkit-linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%)"),
+    (IconSocialMedia["style"]["background"] = "linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%"),
+    (MkPageMediaSocialInstaBodyButton["style"][_0x5cf70c(0x1a2)] = "-moz-linear-gradient(45deg,\x20#f09433\x200%,\x20#e6683c\x2025%,\x20#dc2743\x2050%,\x20#cc2366\x2075%,\x20#bc1888\x20100%)"),
+    (MkPageMediaSocialInstaBodyButton["style"][_0x5cf70c(0x1a2)] = _0x5cf70c(0x1a1)),
+    (MkPageMediaSocialInstaBodyButton[_0x5cf70c(0x1df)][_0x5cf70c(0x1a2)] = _0x5cf70c(0x1a5)),
+    (MkPageMediaSocialInstaBodyButton["style"][_0x5cf70c(0x1a2)] = _0x5cf70c(0x1d4)),
+    BtnSocialMediax[_0x5cf70c(0x19a)](_0x5cf70c(0x1c8), function () {
+      const _0x201645 = _0x5cf70c;
+      window["location"]["replace"](_0x201645(0x1d9)), MkPageMediaSocialInsta[_0x201645(0x1b3)][_0x201645(0x19f)](_0x201645(0x1db)), MkHeaderBody[_0x201645(0x1b3)][_0x201645(0x19f)](_0x201645(0x1c4));
     });
 }
 function OpenFace() {
-  const _0x20490c = _0x597843;
-  MkPageMediaSocialInsta[_0x20490c(0x18a)][_0x20490c(0x165)](_0x20490c(0x17e)),
-    MkHeaderBody[_0x20490c(0x18a)][_0x20490c(0x165)](_0x20490c(0x18c)),
-    MkScMediaFlw[_0x20490c(0x18a)][_0x20490c(0x14d)](_0x20490c(0x190)),
-    (TitleSocialMedia[_0x20490c(0x15a)] = "Marchell\x20Kevandra"),
-    (DescSocialMedia[_0x20490c(0x15a)] = "facebook.com/chellgnzxz"),
-    (IconSocialMedia[_0x20490c(0x154)] = _0x20490c(0x189)),
-    (BtnSocialMediax[_0x20490c(0x15a)] = _0x20490c(0x192)),
-    BtnSocialMediax[_0x20490c(0x151)](_0x20490c(0x170), function () {
-      const _0x3c8f3f = _0x20490c;
-      window[_0x3c8f3f(0x178)][_0x3c8f3f(0x195)](_0x3c8f3f(0x187)), MkPageMediaSocialInsta[_0x3c8f3f(0x18a)]["remove"]("MkPageMediaSocialInstaShow"), MkHeaderBody[_0x3c8f3f(0x18a)]["remove"](_0x3c8f3f(0x18c));
+  const _0x566e61 = _0x1c5833;
+  MkPageMediaSocialInsta[_0x566e61(0x1b3)][_0x566e61(0x1ca)](_0x566e61(0x1db)),
+    MkHeaderBody[_0x566e61(0x1b3)]["add"](_0x566e61(0x1c4)),
+    MkScMediaFlw["classList"][_0x566e61(0x19f)]("MkScMediaFlwShow"),
+    (TitleSocialMedia[_0x566e61(0x1ad)] = _0x566e61(0x1a9)),
+    (DescSocialMedia[_0x566e61(0x1ad)] = _0x566e61(0x184)),
+    (IconSocialMedia["className"] = _0x566e61(0x1da)),
+    (IconSocialMedia[_0x566e61(0x1df)][_0x566e61(0x1a2)] = "#0866ff"),
+    (MkPageMediaSocialInstaBodyButton[_0x566e61(0x1df)]["background"] = _0x566e61(0x1c7)),
+    (BtnSocialMediax[_0x566e61(0x1ad)] = _0x566e61(0x192)),
+    BtnSocialMediax[_0x566e61(0x19a)](_0x566e61(0x1c8), function () {
+      const _0x9373d0 = _0x566e61;
+      window[_0x9373d0(0x1d2)][_0x9373d0(0x18e)](_0x9373d0(0x1cf)), MkPageMediaSocialInsta["classList"][_0x9373d0(0x19f)](_0x9373d0(0x1db)), MkHeaderBody[_0x9373d0(0x1b3)][_0x9373d0(0x19f)](_0x9373d0(0x1c4));
     });
 }
 function OpenTkTok() {
-  const _0x321153 = _0x597843;
-  MkPageMediaSocialInsta["classList"][_0x321153(0x165)](_0x321153(0x17e)),
-    MkHeaderBody[_0x321153(0x18a)]["add"](_0x321153(0x18c)),
-    MkScMediaFlw[_0x321153(0x18a)]["remove"]("MkScMediaFlwShow"),
-    (TitleSocialMedia[_0x321153(0x15a)] = _0x321153(0x172)),
-    (DescSocialMedia[_0x321153(0x15a)] = _0x321153(0x164)),
-    (IconSocialMedia[_0x321153(0x154)] = _0x321153(0x15b)),
-    (BtnSocialMediax[_0x321153(0x15a)] = _0x321153(0x157)),
-    BtnSocialMediax[_0x321153(0x151)](_0x321153(0x170), function () {
-      const _0x358e8b = _0x321153;
-      window[_0x358e8b(0x178)][_0x358e8b(0x195)](_0x358e8b(0x181)), MkPageMediaSocialInsta[_0x358e8b(0x18a)]["remove"]("MkPageMediaSocialInstaShow"), MkHeaderBody[_0x358e8b(0x18a)][_0x358e8b(0x14d)]("Hide");
+  const _0x4149b9 = _0x1c5833;
+  MkPageMediaSocialInsta[_0x4149b9(0x1b3)][_0x4149b9(0x1ca)](_0x4149b9(0x1db)),
+    MkHeaderBody[_0x4149b9(0x1b3)][_0x4149b9(0x1ca)](_0x4149b9(0x1c4)),
+    MkScMediaFlw[_0x4149b9(0x1b3)][_0x4149b9(0x19f)](_0x4149b9(0x1d8)),
+    (TitleSocialMedia[_0x4149b9(0x1ad)] = _0x4149b9(0x1a9)),
+    (DescSocialMedia[_0x4149b9(0x1ad)] = _0x4149b9(0x1d7)),
+    (IconSocialMedia[_0x4149b9(0x1bb)] = _0x4149b9(0x1d5)),
+    (BtnSocialMediax[_0x4149b9(0x1ad)] = _0x4149b9(0x1b0)),
+    (IconSocialMedia[_0x4149b9(0x1df)]["background"] = "#000"),
+    (MkPageMediaSocialInstaBodyButton[_0x4149b9(0x1df)]["background"] = _0x4149b9(0x1bc)),
+    BtnSocialMediax[_0x4149b9(0x19a)]("click", function () {
+      const _0x267d40 = _0x4149b9;
+      window[_0x267d40(0x1d2)][_0x267d40(0x18e)]("https://tiktok.com/@mxchl"), MkPageMediaSocialInsta[_0x267d40(0x1b3)][_0x267d40(0x19f)](_0x267d40(0x1db)), MkHeaderBody[_0x267d40(0x1b3)][_0x267d40(0x19f)]("Hide");
     });
 }
-function _0x1166() {
-  const _0xd1ce40 = [
-    "684360RrMTNj",
-    "Open\x20Tiktok",
-    "Open\x20Instagram",
-    ".MkPageMediaSocialInsta",
-    "innerHTML",
-    "bx\x20bxl-tiktok",
-    "#999",
-    ".MKProjectOverlay",
-    "147hPGmPl",
-    "MKProjectShow",
-    "MkChatShow",
-    "HideLeft",
-    ".MkLinkOverlay",
-    "isDenied",
-    "tiktok.com/mkxchl",
-    "add",
-    "instagram.com/marchell_kvandra",
-    "Warning",
-    "271048HHQXMg",
-    ".MkScMediaOverlay",
-    "615602DnUCqf",
-    "https://instagram.com/marchell_kvandra",
-    "82722cwHNBf",
-    ".MkHeaderBody",
-    "7iHwWcU",
-    ".MkSupport",
-    "click",
-    "MkGameShow",
-    "Marchell\x20Kevandra",
-    "style",
-    "IconSocialMedia",
-    "57676cdQXKG",
-    ".MkSupportOverlay",
-    "background",
-    "location",
-    "querySelector",
-    "MkAudio",
-    "ri-instagram-line",
-    "MkSpotifyShow",
-    "MkLinkShow",
-    "MkPageMediaSocialInstaShow",
-    "isConfirmed",
-    "getElementById",
-    "https://tiktok.com/@mxchl",
-    "body",
-    ".MkChatHeaderJoin",
-    ".MkPageMediaSocialInstaOverlay",
-    "selected-icon",
-    "then",
-    "https://facebook.com/chellgnzxz",
-    "https://github.com/mkxchl",
-    "ri-facebook-line",
-    "classList",
-    "275fWIQtx",
-    "Hide",
-    "MkSupportShow",
-    ".MkSpotify",
-    ".MkGame",
-    "MkScMediaFlwShow",
-    "9204020OzJbWm",
-    "Open\x20Facebook",
-    "question",
-    "#d33",
-    "replace",
-    "187126SRdxHy",
-    "remove",
-    ".MkGameOverlay",
-    "#3085d6",
-    "MkPreloaderShow",
-    "addEventListener",
-    ".MKProject",
-    "https://instagram.com/chellgnzxz_",
-    "className",
-    ".MkLinkContentBodyLink",
-  ];
-  _0x1166 = function () {
-    return _0xd1ce40;
-  };
-  return _0x1166();
-}
 function OpenChat() {
-  const _0x58421e = _0x597843;
-  MkChat["classList"]["add"](_0x58421e(0x160)), MkChatHeaderJoin[_0x58421e(0x18a)]["remove"]("HideJoin");
+  const _0x247466 = _0x1c5833;
+  MkChat["classList"][_0x247466(0x1ca)]("MkChatShow"), MkChatHeaderJoin["classList"][_0x247466(0x19f)](_0x247466(0x1be));
 }
 function OpenGame() {
-  const _0xb73d5a = _0x597843;
-  MkGame["classList"][_0xb73d5a(0x165)](_0xb73d5a(0x171));
+  const _0x4bda0d = _0x1c5833;
+  MkGame[_0x4bda0d(0x1b3)]["add"](_0x4bda0d(0x1bd));
 }
 function CloseChat() {
-  const _0x768fd2 = _0x597843;
-  MkChat[_0x768fd2(0x18a)][_0x768fd2(0x14d)](_0x768fd2(0x160));
-}
-function _0x6edb(_0x59e952, _0x21b235) {
-  const _0x1166ab = _0x1166();
-  return (
-    (_0x6edb = function (_0x6edb1a, _0x5a42e3) {
-      _0x6edb1a = _0x6edb1a - 0x14d;
-      let _0x3aba53 = _0x1166ab[_0x6edb1a];
-      return _0x3aba53;
-    }),
-    _0x6edb(_0x59e952, _0x21b235)
-  );
+  const _0x382515 = _0x1c5833;
+  MkChat[_0x382515(0x1b3)][_0x382515(0x19f)](_0x382515(0x185));
 }
 function CloseMkInsta() {
-  const _0x47fbce = _0x597843;
-  MkPageMediaSocialInsta[_0x47fbce(0x18a)]["remove"](_0x47fbce(0x17e)), MkHeaderBody[_0x47fbce(0x18a)]["remove"](_0x47fbce(0x18c)), MkScMediaFlw["classList"]["add"](_0x47fbce(0x190));
+  const _0x179933 = _0x1c5833;
+  MkPageMediaSocialInsta["classList"][_0x179933(0x19f)](_0x179933(0x1db)), MkHeaderBody[_0x179933(0x1b3)][_0x179933(0x19f)](_0x179933(0x1c4)), MkScMediaFlw[_0x179933(0x1b3)]["add"](_0x179933(0x1d8));
 }
 function CloseProject() {
-  const _0x2b6977 = _0x597843;
-  MKProject[_0x2b6977(0x18a)]["remove"](_0x2b6977(0x15f)), MkHeaderBody[_0x2b6977(0x18a)][_0x2b6977(0x14d)](_0x2b6977(0x18c));
+  const _0x3fefa5 = _0x1c5833;
+  MKProject[_0x3fefa5(0x1b3)][_0x3fefa5(0x19f)](_0x3fefa5(0x1aa)), MkHeaderBody[_0x3fefa5(0x1b3)]["remove"](_0x3fefa5(0x1c4));
 }
 function OpenLink() {
-  const _0x17762d = _0x597843;
-  Swal["fire"]({
-    title: _0x17762d(0x167),
+  const _0x1eb4ca = _0x1c5833;
+  Swal[_0x1eb4ca(0x1e0)]({
+    title: _0x1eb4ca(0x1cc),
     text: "Link\x20ini\x20hanya\x20untuk\x20umur\x2018+\x20",
-    icon: _0x17762d(0x193),
+    icon: "question",
     showDenyButton: !![],
     showCancelButton: ![],
-    confirmButtonColor: _0x17762d(0x14f),
-    cancelButtonColor: _0x17762d(0x194),
-    confirmButtonText: "Mengerti!",
-    denyButtonText: "Kembali",
-  })[_0x17762d(0x186)]((_0x1e3dc5) => {
-    const _0x16606f = _0x17762d;
-    if (_0x1e3dc5[_0x16606f(0x17f)]) MkLink["classList"][_0x16606f(0x165)](_0x16606f(0x17d)), MkHeaderBody[_0x16606f(0x18a)][_0x16606f(0x165)]("Hide");
-    else _0x1e3dc5[_0x16606f(0x163)] && MkHeaderBody["classList"][_0x16606f(0x14d)](_0x16606f(0x18c));
+    confirmButtonColor: _0x1eb4ca(0x18c),
+    cancelButtonColor: _0x1eb4ca(0x194),
+    confirmButtonText: _0x1eb4ca(0x1af),
+    denyButtonText: _0x1eb4ca(0x1c6),
+  })[_0x1eb4ca(0x186)]((_0x33c57a) => {
+    const _0x161da9 = _0x1eb4ca;
+    if (_0x33c57a[_0x161da9(0x1c3)]) MkLink[_0x161da9(0x1b3)][_0x161da9(0x1ca)]("MkLinkShow"), MkHeaderBody[_0x161da9(0x1b3)][_0x161da9(0x1ca)]("Hide");
+    else _0x33c57a[_0x161da9(0x1d1)] && MkHeaderBody[_0x161da9(0x1b3)][_0x161da9(0x19f)](_0x161da9(0x1c4));
   });
 }
 function OpenSupport() {
-  const _0x25ddb7 = _0x597843;
-  MkSupport["classList"][_0x25ddb7(0x165)](_0x25ddb7(0x18d)), MkHeaderBody[_0x25ddb7(0x18a)][_0x25ddb7(0x165)](_0x25ddb7(0x18c));
+  const _0x1398be = _0x1c5833;
+  MkSupport[_0x1398be(0x1b3)]["add"](_0x1398be(0x1b6)), MkHeaderBody["classList"]["add"](_0x1398be(0x1c4));
 }
 function OpenNxtLvl() {
-  const _0x5c2036 = _0x597843;
-  MkLinkContentBodyLink[_0x5c2036(0x18a)][_0x5c2036(0x165)](_0x5c2036(0x161));
+  const _0x13d358 = _0x1c5833;
+  MkLinkContentBodyLink[_0x13d358(0x1b3)][_0x13d358(0x1ca)](_0x13d358(0x1cd));
 }
 function OpenSpotify() {
-  const _0xb578cf = _0x597843;
-  MkSpotify[_0xb578cf(0x18a)][_0xb578cf(0x165)](_0xb578cf(0x17c)), MkHeaderBody["classList"][_0xb578cf(0x165)](_0xb578cf(0x18c)), (body[_0xb578cf(0x173)][_0xb578cf(0x177)] = _0xb578cf(0x15c));
+  const _0x57dc78 = _0x1c5833;
+  MkSpotify["classList"][_0x57dc78(0x1ca)](_0x57dc78(0x1a3)), MkHeaderBody[_0x57dc78(0x1b3)]["add"](_0x57dc78(0x1c4)), (body[_0x57dc78(0x1df)][_0x57dc78(0x1a2)] = _0x57dc78(0x193));
 }
 function CloseFollowed() {
-  const _0x28a4bc = _0x597843;
-  MkScMediaFlw[_0x28a4bc(0x18a)][_0x28a4bc(0x14d)](_0x28a4bc(0x190));
+  const _0x419a21 = _0x1c5833;
+  MkScMediaFlw["classList"]["remove"](_0x419a21(0x1d8));
 }
 function CloseSpotify() {
-  const _0x265a04 = _0x597843;
-  MkSpotify[_0x265a04(0x18a)]["remove"](_0x265a04(0x17c)), MkHeaderBody[_0x265a04(0x18a)][_0x265a04(0x14d)](_0x265a04(0x18c)), (body["style"][_0x265a04(0x177)] = "#fff");
+  const _0x1f613f = _0x1c5833;
+  MkSpotify[_0x1f613f(0x1b3)][_0x1f613f(0x19f)](_0x1f613f(0x1a3)), MkHeaderBody[_0x1f613f(0x1b3)][_0x1f613f(0x19f)](_0x1f613f(0x1c4)), (body[_0x1f613f(0x1df)][_0x1f613f(0x1a2)] = _0x1f613f(0x1c5));
 }
 function MkLoader() {
-  const _0x157ee3 = _0x597843;
-  MkPreloader[_0x157ee3(0x18a)][_0x157ee3(0x165)](_0x157ee3(0x150)),
-    MkHeaderBody[_0x157ee3(0x18a)][_0x157ee3(0x165)](_0x157ee3(0x18c)),
+  const _0x54e432 = _0x1c5833;
+  MkPreloader[_0x54e432(0x1b3)]["add"]("MkPreloaderShow"),
+    MkHeaderBody[_0x54e432(0x1b3)][_0x54e432(0x1ca)](_0x54e432(0x1c4)),
     setTimeout(function () {
-      const _0x2846d7 = _0x157ee3;
-      MkPreloader[_0x2846d7(0x18a)]["remove"](_0x2846d7(0x150)), MkHeaderBody[_0x2846d7(0x18a)][_0x2846d7(0x14d)](_0x2846d7(0x18c)), MkAudio["play"]();
+      const _0x1faab0 = _0x54e432;
+      MkPreloader[_0x1faab0(0x1b3)]["remove"](_0x1faab0(0x1d3)), MkHeaderBody[_0x1faab0(0x1b3)][_0x1faab0(0x19f)](_0x1faab0(0x1c4)), MkAudio[_0x1faab0(0x188)]();
     }, 0x1388);
 }
 function CloseBtn() {
-  const _0x5063fd = _0x597843;
-  MkChatHeaderJoin[_0x5063fd(0x18a)]["add"]("HideJoin");
+  const _0x4c2cf4 = _0x1c5833;
+  MkChatHeaderJoin["classList"][_0x4c2cf4(0x1ca)](_0x4c2cf4(0x1be));
 }
 function OpenBlog() {
-  const _0x5358f5 = _0x597843;
-  window[_0x5358f5(0x178)]["reload"]();
+  const _0x5603bc = _0x1c5833;
+  window[_0x5603bc(0x1d2)][_0x5603bc(0x1a7)]();
 }
 function CloseSupport() {
-  const _0x5319c6 = _0x597843;
-  MkSupport["classList"][_0x5319c6(0x14d)](_0x5319c6(0x18d)), MkHeaderBody[_0x5319c6(0x18a)][_0x5319c6(0x14d)](_0x5319c6(0x18c));
+  const _0x1ed8e9 = _0x1c5833;
+  MkSupport[_0x1ed8e9(0x1b3)][_0x1ed8e9(0x19f)](_0x1ed8e9(0x1b6)), MkHeaderBody["classList"]["remove"](_0x1ed8e9(0x1c4));
 }
 const hideBottomSheet = () => {
-  const _0x2ec645 = _0x597843;
-  MkLink[_0x2ec645(0x18a)][_0x2ec645(0x14d)]("MkLinkShow"),
-    MkHeaderBody["classList"][_0x2ec645(0x14d)]("Hide"),
-    MkGame[_0x2ec645(0x18a)][_0x2ec645(0x14d)](_0x2ec645(0x171)),
-    MkScMediaFlw[_0x2ec645(0x18a)]["remove"](_0x2ec645(0x190)),
-    MKProject[_0x2ec645(0x18a)][_0x2ec645(0x14d)](_0x2ec645(0x15f));
+  const _0x262c4b = _0x1c5833;
+  MkLink[_0x262c4b(0x1b3)][_0x262c4b(0x19f)](_0x262c4b(0x19d)),
+    MkHeaderBody[_0x262c4b(0x1b3)][_0x262c4b(0x19f)](_0x262c4b(0x1c4)),
+    MkGame[_0x262c4b(0x1b3)][_0x262c4b(0x19f)]("MkGameShow"),
+    MkScMediaFlw["classList"][_0x262c4b(0x19f)]("MkScMediaFlwShow"),
+    MKProject["classList"]["remove"](_0x262c4b(0x1aa));
 };
-MkLinkOverlay[_0x597843(0x151)](_0x597843(0x170), hideBottomSheet),
-  MkGameOverlay[_0x597843(0x151)](_0x597843(0x170), hideBottomSheet),
-  MkScMediaFlwOverlay[_0x597843(0x151)](_0x597843(0x170), hideBottomSheet),
-  MKProjectOverlay["addEventListener"](_0x597843(0x170), hideBottomSheet),
-  MkSupportOverlay["addEventListener"]("click", function () {
-    const _0x507bfd = _0x597843;
-    MkSupport[_0x507bfd(0x18a)][_0x507bfd(0x14d)]("MkSupportShow"), MkHeaderBody["classList"][_0x507bfd(0x14d)]("Hide");
+MkLinkOverlay["addEventListener"](_0x1c5833(0x1c8), hideBottomSheet),
+  MkGameOverlay[_0x1c5833(0x19a)]("click", hideBottomSheet),
+  MkScMediaFlwOverlay[_0x1c5833(0x19a)](_0x1c5833(0x1c8), hideBottomSheet),
+  MKProjectOverlay[_0x1c5833(0x19a)]("click", hideBottomSheet),
+  MkSupportOverlay[_0x1c5833(0x19a)](_0x1c5833(0x1c8), function () {
+    const _0x16192f = _0x1c5833;
+    MkSupport[_0x16192f(0x1b3)][_0x16192f(0x19f)]("MkSupportShow"), MkHeaderBody[_0x16192f(0x1b3)]["remove"]("Hide");
   });
 function MkxXxInsta() {
-  const _0x55f1b8 = _0x597843;
-  window[_0x55f1b8(0x178)][_0x55f1b8(0x195)](_0x55f1b8(0x153));
+  const _0x41bbc9 = _0x1c5833;
+  window["location"]["replace"](_0x41bbc9(0x1dc));
 }
 function MkxXxTiktok() {
-  const _0x13e789 = _0x597843;
-  window[_0x13e789(0x178)]["replace"]("https://tiktok.com/@mxchl");
+  const _0x3b9438 = _0x1c5833;
+  window["location"]["replace"](_0x3b9438(0x1ab));
 }
 function MkxXxFacebook() {
-  const _0x57c19a = _0x597843;
-  window[_0x57c19a(0x178)][_0x57c19a(0x195)](_0x57c19a(0x187));
+  const _0x8c5a28 = _0x1c5833;
+  window[_0x8c5a28(0x1d2)][_0x8c5a28(0x18e)](_0x8c5a28(0x1cf));
+}
+function _0x5a21() {
+  const _0x26ac63 = [
+    "remove",
+    "DescSocialMedia",
+    "-webkit-linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%)",
+    "background",
+    "MkSpotifyShow",
+    ".MkGameOverlay",
+    "linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%",
+    ".MkScMediaFlw",
+    "reload",
+    ".MkScMediaOverlay",
+    "Marchell\x20Kevandra",
+    "MKProjectShow",
+    "https://tiktok.com/@mxchl",
+    "Open\x20Instagram",
+    "innerHTML",
+    ".MkGame",
+    "Mengerti!",
+    "Open\x20Tiktok",
+    "598696leqKhu",
+    "ri-tiktok-line",
+    "classList",
+    ".MKProject",
+    ".MkSpotify",
+    "MkSupportShow",
+    "querySelector",
+    "selected-icon",
+    "-moz-linear-gradient(45deg,\x20#f09433\x200%,\x20#e6683c\x2025%,\x20#dc2743\x2050%,\x20#cc2366\x2075%,\x20#bc1888\x20100%)",
+    ".MkPageMediaSocialInsta",
+    "className",
+    "#000",
+    "MkGameShow",
+    "HideJoin",
+    "1fkAJPa",
+    "instagram.com/marchell_kvandra",
+    ".MkChat",
+    "https://ems-links.netlify.app/",
+    "isConfirmed",
+    "Hide",
+    "#fff",
+    "Kembali",
+    "#0866ff",
+    "click",
+    "1540152DemecU",
+    "add",
+    "1214286SWwXlK",
+    "Warning",
+    "HideLeft",
+    ".MkSupportOverlay",
+    "https://facebook.com/chellgnzxz",
+    ".MkSupport",
+    "isDenied",
+    "location",
+    "MkPreloaderShow",
+    "#f09433;",
+    "bx\x20bxl-tiktok",
+    "body",
+    "tiktok.com/mkxchl",
+    "MkScMediaFlwShow",
+    "https://instagram.com/marchell_kvandra",
+    "ri-facebook-line",
+    "MkPageMediaSocialInstaShow",
+    "https://instagram.com/chellgnzxz_",
+    "300615BUMHDZ",
+    ".MkPreloader",
+    "style",
+    "fire",
+    "3946977OkLUSx",
+    "facebook.com/chellgnzxz",
+    "MkChatShow",
+    "then",
+    ".BtnSocialMediax",
+    "play",
+    "5EYSoJF",
+    "getItem",
+    "MkAudio",
+    "#3085d6",
+    "IconSocialMedia",
+    "replace",
+    ".MkChatHeaderJoin",
+    ".MkHeaderBody",
+    "TitleSocialMedia",
+    "Open\x20Facebook",
+    "#999",
+    "#d33",
+    "https://github.com/mkxchl",
+    "8274QjCnpz",
+    "575344pukAlL",
+    ".MkLinkOverlay",
+    ".MkPageMediaSocialInstaOverlay",
+    "addEventListener",
+    ".MkLink",
+    ".MkPageMediaSocialInstaBodyButton",
+    "MkLinkShow",
+    "getElementById",
+  ];
+  _0x5a21 = function () {
+    return _0x26ac63;
+  };
+  return _0x5a21();
 }
 function MkxXxGithub() {
-  const _0x53c8a6 = _0x597843;
-  window["location"][_0x53c8a6(0x195)](_0x53c8a6(0x188));
+  const _0x30bae9 = _0x1c5833;
+  window[_0x30bae9(0x1d2)][_0x30bae9(0x18e)](_0x30bae9(0x195));
 }
 function MkxXxEms() {
-  const _0x2b9197 = _0x597843;
-  window[_0x2b9197(0x178)][_0x2b9197(0x195)]("https://ems-links.netlify.app/");
+  const _0x2dc398 = _0x1c5833;
+  window[_0x2dc398(0x1d2)]["replace"](_0x2dc398(0x1c2));
 }
