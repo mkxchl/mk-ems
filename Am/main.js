@@ -1,341 +1,328 @@
-const _0x1c5833 = _0x3651;
-function _0x3651(_0x5f9ce, _0x2dfc16) {
-  const _0x5a21b9 = _0x5a21();
-  return (
-    (_0x3651 = function (_0x36518c, _0x213b9b) {
-      _0x36518c = _0x36518c - 0x183;
-      let _0x4d5c6c = _0x5a21b9[_0x36518c];
-      return _0x4d5c6c;
-    }),
-    _0x3651(_0x5f9ce, _0x2dfc16)
-  );
-}
-(function (_0x517c7a, _0xaf06af) {
-  const _0x31a402 = _0x3651,
-    _0x3915f8 = _0x517c7a();
+const _0x1dd9dc = _0x17c5;
+(function (_0x33e6c1, _0xd7f85b) {
+  const _0x4b816a = _0x17c5,
+    _0x44fee5 = _0x33e6c1();
   while (!![]) {
     try {
-      const _0x4b70c6 =
-        (-parseInt(_0x31a402(0x1bf)) / 0x1) * (parseInt(_0x31a402(0x196)) / 0x2) +
-        -parseInt(_0x31a402(0x1dd)) / 0x3 +
-        (parseInt(_0x31a402(0x1b1)) / 0x4) * (-parseInt(_0x31a402(0x189)) / 0x5) +
-        parseInt(_0x31a402(0x1cb)) / 0x6 +
-        -parseInt(_0x31a402(0x197)) / 0x7 +
-        -parseInt(_0x31a402(0x1c9)) / 0x8 +
-        parseInt(_0x31a402(0x183)) / 0x9;
-      if (_0x4b70c6 === _0xaf06af) break;
-      else _0x3915f8["push"](_0x3915f8["shift"]());
-    } catch (_0x211cc6) {
-      _0x3915f8["push"](_0x3915f8["shift"]());
+      const _0x17bf40 =
+        (parseInt(_0x4b816a(0x108)) / 0x1) * (parseInt(_0x4b816a(0x101)) / 0x2) +
+        (-parseInt(_0x4b816a(0x111)) / 0x3) * (parseInt(_0x4b816a(0x131)) / 0x4) +
+        parseInt(_0x4b816a(0x129)) / 0x5 +
+        (parseInt(_0x4b816a(0x11f)) / 0x6) * (parseInt(_0x4b816a(0x139)) / 0x7) +
+        -parseInt(_0x4b816a(0x12f)) / 0x8 +
+        (-parseInt(_0x4b816a(0x11e)) / 0x9) * (-parseInt(_0x4b816a(0x120)) / 0xa) +
+        (-parseInt(_0x4b816a(0xf9)) / 0xb) * (parseInt(_0x4b816a(0xf8)) / 0xc);
+      if (_0x17bf40 === _0xd7f85b) break;
+      else _0x44fee5["push"](_0x44fee5["shift"]());
+    } catch (_0x57dff6) {
+      _0x44fee5["push"](_0x44fee5["shift"]());
     }
   }
-})(_0x5a21, 0x1b64f);
-const MkHeaderBody = document[_0x1c5833(0x1b7)](_0x1c5833(0x190)),
-  MkSpotify = document[_0x1c5833(0x1b7)](_0x1c5833(0x1b5)),
-  MkPreloader = document[_0x1c5833(0x1b7)](_0x1c5833(0x1de)),
-  MkLink = document["querySelector"](_0x1c5833(0x19b)),
-  MkLinkOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x198)),
-  MkLinkContentBodyLink = document["querySelector"](".MkLinkContentBodyLink"),
-  MkSupport = document["querySelector"](_0x1c5833(0x1d0)),
-  MkSupportOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x1ce)),
-  MkChatHeaderJoin = document[_0x1c5833(0x1b7)](_0x1c5833(0x18f)),
-  MkGame = document["querySelector"](_0x1c5833(0x1ae)),
-  MkGameOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x1a4)),
-  MkScMediaFlw = document[_0x1c5833(0x1b7)](_0x1c5833(0x1a6)),
-  MkScMediaFlwOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x1a8)),
-  MkPageMediaSocialInsta = document["querySelector"](_0x1c5833(0x1ba)),
-  MkPageMediaSocialInstaOverlay = document[_0x1c5833(0x1b7)](_0x1c5833(0x199)),
-  MKProject = document[_0x1c5833(0x1b7)](_0x1c5833(0x1b4)),
-  MKProjectOverlay = document[_0x1c5833(0x1b7)](".MKProjectOverlay"),
-  MkChat = document[_0x1c5833(0x1b7)](_0x1c5833(0x1c1)),
-  BtnSocialMediax = document[_0x1c5833(0x1b7)](_0x1c5833(0x187)),
-  MkPageMediaSocialInstaBodyButton = document[_0x1c5833(0x1b7)](_0x1c5833(0x19c)),
-  body = document["querySelector"](_0x1c5833(0x1d6)),
-  MkAudio = document[_0x1c5833(0x19e)](_0x1c5833(0x18b)),
-  IconSocialMedia = document[_0x1c5833(0x19e)](_0x1c5833(0x18d)),
-  TitleSocialMedia = document[_0x1c5833(0x19e)](_0x1c5833(0x191)),
-  DescSocialMedia = document[_0x1c5833(0x19e)](_0x1c5833(0x1a0)),
-  ButtonLlnkSocialMedia = document[_0x1c5833(0x19e)]("ButtonLlnkSocialMedia"),
-  selectedIcon = localStorage[_0x1c5833(0x18a)](_0x1c5833(0x1b8)),
-  iconInsta = "ri-instagram-line",
-  iconFace = _0x1c5833(0x1da),
-  iconTkTok = _0x1c5833(0x1b2);
+})(_0x5311, 0xeb44a);
+const MkHeaderBody = document[_0x1dd9dc(0xf5)](".MkHeaderBody"),
+  MkSpotify = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x110)),
+  MkPreloader = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0xea)),
+  MkLink = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x127)),
+  MkLinkOverlay = document["querySelector"](_0x1dd9dc(0x116)),
+  MkLinkContentBodyLink = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x130)),
+  MkSupport = document[_0x1dd9dc(0xf5)](".MkSupport"),
+  MkSupportOverlay = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x114)),
+  MkChatHeaderJoin = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0xf2)),
+  MkGame = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x12a)),
+  MkGameOverlay = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x113)),
+  MkScMediaFlw = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0xf4)),
+  MkScMediaFlwOverlay = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0xf3)),
+  MkPageMediaSocialInsta = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x10e)),
+  MkPageMediaSocialInstaOverlay = document[_0x1dd9dc(0xf5)](".MkPageMediaSocialInstaOverlay"),
+  MKProject = document[_0x1dd9dc(0xf5)](".MKProject"),
+  MKProjectOverlay = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0xfa)),
+  MkChat = document[_0x1dd9dc(0xf5)](".MkChat"),
+  BtnSocialMediax = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x128)),
+  MkPageMediaSocialInstaBodyButton = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x133)),
+  body = document[_0x1dd9dc(0xf5)](_0x1dd9dc(0x11a)),
+  MkAudio = document[_0x1dd9dc(0xfc)](_0x1dd9dc(0x138)),
+  IconSocialMedia = document[_0x1dd9dc(0xfc)]("IconSocialMedia"),
+  TitleSocialMedia = document[_0x1dd9dc(0xfc)]("TitleSocialMedia"),
+  DescSocialMedia = document[_0x1dd9dc(0xfc)](_0x1dd9dc(0x107)),
+  ButtonLlnkSocialMedia = document["getElementById"](_0x1dd9dc(0x10f)),
+  selectedIcon = localStorage["getItem"]("selected-icon"),
+  iconInsta = _0x1dd9dc(0x12e),
+  iconFace = _0x1dd9dc(0x10c),
+  iconTkTok = "ri-tiktok-line";
 function OpenProject() {
-  const _0x3a08c6 = _0x1c5833;
-  MKProject[_0x3a08c6(0x1b3)]["add"]("MKProjectShow"), MkHeaderBody["classList"][_0x3a08c6(0x1ca)]("Hide");
+  const _0x1e5e0b = _0x1dd9dc;
+  MKProject[_0x1e5e0b(0x112)][_0x1e5e0b(0x126)]("MKProjectShow"), MkHeaderBody["classList"][_0x1e5e0b(0x126)](_0x1e5e0b(0x123));
 }
 function OpenFollowed() {
-  const _0x5861c3 = _0x1c5833;
-  MkScMediaFlw[_0x5861c3(0x1b3)][_0x5861c3(0x1ca)]("MkScMediaFlwShow");
+  const _0x47354c = _0x1dd9dc;
+  MkScMediaFlw[_0x47354c(0x112)][_0x47354c(0x126)]("MkScMediaFlwShow");
+}
+function _0x5311() {
+  const _0xbcb8cd = [
+    "Open\x20Instagram",
+    "addEventListener",
+    "https://facebook.com/chellgnzxz",
+    "Mengerti!",
+    "Kembali",
+    "DescSocialMedia",
+    "4671shdQvY",
+    "https://instagram.com/chellgnzxz_",
+    "question",
+    "MkPageMediaSocialInstaShow",
+    "ri-facebook-line",
+    "innerHTML",
+    ".MkPageMediaSocialInsta",
+    "ButtonLlnkSocialMedia",
+    ".MkSpotify",
+    "13443KgifcS",
+    "classList",
+    ".MkGameOverlay",
+    ".MkSupportOverlay",
+    "#000",
+    ".MkLinkOverlay",
+    "remove",
+    "click",
+    "facebook.com/chellgnzxz",
+    "body",
+    "MkGameShow",
+    "#0866ff",
+    "HideJoin",
+    "1737ygPeZy",
+    "6DldVRo",
+    "40990BzLFsk",
+    "Open\x20Tiktok",
+    "https://github.com/mkxchl",
+    "Hide",
+    "fire",
+    "Marchell\x20Kevandra",
+    "add",
+    ".MkLink",
+    ".BtnSocialMediax",
+    "8531005AjfTGE",
+    ".MkGame",
+    "Warning",
+    "MkSupportShow",
+    "#f09433;",
+    "ri-instagram-line",
+    "1370432eZukIi",
+    ".MkLinkContentBodyLink",
+    "1208KBavvK",
+    "MkPreloaderShow",
+    ".MkPageMediaSocialInstaBodyButton",
+    "Open\x20Facebook",
+    "then",
+    "bx\x20bxl-tiktok",
+    "style",
+    "MkAudio",
+    "12392527azXHOZ",
+    "https://instagram.com/marchell_kvandra",
+    ".MkPreloader",
+    "https://tiktok.com/@mkxchl",
+    "replace",
+    "className",
+    "MkChatShow",
+    "-webkit-linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%)",
+    "MKProjectShow",
+    "MkLinkShow",
+    ".MkChatHeaderJoin",
+    ".MkScMediaOverlay",
+    ".MkScMediaFlw",
+    "querySelector",
+    "MkSpotifyShow",
+    "MkScMediaFlwShow",
+    "50460UjvWED",
+    "7282NWfKwF",
+    ".MKProjectOverlay",
+    "-moz-linear-gradient(45deg,\x20#f09433\x200%,\x20#e6683c\x2025%,\x20#dc2743\x2050%,\x20#cc2366\x2075%,\x20#bc1888\x20100%)",
+    "getElementById",
+    "background",
+    "Link\x20ini\x20hanya\x20untuk\x20umur\x2018+\x20",
+    "location",
+    "linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%",
+    "430ZJagHT",
+  ];
+  _0x5311 = function () {
+    return _0xbcb8cd;
+  };
+  return _0x5311();
 }
 function OpenInts() {
-  const _0x5cf70c = _0x1c5833;
-  MkPageMediaSocialInsta[_0x5cf70c(0x1b3)][_0x5cf70c(0x1ca)](_0x5cf70c(0x1db)),
-    MkHeaderBody["classList"][_0x5cf70c(0x1ca)](_0x5cf70c(0x1c4)),
-    MkScMediaFlw[_0x5cf70c(0x1b3)][_0x5cf70c(0x19f)](_0x5cf70c(0x1d8)),
-    (TitleSocialMedia[_0x5cf70c(0x1ad)] = _0x5cf70c(0x1a9)),
-    (DescSocialMedia[_0x5cf70c(0x1ad)] = _0x5cf70c(0x1c0)),
-    (IconSocialMedia[_0x5cf70c(0x1bb)] = "ri-instagram-line"),
-    (BtnSocialMediax["innerHTML"] = _0x5cf70c(0x1ac)),
-    (IconSocialMedia[_0x5cf70c(0x1df)]["background"] = _0x5cf70c(0x1d4)),
-    (IconSocialMedia[_0x5cf70c(0x1df)][_0x5cf70c(0x1a2)] = _0x5cf70c(0x1b9)),
-    (IconSocialMedia[_0x5cf70c(0x1df)][_0x5cf70c(0x1a2)] = "-webkit-linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%)"),
-    (IconSocialMedia["style"]["background"] = "linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%"),
-    (MkPageMediaSocialInstaBodyButton["style"][_0x5cf70c(0x1a2)] = "-moz-linear-gradient(45deg,\x20#f09433\x200%,\x20#e6683c\x2025%,\x20#dc2743\x2050%,\x20#cc2366\x2075%,\x20#bc1888\x20100%)"),
-    (MkPageMediaSocialInstaBodyButton["style"][_0x5cf70c(0x1a2)] = _0x5cf70c(0x1a1)),
-    (MkPageMediaSocialInstaBodyButton[_0x5cf70c(0x1df)][_0x5cf70c(0x1a2)] = _0x5cf70c(0x1a5)),
-    (MkPageMediaSocialInstaBodyButton["style"][_0x5cf70c(0x1a2)] = _0x5cf70c(0x1d4)),
-    BtnSocialMediax[_0x5cf70c(0x19a)](_0x5cf70c(0x1c8), function () {
-      const _0x201645 = _0x5cf70c;
-      window["location"]["replace"](_0x201645(0x1d9)), MkPageMediaSocialInsta[_0x201645(0x1b3)][_0x201645(0x19f)](_0x201645(0x1db)), MkHeaderBody[_0x201645(0x1b3)][_0x201645(0x19f)](_0x201645(0x1c4));
+  const _0x4d3b43 = _0x1dd9dc;
+  MkPageMediaSocialInsta[_0x4d3b43(0x112)]["add"](_0x4d3b43(0x10b)),
+    MkHeaderBody["classList"][_0x4d3b43(0x126)](_0x4d3b43(0x123)),
+    MkScMediaFlw[_0x4d3b43(0x112)][_0x4d3b43(0x117)](_0x4d3b43(0xf7)),
+    (TitleSocialMedia[_0x4d3b43(0x10d)] = "Marchell\x20Kevandra"),
+    (DescSocialMedia[_0x4d3b43(0x10d)] = "instagram.com/marchell_kvandra"),
+    (IconSocialMedia["className"] = _0x4d3b43(0x12e)),
+    (BtnSocialMediax["innerHTML"] = _0x4d3b43(0x102)),
+    (IconSocialMedia[_0x4d3b43(0x137)][_0x4d3b43(0xfd)] = _0x4d3b43(0x12d)),
+    (IconSocialMedia[_0x4d3b43(0x137)][_0x4d3b43(0xfd)] = _0x4d3b43(0xfb)),
+    (IconSocialMedia["style"]["background"] = _0x4d3b43(0xef)),
+    (IconSocialMedia[_0x4d3b43(0x137)]["background"] = _0x4d3b43(0x100)),
+    (MkPageMediaSocialInstaBodyButton[_0x4d3b43(0x137)][_0x4d3b43(0xfd)] = _0x4d3b43(0xfb)),
+    (MkPageMediaSocialInstaBodyButton[_0x4d3b43(0x137)][_0x4d3b43(0xfd)] = _0x4d3b43(0xef)),
+    (MkPageMediaSocialInstaBodyButton[_0x4d3b43(0x137)][_0x4d3b43(0xfd)] = _0x4d3b43(0x100)),
+    (MkPageMediaSocialInstaBodyButton["style"][_0x4d3b43(0xfd)] = "#f09433;"),
+    BtnSocialMediax["addEventListener"]("click", function () {
+      const _0x19a82b = _0x4d3b43;
+      window["location"][_0x19a82b(0xec)](_0x19a82b(0xe9)), MkPageMediaSocialInsta["classList"][_0x19a82b(0x117)](_0x19a82b(0x10b)), MkHeaderBody[_0x19a82b(0x112)]["remove"]("Hide");
     });
 }
 function OpenFace() {
-  const _0x566e61 = _0x1c5833;
-  MkPageMediaSocialInsta[_0x566e61(0x1b3)][_0x566e61(0x1ca)](_0x566e61(0x1db)),
-    MkHeaderBody[_0x566e61(0x1b3)]["add"](_0x566e61(0x1c4)),
-    MkScMediaFlw["classList"][_0x566e61(0x19f)]("MkScMediaFlwShow"),
-    (TitleSocialMedia[_0x566e61(0x1ad)] = _0x566e61(0x1a9)),
-    (DescSocialMedia[_0x566e61(0x1ad)] = _0x566e61(0x184)),
-    (IconSocialMedia["className"] = _0x566e61(0x1da)),
-    (IconSocialMedia[_0x566e61(0x1df)][_0x566e61(0x1a2)] = "#0866ff"),
-    (MkPageMediaSocialInstaBodyButton[_0x566e61(0x1df)]["background"] = _0x566e61(0x1c7)),
-    (BtnSocialMediax[_0x566e61(0x1ad)] = _0x566e61(0x192)),
-    BtnSocialMediax[_0x566e61(0x19a)](_0x566e61(0x1c8), function () {
-      const _0x9373d0 = _0x566e61;
-      window[_0x9373d0(0x1d2)][_0x9373d0(0x18e)](_0x9373d0(0x1cf)), MkPageMediaSocialInsta["classList"][_0x9373d0(0x19f)](_0x9373d0(0x1db)), MkHeaderBody[_0x9373d0(0x1b3)][_0x9373d0(0x19f)](_0x9373d0(0x1c4));
+  const _0x3e13e9 = _0x1dd9dc;
+  MkPageMediaSocialInsta["classList"]["add"](_0x3e13e9(0x10b)),
+    MkHeaderBody["classList"][_0x3e13e9(0x126)](_0x3e13e9(0x123)),
+    MkScMediaFlw[_0x3e13e9(0x112)]["remove"](_0x3e13e9(0xf7)),
+    (TitleSocialMedia[_0x3e13e9(0x10d)] = _0x3e13e9(0x125)),
+    (DescSocialMedia[_0x3e13e9(0x10d)] = _0x3e13e9(0x119)),
+    (IconSocialMedia[_0x3e13e9(0xed)] = "ri-facebook-line"),
+    (IconSocialMedia[_0x3e13e9(0x137)]["background"] = "#0866ff"),
+    (MkPageMediaSocialInstaBodyButton["style"]["background"] = _0x3e13e9(0x11c)),
+    (BtnSocialMediax[_0x3e13e9(0x10d)] = _0x3e13e9(0x134)),
+    BtnSocialMediax["addEventListener"](_0x3e13e9(0x118), function () {
+      const _0x613fb0 = _0x3e13e9;
+      window[_0x613fb0(0xff)][_0x613fb0(0xec)](_0x613fb0(0x104)), MkPageMediaSocialInsta[_0x613fb0(0x112)][_0x613fb0(0x117)](_0x613fb0(0x10b)), MkHeaderBody["classList"]["remove"](_0x613fb0(0x123));
     });
 }
 function OpenTkTok() {
-  const _0x4149b9 = _0x1c5833;
-  MkPageMediaSocialInsta[_0x4149b9(0x1b3)][_0x4149b9(0x1ca)](_0x4149b9(0x1db)),
-    MkHeaderBody[_0x4149b9(0x1b3)][_0x4149b9(0x1ca)](_0x4149b9(0x1c4)),
-    MkScMediaFlw[_0x4149b9(0x1b3)][_0x4149b9(0x19f)](_0x4149b9(0x1d8)),
-    (TitleSocialMedia[_0x4149b9(0x1ad)] = _0x4149b9(0x1a9)),
-    (DescSocialMedia[_0x4149b9(0x1ad)] = _0x4149b9(0x1d7)),
-    (IconSocialMedia[_0x4149b9(0x1bb)] = _0x4149b9(0x1d5)),
-    (BtnSocialMediax[_0x4149b9(0x1ad)] = _0x4149b9(0x1b0)),
-    (IconSocialMedia[_0x4149b9(0x1df)]["background"] = "#000"),
-    (MkPageMediaSocialInstaBodyButton[_0x4149b9(0x1df)]["background"] = _0x4149b9(0x1bc)),
-    BtnSocialMediax[_0x4149b9(0x19a)]("click", function () {
-      const _0x267d40 = _0x4149b9;
-      window[_0x267d40(0x1d2)][_0x267d40(0x18e)]("https://tiktok.com/@mxchl"), MkPageMediaSocialInsta[_0x267d40(0x1b3)][_0x267d40(0x19f)](_0x267d40(0x1db)), MkHeaderBody[_0x267d40(0x1b3)][_0x267d40(0x19f)]("Hide");
+  const _0x225a7a = _0x1dd9dc;
+  MkPageMediaSocialInsta["classList"][_0x225a7a(0x126)]("MkPageMediaSocialInstaShow"),
+    MkHeaderBody[_0x225a7a(0x112)][_0x225a7a(0x126)](_0x225a7a(0x123)),
+    MkScMediaFlw[_0x225a7a(0x112)][_0x225a7a(0x117)](_0x225a7a(0xf7)),
+    (TitleSocialMedia["innerHTML"] = _0x225a7a(0x125)),
+    (DescSocialMedia["innerHTML"] = "tiktok.com/mkxchl"),
+    (IconSocialMedia[_0x225a7a(0xed)] = _0x225a7a(0x136)),
+    (BtnSocialMediax[_0x225a7a(0x10d)] = _0x225a7a(0x121)),
+    (IconSocialMedia[_0x225a7a(0x137)][_0x225a7a(0xfd)] = _0x225a7a(0x115)),
+    (MkPageMediaSocialInstaBodyButton[_0x225a7a(0x137)][_0x225a7a(0xfd)] = _0x225a7a(0x115)),
+    BtnSocialMediax["addEventListener"](_0x225a7a(0x118), function () {
+      const _0x8ebc74 = _0x225a7a;
+      window[_0x8ebc74(0xff)][_0x8ebc74(0xec)](_0x8ebc74(0xeb)), MkPageMediaSocialInsta[_0x8ebc74(0x112)]["remove"](_0x8ebc74(0x10b)), MkHeaderBody[_0x8ebc74(0x112)][_0x8ebc74(0x117)]("Hide");
     });
 }
 function OpenChat() {
-  const _0x247466 = _0x1c5833;
-  MkChat["classList"][_0x247466(0x1ca)]("MkChatShow"), MkChatHeaderJoin["classList"][_0x247466(0x19f)](_0x247466(0x1be));
+  const _0x303765 = _0x1dd9dc;
+  MkChat[_0x303765(0x112)][_0x303765(0x126)](_0x303765(0xee)), MkChatHeaderJoin[_0x303765(0x112)][_0x303765(0x117)](_0x303765(0x11d));
 }
 function OpenGame() {
-  const _0x4bda0d = _0x1c5833;
-  MkGame[_0x4bda0d(0x1b3)]["add"](_0x4bda0d(0x1bd));
+  const _0x1df89c = _0x1dd9dc;
+  MkGame[_0x1df89c(0x112)][_0x1df89c(0x126)](_0x1df89c(0x11b));
 }
 function CloseChat() {
-  const _0x382515 = _0x1c5833;
-  MkChat[_0x382515(0x1b3)][_0x382515(0x19f)](_0x382515(0x185));
+  const _0x14702b = _0x1dd9dc;
+  MkChat[_0x14702b(0x112)]["remove"]("MkChatShow");
 }
 function CloseMkInsta() {
-  const _0x179933 = _0x1c5833;
-  MkPageMediaSocialInsta["classList"][_0x179933(0x19f)](_0x179933(0x1db)), MkHeaderBody[_0x179933(0x1b3)][_0x179933(0x19f)](_0x179933(0x1c4)), MkScMediaFlw[_0x179933(0x1b3)]["add"](_0x179933(0x1d8));
+  const _0x203bfd = _0x1dd9dc;
+  MkPageMediaSocialInsta["classList"][_0x203bfd(0x117)](_0x203bfd(0x10b)), MkHeaderBody[_0x203bfd(0x112)]["remove"]("Hide"), MkScMediaFlw["classList"]["add"](_0x203bfd(0xf7));
 }
 function CloseProject() {
-  const _0x3fefa5 = _0x1c5833;
-  MKProject[_0x3fefa5(0x1b3)][_0x3fefa5(0x19f)](_0x3fefa5(0x1aa)), MkHeaderBody[_0x3fefa5(0x1b3)]["remove"](_0x3fefa5(0x1c4));
+  const _0x5d2a01 = _0x1dd9dc;
+  MKProject[_0x5d2a01(0x112)][_0x5d2a01(0x117)]("MKProjectShow"), MkHeaderBody["classList"][_0x5d2a01(0x117)]("Hide");
 }
 function OpenLink() {
-  const _0x1eb4ca = _0x1c5833;
-  Swal[_0x1eb4ca(0x1e0)]({
-    title: _0x1eb4ca(0x1cc),
-    text: "Link\x20ini\x20hanya\x20untuk\x20umur\x2018+\x20",
-    icon: "question",
+  const _0x525e4d = _0x1dd9dc;
+  Swal[_0x525e4d(0x124)]({
+    title: _0x525e4d(0x12b),
+    text: _0x525e4d(0xfe),
+    icon: _0x525e4d(0x10a),
     showDenyButton: !![],
     showCancelButton: ![],
-    confirmButtonColor: _0x1eb4ca(0x18c),
-    cancelButtonColor: _0x1eb4ca(0x194),
-    confirmButtonText: _0x1eb4ca(0x1af),
-    denyButtonText: _0x1eb4ca(0x1c6),
-  })[_0x1eb4ca(0x186)]((_0x33c57a) => {
-    const _0x161da9 = _0x1eb4ca;
-    if (_0x33c57a[_0x161da9(0x1c3)]) MkLink[_0x161da9(0x1b3)][_0x161da9(0x1ca)]("MkLinkShow"), MkHeaderBody[_0x161da9(0x1b3)][_0x161da9(0x1ca)]("Hide");
-    else _0x33c57a[_0x161da9(0x1d1)] && MkHeaderBody[_0x161da9(0x1b3)][_0x161da9(0x19f)](_0x161da9(0x1c4));
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: _0x525e4d(0x105),
+    denyButtonText: _0x525e4d(0x106),
+  })[_0x525e4d(0x135)]((_0x5107bb) => {
+    const _0x3041e5 = _0x525e4d;
+    if (_0x5107bb["isConfirmed"]) MkLink[_0x3041e5(0x112)]["add"](_0x3041e5(0xf1)), MkHeaderBody[_0x3041e5(0x112)]["add"]("Hide");
+    else _0x5107bb["isDenied"] && MkHeaderBody[_0x3041e5(0x112)][_0x3041e5(0x117)](_0x3041e5(0x123));
   });
 }
 function OpenSupport() {
-  const _0x1398be = _0x1c5833;
-  MkSupport[_0x1398be(0x1b3)]["add"](_0x1398be(0x1b6)), MkHeaderBody["classList"]["add"](_0x1398be(0x1c4));
+  const _0x2fa616 = _0x1dd9dc;
+  MkSupport[_0x2fa616(0x112)]["add"]("MkSupportShow"), MkHeaderBody["classList"]["add"]("Hide");
 }
 function OpenNxtLvl() {
-  const _0x13d358 = _0x1c5833;
-  MkLinkContentBodyLink[_0x13d358(0x1b3)][_0x13d358(0x1ca)](_0x13d358(0x1cd));
+  const _0x59de8e = _0x1dd9dc;
+  MkLinkContentBodyLink[_0x59de8e(0x112)][_0x59de8e(0x126)]("HideLeft");
 }
 function OpenSpotify() {
-  const _0x57dc78 = _0x1c5833;
-  MkSpotify["classList"][_0x57dc78(0x1ca)](_0x57dc78(0x1a3)), MkHeaderBody[_0x57dc78(0x1b3)]["add"](_0x57dc78(0x1c4)), (body[_0x57dc78(0x1df)][_0x57dc78(0x1a2)] = _0x57dc78(0x193));
+  const _0x1b5a99 = _0x1dd9dc;
+  MkSpotify[_0x1b5a99(0x112)]["add"](_0x1b5a99(0xf6)), MkHeaderBody[_0x1b5a99(0x112)]["add"](_0x1b5a99(0x123)), (body[_0x1b5a99(0x137)][_0x1b5a99(0xfd)] = "#999");
 }
 function CloseFollowed() {
-  const _0x419a21 = _0x1c5833;
-  MkScMediaFlw["classList"]["remove"](_0x419a21(0x1d8));
+  const _0x5496d0 = _0x1dd9dc;
+  MkScMediaFlw[_0x5496d0(0x112)][_0x5496d0(0x117)](_0x5496d0(0xf7));
 }
 function CloseSpotify() {
-  const _0x1f613f = _0x1c5833;
-  MkSpotify[_0x1f613f(0x1b3)][_0x1f613f(0x19f)](_0x1f613f(0x1a3)), MkHeaderBody[_0x1f613f(0x1b3)][_0x1f613f(0x19f)](_0x1f613f(0x1c4)), (body[_0x1f613f(0x1df)][_0x1f613f(0x1a2)] = _0x1f613f(0x1c5));
+  const _0x4ddf44 = _0x1dd9dc;
+  MkSpotify[_0x4ddf44(0x112)]["remove"](_0x4ddf44(0xf6)), MkHeaderBody[_0x4ddf44(0x112)][_0x4ddf44(0x117)](_0x4ddf44(0x123)), (body[_0x4ddf44(0x137)][_0x4ddf44(0xfd)] = "#fff");
+}
+function _0x17c5(_0x3a52ea, _0x3b2328) {
+  const _0x5311f7 = _0x5311();
+  return (
+    (_0x17c5 = function (_0x17c5e5, _0x2264bd) {
+      _0x17c5e5 = _0x17c5e5 - 0xe9;
+      let _0x51eae4 = _0x5311f7[_0x17c5e5];
+      return _0x51eae4;
+    }),
+    _0x17c5(_0x3a52ea, _0x3b2328)
+  );
 }
 function MkLoader() {
-  const _0x54e432 = _0x1c5833;
-  MkPreloader[_0x54e432(0x1b3)]["add"]("MkPreloaderShow"),
-    MkHeaderBody[_0x54e432(0x1b3)][_0x54e432(0x1ca)](_0x54e432(0x1c4)),
+  const _0x2a2f97 = _0x1dd9dc;
+  MkPreloader[_0x2a2f97(0x112)][_0x2a2f97(0x126)](_0x2a2f97(0x132)),
+    MkHeaderBody[_0x2a2f97(0x112)][_0x2a2f97(0x126)](_0x2a2f97(0x123)),
     setTimeout(function () {
-      const _0x1faab0 = _0x54e432;
-      MkPreloader[_0x1faab0(0x1b3)]["remove"](_0x1faab0(0x1d3)), MkHeaderBody[_0x1faab0(0x1b3)][_0x1faab0(0x19f)](_0x1faab0(0x1c4)), MkAudio[_0x1faab0(0x188)]();
+      const _0x1bece2 = _0x2a2f97;
+      MkPreloader[_0x1bece2(0x112)][_0x1bece2(0x117)]("MkPreloaderShow"), MkHeaderBody[_0x1bece2(0x112)][_0x1bece2(0x117)](_0x1bece2(0x123)), MkAudio["play"]();
     }, 0x1388);
 }
 function CloseBtn() {
-  const _0x4c2cf4 = _0x1c5833;
-  MkChatHeaderJoin["classList"][_0x4c2cf4(0x1ca)](_0x4c2cf4(0x1be));
+  const _0x555d04 = _0x1dd9dc;
+  MkChatHeaderJoin[_0x555d04(0x112)]["add"](_0x555d04(0x11d));
 }
 function OpenBlog() {
-  const _0x5603bc = _0x1c5833;
-  window[_0x5603bc(0x1d2)][_0x5603bc(0x1a7)]();
+  const _0x5926f6 = _0x1dd9dc;
+  window[_0x5926f6(0xff)]["reload"]();
 }
 function CloseSupport() {
-  const _0x1ed8e9 = _0x1c5833;
-  MkSupport[_0x1ed8e9(0x1b3)][_0x1ed8e9(0x19f)](_0x1ed8e9(0x1b6)), MkHeaderBody["classList"]["remove"](_0x1ed8e9(0x1c4));
+  const _0x50ea88 = _0x1dd9dc;
+  MkSupport[_0x50ea88(0x112)][_0x50ea88(0x117)](_0x50ea88(0x12c)), MkHeaderBody[_0x50ea88(0x112)][_0x50ea88(0x117)](_0x50ea88(0x123));
 }
 const hideBottomSheet = () => {
-  const _0x262c4b = _0x1c5833;
-  MkLink[_0x262c4b(0x1b3)][_0x262c4b(0x19f)](_0x262c4b(0x19d)),
-    MkHeaderBody[_0x262c4b(0x1b3)][_0x262c4b(0x19f)](_0x262c4b(0x1c4)),
-    MkGame[_0x262c4b(0x1b3)][_0x262c4b(0x19f)]("MkGameShow"),
-    MkScMediaFlw["classList"][_0x262c4b(0x19f)]("MkScMediaFlwShow"),
-    MKProject["classList"]["remove"](_0x262c4b(0x1aa));
+  const _0x19198c = _0x1dd9dc;
+  MkLink["classList"][_0x19198c(0x117)](_0x19198c(0xf1)),
+    MkHeaderBody[_0x19198c(0x112)]["remove"]("Hide"),
+    MkGame["classList"][_0x19198c(0x117)]("MkGameShow"),
+    MkScMediaFlw[_0x19198c(0x112)]["remove"](_0x19198c(0xf7)),
+    MKProject[_0x19198c(0x112)][_0x19198c(0x117)](_0x19198c(0xf0));
 };
-MkLinkOverlay["addEventListener"](_0x1c5833(0x1c8), hideBottomSheet),
-  MkGameOverlay[_0x1c5833(0x19a)]("click", hideBottomSheet),
-  MkScMediaFlwOverlay[_0x1c5833(0x19a)](_0x1c5833(0x1c8), hideBottomSheet),
-  MKProjectOverlay[_0x1c5833(0x19a)]("click", hideBottomSheet),
-  MkSupportOverlay[_0x1c5833(0x19a)](_0x1c5833(0x1c8), function () {
-    const _0x16192f = _0x1c5833;
-    MkSupport[_0x16192f(0x1b3)][_0x16192f(0x19f)]("MkSupportShow"), MkHeaderBody[_0x16192f(0x1b3)]["remove"]("Hide");
+MkLinkOverlay[_0x1dd9dc(0x103)](_0x1dd9dc(0x118), hideBottomSheet),
+  MkGameOverlay[_0x1dd9dc(0x103)]("click", hideBottomSheet),
+  MkScMediaFlwOverlay[_0x1dd9dc(0x103)](_0x1dd9dc(0x118), hideBottomSheet),
+  MKProjectOverlay[_0x1dd9dc(0x103)](_0x1dd9dc(0x118), hideBottomSheet),
+  MkSupportOverlay[_0x1dd9dc(0x103)](_0x1dd9dc(0x118), function () {
+    const _0x5ea89f = _0x1dd9dc;
+    MkSupport[_0x5ea89f(0x112)][_0x5ea89f(0x117)](_0x5ea89f(0x12c)), MkHeaderBody[_0x5ea89f(0x112)][_0x5ea89f(0x117)]("Hide");
   });
 function MkxXxInsta() {
-  const _0x41bbc9 = _0x1c5833;
-  window["location"]["replace"](_0x41bbc9(0x1dc));
+  const _0x2647e1 = _0x1dd9dc;
+  window["location"][_0x2647e1(0xec)](_0x2647e1(0x109));
 }
 function MkxXxTiktok() {
-  const _0x3b9438 = _0x1c5833;
-  window["location"]["replace"](_0x3b9438(0x1ab));
+  const _0x187416 = _0x1dd9dc;
+  window[_0x187416(0xff)][_0x187416(0xec)]("https://tiktok.com/@mxchl");
 }
 function MkxXxFacebook() {
-  const _0x8c5a28 = _0x1c5833;
-  window[_0x8c5a28(0x1d2)][_0x8c5a28(0x18e)](_0x8c5a28(0x1cf));
-}
-function _0x5a21() {
-  const _0x26ac63 = [
-    "remove",
-    "DescSocialMedia",
-    "-webkit-linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%)",
-    "background",
-    "MkSpotifyShow",
-    ".MkGameOverlay",
-    "linear-gradient(45deg,\x20#f09433\x200%,#e6683c\x2025%,#dc2743\x2050%,#cc2366\x2075%,#bc1888\x20100%",
-    ".MkScMediaFlw",
-    "reload",
-    ".MkScMediaOverlay",
-    "Marchell\x20Kevandra",
-    "MKProjectShow",
-    "https://tiktok.com/@mxchl",
-    "Open\x20Instagram",
-    "innerHTML",
-    ".MkGame",
-    "Mengerti!",
-    "Open\x20Tiktok",
-    "598696leqKhu",
-    "ri-tiktok-line",
-    "classList",
-    ".MKProject",
-    ".MkSpotify",
-    "MkSupportShow",
-    "querySelector",
-    "selected-icon",
-    "-moz-linear-gradient(45deg,\x20#f09433\x200%,\x20#e6683c\x2025%,\x20#dc2743\x2050%,\x20#cc2366\x2075%,\x20#bc1888\x20100%)",
-    ".MkPageMediaSocialInsta",
-    "className",
-    "#000",
-    "MkGameShow",
-    "HideJoin",
-    "1fkAJPa",
-    "instagram.com/marchell_kvandra",
-    ".MkChat",
-    "https://ems-links.netlify.app/",
-    "isConfirmed",
-    "Hide",
-    "#fff",
-    "Kembali",
-    "#0866ff",
-    "click",
-    "1540152DemecU",
-    "add",
-    "1214286SWwXlK",
-    "Warning",
-    "HideLeft",
-    ".MkSupportOverlay",
-    "https://facebook.com/chellgnzxz",
-    ".MkSupport",
-    "isDenied",
-    "location",
-    "MkPreloaderShow",
-    "#f09433;",
-    "bx\x20bxl-tiktok",
-    "body",
-    "tiktok.com/mkxchl",
-    "MkScMediaFlwShow",
-    "https://instagram.com/marchell_kvandra",
-    "ri-facebook-line",
-    "MkPageMediaSocialInstaShow",
-    "https://instagram.com/chellgnzxz_",
-    "300615BUMHDZ",
-    ".MkPreloader",
-    "style",
-    "fire",
-    "3946977OkLUSx",
-    "facebook.com/chellgnzxz",
-    "MkChatShow",
-    "then",
-    ".BtnSocialMediax",
-    "play",
-    "5EYSoJF",
-    "getItem",
-    "MkAudio",
-    "#3085d6",
-    "IconSocialMedia",
-    "replace",
-    ".MkChatHeaderJoin",
-    ".MkHeaderBody",
-    "TitleSocialMedia",
-    "Open\x20Facebook",
-    "#999",
-    "#d33",
-    "https://github.com/mkxchl",
-    "8274QjCnpz",
-    "575344pukAlL",
-    ".MkLinkOverlay",
-    ".MkPageMediaSocialInstaOverlay",
-    "addEventListener",
-    ".MkLink",
-    ".MkPageMediaSocialInstaBodyButton",
-    "MkLinkShow",
-    "getElementById",
-  ];
-  _0x5a21 = function () {
-    return _0x26ac63;
-  };
-  return _0x5a21();
+  const _0x136233 = _0x1dd9dc;
+  window[_0x136233(0xff)][_0x136233(0xec)](_0x136233(0x104));
 }
 function MkxXxGithub() {
-  const _0x30bae9 = _0x1c5833;
-  window[_0x30bae9(0x1d2)][_0x30bae9(0x18e)](_0x30bae9(0x195));
+  const _0x1f2e3c = _0x1dd9dc;
+  window[_0x1f2e3c(0xff)][_0x1f2e3c(0xec)](_0x1f2e3c(0x122));
 }
 function MkxXxEms() {
-  const _0x2dc398 = _0x1c5833;
-  window[_0x2dc398(0x1d2)]["replace"](_0x2dc398(0x1c2));
+  const _0x3fbf9b = _0x1dd9dc;
+  window["location"][_0x3fbf9b(0xec)]("https://ems-links.netlify.app/");
 }
