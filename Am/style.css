@@ -1564,10 +1564,10 @@ body {
     font-size: 50px;
     color: white;
     border-radius: 50%;
-    background: #f09433; 
+    /* background: #f09433; 
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
   }
   .MkPageMediaSocialInstaBodyUsername {
     position: relative;
@@ -1591,9 +1591,9 @@ body {
     place-content: center;
     place-items: center;
     background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    /* background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
     padding: 10px;
     color: #fff;
     border-radius: 30px;
@@ -1608,10 +1608,10 @@ body {
     background: #eee;
     transition: 0.5s ease-in-out;
   }
-  .MkPageMediaSocialInstaBodyButton:hover h4 {
+  /* .MkPageMediaSocialInstaBodyButton:hover h4 {
     color: #000;
     transition: 0.5s ease-in-out;
-  }
+  } */
   .MkPageMediaSocialInstaButtonClose {
     position: absolute;
     left: 43%;
