@@ -170,3 +170,12 @@ function JnInsta() {
 function AgsInsta() {
   window.location.replace("https://instagram.com/guss.fx01");
 }
+function EmsAppA() {
+  window.location.replace("https://sfile.mobi/84sZ8oGUUMk");
+}
+function EmsAppB() {
+  window.location.replace("https://sfile.mobi/auvof2K1lm3");
+}
+function EmsAppC() {
+  window.location.replace("https://sfile.mobi/ak4R0snkoom");
+}
