@@ -128,6 +128,29 @@ body {
     opacity: 0;
     pointer-events: none;
   }
+  .MkNavBottom {
+    position: sticky;
+    bottom: 0;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    place-content: center;
+  }
+  .MkNavBottom i {
+    padding: 10px;
+    font-size: 30px;
+    background: white;
+    margin: 10px;
+    border-radius: 50%;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkNavBottom i:hover {
+    background: #eee;
+    transition: 0.5s ease-in-out;
+  }
   .MkPreloader {
     position: fixed;
     top: 0;
@@ -214,6 +237,369 @@ body {
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
     transform: translateY(100%);
   }
+  .MkNavBody {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    z-index: 1;
+  }
+  .MkNavBodyContent {
+    position: relative;
+    display: flex;
+  }
+  .MkNavBodyContent h4 {
+    font-size: 18px;
+  }
+  .MkNavBodyContentIcon {
+    position: fixed;
+    right: 10px;
+    font-size: 23px;
+  }
+  .MkNavBodyContentIcon i {
+    position: relative;
+  }
+  .MkxxchlProfile {
+    position: relative;
+  }
+  .MkxxchlProfile .MkxxchlProfileThumbnail img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .MkxxchlProfile .MkxxchlProfilePhoto {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    place-content: center;
+    place-items: center;
+  }
+  .MkxxchlProfile .MkxxchlProfilePhoto img {
+    position: relative;
+    bottom: 65px;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+  }
+  .MkxxchlProfileName {
+    position: relative;
+    text-align: center;
+    bottom: 50px;
+  }
+  .MkxxchlProfileName h4 {
+    font-size: 25px;
+  }
+  .MkxxchlProfileName p {
+    font-size: 16px;
+  }
+  .MkxxchlProfileName .MkxxchlProfileBio {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .MkxxchlProfileButton {
+    position: relative;
+    /* width: 100%; */
+    padding: 10px;
+    background: #fff;
+    border: 0.5px solid #eee;
+    bottom: 30px;
+  }
+  .MkxxchlProfileButton .MkxxchlProfileButtonContent a {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .MkxxchlProfileButton .MkxxchlProfileButtonContent a.BtnxActive {
+    font-weight: bold;
+  }
+  .MkxxchlProfileButton .MkxxchlProfileButtonContent i {
+    position: relative;
+    top: 3px;
+    left: 70px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s ease-in-out;
+  }
+  .MkxxchlProfileButton .MkxxchlProfileButtonContent i:hover {
+    color: #ddd;
+    transition: 0.5s ease-in-out;
+  }
+  .MkxxchlProfileBody {
+    position: relative;
+    width: 100%;
+  }
+  .MkxxchlProfileBodyContent {
+    position: relative;
+    background: #fff;
+    margin-bottom: 10px;
+    /* bottom: 30px; */
+    margin-right: 10px;
+    margin-lefT: 10px;
+    padding: 10px;
+    border: 0.7px solid #eee;
+  }
+  .MkxxchlProfileBodyHeader {
+    position: relative;
+    padding: 5px;
+  }
+  .MkxxchlProfileBodyHeader h4 {
+    font-size: 18px;
+  }
+  .MkxxchlProfileBodyList {
+    position: relative;
+  }
+  .MkxxchlProfileBodyList .MkxxchlProfileBodyListContent {
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .MkxxchlProfileBodyListContent i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .MkxxchlProfileBodyListContent h4 {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    bottom: 1px;
+  }
+  .MkxxchlPhotoBody {
+    position: relative;
+    width: 100%;
+  }
+  .MkxxchlPhotoBodyContent {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border: 0.6px solid #eee;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .MkxxchlPhotoBodyHeaderTitle {
+    position: relative;
+    padding: 5px;
+  }
+  .MkxxchlPhotoBodyHeaderTitle h4 {
+    font-size: 18px;
+  }
+  .MkxxchlPhotoBodyList {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .MkxxchlPhotoBodyList img {
+    margin-top: 10px;
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+  }
+  .MkxxchlMusicBody {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .MkxxchlMusicBodyContent {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border: 0.6px solid #eee;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .MkxxchlMusicBodyHeaderTitle {
+    position: relative;
+    padding: 5px;
+  }
+  .MkxxchlMusicBodyHeaderTitle h4 {
+    font-size: 18px;
+  }
+  .MkxxchlMusicBodyList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .MkxxchlMusicBodyList:hover {
+    background: #eee;
+    transition: 0.5s ease-in-out;
+  }
+  .MkxxchlMusicBodyList i {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  .MkxxchlMusicBodyList .MkxxchlMusicBodyListContent {
+    position: relative;
+    margin-top: 3px;
+  }
+  .MkxxchlMusicBodyList .MkxxchlMusicBodyListContent h4 {
+    font-weight: 500;
+  }
+  .MkxxchlContactBody {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .MkxxchlContactBodyContent {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border: 0.6px solid #eee;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .MkxxchlContactBodyHeaderTitle {
+    position: relative;
+    padding: 5px;
+  }
+  .MkxxchlContactBodyHeaderTitle h4 {
+    font-size: 18px;
+  }
+  .MkxxchlContactBodyList {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .MkxxchlContactBodyList:hover {
+    background: #eee;
+    transition: 0.5s ease-in-out;
+  }
+  .MkxxchlContactBodyList i {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  .MkxxchlContactBodyList .MkxxchlContactBodyListContent {
+    position: relative;
+    margin-top: 3px;
+  }
+  .MkxxchlContactBodyList .MkxxchlContactBodyListContent h4 {
+    font-weight: 500;
+  }
+  .MkxxchlFooter {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .MkxxchlFooter h4 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .MkIconMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 99999999;
+  }
+  .MkIconMenu.MkIconMenuShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MkIconMenu.MkIconMenuShow > #MkImageProfile {
+    z-index: 9;
+  }
+  .MkIconMenu .MkIconMenuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .MkIconMenu.MkIconMenuShow .MkIconMenuContent {
+    transform: scale(1);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MkIconMenu .MkIconMenuContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MkIconMenuContent .MkIconMenuContentBody {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    display: flex;
+    height: 10%;
+    top: 40%;
+    background: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+  }
+  .MkIconMenuContentBodyIconList .MkIconMenuContentBodyIconListContent {
+    padding: 10px;
+    margin-top: 7px;
+  }
+  .MkIconMenuContentBodyIconList .MkIconMenuContentBodyIconListContent i {
+    position: relative;
+    font-size: 25px;
+    margin: 20px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .MkIconMenuContentBodyIconList .MkIconMenuContentBodyIconListContent i:hover {
+    background: transparent;
+    transition: 0.5s ease-in-out;
+  }
+  .MkIconNavBottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .MkIconNavBottom i {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+  }
+  .MkIconNavBottom i:hover {
+    background: transparent;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
   .MkHeaderBody .MkHeaderBodyHeaderPhoto {
     position: relative;
     align-items: center;
@@ -225,15 +611,22 @@ body {
   .MkHeaderBody .MkHeaderBodyHeaderPrf .MkHeaderBodyHeaderThumbnail img {
     position: relative;
     width: 100%;
+    height: 50%;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
+  .MkHeaderBody .MkHeaderBodyHeaderPrf .MkHeaderBodyHeaderProfile {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    display: flex;
+  }
   .MkHeaderBody .MkHeaderBodyHeaderPrf .MkHeaderBodyHeaderProfile img {
     position: relative;
-    bottom: 60px;
-    margin-left: 15px;
+    bottom: 65px;
     width: 30%;
-    border: 3px solid #0866ff;
     border-radius: 50%;
   }
   .MkHeaderBodyHeaderinfo {
@@ -243,10 +636,55 @@ body {
     margin-right: 15px;
   }
   .MkHeaderBodyHeaderinfo .MkHeaderBodyHeaderName h4 {
-    font-size: 18px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .MkHeaderBodyHeaderinfo .MkHeaderBodyHeaderName p {
+    text-align: center;
+    font-size: 15px;
+  }
+  .MkHeaderBodyHeaderinfo .MkHeaderBodyHeaderName h4 i {
+    position: relative;
+    top: 3px;
+    left: 5px;
+    font-size: 20px;
+    color: #42A5F5;
+    border-radius: 50%;
   }
   .MkHeaderBodyHeaderinfo .MkHeaderBodyHeaderBio {
     position: relative;
+  }
+  .MkHeaderBodyHeaderBioContent {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 0.5px solid rgba(164,167,171,1.0);
+    border-radius: 5px;
+  }
+  .MkHeaderBodyHeaderBioHeaderTitle h4 {
+    position: relative;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .MkHeaderBodyHeaderBioContentBody {
+    position: relative;
+    display: flex;
+    margin-lefT: 10px;-
+    margin-right: 10px;
+    margin-top: 10px;
+    /* margin-bottom: 15px; */
+  }
+  .MkHeaderBodyHeaderBioContentBody i {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 23px;
+  }
+  .MkHeaderBodyHeaderBioContentBody h4 {
+    position: relative;
+    font-weight: 500;
+    top: 3px;
+    font-size: 15px;
   }
   .MkHeaderBodyHeaderBio .MkHeaderBodyHeaderBioSocialMedia {
     position: relative;
