@@ -45,6 +45,11 @@ body {
     pointer-events: none;
     display: none;
   }
+  #MkAudioA {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
 }
 @media screen and (min-width: 800px) {
   .MkPreloader,
@@ -56,6 +61,11 @@ body {
     pointer-events: none;
   }
   #MkAudio {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
+  #MkAudioA {
     opacity: 0;
     pointer-events: none;
     display: none;
@@ -75,6 +85,11 @@ body {
     pointer-events: none;
     display: none;
   }
+  #MkAudioA {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
 }
 @media screen and (min-width: 414px) {
   .MkPreloader,
@@ -90,6 +105,11 @@ body {
     pointer-events: none;
     display: none;
   }
+  #MkAudioA {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
 }
 @media screen and (min-width: 393px) {
   .MkPreloader,
@@ -101,6 +121,11 @@ body {
     pointer-events: none;
   }
   #MkAudio {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
+  #MkAudioA {
     opacity: 0;
     pointer-events: none;
     display: none;
@@ -127,6 +152,11 @@ body {
     display: none;
     opacity: 0;
     pointer-events: none;
+  }
+  #MkAudioA {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
   }
   .MkNavBottom {
     position: sticky;
