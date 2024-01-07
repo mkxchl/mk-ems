@@ -29,7 +29,6 @@ body {
   transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
   overflow-y: hidden;
   user-select: none;
-  height: 100%;
 }
 @media screen and (min-width: 1200px) {
   .MkPreloader,
