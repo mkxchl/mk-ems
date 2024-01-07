@@ -56,71 +56,75 @@
         </div>
         <div class="MkxxchlProfileButton">
           <div class="MkxxchlProfileButtonContent">
-            <a class="BtnxActive">Postingan</a>
-            <a>Tentang</a>
+            <a onclick="BtnPst()" class="BtnxActive" id="pst">Postingan</a>
+            <a onclick="BtnTtg()" id="ttg">Tentang</a>
             <i class="ri-share-fill" onclick="OpenFollowed()"></i>
             <i class="ri-menu-3-line" onclick="OpenMenuIcon()"></i>
           </div>
         </div>
-        <div class="MkxxchlProfileBody">
-          <div class="MkxxchlProfileBodyContent">
-            <div class="MkxxchlProfileBodyHeader">
-              <h4>Details</h4>
-            </div>
-            <div class="MkxxchlProfileBodyList">
-              <div class="MkxxchlProfileBodyListContent">
-                <i class="ri-information-fill"></i>
-                <h4><b>Profil</b> - Mahasiswa</h4>
-              </div>
-              <div class="MkxxchlProfileBodyListContent">
-                <i class="ri-map-pin-line"></i>
-                <h4>Jakarta, Indonesia</h4>
-              </div>
-              <div class="MkxxchlProfileBodyListContent">
-                <i class="ri-pushpin-line"></i>
-                <h4>Penulis</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="MkxxchlPhotoBody">
-          <div class="MkxxchlPhotoBodyContent">
-            <div class="MkxxchlPhotoBodyHeaderTitle">
-              <h4>Foto</h4>
-            </div>
-            <div class="MkxxchlPhotoBodyList">
-              <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
-            </div>
-          </div>
-        </div>
-        <div class="MkxxchlMusicBody">
-          <div class="MkxxchlMusicBodyContent">
-            <div class="MkxxchlMusicBodyHeaderTitle">
-              <h4>Music</h4>
-            </div>
-            <div class="MkxxchlMusicBodyList" onclick="MkPlayMusicProfile()">
-              <i class="ri-headphone-line"></i>
-              <div class="MkxxchlMusicBodyListContent">
-                <h4>Shaving Me - Marchell Kevandra</h4>
+        <div class="MkxxchlProfileMeta">
+          <div class="MkxxchlProfileMetaBody">
+            <div class="MkxxchlProfileBody">
+              <div class="MkxxchlProfileBodyContent">
+                <div class="MkxxchlProfileBodyHeader">
+                  <h4>Details</h4>
+                </div>
+                <div class="MkxxchlProfileBodyList">
+                  <div class="MkxxchlProfileBodyListContent">
+                    <i class="ri-information-fill"></i>
+                    <h4><b>Profil</b> - Mahasiswa</h4>
+                  </div>
+                  <div class="MkxxchlProfileBodyListContent">
+                    <i class="ri-map-pin-line"></i>
+                    <h4>Jakarta, Indonesia</h4>
+                  </div>
+                  <div class="MkxxchlProfileBodyListContent">
+                    <i class="ri-pushpin-line"></i>
+                    <h4>Penulis</h4>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="MkxxchlContactBody">
-          <div class="MkxxchlContactBodyContent">
-            <div class="MkxxchlContactBodyHeaderTitle">
-              <h4>Contact Us</h4>
-            </div>
-            <div class="MkxxchlContactBodyList">
-              <i class="ri-mail-send-line"></i>
-              <div class="MkxxchlContactBodyListContent">
-                <h4>Email</h4>
+            <div class="MkxxchlPhotoBody">
+              <div class="MkxxchlPhotoBodyContent">
+                <div class="MkxxchlPhotoBodyHeaderTitle">
+                  <h4>Foto</h4>
+                </div>
+                <div class="MkxxchlPhotoBodyList">
+                  <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+                </div>
               </div>
             </div>
-            <div class="MkxxchlContactBodyList" onclick="OpenTele()">
-              <i class="ri-telegram-line"></i>
-              <div class="MkxxchlContactBodyListContent">
-                <h4>Telegram</h4>
+            <div class="MkxxchlMusicBody">
+              <div class="MkxxchlMusicBodyContent">
+                <div class="MkxxchlMusicBodyHeaderTitle">
+                  <h4>Music</h4>
+                </div>
+                <div class="MkxxchlMusicBodyList" onclick="MkPlayMusicProfile()">
+                  <i class="ri-headphone-line"></i>
+                  <div class="MkxxchlMusicBodyListContent">
+                    <h4>Shaving Me - Marchell Kevandra</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="MkxxchlContactBody">
+              <div class="MkxxchlContactBodyContent">
+                <div class="MkxxchlContactBodyHeaderTitle">
+                  <h4>Contact Us</h4>
+                </div>
+                <div class="MkxxchlContactBodyList">
+                  <i class="ri-mail-send-line"></i>
+                  <div class="MkxxchlContactBodyListContent">
+                    <h4>Email</h4>
+                  </div>
+                </div>
+                <div class="MkxxchlContactBodyList" onclick="OpenTele()">
+                  <i class="ri-telegram-line"></i>
+                  <div class="MkxxchlContactBodyListContent">
+                    <h4>Telegram</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -137,7 +141,7 @@
           <div class="MkIconMenuContentBodyIconList">
             <div class="MkIconMenuContentBodyIconListContent">
               <i class="ri-links-line"></i>
-              <i class="ri-headphone-line"></i>
+              <i class="ri-headphone-line" onclick="MkxxChlMusicPage()"></i>
               <i class="ri-spotify-line"></i>
             </div>
           </div>
@@ -440,6 +444,64 @@
         </div>
         <div class="MkPageMediaSocialInstaButtonClose" onclick="CloseMkInsta()">
           <i class="bx bx-x"></i>
+        </div>
+      </div>
+    </div>
+    <div class="MKxxChlxxMusic">
+      <div class="MKxxChlxxMusicContent">
+        <div class="MKxxChlxxMusicHeader">
+          <i class="bx bx-chevron-left" onclick="MkxxChlMusicClose()"></i>
+          <h4>Music</h4>
+        </div>
+        <div class="MkAlertText">
+          <h4>Sedang dalam pengkodean</h4>
+        </div>
+        <div class="MKxxChlxxMusicBodyContent">
+          <div class="MKxxChlxxMusicBodyContentMeta">
+            <i class="bx bx-music"></i>
+            <div class="MKxxChlxxMusicBodyContentMetaTitle">
+              <h4>Marchell Kevandra</h4>
+              <p>Remixer Indonesia</p>
+              <p>6 Lagu</p>
+            </div>
+          </div>
+          <div class="MKxxChlxxMusicBodyContentButton">
+            <a class="BtnMusicListSongActive">Lagu</a>
+            <a>Album</a>
+          </div>
+          <div class="MKxxChlxxMusicBodyContentMusicList">
+            <div class="MKxxChlxxMusicBodyContentMusicListContent">
+              <i class="bx bxs-music"></i>
+              <div class="MKxxChlxxMusicBodyContentMusicListSongTitle">
+                <h4>Kita Sayang Pangana</h4>
+                <p>Marchell Kevandra</p>
+              </div>
+            </div>
+            <div class="MKxxChlxxMusicBodyContentMusicListContent">
+              <i class="bx bxs-music"></i>
+              <div class="MKxxChlxxMusicBodyContentMusicListSongTitle">
+                <h4>Alfont Basta x Marchell</h4>
+                <p>Marchell Kevandra</p>
+              </div>
+            </div>
+            <div class="MKxxChlxxMusicBodyContentMusicListContent">
+              <i class="bx bxs-music"></i>
+              <div class="MKxxChlxxMusicBodyContentMusicListSongTitle">
+                <h4>Ente Kadang Kadang</h4>
+                <p>Marchell Kevandra</p>
+              </div>
+            </div>
+            <div class="MKxxChlxxMusicBodyContentMusicListContent">
+              <i class="bx bxs-music"></i>
+              <div class="MKxxChlxxMusicBodyContentMusicListSongTitle">
+                <h4>Shaving Me</h4>
+                <p>Marchell Kevandra</p>
+              </div>
+            </div>
+          </div>
+          <div class="MKxxChlxxMusicBodyContentFooter">
+            <h4>Mk Music</h4>
+          </div>
         </div>
       </div>
     </div>
