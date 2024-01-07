@@ -27,7 +27,6 @@ body {
   place-items: center;
   background: #fff;
   transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-  overflow-y: hidden;
   user-select: none;
 }
 @media screen and (min-width: 1200px) {
