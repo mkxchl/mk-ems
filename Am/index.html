@@ -46,17 +46,14 @@
     <div class="MkxChlNav">
       <div class="MkxChlNavContent">
         <div class="MkxChlNavBody">
-          <div class="MkxChlNavBodyTitle">
-            <h4>Menu</h4>
-          </div>
           <div class="MkxChlNavBodyContent">
-            <div class="MkxChlNavBodyListContent" onclick="MkxxChlMusicPage()">
+            <div class="MkxChlNavBodyListContent">
               <h4>Music</h4>
             </div>
             <div class="MkxChlNavBodyListContent">
               <h4>Store</h4>
             </div>
-            <div class="MkxChlNavBodyListContent">
+            <div class="MkxChlNavBodyListContent" onclick="OpenGame()">
               <h4>Game</h4>
             </div>
             <div class="MkxChlNavBodyListContent">
@@ -64,6 +61,7 @@
             </div>
           </div>
           <div class="MkxChlNavIconCl">
+            <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
             <i class="bx bx-x" onclick="MkCloseNav()"></i>
           </div>
         </div>
@@ -84,7 +82,8 @@
         <div class="MkxxchlProfileButton">
           <div class="MkxxchlProfileButtonContent">
             <a onclick="BtnPst()" class="BtnxActive" id="pst">Postingan</a>
-            <a onclick="BtnTtg()" id="ttg">Tentang</a>
+            <!-- <a onclick="BtnTtg()" id="ttg">Tentang</a> -->
+            <a>Tentang</a>
             <i class="ri-share-fill" onclick="OpenFollowed()"></i>
             <i class="ri-menu-3-line" onclick="OpenMenuIcon()"></i>
           </div>
@@ -140,7 +139,7 @@
                 <div class="MkxxchlContactBodyHeaderTitle">
                   <h4>Contact Us</h4>
                 </div>
-                <div class="MkxxchlContactBodyList">
+                <div class="MkxxchlContactBodyList" onclick="OpenEmail()">
                   <i class="ri-mail-send-line"></i>
                   <div class="MkxxchlContactBodyListContent">
                     <h4>Email</h4>
@@ -532,12 +531,12 @@
         </div>
       </div>
     </div>
-    <audio id="MkAudio">
+    <!-- <audio id="MkAudio">
       <source src="https://ems-links.netlify.app/am/mix/MkxchlSong-5.mp3" type="audio/mpeg" />
     </audio>
     <audio id="MkAudioA">
       <source src="https://ems-links.netlify.app/am/mix/MkxchlSong-1.mp3" type="audio/mpeg" />
-    </audio>
+    </audio> -->
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://ems-links.netlify.app/assets/js/query.min.js"></script>
