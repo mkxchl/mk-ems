@@ -305,6 +305,9 @@
                 <div class="EmsMenuContentTeamFamsBodyTeam">
                   <li>
                     <ul>
+                      Editor Minang Squad
+                    </ul>
+                    <ul>
                       Comunity Tanker Solidarity
                     </ul>
                     <ul>
@@ -342,9 +345,9 @@
               </div>
             </div>
             <div class="EmsMenuContentFeature">
-              <div class="EmsMenuContentFeatureList" onclick="OpenLink()">
-                <i class="ri-link"></i>
-                <h4>Link</h4>
+              <div class="EmsMenuContentFeatureList" onclick="OpenRules()">
+                <i class="ri-sticky-note-line"></i>
+                <h4>Rules</h4>
               </div>
               <div class="EmsMenuContentFeatureList" onclick="OpenSong()">
                 <i class="ri-music-line"></i>
@@ -361,6 +364,16 @@
                 <h4>Apps</h4>
               </div>
             </div>
+            <!-- <div class="EmsMenuContentFeature">
+              <div class="EmsMenuContentFeatureList" onclick="OpenMem()">
+                <i class="ri-shield-user-line"></i>
+                <h4>Anggota</h4>
+              </div>
+              <div class="EmsMenuContentFeatureList" onclick="OpenLink()">
+                <i class="ri-link"></i>
+                <h4>Link</h4>
+              </div>
+            </div> -->
             <div class="EmsMenuContentJoin">
               <h4>You can join to Ems Revolution ? <b class="EmsJoin">Join Here</b></h4>
             </div>
@@ -470,29 +483,33 @@
             </div>
             <div class="EmsAppBodyContentLink">
               <div class="EmsAppBodyContentLinkHeaderTitle">
-                <h4>Download KineMaster Mod</h4>
+                <h4 id="HeaderTitleApp">Download KineMaster Mod</h4>
               </div>
-              <div class="EmsAppBodyContentLinkDownload">
+              <div class="EmsAppBodyContentLinkDownload EmsAx" onclick="EmsAppA()">
                 <img src="assets/images/ems-3.png" />
-                <h4>Kinemaster V1</h4>
+                <h4 id="NameOne">Kinemaster V1</h4>
                 <i class="bx bx-chevron-right"></i>
               </div>
-              <div class="EmsAppBodyContentLinkDownload">
+              <div class="EmsAppBodyContentLinkDownload EmsBx" onclick="EmsAppB()">
                 <img src="assets/images/ems-1.png" />
-                <h4>Kinemaster V2</h4>
+                <h4 id="NameTwo">Kinemaster V2</h4>
                 <i class="bx bx-chevron-right"></i>
               </div>
-              <div class="EmsAppBodyContentLinkDownload">
+              <div class="EmsAppBodyContentLinkDownload EmsCx" onclick="EmsAppC()">
                 <img src="assets/images/ems-2.png" />
-                <h4>Kinemaster V3</h4>
+                <h4 id="NameThree">Kinemaster V3</h4>
                 <i class="bx bx-chevron-right"></i>
               </div>
+            </div>
+            <div class="EmsAppBodyContentLinkDownloadIntro" onclick="">
+              <h4>Download Intro Disini</h4>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- End Download -->
+    <!-- Start Video -->
     <div class="EmsVideo">
       <div class="EmsVideoContent">
         <div class="EmsVideoContentSrc">
@@ -502,6 +519,58 @@
         </div>
       </div>
     </div>
+    <div class="EmsRules">
+      <div class="EmsRulesBody">
+        <div class="EmsRulesBodyContent">
+          <div class="EmsRulesBodyContentHeaderTitle">
+            <h4>Rules</h4>
+            <p>Berikut peraturan team Editor Miring Squad.</p>
+            <div class="EmsRulesBodyContentHeaderIcon">
+              <i class="bx bx-chevron-down" onclick="CloseRules()"></i>
+            </div>
+          </div>
+          <div class="EmsRulesBodyMeta">
+            <div class="EmsRulesBodyMetaContent">
+              <i class="bx bx-check-double MkIcRulesCheck"></i>
+              <h4>Attitude Paling Utama</h4>
+            </div>
+            <div class="EmsRulesBodyMetaContent">
+              <i class="bx bx-check-double MkIcRulesCheck"></i>
+              <h4>Memakai Intro EMS</h4>
+            </div>
+            <div class="EmsRulesBodyMetaContent">
+              <i class="bx bx-x"></i>
+              <h4>Share Sticker 18+</h4>
+            </div>
+            <div class="EmsRulesBodyMetaContent">
+              <i class="bx bx-x"></i>
+              <h4>Share Video 18+</h4>
+            </div>
+            <div class="EmsRulesBodyMetaContent">
+              <i class="bx bx-x"></i>
+              <h4>Share Link Grup Other</h4>
+            </div>
+            <div class="EmsRulesBodyMetaContent">
+              <i class="bx bx-x"></i>
+              <h4>Dont Pansos Sana Sini</h4>
+            </div>
+            <div class="EmsRulesBodyMetaContent">
+              <i class="bx bx-x"></i>
+              <h4>No Kutu Loncat</h4>
+            </div>
+            <div class="EmsRulesBodyMetaContent">
+              <i class="bx bx-x"></i>
+              <h4>No Baperan</h4>
+            </div>
+            <div class="EmsRulesBodyMetaFooter">
+              <h4>Editor Miring Squad</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Videos -->
+    <!-- Start Videos B -->
     <div class="EmsVideoBody">
       <div class="EmsVideoBodyContent">
         <div class="EmsVideoBodyContentHeader">
@@ -528,6 +597,7 @@
         </div>
       </div>
     </div>
+    <!-- End Videos B -->
     <script src="https://ems-links.netlify.app/assets/js/query.min.js"></script>
     <script src="main.js"></script>
   </body>
