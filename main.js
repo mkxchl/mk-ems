@@ -25,6 +25,7 @@ const EmsCx = document.querySelector(".EmsCx");
 const AppContent = document.querySelector(".AppContent");
 const IntroContent = document.querySelector(".IntroContent");
 const EmsRules = document.querySelector(".EmsRules");
+const EmsVideoIntx = document.querySelector(".EmsVideoIntx");
 const HeaderTitleApp = document.getElementById("HeaderTitleApp");
 const NameOne = document.getElementById("NameOne");
 const NameTwo = document.getElementById("NameTwo");
@@ -107,6 +108,10 @@ function OpenVideoBodyContent() {
   $("#EmsVideoMegaCollabC").prop("muted", true);
   $("#EmsVideoMegaCollabC").prop("autoplay", false);
 }
+function OpenDownloadIntro() {
+  EmsVideoIntx.classList.add("EmsVideoIntxShow");
+  EmsApp.classList.remove("EmsAppShow");
+}
 function OpenIntro() {
   vidInt.play();
   EmsIntro.classList.add("EmsIntroShow");
@@ -139,6 +144,10 @@ function OpenLink() {
 function AuthorClose() {
   EmsAuthor.classList.remove("AuthorShow");
   EmsBodyAll.classList.remove("Hide");
+}
+function CloseIntDown() {
+  EmsVideoIntx.classList.remove("EmsVideoIntxShow");
+  EmsApp.classList.add("EmsAppShow");
 }
 function CloseApp() {
   EmsApp.classList.remove("EmsAppShow");
@@ -196,6 +205,15 @@ function EmsAppB() {
 }
 function EmsAppC() {
   window.location.replace("https://sfile.mobi/ak4R0snkoom");
+}
+function EmsIntAx() {
+  window.location.replace("https://www.mediafire.com/file/6xqnrfc1qcppl14/VID-20201204-WA0437.mp4/file");
+}
+function EmsIntBx() {
+  window.location.replace("https://www.mediafire.com/file/w0l4w1vgglcweev/VID-20201006-WA0441.mp4/file");
+}
+function EmsIntCx() {
+  window.location.replace("https://www.mediafire.com/file/x6fxjvduthq2aq7/video+(3).mkv/file");
 }
 /// Block Inspect ///
 
