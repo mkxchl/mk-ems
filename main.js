@@ -19,6 +19,16 @@ const EmsVideoBodyContent = document.querySelector(".EmsVideoBodyContent");
 const EmsIntro = document.querySelector(".EmsIntro");
 const EmsIntroOverlay = document.querySelector(".EmsIntroOverlay");
 const EmsIntroContent = document.querySelector(".EmsIntroContent");
+const EmsAx = document.querySelector(".EmsAx");
+const EmsBx = document.querySelector(".EmsBx");
+const EmsCx = document.querySelector(".EmsCx");
+const AppContent = document.querySelector(".AppContent");
+const IntroContent = document.querySelector(".IntroContent");
+const EmsRules = document.querySelector(".EmsRules");
+const HeaderTitleApp = document.getElementById("HeaderTitleApp");
+const NameOne = document.getElementById("NameOne");
+const NameTwo = document.getElementById("NameTwo");
+const NameThree = document.getElementById("NameThree");
 
 EmsMenuToggle.onclick = function () {
   EmsMenuContentTeamFams.classList.toggle("TeamUpdateHeight");
@@ -102,6 +112,14 @@ function OpenIntro() {
   EmsIntro.classList.add("EmsIntroShow");
   EmsBodyAll.classList.add("Hide");
 }
+function OpenRules() {
+  EmsRules.classList.add("EmsRulesShow");
+  EmsMenu.classList.remove("EmsMenuShow");
+}
+function CloseRules() {
+  EmsRules.classList.remove("EmsRulesShow");
+  EmsMenu.classList.add("EmsMenuShow");
+}
 function AuthorOpenedz() {
   EmsAuthor.classList.add("AuthorShow");
   EmsBodyAll.classList.add("Hide");
@@ -179,3 +197,23 @@ function EmsAppB() {
 function EmsAppC() {
   window.location.replace("https://sfile.mobi/ak4R0snkoom");
 }
+/// Block Inspect ///
+
+document.onkeydown = function (e) {
+  if (e.keyCode == 123) {
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+    return false;
+  }
+
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+    return false;
+  }
+};
