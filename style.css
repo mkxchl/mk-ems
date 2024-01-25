@@ -36,6 +36,7 @@ body {
   .EmsSong,
   .EmsApp,
   .EmsIntro,
+  .EmsRules,
   .EmsVideo,
   .EmsVideoBody {
     display: none;
@@ -60,6 +61,7 @@ body {
   .EmsSong,
   .EmsApp,
   .EmsIntro,
+  .EmsRules,
   .EmsVideo,
   .EmsVideoBody {
     display: none;
@@ -108,6 +110,7 @@ body {
   .EmsSong,
   .EmsApp,
   .EmsIntro,
+  .EmsRules,
   .EmsVideo,
   .EmsVideoBody {
     display: none;
@@ -132,6 +135,7 @@ body {
   .EmsSong,
   .EmsApp,
   .EmsIntro,
+  .EmsRules,
   .EmsVideo,
   .EmsVideoBody {
     display: none;
@@ -1275,7 +1279,7 @@ body {
     overflow-y: hidden;
   }
   .EmsMenuContentTeamFams.TeamUpdateHeight {
-    height: 37%;
+    height: 43%;
     /* transition: 0.5s all; */
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -1708,6 +1712,9 @@ body {
     margin-left: 15px;
     margin-right: 15px;
   }
+  .IntroContent {
+    display: none;
+  }
   .EmsAppBodyContent .EmsAppBodyContentHeaderTitle {
     position: relative;
     padding: 10px;
@@ -1788,6 +1795,27 @@ body {
     font-size: 30px;
     margin-top: 2px;
     margin-left: 70px;
+  }
+  .EmsAppBodyContentLinkDownloadIntro {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .EmsAppBodyContentLinkDownloadIntro h4 {
+    font-size: 18px;
+    font-family: "Rajdhani", sans-serif;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+  }
+  .EmsAppBodyContentLinkDownloadIntro h4:hover {
+    opacity: 0.4;
+    transition: 0.5s ease-in-out;
   }
   /* Start Ems Video */
   .EmsVideo {
@@ -1972,6 +2000,113 @@ body {
   }
   .EmsIntroContent .EmsIntroContentVideoSrc .EmsIntroContentVideo .EmsIntroContentVideoA {
     width: 100%;
+  }
+  .EmsRules {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .EmsRules.EmsRulesShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .EmsRules.EmsRulesShow .EmsRulesBody {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .EmsRules .EmsRulesBody {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    transform: translateY(100%);
+    background: #fff;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    overflow-y: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .EmsRulesBody .EmsRulesBodyContent {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .EmsRulesBodyContentHeaderTitle {
+    position: relative;
+    padding: 10px;
+  }
+  .EmsRulesBodyContentHeaderTitle h4 {
+    position: relative;
+    font-size: 30px;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .EmsRulesBodyContentHeaderTitle p {
+    position: relative;
+    font-size: 13px;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .EmsRulesBodyContentHeaderTitle .EmsRulesBodyContentHeaderIcon {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+  }
+  .EmsRulesBodyContentHeaderTitle .EmsRulesBodyContentHeaderIcon i {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10ox;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+  }
+  .EmsRulesBodyContentHeaderTitle .EmsRulesBodyContentHeaderIcon i:hover {
+    font-size: 25px;
+    background: #eee;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .EmsRulesBodyMeta {
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    paddding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .EmsRulesBodyMeta .EmsRulesBodyMetaContent {
+    position: relative;
+    display: flex;
+  }
+  .EmsRulesBodyMetaContent i {
+    font-size: 23px;
+    color: red;
+    margin-right: 5px;
+  }
+  .EmsRulesBodyMetaContent .MkIcRulesCheck {
+    color: aqua;
+  }
+  .EmsRulesBodyMetaContent h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .EmsRulesBodyMetaFooter {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    font-family: "Rajdhani", sans-serif;
+    top: 30px;
+  }
+  .EmsRulesBodyMetaFooter h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
   }
   /* End Ems Video */
 }
