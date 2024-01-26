@@ -26,10 +26,13 @@ const AppContent = document.querySelector(".AppContent");
 const IntroContent = document.querySelector(".IntroContent");
 const EmsRules = document.querySelector(".EmsRules");
 const EmsVideoIntx = document.querySelector(".EmsVideoIntx");
+const EmsJoinxx = document.querySelector(".EmsJoinxx");
+const EmsJoinxxOverlay = document.querySelector(".EmsJoinxxOverlay");
 const HeaderTitleApp = document.getElementById("HeaderTitleApp");
 const NameOne = document.getElementById("NameOne");
 const NameTwo = document.getElementById("NameTwo");
 const NameThree = document.getElementById("NameThree");
+const EmsxxxAudio = document.getElementById("EmsxxxAudio");
 
 EmsMenuToggle.onclick = function () {
   EmsMenuContentTeamFams.classList.toggle("TeamUpdateHeight");
@@ -101,12 +104,16 @@ function CloseVidContent() {
 }
 function OpenVideoBodyContent() {
   EmsVideoBody.classList.add("EmsVideoBodyShow");
+  EmsMenu.classList.remove("EmsMenuShow");
   $("#EmsVideoMegaCollabA").prop("muted", true);
   $("#EmsVideoMegaCollabA").prop("autoplay", false);
   $("#EmsVideoMegaCollabB").prop("muted", true);
   $("#EmsVideoMegaCollabB").prop("autoplay", false);
   $("#EmsVideoMegaCollabC").prop("muted", true);
   $("#EmsVideoMegaCollabC").prop("autoplay", false);
+}
+function MkLoader() {
+  EmsxxxAudio.play();
 }
 function OpenDownloadIntro() {
   EmsVideoIntx.classList.add("EmsVideoIntxShow");
@@ -121,17 +128,13 @@ function OpenRules() {
   EmsRules.classList.add("EmsRulesShow");
   EmsMenu.classList.remove("EmsMenuShow");
 }
-function CloseRules() {
-  EmsRules.classList.remove("EmsRulesShow");
-  EmsMenu.classList.add("EmsMenuShow");
-}
 function AuthorOpenedz() {
   EmsAuthor.classList.add("AuthorShow");
   EmsBodyAll.classList.add("Hide");
 }
 function OpenApp() {
   EmsApp.classList.add("EmsAppShow");
-  EmsMenu.classList.remove("EmsMenuShow");
+  EmsMenu.classList.add("Mkflip");
 }
 function OpenSong() {
   EmsSong.classList.add("EmsSongShow");
@@ -151,11 +154,15 @@ function CloseIntDown() {
 }
 function CloseApp() {
   EmsApp.classList.remove("EmsAppShow");
-  EmsMenu.classList.add("EmsMenuShow");
+  EmsMenu.classList.remove("Mkflip");
 }
 function CloseMusic() {
   EmsMenu.classList.add("EmsMenuShow");
   EmsSong.classList.remove("EmsSongShow");
+}
+function CloseRules() {
+  EmsRules.classList.remove("EmsRulesShow");
+  EmsMenu.classList.add("EmsMenuShow");
 }
 function OpenMenu() {
   EmsMenu.classList.add("EmsMenuShow");
@@ -163,6 +170,7 @@ function OpenMenu() {
 }
 function EmsMenuClose() {
   EmsMenu.classList.remove("EmsMenuShow");
+  EmsMenuContentTeamFams.classList.remove("TeamUpdateHeight");
   EmsBodyAll.classList.remove("Hide");
 }
 function UpdateHeightTeam() {
@@ -174,10 +182,12 @@ function UpdateHeightTeam() {
 const hideBottomSheet = () => {
   EmsMenu.classList.add("EmsMenuShow");
   EmsLink.classList.remove("EmsLinkShow");
+  EmsJoinxx.classList.remove("EmsJoinxxShow");
+  EmsMenu.classList.remove("Mkflip");
 };
 
 EmsLinkOverlay.addEventListener("click", hideBottomSheet);
-
+EmsJoinxxOverlay.addEventListener("click", hideBottomSheet);
 /// Link Authorized ///
 
 /// Instagram Link ///
