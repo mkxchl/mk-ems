@@ -41,6 +41,10 @@ body {
   .EmsVideoBody {
     display: none;
   }
+  #EmsxxxAudio {
+    opacity: 0;
+    display: none;
+  }
   .MkxEmsBackground {
     position: absolute;
     width: 100%;
@@ -65,6 +69,10 @@ body {
   .EmsVideoIntx,
   .EmsVideo,
   .EmsVideoBody {
+    display: none;
+  }
+  #EmsxxxAudio {
+    opacity: 0;
     display: none;
   }
   .MkxEmsBackground {
@@ -92,6 +100,10 @@ body {
   .EmsVideoBody {
     display: none;
   }
+  #EmsxxxAudio {
+    opacity: 0;
+    display: none;
+  }
   .MkxEmsBackground {
     position: absolute;
     width: 100%;
@@ -116,6 +128,10 @@ body {
   .EmsVideoIntx,,
   .EmsVideo,
   .EmsVideoBody {
+    display: none;
+  }
+  #EmsxxxAudio {
+    opacity: 0;
     display: none;
   }
   .MkxEmsBackground {
