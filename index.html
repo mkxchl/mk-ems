@@ -12,12 +12,12 @@
     <meta property="og:title" content="EMS REVOLUTION - Officiall website editor miring squad revolution!" />
     <meta property="og:description" content="Coding by Marchell Kevandra" />
     <meta property="og:url" content="https://ems-links.netlify.app/" />
-    <meta property="og:image" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
-    <meta property="og:image:secure_url" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <meta property="og:image" content="https://ems-links.netlify.app/assets/images/assets/images/ems-panel.png" />
+    <meta property="og:image:secure_url" content="https://ems-links.netlify.app/assets/images/assets/images/ems-panel.png" />
     <meta property="og:author" content="Chellxz" />
     <!-- Link Rel Assets -->
-    <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/assets/images/ems-panel.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/assets/images/ems-panel.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
@@ -29,7 +29,7 @@
       color: #0000004f;
     }
   </style>
-  <body>
+  <body onload="MkLoader()">
     <!-- Start Background All -->
     <div class="MkxEmsBackground"></div>
     <!-- End Background All -->
@@ -37,7 +37,7 @@
     <section class="EmsBodyAll">
       <div class="MkListChoose">
         <div class="MkListChooseIcon">
-          <div class="MkListChooseIconUser" onclick="OpenIntro()">
+          <div class="MkListChooseIconUser" onclick="AuthorOpenedz()">
             <i class="bx bx-user"></i>
             <p>Author</p>
           </div>
@@ -112,7 +112,7 @@
             </div>
             <!-- Staff Two -->
             <div class="EmsAuthorContentStaffImagesThumbnail">
-              <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+              <img src="https://ems-links.netlify.app/assets/images/Mk_Logo.jpg" />
             </div>
             <div class="EmsAuthorContentStaffIinfo">
               <div class="EmsAuthorContentStaffInfoHeader">
@@ -129,7 +129,7 @@
                   </li>
                   <li>
                     <span>Status</span>
-                    Founder
+                    Co Founder
                   </li>
                   <li>
                     <span>Age's</span>
@@ -148,16 +148,17 @@
                 </div>
               </div>
             </div>
-            <!-- Staff Three -->
+
+            <!-- Staff Four -->
             <div class="EmsAuthorContentStaffImagesThumbnail">
-              <img src="https://ems-links.netlify.app/assets/images/thyn.jpg" />
+              <img src="assets/images/Ags-V2.jpg" />
             </div>
             <div class="EmsAuthorContentStaffIinfo">
               <div class="EmsAuthorContentStaffInfoHeader">
-                <h4>Founder</h4>
+                <h4>Co Leader</h4>
               </div>
               <div class="EmsAuthorContentStaffIinfoName">
-                <h4>Thyan Story</h4>
+                <h4>Agus Capital</h4>
               </div>
               <div class="EmsAuthorContentStaffIinfoPlace">
                 <ul>
@@ -167,11 +168,11 @@
                   </li>
                   <li>
                     <span>Status</span>
-                    Founder
+                    Co Founder
                   </li>
                   <li>
                     <span>Age's</span>
-                    23 Years
+                    19 Years
                   </li>
                 </ul>
               </div>
@@ -180,13 +181,13 @@
                   <h5>Follow Us</h5>
                 </div>
                 <div class="EmsAuthorContentStaffIinfoSocialMediaContent">
-                  <i class="bx bxl-instagram" onclick="ThInsta()"></i>
+                  <i class="bx bxl-instagram" onclick="AgsInsta()"></i>
                   <i class="bx bxl-facebook"></i>
                   <i class="bx bxl-youtube"></i>
                 </div>
               </div>
             </div>
-            <!-- Staff Four -->
+            <!-- Staff Five -->
             <div class="EmsAuthorContentStaffImagesThumbnail">
               <img src="https://ems-links.netlify.app/assets/images/profile.jpg" />
             </div>
@@ -224,16 +225,16 @@
                 </div>
               </div>
             </div>
-            <!-- Staff Five -->
+            <!-- Staff Three -->
             <div class="EmsAuthorContentStaffImagesThumbnail">
-              <img src="assets/images/Ags-V2.jpg" />
+              <img src="https://ems-links.netlify.app/assets/images/thyn.jpg" />
             </div>
             <div class="EmsAuthorContentStaffIinfo">
               <div class="EmsAuthorContentStaffInfoHeader">
-                <h4>Co Leader</h4>
+                <h4>Founder</h4>
               </div>
               <div class="EmsAuthorContentStaffIinfoName">
-                <h4>Agus Capital</h4>
+                <h4>Thyan Story</h4>
               </div>
               <div class="EmsAuthorContentStaffIinfoPlace">
                 <ul>
@@ -247,7 +248,7 @@
                   </li>
                   <li>
                     <span>Age's</span>
-                    19 Years
+                    23 Years
                   </li>
                 </ul>
               </div>
@@ -256,7 +257,7 @@
                   <h5>Follow Us</h5>
                 </div>
                 <div class="EmsAuthorContentStaffIinfoSocialMediaContent">
-                  <i class="bx bxl-instagram" onclick="AgsInsta()"></i>
+                  <i class="bx bxl-instagram" onclick="ThInsta()"></i>
                   <i class="bx bxl-facebook"></i>
                   <i class="bx bxl-youtube"></i>
                 </div>
@@ -278,7 +279,7 @@
           <div class="EmsTeamSupport">
             <h4>Thanks to</h4>
             <div class="EmsTeamSupportImages">
-              <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+              <img src="https://ems-links.netlify.app/assets/images/Mk_Logo.jpg" />
               <img src="https://ems-links.netlify.app/assets/images/TNG.jpg" />
               <img src="https://ems-links.netlify.app/assets/images/tca.jpg" />
             </div>
@@ -355,7 +356,7 @@
               </div>
             </div>
             <div class="EmsMenuContentFeature">
-              <div class="EmsMenuContentFeatureList" onclick="OpenVideo()">
+              <div class="EmsMenuContentFeatureList" onclick="OpenVideoBodyContent()">
                 <i class="ri-archive-line"></i>
                 <h4>Archive</h4>
               </div>
@@ -374,9 +375,9 @@
                 <h4>Link</h4>
               </div>
             </div> -->
-            <div class="EmsMenuContentJoin">
-              <h4>You can join to Ems Revolution ? <b class="EmsJoin">Join Here</b></h4>
-            </div>
+            <!-- <div class="EmsMenuContentJoin">
+              <h4>You can join to Ems Revolution ? <b class="EmsJoin" onclick="EmsJoinxxx()">Join Here</b></h4>
+            </div> -->
           </div>
         </div>
       </div>
@@ -640,6 +641,12 @@
       </div>
     </div>
     <!-- End Videos B -->
+    <!-- Start Join -->
+    <!-- End Join -->
+    <!-- Audio Libraries -->
+    <audio id="EmsxxxAudio">
+      <source src="https://ems-links.netlify.app/am/mix/MkxchlSong-5.mp3" type="audio/mpeg" />
+    </audio>
     <script src="https://ems-links.netlify.app/assets/js/query.min.js"></script>
     <script src="main.js"></script>
   </body>
