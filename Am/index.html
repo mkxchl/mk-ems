@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#2d5cfe" />
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
     <!-- Meta Property -->
@@ -30,7 +30,7 @@
       }
     </style>
   </head>
-  <body onload="MkLoader()">
+  <body onload="MkLoader()" id="BodyAll">
     <div class="MkBackground"></div>
     <div class="MkPreloader">
       <div class="PreloaderContent">
@@ -118,6 +118,19 @@
                 </div>
                 <div class="MkxxchlPhotoBodyList">
                   <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="MkxxchlPortfolioBody">
+              <div class="MkxxchlPortfolioBodyContent">
+                <div class="MkxxchlPortfolioBodyHeaderTitle">
+                  <h4>Portfolio</h4>
+                </div>
+                <div class="MkxxchlPortfolioBodyList" onclick="MkPortfolio()">
+                  <i class="bx bx-link"></i>
+                  <div class="MkxxchlPortfolioBodyListContent">
+                    <h4>Portfolio - Marchell Kevandra</h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -386,7 +399,7 @@
         <div class="MkGameContentBody">
           <i class="bx bx-joystick"></i>
         </div>
-        <div class="MkGameContentBody">
+        <div class="MkGameContentBody" onclick="location.href='menja/'">
           <i class="bx bx-joystick"></i>
         </div>
       </div>
