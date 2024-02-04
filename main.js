@@ -19,6 +19,8 @@ const EmsVideoBodyContent = document.querySelector(".EmsVideoBodyContent");
 const EmsIntro = document.querySelector(".EmsIntro");
 const EmsIntroOverlay = document.querySelector(".EmsIntroOverlay");
 const EmsIntroContent = document.querySelector(".EmsIntroContent");
+const MkAccount = document.querySelector(".MkAccount");
+const MkAccountOverlay = document.querySelector(".MkAccountOverlay");
 const EmsAx = document.querySelector(".EmsAx");
 const EmsBx = document.querySelector(".EmsBx");
 const EmsCx = document.querySelector(".EmsCx");
@@ -114,6 +116,7 @@ function OpenVideoBodyContent() {
 }
 function MkLoader() {
   EmsxxxAudio.play();
+  elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
 }
 function OpenDownloadIntro() {
   EmsVideoIntx.classList.add("EmsVideoIntxShow");
@@ -164,6 +167,10 @@ function CloseRules() {
   EmsRules.classList.remove("EmsRulesShow");
   EmsMenu.classList.add("EmsMenuShow");
 }
+function CloseMkAccount() {
+  MkAccount.classList.remove("MkAccountShow");
+  EmsBodyAll.classList.remove("Hide");
+}
 function OpenMenu() {
   EmsMenu.classList.add("EmsMenuShow");
   EmsBodyAll.classList.add("Hide");
@@ -176,7 +183,10 @@ function EmsMenuClose() {
 function UpdateHeightTeam() {
   EmsMenuContentTeamFams.classList.add("TeamUpdateHeight");
 }
-
+function ContactAdmin() {
+  MkAccount.classList.add("MkAccountShow");
+  EmsBodyAll.classList.add("Hide");
+}
 /// Hide ///
 
 const hideBottomSheet = () => {
@@ -184,10 +194,12 @@ const hideBottomSheet = () => {
   EmsLink.classList.remove("EmsLinkShow");
   EmsJoinxx.classList.remove("EmsJoinxxShow");
   EmsMenu.classList.remove("Mkflip");
+  MkAccount.classList.remove("MkAccountShow");
 };
 
 EmsLinkOverlay.addEventListener("click", hideBottomSheet);
-EmsJoinxxOverlay.addEventListener("click", hideBottomSheet);
+MkAccountOverlay.addEventListener("click", hideBottomSheet);
+
 /// Link Authorized ///
 
 /// Instagram Link ///
@@ -224,6 +236,9 @@ function EmsIntBx() {
 }
 function EmsIntCx() {
   window.location.replace("https://www.mediafire.com/file/x6fxjvduthq2aq7/video+(3).mkv/file");
+}
+function MkDirect() {
+  window.location.replace("https://www.instagram.com/direct/t/115407013181858");
 }
 /// Block Inspect ///
 
