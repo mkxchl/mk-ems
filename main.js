@@ -30,6 +30,8 @@ const EmsRules = document.querySelector(".EmsRules");
 const EmsVideoIntx = document.querySelector(".EmsVideoIntx");
 const EmsJoinxx = document.querySelector(".EmsJoinxx");
 const EmsJoinxxOverlay = document.querySelector(".EmsJoinxxOverlay");
+const MkAccountBodyContent = document.querySelector(".MkAccountBodyContent");
+const MkAccountBodyHeader = document.querySelector(".MkAccountBodyHeader");
 const HeaderTitleApp = document.getElementById("HeaderTitleApp");
 const NameOne = document.getElementById("NameOne");
 const NameTwo = document.getElementById("NameTwo");
@@ -168,8 +170,11 @@ function CloseRules() {
   EmsMenu.classList.add("EmsMenuShow");
 }
 function CloseMkAccount() {
-  MkAccount.classList.remove("MkAccountShow");
-  EmsBodyAll.classList.remove("Hide");
+  MkAccountBodyHeader.classList.remove("MkIconShowCloseAccount");
+  setTimeout(function () {
+    EmsBodyAll.classList.remove("Hide");
+    MkAccount.classList.remove("MkAccountShow");
+  }, 500);
 }
 function OpenMenu() {
   EmsMenu.classList.add("EmsMenuShow");
@@ -186,6 +191,10 @@ function UpdateHeightTeam() {
 function ContactAdmin() {
   MkAccount.classList.add("MkAccountShow");
   EmsBodyAll.classList.add("Hide");
+  MkAccountBodyContent.classList.add("UpdateBodyHeight");
+  setTimeout(function () {
+    MkAccountBodyHeader.classList.add("MkIconShowCloseAccount");
+  }, 1500);
 }
 /// Hide ///
 
