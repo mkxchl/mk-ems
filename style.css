@@ -1708,11 +1708,16 @@ body {
   .MkAccountContent .MkAccountBodyContent {
     position: relative;
     top: 25%;
-    height: 50%;
+    height: 15%;
     margin-left: 10px;
     margin-right: 10px;
     background: #fff;
     border-radius: 30px;
+  }
+  .MkAccountContent .MkAccountBodyContent.UpdateBodyHeight {
+    top: 25%;
+    height: 48%;
+    transition: 0.5s height cubic-bezier(0.86, 0, 0.07, 1);
   }
   .MkAccountBodyContent .MkAccountBodyHeader {
     position: absolute; 
