@@ -287,14 +287,16 @@ body {
     text-align: center;
   }
   .MkListFooter h4 {
+    font-family: "Rajdhani", sans-serif;
     font-weight: 500;
     font-size: 12px;
   }
   .MkListFooter h4 b {
-    font-family: "Gemunu Libre", sans-serif;
+    font-family: "Rajdhani", sans-serif;
     font-weight: bold;
     font-size: 15px;
     color: #2d5cfe;
+    cursor: pointer;
   }
   .EmsAuthor {
     position: fixed;
@@ -403,6 +405,47 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .ribbon{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .ribbon::before, .ribbon::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    border: 7px solid #4606ac;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  .ribbon::before{
+    top: 0px;
+    right: 15px;
+  }
+  .ribbon::after{
+    bottom: 15px;
+    left: 0px;
+  }
+  .ribbon span{
+    position: absolute;
+    top: 4px;
+    left: -28px;
+    /* right: 0; */
+    transform: rotate(-45deg);
+    width: 100px;
+    background: #fff;
+    padding: 10px 0;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.12); */
+  }
   .EmsAuthorContentStaff .EmsAuthorContentStaffImagesThumbnail {
     position: relative;
     justify-content: center;
@@ -436,7 +479,7 @@ body {
     width: 16px;
     height: 16px;
     margin-top: 1px;
-    margin-left: 8px;
+    margin-left: 5px;
   }
   .EmsAuthorContentStaffIinfoPlace {
     position: relative;
@@ -1795,6 +1838,99 @@ body {
     opacity: 0.2;
     overflow: hidden;
   }
+  .EmsCodex {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .EmsCodex.CodexHide {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  :where(.EmsCodexContainer, form, .input-field, header) {
+    position: relative;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .EmsCodexContainer {
+    position: relative;
+    top: 30%;
+    background: #fff;
+    padding: 30px 65px;
+    border-radius: 12px;
+    row-gap: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Rajdhani", sans-serif;
+  }
+  .EmsCodexContainer header {
+    height: 65px;
+    width: 65px;
+    background: #4070f4;
+    color: #fff;
+    font-size: 2.5rem;
+    border-radius: 50%;
+  }
+  .EmsCodexContainer h4 {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 500;
+  }
+  form .input-field {
+    flex-direction: row;
+    column-gap: 10px;
+  }
+  .input-field input {
+    height: 45px;
+    width: 42px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  .input-field input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  .input-field input::-webkit-inner-spin-button,
+  .input-field input::-webkit-outer-spin-button {
+    display: none;
+  }
+  form button {
+    margin-top: 25px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 9px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    pointer-events: none;
+    background: #6e93f7;
+    transition: all 0.2s ease;
+  }
+  form button.active {
+    background: #4070f4;
+    pointer-events: auto;
+  }
+  form button:hover {
+    background: #0e4bf1;
+  }
   section {
     position: relative;
     min-height: 100vh;
@@ -1810,6 +1946,12 @@ body {
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
   }
   .EmsBodyAll.Hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    transform: translateY(100%);
+  }
+  .EmsBodyAll.UpdateBg {
     opacity: 0;
     pointer-events: none;
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
@@ -1884,11 +2026,12 @@ body {
     text-align: center;
   }
   .MkListFooter h4 {
+    font-family: "Rajdhani", sans-serif;
     font-weight: 500;
     font-size: 12px;
   }
   .MkListFooter h4 b {
-    font-family: "Gemunu Libre", sans-serif;
+    font-family: "Rajdhani", sans-serif;
     font-weight: bold;
     font-size: 14px;
     color: #2d5cfe;
@@ -2016,6 +2159,47 @@ body {
     margin-top: 30px;
     margin-bottom: 10px;
   }
+  .ribbon{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .ribbon::before, .ribbon::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    border: 7px solid #4606ac;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  .ribbon::before{
+    top: 0px;
+    right: 15px;
+  }
+  .ribbon::after{
+    bottom: 15px;
+    left: 0px;
+  }
+  .ribbon span{
+    position: absolute;
+    top: 4px;
+    left: -28px;
+    /* right: 0; */
+    transform: rotate(-45deg);
+    width: 100px;
+    background: #fff;
+    padding: 10px 0;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.12); */
+  }
   .EmsAuthorContentStaff .EmsAuthorContentStaffImagesThumbnail img {
     width: 100%;
     border-radius: 5px;
@@ -2040,7 +2224,7 @@ body {
     width: 16px;
     height: 16px;
     margin-top: 1px;
-    margin-left: 8px;
+    margin-left: 5px;
   }
   .EmsAuthorContentStaffIinfoPlace {
     position: relative;
@@ -2105,6 +2289,10 @@ body {
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: -1px;
+  }
+  .EmsTeamSupport .MkTextLink {
+    font-size: 14px;
+    font-weight: 500;
   }
   .EmsTeamSupportImages img {
     margin: 10px;
@@ -3202,28 +3390,44 @@ body {
     height: 100vh;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow: auto;
+    overflow: hidden;
   }
   .MkAccountContent .MkAccountBodyContent {
     position: relative;
-    top: 25%;
-    height: 53%;
+    top: 40%;
+    height: 15%;
+    overflow: hidden;
     margin-left: 10px;
     margin-right: 10px;
     background: #fff;
     border-radius: 30px;
+    transition: 0.5s height cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MkAccountContent .MkAccountBodyContent.UpdateBodyHeight {
+    top: 25%;
+    height: 50%;
+    transition: 0.5s height cubic-bezier(0.86, 0, 0.07, 1);
   }
   .MkAccountBodyContent .MkAccountBodyHeader {
-    position: absolute; 
+    position: fixed; 
     left: 0;
     right: 0;
-    bottom: -70px;
+    bottom: -30px;
     justify-content: center;
     align-items: center;
     text-align: center;
     place-items: center;
     place-content: center;
-    z-index: 9999999;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999999999;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MkAccountBodyContent .MkAccountBodyHeader.MkIconShowCloseAccount {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
   }
   .MkAccountBodyContent .MkAccountBodyHeader i {
     background: #fff;
