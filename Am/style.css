@@ -2793,6 +2793,7 @@ body.dark-theme .MkHeaderBody .MkxxchlFooter h4 {
   }
   .MkxxchlProfileName p {
     font-size: 16px;
+    text-transform: uppercase;
   }
   .MkxxchlProfileName .MkxxchlProfileBio {
     font-size: 17px;
@@ -2820,7 +2821,7 @@ body.dark-theme .MkHeaderBody .MkxxchlFooter h4 {
   .MkxxchlProfileButton .MkxxchlProfileButtonContent i {
     position: relative;
     top: 3px;
-    left: 70px;
+    left: 120px;
     font-size: 20px;
     cursor: pointer;
     margin: 10px;
@@ -4806,6 +4807,148 @@ body.dark-theme .MkHeaderBody .MkxxchlFooter h4 {
     color: #000;
     transition: 0.5s ease-in-out;
   }
+  /* .MKxxJasa {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 99999999;
+  }
+  .MKxxJasa .MKxxJasaOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .MKxxJasa.MKxxJasaShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MKxxJasa.MKxxJasaShow .MKxxJasaContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MKxxJasa .MKxxJasaContent {
+    position: relative;
+    width: 100%;
+    top: 40%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MKxxJasaContent .MKxxJasaBodyContent {
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  .MKxxJasaBodyMeta {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+  }
+  .MKxxJasaBodyMeta h4 {
+    position: Relative;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+  .MKxxJasaBodyMeta:hover {
+    background: rgba(0,0,0,0.1);
+    transition: 0.5s ease-in-out;
+  }
+  .MKxxJasaRmx {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 99999999;
+  }
+  .MKxxJasaRmx .MKxxJasaRmxOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: #000;
+  }
+  .MKxxJasaRmx.MKxxJasaRmxShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .MKxxJasaRmx.MKxxJasaRmxShow .MKxxJasaRmxContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MKxxJasaRmx .MKxxJasaRmxContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .MKxxJasaRmxBodyContent {
+    position: relative;
+    overflow: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: #fff;
+  }
+  .MKxxJasaRmxContentHeader .MKxxJasaRmxContentHeaderImages img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .MKxxJasaRmxContentText {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #000;
+  }
+  .MKxxJasaRmxContentText h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .MKxxJasaRmxContentText p {
+    font-size: 16px;
+  }
+  .MKxxJasaRmxContentList {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  } */
 }
 @keyframes flash {
   0% {
