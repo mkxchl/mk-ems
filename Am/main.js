@@ -24,7 +24,11 @@ const MkPageMediaSocialInstaBodyButton = document.querySelector(".MkPageMediaSoc
 const MKxxChlxxMusic = document.querySelector(".MKxxChlxxMusic");
 const MKxxChlxxMusicContent = document.querySelector(".MKxxChlxxMusicContent");
 const MkxxchlProfileMeta = document.querySelector(".MkxxchlProfileMeta");
+const MKxxJasaRmxOverlay = document.querySelector(".MKxxJasaRmxOverlay");
 const MkxChlNav = document.querySelector(".MkxChlNav");
+const MKxxJasa = document.querySelector(".MKxxJasa");
+const MKxxJasaOverlay = document.querySelector(".MKxxJasaOverlay");
+const MKxxJasaRmx = document.querySelector(".MKxxJasaRmx");
 const body = document.querySelector("body");
 const MkAudio = document.getElementById("MkAudio");
 const MkAudioA = document.getElementById("MkAudioA");
@@ -37,8 +41,33 @@ const ButtonLlnkSocialMedia = document.getElementById("ButtonLlnkSocialMedia");
 const iconInsta = "ri-instagram-line";
 const iconFace = "ri-facebook-line";
 const iconTkTok = "ri-tiktok-line";
+const iconGit = "ri-github-line";
 var elem = document.documentElement;
 
+MKxxJasaOverlay.addEventListener("click", function () {
+  MKxxJasa.classList.remove("MKxxJasaShow");
+  MkHeaderBody.classList.remove("Hide");
+  MkxChlNav.classList.add("MkxChlNavShow");
+});
+MKxxJasaRmxOverlay.addEventListener("click", function () {
+  MKxxJasaRmx.classList.remove("MKxxJasaRmxShow");
+  MkHeaderBody.classList.remove("Hide");
+});
+function OpenJasaRemix() {
+  MKxxJasaRmx.classList.add("MKxxJasaRmxShow");
+  MkHeaderBody.classList.add("Hide");
+  MKxxJasa.classList.remove("MKxxJasaShow");
+}
+function MkLoader() {
+  MkPreloader.classList.add("MkPreloaderShow");
+  MkHeaderBody.classList.add("Hide");
+  setTimeout(function () {
+    MkPreloader.classList.remove("MkPreloaderShow");
+    MkHeaderBody.classList.remove("Hide");
+    MkAudio.play();
+    elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
+  }, 5000);
+}
 function BtnPst() {
   MkxxchlProfileMeta.classList.remove("MkxxchlProfileMetaHide");
   MkxxchlProfileMeta.classList.add("MkxxchlProfileMetaVis");
@@ -134,6 +163,22 @@ function OpenTkTok() {
     MkHeaderBody.classList.remove("Hide");
   });
 }
+function MkxXxGithub() {
+  MkPageMediaSocialInsta.classList.add("MkPageMediaSocialInstaShow");
+  MkHeaderBody.classList.add("Hide");
+  MkScMediaFlw.classList.remove("MkScMediaFlwShow");
+  TitleSocialMedia.innerHTML = "Marchell Kevandra";
+  DescSocialMedia.innerHTML = "github.com/mkxchl";
+  IconSocialMedia.className = "bx bxl-github";
+  BtnSocialMediax.innerHTML = "Open Github";
+  IconSocialMedia.style.background = "#000";
+  MkPageMediaSocialInstaBodyButton.style.background = "#000";
+  BtnSocialMediax.addEventListener("click", function () {
+    window.location.replace("https://github.com/mkxchl");
+    MkPageMediaSocialInsta.classList.remove("MkPageMediaSocialInstaShow");
+    MkHeaderBody.classList.remove("Hide");
+  });
+}
 function OpenChat() {
   MkChat.classList.add("MkChatShow");
   MkChatHeaderJoin.classList.remove("HideJoin");
@@ -194,16 +239,6 @@ function CloseSpotify() {
   MkHeaderBody.classList.remove("Hide");
   body.style.background = "#fff";
 }
-function MkLoader() {
-  MkPreloader.classList.add("MkPreloaderShow");
-  MkHeaderBody.classList.add("Hide");
-  setTimeout(function () {
-    MkPreloader.classList.remove("MkPreloaderShow");
-    MkHeaderBody.classList.remove("Hide");
-    MkAudio.play();
-    elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
-  }, 5000);
-}
 function OpenTele() {
   MkPreloader.classList.add("MkPreloaderShow");
   setTimeout(function () {
@@ -241,6 +276,12 @@ MkSupportOverlay.addEventListener("click", function () {
   MkHeaderBody.classList.remove("Hide");
 });
 
+function OpenedJasa() {
+  MKxxJasa.classList.add("MKxxJasaShow");
+  MkxChlNav.classList.remove("MkxChlNavShow");
+  MkHeaderBody.classList.add("Hide");
+}
+
 function MkCloseOverlay() {
   MkIconMenu.classList.remove("MkIconMenuShow");
 }
@@ -252,9 +293,6 @@ function MkxXxTiktok() {
 }
 function MkxXxFacebook() {
   window.location.replace("https://facebook.com/chellgnzxz");
-}
-function MkxXxGithub() {
-  window.location.replace("https://github.com/mkxchl");
 }
 function MkxXxEms() {
   window.location.replace("https://ems-links.netlify.app/");
