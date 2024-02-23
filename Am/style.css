@@ -473,6 +473,12 @@ body.dark-theme .MkHeaderBody .MkxxchlFooter h4 {
   .MkxxchlProfileName h4 {
     font-size: 25px;
   }
+  .MkxxchlProfileName img {
+    position: absolute;
+    width: 20px;
+    top: 6px;
+    right: 75px;
+  }
   .MkxxchlProfileName p {
     font-size: 16px;
   }
@@ -502,7 +508,7 @@ body.dark-theme .MkHeaderBody .MkxxchlFooter h4 {
   .MkxxchlProfileButton .MkxxchlProfileButtonContent i {
     position: relative;
     top: 3px;
-    left: 95px;
+    left: 150px;
     font-size: 20px;
     cursor: pointer;
     margin: 10px;
@@ -2790,6 +2796,12 @@ body.dark-theme .MkHeaderBody .MkxxchlFooter h4 {
   }
   .MkxxchlProfileName h4 {
     font-size: 25px;
+  }
+  .MkxxchlProfileName img {
+    position: absolute;
+    width: 20px;
+    top: 6px;
+    right: 55px;
   }
   .MkxxchlProfileName p {
     font-size: 16px;
