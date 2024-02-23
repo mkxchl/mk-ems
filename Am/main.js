@@ -53,6 +53,11 @@ MKxxJasaRmxOverlay.addEventListener("click", function () {
   MKxxJasaRmx.classList.remove("MKxxJasaRmxShow");
   MkHeaderBody.classList.remove("Hide");
 });
+
+function closeGames() {
+  MkGame.classList.remove("MkGameShow");
+}
+
 function OpenJasaRemix() {
   MKxxJasaRmx.classList.add("MKxxJasaRmxShow");
   MkHeaderBody.classList.add("Hide");
@@ -260,14 +265,12 @@ function CloseSupport() {
 const hideBottomSheet = () => {
   MkLink.classList.remove("MkLinkShow");
   MkHeaderBody.classList.remove("Hide");
-  MkGame.classList.remove("MkGameShow");
   MkScMediaFlw.classList.remove("MkScMediaFlwShow");
   MKProject.classList.remove("MKProjectShow");
   MkIconMenu.classList.remove("MkIconMenuShow");
   MkxChlNav.classList.add("MkxChlNavShow");
 };
 MkLinkOverlay.addEventListener("click", hideBottomSheet);
-MkGameOverlay.addEventListener("click", hideBottomSheet);
 MkScMediaFlwOverlay.addEventListener("click", hideBottomSheet);
 MKProjectOverlay.addEventListener("click", hideBottomSheet);
 
