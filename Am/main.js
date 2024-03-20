@@ -25,10 +25,15 @@ const MKxxChlxxMusic = document.querySelector(".MKxxChlxxMusic");
 const MKxxChlxxMusicContent = document.querySelector(".MKxxChlxxMusicContent");
 const MkxxchlProfileMeta = document.querySelector(".MkxxchlProfileMeta");
 const MKxxJasaRmxOverlay = document.querySelector(".MKxxJasaRmxOverlay");
+const VanzNavMenu = document.querySelector(".VanzNavMenu");
+const VanzFlip = document.querySelector(".VanzFlip");
 const MkxChlNav = document.querySelector(".MkxChlNav");
 const MKxxJasa = document.querySelector(".MKxxJasa");
 const MKxxJasaOverlay = document.querySelector(".MKxxJasaOverlay");
+const MusicVanzOverlay = document.querySelector(".MusicVanzOverlay");
 const MKxxJasaRmx = document.querySelector(".MKxxJasaRmx");
+const MkPageMediaSocialInstaButtonClose = document.querySelector(".MkPageMediaSocialInstaButtonClose");
+const MusicVanz = document.querySelector(".MusicVanz");
 const body = document.querySelector("body");
 const MkAudio = document.getElementById("MkAudio");
 const MkAudioA = document.getElementById("MkAudioA");
@@ -44,6 +49,9 @@ const iconTkTok = "ri-tiktok-line";
 const iconGit = "ri-github-line";
 var elem = document.documentElement;
 
+MusicVanzOverlay.addEventListener("click", function () {
+  MusicVanz.classList.remove("MusicVanzShow");
+});
 MKxxJasaOverlay.addEventListener("click", function () {
   MKxxJasa.classList.remove("MKxxJasaShow");
   MkHeaderBody.classList.remove("Hide");
@@ -53,11 +61,18 @@ MKxxJasaRmxOverlay.addEventListener("click", function () {
   MKxxJasaRmx.classList.remove("MKxxJasaRmxShow");
   MkHeaderBody.classList.remove("Hide");
 });
-
-function closeGames() {
-  MkGame.classList.remove("MkGameShow");
+function OpenVanzMenu() {
+  VanzNavMenu.classList.add("VanzNavMenuShow");
 }
-
+function OpenVanzFlip() {
+  VanzFlip.classList.add("VanzFlipShow");
+  MkHeaderBody.classList.add("HeaderVanzFlip");
+  MkHeaderBody.classList.remove("HeaderVanzFlipx");
+}
+function OpenSetMusic() {
+  VanzNavMenu.classList.remove("VanzNavMenuShow");
+  MusicVanz.classList.add("MusicVanzShow");
+}
 function OpenJasaRemix() {
   MKxxJasaRmx.classList.add("MKxxJasaRmxShow");
   MkHeaderBody.classList.add("Hide");
@@ -79,7 +94,6 @@ function BtnPst() {
   pst.classList.add("BtnxActive");
   ttg.classList.remove("BtnxActive");
 }
-
 function BtnTtg() {
   MkxxchlProfileMeta.classList.add("MkxxchlProfileMetaHide");
   MkxxchlProfileMeta.classList.remove("MkxxchlProfileMetaVis");
@@ -100,9 +114,6 @@ function MkxxChlMusicClose() {
 function MkPlayMusicProfile() {
   MkAudio.pause();
   MkAudioA.play();
-}
-function MkCloseNav() {
-  MkxChlNav.classList.remove("MkxChlNavShow");
 }
 function OpenProject() {
   MKProject.classList.add("MKProjectShow");
@@ -184,25 +195,51 @@ function MkxXxGithub() {
     MkHeaderBody.classList.remove("Hide");
   });
 }
+function MkxXxSpotify() {
+  MkPageMediaSocialInsta.classList.add("MkPageMediaSocialInstaShow");
+  MkHeaderBody.classList.add("Hide");
+  MkScMediaFlw.classList.remove("MkScMediaFlwShow");
+  TitleSocialMedia.innerHTML = "Marchell Kevandra";
+  DescSocialMedia.innerHTML = "Spotify Playlist";
+  IconSocialMedia.className = "bx bxl-spotify";
+  BtnSocialMediax.innerHTML = "View Playlist";
+  IconSocialMedia.style.background = "#3bd75f";
+  MkPageMediaSocialInstaBodyButton.style.background = "#3bd75f";
+  BtnSocialMediax.addEventListener("click", function () {
+    window.location.replace("https://spoti.fi/3Uz8b7i");
+    MkPageMediaSocialInsta.classList.remove("MkPageMediaSocialInstaShow");
+    MkHeaderBody.classList.remove("Hide");
+  });
+}
+function OpenIntV2() {
+  MkPageMediaSocialInsta.classList.add("MkPageMediaSocialInstaShow");
+  MkHeaderBody.classList.add("Hide");
+  MkScMediaFlw.classList.remove("MkScMediaFlwShow");
+  TitleSocialMedia.innerHTML = "Vanz";
+  DescSocialMedia.innerHTML = "instagram.com/chell.dev";
+  IconSocialMedia.className = "ri-instagram-line";
+  BtnSocialMediax.innerHTML = "Open Instagram";
+  IconSocialMedia.style.background = "#f09433;";
+  IconSocialMedia.style.background = "-moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)";
+  IconSocialMedia.style.background = "-webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)";
+  IconSocialMedia.style.background = "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%";
+  MkPageMediaSocialInstaBodyButton.style.background = "-moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)";
+  MkPageMediaSocialInstaBodyButton.style.background = "-webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)";
+  MkPageMediaSocialInstaBodyButton.style.background = "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%";
+  MkPageMediaSocialInstaBodyButton.style.background = "#f09433;";
+  BtnSocialMediax.addEventListener("click", function () {
+    window.location.replace("https://instagram.com/chell.dev");
+    MkPageMediaSocialInsta.classList.remove("MkPageMediaSocialInstaShow");
+    MkHeaderBody.classList.remove("Hide");
+  });
+}
 function OpenChat() {
   MkChat.classList.add("MkChatShow");
   MkChatHeaderJoin.classList.remove("HideJoin");
 }
 function OpenGame() {
   MkGame.classList.add("MkGameShow");
-  MkxChlNav.classList.remove("MkxChlNavShow");
-}
-function CloseChat() {
-  MkChat.classList.remove("MkChatShow");
-}
-function CloseMkInsta() {
-  MkPageMediaSocialInsta.classList.remove("MkPageMediaSocialInstaShow");
-  MkHeaderBody.classList.remove("Hide");
-  MkScMediaFlw.classList.add("MkScMediaFlwShow");
-}
-function CloseProject() {
-  MKProject.classList.remove("MKProjectShow");
-  MkHeaderBody.classList.remove("Hide");
+  VanzNavMenu.classList.remove("VanzNavMenuShow");
 }
 function OpenLink() {
   Swal.fire({
@@ -236,31 +273,25 @@ function OpenSpotify() {
   MkHeaderBody.classList.add("Hide");
   body.style.background = "#999";
 }
-function CloseFollowed() {
-  MkScMediaFlw.classList.remove("MkScMediaFlwShow");
-}
-function CloseSpotify() {
-  MkSpotify.classList.remove("MkSpotifyShow");
-  MkHeaderBody.classList.remove("Hide");
-  body.style.background = "#fff";
-}
 function OpenTele() {
-  MkPreloader.classList.add("MkPreloaderShow");
-  setTimeout(function () {
-    MkPreloader.classList.remove("MkPreloaderShow");
+  MkPageMediaSocialInsta.classList.add("MkPageMediaSocialInstaShow");
+  MkHeaderBody.classList.add("Hide");
+  MkScMediaFlw.classList.remove("MkScMediaFlwShow");
+  TitleSocialMedia.innerHTML = "Marchell Junior";
+  DescSocialMedia.innerHTML = "Telegram";
+  IconSocialMedia.className = "bx bxl-telegram";
+  BtnSocialMediax.innerHTML = "Open Telegram";
+  IconSocialMedia.style.background = "#2d5cfe";
+  MkPageMediaSocialInstaBodyButton.style.background = "#2d5cfe";
+  BtnSocialMediax.addEventListener("click", function () {
     window.location.replace("https://t.me/Marchell_Junior");
-  }, 5000);
-}
-function CloseBtn() {
-  MkChatHeaderJoin.classList.add("HideJoin");
+    MkPageMediaSocialInsta.classList.remove("MkPageMediaSocialInstaShow");
+    MkHeaderBody.classList.remove("Hide");
+  });
 }
 function OpenBlog() {
   window.location.reload();
   MkHeaderBody.classList.add("Hide");
-}
-function CloseSupport() {
-  MkSupport.classList.remove("MkSupportShow");
-  MkHeaderBody.classList.remove("Hide");
 }
 const hideBottomSheet = () => {
   MkLink.classList.remove("MkLinkShow");
@@ -278,16 +309,64 @@ MkSupportOverlay.addEventListener("click", function () {
   MkSupport.classList.remove("MkSupportShow");
   MkHeaderBody.classList.remove("Hide");
 });
-
 function OpenedJasa() {
   MKxxJasa.classList.add("MKxxJasaShow");
   MkxChlNav.classList.remove("MkxChlNavShow");
   MkHeaderBody.classList.add("Hide");
 }
 
+/// Set Close ///
+
+function VanzCloseMenu() {
+  VanzNavMenu.classList.remove("VanzNavMenuShow");
+}
+function CloseChat() {
+  MkChat.classList.remove("MkChatShow");
+}
+function CloseMkInsta() {
+  MkPageMediaSocialInsta.classList.remove("MkPageMediaSocialInstaShow");
+  MkHeaderBody.classList.remove("Hide");
+}
+function CloseProject() {
+  MKProject.classList.remove("MKProjectShow");
+  MkHeaderBody.classList.remove("Hide");
+}
+function CloseBtn() {
+  MkChatHeaderJoin.classList.add("HideJoin");
+}
+function CloseSupport() {
+  MkSupport.classList.remove("MkSupportShow");
+  MkHeaderBody.classList.remove("Hide");
+}
+function CloseFollowed() {
+  MkScMediaFlw.classList.remove("MkScMediaFlwShow");
+}
+function CloseSpotify() {
+  MkSpotify.classList.remove("MkSpotifyShow");
+  MkHeaderBody.classList.remove("Hide");
+  body.style.background = "#fff";
+}
+function MkCloseNav() {
+  MkxChlNav.classList.remove("MkxChlNavShow");
+}
+function closeGames() {
+  MkGame.classList.remove("MkGameShow");
+  VanzNavMenu.classList.add("VanzNavMenuShow");
+}
+function VanzMusicClose() {
+  MusicVanz.classList.remove("MusicVanzShow");
+  VanzNavMenu.classList.add("VanzNavMenuShow");
+}
 function MkCloseOverlay() {
   MkIconMenu.classList.remove("MkIconMenuShow");
 }
+function BackFlip() {
+  VanzFlip.classList.remove("VanzFlipShow");
+  MkHeaderBody.classList.add("HeaderVanzFlipx");
+}
+
+/// Set Links ///
+
 function MkxXxInsta() {
   window.location.replace("https://instagram.com/chellgnzxz_");
 }
@@ -302,4 +381,7 @@ function MkxXxEms() {
 }
 function MkPortfolio() {
   window.location.replace("https://mkxchl.github.io/portfolio-tailwind-css/");
+}
+function MkSpotifyPlaylistX() {
+  window.location.replace("https://spoti.fi/3Uz8b7i");
 }
