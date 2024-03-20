@@ -76,7 +76,6 @@ function MkLoader() {
     MkPreloader.classList.remove("MkPreloaderShow");
     MkHeaderBody.classList.remove("Hide");
     MkAudio.play();
-    elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
   }, 5000);
 }
 function BtnPst() {
