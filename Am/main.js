@@ -284,27 +284,6 @@ function OpenBlog() {
   window.location.reload();
   MkHeaderBody.classList.add("Hide");
 }
-const hideBottomSheet = () => {
-  MkLink.classList.remove("MkLinkShow");
-  MkHeaderBody.classList.remove("Hide");
-  MkScMediaFlw.classList.remove("MkScMediaFlwShow");
-  MKProject.classList.remove("MKProjectShow");
-  MkIconMenu.classList.remove("MkIconMenuShow");
-  MkxChlNav.classList.add("MkxChlNavShow");
-};
-MkLinkOverlay.addEventListener("click", hideBottomSheet);
-MkScMediaFlwOverlay.addEventListener("click", hideBottomSheet);
-MKProjectOverlay.addEventListener("click", hideBottomSheet);
-
-MkSupportOverlay.addEventListener("click", function () {
-  MkSupport.classList.remove("MkSupportShow");
-  MkHeaderBody.classList.remove("Hide");
-});
-function OpenedJasa() {
-  MKxxJasa.classList.add("MKxxJasaShow");
-  MkxChlNav.classList.remove("MkxChlNavShow");
-  MkHeaderBody.classList.add("Hide");
-}
 
 /// Set Close ///
 
@@ -359,7 +338,7 @@ function BackFlip() {
 /// Set Links ///
 
 function MkxXxInsta() {
-  window.location.replace("https://instagram.com/chellgnzxz_");
+  window.location.replace("https://instagram.com/marchell_kvandra");
 }
 function MkxXxTiktok() {
   window.location.replace("https://tiktok.com/@mxchl");
@@ -376,3 +355,24 @@ function MkPortfolio() {
 function MkSpotifyPlaylistX() {
   window.location.replace("https://spoti.fi/3Uz8b7i");
 }
+
+/// Unvaible Inpect Element ///
+
+document.onkeydown = function (e) {
+  if (e.keyCode == 123) {
+    window.location.replace("https://instagram.com/marchell_kvandra");
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+    window.location.replace("https://instagram.com/marchell_kvandra");
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+    window.location.replace("https://instagram.com/marchell_kvandra");
+  }
+  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+    window.location.replace("https://instagram.com/marchell_kvandra");
+  }
+
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+    window.location.replace("https://instagram.com/marchell_kvandra");
+  }
+};
