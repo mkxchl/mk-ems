@@ -52,15 +52,6 @@ var elem = document.documentElement;
 MusicVanzOverlay.addEventListener("click", function () {
   MusicVanz.classList.remove("MusicVanzShow");
 });
-MKxxJasaOverlay.addEventListener("click", function () {
-  MKxxJasa.classList.remove("MKxxJasaShow");
-  MkHeaderBody.classList.remove("Hide");
-  MkxChlNav.classList.add("MkxChlNavShow");
-});
-MKxxJasaRmxOverlay.addEventListener("click", function () {
-  MKxxJasaRmx.classList.remove("MKxxJasaRmxShow");
-  MkHeaderBody.classList.remove("Hide");
-});
 function OpenVanzMenu() {
   VanzNavMenu.classList.add("VanzNavMenuShow");
 }
