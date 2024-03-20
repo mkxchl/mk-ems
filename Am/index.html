@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <title>Mkxchl V2</title>
+    <title>Profile - Vanz</title>
+    <!-- Meta Properties -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,16 +10,17 @@
     <meta name="theme-color" content="#2d5cfe" />
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
-    <!-- Meta Property -->
-    <meta property="og:title" content="Mk Profile" />
-    <meta property="og:description" content="Mk Profile" />
+    <!-- Meta Property Description -->
+    <meta property="og:title" content="My Profiles" />
+    <meta property="og:description" content="Marchell Kevandra" />
     <meta property="og:url" content="https://ems-links.netlify.app/" />
     <meta property="og:image" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <meta property="og:image:secure_url" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <meta property="og:author" content="Marchell Kevandra" />
-    <!-- Link Rel Assets -->
+    <!-- Link Rel Assets Icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <!-- Link Rel Assets Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
@@ -47,7 +49,7 @@
       <div class="MkxChlNavContent">
         <div class="MkxChlNavBody">
           <div class="MkxChlNavBodyContent">
-            <div class="MkxChlNavBodyListContent">
+            <div class="MkxChlNavBodyListContent" onclick="OpenSetMusic()">
               <h4>Music</h4>
             </div>
             <div class="MkxChlNavBodyListContent" onclick="OpenedJasa()">
@@ -84,7 +86,7 @@
             <!-- <a onclick="BtnTtg()" id="ttg">Tentang</a> -->
             <a>About</a>
             <i class="ri-share-fill" onclick="OpenFollowed()"></i>
-            <i class="ri-menu-3-line" onclick="OpenMenuIcon()"></i>
+            <i class="ri-menu-3-line" onclick="OpenVanzMenu()"></i>
           </div>
         </div>
         <div class="MkxxchlProfileMeta">
@@ -101,7 +103,7 @@
                   </div>
                   <div class="MkxxchlProfileBodyListContent">
                     <i class="ri-map-pin-line"></i>
-                    <h4><b>From At</b> - Jakarta, Indonesia</h4>
+                    <h4><b>Place</b> - Jakarta, Indonesia</h4>
                   </div>
                   <div class="MkxxchlProfileBodyListContent">
                     <i class="ri-pushpin-line"></i>
@@ -161,6 +163,12 @@
                   <i class="ri-telegram-line"></i>
                   <div class="MkxxchlContactBodyListContent">
                     <h4>Telegram</h4>
+                  </div>
+                </div>
+                <div class="MkxxchlContactBodyList" onclick="OpenIntV2()">
+                  <i class="ri-instagram-line"></i>
+                  <div class="MkxxchlContactBodyListContent">
+                    <h4>Instagram</h4>
                   </div>
                 </div>
               </div>
@@ -421,6 +429,9 @@
         <div class="MkScMediaFlwContentBody" onclick="MkxXxGithub()">
           <i class="bx bxl-github"></i>
         </div>
+        <div class="MkScMediaFlwContentBody" onclick="MkxXxSpotify()">
+          <i class="bx bxl-spotify"></i>
+        </div>
         <div class="MkScMediaFlwContentBody BtnClose" onclick="CloseFollowed()">
           <i class="bx bx-x"></i>
         </div>
@@ -546,46 +557,73 @@
         </div>
       </div>
     </div>
-    <!-- Cooming Soon -->
-    <!-- <div class="MKxxJasa">
-      <div class="MKxxJasaOverlay"></div>
-      <div class="MKxxJasaContent">
-        <div class="MKxxJasaBodyContent">
-          <div class="MKxxJasaBodyMeta" onclick="OpenJasaRemix()">
-            <h4>Jasa Remix Lagu</h4>
+    <div class="VanzNavMenu">
+      <div class="VanzNavOverlay"></div>
+      <div class="VanzNavMenuContent">
+        <div class="VanzNavMenuBody">
+          <div class="VanzNavMenuHeader">
+            <div class="VanzNavMenuHeaderImageCover">
+              <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+              <i class="ri-close-line" onclick="VanzCloseMenu()"></i>
+              <div class="VanzNavMenuHeaderDescription">
+                <h4>Marchell Kevandra</h4>
+                <p>Be your self</p>
+              </div>
+            </div>
           </div>
-          <div class="MKxxJasaBodyMeta">
-            <h4>Jasa Web Design</h4>
+          <div class="VanzNavMenuList">
+            <h4 class="VanzTitleMenu">Menu</h4>
+            <div class="VanzNavMenuListContent">
+              <h4>Project</h4>
+              <i class="ri-tools-line"></i>
+            </div>
+            <div class="VanzNavMenuListContent" onclick="OpenSetMusic()">
+              <h4>Music</h4>
+              <i class="ri-headphone-line"></i>
+            </div>
+            <div class="VanzNavMenuListContent" onclick="OpenGame()">
+              <h4>Games</h4>
+              <i class="ri-gamepad-line"></i>
+            </div>
+            <div class="VanzNavMenuListContent" onclick="OpenVanzSetting()">
+              <h4>Settings</h4>
+              <i class="ri-settings-2-line"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="MKxxJasaRmx">
-      <div class="MKxxJasaRmxOverlay"></div>
-      <div class="MKxxJasaRmxContent">
-        <div class="MKxxJasaRmxBodyContent">
-          <div class="MKxxJasaRmxContentHeader">
-            <div class="MKxxJasaRmxContentHeaderImages">
-              <img src="https://ems-links.netlify.app/assets/images/xchl.jpg" />
-            </div>
-            <div class="MKxxJasaRmxContentText">
-              <h4>Jasa Remix DJ</h4>
-              <p>Marchell Kevandra</p>
-            </div>
-            <div class="MKxxJasaRmxContentList">
-              <h4>List Genre</h4>
-            </div>
-            <div class="MKxxJasaRmxContentListGroup"></div>
+    <div class="MusicVanz">
+      <div class="MusicVanzOverlay"></div>
+      <div class="MusicVanzContent">
+        <div class="MusicVanzBody">
+          <div class="MusicVanzHeader">
+            <h4>Set Music</h4>
+            <i class="bx bx-x" onclick="VanzMusicClose()"></i>
+          </div>
+          <div class="MusicVanzBodyContent">
+            <i class="bx bx-music"></i>
+            <h4>Lonely</h4>
+          </div>
+          <div class="MusicVanzBodyContent">
+            <i class="bx bx-music"></i>
+            <h4>Dear God</h4>
+          </div>
+          <div class="MusicVanzBodyContent">
+            <i class="bx bx-music"></i>
+            <h4>Duka</h4>
           </div>
         </div>
       </div>
-    </div> -->
-    <audio id="MkAudio">
+    </div>
+    <!-- Audio Libaries -->
+    <!-- <audio id="MkAudio">
       <source src="https://ems-links.netlify.app/am/mix/MkxchlSong-5.mp3" type="audio/mpeg" />
-    </audio>
+    </audio> -->
     <audio id="MkAudioA">
       <source src="https://ems-links.netlify.app/am/mix/MkxchlSong-1.mp3" type="audio/mpeg" />
     </audio>
+    <!-- JavaScript Libraries -->
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://ems-links.netlify.app/assets/js/query.min.js"></script>
