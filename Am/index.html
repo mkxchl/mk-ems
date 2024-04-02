@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <title>Profile - Vanz</title>
-    <!-- Meta Properties -->
+    <title>Marchell Kevandra - Profiles</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Nav Background  -->
     <meta name="theme-color" content="#2d5cfe" />
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
@@ -33,608 +31,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
-    <!-- Link Rel Assets Style -->
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      Mk {
-        color: rgba(201, 200, 200, 0.349) 141;
-      }
-    </style>
+    <!-- Link Rel Assets Style Css -->
+    <link href="style.css" rel="stylesheet" />
   </head>
-  <body onload="MkLoader()" id="BodyAll">
-    <div class="MkBackground"></div>
-    <div class="MkPreloader">
-      <div class="PreloaderContent">
-        <span>L</span>
-        <span>O</span>
-        <span>A</span>
-        <span>D</span>
-        <span>I</span>
-        <span>N</span>
-        <span>G</span>
-      </div>
-    </div>
-    <div class="MkxChlNav">
-      <div class="MkxChlNavContent">
-        <div class="MkxChlNavBody">
-          <div class="MkxChlNavBodyContent">
-            <div class="MkxChlNavBodyListContent" onclick="OpenSetMusic()">
-              <h4>Music</h4>
-            </div>
-            <div class="MkxChlNavBodyListContent" onclick="OpenedJasa()">
-              <h4>Jasa</h4>
-            </div>
-            <div class="MkxChlNavBodyListContent" onclick="OpenGame()">
-              <h4>Game</h4>
-            </div>
-            <div class="MkxChlNavBodyListContent">
-              <h4>Link</h4>
-            </div>
+  <body>
+    <div class="MkxEmsBackground"></div>
+    <!-- Vanz Body Start-->
+    <div class="VanzBody">
+      <div class="VanzBodyContent">
+        <div class="VanzBodyContentImageHeader"></div>
+        <div class="VanzBodyContentImageMeta">
+          <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+        </div>
+        <div class="VanzBodyContentNameXBio">
+          <h4>Marchell KevandRa</h4>
+          <p>Be your self</p>
+        </div>
+        <div class="VanzBodyContentAbout">
+          <div class="VanzBodyContentAboutHeader">
+            <h4>About Me</h4>
           </div>
-          <div class="MkxChlNavIconCl">
-            <i class="bx bx-x" onclick="MkCloseNav()"></i>
+          <div class="VanzBodyContentAboutMeta">
+            <p>I dont fckng care</p>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="MkHeaderBody">
-      <div class="MkxxchlProfile">
-        <div class="MkxxchlProfileThumbnail">
-          <img src="https://ems-links.netlify.app/assets/images/xchl.jpg" />
-        </div>
-        <div class="MkxxchlProfilePhoto">
-          <img src="https://ems-links.netlify.app/assets/images/logo.jpg" id="MkImageProfile" />
-        </div>
-        <div class="MkxxchlProfileName">
-          <h4>Marchell Kevandra <img src="https://ems-links.netlify.app/assets/images/mk_veriv.png" /></h4>
-          <p>1.5JT Pengikut - 0 mengikuti</p>
-        </div>
-        <div class="MkxxchlProfileButton">
-          <div class="MkxxchlProfileButtonContent">
-            <a onclick="BtnPst()" class="BtnxActive" id="pst">Post</a>
-            <!-- <a onclick="BtnTtg()" id="ttg">Tentang</a> -->
-            <a>About</a>
-            <i class="ri-share-fill" onclick="OpenFollowed()"></i>
-            <i class="ri-menu-3-line" onclick="OpenVanzMenu()"></i>
+        <div class="VanzBodyContentSince">
+          <div class="VanzBodyContentSinceHeader">
+            <h4>Member Since</h4>
           </div>
-        </div>
-        <div class="MkxxchlProfileMeta">
-          <div class="MkxxchlProfileMetaBody">
-            <div class="MkxxchlProfileBody">
-              <div class="MkxxchlProfileBodyContent">
-                <div class="MkxxchlProfileBodyHeader">
-                  <h4>Details</h4>
-                </div>
-                <div class="MkxxchlProfileBodyList">
-                  <div class="MkxxchlProfileBodyListContent">
-                    <i class="ri-information-fill"></i>
-                    <h4><b>Profil</b> - Mahasiswa</h4>
-                  </div>
-                  <div class="MkxxchlProfileBodyListContent">
-                    <i class="ri-map-pin-line"></i>
-                    <h4><b>Place</b> - Jakarta, Indonesia</h4>
-                  </div>
-                  <div class="MkxxchlProfileBodyListContent">
-                    <i class="ri-pushpin-line"></i>
-                    <h4><b>Hobby</b> - Penulis</h4>
-                  </div>
-                </div>
-              </div>
+          <div class="VanzBodyContentSinceMeta">
+            <div class="VanzBodyContentSinceMetaContent">
+              <i class="bx bxl-discord-alt"></i>
+              <p>March 7, 2023</p>
             </div>
-            <div class="MkxxchlPhotoBody">
-              <div class="MkxxchlPhotoBodyContent">
-                <div class="MkxxchlPhotoBodyHeaderTitle">
-                  <h4>Foto</h4>
-                </div>
-                <div class="MkxxchlPhotoBodyList">
-                  <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
-                </div>
-              </div>
-            </div>
-            <div class="MkxxchlPortfolioBody">
-              <div class="MkxxchlPortfolioBodyContent">
-                <div class="MkxxchlPortfolioBodyHeaderTitle">
-                  <h4>Portfolio</h4>
-                </div>
-                <div class="MkxxchlPortfolioBodyList" onclick="MkPortfolio()">
-                  <i class="bx bx-link"></i>
-                  <div class="MkxxchlPortfolioBodyListContent">
-                    <h4>Portfolio - Marchell Kevandra</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="MkxxchlMusicBody">
-              <div class="MkxxchlMusicBodyContent">
-                <div class="MkxxchlMusicBodyHeaderTitle">
-                  <h4>Music</h4>
-                </div>
-                <div class="MkxxchlMusicBodyList" onclick="MkPlayMusicProfile()">
-                  <i class="ri-headphone-line"></i>
-                  <div class="MkxxchlMusicBodyListContent">
-                    <h4>Shaving Me - Marchell Kevandra</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="MkxxchlContactBody">
-              <div class="MkxxchlContactBodyContent">
-                <div class="MkxxchlContactBodyHeaderTitle">
-                  <h4>Contact Us</h4>
-                </div>
-                <div class="MkxxchlContactBodyList" onclick="OpenEmail()">
-                  <i class="ri-mail-send-line"></i>
-                  <div class="MkxxchlContactBodyListContent">
-                    <h4>Email</h4>
-                  </div>
-                </div>
-                <div class="MkxxchlContactBodyList" onclick="OpenTele()">
-                  <i class="ri-telegram-line"></i>
-                  <div class="MkxxchlContactBodyListContent">
-                    <h4>Telegram</h4>
-                  </div>
-                </div>
-                <div class="MkxxchlContactBodyList" onclick="OpenIntV2()">
-                  <i class="ri-instagram-line"></i>
-                  <div class="MkxxchlContactBodyListContent">
-                    <h4>Instagram</h4>
-                  </div>
-                </div>
-              </div>
+            <div class="VanzBodyContentSinceMetaContent">
+              <i class="bx bxl-github"></i>
+              <p>Juli 7, 2020</p>
             </div>
           </div>
         </div>
-        <div class="MkxxchlFooter">
-          <h4>Copyright 2024 - Marchell Kevandra</h4>
-        </div>
-      </div>
-    </div>
-    <div class="MkIconMenu">
-      <div class="MkIconMenuOverlay"></div>
-      <div class="MkIconMenuContent">
-        <div class="MkIconMenuContentBody">
-          <div class="MkIconMenuContentBodyIconList">
-            <div class="MkIconMenuContentBodyIconListContent">
-              <i class="ri-links-line"></i>
-              <i class="ri-headphone-line" onclick="MkxxChlMusicPage()"></i>
-              <i class="ri-spotify-line"></i>
-            </div>
+        <div class="VanzBodyContentDetail">
+          <div class="VanzBodyContentDetailHeader">
+            <h4>Details</h4>
           </div>
-        </div>
-      </div>
-      <div class="MkIconNavBottom">
-        <i class="ri-close-fill" onclick="MkCloseOverlay()"></i>
-        <i class="ri-refresh-line" onclick="OpenBlog()"></i>
-      </div>
-    </div>
-    <div class="MkSpotify">
-      <div class="MkSpotifyContent">
-        <div class="MkSpotifyContentHeader">
-          <i class="bx bx-x" onclick="CloseSpotify()"></i>
-          <h4>Spotify Playlist</h4>
-        </div>
-        <div class="MkSpotifyContentBody">
-          <div class="MkSpotifyContentBodyImage">
-            <img src="https://ems-links.netlify.app/assets/images/logo.jpg" alt="Marchell Kevandra Spotify" />
-          </div>
-          <div class="MkSpotifyContentBodySubtitle">
-            <h4>Mk Playlist</h4>
-          </div>
-          <div class="MkSpotifyContentBodyInfo">
-            <div class="MkSpotifyContentBodyInfoPlay">
-              <i class="bx bx-play"></i>
-              <h4>Marchell Kevandra Playlist Music</h4>
-            </div>
-            <div class="MkSpotifyContentBodyInfoLike">
-              <i class="bx bx-globe"></i>
-              <h4>100.500.309 suka</h4>
-            </div>
-          </div>
-          <div class="MkSpotifyContentBodyInfoMeta">
-            <div class="MkSpotifyContentBodyInfoMetaIc">
-              <i class="bx bx-heart"></i>
-              <i class="bx bx-down-arrow-circle"></i>
-            </div>
-            <div class="MkSpotifyContentBodyInfoTrack">
-              <div class="MkSpotifyContentBodyInfoTrackIc">
-                <i class="bx bxl-spotify"></i>
-                <h4>Jakarta Hari Ini</h4>
+          <div class="VanzBodyContentDetailMeta">
+            <div class="VanzBodyContentDetailMetaBody">
+              <div class="VanzBodyContentDetailMetaBodyList" onclick="VanzMediaxx()">
+                <i class="bx bx-share-alt"></i>
+                <p>Social Media</p>
               </div>
-            </div>
-            <div class="MkSpotifyContentBodyInfoTrack">
-              <div class="MkSpotifyContentBodyInfoTrackIc">
-                <i class="bx bxl-spotify"></i>
-                <h4>Payung Teduh</h4>
-              </div>
-            </div>
-            <div class="MkSpotifyContentBodyInfoTrack">
-              <div class="MkSpotifyContentBodyInfoTrackIc">
-                <i class="bx bxl-spotify"></i>
-                <h4>Dear God</h4>
-              </div>
-            </div>
-            <div class="MkSpotifyContentBodyInfoTrack">
-              <div class="MkSpotifyContentBodyInfoTrackIc">
-                <i class="bx bxl-spotify"></i>
-                <h4>Duka</h4>
-              </div>
-            </div>
-            <div class="MkSpotifyContentBodyInfoTrack">
-              <div class="MkSpotifyContentBodyInfoTrackIc">
-                <i class="bx bxl-spotify"></i>
-                <h4>Slank</h4>
-              </div>
-            </div>
-            <div class="MkSpotifyContentBodyInfoTrack">
-              <div class="MkSpotifyContentBodyInfoTrackIc">
-                <i class="bx bxl-spotify"></i>
-                <h4>Kesepian</h4>
+              <div class="VanzBodyContentDetailMetaBodyList" onclick="alert('Sedang dalam pengkodean, Thanks - > Marchell Kevandra < ')">
+                <i class="bx bx-menu"></i>
+                <p>Menu List</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="MkLink">
-      <div class="MkLinkOverlay"></div>
-      <div class="MkLinkContent">
-        <div class="MkLinkContentBody">
-          <div class="MkLinkContentHeader">
-            <h4>Link</h4>
-          </div>
-          <div class="MkLinkContentBodyLink LinkA">
-            <i class="bx bx-link" onclick="MkxxGacorA()"></i>
-            <i class="bx bx-link" onclick="MkxxGacorB()"></i>
-            <i class="bx bx-link" onclick="MkxxGacorC()"></i>
-          </div>
-          <div class="MkLinkContentBodyLink LinkB">
-            <i class="bx bx-link" onclick="MkxxGacorD()"></i>
-            <i class="bx bx-link" onclick="MkxxGacorE()"></i>
-            <i class="bx bx-link"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="MkSupport">
-      <div class="MkSupportOverlay"></div>
-      <div class="MkSupportContent">
-        <div class="MkSupportContentHeader">
-          <h4>Team Support</h4>
-          <i class="bx bx-chevron-down" onclick="CloseSupport()"></i>
-        </div>
-        <div class="MkSupportContentTeam">
-          <div class="MkSupportContentTeamList">
-            <img src="https://ems-links.netlify.app/assets/images/tca.jpg" />
-            <div class="MkSupportContentTeamInfo">
-              <h4>Trisakti Cyber Army</h4>
-              <p>Since 2017</p>
-            </div>
-          </div>
-        </div>
-        <div class="MkSupportContentTeam">
-          <div class="MkSupportContentTeamList">
-            <img src="https://ems-links.netlify.app/assets/images/TNG.jpg" />
-            <div class="MkSupportContentTeamInfo">
-              <h4>TNG PROGRAMMER</h4>
-              <p>Since 2017</p>
-            </div>
-          </div>
-        </div>
-        <div class="MkSupportContentTeam">
-          <div class="MkSupportContentTeamList" onclick="MkxXxEms()">
-            <img src="https://ems-links.netlify.app/assets/images/Ems-rev.jpg" />
-            <div class="MkSupportContentTeamInfo">
-              <h4>EMS REV</h4>
-              <p>Since 2018</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="MkChat">
-      <div class="MkChatContent">
-        <div class="MkChatContentHeader">
-          <div class="MkChatContentHeaderIc">
-            <i class="ri-arrow-left-line" onclick="CloseChat()"></i>
-          </div>
-          <div class="MkChatContentHeaderUser">
-            <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
-            <div class="MkChatContentHeaderSubtitle">
-              <h4>Mk Fans</h4>
-              <p>Saluran Siaran</p>
-            </div>
-          </div>
-        </div>
-        <div class="MkChatBodyContent">
-          <div class="MkChatBodyContentUser">
-            <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
-            <h4>Mkxchl.id</h4>
-          </div>
-          <div class="MkChatBodyContentSocial">
-            <div class="MkChatBodyContentSocialContent">
-              <i class="ri-link-m"></i>
-              <h4>Tautan</h4>
-            </div>
-            <div class="MkChatBodyContentSocialContent">
-              <i class="ri-information-line"></i>
-              <h4>Lihat Detail</h4>
-            </div>
-          </div>
-          <div class="MkChatBodyContentDate">
-            <p>7 Jul 18.00</p>
-          </div>
-          <!-- <div class="MkChatBodyContentSaluranInfo">
-            <h4><b class="UserInfo">chellgnzxz_</b> menamai saluran ini Mk Fans</h4>
-          </div> -->
-        </div>
-        <!-- <div class="MkChatBodyContentSaluranMessage">
-          <div class="MkChatBodyContentSaluranImage">
-            <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
-          </div>
-          <div class="MkChatBodyContentSaluranTextArea">
-            <p>Jangan Lupa Follow Social Media Saya.</p>
-            <div class="MkChatBodyContentSaluranTextAreaLink">
-              <div class="MkChatBodyContentSaluranTextAreaLinkContent" onclick="MkxXxInsta()">
-                <i class="ri-instagram-line"></i>
-                <h4>chellgnzxz_</h4>
-              </div>
-              <div class="MkChatBodyContentSaluranTextAreaLinkContent" onclick="MkxXxTiktok()">
-                <i class="bx bxl-tiktok"></i>
-                <h4>Marchell Kevandra</h4>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <div class="MkChatInfoUpdate">
-          <div class="MkChatInfoUpdateContent">
-            <div class="MkChatInfoUpdateHeader">
-              <h4>New Update</h4>
-            </div>
-            <div class="MkChatInfoUpdateContentBody">
-              <li>Fixed Bug</li>
-              <li>Feature Saluran</li>
-              <li>Feature Team Support</li>
-              <li>Feature Link</li>
-              <li>Feature Spotify</li>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="MkChatHeaderJoin">
-          <button class="LainKali" onclick="CloseChat()">Lain Kali</button>
-          <i class="bx bx-x" onclick="CloseBtn()"></i>
-          <button>Gabung</button>
-        </div> -->
-      </div>
-    </div>
-    <div class="MkGame">
-      <div class="MkGameOverlay"></div>
-      <div class="MkGameContent">
-        <div class="MkGameContentBody">
-          <i class="bx bx-joystick"></i>
-        </div>
-        <div class="MkGameContentBody">
-          <i class="bx bx-joystick"></i>
-        </div>
-        <div class="MkGameContentBody" onclick="location.href='menja/'">
-          <i class="bx bx-joystick"></i>
-        </div>
-        <div class="MkGameContentBody" onclick="closeGames()">
-          <i class="bx bx-x"></i>
-        </div>
-      </div>
-    </div>
-    <div class="MkScMediaFlw">
-      <div class="MkScMediaFlwOverlay"></div>
-      <div class="MkScMediaFlwContent">
-        <div class="MkScMediaFlwContentBody" onclick="OpenInts()">
+    <!-- Vanz Body End-->
+    <!-- Vanz Media Start -->
+    <div class="VanzMedia">
+      <div class="VanzMediaOverlay"></div>
+      <div class="VanzMediaContent">
+        <div class="VanzMediaContentBody" onclick="MkxXxInsta()">
           <i class="bx bxl-instagram"></i>
         </div>
-        <div class="MkScMediaFlwContentBody" onclick="OpenFace()">
+        <div class="VanzMediaContentBody" onclick="MkxXxTiktok()">
           <i class="bx bxl-facebook"></i>
         </div>
-        <div class="MkScMediaFlwContentBody" onclick="OpenTkTok()">
-          <i class="bx bxl-tiktok"></i>
+        <div class="VanzMediaContentBody" onclick="MkxXxFacebook()">
+          <i class="bx bxl-facebook"></i>
         </div>
-        <div class="MkScMediaFlwContentBody" onclick="MkxXxGithub()">
+        <div class="VanzMediaContentBody" onclick="MkxxGithub()">
           <i class="bx bxl-github"></i>
         </div>
-        <div class="MkScMediaFlwContentBody" onclick="MkxXxSpotify()">
+        <div class="VanzMediaContentBody" onclick="MkSpotifyPlaylistX()">
           <i class="bx bxl-spotify"></i>
         </div>
-        <div class="MkScMediaFlwContentBody BtnClose" onclick="CloseFollowed()">
+        <div class="VanzMediaContentBody BtnClose" onclick="CloseFollowed()">
           <i class="bx bx-x"></i>
         </div>
-      </div>
-    </div>
-    <div class="MKProject">
-      <div class="MKProjectOverlay"></div>
-      <div class="MKProjectContent">
-        <div class="MKProjectBodyContent">
-          <div class="MKProjectBodyHeader">
-            <h4>Mk Project</h4>
-            <i class="bx bx-chevron-down" onclick="CloseProject()"></i>
-          </div>
-          <div class="MKProjectBodyList">
-            <div class="MKProjectBodyListHeader">
-              <h4>Coming Soon</h4>
-            </div>
-            <div class="MKProjectBodyListContent">
-              <p>Chat App Realtime</p>
-            </div>
-            <div class="MKProjectBodyListContent">
-              <p>Music App</p>
-            </div>
-            <div class="MKProjectBodyListContent">
-              <p>Game App</p>
-            </div>
-          </div>
-        </div>
-        <div class="MKProjectBodyContentx">
-          <div class="MKProjectBodyListx">
-            <div class="MKProjectBodyListHeaderx">
-              <h4>Published</h4>
-            </div>
-            <div class="MKProjectBodyListContentx">
-              <p>Website Editor Miring Squad</p>
-              <i class="bx bx-chevron-right"></i>
-            </div>
-            <div class="MKProjectBodyListContentx">
-              <p>Website Mkxchl Portfolio</p>
-              <i class="bx bx-chevron-right"></i>
-            </div>
-          </div>
+        <div class="VanzMediaContentBottomNav">
+          <span class="MkxVanz">Vanz</span>
+          <span class="MkxMedia">Media</span>
         </div>
       </div>
     </div>
-    <div class="MkPageMediaSocialInsta">
-      <div class="MkPageMediaSocialInstaOverlay"></div>
-      <div class="MkPageMediaSocialInstaContent">
-        <div class="MkPageMediaSocialInstaBody">
-          <div class="MkPageMediaSocialInstaBodyContent">
-            <div class="MkPageMediaSocialInstaBodyIcon">
-              <i class="" id="IconSocialMedia"></i>
-            </div>
-            <div class="MkPageMediaSocialInstaBodyUsername">
-              <h4 id="TitleSocialMedia"></h4>
-              <p id="DescSocialMedia"></p>
-            </div>
-            <div class="MkPageMediaSocialInstaBodyButton">
-              <h4 class="BtnSocialMediax" id="ButtonLinkSOcialMedia"></h4>
-            </div>
-          </div>
-        </div>
-        <div class="MkPageMediaSocialInstaButtonClose" onclick="CloseMkInsta()">
-          <i class="bx bx-x"></i>
-        </div>
-      </div>
-    </div>
-    <div class="MKxxChlxxMusic">
-      <div class="MKxxChlxxMusicContent">
-        <div class="MKxxChlxxMusicHeader">
-          <i class="bx bx-chevron-left" onclick="MkxxChlMusicClose()"></i>
-          <h4>Music</h4>
-        </div>
-        <div class="MkAlertText">
-          <h4>Sedang dalam pengkodean</h4>
-        </div>
-        <div class="MKxxChlxxMusicBodyContent">
-          <div class="MKxxChlxxMusicBodyContentMeta">
-            <i class="bx bx-music"></i>
-            <div class="MKxxChlxxMusicBodyContentMetaTitle">
-              <h4>Marchell Kevandra</h4>
-              <p>Remixer Indonesia</p>
-              <p>6 Lagu</p>
-            </div>
-          </div>
-          <div class="MKxxChlxxMusicBodyContentButton">
-            <a class="BtnMusicListSongActive">Lagu</a>
-            <a>Album</a>
-          </div>
-          <div class="MKxxChlxxMusicBodyContentMusicList">
-            <div class="MKxxChlxxMusicBodyContentMusicListContent">
-              <i class="bx bxs-music"></i>
-              <div class="MKxxChlxxMusicBodyContentMusicListSongTitle">
-                <h4>Kita Sayang Pangana</h4>
-                <p>Marchell Kevandra</p>
-              </div>
-            </div>
-            <div class="MKxxChlxxMusicBodyContentMusicListContent">
-              <i class="bx bxs-music"></i>
-              <div class="MKxxChlxxMusicBodyContentMusicListSongTitle">
-                <h4>Alfont Basta x Marchell</h4>
-                <p>Marchell Kevandra</p>
-              </div>
-            </div>
-            <div class="MKxxChlxxMusicBodyContentMusicListContent">
-              <i class="bx bxs-music"></i>
-              <div class="MKxxChlxxMusicBodyContentMusicListSongTitle">
-                <h4>Ente Kadang Kadang</h4>
-                <p>Marchell Kevandra</p>
-              </div>
-            </div>
-            <div class="MKxxChlxxMusicBodyContentMusicListContent">
-              <i class="bx bxs-music"></i>
-              <div class="MKxxChlxxMusicBodyContentMusicListSongTitle">
-                <h4>Shaving Me</h4>
-                <p>Marchell Kevandra</p>
-              </div>
-            </div>
-          </div>
-          <div class="MKxxChlxxMusicBodyContentFooter">
-            <h4>Mk Music</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="VanzNavMenu">
-      <div class="VanzNavOverlay"></div>
-      <div class="VanzNavMenuContent">
-        <div class="VanzNavMenuBody">
-          <div class="VanzNavMenuHeader">
-            <div class="VanzNavMenuHeaderImageCover">
-              <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
-              <i class="ri-close-line" onclick="VanzCloseMenu()"></i>
-              <div class="VanzNavMenuHeaderDescription">
-                <h4>Marchell Kevandra</h4>
-                <p>Be your self</p>
-              </div>
-            </div>
-          </div>
-          <div class="VanzNavMenuList">
-            <h4 class="VanzTitleMenu">Menu</h4>
-            <div class="VanzNavMenuListContent">
-              <h4>Project</h4>
-              <i class="ri-tools-line"></i>
-            </div>
-            <div class="VanzNavMenuListContent" onclick="OpenSetMusic()">
-              <h4>Music</h4>
-              <i class="ri-headphone-line"></i>
-            </div>
-            <div class="VanzNavMenuListContent" onclick="OpenGame()">
-              <h4>Games</h4>
-              <i class="ri-gamepad-line"></i>
-            </div>
-            <div class="VanzNavMenuListContent" onclick="OpenVanzSetting()">
-              <h4>Settings</h4>
-              <i class="ri-settings-2-line"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="MusicVanz">
-      <div class="MusicVanzOverlay"></div>
-      <div class="MusicVanzContent">
-        <div class="MusicVanzBody">
-          <div class="MusicVanzHeader">
-            <h4>Set Music</h4>
-            <i class="bx bx-x" onclick="VanzMusicClose()"></i>
-          </div>
-          <div class="MusicVanzBodyContent">
-            <i class="bx bx-music"></i>
-            <h4>Lonely</h4>
-          </div>
-          <div class="MusicVanzBodyContent">
-            <i class="bx bx-music"></i>
-            <h4>Dear God</h4>
-          </div>
-          <div class="MusicVanzBodyContent">
-            <i class="bx bx-music"></i>
-            <h4>Duka</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Audio Libaries -->
-    <audio id="MkAudio">
-      <source src="https://ems-links.netlify.app/am/mix/MkxchlSong-5.mp3" type="audio/mpeg" />
-    </audio>
-    <audio id="MkAudioA">
-      <source src="https://ems-links.netlify.app/am/mix/MkxchlSong-1.mp3" type="audio/mpeg" />
-    </audio>
-    <!-- JavaScript Libraries -->
-    <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://ems-links.netlify.app/assets/js/query.min.js"></script>
+    <!-- Vanz Media End -->
+    <!-- JavaScript Main Libraries -->
+    <script src="script.js"></script>
   </body>
 </html>
