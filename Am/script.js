@@ -1,24 +1,37 @@
-const MkUserPage = document.querySelector(".MkUserPage");
-const MkUserPageContentxx = document.querySelector(".MkUserPageContentxx");
-const MkBtnInfo = document.querySelector(".MkBtnInfo");
-const MkBtnImg = document.querySelector(".MkBtnImg");
-const Info = document.getElementById("#Info");
-const MkImg = document.getElementById("#MkImg");
+const VanzMedia = document.querySelector(".VanzMedia");
 
-function OpenProfile() {
-  MkUserPage.classList.add("show");
-  MkBtnInfo;
+/// Function All ///
+
+function VanzMediaxx() {
+  VanzMedia.classList.add("VanzMediaShow");
 }
-function Close() {
-  MkUserPage.classList.remove("show");
+
+/// Function Closed ///
+
+function CloseFollowed() {
+  VanzMedia.classList.remove("VanzMediaShow");
 }
-function MkCloseUserPage() {
-  MkUserPageContentxx.classList.add("MkUserHide");
-  MkBtnInfo.classList.remove("BtnActive");
-  MkBtnImg.classList.add("BtnActive");
+
+/// Function Links ///
+
+function MkxXxInsta() {
+  window.location.replace("https://instagram.com/marchell_kvandra");
 }
-function MkCloseImagesPage() {
-  MkUserPageContentxx.classList.remove("MkUserHide");
-  MkBtnInfo.classList.add("BtnActive");
-  MkBtnImg.classList.remove("BtnActive");
+function MkxXxTiktok() {
+  window.location.replace("https://tiktok.com/@mxchl");
+}
+function MkxXxFacebook() {
+  window.location.replace("https://facebook.com/chellgnzxz");
+}
+function MkxXxEms() {
+  window.location.replace("https://ems-links.netlify.app/");
+}
+function MkPortfolio() {
+  window.location.replace("https://mkxchl.github.io/portfolio-tailwind-css/");
+}
+function MkSpotifyPlaylistX() {
+  window.location.replace("https://spoti.fi/3Uz8b7i");
+}
+function MkxxGithub() {
+  window.location.replace("https://github.com/mkxchl");
 }
