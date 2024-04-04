@@ -170,6 +170,11 @@ body {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items; center;
+  place-content: center;
+  place-items; center;
   transition: 0.5s ease-in-out;
 }
 .VanzBodyContentDetailMetaBodyList:hover {
@@ -182,7 +187,7 @@ body {
 }
 .VanzBodyContentDetailMetaBodyList p {
   font-size: 13px;
-  margin-left: 5px;
+  font-weight: bold;
 }
 .VanzMedia {
   position: fixed;
@@ -420,6 +425,11 @@ body {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items; center;
+    place-content: center;
+    place-items; center;
     transition: 0.5s ease-in-out;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
@@ -432,7 +442,7 @@ body {
   }
   .VanzBodyContentDetailMetaBodyList p {
     font-size: 13px;
-    margin-left: 5px;
+    font-weight: bold;
   }
   .VanzMedia {
     position: fixed;
@@ -669,6 +679,11 @@ body {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items; center;
+    place-content: center;
+    place-items; center;
     transition: 0.5s ease-in-out;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
@@ -682,6 +697,7 @@ body {
   .VanzBodyContentDetailMetaBodyList p {
     font-size: 13px;
     margin-left: 5px;
+    font-weight: bold;
   }
   .VanzMedia {
     position: fixed;
@@ -918,6 +934,11 @@ body {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items; center;
+    place-content: center;
+    place-items; center;
     transition: 0.5s ease-in-out;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
@@ -930,7 +951,7 @@ body {
   }
   .VanzBodyContentDetailMetaBodyList p {
     font-size: 13px;
-    margin-left: 5px;
+    font-weight: bold;
   }
   .VanzMedia {
     position: fixed;
@@ -1167,6 +1188,11 @@ body {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items; center;
+    place-content: center;
+    place-items; center;
     transition: 0.5s ease-in-out;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
@@ -1179,7 +1205,7 @@ body {
   }
   .VanzBodyContentDetailMetaBodyList p {
     font-size: 13px;
-    margin-left: 5px;
+    font-weight: bold;
   }
   .VanzMedia {
     position: fixed;
@@ -1418,6 +1444,11 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+    text-align: center;
+    justify-content: center;
+    align-items; center;
+    place-content: center;
+    place-items; center;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
@@ -1428,8 +1459,8 @@ body {
     margin-right: 5px;
   }
   .VanzBodyContentDetailMetaBodyList p {
+    font-weight: bold;
     font-size: 13px;
-    margin-left: 5px;
   }
   .VanzMedia {
     position: fixed;
