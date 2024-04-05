@@ -136,7 +136,8 @@ body {
   .VanzBodyContentSinceMeta .VanzBodyContentSinceMetaContent {
     position: relative;
     display: flex;
-    margin: 10px;
+    margin: 20px;
+    bottom: 10px;
   }
   .VanzBodyContentSinceMetaContent i {
     font-size: 20px;
@@ -149,7 +150,7 @@ body {
   }
   .VanzBodyContentDetail {
     position: relative;
-    bottom: 10px;
+    bottom: 25px;
     padding: 5px;
     margin-left: 10px;
     margin-right: 10px;
@@ -174,27 +175,30 @@ body {
     width: 100%;
     margin: 10px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
+    background: #2d5cfe;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
     text-align: center;
     justify-content: center;
     align-items; center;
     place-content: center;
     place-items; center;
-    transition: 0.5s ease-in-out;
+    color: white;
+    font-family: "Roboto", sans-serif;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
     transition: 0.5s ease-in-out;
+    color: #000;
   }
   .VanzBodyContentDetailMetaBodyList i {
     font-size: 16px;
     margin-right: 5px;
   }
   .VanzBodyContentDetailMetaBodyList p {
-    font-size: 13px;
     font-weight: bold;
+    font-size: 13px;
   }
   .VanzMedia {
     position: fixed;
@@ -294,6 +298,335 @@ body {
     left: 9px;
     font-weight: bold;
     color: #ddd;
+  }
+  .VanzNavBottom {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .VanzNavBottomContent {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+  }
+  .VanzNavBottomContent i {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 7px;
+    margin: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i:hover {
+    color: #ddd;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i.VzActive {
+    background: rgba(30,30,30);
+    color: white;
+    border-radius: 50%;
+  }
+  .VanzMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMenu.VanzMenuShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMenu.VanzMenuShow .VanzMenuContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMenu .VanzMenuContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMenuHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMenuHeader i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 0;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  .VanzMenuHeader h4 {
+    position: relative;
+    font-size: 18px;
+  }
+  .VanzMenuBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader {
+    position: relative;
+    padding: 5px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader h4{
+    position: relative;
+    font-size: 15px;
+    color: #212121;
+    text-transform: uppercase;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta h4 {
+    font-size: 15px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .VanzMenuBodyIcons i {
+    position: absolute;
+    font-size: 30px;
+    top: 13px;
+    right: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta:hover {
+    background: rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBodyIconsDev i {
+    position: absolute;
+    font-size: 25px;
+    top: 7px;
+    right: 10px;
+  }
+  .VanzThemes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzThemes.VanzThemesShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzThemes .VanzThemesOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .VanzThemes.VanzThemesShow .VanzThemesContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzThemes .VanzThemesContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+    bottom: -50px;
+    border-radius: 30px;
+  }
+  .VanzThemesHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzThemesHeader h4 {
+    text-align: center;
+    padding: 10px;
+  }
+  .VanzThemesHeader i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzThemesHeader i:hover {
+    transition: 0.5s ease-in-out;
+    background: rgba(0,0,0,0.1);
+  }
+  .VanzThemesBody {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzThemesBody .VanzThemesBodyMeta {
+    position: relative;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .VanzThemesBodyMeta i {
+    padding: 10px;
+    background: #2d5cfe;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMeta h4 {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .VanzAbout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzAbout.VanzAboutShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzAbout.VanzAboutShow .VanzAboutContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzAbout .VanzAboutContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzAboutContent .VanzAboutHeader {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .VanzAboutContent .VanzAboutHeader i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .VanzAboutContent .VanzAboutHeader h4 {
+    text-align: center;
+  }
+  .VanzAboutBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesThumb {
+    position: relative;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://ems-links.netlify.app/assets/images/xchl.jpg');
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesProfile img {
+    position: absolute;
+    width: 100px;
+    top: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .VanzAboutBodyMetaDetail {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+  }
+  .VanzAboutBodyMetaDetailInfo {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzAboutBodyMetaDetailInfo h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .VanzAboutBodyMetaDetailInfo p {
+    font-size: 13px;
+    font-weight: 500;
   }
 }
 @media screen and (min-width: 390px) {
@@ -390,7 +723,8 @@ body {
   .VanzBodyContentSinceMeta .VanzBodyContentSinceMetaContent {
     position: relative;
     display: flex;
-    margin: 10px;
+    margin: 20px;
+    bottom: 10px;
   }
   .VanzBodyContentSinceMetaContent i {
     font-size: 20px;
@@ -403,7 +737,7 @@ body {
   }
   .VanzBodyContentDetail {
     position: relative;
-    bottom: 10px;
+    bottom: 25px;
     padding: 5px;
     margin-left: 10px;
     margin-right: 10px;
@@ -428,28 +762,30 @@ body {
     width: 100%;
     margin: 10px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
+    background: #2d5cfe;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
     text-align: center;
     justify-content: center;
     align-items; center;
     place-content: center;
     place-items; center;
-    transition: 0.5s ease-in-out;
+    color: white;
+    font-family: "Roboto", sans-serif;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
     transition: 0.5s ease-in-out;
+    color: #000;
   }
   .VanzBodyContentDetailMetaBodyList i {
     font-size: 16px;
     margin-right: 5px;
   }
   .VanzBodyContentDetailMetaBodyList p {
-    font-size: 13px;
-    margin-left: 5px;
     font-weight: bold;
+    font-size: 13px;
   }
   .VanzMedia {
     position: fixed;
@@ -549,6 +885,335 @@ body {
     left: 9px;
     font-weight: bold;
     color: #ddd;
+  }
+  .VanzNavBottom {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .VanzNavBottomContent {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+  }
+  .VanzNavBottomContent i {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 7px;
+    margin: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i:hover {
+    color: #ddd;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i.VzActive {
+    background: rgba(30,30,30);
+    color: white;
+    border-radius: 50%;
+  }
+  .VanzMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMenu.VanzMenuShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMenu.VanzMenuShow .VanzMenuContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMenu .VanzMenuContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMenuHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMenuHeader i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 0;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  .VanzMenuHeader h4 {
+    position: relative;
+    font-size: 18px;
+  }
+  .VanzMenuBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader {
+    position: relative;
+    padding: 5px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader h4{
+    position: relative;
+    font-size: 15px;
+    color: #212121;
+    text-transform: uppercase;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta h4 {
+    font-size: 15px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .VanzMenuBodyIcons i {
+    position: absolute;
+    font-size: 30px;
+    top: 13px;
+    right: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta:hover {
+    background: rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBodyIconsDev i {
+    position: absolute;
+    font-size: 25px;
+    top: 7px;
+    right: 10px;
+  }
+  .VanzThemes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzThemes.VanzThemesShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzThemes .VanzThemesOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .VanzThemes.VanzThemesShow .VanzThemesContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzThemes .VanzThemesContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+    bottom: -50px;
+    border-radius: 30px;
+  }
+  .VanzThemesHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzThemesHeader h4 {
+    text-align: center;
+    padding: 10px;
+  }
+  .VanzThemesHeader i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzThemesHeader i:hover {
+    transition: 0.5s ease-in-out;
+    background: rgba(0,0,0,0.1);
+  }
+  .VanzThemesBody {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzThemesBody .VanzThemesBodyMeta {
+    position: relative;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .VanzThemesBodyMeta i {
+    padding: 10px;
+    background: #2d5cfe;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMeta h4 {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .VanzAbout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzAbout.VanzAboutShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzAbout.VanzAboutShow .VanzAboutContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzAbout .VanzAboutContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzAboutContent .VanzAboutHeader {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .VanzAboutContent .VanzAboutHeader i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .VanzAboutContent .VanzAboutHeader h4 {
+    text-align: center;
+  }
+  .VanzAboutBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesThumb {
+    position: relative;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://ems-links.netlify.app/assets/images/xchl.jpg');
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesProfile img {
+    position: absolute;
+    width: 100px;
+    top: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .VanzAboutBodyMetaDetail {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+  }
+  .VanzAboutBodyMetaDetailInfo {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzAboutBodyMetaDetailInfo h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .VanzAboutBodyMetaDetailInfo p {
+    font-size: 13px;
+    font-weight: 500;
   }
 }
 @media screen and (min-width: 380px) {
@@ -645,7 +1310,8 @@ body {
   .VanzBodyContentSinceMeta .VanzBodyContentSinceMetaContent {
     position: relative;
     display: flex;
-    margin: 10px;
+    margin: 20px;
+    bottom: 10px;
   }
   .VanzBodyContentSinceMetaContent i {
     font-size: 20px;
@@ -658,7 +1324,7 @@ body {
   }
   .VanzBodyContentDetail {
     position: relative;
-    bottom: 10px;
+    bottom: 25px;
     padding: 5px;
     margin-left: 10px;
     margin-right: 10px;
@@ -683,27 +1349,30 @@ body {
     width: 100%;
     margin: 10px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
+    background: #2d5cfe;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
     text-align: center;
     justify-content: center;
     align-items; center;
     place-content: center;
     place-items; center;
-    transition: 0.5s ease-in-out;
+    color: white;
+    font-family: "Roboto", sans-serif;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
     transition: 0.5s ease-in-out;
+    color: #000;
   }
   .VanzBodyContentDetailMetaBodyList i {
     font-size: 16px;
     margin-right: 5px;
   }
   .VanzBodyContentDetailMetaBodyList p {
-    font-size: 13px;
     font-weight: bold;
+    font-size: 13px;
   }
   .VanzMedia {
     position: fixed;
@@ -803,6 +1472,922 @@ body {
     left: 9px;
     font-weight: bold;
     color: #ddd;
+  }
+  .VanzNavBottom {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .VanzNavBottomContent {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+  }
+  .VanzNavBottomContent i {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 7px;
+    margin: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i:hover {
+    color: #ddd;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i.VzActive {
+    background: rgba(30,30,30);
+    color: white;
+    border-radius: 50%;
+  }
+  .VanzMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMenu.VanzMenuShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMenu.VanzMenuShow .VanzMenuContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMenu .VanzMenuContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMenuHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMenuHeader i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 0;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  .VanzMenuHeader h4 {
+    position: relative;
+    font-size: 18px;
+  }
+  .VanzMenuBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader {
+    position: relative;
+    padding: 5px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader h4{
+    position: relative;
+    font-size: 15px;
+    color: #212121;
+    text-transform: uppercase;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta h4 {
+    font-size: 15px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .VanzMenuBodyIcons i {
+    position: absolute;
+    font-size: 30px;
+    top: 13px;
+    right: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta:hover {
+    background: rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBodyIconsDev i {
+    position: absolute;
+    font-size: 25px;
+    top: 7px;
+    right: 10px;
+  }
+  .VanzThemes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzThemes.VanzThemesShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzThemes .VanzThemesOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .VanzThemes.VanzThemesShow .VanzThemesContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzThemes .VanzThemesContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+    bottom: -50px;
+    border-radius: 30px;
+  }
+  .VanzThemesHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzThemesHeader h4 {
+    text-align: center;
+    padding: 10px;
+  }
+  .VanzThemesHeader i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzThemesHeader i:hover {
+    transition: 0.5s ease-in-out;
+    background: rgba(0,0,0,0.1);
+  }
+  .VanzThemesBody {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzThemesBody .VanzThemesBodyMeta {
+    position: relative;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .VanzThemesBodyMeta i {
+    padding: 10px;
+    background: #2d5cfe;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMeta h4 {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .VanzAbout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzAbout.VanzAboutShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzAbout.VanzAboutShow .VanzAboutContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzAbout .VanzAboutContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzAboutContent .VanzAboutHeader {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .VanzAboutContent .VanzAboutHeader i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .VanzAboutContent .VanzAboutHeader h4 {
+    text-align: center;
+  }
+  .VanzAboutBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesThumb {
+    position: relative;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://ems-links.netlify.app/assets/images/xchl.jpg');
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesProfile img {
+    position: absolute;
+    width: 100px;
+    top: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .VanzAboutBodyMetaDetail {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+  }
+  .VanzAboutBodyMetaDetailInfo {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzAboutBodyMetaDetailInfo h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .VanzAboutBodyMetaDetailInfo p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 370px) {
+  .VanzBody {
+    position: relative;
+    width: 100%;
+  }
+  .VanzBody .VanzBodyContent {
+    position: relative;
+    top: 100px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .VanzBodyContentImageHeader {
+    height: 100px;
+    background-image: url("https://ems-links.netlify.app/assets/images/xchl.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .VanzBodyContentImageMeta {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .VanzBodyContentImageMeta img {
+    position: relative;
+    width: 80px;
+    border-radius: 50px;
+    bottom: 40px;
+    border: 5px solid #fff;
+  }
+  .VanzBodyContentNameXBio {
+    position: relative;
+    bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzBodyContentNameXBio h4 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzBodyContentNameXBio p {
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .VanzBodyContentAbout {
+    position: relative;
+    bottom: 30px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzBodyContentAbout .VanzBodyContentAboutHeader h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .VanzBodyContentAbout .VanzBodyContentAboutMeta p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+  }
+  .VanzBodyContentSince {
+    position: relative;
+    bottom: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzBodyContentSince .VanzBodyContentSinceHeader h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .VanzBodyContentSinceMeta {
+    position: relative;
+    display: flex;
+    padding: 10px;
+  }
+  .VanzBodyContentSinceMeta .VanzBodyContentSinceMetaContent {
+    position: relative;
+    display: flex;
+    margin: 20px;
+    bottom: 10px;
+  }
+  .VanzBodyContentSinceMetaContent i {
+    font-size: 20px;
+  }
+  .VanzBodyContentSinceMetaContent p {
+    position: relative;
+    top: 3px;
+    font-size: 13px;
+    margin-left: 5px;
+  }
+  .VanzBodyContentDetail {
+    position: relative;
+    bottom: 25px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzBodyContentDetail .VanzBodyContentDetailHeader h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .VanzBodyContentDetailMeta {
+    position: relative;
+  }
+  .VanzBodyContentDetailMetaBody {
+    position: relative;
+    display: flex;
+    padding: 10px;
+  }
+  .VanzBodyContentDetailMetaBodyList {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background: #2d5cfe;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    justify-content: center;
+    align-items; center;
+    place-content: center;
+    place-items; center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
+  .VanzBodyContentDetailMetaBodyList:hover {
+    background: none;
+    transition: 0.5s ease-in-out;
+    color: #000;
+  }
+  .VanzBodyContentDetailMetaBodyList i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  .VanzBodyContentDetailMetaBodyList p {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .VanzMedia {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 99999999;
+  }
+  .VanzMedia.VanzMediaShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMedia .VanzMediaOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .VanzMedia.VanzMediaShow .VanzMediaContent {
+    transform: translateX(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMedia .VanzMediaContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: #fff;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .VanzMediaContent .VanzMediaContentBody {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-content: center;
+    place-items: center;
+    margin-top: 20px;
+  }
+  .VanzMediaContent .VanzMediaContentBody i {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-content: center;
+    place-items: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-size: 23px;
+    background: #eee;
+    border-radius: 5px;
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+  .VanzMediaContent .BtnClose i {
+    background: red;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMediaContentBody i:hover {
+    background: #000;
+    color: #eee;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMediaContentBottomNav {
+    width: 100%;
+    z-index: 99999999;
+  }
+  .VanzMediaContentBottomNav .MkxVanz {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 20px;
+    bottom: 125px;
+    left: 15px;
+    font-weight: bold;
+    color: #ddd;
+  }
+  .VanzMediaContentBottomNav .MkxMedia {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 20px;
+    bottom: 70px;
+    left: 9px;
+    font-weight: bold;
+    color: #ddd;
+  }
+  .VanzNavBottom {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .VanzNavBottomContent {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+  }
+  .VanzNavBottomContent i {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 7px;
+    margin: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i:hover {
+    color: #ddd;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i.VzActive {
+    background: rgba(30,30,30);
+    color: white;
+    border-radius: 50%;
+  }
+  .VanzMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMenu.VanzMenuShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMenu.VanzMenuShow .VanzMenuContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMenu .VanzMenuContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMenuHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMenuHeader i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 0;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  .VanzMenuHeader h4 {
+    position: relative;
+    font-size: 18px;
+  }
+  .VanzMenuBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader {
+    position: relative;
+    padding: 5px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader h4{
+    position: relative;
+    font-size: 15px;
+    color: #212121;
+    text-transform: uppercase;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta h4 {
+    font-size: 15px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .VanzMenuBodyIcons i {
+    position: absolute;
+    font-size: 30px;
+    top: 13px;
+    right: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta:hover {
+    background: rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBodyIconsDev i {
+    position: absolute;
+    font-size: 25px;
+    top: 7px;
+    right: 10px;
+  }
+  .VanzThemes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzThemes.VanzThemesShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzThemes .VanzThemesOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .VanzThemes.VanzThemesShow .VanzThemesContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzThemes .VanzThemesContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+    bottom: -50px;
+    border-radius: 30px;
+  }
+  .VanzThemesHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzThemesHeader h4 {
+    text-align: center;
+    padding: 10px;
+  }
+  .VanzThemesHeader i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzThemesHeader i:hover {
+    transition: 0.5s ease-in-out;
+    background: rgba(0,0,0,0.1);
+  }
+  .VanzThemesBody {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzThemesBody .VanzThemesBodyMeta {
+    position: relative;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .VanzThemesBodyMeta i {
+    padding: 10px;
+    background: #2d5cfe;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMeta h4 {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .VanzAbout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzAbout.VanzAboutShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzAbout.VanzAboutShow .VanzAboutContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzAbout .VanzAboutContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzAboutContent .VanzAboutHeader {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .VanzAboutContent .VanzAboutHeader i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .VanzAboutContent .VanzAboutHeader h4 {
+    text-align: center;
+  }
+  .VanzAboutBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesThumb {
+    position: relative;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://ems-links.netlify.app/assets/images/xchl.jpg');
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesProfile img {
+    position: absolute;
+    width: 100px;
+    top: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .VanzAboutBodyMetaDetail {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+  }
+  .VanzAboutBodyMetaDetailInfo {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzAboutBodyMetaDetailInfo h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .VanzAboutBodyMetaDetailInfo p {
+    font-size: 13px;
+    font-weight: 500;
   }
 }
 @media screen and (min-width: 360px) {
@@ -1103,6 +2688,293 @@ body {
     background: rgba(30,30,30);
     color: white;
     border-radius: 50%;
+  }
+  .VanzMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMenu.VanzMenuShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMenu.VanzMenuShow .VanzMenuContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMenu .VanzMenuContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMenuHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMenuHeader i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 0;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  .VanzMenuHeader h4 {
+    position: relative;
+    font-size: 18px;
+  }
+  .VanzMenuBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader {
+    position: relative;
+    padding: 5px;
+  }
+  .VanzMenuBody .VanzMenuBodyHeader h4{
+    position: relative;
+    font-size: 15px;
+    color: #212121;
+    text-transform: uppercase;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta h4 {
+    font-size: 15px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .VanzMenuBodyIcons i {
+    position: absolute;
+    font-size: 30px;
+    top: 13px;
+    right: 10px;
+  }
+  .VanzMenuBody .VanzMenuBodyMeta:hover {
+    background: rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMenuBodyIconsDev i {
+    position: absolute;
+    font-size: 25px;
+    top: 7px;
+    right: 10px;
+  }
+  .VanzThemes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzThemes.VanzThemesShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzThemes .VanzThemesOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #000;
+  }
+  .VanzThemes.VanzThemesShow .VanzThemesContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzThemes .VanzThemesContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+    bottom: -50px;
+    border-radius: 30px;
+  }
+  .VanzThemesHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzThemesHeader h4 {
+    text-align: center;
+    padding: 10px;
+  }
+  .VanzThemesHeader i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzThemesHeader i:hover {
+    transition: 0.5s ease-in-out;
+    background: rgba(0,0,0,0.1);
+  }
+  .VanzThemesBody {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzThemesBody .VanzThemesBodyMeta {
+    position: relative;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .VanzThemesBodyMeta i {
+    padding: 10px;
+    background: #2d5cfe;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMeta h4 {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .VanzAbout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzAbout.VanzAboutShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzAbout.VanzAboutShow .VanzAboutContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzAbout .VanzAboutContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzAboutContent .VanzAboutHeader {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .VanzAboutContent .VanzAboutHeader i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .VanzAboutContent .VanzAboutHeader h4 {
+    text-align: center;
+  }
+  .VanzAboutBody {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesThumb {
+    position: relative;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://ems-links.netlify.app/assets/images/xchl.jpg');
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .VanzAboutBody .VanzAboutBodyMeta .VanzAboutBodyMetaImages .VanzAboutBodyMetaImagesProfile img {
+    position: absolute;
+    width: 100px;
+    top: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .VanzAboutBodyMetaDetail {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+  }
+  .VanzAboutBodyMetaDetailInfo {
+    position: relative;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .VanzAboutBodyMetaDetailInfo h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .VanzAboutBodyMetaDetailInfo p {
+    font-size: 13px;
+    font-weight: 500;
   }
 }
 /* Custome Style End */
