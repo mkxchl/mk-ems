@@ -1,6 +1,9 @@
 const VanzMedia = document.querySelector(".VanzMedia");
+const VanzMenu = document.querySelector(".VanzMenu");
+const VanzThemes = document.querySelector(".VanzThemes");
+const VanzAbout = document.querySelector(".VanzAbout");
 
-/// Var String ///
+/// Var Audio's ///
 
 var klik = new Audio("https://ems-links.netlify.app/am/mix/klik.mp3");
 klik.loop = false;
@@ -12,11 +15,43 @@ function VanzMediaxx() {
   VanzMedia.classList.add("VanzMediaShow");
   klik.play();
 }
-
+function OpenMenux() {
+  VanzMenu.classList.add("VanzMenuShow");
+  VanzMedia.classList.remove("VanzMediaShow");
+  klik.play();
+}
+function ChooseMusic() {
+  VanzMenu.classList.remove("VanzMenuShow");
+  klik.play();
+}
+function changeThemes() {
+  VanzThemes.classList.add("VanzThemesShow");
+  VanzMenu.classList.remove("VanzMenuShow");
+  klik.play();
+}
+function OpenAbout() {
+  VanzAbout.classList.add("VanzAboutShow");
+  VanzMenu.classList.remove("VanzMenuShow");
+  klik.play();
+}
 /// Function Closed ///
 
 function CloseFollowed() {
   VanzMedia.classList.remove("VanzMediaShow");
+  klik.play();
+}
+function VanzCloseMenu() {
+  VanzMenu.classList.remove("VanzMenuShow");
+  klik.play();
+}
+function closeChangedThemes() {
+  VanzMenu.classList.add("VanzMenuShow");
+  VanzThemes.classList.remove("VanzThemesShow");
+  klik.play();
+}
+function closeVanzAbout() {
+  VanzAbout.classList.remove("VanzAboutShow");
+  VanzMenu.classList.add("VanzMenuShow");
   klik.play();
 }
 
@@ -49,4 +84,30 @@ function MkSpotifyPlaylistX() {
 function MkxxGithub() {
   window.location.replace("https://github.com/mkxchl");
   klik.play();
+}
+
+/// Function Web Settings ///
+
+function clearCache() {
+  VanzMenu.classList.remove("VanzMenuShow");
+  window.location.reload(true);
+  klik.play();
+}
+function refreshWebsite() {
+  VanzMenu.classList.remove("VanzMenuShow");
+  window.location.reload();
+  klik.play();
+}
+function reportBug() {
+  VanzMenu.classList.remove("VanzMenuShow");
+  klik.play();
+}
+
+/// Function Support ///
+
+function OpenNetlify() {
+  window.location.replace("https://netlify.com/");
+}
+function OpenGit() {
+  window.location.replace("https://github.com/mkxchl");
 }
