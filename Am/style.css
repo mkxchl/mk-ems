@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/icon?family=Gemunu+Libre:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
 /* Start Default Styles */
 
@@ -36,257 +37,18 @@ body {
 }
 /* Media Default */
 
-.VanzBody {
-  position: relative;
-  width: 100%;
-}
-.VanzBody .VanzBodyContent {
-  position: relative;
-  top: 100px;
-  height: 500px;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.VanzBodyContentImageHeader {
-  height: 100px;
-  background-image: url("https://ems-links.netlify.app/assets/images/xchl.jpg");
-  background-position: center;
-  background-size: cover;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-.VanzBodyContentImageMeta {
-  position: relative;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.VanzBodyContentImageMeta img {
-  position: relative;
-  width: 80px;
-  border-radius: 50px;
-  bottom: 40px;
-  border: 5px solid #fff;
-}
-.VanzBodyContentNameXBio {
-  position: relative;
-  bottom: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.VanzBodyContentNameXBio h4 {
-  font-size: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.VanzBodyContentNameXBio p {
-  font-size: 13px;
-  font-family: "Inter", sans-serif;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-.VanzBodyContentAbout {
-  position: relative;
-  bottom: 30px;
-  padding: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.VanzBodyContentAbout .VanzBodyContentAboutHeader h4 {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.VanzBodyContentAbout .VanzBodyContentAboutMeta p {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 12px;
-  font-family: "Inter", sans-serif;
-}
-.VanzBodyContentSince {
-  position: relative;
-  bottom: 10px;
-  padding: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.VanzBodyContentSince .VanzBodyContentSinceHeader h4 {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.VanzBodyContentSinceMeta {
-  position: relative;
-  display: flex;
-  padding: 10px;
-}
-.VanzBodyContentSinceMeta .VanzBodyContentSinceMetaContent {
-  position: relative;
-  display: flex;
-  margin: 10px;
-}
-.VanzBodyContentSinceMetaContent i {
-  font-size: 20px;
-}
-.VanzBodyContentSinceMetaContent p {
-  position: relative;
-  top: 3px;
-  font-size: 13px;
-  margin-left: 5px;
-}
-.VanzBodyContentDetail {
-  position: relative;
-  bottom: 10px;
-  padding: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.VanzBodyContentDetail .VanzBodyContentDetailHeader h4 {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.VanzBodyContentDetailMeta {
-  position: relative;
-}
-.VanzBodyContentDetailMetaBody {
-  position: relative;
-  display: flex;
-  padding: 10px;
-}
-.VanzBodyContentDetailMetaBodyList {
-  position: relative;
-  display: flex;
-  width: 100%;
-  margin: 10px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  justify-content: center;
-  align-items; center;
-  place-content: center;
-  place-items; center;
-  transition: 0.5s ease-in-out;
-}
-.VanzBodyContentDetailMetaBodyList:hover {
-  background: none;
-  transition: 0.5s ease-in-out;
-}
-.VanzBodyContentDetailMetaBodyList i {
-  font-size: 16px;
-  margin-right: 5px;
-}
-.VanzBodyContentDetailMetaBodyList p {
-  font-size: 13px;
-  font-weight: bold;
-}
-.VanzMedia {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 20%;
-  height: 100%;
-  display: flex;
-  opacity: 0;
-  pointer-events: none;
-  align-items: center;
-  flex-direction: column;
-  transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-  z-index: 99999999;
-}
-.VanzMedia.VanzMediaShow {
-  opacity: 1;
-  pointer-events: auto;
-}
-.VanzMedia .VanzMediaOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
-  background: #000;
-}
-.VanzMedia.VanzMediaShow .VanzMediaContent {
-  transform: translateX(0);
-  transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-}
-.VanzMedia .VanzMediaContent {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform: translateX(-100%);
-  background: #fff;
-  transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.VanzMediaContent .VanzMediaContentBody {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  place-content: center;
-  place-items: center;
-  margin-top: 20px;
-}
-.VanzMediaContent .VanzMediaContentBody i {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  place-content: center;
-  place-items: center;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-  font-size: 23px;
-  background: #eee;
-  border-radius: 5px;
-  padding: 6px;
-  margin-bottom: 10px;
-}
-.VanzMediaContent .BtnClose i {
-  background: red;
-  color: white;
-  transition: 0.5s ease-in-out;
-}
-.VanzMediaContentBody i:hover {
-  background: #000;
-  color: #eee;
-  transition: 0.5s ease-in-out;
-}
-.VanzMediaContentBottomNav {
-  width: 100%;
-  z-index: 99999999;
-}
-.VanzMediaContentBottomNav .MkxVanz {
-  position: absolute;
-  transform: rotate(90deg);
-  font-size: 20px;
-  bottom: 125px;
-  left: 15px;
-  font-weight: bold;
-  color: #ddd;
-}
-.VanzMediaContentBottomNav .MkxMedia {
-  position: absolute;
-  transform: rotate(90deg);
-  font-size: 20px;
-  bottom: 70px;
-  left: 9px;
-  font-weight: bold;
-  color: #ddd;
+@media screen and (min-width: 1200px) {
+  body {
+    background: rgba(30, 30, 30);
+  }
+  .VanzBody {
+    opacity: 0;
+    pointer-events; none;
+  }
+  .MkxEmsBackground {
+    opacity: 0;
+    pointer-events; none;
+  }
 }
 /* End Default Styles */
 /* Custome Style Start */
@@ -1053,260 +815,6 @@ body {
     color: #ddd;
   }
 }
-@media screen and (min-width: 370px) {
-  .VanzBody {
-    position: relative;
-    width: 100%;
-  }
-  .VanzBody .VanzBodyContent {
-    position: relative;
-    top: 100px;
-    height: 500px;
-    background: #fff;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  .VanzBodyContentImageHeader {
-    height: 100px;
-    background-image: url("https://ems-links.netlify.app/assets/images/xchl.jpg");
-    background-position: center;
-    background-size: cover;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-  .VanzBodyContentImageMeta {
-    position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .VanzBodyContentImageMeta img {
-    position: relative;
-    width: 80px;
-    border-radius: 50px;
-    bottom: 40px;
-    border: 5px solid #fff;
-  }
-  .VanzBodyContentNameXBio {
-    position: relative;
-    bottom: 40px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .VanzBodyContentNameXBio h4 {
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .VanzBodyContentNameXBio p {
-    font-size: 13px;
-    font-family: "Inter", sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-  .VanzBodyContentAbout {
-    position: relative;
-    bottom: 30px;
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .VanzBodyContentAbout .VanzBodyContentAboutHeader h4 {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-  .VanzBodyContentAbout .VanzBodyContentAboutMeta p {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 12px;
-    font-family: "Inter", sans-serif;
-  }
-  .VanzBodyContentSince {
-    position: relative;
-    bottom: 10px;
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .VanzBodyContentSince .VanzBodyContentSinceHeader h4 {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-  .VanzBodyContentSinceMeta {
-    position: relative;
-    display: flex;
-    padding: 10px;
-  }
-  .VanzBodyContentSinceMeta .VanzBodyContentSinceMetaContent {
-    position: relative;
-    display: flex;
-    margin: 10px;
-  }
-  .VanzBodyContentSinceMetaContent i {
-    font-size: 20px;
-  }
-  .VanzBodyContentSinceMetaContent p {
-    position: relative;
-    top: 3px;
-    font-size: 13px;
-    margin-left: 5px;
-  }
-  .VanzBodyContentDetail {
-    position: relative;
-    bottom: 10px;
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .VanzBodyContentDetail .VanzBodyContentDetailHeader h4 {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-  .VanzBodyContentDetailMeta {
-    position: relative;
-  }
-  .VanzBodyContentDetailMetaBody {
-    position: relative;
-    display: flex;
-    padding: 10px;
-  }
-  .VanzBodyContentDetailMetaBodyList {
-    position: relative;
-    display: flex;
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    justify-content: center;
-    align-items; center;
-    place-content: center;
-    place-items; center;
-    transition: 0.5s ease-in-out;
-  }
-  .VanzBodyContentDetailMetaBodyList:hover {
-    background: none;
-    transition: 0.5s ease-in-out;
-  }
-  .VanzBodyContentDetailMetaBodyList i {
-    font-size: 16px;
-    margin-right: 5px;
-  }
-  .VanzBodyContentDetailMetaBodyList p {
-    font-size: 13px;
-    font-weight: bold;
-  }
-  .VanzMedia {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 20%;
-    height: 100%;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    z-index: 99999999;
-  }
-  .VanzMedia.VanzMediaShow {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .VanzMedia .VanzMediaOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    background: #000;
-  }
-  .VanzMedia.VanzMediaShow .VanzMediaContent {
-    transform: translateX(0);
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  .VanzMedia .VanzMediaContent {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform: translateX(-100%);
-    background: #fff;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  .VanzMediaContent .VanzMediaContentBody {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    place-content: center;
-    place-items: center;
-    margin-top: 20px;
-  }
-  .VanzMediaContent .VanzMediaContentBody i {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    place-content: center;
-    place-items: center;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-    font-size: 23px;
-    background: #eee;
-    border-radius: 5px;
-    padding: 6px;
-    margin-bottom: 10px;
-  }
-  .VanzMediaContent .BtnClose i {
-    background: red;
-    color: white;
-    transition: 0.5s ease-in-out;
-  }
-  .VanzMediaContentBody i:hover {
-    background: #000;
-    color: #eee;
-    transition: 0.5s ease-in-out;
-  }
-  .VanzMediaContentBottomNav {
-    width: 100%;
-    z-index: 99999999;
-  }
-  .VanzMediaContentBottomNav .MkxVanz {
-    position: absolute;
-    transform: rotate(90deg);
-    font-size: 20px;
-    bottom: 125px;
-    left: 15px;
-    font-weight: bold;
-    color: #ddd;
-  }
-  .VanzMediaContentBottomNav .MkxMedia {
-    position: absolute;
-    transform: rotate(90deg);
-    font-size: 20px;
-    bottom: 70px;
-    left: 9px;
-    font-weight: bold;
-    color: #ddd;
-  }
-}
 @media screen and (min-width: 360px) {
   .VanzBody {
     position: relative;
@@ -1440,7 +948,7 @@ body {
     width: 100%;
     margin: 10px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
+    background: #2d5cfe;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
@@ -1449,10 +957,13 @@ body {
     align-items; center;
     place-content: center;
     place-items; center;
+    color: white;
+    font-family: "Roboto", sans-serif;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
     transition: 0.5s ease-in-out;
+    color: #000;
   }
   .VanzBodyContentDetailMetaBodyList i {
     font-size: 16px;
@@ -1560,6 +1071,48 @@ body {
     left: 9px;
     font-weight: bold;
     color: #ddd;
+  }
+  .VanzNavBottom {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .VanzNavBottomContent {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+  }
+  .VanzNavBottomContent i {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 7px;
+    margin: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i:hover {
+    color: #ddd;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavBottomContent i.VzActive {
+    background: rgba(30,30,30);
+    color: white;
+    border-radius: 50%;
   }
 }
 /* Custome Style End */
