@@ -61,7 +61,7 @@
           <div class="VanzBodyContentSinceMeta">
             <div class="VanzBodyContentSinceMetaContent">
               <i class="bx bxl-discord-alt"></i>
-              <p>March 7, 2023</p>
+              <p>March 7, 2020</p>
             </div>
             <div class="VanzBodyContentSinceMetaContent">
               <i class="bx bxl-github"></i>
@@ -88,6 +88,9 @@
     <div class="VanzMedia">
       <div class="VanzMediaOverlay"></div>
       <div class="VanzMediaContent">
+        <div class="VanzMediaContentBody" onclick="OpenMenux()">
+          <i class="bx bx-menu"></i>
+        </div>
         <div class="VanzMediaContentBody" onclick="MkxXxInsta()">
           <i class="bx bxl-instagram"></i>
         </div>
@@ -109,7 +112,162 @@
       </div>
     </div>
     <!-- Vanz Media End -->
+    <!-- Vanz Menu Start -->
+    <div class="VanzMenu">
+      <div class="VanzMenuContent">
+        <div class="VanzMenuHeader">
+          <i class="bx bx-chevron-left" onclick="VanzCloseMenu()"></i>
+          <h4>Menu</h4>
+        </div>
+        <div class="VanzMenuBody">
+          <div class="VanzMenuBodyHeader">
+            <h4>Music</h4>
+          </div>
+          <div class="VanzMenuBodyMeta" onclick="ChooseMusic()">
+            <h4>Choose Music</h4>
+            <p>Silahkan pilih music</p>
+            <div class="VanzMenuBodyIcons">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="VanzMenuBody" onclick="changeThemes()">
+          <div class="VanzMenuBodyHeader">
+            <h4>Themes</h4>
+          </div>
+          <div class="VanzMenuBodyMeta">
+            <h4>Choose Themes</h4>
+            <p>Silahkan pilih tema</p>
+            <div class="VanzMenuBodyIcons">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="VanzMenuBody">
+          <div class="VanzMenuBodyHeader">
+            <h4>Web Settings</h4>
+          </div>
+          <div class="VanzMenuBodyMeta" onclick="clearCache()">
+            <p>Clear Cache</p>
+          </div>
+          <div class="VanzMenuBodyMeta" onclick="reportBug()">
+            <p>Report Bug</p>
+          </div>
+          <div class="VanzMenuBodyMeta" onclick="refreshWebsite()">
+            <p>Refresh</p>
+          </div>
+        </div>
+        <div class="VanzMenuBody">
+          <div class="VanzMenuBodyHeader">
+            <h4>Web Version</h4>
+          </div>
+          <div class="VanzMenuBodyMeta">
+            <p>Vanz 4.0</p>
+          </div>
+        </div>
+        <div class="VanzMenuBody">
+          <div class="VanzMenuBodyHeader">
+            <h4>Support</h4>
+          </div>
+          <div class="VanzMenuBodyMeta">
+            <p>Netlify App</p>
+            <div class="VanzMenuBodyIconsDev">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </div>
+          <div class="VanzMenuBodyMeta">
+            <p>Github Io</p>
+            <div class="VanzMenuBodyIconsDev">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="VanzMenuBody">
+          <div class="VanzMenuBodyHeader">
+            <h4>Developer</h4>
+          </div>
+          <div class="VanzMenuBodyMeta" onclick="OpenAbout()">
+            <p>Marchell Nathan Kevandra</p>
+            <div class="VanzMenuBodyIconsDev">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Vanz Menu End -->
+    <!-- Vanz Themes Menu Start -->
+    <div class="VanzThemes">
+      <div class="VanzThemesOverlay"></div>
+      <div class="VanzThemesContent">
+        <div class="VanzThemesHeader">
+          <h4>Set Background</h4>
+          <i class="bx bx-x" onclick="closeChangedThemes()"></i>
+        </div>
+        <div class="VanzThemesBody">
+          <div class="VanzThemesBodyMeta">
+            <i class="bx bxs-color"></i>
+            <h4>Anime 1</h4>
+          </div>
+          <div class="VanzThemesBodyMeta">
+            <i class="bx bxs-color"></i>
+            <h4>Anime 3</h4>
+          </div>
+          <div class="VanzThemesBodyMeta">
+            <i class="bx bxs-color"></i>
+            <h4>Anime 3</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Vanz Themes Menu End -->
+    <!-- Vanz About Start -->
+    <div class="VanzAbout">
+      <div class="VanzAboutContent">
+        <div class="VanzAboutHeader">
+          <i class="bx bx-x" onclick="closeVanzAbout()"></i>
+          <h4>About</h4>
+        </div>
+        <div class="VanzAboutBody">
+          <div class="VanzAboutBodyMeta">
+            <div class="VanzAboutBodyMetaImages">
+              <div class="VanzAboutBodyMetaImagesThumb"></div>
+              <div class="VanzAboutBodyMetaImagesProfile">
+                <img src="https://ems-links.netlify.app/assets/images/logo.jpg" />
+              </div>
+              <div class="VanzAboutBodyMetaDetail">
+                <div class="VanzAboutBodyMetaDetailHeader">
+                  <h4>About Me</h4>
+                </div>
+                <div class="VanzAboutBodyMetaDetailInfo">
+                  <h4>Full Name</h4>
+                  <p>Marchell Nathan Kevandra</p>
+                </div>
+                <div class="VanzAboutBodyMetaDetailInfo">
+                  <h4>Place</h4>
+                  <p>Sulawesi Selatan - Makassar</p>
+                </div>
+                <div class="VanzAboutBodyMetaDetailInfo">
+                  <h4>Birth</h4>
+                  <p>March 7, 2003</p>
+                </div>
+                <div class="VanzAboutBodyMetaDetailInfo">
+                  <h4>Focus on</h4>
+                  <p>Data Analyst, Developer, Music</p>
+                </div>
+                <div class="VanzAboutBodyMetaDetailInfo">
+                  <h4>Hobby</h4>
+                  <p>Coding, BasketBall</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Vanz About End -->
     <!-- JavaScript Main Libraries -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>
