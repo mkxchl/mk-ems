@@ -604,28 +604,50 @@ body {
   .VanzAboutBodyMetaDetail {
     position: relative;
     padding: 10px;
+    bottom: 93px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
     position: relative;
     padding: 10px;
+    margin-bottom: 50px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
     position: relative;
-    font-size: 18px;
+    font-size: 23px;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
     text-align: center;
+    font-family: "Gemunu Libre", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
   }
   .VanzAboutBodyMetaDetailInfo {
     position: relative;
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
-  .VanzAboutBodyMetaDetailInfo h4 {
+  .VanzAboutBodyMetaDetailInfo i {
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 5px;
+    background: #2d5cfe;
+    border-radius: 10%;
+    color: #fff;
+  }
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
     text-transform: uppercase;
   }
-  .VanzAboutBodyMetaDetailInfo p {
-    font-size: 13px;
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
+    font-size: 12px;
     font-weight: 500;
   }
   .VanzReport {
@@ -1327,28 +1349,50 @@ body {
   .VanzAboutBodyMetaDetail {
     position: relative;
     padding: 10px;
+    bottom: 93px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
     position: relative;
     padding: 10px;
+    margin-bottom: 50px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
     position: relative;
-    font-size: 18px;
+    font-size: 23px;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
     text-align: center;
+    font-family: "Gemunu Libre", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
   }
   .VanzAboutBodyMetaDetailInfo {
     position: relative;
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
-  .VanzAboutBodyMetaDetailInfo h4 {
+  .VanzAboutBodyMetaDetailInfo i {
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 5px;
+    background: #2d5cfe;
+    border-radius: 10%;
+    color: #fff;
+  }
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
     text-transform: uppercase;
   }
-  .VanzAboutBodyMetaDetailInfo p {
-    font-size: 13px;
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
+    font-size: 12px;
     font-weight: 500;
   }
   .VanzReport {
@@ -2050,28 +2094,50 @@ body {
   .VanzAboutBodyMetaDetail {
     position: relative;
     padding: 10px;
+    bottom: 93px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
     position: relative;
     padding: 10px;
+    margin-bottom: 50px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
     position: relative;
-    font-size: 18px;
+    font-size: 23px;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
     text-align: center;
+    font-family: "Gemunu Libre", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
   }
   .VanzAboutBodyMetaDetailInfo {
     position: relative;
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
-  .VanzAboutBodyMetaDetailInfo h4 {
+  .VanzAboutBodyMetaDetailInfo i {
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 5px;
+    background: #2d5cfe;
+    border-radius: 10%;
+    color: #fff;
+  }
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
     text-transform: uppercase;
   }
-  .VanzAboutBodyMetaDetailInfo p {
-    font-size: 13px;
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
+    font-size: 12px;
     font-weight: 500;
   }
   .VanzReport {
@@ -2773,28 +2839,50 @@ body {
   .VanzAboutBodyMetaDetail {
     position: relative;
     padding: 10px;
+    bottom: 93px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
     position: relative;
     padding: 10px;
+    margin-bottom: 50px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
     position: relative;
-    font-size: 18px;
+    font-size: 23px;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
     text-align: center;
+    font-family: "Gemunu Libre", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
   }
   .VanzAboutBodyMetaDetailInfo {
     position: relative;
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
-  .VanzAboutBodyMetaDetailInfo h4 {
+  .VanzAboutBodyMetaDetailInfo i {
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 5px;
+    background: #2d5cfe;
+    border-radius: 10%;
+    color: #fff;
+  }
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
     text-transform: uppercase;
   }
-  .VanzAboutBodyMetaDetailInfo p {
-    font-size: 13px;
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
+    font-size: 12px;
     font-weight: 500;
   }
   .VanzReport {
@@ -3496,28 +3584,50 @@ body {
   .VanzAboutBodyMetaDetail {
     position: relative;
     padding: 10px;
+    bottom: 93px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader {
     position: relative;
     padding: 10px;
+    margin-bottom: 50px;
   }
   .VanzAboutBodyMetaDetail .VanzAboutBodyMetaDetailHeader h4 {
     position: relative;
-    font-size: 18px;
+    font-size: 23px;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
     text-align: center;
+    font-family: "Gemunu Libre", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
   }
   .VanzAboutBodyMetaDetailInfo {
     position: relative;
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
-  .VanzAboutBodyMetaDetailInfo h4 {
+  .VanzAboutBodyMetaDetailInfo i {
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 5px;
+    background: #2d5cfe;
+    border-radius: 10%;
+    color: #fff;
+  }
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
     text-transform: uppercase;
   }
-  .VanzAboutBodyMetaDetailInfo p {
-    font-size: 13px;
+  .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
+    font-size: 12px;
     font-weight: 500;
   }
   .VanzReport {
