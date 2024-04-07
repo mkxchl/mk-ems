@@ -2,6 +2,7 @@ const VanzMedia = document.querySelector(".VanzMedia");
 const VanzMenu = document.querySelector(".VanzMenu");
 const VanzThemes = document.querySelector(".VanzThemes");
 const VanzAbout = document.querySelector(".VanzAbout");
+const VanzReport = document.querySelector(".VanzReport");
 
 /// Var Audio's ///
 
@@ -34,6 +35,7 @@ function OpenAbout() {
   VanzMenu.classList.remove("VanzMenuShow");
   klik.play();
 }
+
 /// Function Closed ///
 
 function CloseFollowed() {
@@ -54,7 +56,11 @@ function closeVanzAbout() {
   VanzMenu.classList.add("VanzMenuShow");
   klik.play();
 }
-
+function BtnCloseReport() {
+  VanzReport.classList.remove("VanzReportShow");
+  VanzMenu.classList.add("VanzMenuShow");
+  klik.play();
+}
 /// Function Links ///
 
 function MkxXxInsta() {
@@ -99,6 +105,7 @@ function refreshWebsite() {
   klik.play();
 }
 function reportBug() {
+  VanzReport.classList.add("VanzReportShow");
   VanzMenu.classList.remove("VanzMenuShow");
   klik.play();
 }
