@@ -108,6 +108,10 @@ function MkxxGithub() {
   window.location.replace("https://github.com/mkxchl");
   klik.play();
 }
+function MkxxTele() {
+  window.location.replace("https://t.me/Marchell_Junior");
+  klik.play();
+}
 
 /// Function Web Settings ///
 
