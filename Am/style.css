@@ -559,13 +559,14 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background: #fff;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
@@ -628,19 +629,20 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
-    background: rgba(0,0,0,0.1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     font-size: 25px;
     margin-right: 10px;
     padding: 5px;
-    background: #2d5cfe;
     border-radius: 10%;
-    color: #fff;
+    color: #000;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
@@ -784,6 +786,155 @@ body {
   .VanzReportContentBody .VanzReportContentBodyMeta .VanzReportContentBodyButton .BtnCancel:hover {
     background: rgba(0,0,0,0.1);
     color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMusic.VanzMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMusic.VanzMusicShow .VanzMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMusic .VanzMusicContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMusicContent .VanzMusicHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMusicHeader i {
+    position: absolute;
+    bottom: -630px;
+    font-size: 35px;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 7px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicHeader i:hover {
+    transform: scale(1.3);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicContent .VanzMusicHeader h4 {
+    font-size: 40px;
+  }
+  .VanzMusicContent .VanzMusicHeader span {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .VanzOther {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzOther.VanzOtherShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzOther .VanzOtherOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzOther.VanzOtherShow .VanzOtherContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzOther .VanzOtherContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: #fff; */
+    overflow-y: auto;
+    bottom: -25px;
+    border-radius: 30px;
+  }
+  .VanzOtherHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzOtherHeader h4 {
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+  }
+  .VanzOtherBody {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody i {
+    font-size: 23px;
+    padding: 5px;
+  }
+  .VanzOtherBody .VanzOtherBodyMeta h4 {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .VanzOtherBody:hover {
+    background: black;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover i {
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
+    color: white;
     transition: 0.5s ease-in-out;
   }
 }
@@ -1304,13 +1455,14 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background: #fff;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
@@ -1373,19 +1525,20 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
-    background: rgba(0,0,0,0.1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     font-size: 25px;
     margin-right: 10px;
     padding: 5px;
-    background: #2d5cfe;
     border-radius: 10%;
-    color: #fff;
+    color: #000;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
@@ -1529,6 +1682,155 @@ body {
   .VanzReportContentBody .VanzReportContentBodyMeta .VanzReportContentBodyButton .BtnCancel:hover {
     background: rgba(0,0,0,0.1);
     color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMusic.VanzMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMusic.VanzMusicShow .VanzMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMusic .VanzMusicContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMusicContent .VanzMusicHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMusicHeader i {
+    position: absolute;
+    bottom: -630px;
+    font-size: 35px;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 7px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicHeader i:hover {
+    transform: scale(1.3);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicContent .VanzMusicHeader h4 {
+    font-size: 40px;
+  }
+  .VanzMusicContent .VanzMusicHeader span {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .VanzOther {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzOther.VanzOtherShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzOther .VanzOtherOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzOther.VanzOtherShow .VanzOtherContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzOther .VanzOtherContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: #fff; */
+    overflow-y: auto;
+    bottom: -25px;
+    border-radius: 30px;
+  }
+  .VanzOtherHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzOtherHeader h4 {
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+  }
+  .VanzOtherBody {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody i {
+    font-size: 23px;
+    padding: 5px;
+  }
+  .VanzOtherBody .VanzOtherBodyMeta h4 {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .VanzOtherBody:hover {
+    background: black;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover i {
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
+    color: white;
     transition: 0.5s ease-in-out;
   }
 }
@@ -2049,13 +2351,14 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background: #fff;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
@@ -2118,19 +2421,20 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
-    background: rgba(0,0,0,0.1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     font-size: 25px;
     margin-right: 10px;
     padding: 5px;
-    background: #2d5cfe;
     border-radius: 10%;
-    color: #fff;
+    color: #000;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
@@ -2274,6 +2578,155 @@ body {
   .VanzReportContentBody .VanzReportContentBodyMeta .VanzReportContentBodyButton .BtnCancel:hover {
     background: rgba(0,0,0,0.1);
     color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMusic.VanzMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMusic.VanzMusicShow .VanzMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMusic .VanzMusicContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMusicContent .VanzMusicHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMusicHeader i {
+    position: absolute;
+    bottom: -630px;
+    font-size: 35px;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 7px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicHeader i:hover {
+    transform: scale(1.3);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicContent .VanzMusicHeader h4 {
+    font-size: 40px;
+  }
+  .VanzMusicContent .VanzMusicHeader span {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .VanzOther {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzOther.VanzOtherShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzOther .VanzOtherOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzOther.VanzOtherShow .VanzOtherContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzOther .VanzOtherContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: #fff; */
+    overflow-y: auto;
+    bottom: -25px;
+    border-radius: 30px;
+  }
+  .VanzOtherHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzOtherHeader h4 {
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+  }
+  .VanzOtherBody {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody i {
+    font-size: 23px;
+    padding: 5px;
+  }
+  .VanzOtherBody .VanzOtherBodyMeta h4 {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .VanzOtherBody:hover {
+    background: black;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover i {
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
+    color: white;
     transition: 0.5s ease-in-out;
   }
 }
@@ -2794,13 +3247,14 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background: #fff;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
@@ -2863,19 +3317,20 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
-    background: rgba(0,0,0,0.1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     font-size: 25px;
     margin-right: 10px;
     padding: 5px;
-    background: #2d5cfe;
     border-radius: 10%;
-    color: #fff;
+    color: #000;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
@@ -3019,6 +3474,155 @@ body {
   .VanzReportContentBody .VanzReportContentBodyMeta .VanzReportContentBodyButton .BtnCancel:hover {
     background: rgba(0,0,0,0.1);
     color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMusic.VanzMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMusic.VanzMusicShow .VanzMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMusic .VanzMusicContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMusicContent .VanzMusicHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMusicHeader i {
+    position: absolute;
+    bottom: -630px;
+    font-size: 35px;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 7px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicHeader i:hover {
+    transform: scale(1.3);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicContent .VanzMusicHeader h4 {
+    font-size: 40px;
+  }
+  .VanzMusicContent .VanzMusicHeader span {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .VanzOther {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzOther.VanzOtherShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzOther .VanzOtherOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzOther.VanzOtherShow .VanzOtherContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzOther .VanzOtherContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: #fff; */
+    overflow-y: auto;
+    bottom: -25px;
+    border-radius: 30px;
+  }
+  .VanzOtherHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzOtherHeader h4 {
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+  }
+  .VanzOtherBody {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody i {
+    font-size: 23px;
+    padding: 5px;
+  }
+  .VanzOtherBody .VanzOtherBodyMeta h4 {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .VanzOtherBody:hover {
+    background: black;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover i {
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
+    color: white;
     transition: 0.5s ease-in-out;
   }
 }
@@ -3539,13 +4143,14 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background: #fff;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
@@ -3608,19 +4213,20 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
-    background: rgba(0,0,0,0.1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     font-size: 25px;
     margin-right: 10px;
     padding: 5px;
-    background: #2d5cfe;
     border-radius: 10%;
-    color: #fff;
+    color: #000;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     font-size: 15px;
@@ -3764,6 +4370,155 @@ body {
   .VanzReportContentBody .VanzReportContentBodyMeta .VanzReportContentBodyButton .BtnCancel:hover {
     background: rgba(0,0,0,0.1);
     color: #000;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzMusic.VanzMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzMusic.VanzMusicShow .VanzMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzMusic .VanzMusicContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background: #fff;
+    overflow-y: auto;
+  }
+  .VanzMusicContent .VanzMusicHeader {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .VanzMusicHeader i {
+    position: absolute;
+    bottom: -630px;
+    font-size: 35px;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 7px;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicHeader i:hover {
+    transform: scale(1.3);
+    transition: 0.5s ease-in-out;
+  }
+  .VanzMusicContent .VanzMusicHeader h4 {
+    font-size: 40px;
+  }
+  .VanzMusicContent .VanzMusicHeader span {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .VanzOther {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzOther.VanzOtherShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzOther .VanzOtherOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzOther.VanzOtherShow .VanzOtherContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzOther .VanzOtherContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: translateY(100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /* background: #fff; */
+    overflow-y: auto;
+    bottom: -25px;
+    border-radius: 30px;
+  }
+  .VanzOtherHeader {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzOtherHeader h4 {
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+  }
+  .VanzOtherBody {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody i {
+    font-size: 23px;
+    padding: 5px;
+  }
+  .VanzOtherBody .VanzOtherBodyMeta h4 {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .VanzOtherBody:hover {
+    background: black;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover i {
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
+    color: white;
     transition: 0.5s ease-in-out;
   }
 }
