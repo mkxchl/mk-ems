@@ -3,6 +3,9 @@ const VanzMenu = document.querySelector(".VanzMenu");
 const VanzThemes = document.querySelector(".VanzThemes");
 const VanzAbout = document.querySelector(".VanzAbout");
 const VanzReport = document.querySelector(".VanzReport");
+const VanzMusic = document.querySelector(".VanzMusic");
+const VanzOther = document.querySelector(".VanzOther");
+const VanzOtherOverlay = document.querySelector(".VanzOtherOverlay");
 
 /// Var Audio's ///
 
@@ -22,6 +25,7 @@ function OpenMenux() {
   klik.play();
 }
 function ChooseMusic() {
+  VanzMusic.classList.add("VanzMusicShow");
   VanzMenu.classList.remove("VanzMenuShow");
   klik.play();
 }
@@ -34,6 +38,9 @@ function OpenAbout() {
   VanzAbout.classList.add("VanzAboutShow");
   VanzMenu.classList.remove("VanzMenuShow");
   klik.play();
+}
+function OpenOtherMenu() {
+  VanzOther.classList.add("VanzOtherShow");
 }
 
 /// Function Closed ///
@@ -61,6 +68,14 @@ function BtnCloseReport() {
   VanzMenu.classList.add("VanzMenuShow");
   klik.play();
 }
+function CloseMusic() {
+  VanzMusic.classList.remove("VanzMusicShow");
+  VanzMenu.classList.add("VanzMenuShow");
+  klik.play();
+}
+VanzOtherOverlay.addEventListener("click", function () {
+  VanzOther.classList.remove("VanzOtherShow");
+});
 /// Function Links ///
 
 function MkxXxInsta() {
