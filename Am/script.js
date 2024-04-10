@@ -41,6 +41,7 @@ function OpenAbout() {
 }
 function OpenOtherMenu() {
   VanzOther.classList.add("VanzOtherShow");
+  klik.play();
 }
 
 /// Function Closed ///
@@ -75,6 +76,7 @@ function CloseMusic() {
 }
 VanzOtherOverlay.addEventListener("click", function () {
   VanzOther.classList.remove("VanzOtherShow");
+  klik.play();
 });
 /// Function Links ///
 
