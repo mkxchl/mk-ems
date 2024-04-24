@@ -23,7 +23,8 @@ body {
   overflow: hidden;
   overflow-y: hidden;
   overflow-x: hidden;
-  background: #ddd;
+/*   background: #ddd; */
+  background: transparent linear-gradient(90deg, #7d4196 0%, #ff3494 100%) 0% 0%;
 }
 /* Media Default */
 
