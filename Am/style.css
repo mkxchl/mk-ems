@@ -141,6 +141,7 @@ body {
     bottom: 10px;
   }
   .VanzBodyContentSinceMetaContent i {
+    color: #7d4196;
     font-size: 20px;
   }
   .VanzBodyContentSinceMetaContent p {
@@ -175,9 +176,12 @@ body {
     display: flex;
     width: 100%;
     margin: 10px;
-    padding: 10px;
-    background: #2d5cfe;
-    border-radius: 5px;
+    padding: 15px;
+    background:  #7d4196;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
     text-align: center;
@@ -192,6 +196,7 @@ body {
     background: none;
     transition: 0.5s ease-in-out;
     color: #000;
+    box-shadow: 0 0 10px #7d4196;
   }
   .VanzBodyContentDetailMetaBodyList i {
     font-size: 16px;
@@ -263,13 +268,15 @@ body {
     cursor: pointer;
     transition: 0.5s ease-in-out;
     font-size: 23px;
-    background: #eee;
+    box-shadow: 0 0 5px #7d4196;
+    /* background: #eee; */
     border-radius: 5px;
     padding: 6px;
     margin-bottom: 10px;
+    color: #7d4196;
   }
   .VanzMediaContent .BtnClose i {
-    background: red;
+    background: #7d4196;
     color: white;
     transition: 0.5s ease-in-out;
   }
@@ -560,24 +567,26 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #7d4196;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    /* border-bottom: 1px solid #ddd; */
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     right: 10px;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
+    color: white;
   }
   .VanzAboutContent .VanzAboutHeader h4 {
     text-align: center;
+    color: white;
   }
   .VanzAboutBody {
     position: relative;
@@ -635,8 +644,10 @@ body {
     /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     position: relative;
@@ -645,7 +656,7 @@ body {
     margin-right: 10px;
     padding: 5px;
     border-radius: 10%;
-    color: #000;
+    color: #7d4196;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     position: relative;
@@ -941,6 +952,46 @@ body {
   .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
     color: white;
     transition: 0.5s ease-in-out;
+  }
+  .VanzNav { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    background:  #fff; 
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1); 
+    backdrop-filter: blur(20px); 
+  } 
+  .VanzNav .VanzNavBoy { 
+    position: relative; 
+    display: flex; 
+    z-index: 999999; 
+  } 
+  .VanzNav .VanzNavBoy span { 
+    background:  #7d4196; 
+    padding: 10px; 
+    backdrop-filter: blur(50px); 
+    font-weight: bold; 
+    color: #fff; 
+    border-radius: 30px; 
+  } 
+  .VanzNav .VanzNavBoy h4 { 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    margin-top: 10px; 
+  } 
+  .VanzNav .VanzNavBoy i { 
+    position: absolute; 
+    top: 5px; 
+    right: 25px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    transition: 0.5s ease-in-out; 
+  } 
+  .VanzNav .VanzNavBoy i:hover { 
+    color:  #7d4196; 
+    transition: 0.5s ease-in-out; 
   }
 }
 @media screen and (min-width: 390px) {
@@ -1041,6 +1092,7 @@ body {
     bottom: 10px;
   }
   .VanzBodyContentSinceMetaContent i {
+    color: #7d4196;
     font-size: 20px;
   }
   .VanzBodyContentSinceMetaContent p {
@@ -1075,9 +1127,12 @@ body {
     display: flex;
     width: 100%;
     margin: 10px;
-    padding: 10px;
-    background: #2d5cfe;
-    border-radius: 5px;
+    padding: 15px;
+    background:  #7d4196;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
     text-align: center;
@@ -1092,6 +1147,7 @@ body {
     background: none;
     transition: 0.5s ease-in-out;
     color: #000;
+    box-shadow: 0 0 10px #7d4196;
   }
   .VanzBodyContentDetailMetaBodyList i {
     font-size: 16px;
@@ -1163,13 +1219,15 @@ body {
     cursor: pointer;
     transition: 0.5s ease-in-out;
     font-size: 23px;
-    background: #eee;
+    box-shadow: 0 0 5px #7d4196;
+    /* background: #eee; */
     border-radius: 5px;
     padding: 6px;
     margin-bottom: 10px;
+    color: #7d4196;
   }
   .VanzMediaContent .BtnClose i {
-    background: red;
+    background: #7d4196;
     color: white;
     transition: 0.5s ease-in-out;
   }
@@ -1460,24 +1518,26 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #7d4196;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    /* border-bottom: 1px solid #ddd; */
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     right: 10px;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
+    color: white;
   }
   .VanzAboutContent .VanzAboutHeader h4 {
     text-align: center;
+    color: white;
   }
   .VanzAboutBody {
     position: relative;
@@ -1535,8 +1595,10 @@ body {
     /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     position: relative;
@@ -1545,7 +1607,7 @@ body {
     margin-right: 10px;
     padding: 5px;
     border-radius: 10%;
-    color: #000;
+    color: #7d4196;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     position: relative;
@@ -1841,6 +1903,46 @@ body {
   .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
     color: white;
     transition: 0.5s ease-in-out;
+  }
+  .VanzNav { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    background:  #fff; 
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1); 
+    backdrop-filter: blur(20px); 
+  } 
+  .VanzNav .VanzNavBoy { 
+    position: relative; 
+    display: flex; 
+    z-index: 999999; 
+  } 
+  .VanzNav .VanzNavBoy span { 
+    background:  #7d4196; 
+    padding: 10px; 
+    backdrop-filter: blur(50px); 
+    font-weight: bold; 
+    color: #fff; 
+    border-radius: 30px; 
+  } 
+  .VanzNav .VanzNavBoy h4 { 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    margin-top: 10px; 
+  } 
+  .VanzNav .VanzNavBoy i { 
+    position: absolute; 
+    top: 5px; 
+    right: 25px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    transition: 0.5s ease-in-out; 
+  } 
+  .VanzNav .VanzNavBoy i:hover { 
+    color:  #7d4196; 
+    transition: 0.5s ease-in-out; 
   }
 }
 @media screen and (min-width: 380px) {
@@ -1941,6 +2043,7 @@ body {
     bottom: 10px;
   }
   .VanzBodyContentSinceMetaContent i {
+    color: #7d4196;
     font-size: 20px;
   }
   .VanzBodyContentSinceMetaContent p {
@@ -1975,9 +2078,12 @@ body {
     display: flex;
     width: 100%;
     margin: 10px;
-    padding: 10px;
-    background: #2d5cfe;
-    border-radius: 5px;
+    padding: 15px;
+    background:  #7d4196;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
     text-align: center;
@@ -1992,6 +2098,7 @@ body {
     background: none;
     transition: 0.5s ease-in-out;
     color: #000;
+    box-shadow: 0 0 10px #7d4196;
   }
   .VanzBodyContentDetailMetaBodyList i {
     font-size: 16px;
@@ -2063,13 +2170,15 @@ body {
     cursor: pointer;
     transition: 0.5s ease-in-out;
     font-size: 23px;
-    background: #eee;
+    box-shadow: 0 0 5px #7d4196;
+    /* background: #eee; */
     border-radius: 5px;
     padding: 6px;
     margin-bottom: 10px;
+    color: #7d4196;
   }
   .VanzMediaContent .BtnClose i {
-    background: red;
+    background: #7d4196;
     color: white;
     transition: 0.5s ease-in-out;
   }
@@ -2360,24 +2469,26 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #7d4196;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    /* border-bottom: 1px solid #ddd; */
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     right: 10px;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
+    color: white;
   }
   .VanzAboutContent .VanzAboutHeader h4 {
     text-align: center;
+    color: white;
   }
   .VanzAboutBody {
     position: relative;
@@ -2435,8 +2546,10 @@ body {
     /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     position: relative;
@@ -2445,7 +2558,7 @@ body {
     margin-right: 10px;
     padding: 5px;
     border-radius: 10%;
-    color: #000;
+    color: #7d4196;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     position: relative;
@@ -2741,6 +2854,46 @@ body {
   .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
     color: white;
     transition: 0.5s ease-in-out;
+  }
+  .VanzNav { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    background:  #fff; 
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1); 
+    backdrop-filter: blur(20px); 
+  } 
+  .VanzNav .VanzNavBoy { 
+    position: relative; 
+    display: flex; 
+    z-index: 999999; 
+  } 
+  .VanzNav .VanzNavBoy span { 
+    background:  #7d4196; 
+    padding: 10px; 
+    backdrop-filter: blur(50px); 
+    font-weight: bold; 
+    color: #fff; 
+    border-radius: 30px; 
+  } 
+  .VanzNav .VanzNavBoy h4 { 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    margin-top: 10px; 
+  } 
+  .VanzNav .VanzNavBoy i { 
+    position: absolute; 
+    top: 5px; 
+    right: 25px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    transition: 0.5s ease-in-out; 
+  } 
+  .VanzNav .VanzNavBoy i:hover { 
+    color:  #7d4196; 
+    transition: 0.5s ease-in-out; 
   }
 }
 @media screen and (min-width: 370px) {
@@ -2841,6 +2994,7 @@ body {
     bottom: 10px;
   }
   .VanzBodyContentSinceMetaContent i {
+    color: #7d4196;
     font-size: 20px;
   }
   .VanzBodyContentSinceMetaContent p {
@@ -2875,9 +3029,12 @@ body {
     display: flex;
     width: 100%;
     margin: 10px;
-    padding: 10px;
-    background: #2d5cfe;
-    border-radius: 5px;
+    padding: 15px;
+    background:  #7d4196;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
     text-align: center;
@@ -2892,6 +3049,7 @@ body {
     background: none;
     transition: 0.5s ease-in-out;
     color: #000;
+    box-shadow: 0 0 10px #7d4196;
   }
   .VanzBodyContentDetailMetaBodyList i {
     font-size: 16px;
@@ -2963,13 +3121,15 @@ body {
     cursor: pointer;
     transition: 0.5s ease-in-out;
     font-size: 23px;
-    background: #eee;
+    box-shadow: 0 0 5px #7d4196;
+    /* background: #eee; */
     border-radius: 5px;
     padding: 6px;
     margin-bottom: 10px;
+    color: #7d4196;
   }
   .VanzMediaContent .BtnClose i {
-    background: red;
+    background: #7d4196;
     color: white;
     transition: 0.5s ease-in-out;
   }
@@ -3260,24 +3420,26 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #7d4196;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    /* border-bottom: 1px solid #ddd; */
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     right: 10px;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
+    color: white;
   }
   .VanzAboutContent .VanzAboutHeader h4 {
     text-align: center;
+    color: white;
   }
   .VanzAboutBody {
     position: relative;
@@ -3335,8 +3497,10 @@ body {
     /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     position: relative;
@@ -3345,7 +3509,7 @@ body {
     margin-right: 10px;
     padding: 5px;
     border-radius: 10%;
-    color: #000;
+    color: #7d4196;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     position: relative;
@@ -3641,6 +3805,46 @@ body {
   .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
     color: white;
     transition: 0.5s ease-in-out;
+  }
+  .VanzNav { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    background:  #fff; 
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1); 
+    backdrop-filter: blur(20px); 
+  } 
+  .VanzNav .VanzNavBoy { 
+    position: relative; 
+    display: flex; 
+    z-index: 999999; 
+  } 
+  .VanzNav .VanzNavBoy span { 
+    background:  #7d4196; 
+    padding: 10px; 
+    backdrop-filter: blur(50px); 
+    font-weight: bold; 
+    color: #fff; 
+    border-radius: 30px; 
+  } 
+  .VanzNav .VanzNavBoy h4 { 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    margin-top: 10px; 
+  } 
+  .VanzNav .VanzNavBoy i { 
+    position: absolute; 
+    top: 5px; 
+    right: 25px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    transition: 0.5s ease-in-out; 
+  } 
+  .VanzNav .VanzNavBoy i:hover { 
+    color:  #7d4196; 
+    transition: 0.5s ease-in-out; 
   }
 }
 @media screen and (min-width: 360px) {
@@ -3741,6 +3945,7 @@ body {
     bottom: 10px;
   }
   .VanzBodyContentSinceMetaContent i {
+    color: #7d4196;
     font-size: 20px;
   }
   .VanzBodyContentSinceMetaContent p {
@@ -3775,9 +3980,12 @@ body {
     display: flex;
     width: 100%;
     margin: 10px;
-    padding: 10px;
-    background: #2d5cfe;
-    border-radius: 5px;
+    padding: 15px;
+    background:  #7d4196;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
     text-align: center;
@@ -3792,6 +4000,7 @@ body {
     background: none;
     transition: 0.5s ease-in-out;
     color: #000;
+    box-shadow: 0 0 10px #7d4196;
   }
   .VanzBodyContentDetailMetaBodyList i {
     font-size: 16px;
@@ -3863,13 +4072,15 @@ body {
     cursor: pointer;
     transition: 0.5s ease-in-out;
     font-size: 23px;
-    background: #eee;
+    box-shadow: 0 0 5px #7d4196;
+    /* background: #eee; */
     border-radius: 5px;
     padding: 6px;
     margin-bottom: 10px;
+    color: #7d4196;
   }
   .VanzMediaContent .BtnClose i {
-    background: red;
+    background: #7d4196;
     color: white;
     transition: 0.5s ease-in-out;
   }
@@ -4160,24 +4371,26 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #7d4196;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    /* border-bottom: 1px solid #ddd; */
   }
   .VanzAboutContent .VanzAboutHeader i {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     right: 10px;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
+    color: white;
   }
   .VanzAboutContent .VanzAboutHeader h4 {
     text-align: center;
+    color: white;
   }
   .VanzAboutBody {
     position: relative;
@@ -4235,8 +4448,10 @@ body {
     /* background: rgba(0,0,0,0.1); */
     margin-top: 7px;
     margin-bottom: 7px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .VanzAboutBodyMetaDetailInfo i {
     position: relative;
@@ -4245,7 +4460,7 @@ body {
     margin-right: 10px;
     padding: 5px;
     border-radius: 10%;
-    color: #000;
+    color: #7d4196;
   }
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx h4 {
     position: relative;
@@ -4541,6 +4756,46 @@ body {
   .VanzOtherBody:hover .VanzOtherBodyMeta h4 {
     color: white;
     transition: 0.5s ease-in-out;
+  }
+  .VanzNav { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    background:  #fff; 
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1); 
+    backdrop-filter: blur(20px); 
+  } 
+  .VanzNav .VanzNavBoy { 
+    position: relative; 
+    display: flex; 
+    z-index: 999999; 
+  } 
+  .VanzNav .VanzNavBoy span { 
+    background:  #7d4196; 
+    padding: 10px; 
+    backdrop-filter: blur(50px); 
+    font-weight: bold; 
+    color: #fff; 
+    border-radius: 30px; 
+  } 
+  .VanzNav .VanzNavBoy h4 { 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    margin-top: 10px; 
+  } 
+  .VanzNav .VanzNavBoy i { 
+    position: absolute; 
+    top: 5px; 
+    right: 25px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    transition: 0.5s ease-in-out; 
+  } 
+  .VanzNav .VanzNavBoy i:hover { 
+    color:  #7d4196; 
+    transition: 0.5s ease-in-out; 
   }
 }
 /* Custome Style End */
