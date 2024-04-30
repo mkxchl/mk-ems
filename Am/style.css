@@ -192,6 +192,11 @@ body {
     color: white;
     font-family: "Roboto", sans-serif;
   }
+  .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+  }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
     transition: 0.5s ease-in-out;
@@ -1142,6 +1147,11 @@ body {
     place-items; center;
     color: white;
     font-family: "Roboto", sans-serif;
+  }
+  .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
@@ -2094,6 +2104,11 @@ body {
     color: white;
     font-family: "Roboto", sans-serif;
   }
+  .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+  }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
     transition: 0.5s ease-in-out;
@@ -3044,6 +3059,11 @@ body {
     place-items; center;
     color: white;
     font-family: "Roboto", sans-serif;
+  }
+  .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
   }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
@@ -3996,6 +4016,11 @@ body {
     color: white;
     font-family: "Roboto", sans-serif;
   }
+  .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+  }
   .VanzBodyContentDetailMetaBodyList:hover {
     background: none;
     transition: 0.5s ease-in-out;
@@ -4799,3 +4824,12 @@ body {
   }
 }
 /* Custome Style End */
+/* Animation */
+@-webkit-keyframes bg-move {
+  0%   { background-position: -500px 0; }
+  100% { background-position: 1000px 0; }
+}
+@keyframes bg-move {
+  0%   { background-position: -500px 0; }
+  100% { background-position: 1000px 0; }
+}
