@@ -7,7 +7,6 @@ const VanzMusic = document.querySelector(".VanzMusic");
 const VanzOther = document.querySelector(".VanzOther");
 const VanzOtherOverlay = document.querySelector(".VanzOtherOverlay");
 const VanzOtherMenuXx = document.querySelector(".VanzOtherMenuXx");
-const VanzMenuIdx = docuemnt.getElementById("#PortfolioVanzXxXx");
 
 /// Var Audio's ///
 
