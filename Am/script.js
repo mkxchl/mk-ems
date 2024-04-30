@@ -6,6 +6,8 @@ const VanzReport = document.querySelector(".VanzReport");
 const VanzMusic = document.querySelector(".VanzMusic");
 const VanzOther = document.querySelector(".VanzOther");
 const VanzOtherOverlay = document.querySelector(".VanzOtherOverlay");
+const VanzOtherMenuXx = document.querySelector(".VanzOtherMenuXx");
+const VanzMenuIdx = docuemnt.getElementById("#PortfolioVanzXxXx");
 
 /// Var Audio's ///
 
@@ -43,8 +45,17 @@ function OpenOtherMenu() {
   VanzOther.classList.add("VanzOtherShow");
   klik.play();
 }
+function OpenVanzOtherMenu() {
+  VanzOtherMenuXx.classList.add("VanzOtherMenuXxShow");
+  klik.play();
+}
 
 /// Function Closed ///
+
+function CloseOtherAll() {
+  VanzOther.classList.remove("VanzOtherShow");
+  klik.play();
+}
 
 function CloseFollowed() {
   VanzMedia.classList.remove("VanzMediaShow");
@@ -74,10 +85,10 @@ function CloseMusic() {
   VanzMenu.classList.add("VanzMenuShow");
   klik.play();
 }
-VanzOtherOverlay.addEventListener("click", function () {
-  VanzOther.classList.remove("VanzOtherShow");
+function CloseVanzOtherMenu() {
+  VanzOtherMenuXx.classList.remove("VanzOtherMenuXxShow");
   klik.play();
-});
+}
 /// Function Links ///
 
 function MkxXxInsta() {
