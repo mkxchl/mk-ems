@@ -95,7 +95,7 @@ function MkxXxInsta() {
   klik.play();
 }
 function MkxXxTiktok() {
-  window.location.replace("https://tiktok.com/@mxchl");
+  window.location.replace("https://tiktok.com/@mkxchl");
   klik.play();
 }
 function MkxXxFacebook() {
