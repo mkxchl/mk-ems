@@ -34,15 +34,13 @@
     <!-- Link Rel Assets Style Css -->
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="VanzLoad()">
     <!-- Vanz Body Start-->
     <div class="VanzBody">
       <div class="VanzBodyContent">
         <div class="VanzBodyContentImageHeader"></div>
         <div class="VanzBodyContentImageMeta">
-          <img
-            src="images/Mkpct.jpg"
-          />
+          <img src="https://ems-links.netlify.app/am/images/Mkpct.jpg" alt="Profile Picture" />
         </div>
         <div class="VanzBodyContentNameXBio">
           <h4>Marchell Kevandra</h4>
@@ -108,6 +106,12 @@
         <div class="VanzMediaContentBody" onclick="MkSpotifyPlaylistX()">
           <i class="bx bxl-spotify"></i>
         </div>
+        <div class="VanzMediaContentBody" onclick="MkSpotifyPlaylistX()">
+          <i class="bx bxl-discord-alt"></i>
+        </div>
+        <!-- <div class="VanzMediaContentBody" onclick="NavMusicXx()">
+          <i class="bx bx-music"></i>
+        </div> -->
         <div class="VanzMediaContentBody BtnClose" onclick="CloseFollowed()">
           <i class="bx bx-x"></i>
         </div>
@@ -373,6 +377,29 @@
       </div>
     </div>
     <!-- Nav Top ENd -->
+    <div class="VanzNavMusic">
+      <div class="VanzNavMusicOverlay"></div>
+      <div class="VanzNavMusicContent">
+        <!-- <div class="VanzNavMusicContentHeader">
+          <div class="drag-icon"><span></span></div>
+        </div> -->
+        <div class="VanzNavMusicBody">
+          <div class="VanzNavMusicBodyProfile">
+            <img src="https://ems-links.netlify.app/am/images/Mkpct.jpg" alt="Profile Picture" />
+            <div class="VanzNavMusicBodyProfileDetails">
+              <h4><b>chell</b>memutar lagu</h4>
+              <div class="VanzNavMusicBodyProfileDetailsBtnXAuthor">
+                <i class="ri-headphone-line"></i>
+                <p><b>Mantan Cari Muka</b>- Ygk Mix</p>
+              </div>
+              <div class="VanzNavMusicBodyProfileDetailsBtnClose">
+                <i class="bx bx-x" onclick="CloseNavMusicx()"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- JavaScript Main Libraries -->
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
