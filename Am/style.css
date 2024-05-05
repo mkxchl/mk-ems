@@ -998,6 +998,129 @@ body {
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
   }
+  .VanzNavMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzNavMusic.VanzNavMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzNavMusic .VanzNavMusicOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzNavMusic.VanzNavMusicShow .VanzNavMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzNavMusic .VanzNavMusicContent {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    overflow-y: auto;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon {
+    cursor: pointer;
+    user-select: none;
+    padding: 15px;
+    margin-top: 5px;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon span {
+    height: 4px;
+    width: 40px;
+    display: block;
+    background: #C7D0E1;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBody {
+    position: relative;
+    background: #fff;
+    height: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfile {
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfileDetails {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzNavMusicBodyProfileDetails b {
+    margin-right: 5px;
+  }
+  .VanzNavMusicBodyProfileDetails h4 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor {
+    position: relative;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor i {
+    margin-right: 3px;
+    margin-top: 3px;
+    font-size: 16px;
+    cursor: pointer;  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p {
+    padding: 3px;
+    font-size: 15px; 
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p b {
+    font-size: 15px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i {
+    position: absolute;
+    top: 5px;
+    right: -40px;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #7d4196;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i:hover {
+    color: black;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 5px #7d4196;
+  }
+
 }
 @media screen and (min-width: 390px) {
   .VanzBody {
@@ -1954,6 +2077,129 @@ body {
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
   }
+  .VanzNavMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzNavMusic.VanzNavMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzNavMusic .VanzNavMusicOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzNavMusic.VanzNavMusicShow .VanzNavMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzNavMusic .VanzNavMusicContent {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    overflow-y: auto;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon {
+    cursor: pointer;
+    user-select: none;
+    padding: 15px;
+    margin-top: 5px;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon span {
+    height: 4px;
+    width: 40px;
+    display: block;
+    background: #C7D0E1;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBody {
+    position: relative;
+    background: #fff;
+    height: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfile {
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfileDetails {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzNavMusicBodyProfileDetails b {
+    margin-right: 5px;
+  }
+  .VanzNavMusicBodyProfileDetails h4 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor {
+    position: relative;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor i {
+    margin-right: 3px;
+    margin-top: 3px;
+    font-size: 16px;
+    cursor: pointer;  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p {
+    padding: 3px;
+    font-size: 15px; 
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p b {
+    font-size: 15px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i {
+    position: absolute;
+    top: 5px;
+    right: -40px;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #7d4196;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i:hover {
+    color: black;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 5px #7d4196;
+  }
+
 }
 @media screen and (min-width: 380px) {
   .VanzBody {
@@ -2910,6 +3156,129 @@ body {
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
   }
+  .VanzNavMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzNavMusic.VanzNavMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzNavMusic .VanzNavMusicOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzNavMusic.VanzNavMusicShow .VanzNavMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzNavMusic .VanzNavMusicContent {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    overflow-y: auto;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon {
+    cursor: pointer;
+    user-select: none;
+    padding: 15px;
+    margin-top: 5px;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon span {
+    height: 4px;
+    width: 40px;
+    display: block;
+    background: #C7D0E1;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBody {
+    position: relative;
+    background: #fff;
+    height: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfile {
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfileDetails {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzNavMusicBodyProfileDetails b {
+    margin-right: 5px;
+  }
+  .VanzNavMusicBodyProfileDetails h4 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor {
+    position: relative;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor i {
+    margin-right: 3px;
+    margin-top: 3px;
+    font-size: 16px;
+    cursor: pointer;  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p {
+    padding: 3px;
+    font-size: 15px; 
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p b {
+    font-size: 15px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i {
+    position: absolute;
+    top: 5px;
+    right: -40px;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #7d4196;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i:hover {
+    color: black;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 5px #7d4196;
+  }
+
 }
 @media screen and (min-width: 370px) {
   .VanzBody {
@@ -3866,6 +4235,129 @@ body {
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
   }
+  .VanzNavMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzNavMusic.VanzNavMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzNavMusic .VanzNavMusicOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzNavMusic.VanzNavMusicShow .VanzNavMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzNavMusic .VanzNavMusicContent {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    overflow-y: auto;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon {
+    cursor: pointer;
+    user-select: none;
+    padding: 15px;
+    margin-top: 5px;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon span {
+    height: 4px;
+    width: 40px;
+    display: block;
+    background: #C7D0E1;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBody {
+    position: relative;
+    background: #fff;
+    height: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfile {
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfileDetails {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzNavMusicBodyProfileDetails b {
+    margin-right: 5px;
+  }
+  .VanzNavMusicBodyProfileDetails h4 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor {
+    position: relative;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor i {
+    margin-right: 3px;
+    margin-top: 3px;
+    font-size: 16px;
+    cursor: pointer;  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p {
+    padding: 3px;
+    font-size: 15px; 
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p b {
+    font-size: 15px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i {
+    position: absolute;
+    top: 5px;
+    right: -40px;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #7d4196;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i:hover {
+    color: black;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 5px #7d4196;
+  }
+
 }
 @media screen and (min-width: 360px) {
   .VanzBody {
@@ -4822,6 +5314,129 @@ body {
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
   }
+  .VanzNavMusic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 9999999;
+  }
+  .VanzNavMusic.VanzNavMusicShow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .VanzNavMusic .VanzNavMusicOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #000;
+  }
+  .VanzNavMusic.VanzNavMusicShow .VanzNavMusicContent {
+    transform: translateY(0);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .VanzNavMusic .VanzNavMusicContent {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+    overflow-y: auto;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon {
+    cursor: pointer;
+    user-select: none;
+    padding: 15px;
+    margin-top: 5px;
+  }
+  .VanzNavMusicContent .VanzNavMusicContentHeader .drag-icon span {
+    height: 4px;
+    width: 40px;
+    display: block;
+    background: #C7D0E1;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBody {
+    position: relative;
+    background: #fff;
+    height: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfile {
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  .VanzNavMusicBodyProfileDetails {
+    position: relative;
+    padding: 10px;
+  }
+  .VanzNavMusicBodyProfileDetails b {
+    margin-right: 5px;
+  }
+  .VanzNavMusicBodyProfileDetails h4 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor {
+    position: relative;
+    display: flex;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor i {
+    margin-right: 3px;
+    margin-top: 3px;
+    font-size: 16px;
+    cursor: pointer;  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p {
+    padding: 3px;
+    font-size: 15px; 
+  }
+  .VanzNavMusicBodyProfileDetailsBtnXAuthor p b {
+    font-size: 15px;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i {
+    position: absolute;
+    top: 5px;
+    right: -40px;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #7d4196;
+    transition: 0.5s ease-in-out;
+  }
+  .VanzNavMusicBodyProfileDetailsBtnClose i:hover {
+    color: black;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 5px #7d4196;
+  }
+
 }
 /* Custome Style End */
 /* Animation */
