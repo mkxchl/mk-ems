@@ -7,6 +7,9 @@ const VanzMusic = document.querySelector(".VanzMusic");
 const VanzOther = document.querySelector(".VanzOther");
 const VanzOtherOverlay = document.querySelector(".VanzOtherOverlay");
 const VanzOtherMenuXx = document.querySelector(".VanzOtherMenuXx");
+const VanzNavMusic = document.querySelector(".VanzNavMusic");
+const VanzNavMusicContent = document.querySelector(".VanzNavMusicContent");
+const VanzNavMusicOverlay = document.querySelector(".VanzNavMusicOverlay");
 
 /// Var Audio's ///
 
@@ -14,8 +17,27 @@ var klik = new Audio("https://ems-links.netlify.app/am/mix/klik.mp3");
 klik.loop = false;
 klik.autoplay = false;
 
+var VanzAudioxx = new Audio("https://ems-links.netlify.app/am/mix/MkxchlSong-5.mp3");
+VanzAudioxx.loop = false;
+VanzAudioxx.autoplay = false;
+VanzAudioxx.onended = function () {
+  OpenMenux();
+  VanzNavMusic.classList.remove("VanzNavMusicShow");
+};
+
 /// Function All ///
 
+function VanzLoad() {
+  VanzNavMusic.classList.add("VanzNavMusicShow");
+  updateSheetHeight(50);
+  VanzAudioxx.play();
+}
+
+function NavMusicXx() {
+  VanzNavMusic.classList.add("VanzNavMusicShow");
+  VanzMedia.classList.remove("VanzMediaShow");
+  klik.play();
+}
 function VanzMediaxx() {
   VanzMedia.classList.add("VanzMediaShow");
   klik.play();
@@ -88,6 +110,13 @@ function CloseVanzOtherMenu() {
   VanzOtherMenuXx.classList.remove("VanzOtherMenuXxShow");
   klik.play();
 }
+function CloseNavMusicx() {
+  VanzNavMusic.classList.remove("VanzNavMusicShow");
+  klik.play();
+  setTimeout(function () {
+    VanzNavMusic.classList.add("VanzNavMusicShow");
+  }, 10000);
+}
 /// Function Links ///
 
 function MkxXxInsta() {
@@ -149,3 +178,9 @@ function OpenNetlify() {
 function OpenGit() {
   window.location.replace("https://github.com/mkxchl");
 }
+
+/// Function Height ///
+
+const updateSheetHeight = (height) => {
+  VanzNavMusicContent.style.height = `${height}%`;
+};
