@@ -113,6 +113,7 @@ function CloseVanzOtherMenu() {
 function CloseNavMusicx() {
   VanzNavMusic.classList.remove("VanzNavMusicShow");
   klik.play();
+  VanzAudioxx.play();
   setTimeout(function () {
     VanzNavMusic.classList.add("VanzNavMusicShow");
   }, 10000);
