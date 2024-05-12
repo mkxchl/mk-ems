@@ -23,6 +23,7 @@ VanzAudioxx.autoplay = false;
 VanzAudioxx.onended = function () {
   OpenMenux();
   VanzNavMusic.classList.remove("VanzNavMusicShow");
+  VanzAbout.classList.add("VanzAboutShow");
 };
 
 /// Function All ///
