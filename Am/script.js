@@ -122,7 +122,7 @@ function CloseNavMusicx() {
 /// Function Links ///
 
 function MkxXxInsta() {
-  window.location.replace("https://instagram.com/marchell_kvandra");
+  window.location.replace("https://instagram.com/marchell_kevandra");
   klik.play();
 }
 function MkxXxTiktok() {
