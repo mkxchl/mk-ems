@@ -28,11 +28,11 @@ VanzAudioxx.onended = function () {
 
 /// Function All ///
 
-function VanzLoad() {
-  VanzNavMusic.classList.add("VanzNavMusicShow");
-  updateSheetHeight(50);
-  VanzAudioxx.play();
-}
+// function VanzLoad() {
+//   VanzNavMusic.classList.add("VanzNavMusicShow");
+//   updateSheetHeight(50);
+//   VanzAudioxx.play();
+// }
 
 function NavMusicXx() {
   VanzNavMusic.classList.add("VanzNavMusicShow");
@@ -142,7 +142,7 @@ function MkPortfolio() {
   klik.play();
 }
 function MkSpotifyPlaylistX() {
-  window.location.replace("https://spoti.fi/3Uz8b7i");
+  window.location.replace("https://open.spotify.com/playlist/1ZaVZkzQxjsSPUSnLDrL27?si=3326f41cde64402d");
   klik.play();
 }
 function MkxxGithub() {
