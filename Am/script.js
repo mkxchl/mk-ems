@@ -46,8 +46,7 @@ function OpenMenux() {
   VanzMenu.classList.add("VanzMenuShow");
   VanzMedia.classList.remove("VanzMediaShow");
   klik.play();
-  (fs = !1),
-    elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
+  elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
 }
 function ChooseMusic() {
   VanzMusic.classList.add("VanzMusicShow");
