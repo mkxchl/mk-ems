@@ -428,6 +428,7 @@ body {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 5px;
     transition: 0.5s ease-in-out;
   }
   .VanzMenuBody .VanzMenuBodyMeta h4 {
@@ -672,6 +673,28 @@ body {
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
     font-size: 12px;
     font-weight: 500;
+  }
+  .VanzAboutBtnx {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background: #000;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s linear; 
+  }
+  .VanzAboutBtnx a {
+    font-weight: bold;
+  }
+  .VanzAboutBtnx:hover {
+    background: transparent;
+    box-shadow: 0 0 5px #fff;
+    transition: 0.5s linear; 
   }
   .VanzReport {
     position: fixed;
@@ -997,6 +1020,32 @@ body {
   .VanzNav .VanzNavBoy i:hover { 
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
+  }
+  .bars {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+  }
+  .bar {
+    width: 5px;
+    height: 30px;
+    background: #FFFFFF;
+    margin: 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    animation: mainBar ease-in-out 0.8s infinite;
+  }
+  .bar:nth-child(2) {
+    height: 15px;
+    animation: secBar ease-in-out 0.8s infinite;
   }
   .VanzNavMusic {
     position: fixed;
@@ -1507,6 +1556,7 @@ body {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 5px;
     transition: 0.5s ease-in-out;
   }
   .VanzMenuBody .VanzMenuBodyMeta h4 {
@@ -1751,6 +1801,28 @@ body {
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
     font-size: 12px;
     font-weight: 500;
+  }
+  .VanzAboutBtnx {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background: #000;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s linear; 
+  }
+  .VanzAboutBtnx a {
+    font-weight: bold;
+  }
+  .VanzAboutBtnx:hover {
+    background: transparent;
+    box-shadow: 0 0 5px #fff;
+    transition: 0.5s linear; 
   }
   .VanzReport {
     position: fixed;
@@ -2076,6 +2148,32 @@ body {
   .VanzNav .VanzNavBoy i:hover { 
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
+  }
+  .bars {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+  }
+  .bar {
+    width: 5px;
+    height: 30px;
+    background: #FFFFFF;
+    margin: 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    animation: mainBar ease-in-out 0.8s infinite;
+  }
+  .bar:nth-child(2) {
+    height: 15px;
+    animation: secBar ease-in-out 0.8s infinite;
   }
   .VanzNavMusic {
     position: fixed;
@@ -2586,6 +2684,7 @@ body {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 5px;
     transition: 0.5s ease-in-out;
   }
   .VanzMenuBody .VanzMenuBodyMeta h4 {
@@ -2830,6 +2929,28 @@ body {
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
     font-size: 12px;
     font-weight: 500;
+  }
+  .VanzAboutBtnx {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background: #000;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s linear; 
+  }
+  .VanzAboutBtnx a {
+    font-weight: bold;
+  }
+  .VanzAboutBtnx:hover {
+    background: transparent;
+    box-shadow: 0 0 5px #fff;
+    transition: 0.5s linear; 
   }
   .VanzReport {
     position: fixed;
@@ -3155,6 +3276,32 @@ body {
   .VanzNav .VanzNavBoy i:hover { 
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
+  }
+  .bars {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+  }
+  .bar {
+    width: 5px;
+    height: 30px;
+    background: #FFFFFF;
+    margin: 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    animation: mainBar ease-in-out 0.8s infinite;
+  }
+  .bar:nth-child(2) {
+    height: 15px;
+    animation: secBar ease-in-out 0.8s infinite;
   }
   .VanzNavMusic {
     position: fixed;
@@ -3665,6 +3812,7 @@ body {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 5px;
     transition: 0.5s ease-in-out;
   }
   .VanzMenuBody .VanzMenuBodyMeta h4 {
@@ -3909,6 +4057,28 @@ body {
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
     font-size: 12px;
     font-weight: 500;
+  }
+  .VanzAboutBtnx {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background: #000;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s linear; 
+  }
+  .VanzAboutBtnx a {
+    font-weight: bold;
+  }
+  .VanzAboutBtnx:hover {
+    background: transparent;
+    box-shadow: 0 0 5px #fff;
+    transition: 0.5s linear; 
   }
   .VanzReport {
     position: fixed;
@@ -4234,6 +4404,32 @@ body {
   .VanzNav .VanzNavBoy i:hover { 
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
+  }
+  .bars {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+  }
+  .bar {
+    width: 5px;
+    height: 30px;
+    background: #FFFFFF;
+    margin: 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    animation: mainBar ease-in-out 0.8s infinite;
+  }
+  .bar:nth-child(2) {
+    height: 15px;
+    animation: secBar ease-in-out 0.8s infinite;
   }
   .VanzNavMusic {
     position: fixed;
@@ -4744,6 +4940,7 @@ body {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 5px;
     transition: 0.5s ease-in-out;
   }
   .VanzMenuBody .VanzMenuBodyMeta h4 {
@@ -4988,6 +5185,28 @@ body {
   .VanzAboutBodyMetaDetailInfo .VanzAboutBodyMetaDetailInfoNx p {
     font-size: 12px;
     font-weight: 500;
+  }
+  .VanzAboutBtnx {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background: #000;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s linear; 
+  }
+  .VanzAboutBtnx a {
+    font-weight: bold;
+  }
+  .VanzAboutBtnx:hover {
+    background: transparent;
+    box-shadow: 0 0 5px #fff;
+    transition: 0.5s linear; 
   }
   .VanzReport {
     position: fixed;
@@ -5314,6 +5533,32 @@ body {
     color:  #7d4196; 
     transition: 0.5s ease-in-out; 
   }
+  .bars {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+  }
+  .bar {
+    width: 5px;
+    height: 30px;
+    background: #FFFFFF;
+    margin: 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    animation: mainBar ease-in-out 0.8s infinite;
+  }
+  .bar:nth-child(2) {
+    height: 15px;
+    animation: secBar ease-in-out 0.8s infinite;
+  }
   .VanzNavMusic {
     position: fixed;
     top: 0;
@@ -5447,4 +5692,26 @@ body {
 @keyframes bg-move {
   0%   { background-position: -500px 0; }
   100% { background-position: 1000px 0; }
+}
+@keyframes mainBar {
+  0% {
+    height: 30px;
+  }
+  60% {
+    height: 10px;
+  }
+  100% {
+    height: 31px;
+  }
+}
+@keyframes secBar {
+  0% {
+    height: 8px;
+  }
+  60% {
+    height: 31px;
+  }
+  100% {
+    height: 9px;
+  }
 }
