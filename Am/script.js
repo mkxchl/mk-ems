@@ -28,12 +28,11 @@ VanzAudioxx.onended = function () {
 
 /// Function All ///
 
-// function VanzLoad() {
-//   VanzNavMusic.classList.add("VanzNavMusicShow");
-//   updateSheetHeight(50);
-//   VanzAudioxx.play();
-// }
-
+function VanzLoad() {
+   setTimeout(function () {
+    VanzAbout.classList.add("VanzAboutShow");
+  }, 5000);
+}
 function NavMusicXx() {
   VanzNavMusic.classList.add("VanzNavMusicShow");
   VanzMedia.classList.remove("VanzMediaShow");
@@ -47,6 +46,8 @@ function OpenMenux() {
   VanzMenu.classList.add("VanzMenuShow");
   VanzMedia.classList.remove("VanzMediaShow");
   klik.play();
+  (fs = !1),
+    elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
 }
 function ChooseMusic() {
   VanzMusic.classList.add("VanzMusicShow");
