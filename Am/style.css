@@ -25,6 +25,67 @@ body {
   overflow-x: hidden;
 /*   background: #ddd; */
   background: transparent linear-gradient(90deg, #7d4196 0%, #ff3494 100%) 0% 0%;
+  transition: 0.5s ease-in-out;
+}
+/* Background Changed */
+
+body.MkAnimeX {
+  positino: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  justify-content: center; 
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  transition: 0.5s ease-in-out;
+}
+body.MkAnimeX .VanzBody {
+  transition: 0.5s ease-in-out;
+}
+body.MkAnimeXx {
+  positino: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  justify-content: center; 
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://images.unsplash.com/photo-1496535731694-9673400f50c9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  transition: 0.5s ease-in-out;
+}
+body.MkAnimeXx .VanzBody {
+  transition: 0.5s ease-in-out;
+}
+body.BgNeumorphism {
+  background: #dde1e7;
+  transition: 0.5s ease-in-out;
+}
+body.BgNeumorphism .VanzBody .VanzBodyContent {
+  background: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+  transition: 0.5s ease-in-out;
+}
+body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentImageMeta img {
+  border: 5px solid #dde1e7;
+  transition: 0.5s ease-in-out;
+}
+body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList {
+  color: black;
+  background: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+  transition: 0.5s ease-in-out;
+}
+body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList.shine {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+  background-repeat: no-repeat;
+  animation: bg-move linear 5s infinite;
+}
+body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList:hover {
+  background: none;
+  transition: 0.5s ease-in-out;
+  color: #000;
+  box-shadow: 0 0 10px rgba(94,104,121,0.288);
 }
 /* Media Default */
 
@@ -44,9 +105,68 @@ body {
 /* End Default Styles */
 /* Custome Style Start */
 @media screen and (min-width: 400px) {
+  body.MkAnimeX {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeX .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1496535731694-9673400f50c9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism {
+    background: #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent {
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentImageMeta img {
+    border: 5px solid #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList {
+    color: black;
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList:hover {
+    background: none;
+    transition: 0.5s ease-in-out;
+    color: #000;
+    box-shadow: 0 0 10px rgba(94,104,121,0.288);
+  }
   .VanzBody {
     position: relative;
     width: 100%;
+    transition: 0.5s ease-in-out;
   }
   .VanzBody .VanzBodyContent {
     position: relative;
@@ -76,6 +196,7 @@ body {
     border-radius: 50px;
     bottom: 40px;
     border: 5px solid #fff;
+    transition: 0.5s ease-in-out;
   }
   .VanzBodyContentNameXBio {
     position: relative;
@@ -494,7 +615,7 @@ body {
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
     background: #fff;
     overflow-y: auto;
-    bottom: -50px;
+    bottom: -20px;
     border-radius: 30px;
   }
   .VanzThemesHeader {
@@ -545,6 +666,20 @@ body {
     padding: 10px;
     margin-left: 10px;
   }
+  .VanzThemesBodyMetaButton {
+    position: relative;
+    padding: 10px;
+    background: red;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMetaButton a {
+    color: white;
+    font-weight: bold;
+  }
   .VanzAbout {
     position: fixed;
     top: 0;
@@ -576,6 +711,7 @@ body {
     background-color: #7d4196;
     /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
+    overflow: hidden;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
@@ -1172,9 +1308,68 @@ body {
 
 }
 @media screen and (min-width: 390px) {
+  body.MkAnimeX {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeX .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1496535731694-9673400f50c9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism {
+    background: #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent {
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentImageMeta img {
+    border: 5px solid #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList {
+    color: black;
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList:hover {
+    background: none;
+    transition: 0.5s ease-in-out;
+    color: #000;
+    box-shadow: 0 0 10px rgba(94,104,121,0.288);
+  }
   .VanzBody {
     position: relative;
     width: 100%;
+    transition: 0.5s ease-in-out;
   }
   .VanzBody .VanzBodyContent {
     position: relative;
@@ -1204,6 +1399,7 @@ body {
     border-radius: 50px;
     bottom: 40px;
     border: 5px solid #fff;
+    transition: 0.5s ease-in-out;
   }
   .VanzBodyContentNameXBio {
     position: relative;
@@ -1622,7 +1818,7 @@ body {
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
     background: #fff;
     overflow-y: auto;
-    bottom: -50px;
+    bottom: -20px;
     border-radius: 30px;
   }
   .VanzThemesHeader {
@@ -1673,6 +1869,20 @@ body {
     padding: 10px;
     margin-left: 10px;
   }
+  .VanzThemesBodyMetaButton {
+    position: relative;
+    padding: 10px;
+    background: red;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMetaButton a {
+    color: white;
+    font-weight: bold;
+  }
   .VanzAbout {
     position: fixed;
     top: 0;
@@ -1704,6 +1914,7 @@ body {
     background-color: #7d4196;
     /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
+    overflow: hidden;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
@@ -2300,9 +2511,68 @@ body {
 
 }
 @media screen and (min-width: 380px) {
+  body.MkAnimeX {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeX .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1496535731694-9673400f50c9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism {
+    background: #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent {
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentImageMeta img {
+    border: 5px solid #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList {
+    color: black;
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList:hover {
+    background: none;
+    transition: 0.5s ease-in-out;
+    color: #000;
+    box-shadow: 0 0 10px rgba(94,104,121,0.288);
+  }
   .VanzBody {
     position: relative;
     width: 100%;
+    transition: 0.5s ease-in-out;
   }
   .VanzBody .VanzBodyContent {
     position: relative;
@@ -2332,6 +2602,7 @@ body {
     border-radius: 50px;
     bottom: 40px;
     border: 5px solid #fff;
+    transition: 0.5s ease-in-out;
   }
   .VanzBodyContentNameXBio {
     position: relative;
@@ -2750,7 +3021,7 @@ body {
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
     background: #fff;
     overflow-y: auto;
-    bottom: -50px;
+    bottom: -20px;
     border-radius: 30px;
   }
   .VanzThemesHeader {
@@ -2801,6 +3072,20 @@ body {
     padding: 10px;
     margin-left: 10px;
   }
+  .VanzThemesBodyMetaButton {
+    position: relative;
+    padding: 10px;
+    background: red;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMetaButton a {
+    color: white;
+    font-weight: bold;
+  }
   .VanzAbout {
     position: fixed;
     top: 0;
@@ -2832,6 +3117,7 @@ body {
     background-color: #7d4196;
     /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
+    overflow: hidden;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
@@ -3428,9 +3714,68 @@ body {
 
 }
 @media screen and (min-width: 370px) {
+  body.MkAnimeX {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeX .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1496535731694-9673400f50c9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism {
+    background: #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent {
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentImageMeta img {
+    border: 5px solid #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList {
+    color: black;
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList:hover {
+    background: none;
+    transition: 0.5s ease-in-out;
+    color: #000;
+    box-shadow: 0 0 10px rgba(94,104,121,0.288);
+  }
   .VanzBody {
     position: relative;
     width: 100%;
+    transition: 0.5s ease-in-out;
   }
   .VanzBody .VanzBodyContent {
     position: relative;
@@ -3460,6 +3805,7 @@ body {
     border-radius: 50px;
     bottom: 40px;
     border: 5px solid #fff;
+    transition: 0.5s ease-in-out;
   }
   .VanzBodyContentNameXBio {
     position: relative;
@@ -3878,7 +4224,7 @@ body {
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
     background: #fff;
     overflow-y: auto;
-    bottom: -50px;
+    bottom: -20px;
     border-radius: 30px;
   }
   .VanzThemesHeader {
@@ -3929,6 +4275,20 @@ body {
     padding: 10px;
     margin-left: 10px;
   }
+  .VanzThemesBodyMetaButton {
+    position: relative;
+    padding: 10px;
+    background: red;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMetaButton a {
+    color: white;
+    font-weight: bold;
+  }
   .VanzAbout {
     position: fixed;
     top: 0;
@@ -3960,6 +4320,7 @@ body {
     background-color: #7d4196;
     /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
+    overflow: hidden;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
@@ -4556,9 +4917,68 @@ body {
 
 }
 @media screen and (min-width: 360px) {
+  body.MkAnimeX {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeX .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx {
+    positino: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1496535731694-9673400f50c9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    transition: 0.5s ease-in-out;
+  }
+  body.MkAnimeXx .VanzBody {
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism {
+    background: #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent {
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentImageMeta img {
+    border: 5px solid #dde1e7;
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList {
+    color: black;
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+    transition: 0.5s ease-in-out;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList.shine {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 48.44%, #fff 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+  }
+  body.BgNeumorphism .VanzBody .VanzBodyContent .VanzBodyContentDetailMetaBodyList:hover {
+    background: none;
+    transition: 0.5s ease-in-out;
+    color: #000;
+    box-shadow: 0 0 10px rgba(94,104,121,0.288);
+  }
   .VanzBody {
     position: relative;
     width: 100%;
+    transition: 0.5s ease-in-out;
   }
   .VanzBody .VanzBodyContent {
     position: relative;
@@ -4588,6 +5008,7 @@ body {
     border-radius: 50px;
     bottom: 40px;
     border: 5px solid #fff;
+    transition: 0.5s ease-in-out;
   }
   .VanzBodyContentNameXBio {
     position: relative;
@@ -5006,7 +5427,7 @@ body {
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
     background: #fff;
     overflow-y: auto;
-    bottom: -50px;
+    bottom: -20px;
     border-radius: 30px;
   }
   .VanzThemesHeader {
@@ -5057,6 +5478,20 @@ body {
     padding: 10px;
     margin-left: 10px;
   }
+  .VanzThemesBodyMetaButton {
+    position: relative;
+    padding: 10px;
+    background: red;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .VanzThemesBodyMetaButton a {
+    color: white;
+    font-weight: bold;
+  }
   .VanzAbout {
     position: fixed;
     top: 0;
@@ -5088,6 +5523,7 @@ body {
     background-color: #7d4196;
     /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     overflow-y: auto;
+    overflow: hidden;
   }
   .VanzAboutContent .VanzAboutHeader {
     position: relative;
