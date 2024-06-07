@@ -152,6 +152,10 @@ function MkxxTele() {
   window.location.replace("https://t.me/Marchell_Junior");
   klik.play();
 }
+function MkxxDiscord() {
+  window.location.replace("https://discordapp.com/users/611666120520237070");
+  klik.play();
+}
 
 /// Function Web Settings ///
 
@@ -190,7 +194,7 @@ function BgAnimeX() {
   // Set Time Show Bottom Sheet Themes
   setTimeout(function () {
     VanzThemes.classList.add("VanzThemesShow");
-  }, 2000);
+  }, 2000); 
   klik.play();
 }
 function BgAnimeXx() {
