@@ -10,6 +10,7 @@ const VanzOtherMenuXx = document.querySelector(".VanzOtherMenuXx");
 const VanzNavMusic = document.querySelector(".VanzNavMusic");
 const VanzNavMusicContent = document.querySelector(".VanzNavMusicContent");
 const VanzNavMusicOverlay = document.querySelector(".VanzNavMusicOverlay");
+const BodyX = document.querySelector("body");
 
 /// Var Audio's ///
 
@@ -29,9 +30,9 @@ VanzAudioxx.onended = function () {
 /// Function All ///
 
 function VanzLoad() {
-   setTimeout(function () {
+  setTimeout(function () {
     VanzAbout.classList.add("VanzAboutShow");
-  }, 5000);
+  }, 3000);
 }
 function NavMusicXx() {
   VanzNavMusic.classList.add("VanzNavMusicShow");
@@ -46,7 +47,6 @@ function OpenMenux() {
   VanzMenu.classList.add("VanzMenuShow");
   VanzMedia.classList.remove("VanzMediaShow");
   klik.play();
-  elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
 }
 function ChooseMusic() {
   VanzMusic.classList.add("VanzMusicShow");
@@ -88,7 +88,6 @@ function VanzCloseMenu() {
   klik.play();
 }
 function closeChangedThemes() {
-  VanzMenu.classList.add("VanzMenuShow");
   VanzThemes.classList.remove("VanzThemesShow");
   klik.play();
 }
@@ -181,6 +180,48 @@ function OpenGit() {
   window.location.replace("https://github.com/mkxchl");
 }
 
+// Function Bg Changed //
+
+function BgAnimeX() {
+  BodyX.classList.add("MkAnimeX");
+  BodyX.classList.remove("MkAnimeXx");
+  BodyX.classList.remove("BgNeumorphism");
+  VanzThemes.classList.remove("VanzThemesShow");
+  // Set Time Show Bottom Sheet Themes
+  setTimeout(function () {
+    VanzThemes.classList.add("VanzThemesShow");
+  }, 2000);
+  klik.play();
+}
+function BgAnimeXx() {
+  BodyX.classList.add("MkAnimeXx");
+  BodyX.classList.remove("MkAnimeX");
+  BodyX.classList.remove("BgNeumorphism");
+  VanzThemes.classList.remove("VanzThemesShow");
+  // Set Time Show Bottom Sheet Themes
+  setTimeout(function () {
+    VanzThemes.classList.add("VanzThemesShow");
+  }, 2000);
+  klik.play();
+}
+function BgNeumorphism() {
+  BodyX.classList.add("BgNeumorphism");
+  BodyX.classList.remove("MkAnimeXx");
+  BodyX.classList.remove("MkAnimeX");
+  VanzThemes.classList.remove("VanzThemesShow");
+  // Set Time Show Bottom Sheet Themes
+  setTimeout(function () {
+    VanzThemes.classList.add("VanzThemesShow");
+  }, 2000);
+  klik.play();
+}
+function BgReset() {
+  BodyX.classList.remove("MkAnimeX");
+  BodyX.classList.remove("MkAnimeXx");
+  BodyX.classList.remove("BgNeumorphism");
+  VanzThemes.classList.remove("VanzThemesShow");
+  klik.play();
+}
 /// Function Height ///
 
 const updateSheetHeight = (height) => {
