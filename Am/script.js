@@ -14,11 +14,11 @@ const BodyX = document.querySelector("body");
 
 /// Var Audio's ///
 
-var klik = new Audio("https://ems-links.netlify.app/am/mix/klik.mp3");
+var klik = new Audio("https://editor-miring-squad.netlify.app/am/mix/klik.mp3");
 klik.loop = false;
 klik.autoplay = false;
 
-var VanzAudioxx = new Audio("https://ems-links.netlify.app/am/mix/MkxchlSong-5.mp3");
+var VanzAudioxx = new Audio("https://editor-miring-squad.netlify.app/am/mix/MkxchlSong-5.mp3");
 VanzAudioxx.loop = false;
 VanzAudioxx.autoplay = false;
 VanzAudioxx.onended = function () {
