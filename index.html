@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
-    <title>EMS Revolution</title>
+    <title>Editor Miring Squad</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="kZrI3e531cfnW2f8wWMM78KqvZzFEQbZxXc3XfEu8wA" />
     <!-- Meta Property -->
-    <meta property="og:title" content="EMS REVOLUTION - Officiall website editor miring squad revolution!" />
-    <meta property="og:description" content="Coding by Marchell Kevandra" />
+    <meta property="og:title" content="Editor Miring Squad Revolution Official website team management Editor Miring Squad" />
+    <meta property="og:description" content="Editor Miring Squad Since 2018" />
     <meta property="og:url" content="https://editor-miring-squad.netlify.app/" />
     <meta property="og:image" content="https://editor-miring-squad.netlify.app/assets/images/assets/images/ems-panel.png" />
     <meta property="og:image:secure_url" content="https://editor-miring-squad.netlify.app/assets/images/ems-panel.png" />
-    <meta property="og:author" content="Chellxz" />
+    <meta property="og:author" content="Marchell Kevandra" />
     <!-- Link Rel Assets -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://editor-miring-squad.netlify.app/assets/images/ems-panel.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://editor-miring-squad.netlify.app/assets/images/ems-panel.png" />
@@ -22,56 +20,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://editor-miring-squad.netlify.app/assets/css/styles.css" rel="stylesheet" />
   </head>
-  <style>
-    Mk {
-      color: #0000004f;
-    }
-  </style>
-  <body onload="MkLoader()">
-    <!-- Start Background All -->
-    <div class="MkxEmsBackground"></div>
-    <!-- End Background All -->
-    <!-- Start Section Choose -->
-    <section class="EmsBodyAll">
-      <div class="MkListChoose">
-        <div class="MkListChooseIcon">
-          <div class="MkListChooseIconUser" onclick="AuthorOpenedz()">
-            <i class="bx bx-user"></i>
-            <p>Author</p>
-          </div>
-          <div class="MkListChooseIconMenu" onclick="OpenMenu()">
-            <i class="bx bx-menu"></i>
-            <p>Menu</p>
-          </div>
-        </div>
-      </div>
-      <div class="MkListFooter">
-        <h4>If your friend want to Join, Contact for <b><a onclick="ContactAdmin()">Admin</b></a></h4>
-      </div>
-    </section>
-    <!-- End Section Choose -->
-    <!-- Start Intro Ems -->
-    <div class="EmsIntro">
-      <div class="EmsIntroOverlay"></div>
-      <div class="EmsIntroContent">
-        <div class="EmsIntroContentVideoSrc">
-          <div class="EmsIntroContentVideo">
-            <video class="EmsIntroContentVideoA" id="EmsIntroVidz">
-              <source src="https://editor-miring-squad.netlify.app/assets/images/mk-video.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </div>
+  <body onload="VzxLoad()">
+    <div class="loading">
+      <svg width="64px" height="48px">
+        <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+        <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+      </svg>
     </div>
-    <!-- End Intro Ems -->
-    <!-- Start Author -->
     <div class="EmsAuthor">
       <div class="EmsAuthorContent">
         <div class="EmsAuthorContentHeader">
-          <i class="bx bx-chevron-left" onclick="AuthorClose()"></i>
-          <h4>Author</h4>
+          <i class="bx bx-menu" onclick="OpenMenu()"></i>
+          <h4>Team Management</h4>
         </div>
         <div class="EmsAuthorContentStaffBody">
           <div class="EmsAuthorContentStaff">
@@ -115,7 +77,7 @@
             </div>
             <!-- Staff Two -->
             <div class="EmsAuthorContentStaffImagesThumbnail">
-              <div class="ribbon"><span>Coder</span></div>
+              <!-- <div class="ribbon"><span>Coder</span></div> -->
               <img src="https://editor-miring-squad.netlify.app/assets/images/Mk_Logo.jpg" />
             </div>
             <div class="EmsAuthorContentStaffIinfo">
@@ -123,7 +85,7 @@
                 <h4>Co Founder</h4>
               </div>
               <div class="EmsAuthorContentStaffIinfoName">
-                <h4>Marchell Kevandra <img src="https://editor-miring-squad.netlify.app/assets/images/mk_veriv.png" /></h4>
+                <h4>Marchell Kevandra</h4>
               </div>
               <div class="EmsAuthorContentStaffIinfoPlace">
                 <ul>
@@ -266,8 +228,46 @@
                 </div>
               </div>
             </div>
+            <!-- Staff Three -->
+            <div class="EmsAuthorContentStaffImagesThumbnail">
+              <img src="https://editor-miring-squad.netlify.app/assets/images/mk-anime-1.jpg" />
+            </div>
+            <div class="EmsAuthorContentStaffIinfo">
+              <div class="EmsAuthorContentStaffInfoHeader">
+                <h4>Ems Girls</h4>
+              </div>
+              <div class="EmsAuthorContentStaffIinfoName">
+                <h4>Sireen</h4>
+              </div>
+              <div class="EmsAuthorContentStaffIinfoPlace">
+                <ul>
+                  <li>
+                    <span>Location</span>
+                    Indonesia
+                  </li>
+                  <li>
+                    <span>Status</span>
+                    Girls
+                  </li>
+                  <li>
+                    <span>Age's</span>
+                    20 Years
+                  </li>
+                </ul>
+              </div>
+              <div class="EmsAuthorContentStaffIinfoSocialMedia">
+                <div class="EmsAuthorContentStaffIinfoSocialMediaHeader">
+                  <h5>Follow Us</h5>
+                </div>
+                <div class="EmsAuthorContentStaffIinfoSocialMediaContent">
+                  <i class="bx bxl-instagram" onclick="ThInsta()"></i>
+                  <i class="bx bxl-facebook"></i>
+                  <i class="bx bxl-youtube"></i>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="EmsAuthorContentStaffBodyAbout">
+          <!-- <div class="EmsAuthorContentStaffBodyAbout">
             <div class="EmsAuthorContentStaffBodyImagesThumb">
               <img src="assets/images/ems-panel.png" />
             </div>
@@ -286,424 +286,129 @@
               <img src="https://editor-miring-squad.netlify.app/assets/images/TNG.jpg" />
               <img src="https://editor-miring-squad.netlify.app/assets/images/tca.jpg" />
             </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Vanz Media Start -->
+    <div class="VanzMedia">
+      <div class="VanzMediaOverlay"></div>
+      <div class="VanzMediaContent">
+        <div class="VanzMediaContentBody BtnClose" onclick="CloseMenu()">
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="VanzMediaContentBody" onclick="OpenDownload()">
+          <i class="bx bx-download"></i>
+        </div>
+        <div class="VanzMediaContentBody" onclick="MkxXxTiktok()">
+          <i class="bx bxl-deezer"></i>
+        </div>
+        <div class="VanzMediaContentBody" onclick="MkxXxTiktok()">
+          <i class="bx bxs-color"></i>
+        </div>
+        <div class="VanzMediaContentBody" onclick="MkxXxTiktok()">
+          <i class="bx bx-dollar-circle"></i>
+        </div>
+        <!-- <div class="VanzMediaContentBody" onclick="NavMusicXx()">
+          <i class="bx bx-music"></i>
+        </div> -->
+      </div>
+    </div>
+    <div class="EmsChoose">
+      <div class="EmsChooseContent">
+        <div class="EmsChooseList">
+          <div class="EmsChooseListContent" onclick="OpenKine()">
+            <img src="assets/images/kine.ico" />
+            <h4>KM MOD</h4>
+          </div>
+          <div class="EmsChooseListContent" onclick="OpenInt()">
+            <i class="bx bxs-videos"></i>
+            <h4>INTRO</h4>
+          </div>
+          <div class="EmsChooseBtn">
+            <i class="bx bx-x" onclick="CloseDownload()"></i>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Author -->
-    <!-- Start Menu -->
-    <div class="EmsMenu">
-      <div class="EmsMenuContent">
-        <div class="EmsMenuContentBody">
-          <div class="EmsMenuContentHeader">
-            <h4>Menu</h4>
-            <i class="bx bx-chevron-down" onclick="EmsMenuClose()"></i>
+    <div class="EmsKine">
+      <div class="EmsKineContent">
+        <div class="EmsKineHeader">
+          <h4>Kinemaster <br />| Modder</h4>
+          <p>Home/Menu/km-modder</p>
+        </div>
+        <div class="EmsKineBody">
+          <div class="EmsKineBodyMeta" onclick="EmsAppA()">
+            <i class="bx bx-download"></i>
+            <div class="EmsKineBodyMetaList">
+              <h4>KM MOD EMS V1</h4>
+              <p>Crack By Yhoris Gervino</p>
+            </div>
           </div>
-          <div class="EmsMenuContentBody">
-            <div class="EmsMenuContentTeamFams toggle">
-              <div class="EmsMenuContentTeamFamsSubtitle">
-                <h4>Team Family</h4>
-                <i class="bx bx-chevron-down"></i>
-              </div>
-              <div class="EmsMenuContentTeamFamsBody">
-                <div class="EmsMenuContentTeamFamsBodyTeam">
-                  <li>
-                    <ul>
-                      Editor Minang Squad
-                    </ul>
-                    <ul>
-                      Comunity Tanker Solidarity
-                    </ul>
-                    <ul>
-                      Comunity Music Recorder
-                    </ul>
-                    <ul>
-                      Secret Never Surender
-                    </ul>
-                    <ul>
-                      Editor Miring Squad Girls
-                    </ul>
-                    <ul>
-                      Spk Management
-                    </ul>
-                    <ul>
-                      King Lyric Kinemaster
-                    </ul>
-                    <ul>
-                      Break Lyric Kinemaster
-                    </ul>
-                    <ul>
-                      Biak Rese Nation
-                    </ul>
-                    <ul>
-                      Design Project Squad
-                    </ul>
-                    <ul>
-                      Squad Geser Font
-                    </ul>
-                    <ul>
-                      Jabar Lyric Squad
-                    </ul>
-                  </li>
-                </div>
-              </div>
+          <div class="EmsKineBodyMeta" onclick="EmsAppB()">
+            <i class="bx bx-download"></i>
+            <div class="EmsKineBodyMetaList">
+              <h4>KM MOD EMS V2</h4>
+              <p>Crack By Yhoris Gervino</p>
             </div>
-            <div class="EmsMenuContentFeature">
-              <div class="EmsMenuContentFeatureList" onclick="OpenRules()">
-                <i class="ri-sticky-note-line"></i>
-                <h4>Rules</h4>
-              </div>
-              <div class="EmsMenuContentFeatureList" onclick="OpenSong()">
-                <i class="ri-music-line"></i>
-                <h4>Song</h4>
-              </div>
+          </div>
+          <div class="EmsKineBodyMeta" onclick="EmsAppC()">
+            <i class="bx bx-download"></i>
+            <div class="EmsKineBodyMetaList">
+              <h4>KM MOD EMS V3</h4>
+              <p>Crack By Yhoris Gervino</p>
             </div>
-            <div class="EmsMenuContentFeature">
-              <div class="EmsMenuContentFeatureList" onclick="OpenVideoBodyContent()">
-                <i class="ri-archive-line"></i>
-                <h4>Archive</h4>
-              </div>
-              <div class="EmsMenuContentFeatureList" onclick="OpenApp()">
-                <i class="ri-download-2-line"></i>
-                <h4>Apps</h4>
-              </div>
-            </div>
-            <!-- <div class="EmsFeatureFlip">
-              <i class="ri-markup-line"></i>
-            </div> -->
-            <!-- <div class="EmsMenuContentFeature">
-              <div class="EmsMenuContentFeatureList" onclick="OpenMem()">
-                <i class="ri-shield-user-line"></i>
-                <h4>Anggota</h4>
-              </div>
-              <div class="EmsMenuContentFeatureList" onclick="OpenLink()">
-                <i class="ri-link"></i>
-                <h4>Link</h4>
-              </div>
-            </div> -->
-            <!-- <div class="EmsMenuContentJoin">
-              <h4>You can join to Ems Revolution ? <b class="EmsJoin" onclick="EmsJoinxxx()">Join Here</b></h4>
-            </div> -->
-            <!-- <div class="MkxxNavBtm">
-              <i class="bx bxs-user-detail" onclick="MkAccountxxx()"></i>
-            </div> -->
+          </div>
+        </div>
+        <div class="EmsBtnIp">
+          <div class="EmsBtnIpCrs" onclick="CloseKm()">
+            <h4>Back</h4>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Menu --> 
-    <!-- Start Link -->
-    <div class="EmsLink">
-      <div class="EmsLinkOverlay"></div>
-      <div class="EmsLinkContent">
-        <div class="EmsLinkContentBody">
-          <div class="EmsLinkContentBodyHeader">
-            <h4>Choose Link</h4>
+    <div class="EmsInt">
+      <div class="EmsIntContent">
+        <div class="EmsIntHeader">
+          <h4>
+            Intro <br />
+            | Downloader
+          </h4>
+          <p>Home/Menu/intro-downloader</p>
+        </div>
+        <div class="EmsIntBody">
+          <div class="EmsIntBodyMeta">
+            <div class="EmsIntBodyMetaList" onclick="EmsIntAx()">
+              <i class="bx bxs-videos"></i>
+              <div class="EmsIntBodyMetaListContent">
+                <h4>INTRO EMS |</h4>
+              </div>
+            </div>
+            <div class="EmsIntBodyMetaList" onclick="EmsIntBx()">
+              <i class="bx bxs-videos"></i>
+              <div class="EmsIntBodyMetaListContent">
+                <h4>INTRO EMS ||</h4>
+              </div>
+            </div>
+            <div class="EmsIntBodyMetaList" onclick="EmsIntCx()">
+              <i class="bx bxs-videos"></i>
+              <div class="EmsIntBodyMetaListContent">
+                <h4>INTRO EMS |||</h4>
+              </div>
+            </div>
           </div>
-          <div class="EmsLinkContentBodyMeta">
-            <div class="EmsLinkContentBodyMetaIcon">
-              <i class="bx bx-link"></i>
-              <i class="bx bx-link"></i>
-              <i class="bx bx-link"></i>
-            </div>
-            <div class="EmsLinkContentBodyMetaIcon">
-              <i class="bx bx-link"></i>
-              <i class="bx bx-link"></i>
-              <i class="bx bx-link"></i>
-            </div>
+          <div class="EmsIntBtn" onclick="CloseInt()">
+            <h4 class="BtnxIntBck">Back</h4>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Link -->
-    <!-- Start Music -->
-    <div class="EmsSong">
-      <div class="EmsSongContent">
-        <div class="EmsSongContentHeader">
-          <i class="bx bx-x" onclick="CloseMusic()"></i>
-          <h4>Ems Song | Coming Soon</h4>
-        </div>
-        <div class="EmsSongContentBody">
-          <div class="EmsSongContentBodyThumbnailHeader">
-            <div class="EmsSongContentBodyThumbnail">
-              <img src="assets/images/Ems-V2.jpg" alt="" />
-            </div>
-            <div class="EmsSongContentBodySubtitle">
-              <h4>DJ EMS REVOLUTION 2020-2022 PLAYLIST SONG FULL</h4>
-            </div>
-            <div class="EmsSongContentBodyDescription">
-              <div class="EmsSongContentBodyDescInfo">
-                <i class="ri-play-fill"></i>
-                <h4>Editor Miring Squad Music</h4>
-              </div>
-              <div class="EmsSongContentBodyDescInfoLike">
-                <i class="ri-global-line"></i>
-                <p>100.350 suka</p>
-              </div>
-            </div>
-          </div>
-          <div class="EmsSongContentBodyDescIconList">
-            <i class="ri-heart-line"></i>
-            <i class="ri-arrow-down-circle-line"></i>
-          </div>
-          <div class="EmsSongContentBodyMusicList">
-            <!-- <ul class="BodyMusicListContent">
-              <div class="BodyMusicListContentAuthor">
-                <div class="BodyMusicListContentAuthorImages">
-                  <img src="assets/images/Ems-V2.jpg" />
-                </div>
-                <div class="BodyMusicListContentAuthorInfo">
-                  <h4 class="BodyMusicListContentAuthorMusicName" id="AuthorMusicName">PERMATA CINTA X EMS REVOLUTION</h4>
-                  <p class="BodyMusicListContentAuthorMusicArtist" id="AuthorMusicArtis">Yhoris Gervino</p>
-                </div>
-              </div>
-            </ul> -->
-            <!-- <div class="BodyMusicContentTrackBar">
-              <div class="EmsTrackPlayBar">
-                <img src="https://ems-links.netlify.app/assets/images/Ems-rev.jpg" class="album-art" />
-                <div class="EmsTrackInfo">
-                  <div class="EmsTrackSubtitle">
-                    <h4>I Bet You Look Good On The Dancefloor</h4>
-                  </div>
-                  <p class="EmsTrackArtist">Arctic Monkeys</p>
-                </div>
-                <div class="EmsButtonPlay">
-                  <i class="ri-play-fill"></i>
-                </div>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Music -->
-    <!-- Start Download -->
-    <div class="EmsApp">
-      <div class="EmsAppContent">
-        <div class="EmsAppHeader">
-          <i class="bx bx-x" onclick="CloseApp()"></i>
-          <h4>Application</h4>
-        </div>
-        <div class="EmsAppBodyx">
-          <div class="EmsAppBodyContent">
-            <div class="EmsAppBodyContentHeaderTitle">
-              <img src="assets/images/ems-panel.png" />
-              <h4>Editor Miring Squad</h4>
-              <p>Since 2018</p>
-            </div>
-            <div class="EmsAppBodyContentLink">
-              <div class="EmsAppBodyContentLinkHeaderTitle">
-                <h4 id="HeaderTitleApp">Download KineMaster Mod</h4>
-              </div>
-              <div class="EmsAppBodyContentLinkDownload EmsAx" onclick="EmsAppA()">
-                <img src="assets/images/ems-3.png" />
-                <h4 id="NameOne">Kinemaster V1</h4>
-                <i class="bx bx-chevron-right"></i>
-              </div>
-              <div class="EmsAppBodyContentLinkDownload EmsBx" onclick="EmsAppB()">
-                <img src="assets/images/ems-1.png" />
-                <h4 id="NameTwo">Kinemaster V2</h4>
-                <i class="bx bx-chevron-right"></i>
-              </div>
-              <div class="EmsAppBodyContentLinkDownload EmsCx" onclick="EmsAppC()">
-                <img src="assets/images/ems-2.png" />
-                <h4 id="NameThree">Kinemaster V3</h4>
-                <i class="bx bx-chevron-right"></i>
-              </div>
-            </div>
-            <div class="EmsAppBodyContentLinkDownloadIntro" onclick="OpenDownloadIntro()">
-              <h4>Download Intro Disini</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Download -->
-    <!-- Start Video -->
-    <div class="EmsVideo">
-      <div class="EmsVideoContent">
-        <div class="EmsVideoContentSrc">
-          <video width="100%" height="100%" id="MkEmsVideoStaff">
-            <source src="https://ems-links.netlify.app/assets/images/mk-video.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-    </div>
-    <!-- End Video -->
-    <!-- Start Rules -->
-    <div class="EmsRules">
-      <div class="EmsRulesBody">
-        <div class="EmsRulesBodyContent">
-          <div class="EmsRulesBodyContentHeaderTitle">
-            <h4>Rules</h4>
-            <p>Berikut peraturan team Editor Miring Squad.</p>
-            <div class="EmsRulesBodyContentHeaderIcon">
-              <i class="bx bx-chevron-down" onclick="CloseRules()"></i>
-            </div>
-          </div>
-          <div class="EmsRulesBodyMeta">
-            <div class="EmsRulesBodyMetaContent">
-              <i class="bx bx-check-double MkIcRulesCheck"></i>
-              <h4>Attitude Paling Utama</h4>
-            </div>
-            <div class="EmsRulesBodyMetaContent">
-              <i class="bx bx-check-double MkIcRulesCheck"></i>
-              <h4>Memakai Intro EMS</h4>
-            </div>
-            <div class="EmsRulesBodyMetaContent">
-              <i class="bx bx-x"></i>
-              <h4>Share Sticker 18+</h4>
-            </div>
-            <div class="EmsRulesBodyMetaContent">
-              <i class="bx bx-x"></i>
-              <h4>Share Video 18+</h4>
-            </div>
-            <div class="EmsRulesBodyMetaContent">
-              <i class="bx bx-x"></i>
-              <h4>Share Link Grup Other</h4>
-            </div>
-            <div class="EmsRulesBodyMetaContent">
-              <i class="bx bx-x"></i>
-              <h4>Dont Pansos Sana Sini</h4>
-            </div>
-            <div class="EmsRulesBodyMetaContent">
-              <i class="bx bx-x"></i>
-              <h4>No Kutu Loncat</h4>
-            </div>
-            <div class="EmsRulesBodyMetaContent">
-              <i class="bx bx-x"></i>
-              <h4>No Baperan</h4>
-            </div>
-            <div class="EmsRulesBodyMetaFooter">
-              <h4>Editor Miring Squad</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Rules -->
-    <!-- Start Video Intx -->
-    <div class="EmsVideoIntx">
-      <div class="EmsVideoIntxBody">
-        <div class="EmsVideoIntxBodyContent">
-          <div class="EmsVideoIntxBodyHeaderTitle">
-            <i class="bx bx-chevron-left" onclick="CloseIntDown()"></i>
-            <h4>Intro Downloader</h4>
-          </div>
-          <div class="EmsVideoIntxBodyMeta">
-            <div class="EmsVideoIntxBodyMetaImages">
-              <img src="assets/images/ems-panel.png" />
-            </div>
-            <div class="EmsVideoIntxBodyMetaTitleTeam">
-              <h4>Editor Miring Squad</h4>
-              <p>Since 2018</p>
-            </div>
-            <div class="EmsVideoIntxBodyMetaInt">
-              <header>Download Intro</header>
-              <div class="EmsVideoIntxBodyMetaIntList" onclick="EmsIntAx()">
-                <i class="bx bx-movie"></i>
-                <h4>Intro 1</h4>
-              </div>
-              <div class="EmsVideoIntxBodyMetaIntList" onclick="EmsIntBx()">
-                <i class="bx bx-movie"></i>
-                <h4>Intro 2</h4>
-              </div>
-              <div class="EmsVideoIntxBodyMetaIntList" onclick="EmsIntCx()">
-                <i class="bx bx-movie"></i>
-                <h4>Intro 3</h4>
-              </div>
-              <div class="EmsVideoIntxBodyMetaFooter">
-                <h4>Editor Miring Squad</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Video Intx -->
-    <!-- End Videos -->
-    <!-- Start Videos B -->
-    <div class="EmsVideoBody">
-      <div class="EmsVideoBodyContent">
-        <div class="EmsVideoBodyContentHeader">
-          <i class="bx bx-chevron-left" onclick="CloseVidContent()"></i>
-          <h4>Archive</h4>
-        </div>
-        <div class="EmsVideoBodyContentMeta">
-          <div class="EmsVideoBodyContentMetaImages">
-            <h4>Mega Collab</h4>
-            <div class="EmsVideoBodyContentMetaImagesContent">
-              <div class="EmsVideoBodyContentMetaImagesContentVideo">
-                <video class="EmsVideoMegaCollab" id="EmsVideoMegaCollabA" muted loop>
-                  <source src="assets/mv/EmsVideosDistrack.mp4" type="video/mp4" />
-                </video>
-                <video class="EmsVideoMegaCollab" id="EmsVideoMegaCollabB" muted loop>
-                  <source src="assets/mv/EmsVideos.mp4" type="video/mp4" />
-                </video>
-                <video class="EmsVideoMegaCollab" id="EmsVideoMegaCollabC" muted loop>
-                  <source src="assets/mv/EmsVideos-2.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Videos B -->
-    <!-- Start Mk Account -->
-    <div class="MkAccount">
-      <div class="MkAccountOverlay"></div>
-      <div class="MkAccountContent">
-        <div class="MkAccountBodyContent">
-          <div class="MkAccountBodyHeader">
-            <i class="bx bx-chevron-down" onclick="CloseMkAccount()"></i>
-          </div>
-          <div class="MkAccountBodyMeta" onclick="MkDirect()">
-            <div class="MkAccountBodyMetaContent">
-              <img src="https://editor-miring-squad.netlify.app/assets/images/logo.jpg" />
-              <!-- <i class="bx bx-user"></i> -->
-              <div class="MkAccountBodyName">
-                <h4>Marchell Kevandra</h4>
-                <p>StarBoys</p>
-              </div>
-            </div>
-          </div>
-          <div class="MkAccountBodyMeta" onclick="YgkInsta()">
-            <div class="MkAccountBodyMetaContent">
-              <img src="https://editor-miring-squad.netlify.app/assets/images/ygk.jpg" />
-              <div class="MkAccountBodyName">
-                <h4>Yhoris Gervino</h4>
-                <p>Admin Grup</p>
-              </div>
-            </div>
-          </div>
-          <div class="MkAccountBodyMeta" onclick="AgsInsta()">
-            <div class="MkAccountBodyMetaContent">
-              <img src="https://editor-miring-squad.netlify.app/assets/images/Ags-V2.jpg" />
-              <div class="MkAccountBodyName">
-                <h4>Agus Capital</h4>
-                <p>Admin Grup</p>
-              </div>
-            </div>
-          </div>
-          <div class="MkAccountBodyMeta" onclick="JnInsta()">
-            <div class="MkAccountBodyMetaContent">
-              <img src="https://editor-miring-squad.netlify.app/assets/images/profile.jpg" />
-              <div class="MkAccountBodyName">
-                <h4>Juna Kntl</h4>
-                <p>Admin Grup</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Mk Account -->
-    <!-- Audio Libraries -->
-    <audio id="EmsxxxAudio">
-      <source src="https://editor-miring-squad.netlify.app/am/mix/MkxchlSong-5.mp3" type="audio/mpeg" />
-    </audio>
-    <script src="https://editor-miring-squad.netlify.app/assets/js/query.min.js"></script>
-    <script src="main.js"></script>
+    <!-- Vanz Media End -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/split-type"></script> -->
+    <script src="https://editor-miring-squad.netlify.app/assets/js/script.js"></script>
   </body>
 </html>
