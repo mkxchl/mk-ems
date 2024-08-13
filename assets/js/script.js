@@ -7,7 +7,7 @@ const EmsInt = document.querySelector(".EmsInt");
 function VzxLoad() {
   setTimeout(function () {
     EmsAuthor.classList.add("AuthorShow");
-  }, 1122);
+  }, 5000);
 }
 function OpenMenu() {
   VanzMedia.classList.add("VanzMediaShow");
