@@ -1,271 +1,375 @@
-const EmsBodyAll = document.querySelector(".EmsBodyAll");
-const EmsAuthor = document.querySelector(".EmsAuthor");
-const EmsAuthorContent = document.querySelector(".EmsAuthorContent");
-const EmsMenu = document.querySelector(".EmsMenu");
-const EmsMenuContent = document.querySelector(".EmsMenuContent");
-const EmsMenuContentTeamFams = document.querySelector(".EmsMenuContentTeamFams");
-const EmsMenuToggle = document.querySelector(".toggle");
-const EmsLink = document.querySelector(".EmsLink");
-const EmsLinkOverlay = document.querySelector(".EmsLinkOverlay");
-const EmsLinkContent = document.querySelector(".EmsLinkContent");
-const EmsSong = document.querySelector(".EmsSong");
-const EmsSongContent = document.querySelector(".EmsSongContent");
-const EmsApp = document.querySelector(".EmsApp");
-const EmsAppContent = document.querySelector(".EmsAppContent");
-const EmsVideo = document.querySelector(".EmsVideo");
-const EmsVideoContent = document.querySelector(".EmsVideoContent");
-const EmsVideoBody = document.querySelector(".EmsVideoBody");
-const EmsVideoBodyContent = document.querySelector(".EmsVideoBodyContent");
-const EmsIntro = document.querySelector(".EmsIntro");
-const EmsIntroOverlay = document.querySelector(".EmsIntroOverlay");
-const EmsIntroContent = document.querySelector(".EmsIntroContent");
-const MkAccount = document.querySelector(".MkAccount");
-const MkAccountOverlay = document.querySelector(".MkAccountOverlay");
-const EmsAx = document.querySelector(".EmsAx");
-const EmsBx = document.querySelector(".EmsBx");
-const EmsCx = document.querySelector(".EmsCx");
-const AppContent = document.querySelector(".AppContent");
-const IntroContent = document.querySelector(".IntroContent");
-const EmsRules = document.querySelector(".EmsRules");
-const EmsVideoIntx = document.querySelector(".EmsVideoIntx");
-const EmsJoinxx = document.querySelector(".EmsJoinxx");
-const EmsJoinxxOverlay = document.querySelector(".EmsJoinxxOverlay");
-const MkAccountBodyContent = document.querySelector(".MkAccountBodyContent");
-const MkAccountBodyHeader = document.querySelector(".MkAccountBodyHeader");
-const HeaderTitleApp = document.getElementById("HeaderTitleApp");
-const NameOne = document.getElementById("NameOne");
-const NameTwo = document.getElementById("NameTwo");
-const NameThree = document.getElementById("NameThree");
-const EmsxxxAudio = document.getElementById("EmsxxxAudio");
+const LoadJT = document.querySelector('.JTLoad')
+const BodyJT = document.querySelector('body')
+const JTMenu = document.querySelector('.JTMenu')
+const JTHeader = document.querySelector('.JTMenuDetail')
+const EmsMenu = document.querySelector('.EmsMusic')
+const EMSHeader = document.querySelector('.EmsMusicMenuDetail')
+const JTVideoMega = document.getElementById('JTVideoMega')
+const JTVideoMegax = document.getElementById('JTVideoMegax')
+const JTVideoDisstrack = document.getElementById('JTVideoDisstrack')
+const playPauseButton = document.getElementById('playPauseButton')
+const playPauseButtonDis = document.getElementById('playPauseButtonDis')
+const playPauseButtonx = document.getElementById('playPauseButtonx')
+const PlayMusics = document.getElementById('PlayMusics')
+const audio = document.getElementById('Lth')
+const Prmta = document.getElementById('Prmt')
+const playLth = document.getElementById('playLth')
+const playPrmta = document.getElementById('playPrmta')
+const Zpanel = document.getElementById('Zpan')
+const playZpan = document.getElementById('playZpan')
+const Cmr = document.getElementById('Cmr')
+const playCmr = document.getElementById('playCmr')
+const progress = document.getElementById('progress')
+const vxShow = document.querySelector('.volume-bars')
+const VxLathx = document.querySelector('.XLath')
+const VxPrmt = document.querySelector('.XPrmt')
+const XZpanx = document.querySelector('.XZpanx')
+const XCmrzx = document.querySelector('.XCmrzx')
 
-EmsMenuToggle.onclick = function () {
-  EmsMenuContentTeamFams.classList.toggle("TeamUpdateHeight");
-};
+var klik = new Audio('https://editor-miring-squad.netlify.app/am/mix/klik.mp3')
+klik.loop = false
+klik.autoplay = false
 
-function OpenVideo() {
-  $("#MkEmsVideoStaff").show(), $(".EmsVideoContentSrc").fadeIn(), vid.play();
-  EmsVideo.classList.add("EmsVideoShow");
-  EmsMenu.classList.remove("EmsMenuShow");
-}
+var EMSPermata = new Audio(
+  'https://editor-miring-squad.netlify.app/mix/EditorMiringSquad.mp3'
+)
+EMSPermata.loop = false
+EMSPermata.autoplay = false
 
-/// Video Function ///
+const tabs = document.querySelectorAll('[data-target]'),
+  tabContents = document.querySelectorAll('[data-content]')
 
-var elem = document.documentElement,
-  vid = document.getElementById("MkEmsVideoStaff"),
-  vidA = document.getElementById("EmsVideoMegaCollabA"),
-  vidB = document.getElementById("EmsVideoMegaCollabB"),
-  vidC = document.getElementById("EmsVideoMegaCollabC");
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.target)
 
-vid.onended = function () {
-  $(".EmsVideoContentSrc").fadeOut(), OpenVideoBodyContent();
-  EmsVideo.classList.remove("EmsVideoShow");
-};
+    tabContents.forEach(tc => {
+      tc.classList.remove('JTTabActive')
+      klik.play()
+      JTVideoMega.pause()
+      playPauseButton.classList.remove('bx-pause')
+      playPauseButton.classList.add('bx-play')
+    })
+    target.classList.add('JTTabActive')
 
-var vidInt = document.getElementById("EmsIntroVidz");
+    tabs.forEach(t => {
+      t.classList.remove('JTBtnActive')
+      JTVideoMega.pause()
+      playPauseButton.classList.remove('bx-pause')
+      playPauseButton.classList.add('bx-play')
+      klik.play()
+    })
+    tab.classList.add('JTBtnActive')
+    klik.play()
+  })
+})
 
-vidInt.onended = function () {
-  AuthorOpenedz();
-  EmsIntro.classList.remove("EmsIntroShow");
-};
-function AuthorOpenedz() {
-  EmsAuthor.classList.add("AuthorShow");
-}
-vidA.addEventListener("click", function () {
-  $("#EmsVideoMegaCollabA").prop("muted", false);
-  $("#EmsVideoMegaCollabB").prop("muted", true);
-  $("#EmsVideoMegaCollabC").prop("muted", true);
-  vidA.play();
-  vidB.pause();
-  vidC.pause();
-});
-vidB.addEventListener("click", function () {
-  $("#EmsVideoMegaCollabA").prop("muted", true);
-  $("#EmsVideoMegaCollabB").prop("muted", false);
-  $("#EmsVideoMegaCollabC").prop("muted", true);
-  vidA.pause();
-  vidB.play();
-  vidC.pause();
-});
-vidC.addEventListener("click", function () {
-  $("#EmsVideoMegaCollabA").prop("muted", true);
-  $("#EmsVideoMegaCollabB").prop("muted", true);
-  $("#EmsVideoMegaCollabC").prop("muted", false);
-  $("#EmsVideoMegaCollabC").prop("autoplay", true);
-  vidA.pause();
-  vidB.pause();
-  vidC.play();
-});
 
-function CloseVidContent() {
-  EmsMenu.classList.add("EmsMenuShow");
-  EmsVideoBody.classList.remove("EmsVideoBodyShow");
-  $("#EmsVideoMegaCollabA").prop("muted", true);
-  $("#EmsVideoMegaCollabB").prop("muted", true);
-  $("#EmsVideoMegaCollabC").prop("muted", true);
-  vidA.pause();
-  vidB.pause();
-  vidC.pause();
-}
-function OpenVideoBodyContent() {
-  EmsVideoBody.classList.add("EmsVideoBodyShow");
-  EmsMenu.classList.remove("EmsMenuShow");
-  $("#EmsVideoMegaCollabA").prop("muted", true);
-  $("#EmsVideoMegaCollabA").prop("autoplay", false);
-  $("#EmsVideoMegaCollabB").prop("muted", true);
-  $("#EmsVideoMegaCollabB").prop("autoplay", false);
-  $("#EmsVideoMegaCollabC").prop("muted", true);
-  $("#EmsVideoMegaCollabC").prop("autoplay", false);
-}
-function MkLoader() {
-  EmsxxxAudio.play();
-  elem.requestFullscreen ? elem.requestFullscreen() : elem.mozRequestFullScreen ? elem.mozRequestFullScreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen();
-}
-function OpenDownloadIntro() {
-  EmsVideoIntx.classList.add("EmsVideoIntxShow");
-  EmsApp.classList.remove("EmsAppShow");
-}
-function OpenIntro() {
-  vidInt.play();
-  EmsIntro.classList.add("EmsIntroShow");
-  EmsBodyAll.classList.add("Hide");
-}
-function OpenRules() {
-  EmsRules.classList.add("EmsRulesShow");
-  EmsMenu.classList.remove("EmsMenuShow");
-}
-function AuthorOpenedz() {
-  EmsAuthor.classList.add("AuthorShow");
-  EmsBodyAll.classList.add("Hide");
-}
-function OpenApp() {
-  EmsApp.classList.add("EmsAppShow");
-  EmsMenu.classList.add("Mkflip");
-}
-function OpenSong() {
-  EmsSong.classList.add("EmsSongShow");
-  EmsMenu.classList.remove("EmsMenuShow");
-}
-function OpenLink() {
-  EmsMenu.classList.remove("EmsMenuShow");
-  EmsLink.classList.add("EmsLinkShow");
-}
-function AuthorClose() {
-  EmsAuthor.classList.remove("AuthorShow");
-  EmsBodyAll.classList.remove("Hide");
-}
-function CloseIntDown() {
-  EmsVideoIntx.classList.remove("EmsVideoIntxShow");
-  EmsApp.classList.add("EmsAppShow");
-}
-function CloseApp() {
-  EmsApp.classList.remove("EmsAppShow");
-  EmsMenu.classList.remove("Mkflip");
-}
-function CloseMusic() {
-  EmsMenu.classList.add("EmsMenuShow");
-  EmsSong.classList.remove("EmsSongShow");
-}
-function CloseRules() {
-  EmsRules.classList.remove("EmsRulesShow");
-  EmsMenu.classList.add("EmsMenuShow");
-}
-function CloseMkAccount() {
-  MkAccountBodyHeader.classList.remove("MkIconShowCloseAccount");
+let isPlaying = false
+function VxBody () {
   setTimeout(function () {
-    EmsBodyAll.classList.remove("Hide");
-    MkAccount.classList.remove("MkAccountShow");
-  }, 500);
-}
-function OpenMenu() {
-  EmsMenu.classList.add("EmsMenuShow");
-  EmsBodyAll.classList.add("Hide");
-}
-function EmsMenuClose() {
-  EmsMenu.classList.remove("EmsMenuShow");
-  EmsMenuContentTeamFams.classList.remove("TeamUpdateHeight");
-  EmsBodyAll.classList.remove("Hide");
-}
-function UpdateHeightTeam() {
-  EmsMenuContentTeamFams.classList.add("TeamUpdateHeight");
-}
-function ContactAdmin() {
-  MkAccount.classList.add("MkAccountShow");
-  EmsBodyAll.classList.add("Hide");
-  MkAccountBodyContent.classList.add("UpdateBodyHeight");
+    LoadJT.classList.add('LoadHide')
+  }, 3000)
   setTimeout(function () {
-    MkAccountBodyHeader.classList.add("MkIconShowCloseAccount");
-  }, 1500);
+    BodyJT.classList.add('OverflowHide')
+  }, 3000)
 }
-/// Hide ///
-
-const hideBottomSheet = () => {
-  EmsMenu.classList.add("EmsMenuShow");
-  EmsLink.classList.remove("EmsLinkShow");
-  EmsJoinxx.classList.remove("EmsJoinxxShow");
-  EmsMenu.classList.remove("Mkflip");
-  MkAccount.classList.remove("MkAccountShow");
-};
-
-EmsLinkOverlay.addEventListener("click", hideBottomSheet);
-MkAccountOverlay.addEventListener("click", hideBottomSheet);
-
-/// Link Authorized ///
-
-/// Instagram Link ///
-
-function YgkInsta() {
-  window.location.replace("https://instagram.com/yhoris_grvino");
+function OpenPageMusic () {
+  EmsMenu.classList.add('EmsMenuShow')
+  klik.play()
 }
-function MkInsta() {
-  window.location.replace("https://instagram.com/marchell_kvandra");
+function OpenContact () {
+  JTMenu.classList.add('JTMenuShow')
+  klik.play()
+  JTVideoMega.pause()
+  playPauseButton.classList.remove('bx-pause')
+  playPauseButton.classList.add('bx-play')
 }
-function ThInsta() {
-  window.location.replace("https://instagram.com/thyan_story");
+function HeadBtn () {
+  JTHeader.classList.toggle('UpHeight')
 }
-function JnInsta() {
-  window.location.replace("https://instagram.com/arjuna_gns");
+function BtnJTClosed () {
+  JTMenu.classList.remove('JTMenuShow')
+  klik.play()
 }
-function AgsInsta() {
-  window.location.replace("https://instagram.com/guss.fx01");
+function OpenIg () {
+  window.location.replace('https://www.instagram.com/chellgnzxz/')
 }
-function EmsAppA() {
-  window.location.replace("https://sfile.mobi/84sZ8oGUUMk");
+function BtnEmsClosed () {
+  EmsMenu.classList.remove('EmsMenuShow')
+  Zpanel.pause()
+  audio.pause()
+  Prmta.pause()
+  klik.play()
+  playZpan.classList.remove('bx-pause')
+  playZpan.classList.add('bx-play') 
+  playLth.classList.remove('bx-pause')
+  playLth.classList.add('bx-play')
+  playPrmta.classList.remove('bx-pause')
+  playPrmta.classList.add('bx-play')
+  playCmr.classList.remove('bx-pause')
+  playCmr.classList.add('bx-play')
+  VxLathx.classList.remove('XLathShow')
+  VxPrmt.classList.remove('XPrmtShow')
+  XZpanx.classList.remove('XZpanxShow')
+  XCmrzx.classList.remove('XCmrzxShow')
 }
-function EmsAppB() {
-  window.location.replace("https://sfile.mobi/auvof2K1lm3");
+function OpenIg () {
+  window.location.replace('https://www.instagram.com/jabodetabek_team/')
 }
-function EmsAppC() {
-  window.location.replace("https://sfile.mobi/ak4R0snkoom");
+function OpenGithub () {
+  window.location.replace('https://github.com/mkxchl/')
 }
-function EmsIntAx() {
-  window.location.replace("https://www.mediafire.com/file/6xqnrfc1qcppl14/VID-20201204-WA0437.mp4/file");
-}
-function EmsIntBx() {
-  window.location.replace("https://www.mediafire.com/file/w0l4w1vgglcweev/VID-20201006-WA0441.mp4/file");
-}
-function EmsIntCx() {
-  window.location.replace("https://www.mediafire.com/file/x6fxjvduthq2aq7/video+(3).mkv/file");
-}
-function MkDirect() {
-  window.location.replace("https://www.instagram.com/direct/t/115407013181858");
-}
-/// Block Inspect ///
-
-document.onkeydown = function (e) {
-  if (e.keyCode == 123) {
-    return false;
+function PlayMega () {
+  if (isPlaying) {
+    klik.play()
+    JTVideoMega.pause()
+    playPauseButton.classList.remove('bx-pause')
+    playPauseButton.classList.add('bx-play')
+  } else {
+    JTVideoMega.play()
+    JTVideoDisstrack.pause()
+    JTVideoMegax.pause()
+    EMSPermata.pause()
+    playPauseButton.classList.remove('bx-play')
+    playPauseButton.classList.add('bx-pause')
+    playPauseButtonDis.classList.remove('bx-pause')
+    playPauseButtonDis.classList.add('bx-play')
+    playPauseButtonx.classList.remove('bx-pause')
+    playPauseButtonx.classList.add('bx-play')
   }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-    return false;
+  isPlaying = !isPlaying
+}
+JTVideoMega.onended = function () {
+  playPauseButton.classList.remove('bx-pause')
+  playPauseButton.classList.add('bx-play')
+}
+function PlayDistracks () {
+  if (isPlaying) {
+    klik.play()
+    JTVideoDisstrack.pause()
+    playPauseButtonDis.classList.remove('bx-pause')
+    playPauseButtonDis.classList.add('bx-play')
+  } else {
+    JTVideoDisstrack.play()
+    JTVideoMega.pause()
+    JTVideoMegax.pause()
+    EMSPermata.pause()
+    playPauseButtonDis.classList.remove('bx-play')
+    playPauseButtonDis.classList.add('bx-pause')
+    playPauseButton.classList.remove('bx-pause')
+    playPauseButton.classList.add('bx-play')
+    playPauseButtonx.classList.remove('bx-pause')
+    playPauseButtonx.classList.add('bx-play')
   }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-    return false;
+  isPlaying = !isPlaying
+}
+JTVideoDisstrack.onended = function () {
+  playPauseButtonDis.classList.remove('bx-pause')
+  playPauseButtonDis.classList.add('bx-play')
+}
+function PlayMegax () {
+  if (isPlaying) {
+    klik.play()
+    JTVideoMegax.pause()
+    playPauseButtonx.classList.remove('bx-pause')
+    playPauseButtonx.classList.add('bx-play')
+  } else {
+    JTVideoMegax.play()
+    JTVideoDisstrack.pause()
+    JTVideoMega.pause()
+    EMSPermata.pause()
+    playPauseButtonDis.classList.add('bx-play')
+    playPauseButtonDis.classList.remove('bx-pause')
+    playPauseButton.classList.remove('bx-pause')
+    playPauseButton.classList.add('bx-play')
+    playPauseButtonx.classList.add('bx-pause')
+    playPauseButtonx.classList.remove('bx-play')
   }
-  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-    return false;
-  }
+  isPlaying = !isPlaying
+}
+JTVideoMegax.onended = function () {
+  playPauseButtonx.classList.remove('bx-pause')
+  playPauseButtonx.classList.add('bx-play')
+}
 
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-    return false;
+function PlayMusic () {
+  if (isPlaying) {
+    klik.play()
+    EMSPermata.pause()
+    PlayMusics.classList.remove('bx-pause')
+    PlayMusics.classList.add('bx-play')
+  } else {
+    EMSPermata.play()
+    EMSPermata.volume = 0.5
+    PlayMusics.classList.add('bx-pause')
+    PlayMusics.classList.remove('bx-play')
   }
-};
+  isPlaying = !isPlaying
+}
+EMSPermata.onended = function () {
+  PlayMusics.classList.remove('bx-pause')
+  PlayMusics.classList.add('bx-play')
+}
+EMSPermata.onvolumechange = function () {
+  EMSPermata.volume = 0.5
+}
+playCmr.addEventListener('click', () => {
+  if (Cmr.paused) {
+    klik.play()
+    Cmr.play()
+    playCmr.classList.remove('bx-play')
+    playCmr.classList.add('bx-pause')
+    Zpanel.pause()
+    audio.pause()
+    Prmta.pause()
+    playZpan.classList.remove('bx-pause')
+    playZpan.classList.add('bx-play')
+    playLth.classList.remove('bx-pause')
+    playLth.classList.add('bx-play')
+    vxShow.classList.add('vShow')
+    XCmrzx.classList.add('XCmrzxShow')
+    VxLathx.classList.remove('XLathShow')
+    VxPrmt.classList.remove('XPrmtShow')
+    XZpanx.classList.remove('XZpanxShow')
+  } else {
+    Cmr.pause()
+    playCmr.classList.remove('bx-pause')
+    playCmr.classList.add('bx-play')
+    vxShow.classList.remove('vShow')
+  }
+})
+
+playZpan.addEventListener('click', () => {
+  if (Zpanel.paused) {
+    klik.play()
+    Zpanel.play()
+    playZpan.classList.remove('bx-play')
+    playZpan.classList.add('bx-pause')
+    Cmr.pause()
+    audio.pause()
+    Prmta.pause()
+    playCmr.classList.remove('bx-pause')
+    playCmr.classList.add('bx-play')
+    playLth.classList.remove('bx-pause')
+    playLth.classList.add('bx-play')
+    playPrmta.classList.remove('bx-pause')
+    playPrmta.classList.add('bx-play')
+    vxShow.classList.add('vShow')
+    XZpanx.classList.add('XZpanxShow')
+    VxLathx.classList.remove('XLathShow')
+    VxPrmt.classList.remove('XPrmtShow')
+    XCmrzx.classList.remove('XCmrzxShow')
+  } else {
+    Zpanel.pause()
+    XZpanx.classList.remove('XZpanxShow')
+    playZpan.classList.remove('bx-pause')
+    playZpan.classList.add('bx-play')
+    vxShow.classList.remove('vShow')
+  }
+})
+
+playLth.addEventListener('click', () => {
+  if (audio.paused) {
+    klik.play()
+    audio.play()
+    playLth.classList.remove('bx-play')
+    playLth.classList.add('bx-pause')
+    Zpanel.pause()
+    Prmta.pause()
+    Cmr.pause()
+    playCmr.classList.remove('bx-pause')
+    playCmr.classList.add('bx-play')
+    playZpan.classList.remove('bx-pause')
+    playZpan.classList.add('bx-play')
+    playPrmta.classList.remove('bx-pause')
+    playPrmta.classList.add('bx-play')
+    vxShow.classList.add('vShow')
+    VxLathx.classList.add('XLathShow')
+    VxPrmt.classList.remove('XPrmtShow')
+    XZpanx.classList.remove('XZpanxShow')
+    XCmrzx.classList.remove('XCmrzxShow')
+  } else {
+    audio.pause()
+    playLth.classList.remove('bx-pause')
+    playLth.classList.add('bx-play')
+    vxShow.classList.remove('vShow')
+    VxLathx.classList.remove('XLathShow')
+  }
+})
+
+playPrmta.addEventListener('click', () => {
+  if (Prmta.paused) {
+    klik.play()
+    Prmta.play()
+    playPrmta.classList.remove('bx-play')
+    playPrmta.classList.add('bx-pause')
+    Zpanel.pause()
+    audio.pause()
+    Cmr.pause()
+    playCmr.classList.remove('bx-pause')
+    playCmr.classList.add('bx-play')
+    playZpan.classList.remove('bx-pause')
+    playZpan.classList.add('bx-play')
+    playLth.classList.remove('bx-pause')
+    playLth.classList.add('bx-play')
+    vxShow.classList.add('vShow')
+    VxPrmt.classList.add('XPrmtShow')
+    VxLathx.classList.remove('XLathShow')
+    XZpanx.classList.remove('XZpanxShow')
+    XCmrzx.classList.remove('XCmrzxShow')
+  } else {
+    Prmta.pause()
+    playPrmta.classList.remove('bx-pause')
+    playPrmta.classList.add('bx-play')
+    vxShow.classList.remove('vShow')
+    VxPrmt.classList.remove('XPrmtShow')
+  }
+})
+
+audio.addEventListener('ended', () => {
+  playLth.classList.remove('bx-pause')
+  playLth.classList.add('bx-play')
+  vxShow.classList.remove('vShow')
+})
+Prmta.addEventListener('ended', () => {
+  playPrmta.classList.remove('bx-pause')
+  playPrmta.classList.add('bx-play')
+  vxShow.classList.remove('vShow')
+})
+Cmr.addEventListener('ended', () => {
+  playCmr.classList.remove('bx-pause')
+  playCmr.classList.add('bx-play')
+  vxShow.classList.remove('vShow')
+})
+Zpanel.addEventListener('ended', () => {
+  playZpan.classList.remove('bx-pause')
+  playZpan.classList.add('bx-play')
+  vxShow.classList.remove('vShow')
+})
+
+function EmsAppA () {
+  window.location.replace('https://sfile.mobi/84sZ8oGUUMk')
+}
+function EmsAppB () {
+  window.location.replace('https://sfile.mobi/auvof2K1lm3')
+}
+function EmsAppC () {
+  window.location.replace('https://sfile.mobi/ak4R0snkoom')
+}
+
+function EmsIntAx () {
+  window.location.replace(
+    'https://www.mediafire.com/file/6xqnrfc1qcppl14/VID-20201204-WA0437.mp4/file'
+  )
+}
+function EmsIntBx () {
+  window.location.replace(
+    'https://www.mediafire.com/file/w0l4w1vgglcweev/VID-20201006-WA0441.mp4/file'
+  )
+}
+function EmsIntCx () {
+  window.location.replace(
+    'https://www.mediafire.com/file/x6fxjvduthq2aq7/video+(3).mkv/file'
+  )
+}
