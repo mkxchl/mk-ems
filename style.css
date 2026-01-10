@@ -13,7 +13,7 @@
   src: url(https://mkxchl.github.io/chlxmk/assets/dist/font/PFBeauSansPro-Regular.woff);
 }
 ::selection {
-  background-color: purple;
+  background-color: red;
   color: white;
 }
 * {
@@ -5590,3 +5590,4 @@ body {
     margin-top: -50px;
   }
 }
+
