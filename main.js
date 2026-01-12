@@ -373,3 +373,9 @@ function EmsIntCx () {
     'https://www.mediafire.com/file/x6fxjvduthq2aq7/video+(3).mkv/file'
   )
 }
+function OpenYt() {
+  window.location.replace('https://www.youtube.com/@YhorisGervino')
+}
+function OpenSCld() {
+  window.location.replace('https://soundcloud.com/yhorisgervino')
+}
