@@ -92,7 +92,7 @@ function BtnJTClosed () {
   JTMenu.classList.remove('JTMenuShow')
   klik.play()
 }
-function OpenIg () {
+function OpenIg() {
   window.location.replace('https://www.instagram.com/chellgnzxz/')
 }
 function BtnEmsClosed () {
@@ -379,3 +379,4 @@ function OpenYt() {
 function OpenSCld() {
   window.location.replace('https://soundcloud.com/yhorisgervino')
 }
+
