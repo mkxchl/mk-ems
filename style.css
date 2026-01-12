@@ -30,16 +30,6 @@ body {
   user-select: none;
   overflow: hidden;
 }
-@media (min-width: 1200px) {
-  .JTBody {
-    opacity: 0;
-    pointer-events: none;
-  }
-  .JTLoad {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
 @media (min-width: 400px) {
   body.OverflowHide {
     overflow: auto;
@@ -125,7 +115,6 @@ body {
   }
   .JTBodySocial i {
     position: relative;
-    margin-left: 5px;
     padding: 10px;
     background: #07c10a;
     color: white;
@@ -427,6 +416,7 @@ body {
   .JTMenuDetailInfoListContent {
     position: relative;
     padding: 10px;
+    /* margin-top: 10px; */
   }
   .JTMenuDetailInfoListContent h4 {
     font-size: 16px;
@@ -436,6 +426,7 @@ body {
   .JTMenuDetailInfoListContent p {
     font-size: 14px;
     font-weight: bold;
+    /* margin-top: -50px; */
   }
   .JTMenuDetailInfoListContent span {
     font-size: 12px;
@@ -611,6 +602,83 @@ body {
     z-index: 1;
     box-shadow: 0 0 1px #07c10a;
   }
+  .card__ribbon {
+  margin-top: 1.5rem;
+  display: grid;
+  place-items: center;
+  height: 10px;
+  background-color: #ffffff;
+  position: relative;
+  width: 110%;
+  left: -5%;
+  top: -30px;
+  position: relative;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.card__ribbon::after,
+.card__ribbon::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1/1;
+  bottom: 100%;
+  z-index: -2;
+  background-color: #ffffff;
+}
+
+.card__ribbon::before {
+  left: 0;
+  transform-origin: left bottom;
+  transform: rotate(45deg);
+}
+
+.card__ribbon::after {
+  right: 0;
+  transform-origin: right bottom;
+  transform: rotate(-45deg);
+}
+
+.card__ribbon-label {
+  display: block;
+  width: 84px;
+  aspect-ratio: 1/1;
+  background-color: #ffffff;
+  position: relative;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border-right: 8px solid #ffffff;
+  border-left: 8px solid #ffffff;
+  border-top: 8px solid #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  line-height: 1;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.card__ribbon-label::before,
+.card__ribbon-label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 50%;
+}
+
+.card__ribbon-label::before {
+  right: calc(100% + 4px);
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 0 #ffffff;
+}
+
+.card__ribbon-label::after {
+  left: calc(100% + 4px);
+  border-bottom-left-radius: 20px;
+  box-shadow: -5px 5px 0 #ffffff;
+}
+
   .JtDownloadListDesc {
     position: relative;
     margin-top: -30px;
@@ -809,7 +877,6 @@ body {
   }
   .EmsMusicPageHeader {
     position: relative;
-    background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -824,7 +891,7 @@ body {
     bottom: 10px;
     left: 10px;
     padding: 10px;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(11px); */
   }
   .EmsMusicPageHeaderDesc h4 {
     font-size: 20px;
@@ -862,18 +929,65 @@ body {
   }
   .EmsMusicListDesc h4 {
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .EmsMusicListDescDetail {
+    position: relative;
+    align-items: center;
+    place-items: center;
+    display: flex;
+    width: 50%;
+  }
+  .EmsMusicListDescDetail span {
+    position: relative;
+    font-size: 10px;
+    margin-right: 3px;
+    font-weight: bold;
+  }
+  .EmsMusicListDescDetail p {
+    position: relative;
+    font-size: 10px;
   }
   .EmsMusicListDesc p {
     position: relative;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .EmsMusicListDescDetailInfo {
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .Scld {
+    color: #ff5500;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Scld:hover {
+    color: #000;
+    transition: 0.5s ease;
+  }
+  .Ytb {
+    color: #ff0000;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Ytb:hover {
+    color: #000;
+    transition: 0.5s ease;
   }
   .controls i {
     position: absolute;
-    top: 25%;
-    right: 2%;
+    top: 30%;
+    right: 5%;
     font-size: 30px;
     cursor: pointer;
+    /* background-color: #01cb04; */
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 0 3px #07c10a;
+    color: #07c10a;
   }
   .progress {
     -webkit-appearance: none;
@@ -1235,7 +1349,6 @@ body {
   }
   .JTBodySocial i {
     position: relative;
-    margin-left: 5px;
     padding: 10px;
     background: #07c10a;
     color: white;
@@ -1537,6 +1650,7 @@ body {
   .JTMenuDetailInfoListContent {
     position: relative;
     padding: 10px;
+    /* margin-top: 10px; */
   }
   .JTMenuDetailInfoListContent h4 {
     font-size: 16px;
@@ -1546,6 +1660,7 @@ body {
   .JTMenuDetailInfoListContent p {
     font-size: 14px;
     font-weight: bold;
+    /* margin-top: -50px; */
   }
   .JTMenuDetailInfoListContent span {
     font-size: 12px;
@@ -1721,6 +1836,83 @@ body {
     z-index: 1;
     box-shadow: 0 0 1px #07c10a;
   }
+  .card__ribbon {
+  margin-top: 1.5rem;
+  display: grid;
+  place-items: center;
+  height: 10px;
+  background-color: #ffffff;
+  position: relative;
+  width: 110%;
+  left: -5%;
+  top: -30px;
+  position: relative;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.card__ribbon::after,
+.card__ribbon::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1/1;
+  bottom: 100%;
+  z-index: -2;
+  background-color: #ffffff;
+}
+
+.card__ribbon::before {
+  left: 0;
+  transform-origin: left bottom;
+  transform: rotate(45deg);
+}
+
+.card__ribbon::after {
+  right: 0;
+  transform-origin: right bottom;
+  transform: rotate(-45deg);
+}
+
+.card__ribbon-label {
+  display: block;
+  width: 84px;
+  aspect-ratio: 1/1;
+  background-color: #ffffff;
+  position: relative;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border-right: 8px solid #ffffff;
+  border-left: 8px solid #ffffff;
+  border-top: 8px solid #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  line-height: 1;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.card__ribbon-label::before,
+.card__ribbon-label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 50%;
+}
+
+.card__ribbon-label::before {
+  right: calc(100% + 4px);
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 0 #ffffff;
+}
+
+.card__ribbon-label::after {
+  left: calc(100% + 4px);
+  border-bottom-left-radius: 20px;
+  box-shadow: -5px 5px 0 #ffffff;
+}
+
   .JtDownloadListDesc {
     position: relative;
     margin-top: -30px;
@@ -1919,7 +2111,6 @@ body {
   }
   .EmsMusicPageHeader {
     position: relative;
-    background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -1934,7 +2125,7 @@ body {
     bottom: 10px;
     left: 10px;
     padding: 10px;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(11px); */
   }
   .EmsMusicPageHeaderDesc h4 {
     font-size: 20px;
@@ -1972,18 +2163,65 @@ body {
   }
   .EmsMusicListDesc h4 {
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .EmsMusicListDescDetail {
+    position: relative;
+    align-items: center;
+    place-items: center;
+    display: flex;
+    width: 50%;
+  }
+  .EmsMusicListDescDetail span {
+    position: relative;
+    font-size: 10px;
+    margin-right: 3px;
+    font-weight: bold;
+  }
+  .EmsMusicListDescDetail p {
+    position: relative;
+    font-size: 10px;
   }
   .EmsMusicListDesc p {
     position: relative;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .EmsMusicListDescDetailInfo {
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .Scld {
+    color: #ff5500;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Scld:hover {
+    color: #000;
+    transition: 0.5s ease;
+  }
+  .Ytb {
+    color: #ff0000;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Ytb:hover {
+    color: #000;
+    transition: 0.5s ease;
   }
   .controls i {
     position: absolute;
-    top: 25%;
-    right: 2%;
+    top: 30%;
+    right: 5%;
     font-size: 30px;
     cursor: pointer;
+    /* background-color: #01cb04; */
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 0 3px #07c10a;
+    color: #07c10a;
   }
   .progress {
     -webkit-appearance: none;
@@ -2345,7 +2583,6 @@ body {
   }
   .JTBodySocial i {
     position: relative;
-    margin-left: 5px;
     padding: 10px;
     background: #07c10a;
     color: white;
@@ -2647,6 +2884,7 @@ body {
   .JTMenuDetailInfoListContent {
     position: relative;
     padding: 10px;
+    /* margin-top: 10px; */
   }
   .JTMenuDetailInfoListContent h4 {
     font-size: 16px;
@@ -2656,6 +2894,7 @@ body {
   .JTMenuDetailInfoListContent p {
     font-size: 14px;
     font-weight: bold;
+    /* margin-top: -50px; */
   }
   .JTMenuDetailInfoListContent span {
     font-size: 12px;
@@ -2831,6 +3070,83 @@ body {
     z-index: 1;
     box-shadow: 0 0 1px #07c10a;
   }
+  .card__ribbon {
+  margin-top: 1.5rem;
+  display: grid;
+  place-items: center;
+  height: 10px;
+  background-color: #ffffff;
+  position: relative;
+  width: 110%;
+  left: -5%;
+  top: -30px;
+  position: relative;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.card__ribbon::after,
+.card__ribbon::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1/1;
+  bottom: 100%;
+  z-index: -2;
+  background-color: #ffffff;
+}
+
+.card__ribbon::before {
+  left: 0;
+  transform-origin: left bottom;
+  transform: rotate(45deg);
+}
+
+.card__ribbon::after {
+  right: 0;
+  transform-origin: right bottom;
+  transform: rotate(-45deg);
+}
+
+.card__ribbon-label {
+  display: block;
+  width: 84px;
+  aspect-ratio: 1/1;
+  background-color: #ffffff;
+  position: relative;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border-right: 8px solid #ffffff;
+  border-left: 8px solid #ffffff;
+  border-top: 8px solid #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  line-height: 1;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.card__ribbon-label::before,
+.card__ribbon-label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 50%;
+}
+
+.card__ribbon-label::before {
+  right: calc(100% + 4px);
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 0 #ffffff;
+}
+
+.card__ribbon-label::after {
+  left: calc(100% + 4px);
+  border-bottom-left-radius: 20px;
+  box-shadow: -5px 5px 0 #ffffff;
+}
+
   .JtDownloadListDesc {
     position: relative;
     margin-top: -30px;
@@ -3029,7 +3345,6 @@ body {
   }
   .EmsMusicPageHeader {
     position: relative;
-    background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -3044,7 +3359,7 @@ body {
     bottom: 10px;
     left: 10px;
     padding: 10px;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(11px); */
   }
   .EmsMusicPageHeaderDesc h4 {
     font-size: 20px;
@@ -3082,18 +3397,65 @@ body {
   }
   .EmsMusicListDesc h4 {
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .EmsMusicListDescDetail {
+    position: relative;
+    align-items: center;
+    place-items: center;
+    display: flex;
+    width: 50%;
+  }
+  .EmsMusicListDescDetail span {
+    position: relative;
+    font-size: 10px;
+    margin-right: 3px;
+    font-weight: bold;
+  }
+  .EmsMusicListDescDetail p {
+    position: relative;
+    font-size: 10px;
   }
   .EmsMusicListDesc p {
     position: relative;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .EmsMusicListDescDetailInfo {
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .Scld {
+    color: #ff5500;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Scld:hover {
+    color: #000;
+    transition: 0.5s ease;
+  }
+  .Ytb {
+    color: #ff0000;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Ytb:hover {
+    color: #000;
+    transition: 0.5s ease;
   }
   .controls i {
     position: absolute;
-    top: 25%;
-    right: 2%;
+    top: 30%;
+    right: 5%;
     font-size: 30px;
     cursor: pointer;
+    /* background-color: #01cb04; */
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 0 3px #07c10a;
+    color: #07c10a;
   }
   .progress {
     -webkit-appearance: none;
@@ -3455,7 +3817,6 @@ body {
   }
   .JTBodySocial i {
     position: relative;
-    margin-left: 5px;
     padding: 10px;
     background: #07c10a;
     color: white;
@@ -3757,6 +4118,7 @@ body {
   .JTMenuDetailInfoListContent {
     position: relative;
     padding: 10px;
+    /* margin-top: 10px; */
   }
   .JTMenuDetailInfoListContent h4 {
     font-size: 16px;
@@ -3766,6 +4128,7 @@ body {
   .JTMenuDetailInfoListContent p {
     font-size: 14px;
     font-weight: bold;
+    /* margin-top: -50px; */
   }
   .JTMenuDetailInfoListContent span {
     font-size: 12px;
@@ -3941,6 +4304,83 @@ body {
     z-index: 1;
     box-shadow: 0 0 1px #07c10a;
   }
+  .card__ribbon {
+  margin-top: 1.5rem;
+  display: grid;
+  place-items: center;
+  height: 10px;
+  background-color: #ffffff;
+  position: relative;
+  width: 110%;
+  left: -5%;
+  top: -30px;
+  position: relative;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.card__ribbon::after,
+.card__ribbon::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1/1;
+  bottom: 100%;
+  z-index: -2;
+  background-color: #ffffff;
+}
+
+.card__ribbon::before {
+  left: 0;
+  transform-origin: left bottom;
+  transform: rotate(45deg);
+}
+
+.card__ribbon::after {
+  right: 0;
+  transform-origin: right bottom;
+  transform: rotate(-45deg);
+}
+
+.card__ribbon-label {
+  display: block;
+  width: 84px;
+  aspect-ratio: 1/1;
+  background-color: #ffffff;
+  position: relative;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border-right: 8px solid #ffffff;
+  border-left: 8px solid #ffffff;
+  border-top: 8px solid #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  line-height: 1;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.card__ribbon-label::before,
+.card__ribbon-label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 50%;
+}
+
+.card__ribbon-label::before {
+  right: calc(100% + 4px);
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 0 #ffffff;
+}
+
+.card__ribbon-label::after {
+  left: calc(100% + 4px);
+  border-bottom-left-radius: 20px;
+  box-shadow: -5px 5px 0 #ffffff;
+}
+
   .JtDownloadListDesc {
     position: relative;
     margin-top: -30px;
@@ -4139,7 +4579,6 @@ body {
   }
   .EmsMusicPageHeader {
     position: relative;
-    background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -4154,7 +4593,7 @@ body {
     bottom: 10px;
     left: 10px;
     padding: 10px;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(11px); */
   }
   .EmsMusicPageHeaderDesc h4 {
     font-size: 20px;
@@ -4192,18 +4631,65 @@ body {
   }
   .EmsMusicListDesc h4 {
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .EmsMusicListDescDetail {
+    position: relative;
+    align-items: center;
+    place-items: center;
+    display: flex;
+    width: 50%;
+  }
+  .EmsMusicListDescDetail span {
+    position: relative;
+    font-size: 10px;
+    margin-right: 3px;
+    font-weight: bold;
+  }
+  .EmsMusicListDescDetail p {
+    position: relative;
+    font-size: 10px;
   }
   .EmsMusicListDesc p {
     position: relative;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .EmsMusicListDescDetailInfo {
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .Scld {
+    color: #ff5500;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Scld:hover {
+    color: #000;
+    transition: 0.5s ease;
+  }
+  .Ytb {
+    color: #ff0000;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Ytb:hover {
+    color: #000;
+    transition: 0.5s ease;
   }
   .controls i {
     position: absolute;
-    top: 25%;
-    right: 2%;
+    top: 30%;
+    right: 5%;
     font-size: 30px;
     cursor: pointer;
+    /* background-color: #01cb04; */
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 0 3px #07c10a;
+    color: #07c10a;
   }
   .progress {
     -webkit-appearance: none;
@@ -4565,7 +5051,6 @@ body {
   }
   .JTBodySocial i {
     position: relative;
-    margin-left: 5px;
     padding: 10px;
     background: #07c10a;
     color: white;
@@ -4867,6 +5352,7 @@ body {
   .JTMenuDetailInfoListContent {
     position: relative;
     padding: 10px;
+    /* margin-top: 10px; */
   }
   .JTMenuDetailInfoListContent h4 {
     font-size: 16px;
@@ -4876,6 +5362,7 @@ body {
   .JTMenuDetailInfoListContent p {
     font-size: 14px;
     font-weight: bold;
+    /* margin-top: -50px; */
   }
   .JTMenuDetailInfoListContent span {
     font-size: 12px;
@@ -5051,2226 +5538,83 @@ body {
     z-index: 1;
     box-shadow: 0 0 1px #07c10a;
   }
-  .JtDownloadListDesc {
-    position: relative;
-    margin-top: -30px;
-    margin-bottom: 10px;
-  }
-  .JtDownloadListDesc h4 {
-    color: #01cb04;
-  }
-  .JtDownloadListDesc h4 {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .JtDownloadListDesc p {
-    font-size: 12px;
-  }
-  .JtDownloadList i {
-    position: relative;
-    place-items: center;
-    place-content: center;
-    padding: 10px;
-    font-size: 20px;
-  }
-  .JtDownloadListContent {
-    position: relative;
-    flex-direction: column;
-    place-content: center;
-    margin-left: 5px;
-  }
-  .JtDownloadListContent h4 {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .JtDownloadListContent p {
-    font-size: 10px;
-    font-weight: normal;
-  }
-  .JtDownloadListButton i {
-    position: relative;
-    left: 30px;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
-    transition: 0.5s ease;
-    cursor: pointer;
-  }
-  .JtDownloadListButton i.MkPly {
-    margin-right: 30px;
-  }
-  .JtDownloadListButton i.MkDwl {
-    margin-left: -40px;
-  }
-  .JtDownloadListButtonx i.MkDwlKm {
-    position: absolute;
-    cursor: pointer;
-    right: 3%;
-  }
-  .JtDownloadListButtonx i:hover {
-    color: #eee;
-    transition: 0.5s ease;
-  }
-
-  .JTMenuDetailInfoMore {
-    position: relative;
-    /* padding: 10px; */
-  }
-  .JTMenuDetailInfoMoreHeader h4 {
-    font-size: 14px;
-    color: rgb(25, 25, 25);
-  }
-  .JTMenuDetailInfoMore .JTMenuDetailInfoMoreContent {
-    position: relative;
-    display: flex;
-    place-items: center;
-    padding: 10px;
-  }
-  .JTMenuDetailInfoMoreContent i {
-    font-size: 16px;
-  }
-  .JTMenuDetailInfoMoreContent p {
-    font-size: 12px;
-    margin-left: 5px;
-  }
-  .JTMenuDetailFollow {
-    position: relative;
-    padding: 10px;
-  }
-  .JTMenuDetailFollowHeader h4 {
-    font-size: 14px;
-    color: rgb(25, 25, 25);
-  }
-  .JTMenuDetailFollowContent {
-    position: relative;
-    display: flex;
-    place-items: center;
-    padding: 15px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    border-radius: 10px;
-    transition: 0.5s ease-in-out;
-  }
-  .JTMenuDetailFollowListContent {
-    position: relative;
-    flex-direction: column;
-    margin-left: 5px;
-  }
-  .JTMenuDetailFollowListContent p {
-    font-size: 12px;
-  }
-  .JTMenuDetailFollowContent:hover {
-    box-shadow: 0 0 10px #07c10a;
-    transition: 0.5s ease-in-out;
-  }
-  .EmsMusic {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    /* bottom: 50%; */
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    z-index: 9999999;
-  }
-  .EmsMusic.EmsMenuShow {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .EmsMusic.EmsMenuShow .EmsMusicMenuContent {
-    transform: translateY(0);
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  .EmsMusic .EmsMusicMenuContent {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    transform: translateY(100%);
-    background: #ffffff;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
-  }
-  .EmsMusicMenuDetail {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .EmsMusicMenuDetailHeader {
-    position: relative;
-    padding: 10px;
-  }
-  .EmsMusicMenuDetailInfo {
-    position: relative;
-    /* padding: 10px; */
-    margin-top: 10px;
-  }
-  .EmsMusicMenuDetail.UpHeight {
-    height: 350px;
-    transition: 0.5s height;
-  }
-  .EmsMusicMenuDetailHeader .EmsMusicMenuDetailHeaderTitle h4 {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .EmsMusicMenuDetailHeaderTitle {
-    position: relative;
-    display: flex;
-  }
-  .EmsMusicMenuDetailHeaderTitle i {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.5s ease;
-  }
-  .EmsMusicMenuDetailHeaderTitle i:hover {
-    color: purple;
-    transition: 0.5s ease;
-  }
-  .EmsMusicMenuDetailHeaderTitle h4 {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    font-size: 20px;
-  }
-  .EmsMusicMenuContent .EmsMusicPage {
-    position: relative;
-    padding: 10px;
-  }
-  .EmsMusicPageHeader {
-    position: relative;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .EmsMusicPageHeader img {
-    width: 100%;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  .EmsMusicPageHeaderDesc {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    padding: 10px;
-    backdrop-filter: blur(10px);
-  }
-  .EmsMusicPageHeaderDesc h4 {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #07c10a;
-  }
-  .EmsMusicPageHeaderDesc p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #7e7e7e;
-  }
-  .EmsMusicPageContent {
-    position: relative;
-    margin-top: 20px;
-  }
-  .EmsMusicList {
-    position: relative;
-    /* background: #fff; */
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 1px #07c10a;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-  }
-  .EmsMusicListImg img {
-    position: relative;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  .EmsMusicListDesc {
-    position: relative;
-    padding: 15px;
-  }
-  .EmsMusicListDesc h4 {
-    position: relative;
-    font-size: 14px;
-  }
-  .EmsMusicListDesc p {
-    position: relative;
-    font-size: 12px;
-  }
-  .controls i {
-    position: absolute;
-    top: 25%;
-    right: 2%;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  .progress {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 2px;
-    margin-top: 15px;
-    background: #07c10a;
-    border-radius: 10px;
-    outline: none;
-  }
-
-  /* Chrome, Edge, Safari */
-  .progress::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 1px;
-    height: 1px;
-    background: #000000;
-    cursor: pointer;
-    box-shadow: 0 0 8px #07c10a;
-  }
-
-  /* Progress fill */
-  .progress::-webkit-slider-runnable-track {
-    height: 1px;
-    background: linear-gradient(
-      to right,
-      #07c10a 0%,
-      #07c10a var(--progress),
-      #333 var(--progress),
-      #333 100%
-    );
-  }
-  .player.playing .glow {
-    opacity: 1;
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .volume-bars {
-    position: absolute;
-    display: flex;
-    right: 30px;
-    top: 35px;
-    align-items: flex-end;
-    gap: 2px;
-    width: 38px;
-    height: 32px;
-    overflow: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.5s ease;
-  }
-  .volume-bars.vShow {
-    opacity: 1;
-    pointer-events: auto;
-    transition: 0.5s ease;
-  }
-
-  .volume-bars .bar {
-    width: 3px;
-    background: linear-gradient(180deg, #07c10a, #07c10a);
-    border-radius: 2px;
-    animation: bounce 0.8s infinite ease-in-out;
-    animation-delay: var(--delay);
-    animation-play-state: running;
-  }
-  .XLath {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.5s;
-  }
-
-  /* Aktif jika ada class XLathShow */
-  .XLath.XLathShow::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-
-    background: conic-gradient(
-      from 0deg,
-      transparent,
-      #07c10a,
-      #07c10a,
-      #07c10a,
-      transparent
-    );
-
-    animation: rotation_481 5s linear infinite;
-    z-index: 0;
-  }
-
-  /* Lapisan dalam */
-  .XLath::after {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: #fff;
-    box-shadow: 0px 0px 1px #57ff95;
-    transition: all 0.5s;
-    animation: pulse_3011 3s infinite;
-    border-radius: inherit;
-    z-index: 1;
-  }
-  .XLath > * {
-    position: relative;
-    z-index: 2;
-  }
-  .XPrmt {
-    position: relative;
-    border-radius: 10px;
-    background: #fff;
-    overflow: hidden;
-  }
-  .XPrmt.XPrmtShow::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-
-    background: conic-gradient(
-      from 0deg,
-      transparent,
-      #07c10a,
-      #07c10a,
-      #07c10a,
-      transparent
-    );
-
-    animation: rotation_481 5s linear infinite;
-    z-index: 0;
-  }
-  .XPrmt::after {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: #fff;
-    border-radius: inherit;
-    z-index: 1;
-  }
-  .XPrmt > * {
-    position: relative;
-    z-index: 2;
-  }
-  .XZpanx {
-    position: relative;
-    border-radius: 10px;
-    background: #fff;
-    overflow: hidden;
-  }
-  .XZpanx.XZpanxShow::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-
-    background: conic-gradient(
-      from 0deg,
-      transparent,
-      #07c10a,
-      #07c10a,
-      #07c10a,
-      transparent
-    );
-
-    animation: rotation_481 5s linear infinite;
-    z-index: 0;
-  }
-  .XZpanx::after {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: #fff;
-    border-radius: inherit;
-    z-index: 1;
-  }
-  .XZpanx > * {
-    position: relative;
-    z-index: 2;
-  }
-  .XCmrzx {
-    position: relative;
-    border-radius: 10px;
-    background: #fff;
-    overflow: hidden;
-  }
-  .XCmrzx.XCmrzxShow::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-
-    background: conic-gradient(
-      from 0deg,
-      transparent,
-      #07c10a,
-      #07c10a,
-      #07c10a,
-      transparent
-    );
-
-    animation: rotation_481 5s linear infinite;
-    z-index: 0;
-  }
-  .XCmrzx::after {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: #fff;
-    border-radius: inherit;
-    z-index: 1;
-  }
-  .XCmrzx > * {
-    position: relative;
-    z-index: 2;
-  }
-
-  /* Animasi rotate */
-  @keyframes rotateGlow {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes bounce {
-    0%,
-    100% {
-      height: 6px;
-    }
-    50% {
-      height: 26px;
-    }
-  }
-  @keyframes rotation_481 {
-    0% {
-      transform: rotateZ(0deg);
-    }
-
-    0% {
-      transform: rotateZ(360deg);
-    }
-  }
-  @keyframes pulse_3011 {
-    0% {
-      box-shadow: 0 0 2rem #57ff95;
-    }
-
-    70% {
-      box-shadow: 0 0 3rem #57ff95;
-    }
-
-    100% {
-      box-shadow: 0 0 2rem #57ff95;
-    }
-  }
-  footer {
-    position: relative;
-    padding: 30px;
-    text-align: center;
-    font-size: 14px;
-    margin-top: -50px;
-  }
+  .card__ribbon {
+  margin-top: 1.5rem;
+  display: grid;
+  place-items: center;
+  height: 10px;
+  background-color: #ffffff;
+  position: relative;
+  width: 110%;
+  left: -5%;
+  top: -30px;
+  position: relative;
+  border-radius: 0 0 2rem 2rem;
 }
-@media (min-width: 350px) {
-  body.OverflowHide {
-    overflow: auto;
-  }
-  .JTLoad {
-    position: fixed;
-    height: 100vh;
-    background: #000;
-    z-index: 9999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-  }
-  .JTLoad.LoadHide {
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.5s ease;
-  }
-  .JTLoad video {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-  }
-  .JTBody {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-  }
-  .JTBodyThumb {
-    position: relative;
-    width: 100%;
-    height: 120px;
-    background-image: url(assets/img/EmsHeader.png);
-    /* background-color: #000000; */
-    background-position: center;
-    background-size: cover;
-    backdrop-filter: blur(20px);
-  }
-  .JTBodyProfile {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    place-content: center;
-    place-items: center;
-  }
-  .JTBodyProfile img {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    place-content: center;
-    place-items: center;
-    display: flex;
-    top: 50px;
-    width: 30%;
-    border-radius: 50%;
-    /* border: 5px solid #FDF7E4; */
-  }
-  .JTBodyDetail {
-    position: relative;
-    margin-top: 60px;
-    text-align: center;
-  }
-  .JTBodyDetail h4 {
-    font-size: 20px;
-    letter-spacing: 5px;
-  }
-  .JTBodyDetail p {
-    font-size: 12px;
-    text-transform: uppercase;
-  }
-  .JTBodySocial {
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-  }
-  .JTBodySocial i {
-    position: relative;
-    margin-left: 5px;
-    padding: 10px;
-    background: #07c10a;
-    color: white;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.5s ease;
-  }
-  .JTBodySocial h4 {
-    position: relative;
-    place-content: center;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    background: #07c10a;
-    color: white;
-    padding: 10px;
-    border-radius: 1px;
-    width: 60px;
-    text-align: center;
-    font-size: 12px;
-    cursor: pointer;
-  }
-  .JTBodySocial i:hover {
-    background-color: #eee;
-    transition: 0.5s ease;
-    color: #07c10a;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .JTBodySocial h4:hover {
-    background-color: #eee;
-    transition: 0.5s ease;
-    color: #07c10a;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .JTButtonContent {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    place-content: center;
-    align-items: center;
-    place-items: center;
-    width: 100%;
-    padding: 10px;
-  }
-  .JTButtonContent button {
-    position: relative;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    justify-content: center;
-    display: flex;
-    place-content: center;
-    align-items: center;
-    place-items: center;
-    margin-right: 25px;
-    width: 25%;
-    color: #07c10a;
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.5s ease;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
-    box-shadow: 0 0 10px #07c10a;
-  }
-  .JTButtonContent button:hover {
-    background-color: #eee;
-    transition: 0.5s ease;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .JTButtonContent button.JTBtnActive {
-    background-color: #07c10a;
-    transition: 0.5s ease;
-    color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .JTFilterSection [data-content] {
-    display: none;
-    transition: 0.5s ease;
-  }
 
-  .JTTabActive[data-content] {
-    display: grid;
-    transition: 0.5s ease;
-  }
-  .JTAllImages {
-    position: relative;
-    display: flex;
-  }
-  .JTAllImages article {
-    position: relative;
-    padding: 10px;
-    cursor: pointer;
-  }
-  .JTAllImages article img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .JTImageCardsModal {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
-    bottom: 38px;
-    opacity: 0;
-    transition: 0.5s ease;
-    border-radius: 2px;
-  }
-  .JTAllImages article:hover {
-    backdrop-filter: blur(20px);
-  }
-  .JTAllImages article:hover .JTImageCardsModal {
-    opacity: 1;
-    transition: 0.5s ease;
-  }
-  .JTImageCardsModalLoc {
-    position: relative;
-    display: flex;
-    background: #fff;
-    width: 44.1%;
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  .JTImageCardsModalLoc i {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
-    font-size: 14px;
-  }
-  .JTImageCardsModalLoc p {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    margin-left: 2px;
-    place-content: center;
-  }
-  .JTAllDownloads {
-    position: relative;
-    display: flex;
-  }
-  .JTAllDownloads article {
-    position: relative;
-    padding: 10px;
-    cursor: pointer;
-  }
-  .JTAllDownloads article video {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .JTDownloadsCardsModal {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
-    bottom: 38px;
-    opacity: 0;
-    transition: 0.5s ease;
-    border-radius: 2px;
-  }
-  .JTAllDownloads article:hover {
-    backdrop-filter: blur(20px);
-  }
-  .JTAllDownloads article:hover .JTImageCardsModal {
-    opacity: 1;
-    transition: 0.5s ease;
-  }
-  .JTDownloadsCardsModalLoc {
-    position: relative;
-    display: flex;
-    background: #fff;
-    width: 44.1%;
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  .JTDownloadsCardsModalLoc i {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
-    font-size: 14px;
-  }
-  .JTDownloadsCardsModalLoc p {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    margin-left: 2px;
-    place-content: center;
-  }
-  footer {
-    position: relative;
-    padding: 30px;
-    text-align: center;
-    font-size: 14px;
-  }
-  .JTMenu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    /* bottom: 50%; */
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    z-index: 9999999;
-  }
-  .JTMenu.JTMenuShow {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .JTMenu.JTMenuShow .JTMenuContent {
-    transform: translateX(0);
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  .JTMenu .JTMenuContent {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-    background: #ffffff;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
-  }
-  .JTMenuDetail {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .JTMenuDetailHeader {
-    position: relative;
-    padding: 10px;
-  }
-  .JTMenuDetailInfo {
-    position: relative;
-    /* padding: 10px; */
-    margin-top: 10px;
-  }
-  .JTMenuDetail.UpHeight {
-    height: 350px;
-    transition: 0.5s height;
-  }
-  .JTMenuDetailHeader .JTMenuDetailHeaderTitle h4 {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .JTMenuDetailHeaderTitle {
-    position: relative;
-    display: flex;
-  }
-  .JTMenuDetailHeaderTitle i {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.5s ease;
-  }
-  .JTMenuDetailHeaderTitle i:hover {
-    color: purple;
-    transition: 0.5s ease;
-  }
-  .JTMenuDetailHeaderTitle h4 {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    font-size: 20px;
-  }
-  .JTMenuDetailInfo {
-    position: relative;
-  }
-  .JTMenuDetailInfoList {
-    position: relative;
-    padding: 15px;
-    border-radius: 30px;
-    margin-bottom: 30px;
-    transition: 0.5s ease-in-out;
-    margin-top: 30px;
-  }
-  .JTMenuDetailInfoList img {
-    width: 100%;
-    /* border-radius: 10%; */
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-  .JTMenuDetailInfoListContent {
-    position: relative;
-    padding: 10px;
-  }
-  .JTMenuDetailInfoListContent h4 {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #929292;
-  }
-  .JTMenuDetailInfoListContent p {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .JTMenuDetailInfoListContent span {
-    font-size: 12px;
-    color: #555555;
-  }
-  .JTMenuDetailInfoListIcon i {
-    position: absolute;
-    right: 5%;
-    top: 20%;
-    font-size: 20px;
-    padding: 10px;
-    transition: 0.5s ease-in-out;
-    border-radius: 50%;
-  }
-  .JTMenuDetailInfoList:hover {
-    box-shadow: none;
-    transition: 0.5s ease;
-  }
-  .JTMenuDetailInfoList:hover .JTMenuDetailInfoListIcon i {
-    color: purple;
-    transition: 0.5s ease-in-out;
-  }
-  .MkFooter {
-    position: relative;
-    padding: 50px;
-  }
-  .MkFooter h4 {
-    font-size: 12px;
-    text-align: center;
-  }
-  .JTAllVideo {
-    position: relative;
-    padding: 20px;
-    background-color: #ffffff;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .JtHead {
-    position: relative;
-    /* background-color: #78b0a4; */
-    padding: 10px;
-    border-radius: 5px;
-    color: #01cb04;
-  }
-  .JTAllVideo article {
-    position: relative;
-    /* height: 250px; */
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .JTVideosCards video {
-    position: relative;
-    width: 100%;
-    border-radius: 5px;
-  }
-  .JTVideoMcCardsModal {
-    position: relative;
-    display: flex;
-  }
-  .JTVideoMcCardsUsername span {
-    position: relative;
-    padding: 5px;
-    font-size: 12px;
-    color: #07c10a;
-    font-weight: bold;
-  }
-  .JTVideoMcCardsDetail {
-    position: relative;
-    margin-left: 5px;
-  }
-  .JTVideoMcCardsDetail p {
-    font-size: 10px;
-    font-weight: normal;
-  }
-  .JTVideoMCBtn i {
-    position: absolute;
-    top: 20%;
-    right: 2%;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  .JtDownloads {
-    position: relative;
-    padding: 20px;
-    background-color: #ffffff;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .JtDownloadContent {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .JtDownloadHeader.VxKm {
-    position: relative;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    color: #01cb04;
-    padding: 10px;
-    height: 50px;
-    border-radius: 5px;
-    text-align: center;
-    background-image: url(assets/img/HeadKm.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .JtDownloadHeader.VxInt {
-    position: relative;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    color: #01cb04;
-    padding: 10px;
-    height: 50px;
-    border-radius: 10px;
-    text-align: center;
-    background-image: url(assets/img/HeadInt.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .JtDownloadList:hover {
-    transform: scale(1.05);
-    box-shadow: none;
-    transition: 0.5s ease-in-out;
-  }
-  .JtDownloadList {
-    position: relative;
-    width: 50%;
-    background: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 0 1px #07c10a;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-  }
-  .JtDownloadListImg i {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 50%;
-    margin: auto;
-    bottom: 40px;
-    border-radius: 10px;
-    z-index: 1;
-    background-color: #fff;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    font-size: 30px;
-    box-shadow: 0 0 1px #07c10a;
-  }
-  .JtDownloadListImg img {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 50%;
-    margin: auto;
-    bottom: 40px;
-    border-radius: 10px;
-    z-index: 1;
-    box-shadow: 0 0 1px #07c10a;
-  }
-  .JtDownloadListDesc {
-    position: relative;
-    margin-top: -30px;
-    margin-bottom: 10px;
-  }
-  .JtDownloadListDesc h4 {
-    color: #01cb04;
-  }
-  .JtDownloadListDesc h4 {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .JtDownloadListDesc p {
-    font-size: 12px;
-  }
-  .JtDownloadList i {
-    position: relative;
-    place-items: center;
-    place-content: center;
-    padding: 10px;
-    font-size: 20px;
-  }
-  .JtDownloadListContent {
-    position: relative;
-    flex-direction: column;
-    place-content: center;
-    margin-left: 5px;
-  }
-  .JtDownloadListContent h4 {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .JtDownloadListContent p {
-    font-size: 10px;
-    font-weight: normal;
-  }
-  .JtDownloadListButton i {
-    position: relative;
-    left: 30px;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
-    transition: 0.5s ease;
-    cursor: pointer;
-  }
-  .JtDownloadListButton i.MkPly {
-    margin-right: 30px;
-  }
-  .JtDownloadListButton i.MkDwl {
-    margin-left: -40px;
-  }
-  .JtDownloadListButtonx i.MkDwlKm {
-    position: absolute;
-    cursor: pointer;
-    right: 3%;
-  }
-  .JtDownloadListButtonx i:hover {
-    color: #eee;
-    transition: 0.5s ease;
-  }
-
-  .JTMenuDetailInfoMore {
-    position: relative;
-    /* padding: 10px; */
-  }
-  .JTMenuDetailInfoMoreHeader h4 {
-    font-size: 14px;
-    color: rgb(25, 25, 25);
-  }
-  .JTMenuDetailInfoMore .JTMenuDetailInfoMoreContent {
-    position: relative;
-    display: flex;
-    place-items: center;
-    padding: 10px;
-  }
-  .JTMenuDetailInfoMoreContent i {
-    font-size: 16px;
-  }
-  .JTMenuDetailInfoMoreContent p {
-    font-size: 12px;
-    margin-left: 5px;
-  }
-  .JTMenuDetailFollow {
-    position: relative;
-    padding: 10px;
-  }
-  .JTMenuDetailFollowHeader h4 {
-    font-size: 14px;
-    color: rgb(25, 25, 25);
-  }
-  .JTMenuDetailFollowContent {
-    position: relative;
-    display: flex;
-    place-items: center;
-    padding: 15px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    border-radius: 10px;
-    transition: 0.5s ease-in-out;
-  }
-  .JTMenuDetailFollowListContent {
-    position: relative;
-    flex-direction: column;
-    margin-left: 5px;
-  }
-  .JTMenuDetailFollowListContent p {
-    font-size: 12px;
-  }
-  .JTMenuDetailFollowContent:hover {
-    box-shadow: 0 0 10px #07c10a;
-    transition: 0.5s ease-in-out;
-  }
-  .EmsMusic {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    /* bottom: 50%; */
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    z-index: 9999999;
-  }
-  .EmsMusic.EmsMenuShow {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .EmsMusic.EmsMenuShow .EmsMusicMenuContent {
-    transform: translateY(0);
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  .EmsMusic .EmsMusicMenuContent {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    transform: translateY(100%);
-    background: #ffffff;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
-  }
-  .EmsMusicMenuDetail {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .EmsMusicMenuDetailHeader {
-    position: relative;
-    padding: 10px;
-  }
-  .EmsMusicMenuDetailInfo {
-    position: relative;
-    /* padding: 10px; */
-    margin-top: 10px;
-  }
-  .EmsMusicMenuDetail.UpHeight {
-    height: 350px;
-    transition: 0.5s height;
-  }
-  .EmsMusicMenuDetailHeader .EmsMusicMenuDetailHeaderTitle h4 {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .EmsMusicMenuDetailHeaderTitle {
-    position: relative;
-    display: flex;
-  }
-  .EmsMusicMenuDetailHeaderTitle i {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.5s ease;
-  }
-  .EmsMusicMenuDetailHeaderTitle i:hover {
-    color: purple;
-    transition: 0.5s ease;
-  }
-  .EmsMusicMenuDetailHeaderTitle h4 {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    font-size: 20px;
-  }
-  .EmsMusicMenuContent .EmsMusicPage {
-    position: relative;
-    padding: 10px;
-  }
-  .EmsMusicPageHeader {
-    position: relative;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .EmsMusicPageHeader img {
-    width: 100%;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  .EmsMusicPageHeaderDesc {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    padding: 10px;
-    backdrop-filter: blur(10px);
-  }
-  .EmsMusicPageHeaderDesc h4 {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #07c10a;
-  }
-  .EmsMusicPageHeaderDesc p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #7e7e7e;
-  }
-  .EmsMusicPageContent {
-    position: relative;
-    margin-top: 20px;
-  }
-  .EmsMusicList {
-    position: relative;
-    /* background: #fff; */
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 1px #07c10a;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-  }
-  .EmsMusicListImg img {
-    position: relative;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  .EmsMusicListDesc {
-    position: relative;
-    padding: 15px;
-  }
-  .EmsMusicListDesc h4 {
-    position: relative;
-    font-size: 14px;
-  }
-  .EmsMusicListDesc p {
-    position: relative;
-    font-size: 12px;
-  }
-  .controls i {
-    position: absolute;
-    top: 25%;
-    right: 2%;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  .progress {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 2px;
-    margin-top: 15px;
-    background: #07c10a;
-    border-radius: 10px;
-    outline: none;
-  }
-
-  /* Chrome, Edge, Safari */
-  .progress::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 1px;
-    height: 1px;
-    background: #000000;
-    cursor: pointer;
-    box-shadow: 0 0 8px #07c10a;
-  }
-
-  /* Progress fill */
-  .progress::-webkit-slider-runnable-track {
-    height: 1px;
-    background: linear-gradient(
-      to right,
-      #07c10a 0%,
-      #07c10a var(--progress),
-      #333 var(--progress),
-      #333 100%
-    );
-  }
-  .player.playing .glow {
-    opacity: 1;
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .volume-bars {
-    position: absolute;
-    display: flex;
-    right: 30px;
-    top: 35px;
-    align-items: flex-end;
-    gap: 2px;
-    width: 38px;
-    height: 32px;
-    overflow: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.5s ease;
-  }
-  .volume-bars.vShow {
-    opacity: 1;
-    pointer-events: auto;
-    transition: 0.5s ease;
-  }
-
-  .volume-bars .bar {
-    width: 3px;
-    background: linear-gradient(180deg, #07c10a, #07c10a);
-    border-radius: 2px;
-    animation: bounce 0.8s infinite ease-in-out;
-    animation-delay: var(--delay);
-    animation-play-state: running;
-  }
-  .XLath {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.5s;
-  }
-
-  /* Aktif jika ada class XLathShow */
-  .XLath.XLathShow::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-
-    background: conic-gradient(
-      from 0deg,
-      transparent,
-      #07c10a,
-      #07c10a,
-      #07c10a,
-      transparent
-    );
-
-    animation: rotation_481 5s linear infinite;
-    z-index: 0;
-  }
-
-  /* Lapisan dalam */
-  .XLath::after {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: #fff;
-    box-shadow: 0px 0px 1px #57ff95;
-    transition: all 0.5s;
-    animation: pulse_3011 3s infinite;
-    border-radius: inherit;
-    z-index: 1;
-  }
-  .XLath > * {
-    position: relative;
-    z-index: 2;
-  }
-  .XPrmt {
-    position: relative;
-    border-radius: 10px;
-    background: #fff;
-    overflow: hidden;
-  }
-  .XPrmt.XPrmtShow::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-
-    background: conic-gradient(
-      from 0deg,
-      transparent,
-      #07c10a,
-      #07c10a,
-      #07c10a,
-      transparent
-    );
-
-    animation: rotation_481 5s linear infinite;
-    z-index: 0;
-  }
-  .XPrmt::after {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: #fff;
-    border-radius: inherit;
-    z-index: 1;
-  }
-  .XPrmt > * {
-    position: relative;
-    z-index: 2;
-  }
-  .XZpanx {
-    position: relative;
-    border-radius: 10px;
-    background: #fff;
-    overflow: hidden;
-  }
-  .XZpanx.XZpanxShow::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-
-    background: conic-gradient(
-      from 0deg,
-      transparent,
-      #07c10a,
-      #07c10a,
-      #07c10a,
-      transparent
-    );
-
-    animation: rotation_481 5s linear infinite;
-    z-index: 0;
-  }
-  .XZpanx::after {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: #fff;
-    border-radius: inherit;
-    z-index: 1;
-  }
-  .XZpanx > * {
-    position: relative;
-    z-index: 2;
-  }
-  .XCmrzx {
-    position: relative;
-    border-radius: 10px;
-    background: #fff;
-    overflow: hidden;
-  }
-  .XCmrzx.XCmrzxShow::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-
-    background: conic-gradient(
-      from 0deg,
-      transparent,
-      #07c10a,
-      #07c10a,
-      #07c10a,
-      transparent
-    );
-
-    animation: rotation_481 5s linear infinite;
-    z-index: 0;
-  }
-  .XCmrzx::after {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: #fff;
-    border-radius: inherit;
-    z-index: 1;
-  }
-  .XCmrzx > * {
-    position: relative;
-    z-index: 2;
-  }
-
-  /* Animasi rotate */
-  @keyframes rotateGlow {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes bounce {
-    0%,
-    100% {
-      height: 6px;
-    }
-    50% {
-      height: 26px;
-    }
-  }
-  @keyframes rotation_481 {
-    0% {
-      transform: rotateZ(0deg);
-    }
-
-    0% {
-      transform: rotateZ(360deg);
-    }
-  }
-  @keyframes pulse_3011 {
-    0% {
-      box-shadow: 0 0 2rem #57ff95;
-    }
-
-    70% {
-      box-shadow: 0 0 3rem #57ff95;
-    }
-
-    100% {
-      box-shadow: 0 0 2rem #57ff95;
-    }
-  }
-  footer {
-    position: relative;
-    padding: 30px;
-    text-align: center;
-    font-size: 14px;
-    margin-top: -50px;
-  }
+.card__ribbon::after,
+.card__ribbon::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1/1;
+  bottom: 100%;
+  z-index: -2;
+  background-color: #ffffff;
 }
-@media (min-width: 340px) {
-  body.OverflowHide {
-    overflow: auto;
-  }
-  .JTLoad {
-    position: fixed;
-    height: 100vh;
-    background: #000;
-    z-index: 9999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-  }
-  .JTLoad.LoadHide {
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.5s ease;
-  }
-  .JTLoad video {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-  }
-  .JTBody {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-  }
-  .JTBodyThumb {
-    position: relative;
-    width: 100%;
-    height: 120px;
-    background-image: url(assets/img/EmsHeader.png);
-    /* background-color: #000000; */
-    background-position: center;
-    background-size: cover;
-    backdrop-filter: blur(20px);
-  }
-  .JTBodyProfile {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    place-content: center;
-    place-items: center;
-  }
-  .JTBodyProfile img {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    place-content: center;
-    place-items: center;
-    display: flex;
-    top: 50px;
-    width: 30%;
-    border-radius: 50%;
-    /* border: 5px solid #FDF7E4; */
-  }
-  .JTBodyDetail {
-    position: relative;
-    margin-top: 60px;
-    text-align: center;
-  }
-  .JTBodyDetail h4 {
-    font-size: 20px;
-    letter-spacing: 5px;
-  }
-  .JTBodyDetail p {
-    font-size: 12px;
-    text-transform: uppercase;
-  }
-  .JTBodySocial {
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-  }
-  .JTBodySocial i {
-    position: relative;
-    margin-left: 5px;
-    padding: 10px;
-    background: #07c10a;
-    color: white;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.5s ease;
-  }
-  .JTBodySocial h4 {
-    position: relative;
-    place-content: center;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    background: #07c10a;
-    color: white;
-    padding: 10px;
-    border-radius: 1px;
-    width: 60px;
-    text-align: center;
-    font-size: 12px;
-    cursor: pointer;
-  }
-  .JTBodySocial i:hover {
-    background-color: #eee;
-    transition: 0.5s ease;
-    color: #07c10a;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .JTBodySocial h4:hover {
-    background-color: #eee;
-    transition: 0.5s ease;
-    color: #07c10a;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .JTButtonContent {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    place-content: center;
-    align-items: center;
-    place-items: center;
-    width: 100%;
-    padding: 10px;
-  }
-  .JTButtonContent button {
-    position: relative;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    justify-content: center;
-    display: flex;
-    place-content: center;
-    align-items: center;
-    place-items: center;
-    margin-right: 25px;
-    width: 25%;
-    color: #07c10a;
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.5s ease;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
-    box-shadow: 0 0 10px #07c10a;
-  }
-  .JTButtonContent button:hover {
-    background-color: #eee;
-    transition: 0.5s ease;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .JTButtonContent button.JTBtnActive {
-    background-color: #07c10a;
-    transition: 0.5s ease;
-    color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .JTFilterSection [data-content] {
-    display: none;
-    transition: 0.5s ease;
-  }
 
-  .JTTabActive[data-content] {
-    display: grid;
-    transition: 0.5s ease;
-  }
-  .JTAllImages {
-    position: relative;
-    display: flex;
-  }
-  .JTAllImages article {
-    position: relative;
-    padding: 10px;
-    cursor: pointer;
-  }
-  .JTAllImages article img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .JTImageCardsModal {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
-    bottom: 38px;
-    opacity: 0;
-    transition: 0.5s ease;
-    border-radius: 2px;
-  }
-  .JTAllImages article:hover {
-    backdrop-filter: blur(20px);
-  }
-  .JTAllImages article:hover .JTImageCardsModal {
-    opacity: 1;
-    transition: 0.5s ease;
-  }
-  .JTImageCardsModalLoc {
-    position: relative;
-    display: flex;
-    background: #fff;
-    width: 44.1%;
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  .JTImageCardsModalLoc i {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
-    font-size: 14px;
-  }
-  .JTImageCardsModalLoc p {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    margin-left: 2px;
-    place-content: center;
-  }
-  .JTAllDownloads {
-    position: relative;
-    display: flex;
-  }
-  .JTAllDownloads article {
-    position: relative;
-    padding: 10px;
-    cursor: pointer;
-  }
-  .JTAllDownloads article video {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .JTDownloadsCardsModal {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
-    bottom: 38px;
-    opacity: 0;
-    transition: 0.5s ease;
-    border-radius: 2px;
-  }
-  .JTAllDownloads article:hover {
-    backdrop-filter: blur(20px);
-  }
-  .JTAllDownloads article:hover .JTImageCardsModal {
-    opacity: 1;
-    transition: 0.5s ease;
-  }
-  .JTDownloadsCardsModalLoc {
-    position: relative;
-    display: flex;
-    background: #fff;
-    width: 44.1%;
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  .JTDownloadsCardsModalLoc i {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
-    font-size: 14px;
-  }
-  .JTDownloadsCardsModalLoc p {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    margin-left: 2px;
-    place-content: center;
-  }
-  footer {
-    position: relative;
-    padding: 30px;
-    text-align: center;
-    font-size: 14px;
-  }
-  .JTMenu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    /* bottom: 50%; */
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    z-index: 9999999;
-  }
-  .JTMenu.JTMenuShow {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .JTMenu.JTMenuShow .JTMenuContent {
-    transform: translateX(0);
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  .JTMenu .JTMenuContent {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-    background: #ffffff;
-    transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
-  }
-  .JTMenuDetail {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .JTMenuDetailHeader {
-    position: relative;
-    padding: 10px;
-  }
-  .JTMenuDetailInfo {
-    position: relative;
-    /* padding: 10px; */
-    margin-top: 10px;
-  }
-  .JTMenuDetail.UpHeight {
-    height: 350px;
-    transition: 0.5s height;
-  }
-  .JTMenuDetailHeader .JTMenuDetailHeaderTitle h4 {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .JTMenuDetailHeaderTitle {
-    position: relative;
-    display: flex;
-  }
-  .JTMenuDetailHeaderTitle i {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.5s ease;
-  }
-  .JTMenuDetailHeaderTitle i:hover {
-    color: purple;
-    transition: 0.5s ease;
-  }
-  .JTMenuDetailHeaderTitle h4 {
-    position: relative;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    font-size: 20px;
-  }
-  .JTMenuDetailInfo {
-    position: relative;
-  }
-  .JTMenuDetailInfoList {
-    position: relative;
-    padding: 15px;
-    border-radius: 30px;
-    margin-bottom: 30px;
-    transition: 0.5s ease-in-out;
-    margin-top: 30px;
-  }
-  .JTMenuDetailInfoList img {
-    width: 100%;
-    /* border-radius: 10%; */
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-  .JTMenuDetailInfoListContent {
-    position: relative;
-    padding: 10px;
-  }
-  .JTMenuDetailInfoListContent h4 {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #929292;
-  }
-  .JTMenuDetailInfoListContent p {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .JTMenuDetailInfoListContent span {
-    font-size: 12px;
-    color: #555555;
-  }
-  .JTMenuDetailInfoListIcon i {
-    position: absolute;
-    right: 5%;
-    top: 20%;
-    font-size: 20px;
-    padding: 10px;
-    transition: 0.5s ease-in-out;
-    border-radius: 50%;
-  }
-  .JTMenuDetailInfoList:hover {
-    box-shadow: none;
-    transition: 0.5s ease;
-  }
-  .JTMenuDetailInfoList:hover .JTMenuDetailInfoListIcon i {
-    color: purple;
-    transition: 0.5s ease-in-out;
-  }
-  .MkFooter {
-    position: relative;
-    padding: 50px;
-  }
-  .MkFooter h4 {
-    font-size: 12px;
-    text-align: center;
-  }
-  .JTAllVideo {
-    position: relative;
-    padding: 20px;
-    background-color: #ffffff;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .JtHead {
-    position: relative;
-    /* background-color: #78b0a4; */
-    padding: 10px;
-    border-radius: 5px;
-    color: #01cb04;
-  }
-  .JTAllVideo article {
-    position: relative;
-    /* height: 250px; */
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .JTVideosCards video {
-    position: relative;
-    width: 100%;
-    border-radius: 5px;
-  }
-  .JTVideoMcCardsModal {
-    position: relative;
-    display: flex;
-  }
-  .JTVideoMcCardsUsername span {
-    position: relative;
-    padding: 5px;
-    font-size: 12px;
-    color: #07c10a;
-    font-weight: bold;
-  }
-  .JTVideoMcCardsDetail {
-    position: relative;
-    margin-left: 5px;
-  }
-  .JTVideoMcCardsDetail p {
-    font-size: 10px;
-    font-weight: normal;
-  }
-  .JTVideoMCBtn i {
-    position: absolute;
-    top: 20%;
-    right: 2%;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  .JtDownloads {
-    position: relative;
-    padding: 20px;
-    background-color: #ffffff;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .JtDownloadContent {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .JtDownloadHeader.VxKm {
-    position: relative;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    color: #01cb04;
-    padding: 10px;
-    height: 50px;
-    border-radius: 5px;
-    text-align: center;
-    background-image: url(assets/img/HeadKm.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .JtDownloadHeader.VxInt {
-    position: relative;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    color: #01cb04;
-    padding: 10px;
-    height: 50px;
-    border-radius: 10px;
-    text-align: center;
-    background-image: url(assets/img/HeadInt.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .JtDownloadList:hover {
-    transform: scale(1.05);
-    box-shadow: none;
-    transition: 0.5s ease-in-out;
-  }
-  .JtDownloadList {
-    position: relative;
-    width: 50%;
-    background: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 0 1px #07c10a;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-  }
-  .JtDownloadListImg i {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 50%;
-    margin: auto;
-    bottom: 40px;
-    border-radius: 10px;
-    z-index: 1;
-    background-color: #fff;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    font-size: 30px;
-    box-shadow: 0 0 1px #07c10a;
-  }
-  .JtDownloadListImg img {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 50%;
-    margin: auto;
-    bottom: 40px;
-    border-radius: 10px;
-    z-index: 1;
-    box-shadow: 0 0 1px #07c10a;
-  }
+.card__ribbon::before {
+  left: 0;
+  transform-origin: left bottom;
+  transform: rotate(45deg);
+}
+
+.card__ribbon::after {
+  right: 0;
+  transform-origin: right bottom;
+  transform: rotate(-45deg);
+}
+
+.card__ribbon-label {
+  display: block;
+  width: 84px;
+  aspect-ratio: 1/1;
+  background-color: #ffffff;
+  position: relative;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border-right: 8px solid #ffffff;
+  border-left: 8px solid #ffffff;
+  border-top: 8px solid #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  line-height: 1;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.card__ribbon-label::before,
+.card__ribbon-label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 50%;
+}
+
+.card__ribbon-label::before {
+  right: calc(100% + 4px);
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 0 #ffffff;
+}
+
+.card__ribbon-label::after {
+  left: calc(100% + 4px);
+  border-bottom-left-radius: 20px;
+  box-shadow: -5px 5px 0 #ffffff;
+}
+
   .JtDownloadListDesc {
     position: relative;
     margin-top: -30px;
@@ -7469,7 +5813,6 @@ body {
   }
   .EmsMusicPageHeader {
     position: relative;
-    background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -7484,7 +5827,7 @@ body {
     bottom: 10px;
     left: 10px;
     padding: 10px;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(11px); */
   }
   .EmsMusicPageHeaderDesc h4 {
     font-size: 20px;
@@ -7522,18 +5865,65 @@ body {
   }
   .EmsMusicListDesc h4 {
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .EmsMusicListDescDetail {
+    position: relative;
+    align-items: center;
+    place-items: center;
+    display: flex;
+    width: 50%;
+  }
+  .EmsMusicListDescDetail span {
+    position: relative;
+    font-size: 10px;
+    margin-right: 3px;
+    font-weight: bold;
+  }
+  .EmsMusicListDescDetail p {
+    position: relative;
+    font-size: 10px;
   }
   .EmsMusicListDesc p {
     position: relative;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .EmsMusicListDescDetailInfo {
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .Scld {
+    color: #ff5500;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Scld:hover {
+    color: #000;
+    transition: 0.5s ease;
+  }
+  .Ytb {
+    color: #ff0000;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .Ytb:hover {
+    color: #000;
+    transition: 0.5s ease;
   }
   .controls i {
     position: absolute;
-    top: 25%;
-    right: 2%;
+    top: 30%;
+    right: 5%;
     font-size: 30px;
     cursor: pointer;
+    /* background-color: #01cb04; */
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 0 3px #07c10a;
+    color: #07c10a;
   }
   .progress {
     -webkit-appearance: none;
